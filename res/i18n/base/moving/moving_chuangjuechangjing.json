@@ -1,0 +1,44 @@
+{
+  "lizi_zhucheng5lizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-289",
+        "y" : "371.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_chuangjue_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhucheng_niaofei" : {
+    "f1" : {
+      "start" : {
+        "x" : "417.1",
+        "y" : "67.7",
+        "rotation" : "1.92",
+        "scaleX" : "-0.74",
+        "scaleY" : "0.74",
+        "opacity" : "137"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f601" : "finish"
+  }
+}

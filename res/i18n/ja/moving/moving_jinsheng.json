@@ -1,0 +1,302 @@
+{
+  "effect_shengtouxian_tx" : {
+    "f1" : {
+      "start" : {
+        "x" : "-12.3",
+        "y" : "196.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_herolevelup_shanguang" : {
+    "f3" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "192.9",
+        "rotation" : "0",
+        "scaleX" : "0.64",
+        "scaleY" : "0.64",
+        "opacity" : "0",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "order" : "8",
+    "f6" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "192.9",
+        "rotation" : "0",
+        "scaleX" : "1.32",
+        "scaleY" : "1.16",
+        "opacity" : "191",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f14",
+      "frames" : "9"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "192.9",
+        "rotation" : "0",
+        "scaleX" : "2.75",
+        "scaleY" : "0.53",
+        "opacity" : "0",
+        "blendMode" : "add"
+      }
+    },
+    "f15" : {
+      "remove" : "1"
+    }
+  },
+  "effect_paiming_jiantou" : {
+    "f24" : {
+      "start" : {
+        "x" : "-0.55",
+        "y" : "101.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "touxian_2" : {
+    "f28" : {
+      "start" : {
+        "x" : "26.55",
+        "y" : "102.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f30",
+      "frames" : "3"
+    },
+    "order" : "6",
+    "f30" : {
+      "start" : {
+        "x" : "96.75",
+        "y" : "102.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f32",
+      "frames" : "3"
+    },
+    "f32" : {
+      "start" : {
+        "x" : "89.55",
+        "y" : "102.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "touxian_1" : {
+    "f12" : {
+      "start" : {
+        "x" : "-155.05",
+        "y" : "102.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f14",
+      "frames" : "3"
+    },
+    "order" : "5",
+    "f14" : {
+      "start" : {
+        "x" : "-84.85",
+        "y" : "102.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f16",
+      "frames" : "3"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-92.05",
+        "y" : "102.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_gxsj_xxxxxxxx" : {
+    "f28" : {
+      "start" : {
+        "x" : "0",
+        "y" : "101.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f32",
+      "frames" : "5"
+    },
+    "order" : "4",
+    "f32" : {
+      "start" : {
+        "x" : "0",
+        "y" : "101.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "zongzhanli" : {
+    "f60" : {
+      "start" : {
+        "x" : "-0.8",
+        "y" : "-142.85",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "25"
+      },
+      "nextFrame" : "f62",
+      "frames" : "3"
+    },
+    "order" : "3",
+    "f62" : {
+      "start" : {
+        "x" : "-0.8",
+        "y" : "-142.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f64",
+      "frames" : "3"
+    },
+    "f64" : {
+      "start" : {
+        "x" : "-0.8",
+        "y" : "-142.85",
+        "rotation" : "0",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effet_x2_gx_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "101.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "2",
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "101.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_txt_bg" : {
+    "f4" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "180.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f20",
+      "frames" : "17"
+    },
+    "order" : "1",
+    "f20" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "180.35",
+        "rotation" : "0",
+        "scaleX" : "0.66",
+        "scaleY" : "0.66",
+        "opacity" : "0"
+      }
+    }
+  },
+  "effect_jinsheng_dazi_touxixan" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "175.65",
+        "rotation" : "0",
+        "scaleX" : "3.95",
+        "scaleY" : "3.95",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "193.65",
+        "rotation" : "0",
+        "scaleX" : "0.8",
+        "scaleY" : "0.8",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "193.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f43" : "play_txt1",
+    "f45" : "play_txt2",
+    "f47" : "play_txt3",
+    "f49" : "play_txt4",
+    "f51" : "play_txt5",
+    "f70" : "finish"
+  }
+}

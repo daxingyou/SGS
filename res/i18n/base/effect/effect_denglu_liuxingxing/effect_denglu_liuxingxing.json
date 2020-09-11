@@ -1,0 +1,39 @@
+{
+  "Layer 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.35",
+        "scaleY" : "0.35",
+        "opacity" : "255",
+        "png" : "effect_denglu_liuxingxing_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "40"
+    },
+    "order" : "0",
+    "f40" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "177.74",
+        "scaleX" : "0.35",
+        "scaleY" : "0.35",
+        "opacity" : "0",
+        "png" : "effect_denglu_liuxingxing_1.png"
+      },
+      "nextFrame" : "f41",
+      "frames" : "2"
+    },
+    "f41" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f80" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_denglu_liuxingxing.png"
+}

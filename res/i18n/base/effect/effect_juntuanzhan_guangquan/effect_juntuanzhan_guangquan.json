@@ -1,0 +1,93 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "92.15",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.62",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_guangquan_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "1",
+    "f10" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "73.8",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.28",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_guangquan_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "11"
+    },
+    "f20" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "92.15",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.62",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_guangquan_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "11"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "73.8",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.28",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_guangquan_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "11"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "92.15",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.62",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_guangquan_1.png"
+      }
+    }
+  },
+  "图层 21_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.25",
+        "y" : "-1.9",
+        "rotation" : "0",
+        "scaleX" : "0.8",
+        "scaleY" : "1",
+        "opacity" : "109",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_guangquan_2.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f40" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuanzhan_guangquan.png"
+}

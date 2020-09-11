@@ -1,0 +1,192 @@
+{
+  "图层 2_0" : {
+
+  },
+  "2.png_1" : {
+    "f10" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "6"
+    },
+    "order" : "3",
+    "f15" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.9",
+        "rotation" : "0",
+        "scaleX" : "3.3",
+        "scaleY" : "3.3",
+        "opacity" : "0",
+        "png" : "effect_zhandoujiasu_3_1.png"
+      }
+    },
+    "f16" : {
+      "remove" : "1"
+    }
+  },
+  "图层 5_2" : {
+    "f15" : {
+      "start" : {
+        "x" : "-1.15",
+        "y" : "0.95",
+        "rotation" : "0",
+        "scaleX" : "2.06",
+        "scaleY" : "2.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_zhandoujiasu_3_2.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "11"
+    },
+    "order" : "2",
+    "f25" : {
+      "start" : {
+        "x" : "-1.15",
+        "y" : "0.95",
+        "rotation" : "0",
+        "scaleX" : "2.52",
+        "scaleY" : "2.52",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_zhandoujiasu_3_2.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "2"
+    },
+    "f26" : {
+      "remove" : "1"
+    }
+  },
+  "3.png_3" : {
+    "f15" : {
+      "start" : {
+        "x" : "-9.15",
+        "y" : "0.95",
+        "rotation" : "0",
+        "scaleX" : "2.06",
+        "scaleY" : "2.06",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_2.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "6"
+    },
+    "order" : "1",
+    "f20" : {
+      "start" : {
+        "x" : "-9.15",
+        "y" : "0.95",
+        "rotation" : "0",
+        "scaleX" : "0.8",
+        "scaleY" : "0.8",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_2.png"
+      },
+      "nextFrame" : "f24",
+      "frames" : "5"
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-9.15",
+        "y" : "0.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_2.png"
+      }
+    },
+    "f51" : {
+      "remove" : "1"
+    }
+  },
+  "图层 8_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-123.55",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "1.78",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_zhandoujiasu_3_3.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "10.45",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_3.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "5"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-3.55",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_3.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "-3.55",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_3.png"
+      }
+    },
+    "f51" : {
+      "start" : {
+        "x" : "-3.55",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandoujiasu_3_3.png"
+      },
+      "nextFrame" : "f61",
+      "frames" : "11"
+    },
+    "f61" : {
+      "start" : {
+        "x" : "-3.55",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_zhandoujiasu_3_3.png"
+      }
+    }
+  },
+  "events" : {
+    "f62" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_zhandoujiasu_3.png"
+}

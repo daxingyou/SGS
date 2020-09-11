@@ -1,0 +1,146 @@
+{
+  "star_di_1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-100.45",
+        "rotation" : "0",
+        "scaleX" : "0.58",
+        "scaleY" : "0.58",
+        "opacity" : "0",
+        "png" : "effect_win_windi_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-36.45",
+        "rotation" : "0",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255",
+        "png" : "effect_win_windi_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-36.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_win_windi_1.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-41.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_win_windi_1.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-36.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_win_windi_1.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-38.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_win_windi_1.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-36.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_win_windi_1.png"
+      }
+    }
+  },
+  "effect_flash_1" : {
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-37.5",
+        "rotation" : "0",
+        "scaleX" : "1.15",
+        "scaleY" : "1.21",
+        "opacity" : "0",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f14",
+      "frames" : "4"
+    },
+    "effect" : "effect_flash",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-37.5",
+        "rotation" : "0",
+        "scaleX" : "1.25",
+        "scaleY" : "1.23",
+        "opacity" : "188",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f17",
+      "frames" : "4"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-37.5",
+        "rotation" : "0",
+        "scaleX" : "1.25",
+        "scaleY" : "1.23",
+        "opacity" : "255",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f28",
+      "frames" : "12"
+    },
+    "f28" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-37.5",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.73",
+        "opacity" : "0",
+        "blendMode" : "add"
+      }
+    }
+  },
+  "events" : {
+    "f101" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_win_windi.png"
+}

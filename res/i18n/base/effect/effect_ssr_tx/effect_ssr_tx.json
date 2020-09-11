@@ -1,0 +1,202 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_1.png"
+      }
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_2.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_3.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_4.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_5.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_6.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_7.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_8.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_9.png"
+      }
+    },
+    "f28" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_10.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_11.png"
+      }
+    },
+    "f34" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_12.png"
+      }
+    },
+    "f37" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_13.png"
+      }
+    },
+    "f40" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_14.png"
+      }
+    },
+    "f43" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_15.png"
+      }
+    },
+    "f46" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ssr_tx_16.png"
+      }
+    }
+  },
+  "events" : {
+    "f48" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_ssr_tx.png"
+}

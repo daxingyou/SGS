@@ -1,0 +1,77 @@
+{
+  "routine_word_shibai_9" : {
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.5",
+        "rotation" : "0",
+        "scaleX" : "3",
+        "scaleY" : "3",
+        "opacity" : "76"
+      },
+      "nextFrame" : "f8",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f8" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f10",
+      "frames" : "3"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "f40" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "6"
+    },
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    }
+  },
+  "effect_jingji_shibaidi" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.5",
+        "rotation" : "0",
+        "scaleX" : "1.43",
+        "scaleY" : "1.43",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f46" : "finish"
+  }
+}
