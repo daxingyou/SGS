@@ -1,0 +1,219 @@
+{
+	"version": "1.0",
+	"damage": 9,
+	"frameCount": 93,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 93,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 9,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"9": {
+					"id": 9,
+					"duration": 8,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 67.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"17": {
+					"id": 17,
+					"duration": 7,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 88.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"24": {
+					"id": 24,
+					"duration": 8,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 67.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"32": {
+					"id": 32,
+					"duration": 7,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 88.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"39": {
+					"id": 39,
+					"duration": 8,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 67.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"47": {
+					"id": 47,
+					"duration": 7,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 88.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"54": {
+					"id": 54,
+					"duration": 10,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 67.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"64": {
+					"id": 64,
+					"duration": 10,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 170.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"74": {
+					"id": 74,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"75": {
+					"id": 75,
+					"duration": 18,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"29": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"35": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"41": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"46": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"75": [
+			{
+				"type": "damage",
+				"value1": "5",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "idle",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"0": [
+			{
+				"type": "animation",
+				"value1": "hitfly",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

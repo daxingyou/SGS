@@ -1,0 +1,120 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 270,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 270,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 269,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -360.7,
+					"height": 360.7,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"269": {
+					"id": 269,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "shadow",
+			"frameCount": 270,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 35,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"35": {
+					"id": 35,
+					"duration": 7,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"42": {
+					"id": 42,
+					"duration": 228,
+					"isMotion": false,
+					"element": true,
+					"x": -21.6,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_453_skill_1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"151": [
+			{
+				"type": "sound",
+				"value1": "fy_453_skill_2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"124": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

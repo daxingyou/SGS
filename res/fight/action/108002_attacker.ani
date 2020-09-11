@@ -1,0 +1,149 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 131,
+	"layers": [
+		{
+			"name": "se1080021",
+			"frameCount": 131,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 131,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 612.15,
+					"height": -612.15,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 131,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 131,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "shadow",
+			"frameCount": 131,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 74,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"74": {
+					"id": 74,
+					"duration": 9,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"83": {
+					"id": 83,
+					"duration": 8,
+					"isMotion": false,
+					"element": true,
+					"x": -189.05,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"91": {
+					"id": 91,
+					"duration": 12,
+					"isMotion": true,
+					"element": true,
+					"x": -189.05,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"103": {
+					"id": 103,
+					"duration": 6,
+					"isMotion": true,
+					"element": true,
+					"x": -77,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"109": {
+					"id": 109,
+					"duration": 22,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"49": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"0": [
+			{
+				"type": "animation",
+				"value1": "skill2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}
