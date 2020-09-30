@@ -1,0 +1,272 @@
+
+117_fore_effect.png
+size: 977,345
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+texiao/dandao-a_00
+  rotate: true
+  xy: 529, 193
+  size: 150, 21
+  orig: 180, 40
+  offset: 0, 10
+  index: -1
+texiao/dandao-a_01
+  rotate: true
+  xy: 148, 167
+  size: 176, 21
+  orig: 180, 40
+  offset: 1, 10
+  index: -1
+texiao/dandao-a_02
+  rotate: false
+  xy: 2, 3
+  size: 163, 30
+  orig: 180, 40
+  offset: 17, 7
+  index: -1
+texiao/dandao-a_03
+  rotate: true
+  xy: 613, 52
+  size: 140, 32
+  orig: 180, 40
+  offset: 40, 6
+  index: -1
+texiao/dandao-a_04
+  rotate: false
+  xy: 261, 5
+  size: 119, 33
+  orig: 180, 40
+  offset: 61, 5
+  index: -1
+texiao/dandao-a_05
+  rotate: false
+  xy: 525, 6
+  size: 118, 33
+  orig: 180, 40
+  offset: 62, 5
+  index: -1
+texiao/dandao-a_06
+  rotate: false
+  xy: 828, 17
+  size: 80, 33
+  orig: 180, 40
+  offset: 64, 5
+  index: -1
+texiao/dandao-a_07
+  rotate: true
+  xy: 940, 72
+  size: 80, 32
+  orig: 180, 40
+  offset: 64, 6
+  index: -1
+texiao/dandao-a_08
+  rotate: false
+  xy: 131, 40
+  size: 78, 25
+  orig: 180, 40
+  offset: 66, 7
+  index: -1
+texiao/dandao-a_09
+  rotate: false
+  xy: 211, 40
+  size: 72, 25
+  orig: 180, 40
+  offset: 66, 7
+  index: -1
+texiao/dandao-a_10
+  rotate: true
+  xy: 106, 35
+  size: 30, 23
+  orig: 180, 40
+  offset: 108, 7
+  index: -1
+texiao/dandao-a_11
+  rotate: false
+  xy: 86, 38
+  size: 9, 10
+  orig: 180, 40
+  offset: 124, 9
+  index: -1
+texiao/dandao_00
+  rotate: false
+  xy: 167, 3
+  size: 92, 35
+  orig: 352, 52
+  offset: 9, 8
+  index: -1
+texiao/dandao_01
+  rotate: true
+  xy: 2, 35
+  size: 308, 40
+  orig: 352, 52
+  offset: 10, 7
+  index: -1
+texiao/dandao_02
+  rotate: true
+  xy: 44, 41
+  size: 302, 40
+  orig: 352, 52
+  offset: 24, 7
+  index: -1
+texiao/dandao_03
+  rotate: true
+  xy: 106, 67
+  size: 276, 40
+  orig: 352, 52
+  offset: 58, 6
+  index: -1
+texiao/dandao_04
+  rotate: false
+  xy: 773, 6
+  size: 53, 44
+  orig: 352, 52
+  offset: 56, 3
+  index: -1
+texiao/fas
+  rotate: true
+  xy: 86, 50
+  size: 293, 18
+  orig: 293, 19
+  offset: 0, 1
+  index: -1
+texiao/shouji_00
+  rotate: true
+  xy: 233, 112
+  size: 59, 50
+  orig: 120, 104
+  offset: 29, 27
+  index: -1
+texiao/shouji_01
+  rotate: false
+  xy: 876, 154
+  size: 94, 74
+  orig: 120, 104
+  offset: 14, 18
+  index: -1
+texiao/shouji_02
+  rotate: true
+  xy: 148, 67
+  size: 98, 83
+  orig: 120, 104
+  offset: 12, 11
+  index: -1
+texiao/shouji_03
+  rotate: true
+  xy: 772, 52
+  size: 100, 81
+  orig: 120, 104
+  offset: 12, 14
+  index: -1
+texiao/shouji_04
+  rotate: true
+  xy: 855, 59
+  size: 93, 83
+  orig: 120, 104
+  offset: 19, 12
+  index: -1
+texiao/shouji_05
+  rotate: true
+  xy: 772, 156
+  size: 61, 70
+  orig: 120, 104
+  offset: 20, 12
+  index: -1
+texiao/xuli-a_10
+  rotate: false
+  xy: 382, 2
+  size: 141, 37
+  orig: 152, 64
+  offset: 9, 1
+  index: -1
+texiao/xuli-a_11
+  rotate: true
+  xy: 560, 51
+  size: 141, 51
+  orig: 152, 64
+  offset: 9, 1
+  index: -1
+texiao/xuli-a_12
+  rotate: false
+  xy: 645, 2
+  size: 126, 48
+  orig: 152, 64
+  offset: 24, 1
+  index: -1
+texiao/xuli-a_13
+  rotate: true
+  xy: 647, 71
+  size: 135, 47
+  orig: 152, 64
+  offset: 15, 1
+  index: -1
+texiao/xuli_08
+  rotate: false
+  xy: 407, 192
+  size: 120, 151
+  orig: 180, 172
+  offset: 35, 19
+  index: -1
+texiao/xuli_10
+  rotate: false
+  xy: 771, 219
+  size: 103, 124
+  orig: 180, 172
+  offset: 44, 30
+  index: -1
+texiao/xuli_12
+  rotate: true
+  xy: 876, 230
+  size: 113, 99
+  orig: 180, 172
+  offset: 51, 39
+  index: -1
+texiao/xuli_14
+  rotate: true
+  xy: 552, 194
+  size: 149, 82
+  orig: 180, 172
+  offset: 3, 46
+  index: -1
+texiao/xuli_16
+  rotate: true
+  xy: 696, 80
+  size: 126, 74
+  orig: 180, 172
+  offset: 14, 48
+  index: -1
+texiao/xuli_18
+  rotate: false
+  xy: 291, 182
+  size: 114, 161
+  orig: 180, 172
+  offset: 26, 0
+  index: -1
+texiao/xuli_20
+  rotate: false
+  xy: 414, 41
+  size: 144, 149
+  orig: 180, 172
+  offset: 20, 3
+  index: -1
+texiao/xuli_22
+  rotate: true
+  xy: 285, 41
+  size: 130, 127
+  orig: 180, 172
+  offset: 27, 14
+  index: -1
+texiao/xuli_24
+  rotate: false
+  xy: 636, 208
+  size: 133, 135
+  orig: 180, 172
+  offset: 30, 15
+  index: -1
+texiao/xuli_26
+  rotate: true
+  xy: 171, 173
+  size: 170, 118
+  orig: 180, 172
+  offset: 6, 23
+  index: -1
