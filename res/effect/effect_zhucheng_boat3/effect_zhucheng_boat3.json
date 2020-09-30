@@ -1,0 +1,97 @@
+{
+  "图层 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.05",
+        "rotation" : "-1.28",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "9"
+    },
+    "order" : "0",
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.8",
+        "rotation" : "-2",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      },
+      "nextFrame" : "f34",
+      "frames" : "26"
+    },
+    "f34" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      }
+    },
+    "f35" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      },
+      "nextFrame" : "f59",
+      "frames" : "25"
+    },
+    "f59" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.8",
+        "rotation" : "2",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      },
+      "nextFrame" : "f84",
+      "frames" : "26"
+    },
+    "f84" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "17"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.1",
+        "rotation" : "-1.26",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhucheng_boat3_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f100" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_zhucheng_boat3.png"
+}

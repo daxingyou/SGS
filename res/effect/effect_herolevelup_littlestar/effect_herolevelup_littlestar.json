@@ -1,0 +1,409 @@
+{
+  "元件 9_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "83.05",
+        "y" : "95.45",
+        "rotation" : "9.51",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "109",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "5",
+    "f4" : {
+      "start" : {
+        "x" : "90.1",
+        "y" : "113.65",
+        "rotation" : "9.51",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "37.1",
+        "y" : "-36.5",
+        "rotation" : "24.03",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "10"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "73.75",
+        "y" : "71.25",
+        "rotation" : "9.51",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "4"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "80.7",
+        "y" : "89.4",
+        "rotation" : "9.51",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "145",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      }
+    }
+  },
+  "元件 10_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "156.6",
+        "y" : "8.45",
+        "rotation" : "-17.3",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "4",
+    "f2" : {
+      "start" : {
+        "x" : "171.8",
+        "y" : "17.25",
+        "rotation" : "-17.49",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "8"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "215.95",
+        "y" : "45.8",
+        "rotation" : "-17.49",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "34.8",
+        "y" : "-61.9",
+        "rotation" : "-17.49",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "6"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "110.85",
+        "y" : "-17.95",
+        "rotation" : "-17.33",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "3"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "141.35",
+        "y" : "-0.3",
+        "rotation" : "-17.31",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      }
+    }
+  },
+  "元件 11_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-125.95",
+        "y" : "88.3",
+        "rotation" : "55.43",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "181",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "3",
+    "f6" : {
+      "start" : {
+        "x" : "-148.1",
+        "y" : "124.65",
+        "rotation" : "55.48",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-33.2",
+        "y" : "-56",
+        "rotation" : "55.48",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "8"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-98.55",
+        "y" : "44.9",
+        "rotation" : "55.44",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      },
+      "nextFrame" : "f16",
+      "frames" : "3"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-117.2",
+        "y" : "73.65",
+        "rotation" : "55.48",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "2"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-121.6",
+        "y" : "80.95",
+        "rotation" : "55.44",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "219",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      }
+    }
+  },
+  "元件 9_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-18",
+        "y" : "-8.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "2",
+    "f10" : {
+      "start" : {
+        "x" : "-58.3",
+        "y" : "97.85",
+        "rotation" : "-30",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "8"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-72.7",
+        "y" : "140.95",
+        "rotation" : "-30",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_1.png"
+      }
+    }
+  },
+  "元件 10_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "279.95",
+        "y" : "-13.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "35",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "1",
+    "f2" : {
+      "start" : {
+        "x" : "287.2",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "82.05",
+        "y" : "-59.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "10"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "236.5",
+        "y" : "-25.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "6"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "272.7",
+        "y" : "-15.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "73",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_2.png"
+      }
+    }
+  },
+  "元件 11_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-247",
+        "y" : "-54",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "219",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "-298",
+        "y" : "-51.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-84.05",
+        "y" : "-58.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "10"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-238.5",
+        "y" : "-54.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_littlestar_3.png"
+      }
+    }
+  },
+  "events" : {
+    "f17" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_herolevelup_littlestar.png"
+}

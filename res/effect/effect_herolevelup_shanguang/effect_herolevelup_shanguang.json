@@ -1,0 +1,22 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.1",
+        "y" : "-1.25",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_shanguang_1.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_herolevelup_shanguang.png"
+}

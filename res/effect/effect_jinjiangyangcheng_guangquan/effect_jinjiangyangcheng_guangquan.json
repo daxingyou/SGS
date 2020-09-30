@@ -1,0 +1,113 @@
+{
+  "图层 2_1" : {
+    "f16" : {
+      "start" : {
+        "x" : "5.75",
+        "y" : "1.65",
+        "rotation" : "0",
+        "scaleX" : "3.24",
+        "scaleY" : "3.24",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "5"
+    },
+    "order" : "1",
+    "f20" : {
+      "start" : {
+        "x" : "5.75",
+        "y" : "1.65",
+        "rotation" : "0",
+        "scaleX" : "3.24",
+        "scaleY" : "3.24",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "26"
+    },
+    "f45" : {
+      "start" : {
+        "x" : "5.75",
+        "y" : "1.65",
+        "rotation" : "0",
+        "scaleX" : "3.24",
+        "scaleY" : "3.24",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_1.png"
+      }
+    },
+    "f46" : {
+      "remove" : "1"
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.3",
+        "y" : "-2.3",
+        "rotation" : "0",
+        "scaleX" : "0.92",
+        "scaleY" : "0.92",
+        "opacity" : "25",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_2.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "12"
+    },
+    "order" : "0",
+    "f12" : {
+      "start" : {
+        "x" : "2.3",
+        "y" : "-2.3",
+        "rotation" : "0",
+        "scaleX" : "0.93",
+        "scaleY" : "0.93",
+        "opacity" : "165",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_2.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "9"
+    },
+    "f20" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "-0.8",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_2.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "26"
+    },
+    "f45" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "-0.8",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_guangquan_2.png"
+      }
+    },
+    "f46" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f70" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_jinjiangyangcheng_guangquan.png"
+}

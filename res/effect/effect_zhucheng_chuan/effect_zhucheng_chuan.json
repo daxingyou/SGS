@@ -1,0 +1,112 @@
+{
+  "effect_zhucheng_boat2_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-6.8",
+        "y" : "-26.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_boat2",
+    "useBatchNode" : "true",
+    "order" : "6"
+  },
+  "effect_zhucheng_boat1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "37.8",
+        "y" : "-32.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_boat1",
+    "useBatchNode" : "true",
+    "order" : "5"
+  },
+  "effect_zhucheng_boat3_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-80.85",
+        "y" : "14.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_boat3",
+    "useBatchNode" : "true",
+    "order" : "4"
+  },
+  "effect_zhucheng_boat4_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-64.8",
+        "y" : "24.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_boat4",
+    "useBatchNode" : "true",
+    "order" : "3"
+  },
+  "effect_zhucheng_boat5_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-65.75",
+        "y" : "39.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_boat5",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_zhucheng_chuandi_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "21.1",
+        "y" : "-43",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_chuandi",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "effect_zhucheng_shuibo_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "95.85",
+        "y" : "-52.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhucheng_shuibo",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

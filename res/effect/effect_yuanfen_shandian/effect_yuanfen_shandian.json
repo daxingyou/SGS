@@ -1,0 +1,166 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-74.1",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_1.png"
+      }
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "-62.65",
+        "y" : "-0.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_2.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "-49.7",
+        "y" : "-0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_3.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-51.3",
+        "y" : "-1.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_4.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-43.7",
+        "y" : "-0.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_5.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-27.15",
+        "y" : "-2.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_6.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "19.2",
+        "y" : "-0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_7.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "34.1",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_8.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "37.25",
+        "y" : "-3.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_9.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "46",
+        "y" : "-4.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_10.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "63.3",
+        "y" : "1.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_11.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "77.9",
+        "y" : "3.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_12.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "86.7",
+        "y" : "4.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_yuanfen_shandian_13.png"
+      }
+    }
+  },
+  "events" : {
+    "f14" : "finish"
+  },
+  "scale" : "1.33",
+  "png" : "effect_yuanfen_shandian.png"
+}

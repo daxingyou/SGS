@@ -1,0 +1,106 @@
+{
+  "图层 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.65",
+        "y" : "-1.25",
+        "rotation" : "1",
+        "scaleX" : "2.26",
+        "scaleY" : "3.83",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "0",
+    "f20" : {
+      "start" : {
+        "x" : "4.95",
+        "y" : "-1.05",
+        "rotation" : "0.78",
+        "scaleX" : "2.33",
+        "scaleY" : "3.83",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "21"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "10.6",
+        "y" : "0.15",
+        "rotation" : "0.29",
+        "scaleX" : "2.6",
+        "scaleY" : "3.83",
+        "opacity" : "30",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "21"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "11.1",
+        "y" : "0.6",
+        "rotation" : "0.3",
+        "scaleX" : "2.68",
+        "scaleY" : "3.83",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "21"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "10.45",
+        "y" : "0.45",
+        "rotation" : "0.29",
+        "scaleX" : "2.61",
+        "scaleY" : "3.83",
+        "opacity" : "30",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "21"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "4.95",
+        "y" : "-0.6",
+        "rotation" : "0.77",
+        "scaleX" : "2.35",
+        "scaleY" : "3.83",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      },
+      "nextFrame" : "f120",
+      "frames" : "21"
+    },
+    "f120" : {
+      "start" : {
+        "x" : "2.65",
+        "y" : "-1.25",
+        "rotation" : "1",
+        "scaleX" : "2.26",
+        "scaleY" : "3.83",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_xiangyangguanqia_guangxian1_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f120" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_xiangyangguanqia_guangxian1.png"
+}

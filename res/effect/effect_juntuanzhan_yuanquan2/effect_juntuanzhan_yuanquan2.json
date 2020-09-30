@@ -1,0 +1,69 @@
+{
+  "图层 5_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "-0.85",
+        "rotation" : "13.98",
+        "scaleX" : "1.9",
+        "scaleY" : "1.9",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan2_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "-0.85",
+        "rotation" : "67.44",
+        "scaleX" : "1.9",
+        "scaleY" : "1.9",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan2_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "8"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "-0.85",
+        "rotation" : "-142.53",
+        "scaleX" : "1.9",
+        "scaleY" : "1.9",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan2_1.png"
+      },
+      "nextFrame" : "f23",
+      "frames" : "13"
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-0.6",
+        "y" : "0.05",
+        "rotation" : "-83.36",
+        "scaleX" : "1.9",
+        "scaleY" : "1.9",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan2_1.png"
+      },
+      "nextFrame" : "f24",
+      "frames" : "2"
+    },
+    "f24" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f30" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuanzhan_yuanquan2.png"
+}

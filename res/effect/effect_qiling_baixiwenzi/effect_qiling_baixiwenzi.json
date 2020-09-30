@@ -1,0 +1,97 @@
+{
+  "effect_qiling_xingxing_copy2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "3.25",
+        "y" : "17.35",
+        "rotation" : "0",
+        "scaleX" : "-0.25",
+        "scaleY" : "0.25",
+        "opacity" : "226"
+      }
+    },
+    "effect" : "effect_qiling_xingxing",
+    "useBatchNode" : "true",
+    "order" : "5"
+  },
+  "effect_qiling_xingxing_copy1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.25",
+        "y" : "-25.25",
+        "rotation" : "0",
+        "scaleX" : "0.29",
+        "scaleY" : "0.29",
+        "opacity" : "226"
+      }
+    },
+    "effect" : "effect_qiling_xingxing",
+    "useBatchNode" : "true",
+    "order" : "4"
+  },
+  "effect_taozhuang_orange_lizi_2_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.65",
+        "y" : "7.8",
+        "rotation" : "-51.24",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taozhuang_orange_lizi_2",
+    "useBatchNode" : "true",
+    "order" : "3"
+  },
+  "effect_taozhuang_orange_lizi1_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.45",
+        "y" : "11.35",
+        "rotation" : "89.99",
+        "scaleX" : "0.75",
+        "scaleY" : "0.47",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taozhuang_orange_lizi",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_taozhuang_orange_lizi2_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.45",
+        "y" : "-27.6",
+        "rotation" : "0",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.49",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taozhuang_orange_lizi",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "effect_icon_jinnang_tongyong_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.9",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.67",
+        "opacity" : "204"
+      }
+    },
+    "effect" : "effect_icon_jinnang_tongyong",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

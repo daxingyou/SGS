@@ -1,0 +1,184 @@
+{
+  "spine_juntuanchuanqi_effect2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-11.25",
+        "y" : "86.7",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "4",
+    "f45" : {
+      "start" : {
+        "x" : "-8.85",
+        "y" : "88.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_1.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-11.25",
+        "y" : "86.7",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_1.png"
+      }
+    }
+  },
+  "spine_juntuanchuanqi_effect1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-31.95",
+        "y" : "21.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "3",
+    "f45" : {
+      "start" : {
+        "x" : "-29.85",
+        "y" : "24.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_1.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-31.95",
+        "y" : "21.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_1.png"
+      }
+    }
+  },
+  "chuan3.png_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.6",
+        "y" : "9.3",
+        "rotation" : "-0.5",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_2.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "2",
+    "f45" : {
+      "start" : {
+        "x" : "-1.3",
+        "y" : "11.55",
+        "rotation" : "1",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_2.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-2.6",
+        "y" : "9.3",
+        "rotation" : "-0.5",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_2.png"
+      }
+    }
+  },
+  "effect_taohuayuan_shuibo_1_copy1_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "12.35",
+        "y" : "-54.05",
+        "rotation" : "-16.25",
+        "scaleX" : "-0.36",
+        "scaleY" : "0.33",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_taohuayuan_shuibo_1",
+    "useBatchNode" : "true",
+    "first_frame" : "18",
+    "loop" : "loop",
+    "order" : "1"
+  },
+  "yy.png_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "7.1",
+        "y" : "-47.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_3.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "0",
+    "f45" : {
+      "start" : {
+        "x" : "7.8",
+        "y" : "-48.8",
+        "rotation" : "-2.19",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_3.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "7.1",
+        "y" : "-47.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan1_3.png"
+      }
+    }
+  },
+  "events" : {
+    "f90" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuan_chuan1.png"
+}

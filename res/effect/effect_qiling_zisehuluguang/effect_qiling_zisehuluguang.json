@@ -1,0 +1,22 @@
+{
+  "effect_qiling_ziseguangquan_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "127"
+      }
+    },
+    "effect" : "effect_qiling_ziseguangquan",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

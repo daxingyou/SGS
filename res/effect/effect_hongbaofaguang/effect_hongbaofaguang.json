@@ -1,0 +1,197 @@
+{
+  "图层 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "1",
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "13.04",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "16"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "27.19",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "15"
+    },
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "13.04",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "16"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "27.19",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      }
+    }
+  },
+  "图层 2_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "47.7",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "0",
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "66.93",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "23.99",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "16"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "46.15",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "239",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "47.7",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "14"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "66.93",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      }
+    },
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "23.99",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "16"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "46.15",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "239",
+        "blendMode" : "add",
+        "png" : "effect_hongbaofaguang_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_hongbaofaguang.png"
+}

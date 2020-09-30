@@ -1,0 +1,119 @@
+{
+  "star_1_0" : {
+    "f4" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_starfall_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f6" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "4.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_starfall_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "6"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "4.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_starfall_1.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "star_1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "66.25",
+        "rotation" : "0",
+        "scaleX" : "3",
+        "scaleY" : "3",
+        "opacity" : "0",
+        "png" : "effect_starfall_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-1.75",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255",
+        "png" : "effect_starfall_2.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "4.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_starfall_2.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "4.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_starfall_2.png"
+      }
+    }
+  },
+  "effect_sljs_hurt_1_2" : {
+    "f4" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-1.8",
+        "rotation" : "162.73",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_sljs_hurt_1",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f91" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_starfall.png"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_juexing_dian_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{30,30}}</string>
+                <key>offset</key>
+                <string>{0,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{6,5},{30,30}}</string>
+                <key>sourceSize</key>
+                <string>{42,42}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_juexing_dian.png</string>
+            <key>size</key>
+            <string>{34,34}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:fbab71c00940a0485ba529e34e562625$</string>
+            <key>textureFileName</key>
+            <string>effect_juexing_dian.png</string>
+        </dict>
+    </dict>
+</plist>

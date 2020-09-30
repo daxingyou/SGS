@@ -1,0 +1,439 @@
+{
+  "图层 8_0" : {
+    "f6" : {
+      "start" : {
+        "x" : "-1.5",
+        "y" : "93.55",
+        "rotation" : "20.23",
+        "scaleX" : "1.86",
+        "scaleY" : "1.86",
+        "opacity" : "28",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "4"
+    },
+    "order" : "9",
+    "f9" : {
+      "start" : {
+        "x" : "-1.5",
+        "y" : "109.55",
+        "rotation" : "66.19",
+        "scaleX" : "1.11",
+        "scaleY" : "1.11",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_1.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "9"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-1.45",
+        "y" : "132.25",
+        "rotation" : "118.8",
+        "scaleX" : "0.63",
+        "scaleY" : "0.63",
+        "opacity" : "33",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_1.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "dfnfn_1" : {
+    "f5" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "151.95",
+        "rotation" : "82.03",
+        "scaleX" : "-0.72",
+        "scaleY" : "0.72",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "11"
+    },
+    "order" : "8",
+    "f15" : {
+      "start" : {
+        "x" : "1.8",
+        "y" : "233.1",
+        "rotation" : "-76.24",
+        "scaleX" : "-0.72",
+        "scaleY" : "0.72",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      }
+    },
+    "f16" : {
+      "remove" : "1"
+    }
+  },
+  "dfnfn_2" : {
+    "f8" : {
+      "start" : {
+        "x" : "2.8",
+        "y" : "101.2",
+        "rotation" : "-133.83",
+        "scaleX" : "-1.21",
+        "scaleY" : "1.21",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "8"
+    },
+    "order" : "7",
+    "f15" : {
+      "start" : {
+        "x" : "2.8",
+        "y" : "134.25",
+        "rotation" : "-31.79",
+        "scaleX" : "-0.48",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      }
+    },
+    "f16" : {
+      "remove" : "1"
+    }
+  },
+  "dfnfn_3" : {
+    "f6" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "157.7",
+        "rotation" : "42.55",
+        "scaleX" : "-0.48",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "7"
+    },
+    "order" : "6",
+    "f12" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "300.3",
+        "rotation" : "-76.23",
+        "scaleX" : "-0.48",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      }
+    },
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "dfnfn_4" : {
+    "f4" : {
+      "start" : {
+        "x" : "-11.85",
+        "y" : "111",
+        "rotation" : "-59.24",
+        "scaleX" : "-0.48",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "9"
+    },
+    "order" : "5",
+    "f12" : {
+      "start" : {
+        "x" : "-11.6",
+        "y" : "180.8",
+        "rotation" : "-76.23",
+        "scaleX" : "-0.48",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_2.png"
+      }
+    },
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "图层 10_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.55",
+        "y" : "105.35",
+        "rotation" : "0",
+        "scaleX" : "2.29",
+        "scaleY" : "1.23",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_3.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "4",
+    "f4" : {
+      "start" : {
+        "x" : "-1.55",
+        "y" : "219.25",
+        "rotation" : "0",
+        "scaleX" : "2.29",
+        "scaleY" : "2.29",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_3.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-1.5",
+        "y" : "269.4",
+        "rotation" : "0",
+        "scaleX" : "2.29",
+        "scaleY" : "2.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_3.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "7"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-1.55",
+        "y" : "303.5",
+        "rotation" : "0",
+        "scaleX" : "2.29",
+        "scaleY" : "2.81",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_3.png"
+      }
+    },
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "图层 9_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-6.3",
+        "y" : "29.9",
+        "rotation" : "0",
+        "scaleX" : "1.8",
+        "scaleY" : "0.73",
+        "opacity" : "66",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_4.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "3",
+    "f3" : {
+      "start" : {
+        "x" : "-6.3",
+        "y" : "78.35",
+        "rotation" : "0",
+        "scaleX" : "1.8",
+        "scaleY" : "2.01",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_4.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "6"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-6.3",
+        "y" : "132.2",
+        "rotation" : "0",
+        "scaleX" : "1.8",
+        "scaleY" : "2.98",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_4.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "元件 4_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.15",
+        "y" : "128.55",
+        "rotation" : "0",
+        "scaleX" : "3.37",
+        "scaleY" : "4.84",
+        "opacity" : "73",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_5.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f3" : {
+      "start" : {
+        "x" : "1.2",
+        "y" : "139",
+        "rotation" : "0",
+        "scaleX" : "5.57",
+        "scaleY" : "6.65",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_5.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "9"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "1.2",
+        "y" : "179",
+        "rotation" : "0",
+        "scaleX" : "4.25",
+        "scaleY" : "8.17",
+        "opacity" : "40",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_5.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "图层 5_8" : {
+    "f1" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-1.35",
+        "rotation" : "0",
+        "scaleX" : "1.9",
+        "scaleY" : "1.9",
+        "opacity" : "17",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_6.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "1",
+    "f3" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-1.3",
+        "rotation" : "0",
+        "scaleX" : "1.75",
+        "scaleY" : "1.75",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_6.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-1.35",
+        "rotation" : "0",
+        "scaleX" : "0.77",
+        "scaleY" : "0.77",
+        "opacity" : "17",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_6.png"
+      }
+    },
+    "f7" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_9" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.9",
+        "y" : "-1.25",
+        "rotation" : "0",
+        "scaleX" : "1.49",
+        "scaleY" : "1.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_7.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "-3.65",
+        "y" : "-1.2",
+        "rotation" : "0",
+        "scaleX" : "3.36",
+        "scaleY" : "3.36",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_7.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-3.55",
+        "y" : "-1.2",
+        "rotation" : "0",
+        "scaleX" : "2.9",
+        "scaleY" : "2.9",
+        "opacity" : "204",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_7.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "7"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-3.65",
+        "y" : "-1.2",
+        "rotation" : "0",
+        "scaleX" : "2.13",
+        "scaleY" : "2.13",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_juntuan_xiaoshi_7.png"
+      }
+    },
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f19" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuan_xiaoshi.png"
+}

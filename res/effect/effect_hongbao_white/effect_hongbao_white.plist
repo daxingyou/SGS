@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_hongbao_white_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{37,46}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{37,46}}</string>
+                <key>sourceSize</key>
+                <string>{45,50}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_hongbao_white.png</string>
+            <key>size</key>
+            <string>{41,50}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:a3da2fd21efd9ca3446502e9acd0733d$</string>
+            <key>textureFileName</key>
+            <string>effect_hongbao_white.png</string>
+        </dict>
+    </dict>
+</plist>

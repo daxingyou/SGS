@@ -1,0 +1,297 @@
+{
+  "图层 12_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-127.3",
+        "y" : "-63.25",
+        "rotation" : "-90.91",
+        "scaleX" : "-0.52",
+        "scaleY" : "0.45",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "9",
+    "f20" : {
+      "start" : {
+        "x" : "-127.1",
+        "y" : "-58",
+        "rotation" : "-87.49",
+        "scaleX" : "-0.52",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-127.1",
+        "y" : "-58",
+        "rotation" : "-87.49",
+        "scaleX" : "-0.52",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "8",
+    "f20" : {
+      "start" : {
+        "x" : "-107.75",
+        "y" : "-31.8",
+        "rotation" : "-71.45",
+        "scaleX" : "-0.59",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-107.75",
+        "y" : "-31.8",
+        "rotation" : "-71.45",
+        "scaleX" : "-0.59",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "7",
+    "f20" : {
+      "start" : {
+        "x" : "-82.4",
+        "y" : "-8.4",
+        "rotation" : "-54.87",
+        "scaleX" : "-0.69",
+        "scaleY" : "0.44",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-82.4",
+        "y" : "-8.4",
+        "rotation" : "-54.87",
+        "scaleX" : "-0.69",
+        "scaleY" : "0.44",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "6",
+    "f20" : {
+      "start" : {
+        "x" : "-47.3",
+        "y" : "8.55",
+        "rotation" : "-31.61",
+        "scaleX" : "-0.6",
+        "scaleY" : "0.38",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-47.3",
+        "y" : "8.55",
+        "rotation" : "-31.61",
+        "scaleX" : "-0.6",
+        "scaleY" : "0.38",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "5",
+    "f20" : {
+      "start" : {
+        "x" : "-9.1",
+        "y" : "21.05",
+        "rotation" : "0",
+        "scaleX" : "-0.64",
+        "scaleY" : "0.37",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "114.5",
+        "y" : "-57.8",
+        "rotation" : "87.49",
+        "scaleX" : "0.52",
+        "scaleY" : "0.47",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "4",
+    "f20" : {
+      "start" : {
+        "x" : "114.75",
+        "y" : "-62.85",
+        "rotation" : "90.62",
+        "scaleX" : "0.52",
+        "scaleY" : "0.47",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "95.8",
+        "y" : "-37.95",
+        "rotation" : "75.79",
+        "scaleX" : "0.61",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "3",
+    "f20" : {
+      "start" : {
+        "x" : "114.5",
+        "y" : "-57.8",
+        "rotation" : "87.49",
+        "scaleX" : "0.52",
+        "scaleY" : "0.47",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_8" : {
+    "f1" : {
+      "start" : {
+        "x" : "76.8",
+        "y" : "-11.9",
+        "rotation" : "60.56",
+        "scaleX" : "0.73",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "2",
+    "f20" : {
+      "start" : {
+        "x" : "95.8",
+        "y" : "-37.95",
+        "rotation" : "75.79",
+        "scaleX" : "0.61",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_9" : {
+    "f1" : {
+      "start" : {
+        "x" : "38.1",
+        "y" : "11.35",
+        "rotation" : "35.09",
+        "scaleX" : "0.62",
+        "scaleY" : "0.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "1",
+    "f20" : {
+      "start" : {
+        "x" : "76.8",
+        "y" : "-11.9",
+        "rotation" : "60.56",
+        "scaleX" : "0.73",
+        "scaleY" : "0.48",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "dzxfh_10" : {
+    "f1" : {
+      "start" : {
+        "x" : "-9.05",
+        "y" : "21.05",
+        "rotation" : "0",
+        "scaleX" : "0.64",
+        "scaleY" : "0.37",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "0",
+    "f20" : {
+      "start" : {
+        "x" : "38.1",
+        "y" : "11.35",
+        "rotation" : "35.09",
+        "scaleX" : "0.62",
+        "scaleY" : "0.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_win_2_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f20" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_win_2.png"
+}

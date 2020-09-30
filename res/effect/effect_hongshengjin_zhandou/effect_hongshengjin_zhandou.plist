@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_hongshengjin_zhandou_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{26,26}}</string>
+                <key>offset</key>
+                <string>{1,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{5,4},{26,26}}</string>
+                <key>sourceSize</key>
+                <string>{34,34}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_hongshengjin_zhandou.png</string>
+            <key>size</key>
+            <string>{30,30}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:f721cfc52653387e10168693f0d869a5$</string>
+            <key>textureFileName</key>
+            <string>effect_hongshengjin_zhandou.png</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_win_22_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{64,362}}</string>
+                <key>offset</key>
+                <string>{-2,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{3,30},{64,362}}</string>
+                <key>sourceSize</key>
+                <string>{74,396}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_win_22.png</string>
+            <key>size</key>
+            <string>{68,366}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:05168974b331b4e55597ea8853051ae3$</string>
+            <key>textureFileName</key>
+            <string>effect_win_22.png</string>
+        </dict>
+    </dict>
+</plist>

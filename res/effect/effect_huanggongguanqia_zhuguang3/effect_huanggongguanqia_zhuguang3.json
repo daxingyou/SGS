@@ -1,0 +1,173 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1.06",
+        "scaleY" : "1.06",
+        "opacity" : "96",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_1.png"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "1",
+    "f2" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.6",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.04",
+        "opacity" : "114",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "3"
+    },
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_1.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "3"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.04",
+        "opacity" : "114",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "4.8",
+        "rotation" : "0",
+        "scaleX" : "0.99",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_2.png"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "5.25",
+        "rotation" : "0",
+        "scaleX" : "0.98",
+        "scaleY" : "1.2",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "3"
+    },
+    "f4" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "4.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "4.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "3"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "5.25",
+        "rotation" : "0",
+        "scaleX" : "0.98",
+        "scaleY" : "1.2",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_2.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "4.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang3_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f9" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_huanggongguanqia_zhuguang3.png"
+}

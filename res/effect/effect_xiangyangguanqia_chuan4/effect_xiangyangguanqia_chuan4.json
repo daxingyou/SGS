@@ -1,0 +1,102 @@
+{
+  "图层 7_0" : {
+
+  },
+  "effect_taohuayuan_shui_2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-117",
+        "y" : "26.2",
+        "rotation" : "15.37",
+        "scaleX" : "1.93",
+        "scaleY" : "0.44",
+        "opacity" : "51"
+      }
+    },
+    "effect" : "effect_taohuayuan_shui_1",
+    "useBatchNode" : "true",
+    "order" : "5"
+  },
+  "effect_taohuayuan_shui_1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "17.85",
+        "y" : "-35.8",
+        "rotation" : "15.37",
+        "scaleX" : "3.97",
+        "scaleY" : "0.45",
+        "opacity" : "51"
+      }
+    },
+    "effect" : "effect_taohuayuan_shui_1",
+    "useBatchNode" : "true",
+    "order" : "4"
+  },
+  "chuan7.png_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.25",
+        "y" : "40.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xiangyangguanqia_chuan4_1.png"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_taohuayuan_shuibo_2_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-65.45",
+        "y" : "3.1",
+        "rotation" : "6.68",
+        "scaleX" : "0.27",
+        "scaleY" : "0.39",
+        "opacity" : "51"
+      }
+    },
+    "effect" : "effect_taohuayuan_shuibo_1",
+    "useBatchNode" : "true",
+    "first_frame" : "27",
+    "loop" : "loop",
+    "order" : "2"
+  },
+  "effect_taohuayuan_shuibo_1_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "119.75",
+        "y" : "-57.8",
+        "rotation" : "-23.5",
+        "scaleX" : "0.19",
+        "scaleY" : "0.45",
+        "opacity" : "76"
+      }
+    },
+    "effect" : "effect_taohuayuan_shuibo_1",
+    "useBatchNode" : "true",
+    "first_frame" : "27",
+    "loop" : "loop",
+    "order" : "1"
+  },
+  "y4.png_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-36.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xiangyangguanqia_chuan4_2.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_xiangyangguanqia_chuan4.png"
+}

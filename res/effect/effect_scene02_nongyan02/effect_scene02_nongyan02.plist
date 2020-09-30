@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_scene02_nongyan02_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{95,94}}</string>
+                <key>offset</key>
+                <string>{-3,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{4,8},{95,94}}</string>
+                <key>sourceSize</key>
+                <string>{109,108}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_scene02_nongyan02.png</string>
+            <key>size</key>
+            <string>{99,98}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:38360e6c0102e6bc5f3be749ca406089$</string>
+            <key>textureFileName</key>
+            <string>effect_scene02_nongyan02.png</string>
+        </dict>
+    </dict>
+</plist>

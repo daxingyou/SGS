@@ -1,0 +1,67 @@
+{
+  "组 1221 拷贝 4_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "570.35",
+        "y" : "31",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_nvzhuchuangjue_2_jianzhu2_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "9"
+    },
+    "order" : "1",
+    "f9" : {
+      "start" : {
+        "x" : "880.45",
+        "y" : "-10.55",
+        "rotation" : "0",
+        "scaleX" : "4.24",
+        "scaleY" : "4.24",
+        "opacity" : "255",
+        "png" : "effect_nvzhuchuangjue_2_jianzhu2_1.png"
+      }
+    },
+    "f10" : {
+      "remove" : "1"
+    }
+  },
+  "组 1221 拷贝 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-460.65",
+        "y" : "-152.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_nvzhuchuangjue_2_jianzhu2_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "-1248.65",
+        "y" : "-353.05",
+        "rotation" : "0",
+        "scaleX" : "3.53",
+        "scaleY" : "3.53",
+        "opacity" : "255",
+        "png" : "effect_nvzhuchuangjue_2_jianzhu2_2.png"
+      }
+    },
+    "f8" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f46" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_nvzhuchuangjue_2_jianzhu2.png"
+}

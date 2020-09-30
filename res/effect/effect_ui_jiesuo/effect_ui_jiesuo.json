@@ -1,0 +1,366 @@
+{
+  "suoxin_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "3",
+    "f6" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "4"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "-10.44",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "4"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "5.8",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "4"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "-11.17",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      },
+      "nextFrame" : "f18",
+      "frames" : "4"
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "3.78",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "4"
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_1.png"
+      }
+    }
+  },
+  "图层 4_2" : {
+    "f2" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "48",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_2.png"
+      }
+    },
+    "order" : "2",
+    "f4" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "135",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_3.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "209",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_4.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_5.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_6.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_7.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_8.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_9.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_10.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_11.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_12.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_13.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_14.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_15.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_16.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_17.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_18.png"
+      }
+    },
+    "f27" : {
+      "remove" : "1"
+    }
+  },
+  "guang_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_19.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "9"
+    },
+    "order" : "1",
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.82",
+        "scaleY" : "1.82",
+        "opacity" : "181",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_19.png"
+      },
+      "nextFrame" : "f27",
+      "frames" : "19"
+    },
+    "f27" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.59",
+        "scaleY" : "2.59",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_ui_jiesuo_19.png"
+      }
+    }
+  },
+  "lALPD2eDJwtbg5RgYA_96_96.png_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_jiesuo_20.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f30" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_ui_jiesuo.png"
+}

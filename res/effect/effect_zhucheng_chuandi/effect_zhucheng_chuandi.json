@@ -1,0 +1,22 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "11.2",
+        "y" : "0",
+        "rotation" : "18.73",
+        "scaleX" : "1.48",
+        "scaleY" : "0.4",
+        "opacity" : "63"
+      }
+    },
+    "effect" : "effect_taohuayuan_shui_1",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

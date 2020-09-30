@@ -1,0 +1,57 @@
+{
+  "effect_xianshou_huohua_0" : {
+    "f4" : {
+      "start" : {
+        "x" : "78.5",
+        "y" : "31.7",
+        "rotation" : "-46.26",
+        "scaleX" : "-1.2",
+        "scaleY" : "0.83",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xianshou_huohua",
+    "useBatchNode" : "true",
+    "order" : "2",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xianshou_huohua_1" : {
+    "f4" : {
+      "start" : {
+        "x" : "-71.5",
+        "y" : "-31.7",
+        "rotation" : "-10.45",
+        "scaleX" : "1.27",
+        "scaleY" : "0.69",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xianshou_huohua",
+    "useBatchNode" : "true",
+    "order" : "1",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "liuguang_2" : {
+    "f4" : {
+      "start" : {
+        "x" : "-4.1",
+        "y" : "1.75",
+        "rotation" : "-27.68",
+        "scaleX" : "2",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_heji_duizhan_1.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f46" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_heji_duizhan.png"
+}

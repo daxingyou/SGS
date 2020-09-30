@@ -1,0 +1,34 @@
+{
+  "图层 2_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "204",
+        "png" : "effect_iconflash_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "0",
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_iconflash_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f25" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_iconflash.png"
+}

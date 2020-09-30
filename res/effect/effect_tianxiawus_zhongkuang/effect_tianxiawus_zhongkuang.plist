@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_tianxiawus_zhongkuang_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{700,640}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{700,640}}</string>
+                <key>sourceSize</key>
+                <string>{700,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_tianxiawus_zhongkuang.png</string>
+            <key>size</key>
+            <string>{704,644}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:dcd9e9f920f332d538da69fd1f4a16be$</string>
+            <key>textureFileName</key>
+            <string>effect_tianxiawus_zhongkuang.png</string>
+        </dict>
+    </dict>
+</plist>
