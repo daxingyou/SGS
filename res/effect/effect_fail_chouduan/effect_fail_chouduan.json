@@ -1,0 +1,127 @@
+{
+  "chouduan_2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-89.5",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "40"
+    },
+    "order" : "2",
+    "f40" : {
+      "start" : {
+        "x" : "-89.5",
+        "y" : "-6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "41"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-89.5",
+        "y" : "-0.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_1.png"
+      }
+    }
+  },
+  "chouduan_3_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "94.3",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_2.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "40"
+    },
+    "order" : "1",
+    "f40" : {
+      "start" : {
+        "x" : "94.3",
+        "y" : "-6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_2.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "41"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "94.3",
+        "y" : "-0.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_2.png"
+      }
+    }
+  },
+  "chouduan_1_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "-16.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_3.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "40"
+    },
+    "order" : "0",
+    "f40" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "-10.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_3.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "41"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "-16.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fail_chouduan_3.png"
+      }
+    }
+  },
+  "events" : {
+    "f80" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_fail_chouduan.png"
+}

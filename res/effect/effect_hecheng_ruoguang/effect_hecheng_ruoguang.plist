@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_hecheng_ruoguang_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{330,333}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{330,333}}</string>
+                <key>sourceSize</key>
+                <string>{330,333}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_hecheng_ruoguang.png</string>
+            <key>size</key>
+            <string>{334,337}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:9dbdad4fe5ed6713fccf98435d76d3fb$</string>
+            <key>textureFileName</key>
+            <string>effect_hecheng_ruoguang.png</string>
+        </dict>
+    </dict>
+</plist>

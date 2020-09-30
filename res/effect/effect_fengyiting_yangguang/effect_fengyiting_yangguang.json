@@ -1,0 +1,93 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "31.8",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_yangguang_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "30"
+    },
+    "order" : "1",
+    "f30" : {
+      "start" : {
+        "x" : "31.8",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_yangguang_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "31"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "31.8",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_yangguang_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-52.55",
+        "y" : "22.55",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_yangguang_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "30"
+    },
+    "order" : "0",
+    "f30" : {
+      "start" : {
+        "x" : "-52.55",
+        "y" : "22.55",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_yangguang_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "31"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "-52.55",
+        "y" : "22.55",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_yangguang_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_fengyiting_yangguang.png"
+}

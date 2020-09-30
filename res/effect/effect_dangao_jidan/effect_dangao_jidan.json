@@ -1,0 +1,125 @@
+{
+  "图层 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-6.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.84",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "8.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.22",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "4"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-0.65",
+        "y" : "12.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "5"
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-0.65",
+        "y" : "20.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "3"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "1.35",
+        "y" : "1.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "3"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-0.6",
+        "y" : "-5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.87",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "3"
+    },
+    "f19" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.07",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      },
+      "nextFrame" : "f23",
+      "frames" : "5"
+    },
+    "f23" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_dangao_jidan_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f30" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_dangao_jidan.png"
+}

@@ -1,0 +1,121 @@
+{
+  "图层 2_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "5.95",
+        "y" : "5.35",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_1.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "12.1",
+        "y" : "3.05",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "15",
+        "y" : "3.05",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "12.1",
+        "y" : "7.85",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "11.5",
+        "y" : "0.85",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "11.85",
+        "y" : "-0.7",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_6.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "9.95",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "1.92",
+        "scaleY" : "1.92",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_7.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "9.95",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "2.07",
+        "scaleY" : "2.07",
+        "opacity" : "71",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_7.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "9.95",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "2.15",
+        "scaleY" : "2.15",
+        "opacity" : "35",
+        "blendMode" : "add",
+        "png" : "effect_fudaokaiqi_texiao_7.png"
+      }
+    },
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f31" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_fudaokaiqi_texiao.png"
+}

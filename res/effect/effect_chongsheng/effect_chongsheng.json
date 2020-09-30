@@ -1,0 +1,395 @@
+{
+  "图层 9_0" : {
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.47",
+        "scaleY" : "2.47",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_1.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "3"
+    },
+    "order" : "7",
+    "f19" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "3.68",
+        "scaleY" : "3.68",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_1.png"
+      },
+      "nextFrame" : "f27",
+      "frames" : "9"
+    },
+    "f27" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "8.29",
+        "scaleY" : "8.29",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_1.png"
+      }
+    },
+    "f28" : {
+      "remove" : "1"
+    }
+  },
+  "effect_chongsheng_guangxian1_1" : {
+    "f17" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-71.05",
+        "rotation" : "0",
+        "scaleX" : "-2.83",
+        "scaleY" : "-1.91",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_chongsheng_guangxian",
+    "useBatchNode" : "true",
+    "order" : "6",
+    "f44" : {
+      "remove" : "1"
+    }
+  },
+  "effect_chongsheng_guangxian2_2" : {
+    "f17" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "70",
+        "rotation" : "0",
+        "scaleX" : "2.83",
+        "scaleY" : "1.91",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_chongsheng_guangxian",
+    "useBatchNode" : "true",
+    "order" : "5",
+    "f44" : {
+      "remove" : "1"
+    }
+  },
+  "effect_chongsheng_suipian_3" : {
+    "f17" : {
+      "start" : {
+        "x" : "3.4",
+        "y" : "-2.5",
+        "rotation" : "0",
+        "scaleX" : "0.72",
+        "scaleY" : "0.72",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_chongsheng_suipian",
+    "useBatchNode" : "true",
+    "order" : "4",
+    "f44" : {
+      "remove" : "1"
+    }
+  },
+  "图层 5_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "5.17",
+        "scaleY" : "5.17",
+        "opacity" : "15",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "3",
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "9"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.61",
+        "scaleY" : "0.61",
+        "opacity" : "15",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_1.png"
+      }
+    },
+    "f16" : {
+      "remove" : "1"
+    }
+  },
+  "图层 4_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "14.24",
+        "scaleY" : "14.24",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "2",
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.41",
+        "scaleY" : "7.41",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "3.91",
+        "scaleY" : "3.91",
+        "opacity" : "229",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "4"
+    },
+    "f19" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "12.65",
+        "scaleY" : "12.65",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      },
+      "nextFrame" : "f23",
+      "frames" : "5"
+    },
+    "f23" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "13.3",
+        "scaleY" : "13.3",
+        "opacity" : "89",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "8"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "14.44",
+        "scaleY" : "14.44",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chongsheng_2.png"
+      }
+    },
+    "f31" : {
+      "remove" : "1"
+    }
+  },
+  "effect_chongsheng_lizi1_6" : {
+    "f17" : {
+      "start" : {
+        "x" : "-7.9",
+        "y" : "-8.1",
+        "rotation" : "39.46",
+        "scaleX" : "-0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_chongsheng_lizi",
+    "useBatchNode" : "true",
+    "order" : "1",
+    "f41" : {
+      "remove" : "1"
+    }
+  },
+  "effect_chongsheng_lizi2_7" : {
+    "f17" : {
+      "start" : {
+        "x" : "-7.9",
+        "y" : "-8.1",
+        "rotation" : "2.71",
+        "scaleX" : "0.73",
+        "scaleY" : "0.73",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_chongsheng_lizi",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f41" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f57" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_chongsheng.png"
+}

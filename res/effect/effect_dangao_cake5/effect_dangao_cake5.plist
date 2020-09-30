@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_dangao_cake5_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{464,552}}</string>
+                <key>offset</key>
+                <string>{13,44}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{26,0},{464,552}}</string>
+                <key>sourceSize</key>
+                <string>{490,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_dangao_cake5.png</string>
+            <key>size</key>
+            <string>{468,556}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:76933fa14458ea9a0ca0d6c8800758a3$</string>
+            <key>textureFileName</key>
+            <string>effect_dangao_cake5.png</string>
+        </dict>
+    </dict>
+</plist>

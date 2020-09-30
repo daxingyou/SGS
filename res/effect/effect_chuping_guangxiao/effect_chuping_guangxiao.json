@@ -1,0 +1,430 @@
+{
+  "图层 4_1" : {
+    "f2" : {
+      "start" : {
+        "x" : "1",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.72",
+        "scaleY" : "0.72",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "5"
+    },
+    "order" : "3",
+    "f6" : {
+      "start" : {
+        "x" : "1",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "6"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "1",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_1.png"
+      }
+    }
+  },
+  "图层 5_2" : {
+    "f9" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_2.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "5"
+    },
+    "order" : "2",
+    "f13" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_2.png"
+      },
+      "nextFrame" : "f24",
+      "frames" : "12"
+    },
+    "f24" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "1.38",
+        "scaleY" : "1.38",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_2.png"
+      }
+    }
+  },
+  "图层 3_3" : {
+    "f4" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.61",
+        "scaleY" : "0.61",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_2.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "6"
+    },
+    "order" : "1",
+    "f9" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_2.png"
+      },
+      "nextFrame" : "f16",
+      "frames" : "8"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.86",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_2.png"
+      }
+    }
+  },
+  "图层 2_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_3.png"
+      }
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_4.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_5.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_6.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_7.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_8.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_9.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_10.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_11.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_12.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_13.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_14.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_15.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_16.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_17.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_18.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_19.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_20.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_21.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_22.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_23.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_24.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_25.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "3",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_guangxiao_26.png"
+      }
+    },
+    "f25" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f30" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_chuping_guangxiao.png"
+}

@@ -1,0 +1,263 @@
+{
+  "图层 7_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-33.95",
+        "y" : "114.65",
+        "rotation" : "-13.99",
+        "scaleX" : "0.22",
+        "scaleY" : "0.34",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      }
+    },
+    "order" : "5",
+    "f16" : {
+      "start" : {
+        "x" : "-33.95",
+        "y" : "114.65",
+        "rotation" : "-13.99",
+        "scaleX" : "0.22",
+        "scaleY" : "0.34",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      },
+      "nextFrame" : "f28",
+      "frames" : "13"
+    },
+    "f28" : {
+      "start" : {
+        "x" : "-29.8",
+        "y" : "93.95",
+        "rotation" : "-13.8",
+        "scaleX" : "0.21",
+        "scaleY" : "0.34",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      },
+      "nextFrame" : "f43",
+      "frames" : "16"
+    },
+    "f43" : {
+      "start" : {
+        "x" : "-24.6",
+        "y" : "68",
+        "rotation" : "-13.82",
+        "scaleX" : "0.21",
+        "scaleY" : "0.34",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      },
+      "nextFrame" : "f58",
+      "frames" : "16"
+    },
+    "f58" : {
+      "start" : {
+        "x" : "-19.5",
+        "y" : "42.05",
+        "rotation" : "-13.8",
+        "scaleX" : "0.21",
+        "scaleY" : "0.34",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      },
+      "nextFrame" : "f75",
+      "frames" : "18"
+    },
+    "f75" : {
+      "start" : {
+        "x" : "-13.65",
+        "y" : "12.75",
+        "rotation" : "-13.99",
+        "scaleX" : "0.22",
+        "scaleY" : "0.34",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      }
+    }
+  },
+  "图层 6_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-37.7",
+        "y" : "134.45",
+        "rotation" : "-10.48",
+        "scaleX" : "0.34",
+        "scaleY" : "0.56",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      }
+    },
+    "order" : "4",
+    "f16" : {
+      "start" : {
+        "x" : "-37.7",
+        "y" : "134.45",
+        "rotation" : "-10.48",
+        "scaleX" : "0.34",
+        "scaleY" : "0.56",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      },
+      "nextFrame" : "f75",
+      "frames" : "60"
+    },
+    "f75" : {
+      "start" : {
+        "x" : "-15",
+        "y" : "21.3",
+        "rotation" : "-10.48",
+        "scaleX" : "0.24",
+        "scaleY" : "0.24",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      }
+    }
+  },
+  "图层 5_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.25",
+        "y" : "117.95",
+        "rotation" : "-19.71",
+        "scaleX" : "0.38",
+        "scaleY" : "0.6",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      }
+    },
+    "order" : "3",
+    "f57" : {
+      "start" : {
+        "x" : "2.25",
+        "y" : "117.95",
+        "rotation" : "-19.71",
+        "scaleX" : "0.38",
+        "scaleY" : "0.6",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "44"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "38.3",
+        "y" : "-5.85",
+        "rotation" : "-19.71",
+        "scaleX" : "0.38",
+        "scaleY" : "0.6",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      }
+    }
+  },
+  "图层 4_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-3.5",
+        "y" : "136.05",
+        "rotation" : "-16.21",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      }
+    },
+    "order" : "2",
+    "f57" : {
+      "start" : {
+        "x" : "-3.5",
+        "y" : "136.05",
+        "rotation" : "-16.21",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "44"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "34.4",
+        "y" : "8.8",
+        "rotation" : "-16.21",
+        "scaleX" : "0.42",
+        "scaleY" : "0.42",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      }
+    }
+  },
+  "图层 3_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-96",
+        "y" : "130.45",
+        "rotation" : "-31.45",
+        "scaleX" : "0.64",
+        "scaleY" : "1.01",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      },
+      "nextFrame" : "f32",
+      "frames" : "32"
+    },
+    "order" : "1",
+    "f32" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "-19.7",
+        "rotation" : "-31.45",
+        "scaleX" : "0.64",
+        "scaleY" : "1.01",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_gongchengmenzhandou_huoqui_1.png"
+      }
+    }
+  },
+  "图层 1_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-111.6",
+        "y" : "158.25",
+        "rotation" : "-27.94",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      },
+      "nextFrame" : "f32",
+      "frames" : "32"
+    },
+    "order" : "0",
+    "f32" : {
+      "start" : {
+        "x" : "-15.3",
+        "y" : "3.1",
+        "rotation" : "-27.94",
+        "scaleX" : "0.7",
+        "scaleY" : "0.7",
+        "opacity" : "255",
+        "png" : "effect_gongchengmenzhandou_huoqui_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f100" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_gongchengmenzhandou_huoqui.png"
+}

@@ -1,0 +1,61 @@
+{
+  "图层 4_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.1",
+        "y" : "7.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_guanxing_hong_1.png"
+      }
+    },
+    "order" : "1"
+  },
+  "图层 2_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.1",
+        "y" : "7.15",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "0",
+        "png" : "effect_guanxing_hong_2.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "0",
+    "f39" : {
+      "start" : {
+        "x" : "1.1",
+        "y" : "7.15",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "1.01",
+        "opacity" : "255",
+        "png" : "effect_guanxing_hong_2.png"
+      },
+      "nextFrame" : "f70",
+      "frames" : "32"
+    },
+    "f70" : {
+      "start" : {
+        "x" : "1.1",
+        "y" : "7.15",
+        "rotation" : "0",
+        "scaleX" : "1.71",
+        "scaleY" : "1.54",
+        "opacity" : "0",
+        "png" : "effect_guanxing_hong_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f70" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_guanxing_hong.png"
+}

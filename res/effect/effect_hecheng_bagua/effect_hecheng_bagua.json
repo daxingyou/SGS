@@ -1,0 +1,22 @@
+{
+  "effect_hecheng_bg_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.91",
+        "scaleY" : "0.18",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_hecheng_bg",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f500" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

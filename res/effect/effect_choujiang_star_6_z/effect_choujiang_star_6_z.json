@@ -1,0 +1,451 @@
+{
+  "图层 2_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "0",
+        "rotation" : "90",
+        "scaleX" : "0.46",
+        "scaleY" : "0.73",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      }
+    },
+    "order" : "5",
+    "f3" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "0",
+        "rotation" : "90",
+        "scaleX" : "1.48",
+        "scaleY" : "2.36",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "0",
+        "rotation" : "90",
+        "scaleX" : "1.48",
+        "scaleY" : "2.36",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "9"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "0",
+        "rotation" : "90",
+        "scaleX" : "1.48",
+        "scaleY" : "2.36",
+        "opacity" : "0",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.63",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      }
+    },
+    "order" : "4",
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "9"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "1.1",
+        "opacity" : "0",
+        "png" : "effect_choujiang_star_6_z_1.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "02-棒缩小-棒子爆点  复制 2_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "101.55",
+        "y" : "79.85",
+        "rotation" : "0",
+        "scaleX" : "-1.63",
+        "scaleY" : "-1.63",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "order" : "3",
+    "f3" : {
+      "start" : {
+        "x" : "219.45",
+        "y" : "172.5",
+        "rotation" : "0",
+        "scaleX" : "-3.53",
+        "scaleY" : "-3.53",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "243.2",
+        "y" : "156.75",
+        "rotation" : "0",
+        "scaleX" : "-1.9",
+        "scaleY" : "-1.9",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "300.9",
+        "y" : "181.45",
+        "rotation" : "0",
+        "scaleX" : "-2.52",
+        "scaleY" : "-2.52",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "298.85",
+        "y" : "163",
+        "rotation" : "0",
+        "scaleX" : "-2.86",
+        "scaleY" : "-2.86",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "227",
+        "y" : "167",
+        "rotation" : "0",
+        "scaleX" : "-2",
+        "scaleY" : "-2",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "7"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "249.7",
+        "y" : "183.7",
+        "rotation" : "0",
+        "scaleX" : "-2.2",
+        "scaleY" : "-2.2",
+        "opacity" : "25",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "02-棒缩小-棒子爆点  复制 2_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "101.55",
+        "y" : "-79.85",
+        "rotation" : "0",
+        "scaleX" : "-1.63",
+        "scaleY" : "1.63",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "order" : "2",
+    "f3" : {
+      "start" : {
+        "x" : "219.45",
+        "y" : "-172.5",
+        "rotation" : "0",
+        "scaleX" : "-3.53",
+        "scaleY" : "3.53",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "243.2",
+        "y" : "-156.75",
+        "rotation" : "0",
+        "scaleX" : "-1.9",
+        "scaleY" : "1.9",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "300.9",
+        "y" : "-181.45",
+        "rotation" : "0",
+        "scaleX" : "-2.52",
+        "scaleY" : "2.52",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "298.85",
+        "y" : "-163",
+        "rotation" : "0",
+        "scaleX" : "-2.86",
+        "scaleY" : "2.86",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "227",
+        "y" : "-167",
+        "rotation" : "0",
+        "scaleX" : "-2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "7"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "249.7",
+        "y" : "-183.7",
+        "rotation" : "0",
+        "scaleX" : "-2.2",
+        "scaleY" : "2.2",
+        "opacity" : "25",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "02-棒缩小-棒子爆点 复制_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-101.55",
+        "y" : "79.85",
+        "rotation" : "0",
+        "scaleX" : "1.63",
+        "scaleY" : "-1.63",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "order" : "1",
+    "f3" : {
+      "start" : {
+        "x" : "-219.45",
+        "y" : "172.5",
+        "rotation" : "0",
+        "scaleX" : "3.53",
+        "scaleY" : "-3.53",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-243.2",
+        "y" : "156.75",
+        "rotation" : "0",
+        "scaleX" : "1.9",
+        "scaleY" : "-1.9",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-300.9",
+        "y" : "181.45",
+        "rotation" : "0",
+        "scaleX" : "2.52",
+        "scaleY" : "-2.52",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-298.85",
+        "y" : "163",
+        "rotation" : "0",
+        "scaleX" : "2.86",
+        "scaleY" : "-2.86",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-227",
+        "y" : "167",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "-2",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "7"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-249.7",
+        "y" : "183.7",
+        "rotation" : "0",
+        "scaleX" : "2.2",
+        "scaleY" : "-2.2",
+        "opacity" : "25",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "02-棒缩小-棒子爆点_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-101.55",
+        "y" : "-79.85",
+        "rotation" : "0",
+        "scaleX" : "1.63",
+        "scaleY" : "1.63",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "-219.45",
+        "y" : "-172.5",
+        "rotation" : "0",
+        "scaleX" : "3.53",
+        "scaleY" : "3.53",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-243.2",
+        "y" : "-156.75",
+        "rotation" : "0",
+        "scaleX" : "1.9",
+        "scaleY" : "1.9",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-300.9",
+        "y" : "-181.45",
+        "rotation" : "0",
+        "scaleX" : "2.52",
+        "scaleY" : "2.52",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-298.85",
+        "y" : "-163",
+        "rotation" : "0",
+        "scaleX" : "2.86",
+        "scaleY" : "2.86",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-227",
+        "y" : "-167",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "7"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-249.7",
+        "y" : "-183.7",
+        "rotation" : "0",
+        "scaleX" : "2.2",
+        "scaleY" : "2.2",
+        "opacity" : "25",
+        "png" : "effect_choujiang_star_6_z_6.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f19" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_choujiang_star_6_z.png"
+}

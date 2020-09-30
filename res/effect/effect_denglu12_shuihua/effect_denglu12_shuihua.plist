@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_denglu12_shuihua_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{40,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{40,40}}</string>
+                <key>sourceSize</key>
+                <string>{40,40}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_denglu12_shuihua.png</string>
+            <key>size</key>
+            <string>{44,44}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:881c5b4d565e47c2e2de3d43e32b3d5a$</string>
+            <key>textureFileName</key>
+            <string>effect_denglu12_shuihua.png</string>
+        </dict>
+    </dict>
+</plist>
