@@ -1,1 +1,464 @@
-{"version":"1.0","damage":14,"frameCount":185,"layers":[{"name":"sh10700211","frameCount":185,"frames":{"142":{"id":142,"duration":43,"isMotion":false,"element":true,"x":-9.75,"y":0,"height":178.55,"scaleX":0.9999851056787409,"scaleY":0.9999851056787409,"rotation":3.274917602539062,"color":false}}},{"name":"sh10700211","frameCount":185,"frames":{"134":{"id":134,"duration":51,"isMotion":false,"element":true,"x":-18.45,"y":0,"height":113.6,"scaleX":0.9999813180011765,"scaleY":0.9999813180011765,"rotation":30.927383422851562,"color":false}}},{"name":"sh10700211","frameCount":185,"frames":{"72":{"id":72,"duration":113,"isMotion":false,"element":true,"x":-18.45,"y":0,"height":113.6,"scaleX":0.9999813466669668,"scaleY":0.9999813466669668,"rotation":23.734222412109375,"color":false}}},{"name":"sh10700211","frameCount":185,"frames":{"57":{"id":57,"duration":128,"isMotion":false,"element":true,"x":-11.2,"y":0,"height":58.75,"scaleX":-1.2349205629606272,"scaleY":0.9999749342547741,"rotation":-15.944931030273438,"color":false}}},{"name":"sh10700211","frameCount":185,"frames":{"37":{"id":37,"duration":148,"isMotion":false,"element":true,"x":-12.65,"y":0,"height":71.75,"scaleX":0.9999824812199444,"scaleY":0.9999824812199444,"rotation":8.529571533203127,"color":false}}},{"name":"sh10700211","frameCount":185,"frames":{"0":{"id":0,"duration":185,"isMotion":false,"element":true,"x":-8.3,"y":0,"height":61.65,"scaleX":0.9999971607152184,"scaleY":0.9999971607152184,"rotation":16.735488891601562,"color":false}}},{"name":"body","frameCount":185,"frames":{"0":{"id":0,"duration":19,"isMotion":false,"element":true,"x":0,"y":0,"height":0,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"19":{"id":19,"duration":18,"isMotion":false,"element":true,"x":0,"y":0,"height":0,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"37":{"id":37,"duration":20,"isMotion":false,"element":true,"x":0,"y":0,"height":0,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"57":{"id":57,"duration":15,"isMotion":false,"element":true,"x":0,"y":0,"height":0,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"72":{"id":72,"duration":20,"isMotion":true,"element":true,"x":0,"y":0,"height":47.05,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"92":{"id":92,"duration":16,"isMotion":true,"element":true,"x":0,"y":0,"height":155.35,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"108":{"id":108,"duration":14,"isMotion":false,"element":true,"x":-5.4,"y":0,"height":1.05,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"122":{"id":122,"duration":12,"isMotion":false,"element":true,"x":-5.4,"y":0,"height":1.05,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"134":{"id":134,"duration":21,"isMotion":true,"element":true,"x":0,"y":0,"height":47.05,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"155":{"id":155,"duration":1,"isMotion":false,"element":true,"x":0,"y":0,"height":187.25,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"156":{"id":156,"duration":15,"isMotion":true,"element":true,"x":0,"y":0,"height":159.85,"scaleX":1,"scaleY":1,"rotation":0,"color":false},"171":{"id":171,"duration":14,"isMotion":false,"element":true,"x":-1.1,"y":0,"height":1.05,"scaleX":1,"scaleY":1,"rotation":0,"color":false}}}],"events":{"0":[{"type":"damage","value1":"1","value2":"","value3":"","value4":""},{"type":"animation","value1":"hit2","value2":"","value3":"","value4":""}],"37":[{"type":"damage","value1":"1","value2":"","value3":"","value4":""},{"type":"animation","value1":"hit","value2":"","value3":"","value4":""}],"57":[{"type":"damage","value1":"1","value2":"","value3":"","value4":""},{"type":"animation","value1":"hit","value2":"","value3":"","value4":""}],"72":[{"type":"damage","value1":"1","value2":"","value3":"","value4":""},{"type":"animation","value1":"hitfly","value2":"","value3":"","value4":""}],"134":[{"type":"damage","value1":"2","value2":"","value3":"","value4":""},{"type":"animation","value1":"hitfly","value2":"","value3":"","value4":""}],"138":[{"type":"damage","value1":"1","value2":"","value3":"","value4":""}],"142":[{"type":"damage","value1":"2","value2":"","value3":"","value4":""}],"145":[{"type":"damage","value1":"2","value2":"","value3":"","value4":""}],"149":[{"type":"damage","value1":"1","value2":"","value3":"","value4":""}],"153":[{"type":"damage","value1":"2","value2":"","value3":"","value4":""}],"19":[{"type":"animation","value1":"idle","value2":"","value3":"","value4":""}],"92":[{"type":"animation","value1":"hitfall","value2":"","value3":"","value4":""}],"108":[{"type":"animation","value1":"hitlie","value2":"","value3":"","value4":""}],"122":[{"type":"animation","value1":"idle","value2":"","value3":"","value4":""}],"156":[{"type":"animation","value1":"hitfall","value2":"","value3":"","value4":""}],"171":[{"type":"animation","value1":"hitlie","value2":"","value3":"","value4":""}]}}
+{
+	"version": "1.0",
+	"damage": 14,
+	"frameCount": 185,
+	"layers": [
+		{
+			"name": "sh10700211",
+			"frameCount": 185,
+			"frames": {
+				"142": {
+					"id": 142,
+					"duration": 43,
+					"isMotion": false,
+					"element": true,
+					"x": -9.75,
+					"y": 0,
+					"height": 178.55,
+					"scaleX": 0.9999851056787409,
+					"scaleY": 0.9999851056787409,
+					"rotation": 3.274917602539062,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "sh10700211",
+			"frameCount": 185,
+			"frames": {
+				"134": {
+					"id": 134,
+					"duration": 51,
+					"isMotion": false,
+					"element": true,
+					"x": -18.45,
+					"y": 0,
+					"height": 113.6,
+					"scaleX": 0.9999813180011765,
+					"scaleY": 0.9999813180011765,
+					"rotation": 30.927383422851562,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "sh10700211",
+			"frameCount": 185,
+			"frames": {
+				"72": {
+					"id": 72,
+					"duration": 113,
+					"isMotion": false,
+					"element": true,
+					"x": -18.45,
+					"y": 0,
+					"height": 113.6,
+					"scaleX": 0.9999813466669668,
+					"scaleY": 0.9999813466669668,
+					"rotation": 23.734222412109375,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "sh10700211",
+			"frameCount": 185,
+			"frames": {
+				"57": {
+					"id": 57,
+					"duration": 128,
+					"isMotion": false,
+					"element": true,
+					"x": -11.2,
+					"y": 0,
+					"height": 58.75,
+					"scaleX": -1.2349205629606272,
+					"scaleY": 0.9999749342547741,
+					"rotation": -15.944931030273438,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "sh10700211",
+			"frameCount": 185,
+			"frames": {
+				"37": {
+					"id": 37,
+					"duration": 148,
+					"isMotion": false,
+					"element": true,
+					"x": -12.65,
+					"y": 0,
+					"height": 71.75,
+					"scaleX": 0.9999824812199444,
+					"scaleY": 0.9999824812199444,
+					"rotation": 8.529571533203127,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "sh10700211",
+			"frameCount": 185,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 185,
+					"isMotion": false,
+					"element": true,
+					"x": -8.3,
+					"y": 0,
+					"height": 61.65,
+					"scaleX": 0.9999971607152183,
+					"scaleY": 0.9999971607152183,
+					"rotation": 16.735488891601562,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 185,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 19,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"19": {
+					"id": 19,
+					"duration": 18,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"37": {
+					"id": 37,
+					"duration": 20,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"57": {
+					"id": 57,
+					"duration": 15,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"72": {
+					"id": 72,
+					"duration": 20,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 47.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"92": {
+					"id": 92,
+					"duration": 16,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 155.35,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"108": {
+					"id": 108,
+					"duration": 14,
+					"isMotion": false,
+					"element": true,
+					"x": -5.4,
+					"y": 0,
+					"height": 1.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"122": {
+					"id": 122,
+					"duration": 12,
+					"isMotion": false,
+					"element": true,
+					"x": -5.4,
+					"y": 0,
+					"height": 1.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"134": {
+					"id": 134,
+					"duration": 21,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 47.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"155": {
+					"id": 155,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 187.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"156": {
+					"id": 156,
+					"duration": 15,
+					"isMotion": true,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 159.85,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"171": {
+					"id": 171,
+					"duration": 14,
+					"isMotion": false,
+					"element": true,
+					"x": -1.1,
+					"y": 0,
+					"height": 1.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hit2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"37": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hit",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"57": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hit",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"72": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hitfly",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"134": [
+			{
+				"type": "damage",
+				"value1": "2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hitfly",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"138": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"142": [
+			{
+				"type": "damage",
+				"value1": "2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"145": [
+			{
+				"type": "damage",
+				"value1": "2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"149": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"153": [
+			{
+				"type": "damage",
+				"value1": "2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"19": [
+			{
+				"type": "animation",
+				"value1": "idle",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"92": [
+			{
+				"type": "animation",
+				"value1": "hitfall",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"108": [
+			{
+				"type": "animation",
+				"value1": "hitlie",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"122": [
+			{
+				"type": "animation",
+				"value1": "idle",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"156": [
+			{
+				"type": "animation",
+				"value1": "hitfall",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"171": [
+			{
+				"type": "animation",
+				"value1": "hitlie",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

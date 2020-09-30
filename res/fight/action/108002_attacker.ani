@@ -89,7 +89,7 @@
 					"duration": 12,
 					"isMotion": true,
 					"element": true,
-					"x": -189.05,
+					"x": -114.35,
 					"y": 0,
 					"height": 0,
 					"scaleX": 1,
@@ -127,20 +127,45 @@
 		}
 	],
 	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_523_skill_1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"42": [
+			{
+				"type": "sound",
+				"value1": "fy_523_skill_2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"99": [
+			{
+				"type": "sound",
+				"value1": "fy_523_skill_3",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
 		"49": [
 			{
 				"type": "hit",
 				"value1": "0",
 				"value2": "attack",
-				"value3": "",
-				"value4": ""
-			}
-		],
-		"0": [
-			{
-				"type": "animation",
-				"value1": "skill2",
-				"value2": "",
 				"value3": "",
 				"value4": ""
 			}
