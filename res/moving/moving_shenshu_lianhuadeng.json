@@ -1,0 +1,44 @@
+{
+  "effect_shenshu_lianhuadeng" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.35",
+        "y" : "6.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_shenshu_lianhuadengguangquan" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.05",
+        "y" : "45.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "153"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_shenshu_lianhuadengshui" : {
+    "f1" : {
+      "start" : {
+        "x" : "5.65",
+        "y" : "-8.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

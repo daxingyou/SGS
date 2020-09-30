@@ -1,0 +1,44 @@
+{
+  "lizi_hulaoguanlizi1_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "767.45",
+        "y" : "295.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_hulaoguanlizi1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-21.3",
+        "y" : "295.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_hulaoguanlizi1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-810.05",
+        "y" : "295.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

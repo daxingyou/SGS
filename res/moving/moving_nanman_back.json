@@ -1,0 +1,31 @@
+{
+  "effect_huangjinzhandou_yun_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "234.65",
+        "y" : "62.25",
+        "rotation" : "-15.23",
+        "scaleX" : "-1.53",
+        "scaleY" : "0.84",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_huangjinzhandou_yun_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-464.45",
+        "y" : "172.3",
+        "rotation" : "-5.28",
+        "scaleX" : "-2.72",
+        "scaleY" : "1.01",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f241" : "finish"
+  }
+}

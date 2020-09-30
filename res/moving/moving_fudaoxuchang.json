@@ -1,0 +1,44 @@
+{
+  "effect_fudao_fengsha_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-124.05",
+        "y" : "-72.8",
+        "rotation" : "-178.79",
+        "scaleX" : "-0.96",
+        "scaleY" : "0.89",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_fudao_xuchang_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_fudao_yingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "58.6",
+        "y" : "-41.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f151" : "finish"
+  }
+}

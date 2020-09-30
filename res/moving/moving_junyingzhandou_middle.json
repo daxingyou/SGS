@@ -1,0 +1,122 @@
+{
+  "effect_scene01_huoxing_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "306.9",
+        "y" : "121",
+        "rotation" : "31.7",
+        "scaleX" : "-0.56",
+        "scaleY" : "0.52",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_scene01_nongyan01_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "406.8",
+        "y" : "191.65",
+        "rotation" : "-1.48",
+        "scaleX" : "0.55",
+        "scaleY" : "0.63",
+        "opacity" : "51"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_scene01_nongyan01_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "357.1",
+        "y" : "135",
+        "rotation" : "9.96",
+        "scaleX" : "0.44",
+        "scaleY" : "0.46",
+        "opacity" : "76"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_scene01_nongyan01_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "309.1",
+        "y" : "72.9",
+        "rotation" : "9.96",
+        "scaleX" : "0.37",
+        "scaleY" : "0.47",
+        "opacity" : "102"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_scene01_fire_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "350.1",
+        "y" : "119",
+        "rotation" : "3.21",
+        "scaleX" : "0.18",
+        "scaleY" : "0.15",
+        "opacity" : "127"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_scene01_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "309.1",
+        "y" : "89",
+        "rotation" : "15.51",
+        "scaleX" : "-0.22",
+        "scaleY" : "0.19",
+        "opacity" : "127"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_nanman_huoguang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "296.55",
+        "y" : "117.7",
+        "rotation" : "90.88",
+        "scaleX" : "-1.78",
+        "scaleY" : "2.94",
+        "opacity" : "219"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_jiangbianzhandou_guang2" : {
+    "f1" : {
+      "start" : {
+        "x" : "454.75",
+        "y" : "104.95",
+        "rotation" : "-47.87",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_junyingzhandouzhangpeng_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "182.7",
+        "y" : "189.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

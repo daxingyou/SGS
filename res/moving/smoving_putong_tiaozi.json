@@ -1,0 +1,73 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.45",
+        "rotation" : "0",
+        "scaleX" : "1.52",
+        "scaleY" : "1.52",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0.45"
+      },
+      "nextFrame" : "f5",
+      "frames" : "3"
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0.45"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0.45"
+      },
+      "nextFrame" : "f32",
+      "frames" : "19"
+    },
+    "f32" : {
+      "start" : {
+        "x" : "9.85",
+        "y" : "107.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "dx" : "9.85",
+        "dy" : "107.9"
+      }
+    }
+  },
+  "events" : {
+    "f33" : "finish"
+  }
+}

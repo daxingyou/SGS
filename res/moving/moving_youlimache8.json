@@ -1,0 +1,92 @@
+{
+  "spine_youlimache_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "917.45",
+        "y" : "-105",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "923.25",
+        "y" : "-99.55",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f20",
+      "frames" : "16"
+    },
+    "f20" : {
+      "start" : {
+        "x" : "1032.4",
+        "y" : "-31.95",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f27",
+      "frames" : "8"
+    },
+    "f27" : {
+      "start" : {
+        "x" : "1090.55",
+        "y" : "-15.8",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f34",
+      "frames" : "8"
+    },
+    "f34" : {
+      "start" : {
+        "x" : "1150.7",
+        "y" : "-9.3",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f50",
+      "frames" : "17"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "1287.4",
+        "y" : "-23",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f60",
+      "frames" : "11"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "1294.4",
+        "y" : "-25.1",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "0"
+      }
+    }
+  },
+  "events" : {
+    "f1" : "lihua",
+    "f50" : "icon",
+    "f52" : "shuangjian"
+  }
+}

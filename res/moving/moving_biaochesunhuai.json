@@ -1,0 +1,122 @@
+{
+  "effect_scene01_fire_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "41.7",
+        "y" : "-92.65",
+        "rotation" : "-0.08",
+        "scaleX" : "0.11",
+        "scaleY" : "0.11",
+        "opacity" : "99"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_scene01_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.9",
+        "y" : "-50.4",
+        "rotation" : "8.54",
+        "scaleX" : "-0.14",
+        "scaleY" : "0.13",
+        "opacity" : "153"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_scene01_nongyan01_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "56.45",
+        "y" : "-92.65",
+        "rotation" : "-2.34",
+        "scaleX" : "0.45",
+        "scaleY" : "0.42",
+        "opacity" : "51"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_scene01_nongyan01_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-37.55",
+        "y" : "29.05",
+        "rotation" : "0.31",
+        "scaleX" : "0.35",
+        "scaleY" : "0.32",
+        "opacity" : "10"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_scene01_nongyan01_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-52.5",
+        "y" : "-59.9",
+        "rotation" : "6.05",
+        "scaleX" : "0.45",
+        "scaleY" : "0.42",
+        "opacity" : "22"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_scene01_nongyan01_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-15.65",
+        "y" : "-125.75",
+        "rotation" : "-3.45",
+        "scaleX" : "0.36",
+        "scaleY" : "0.31",
+        "opacity" : "127"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_scene01_nongyan01_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.95",
+        "y" : "-44.2",
+        "rotation" : "10.53",
+        "scaleX" : "-0.23",
+        "scaleY" : "0.29",
+        "opacity" : "22"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_scene01_huoguang_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "45.3",
+        "y" : "-91.15",
+        "rotation" : "88.88",
+        "scaleX" : "-0.95",
+        "scaleY" : "1.76",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_scene01_huoguang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-11.7",
+        "y" : "-38.15",
+        "rotation" : "88.88",
+        "scaleX" : "-0.95",
+        "scaleY" : "1.76",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}

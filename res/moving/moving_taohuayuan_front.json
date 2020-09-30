@@ -1,0 +1,31 @@
+{
+  "lizi_huaban" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "306",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_taohuayuan_hudie_zu" : {
+    "f1" : {
+      "start" : {
+        "x" : "-489.6",
+        "y" : "-275.85",
+        "rotation" : "0",
+        "scaleX" : "-2.13",
+        "scaleY" : "2.13",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}

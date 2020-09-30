@@ -1,0 +1,122 @@
+{
+  "effect_denglu_shanghei" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "307.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_denglu3_xiahei" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-294.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_denglu12_logo" : {
+    "f1" : {
+      "start" : {
+        "x" : "-485",
+        "y" : "241.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "lizi_denglu14huaban" : {
+    "f1" : {
+      "start" : {
+        "x" : "-32",
+        "y" : "337.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "lizi_xianqinhuanglingyinghuochong_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-357.9",
+        "y" : "-212.95",
+        "rotation" : "0",
+        "scaleX" : "1.84",
+        "scaleY" : "1.84",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "lizi_xianqinhuanglingyinghuochong_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "451.75",
+        "y" : "-216.15",
+        "rotation" : "0",
+        "scaleX" : "1.42",
+        "scaleY" : "1.42",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_denglu14zhugeguo_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_denglu14wangyi_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_denglu14zhouji_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

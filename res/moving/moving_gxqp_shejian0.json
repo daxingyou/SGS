@@ -1,0 +1,57 @@
+{
+  "effect_gxcp_gongjianqiangai" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.55",
+        "y" : "-278",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_gxcp_jianfag" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.95",
+        "y" : "-209.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_gxqp_jianzhenshen" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.55",
+        "y" : "-339",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_gxqp_gongshenti" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.55",
+        "y" : "-339",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f69" : "finish"
+  }
+}

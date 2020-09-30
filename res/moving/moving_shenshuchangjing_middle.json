@@ -1,0 +1,18 @@
+{
+  "spine_shenshuliyu_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "31.45",
+        "y" : "10.1",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

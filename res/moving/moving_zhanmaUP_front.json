@@ -1,0 +1,31 @@
+{
+  "spine_zhanmaUP_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-6.4",
+        "y" : "-187.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhanmaUP_yhuochong" : {
+    "f1" : {
+      "start" : {
+        "x" : "65.9",
+        "y" : "-193.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f179" : "finish"
+  }
+}

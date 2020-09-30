@@ -1,0 +1,122 @@
+{
+  "spine_gongchengmenzhandoucao_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "211.05",
+        "y" : "-253.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_scene02_fengsha_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-345.9",
+        "y" : "-131.05",
+        "rotation" : "0",
+        "scaleX" : "2.52",
+        "scaleY" : "-1.76",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_scene01_fire_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "95.7",
+        "y" : "155.65",
+        "rotation" : "3.26",
+        "scaleX" : "0.06",
+        "scaleY" : "0.06",
+        "opacity" : "158"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_scene01_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "89.6",
+        "y" : "155.05",
+        "rotation" : "17.78",
+        "scaleX" : "-0.04",
+        "scaleY" : "0.03",
+        "opacity" : "122"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_nanman_huoguang_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "87.2",
+        "y" : "156.4",
+        "rotation" : "-90.78",
+        "scaleX" : "0.47",
+        "scaleY" : "1.27",
+        "opacity" : "130"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_scene01_nongyan01_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "101.75",
+        "y" : "166.6",
+        "rotation" : "44.52",
+        "scaleX" : "0.18",
+        "scaleY" : "0.21",
+        "opacity" : "124"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_scene01_nongyan01_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "113.55",
+        "y" : "198.2",
+        "rotation" : "27.55",
+        "scaleX" : "0.3",
+        "scaleY" : "0.38",
+        "opacity" : "127"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_chengqiangzhandou_jianyu_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "83.2",
+        "y" : "244.75",
+        "rotation" : "-4.69",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "153"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_chengqiangzhandou_jianyu_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "254.2",
+        "y" : "263.75",
+        "rotation" : "-10.13",
+        "scaleX" : "0.54",
+        "scaleY" : "0.54",
+        "opacity" : "153"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

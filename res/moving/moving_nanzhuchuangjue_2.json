@@ -1,0 +1,115 @@
+{
+  "lizi_xinchuangjue" : {
+    "f14" : {
+      "start" : {
+        "x" : "-19.95",
+        "y" : "430.25",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_nanzhuchuangjue_2_jianzhu2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "spine_999_big_idle" : {
+    "f1" : {
+      "start" : {
+        "x" : "-163.1",
+        "y" : "-373.5",
+        "rotation" : "0",
+        "scaleX" : "0.86",
+        "scaleY" : "0.86",
+        "opacity" : "0"
+      }
+    },
+    "order" : "3",
+    "f14" : {
+      "start" : {
+        "x" : "-163.1",
+        "y" : "-373.5",
+        "rotation" : "0",
+        "scaleX" : "0.86",
+        "scaleY" : "0.86",
+        "opacity" : "255"
+      }
+    }
+  },
+  "spine_92999_go" : {
+    "f1" : {
+      "start" : {
+        "x" : "-237",
+        "y" : "-111.6",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "2",
+    "f13" : {
+      "start" : {
+        "x" : "-200.35",
+        "y" : "-1107.2",
+        "rotation" : "0",
+        "scaleX" : "3.92",
+        "scaleY" : "3.92",
+        "opacity" : "255"
+      }
+    },
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "effect_nanzhuchuangjue_2_bg" : {
+    "f13" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_nanzhuchuangjue_2_jianzhu1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f25" : "ui",
+    "f45" : "finish"
+  }
+}

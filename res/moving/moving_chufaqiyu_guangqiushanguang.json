@@ -1,0 +1,31 @@
+{
+  "effect_chufaqiyu_guangyuan" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.35",
+        "y" : "3.2",
+        "rotation" : "0",
+        "scaleX" : "0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_chufaqiyu_fasanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.4",
+        "y" : "4.05",
+        "rotation" : "0",
+        "scaleX" : "0.77",
+        "scaleY" : "0.77",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

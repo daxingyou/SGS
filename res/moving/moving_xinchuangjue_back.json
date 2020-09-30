@@ -1,0 +1,18 @@
+{
+  "spine_92999_idle" : {
+    "f1" : {
+      "start" : {
+        "x" : "-239.75",
+        "y" : "-117.1",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

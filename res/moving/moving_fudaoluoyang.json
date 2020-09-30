@@ -1,0 +1,70 @@
+{
+  "lizi_fudao_luoyanglizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-16.65",
+        "y" : "6.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_fudao_luoyang_dengge" : {
+    "f1" : {
+      "start" : {
+        "x" : "-86.35",
+        "y" : "-75.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_fudaoluoyang_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_fudao_luoyang_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_fudao_yingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "68.15",
+        "y" : "-26.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f33" : "finish"
+  }
+}

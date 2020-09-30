@@ -1,0 +1,18 @@
+{
+  "effect_zhucheng_niaofei" : {
+    "f1" : {
+      "start" : {
+        "x" : "120.55",
+        "y" : "101.65",
+        "rotation" : "0.53",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "137"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f601" : "finish"
+  }
+}

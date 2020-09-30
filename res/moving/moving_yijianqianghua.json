@@ -1,0 +1,34 @@
+{
+  "effect_yijianqianghua_za" : {
+    "f1" : {
+      "start" : {
+        "x" : "5.35",
+        "y" : "-38.85",
+        "rotation" : "0",
+        "scaleX" : "0.48",
+        "scaleY" : "0.48",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "somving_yijianqianghua_icondoudong" : {
+    "f9" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f17" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f9" : "play"
+  }
+}

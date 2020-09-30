@@ -1,0 +1,31 @@
+{
+  "spine_202_idle" : {
+    "f1" : {
+      "start" : {
+        "x" : "407.25",
+        "y" : "-40.4",
+        "rotation" : "0",
+        "scaleX" : "-0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_206_idle" : {
+    "f1" : {
+      "start" : {
+        "x" : "496.1",
+        "y" : "-24.9",
+        "rotation" : "0",
+        "scaleX" : "-0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

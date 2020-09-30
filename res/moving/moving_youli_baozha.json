@@ -1,0 +1,34 @@
+{
+  "effect_youli_xiaoxingxing" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.6",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "1.3",
+        "scaleY" : "1.3",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "effect_baowujinglian_xingxing" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "11.6",
+        "rotation" : "0",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f27" : "finish"
+  }
+}

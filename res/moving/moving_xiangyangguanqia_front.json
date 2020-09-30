@@ -1,0 +1,44 @@
+{
+  "spine_xuangyangguanqiashu3_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "194.2",
+        "y" : "-278.1",
+        "rotation" : "0",
+        "scaleX" : "1.02",
+        "scaleY" : "1.02",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_xuangyangguanqiashu2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-248.15",
+        "y" : "-295.9",
+        "rotation" : "0",
+        "scaleX" : "1.03",
+        "scaleY" : "1.03",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_xuangyangguanqiashu1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-786.65",
+        "y" : "-256.65",
+        "rotation" : "0",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

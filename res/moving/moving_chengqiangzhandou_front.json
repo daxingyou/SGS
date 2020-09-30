@@ -1,0 +1,31 @@
+{
+  "spine_chengqiangzhandoucao_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "167.1",
+        "y" : "-309.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_scene01_nongyan01" : {
+    "f1" : {
+      "start" : {
+        "x" : "357.45",
+        "y" : "-327.55",
+        "rotation" : "72.98",
+        "scaleX" : "0.62",
+        "scaleY" : "0.95",
+        "opacity" : "89"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f87" : "finish"
+  }
+}

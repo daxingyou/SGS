@@ -1,0 +1,18 @@
+{
+  "spine_huoguo1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-137.2",
+        "y" : "-6.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

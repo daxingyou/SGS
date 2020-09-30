@@ -1,0 +1,44 @@
+{
+  "spine_zhounianqingdangao_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_dangao2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-102",
+        "y" : "379.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_dangao1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-179.25",
+        "y" : "353.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f16" : "finish"
+  }
+}

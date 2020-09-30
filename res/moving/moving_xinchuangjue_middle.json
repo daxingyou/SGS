@@ -1,0 +1,44 @@
+{
+  "lizi_xinchuangjue" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "347.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_92998_idle" : {
+    "f1" : {
+      "start" : {
+        "x" : "237.4",
+        "y" : "-263.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_xinchuangjuechangjing_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

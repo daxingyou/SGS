@@ -1,0 +1,44 @@
+{
+  "lizi_xianqinhuanglingyinghuochong_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "464.6",
+        "y" : "-247.95",
+        "rotation" : "0",
+        "scaleX" : "1.67",
+        "scaleY" : "1.67",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_xianqinhuanglingyinghuochong_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-439.75",
+        "y" : "-263.45",
+        "rotation" : "0",
+        "scaleX" : "1.7",
+        "scaleY" : "1.7",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_zhucheng13night_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

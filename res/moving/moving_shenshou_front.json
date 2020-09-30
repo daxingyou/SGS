@@ -1,0 +1,31 @@
+{
+  "spine_shenshoufront_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-8.5",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_shenshouxianhe_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-565.6",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f91" : "finish"
+  }
+}

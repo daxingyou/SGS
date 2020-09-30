@@ -1,0 +1,18 @@
+{
+  "spine_kaorou2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-111.7",
+        "y" : "-1.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

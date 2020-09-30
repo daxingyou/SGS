@@ -1,0 +1,18 @@
+{
+  "effect_icon_liuguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "-0.35",
+        "rotation" : "0",
+        "scaleX" : "1.02",
+        "scaleY" : "1.02",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f31" : "finish"
+  }
+}

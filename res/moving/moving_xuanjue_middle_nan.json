@@ -1,0 +1,97 @@
+{
+  "effect_xuanjue_heidi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-423.95",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_xuanjue_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "54.4",
+        "y" : "-40.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_xuanjuetaoshu_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-243.65",
+        "y" : "-12.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "-243.65",
+        "y" : "-12.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "f33" : {
+      "start" : {
+        "x" : "-243.65",
+        "y" : "-12.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    }
+  },
+  "spine_xuanjuetaoshu_effect1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-243.65",
+        "y" : "-12.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "-243.65",
+        "y" : "-12.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "f33" : {
+      "start" : {
+        "x" : "-243.65",
+        "y" : "-12.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f61" : "finish"
+  }
+}

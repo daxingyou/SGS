@@ -1,0 +1,44 @@
+{
+  "effect_bianshenka_xx" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_bianshenka_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "-0.94",
+        "scaleY" : "0.37",
+        "opacity" : "127"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_bianshenka_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.33",
+        "scaleY" : "0.52",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f61" : "finish"
+  }
+}

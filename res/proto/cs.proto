@@ -1,4 +1,5 @@
- 
+
+
 //cleint <---> scene
 
 package cs;
@@ -1423,6 +1424,7 @@ enum ID {
 	ID_S2C_PlayWithPosterGirl = 38024;
 	ID_C2S_GetPosterGirlRewardInfo = 38025;
 	ID_S2C_GetPosterGirlRewardInfo = 38026;
+	
 	// 聊天举报
 	ID_C2S_ChatReport = 38030;
 	ID_S2C_ChatReport = 38031;
@@ -1430,6 +1432,14 @@ enum ID {
 	ID_C2S_ChatSliencePrivate = 38032;
 	ID_S2C_ChatSliencePrivate = 38033;
 	ID_S2C_NotifySliencedUser = 38034;
+	
+	//绘卷系统
+	ID_C2S_GetHeroEmakiInfo  = 38050;
+	ID_S2C_GetHeroEmakiInfo  = 38051;
+	ID_C2S_ActivateHeroEmaki = 38052;
+	ID_S2C_ActivateHeroEmaki = 38053;
+	ID_C2S_LevelUpHeroEmaki  = 38054;
+	ID_S2C_LevelUpHeroEmaki  = 38055;
 
 	ID_C2S_Test = 39998;
 	ID_S2C_Test = 39999;
@@ -3178,6 +3188,7 @@ message C2S_Flush {
 	optional bool poster_girl = 71; // 皮肤
 	optional bool main_scene = 72; // 主场景
 	optional bool slienced_user = 73; // 私聊沉默的玩家
+	optional bool emaki = 74; // 绘卷系统
 }
 
 message S2C_Flush {
@@ -6697,6 +6708,7 @@ message WorldBossGrabInfo {
 	repeated uint32 hero_base_id =7;
 	required string guild_name = 8;
 	required uint32 avatar_base_id = 9;
+	required uint64 power = 10;
 }
 message S2C_GetWorldBossGrabList {
 	required uint32 ret = 1;
@@ -10634,4 +10646,42 @@ message SliencedUser {
 
 message S2C_NotifySliencedUser {
 	repeated SliencedUser slienced_users = 1;
+}
+
+message HeroEmakiInfo {
+	required uint32 id   = 1; 
+	required uint32 status = 2; //0: 未激活 1：已激活 2：已升级
+}
+
+message C2S_GetHeroEmakiInfo {
+}
+
+message S2C_GetHeroEmakiInfo {
+	required uint32 ret = 1;
+	repeated HeroEmakiInfo info = 2; 
+}
+
+message C2S_ActivateHeroEmaki {
+	required uint32 id          = 1; 
+	optional uint32 limit_level = 2; 
+	optional uint32 limit_rtg   = 3; 
+}
+
+message S2C_ActivateHeroEmaki {
+	required uint32 id          = 1; 
+	required uint32 status      = 2; //0: 未激活 1：已激活 2：已升级
+	required uint32 ret         = 3;
+}
+
+
+message C2S_LevelUpHeroEmaki {
+	required uint32 id          = 1;
+	optional uint32 limit_level = 2; 
+	optional uint32 limit_rtg   = 3; 
+}
+
+message S2C_LevelUpHeroEmaki {
+	required uint32 id          = 1; 
+	required uint32 status      = 2; //0: 未激活 1：已激活 2：已升级
+	required uint32 ret         = 3;
 }

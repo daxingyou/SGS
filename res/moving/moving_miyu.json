@@ -1,0 +1,42 @@
+{
+  "effect_miyu" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.45",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "0",
+    "f6" : {
+      "start" : {
+        "x" : "-0.45",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f15",
+      "frames" : "10"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-0.45",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f30" : "forever"
+  }
+}

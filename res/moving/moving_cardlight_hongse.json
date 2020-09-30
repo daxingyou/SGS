@@ -1,0 +1,240 @@
+{
+  "effect_cardlight_hongsexuanzhuanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.65",
+        "y" : "-60",
+        "rotation" : "0",
+        "scaleX" : "1.09",
+        "scaleY" : "1.2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "effect_cardlight_ziseshanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "6",
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "10.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_hongsexing" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "5",
+    "f45" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      }
+    }
+  },
+  "effect_cardlight_hongse" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "4",
+    "f45" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_hongseyanwu_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-15.2",
+        "y" : "-25.35",
+        "rotation" : "-36.3",
+        "scaleX" : "1.78",
+        "scaleY" : "1.6",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "3",
+    "f45" : {
+      "start" : {
+        "x" : "-18.95",
+        "y" : "-18.3",
+        "rotation" : "-36.3",
+        "scaleX" : "1.78",
+        "scaleY" : "1.6",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-15.2",
+        "y" : "-25.35",
+        "rotation" : "-36.3",
+        "scaleX" : "1.78",
+        "scaleY" : "1.6",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_hongseyanwu_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "15.4",
+        "y" : "-25.35",
+        "rotation" : "36.3",
+        "scaleX" : "-1.78",
+        "scaleY" : "1.6",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "2",
+    "f45" : {
+      "start" : {
+        "x" : "19.15",
+        "y" : "-18.3",
+        "rotation" : "36.3",
+        "scaleX" : "-1.78",
+        "scaleY" : "1.6",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "15.4",
+        "y" : "-25.35",
+        "rotation" : "36.3",
+        "scaleX" : "-1.78",
+        "scaleY" : "1.6",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_hongsecard" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "1",
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "8.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f90" : "forever"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "tiaozi_wenzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.9",
+        "y" : "1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "-0.9",
+        "y" : "1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-0.9",
+        "y" : "1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f28",
+      "frames" : "5"
+    },
+    "f28" : {
+      "start" : {
+        "x" : "-0.9",
+        "y" : "1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    }
+  },
+  "effect_tiaozi_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-5.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f29" : "finish"
+  }
+}

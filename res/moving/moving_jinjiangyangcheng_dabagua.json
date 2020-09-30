@@ -1,0 +1,31 @@
+{
+  "effect_jinjiangyangcheng_bagua" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-0.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_jinjiangyangcheng_wenzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

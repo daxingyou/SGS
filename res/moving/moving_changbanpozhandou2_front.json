@@ -1,0 +1,18 @@
+{
+  "spine_changbanqiaozhandou2cao1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-213.8",
+        "y" : "-252.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}

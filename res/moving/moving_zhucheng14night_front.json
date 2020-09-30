@@ -1,0 +1,70 @@
+{
+  "lizi_xianqinhuanglingyinghuochong_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "410.15",
+        "y" : "-257.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "lizi_zhianmazhucheng2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-549",
+        "y" : "344.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_zhucheng14night_effect1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_taohuayuan_shuibo_1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "364.25",
+        "y" : "-277.25",
+        "rotation" : "0",
+        "scaleX" : "-0.92",
+        "scaleY" : "0.6",
+        "opacity" : "127"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_taohuayuan_shuibo_1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "150.5",
+        "y" : "-312.95",
+        "rotation" : "0",
+        "scaleX" : "-0.56",
+        "scaleY" : "0.55",
+        "opacity" : "127"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f36" : "finish"
+  }
+}

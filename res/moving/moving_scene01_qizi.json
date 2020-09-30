@@ -1,0 +1,109 @@
+{
+  "spine_chengqiangqizi3_piaodong_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1074.4",
+        "y" : "-65.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "spine_chengqiangqizi3_piaodong2_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-978.7",
+        "y" : "-26.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "spine_chengqiangqizi3_piaodong3_copy6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-888.75",
+        "y" : "8.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_chengqiangqizi3_piaodong4_copy7" : {
+    "f1" : {
+      "start" : {
+        "x" : "-241.9",
+        "y" : "9.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_chengqiangqizi3_piaodong_copy8" : {
+    "f1" : {
+      "start" : {
+        "x" : "-143.4",
+        "y" : "49.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_chengqiangqizi3_piaodong2_copy9" : {
+    "f1" : {
+      "start" : {
+        "x" : "-49.8",
+        "y" : "84.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_chengqiangqizi3_piaodong2_copy10" : {
+    "f1" : {
+      "start" : {
+        "x" : "796",
+        "y" : "-13.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_chengqiangqizi3_piaodong3_copy11" : {
+    "f1" : {
+      "start" : {
+        "x" : "874.65",
+        "y" : "17.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

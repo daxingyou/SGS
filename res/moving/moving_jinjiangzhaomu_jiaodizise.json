@@ -1,0 +1,18 @@
+{
+  "effect_jinjiangzhaomu_dianjiang_zise" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "48.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

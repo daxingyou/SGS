@@ -1,0 +1,44 @@
+{
+  "effect_nanman_huoxing_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-248.05",
+        "y" : "-161.55",
+        "rotation" : "28.97",
+        "scaleX" : "0.53",
+        "scaleY" : "0.53",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_wuchabiexiahoudun_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_nanman_huoxing_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "346.4",
+        "y" : "-128.35",
+        "rotation" : "105",
+        "scaleX" : "0.66",
+        "scaleY" : "0.64",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "finish"
+  }
+}

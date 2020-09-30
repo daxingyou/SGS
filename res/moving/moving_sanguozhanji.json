@@ -1,0 +1,109 @@
+{
+  "effect_scene01_fire_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "52.15",
+        "y" : "-17.9",
+        "rotation" : "0.07",
+        "scaleX" : "-0.08",
+        "scaleY" : "0.11",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_scene01_fire_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "11.3",
+        "y" : "12.1",
+        "rotation" : "-0.09",
+        "scaleX" : "0.08",
+        "scaleY" : "0.11",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_scene01_fire_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "34.9",
+        "y" : "-51.9",
+        "rotation" : "-0.09",
+        "scaleX" : "0.08",
+        "scaleY" : "0.08",
+        "opacity" : "147"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_scene01_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "22.15",
+        "y" : "-40.4",
+        "rotation" : "8.54",
+        "scaleX" : "-0.17",
+        "scaleY" : "0.15",
+        "opacity" : "196"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_scene01_nongyan01_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "28",
+        "y" : "41.05",
+        "rotation" : "7.44",
+        "scaleX" : "-0.26",
+        "scaleY" : "0.29",
+        "opacity" : "102"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_scene01_nongyan01_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "18.5",
+        "y" : "-4.55",
+        "rotation" : "9",
+        "scaleX" : "-0.21",
+        "scaleY" : "0.21",
+        "opacity" : "127"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_scene01_nongyan01_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "6.65",
+        "y" : "-38.1",
+        "rotation" : "10.53",
+        "scaleX" : "-0.18",
+        "scaleY" : "0.22",
+        "opacity" : "153"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_scene01_huoguang_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "21.05",
+        "y" : "-41.1",
+        "rotation" : "63.4",
+        "scaleX" : "-0.61",
+        "scaleY" : "0.87",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f33" : "finish"
+  }
+}

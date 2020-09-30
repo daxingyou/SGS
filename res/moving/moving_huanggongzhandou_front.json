@@ -1,0 +1,31 @@
+{
+  "effect_huanggongzhandou_guang_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "453.65",
+        "y" : "18.55",
+        "rotation" : "-19.45",
+        "scaleX" : "0.93",
+        "scaleY" : "1.17",
+        "opacity" : "132"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_huanggongzhandou_guang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "265.7",
+        "y" : "77.2",
+        "rotation" : "-5.47",
+        "scaleX" : "1.17",
+        "scaleY" : "1.17",
+        "opacity" : "206"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}
