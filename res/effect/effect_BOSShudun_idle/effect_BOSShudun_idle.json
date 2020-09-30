@@ -1,0 +1,373 @@
+{
+  "图层 3_0" : {
+
+  },
+  "图层 4_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_1.png"
+      }
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_2.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_3.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_4.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_5.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_6.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_7.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_8.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_9.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_10.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_11.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_12.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_13.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_14.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_15.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_16.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_17.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_18.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_19.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_20.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_21.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_22.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_23.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_24.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_25.png"
+      }
+    },
+    "f26" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_26.png"
+      }
+    },
+    "f27" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_27.png"
+      }
+    },
+    "f28" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_28.png"
+      }
+    },
+    "f29" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_29.png"
+      }
+    },
+    "f30" : {
+      "start" : {
+        "x" : "0",
+        "y" : "110",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_idle_30.png"
+      }
+    }
+  },
+  "events" : {
+    "f31" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_BOSShudun_idle.png"
+}

@@ -1,0 +1,292 @@
+{
+  "图层 3_0" : {
+
+  },
+  "图层 8_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_1.png"
+      }
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_2.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_3.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_4.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_5.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_6.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_7.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_8.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_9.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_10.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_11.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_12.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_13.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_14.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_15.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_16.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_17.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_18.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_19.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_20.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_21.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_22.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-4",
+        "y" : "136",
+        "rotation" : "0",
+        "scaleX" : "5.06",
+        "scaleY" : "5.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_hit_23.png"
+      }
+    },
+    "f24" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f31" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_BOSShudun_hit.png"
+}
