@@ -1,0 +1,724 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "40.25",
+        "y" : "20.45",
+        "rotation" : "59.82",
+        "scaleX" : "0.79",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "order" : "2",
+    "f3" : {
+      "start" : {
+        "x" : "59.4",
+        "y" : "11.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "79.05",
+        "y" : "-33.35",
+        "rotation" : "22.03",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "55.05",
+        "y" : "-31.6",
+        "rotation" : "112.03",
+        "scaleX" : "0.79",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "61.5",
+        "y" : "-43.7",
+        "rotation" : "112.03",
+        "scaleX" : "-0.82",
+        "scaleY" : "0.86",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-84.2",
+        "y" : "-33.85",
+        "rotation" : "-22.92",
+        "scaleX" : "-1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-46.1",
+        "y" : "-37.75",
+        "rotation" : "-118.44",
+        "scaleX" : "0.55",
+        "scaleY" : "0.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "89.15",
+        "y" : "58.3",
+        "rotation" : "62.81",
+        "scaleX" : "1.68",
+        "scaleY" : "1.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "128.8",
+        "y" : "36.95",
+        "rotation" : "62.81",
+        "scaleX" : "1.74",
+        "scaleY" : "1.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "165.45",
+        "y" : "-60.1",
+        "rotation" : "25.02",
+        "scaleX" : "2.33",
+        "scaleY" : "2.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "114.8",
+        "y" : "-53.7",
+        "rotation" : "115.02",
+        "scaleX" : "1.68",
+        "scaleY" : "1.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "127.1",
+        "y" : "-80.15",
+        "rotation" : "115.01",
+        "scaleX" : "-1.74",
+        "scaleY" : "1.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "-180.9",
+        "y" : "-43.1",
+        "rotation" : "-19.94",
+        "scaleX" : "-2.33",
+        "scaleY" : "2.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "338",
+        "y" : "-138.1",
+        "rotation" : "116.02",
+        "scaleX" : "4.82",
+        "scaleY" : "4.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "372.1",
+        "y" : "-214.45",
+        "rotation" : "116.02",
+        "scaleX" : "-5",
+        "scaleY" : "5.23",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f26" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    }
+  },
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-20.8",
+        "y" : "-75.8",
+        "rotation" : "-150.26",
+        "scaleX" : "0.79",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "order" : "1",
+    "f2" : {
+      "start" : {
+        "x" : "-41.95",
+        "y" : "-77.65",
+        "rotation" : "-150.26",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-81.35",
+        "y" : "-48.7",
+        "rotation" : "171.95",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-59.75",
+        "y" : "-38.2",
+        "rotation" : "-98.05",
+        "scaleX" : "0.79",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-71.4",
+        "y" : "-30.95",
+        "rotation" : "-98.05",
+        "scaleX" : "-0.82",
+        "scaleY" : "0.86",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "59.7",
+        "y" : "33.45",
+        "rotation" : "127",
+        "scaleX" : "-1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "55.95",
+        "y" : "54.35",
+        "rotation" : "34.47",
+        "scaleX" : "1.17",
+        "scaleY" : "1.22",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-51",
+        "y" : "-139.15",
+        "rotation" : "-147.27",
+        "scaleX" : "1.68",
+        "scaleY" : "1.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-96.15",
+        "y" : "-140.7",
+        "rotation" : "-147.27",
+        "scaleX" : "1.74",
+        "scaleY" : "1.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-176.45",
+        "y" : "-74.9",
+        "rotation" : "174.94",
+        "scaleX" : "2.33",
+        "scaleY" : "2.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "-129.55",
+        "y" : "-55",
+        "rotation" : "-95.06",
+        "scaleX" : "1.68",
+        "scaleY" : "1.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-153.4",
+        "y" : "-38.3",
+        "rotation" : "-95.06",
+        "scaleX" : "-1.74",
+        "scaleY" : "1.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-362.85",
+        "y" : "-129.55",
+        "rotation" : "-94.06",
+        "scaleX" : "4.82",
+        "scaleY" : "4.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f26" : {
+      "start" : {
+        "x" : "-430.6",
+        "y" : "-80.5",
+        "rotation" : "-94.06",
+        "scaleX" : "-5",
+        "scaleY" : "5.23",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    }
+  },
+  "图层 3_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-49.45",
+        "y" : "16.3",
+        "rotation" : "-40.21",
+        "scaleX" : "0.79",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "-43.9",
+        "y" : "36.8",
+        "rotation" : "-40.21",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-3.25",
+        "y" : "63.9",
+        "rotation" : "-78.01",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-0.75",
+        "y" : "40",
+        "rotation" : "12",
+        "scaleX" : "0.79",
+        "scaleY" : "0.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "10",
+        "y" : "48.5",
+        "rotation" : "11.99",
+        "scaleX" : "-0.82",
+        "scaleY" : "0.86",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "25.65",
+        "y" : "-96.75",
+        "rotation" : "-122.96",
+        "scaleX" : "-1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "43.65",
+        "y" : "-107.2",
+        "rotation" : "144.51",
+        "scaleX" : "1.17",
+        "scaleY" : "1.22",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-101.55",
+        "y" : "59.55",
+        "rotation" : "-37.22",
+        "scaleX" : "1.68",
+        "scaleY" : "1.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-87.55",
+        "y" : "102.35",
+        "rotation" : "-37.22",
+        "scaleX" : "1.74",
+        "scaleY" : "1.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "1.65",
+        "y" : "155.25",
+        "rotation" : "-75.02",
+        "scaleX" : "2.33",
+        "scaleY" : "2.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "104.35",
+        "rotation" : "14.98",
+        "scaleX" : "1.68",
+        "scaleY" : "1.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "28.1",
+        "y" : "121.2",
+        "rotation" : "14.98",
+        "scaleX" : "-1.74",
+        "scaleY" : "1.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-10.6",
+        "y" : "171.4",
+        "rotation" : "59.82",
+        "scaleX" : "0.82",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_2.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "24.05",
+        "y" : "467.3",
+        "rotation" : "-74.01",
+        "scaleX" : "6.68",
+        "scaleY" : "6.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_3.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "29.15",
+        "y" : "320.95",
+        "rotation" : "15.99",
+        "scaleX" : "4.82",
+        "scaleY" : "4.82",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chouka_shan_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f27" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_chouka_shan.png"
+}

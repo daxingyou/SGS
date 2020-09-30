@@ -1,0 +1,255 @@
+{
+  "effect_baipin" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.2",
+        "y" : "-27.7",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "0",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "15",
+    "f2" : {
+      "start" : {
+        "x" : "1.15",
+        "y" : "-13.75",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "239",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f3",
+      "frames" : "2"
+    },
+    "f3" : {
+      "start" : {
+        "x" : "1.2",
+        "y" : "0.3",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "255",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f7",
+      "frames" : "5"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "1.2",
+        "y" : "0.3",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.31",
+        "opacity" : "255",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f15",
+      "frames" : "9"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "1.2",
+        "y" : "0.3",
+        "rotation" : "0",
+        "scaleX" : "2.25",
+        "scaleY" : "2.25",
+        "opacity" : "0",
+        "blendMode" : "add"
+      }
+    }
+  },
+  "smoving_namewj" : {
+    "f7" : {
+      "start" : {
+        "x" : "-11.25",
+        "y" : "-200.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "14"
+  },
+  "effect_zhaomu_qptex2" : {
+    "f5" : {
+      "start" : {
+        "x" : "-4.35",
+        "y" : "-17.25",
+        "rotation" : "0",
+        "scaleX" : "1.34",
+        "scaleY" : "1.34",
+        "opacity" : "255"
+      }
+    },
+    "order" : "13"
+  },
+  "effect_ssr_hongur2" : {
+    "f5" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "-210.65",
+        "rotation" : "179.3",
+        "scaleX" : "0.6",
+        "scaleY" : "0.3",
+        "opacity" : "255"
+      }
+    },
+    "order" : "12"
+  },
+  "effect_zhaojiang_baitiao" : {
+    "f1" : {
+      "start" : {
+        "x" : "10.75",
+        "y" : "214.45",
+        "rotation" : "89.6",
+        "scaleX" : "0.63",
+        "scaleY" : "0.11",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "smoving_n_lv" : {
+    "f1" : {
+      "start" : {
+        "x" : "8.8",
+        "y" : "210.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_biankuangguang" : {
+    "f5" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "9.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f10",
+      "frames" : "6"
+    },
+    "order" : "5",
+    "f10" : {
+      "start" : {
+        "x" : "1.3",
+        "y" : "3.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f15",
+      "frames" : "6"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "1.3",
+        "y" : "-2.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add"
+      }
+    }
+  },
+  "new_kk" : {
+    "f1" : {
+      "start" : {
+        "x" : "-7",
+        "y" : "165.1",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "smoving_zhaojiang_ssr" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.55",
+        "y" : "1.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "smoving_kapai_idle5" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_biankuangur" : {
+    "f4" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "8.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add"
+      },
+      "nextFrame" : "f10",
+      "frames" : "7"
+    },
+    "order" : "1",
+    "f10" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add"
+      }
+    }
+  },
+  "effect_ssr_hongur" : {
+    "f5" : {
+      "start" : {
+        "x" : "6.4",
+        "y" : "264.9",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "0.81",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

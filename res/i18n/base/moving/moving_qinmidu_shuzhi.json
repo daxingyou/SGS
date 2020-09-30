@@ -1,0 +1,32 @@
+{
+  "smoving_qinmidu_txt" : {
+    "f1" : {
+      "start" : {
+        "x" : "68.25",
+        "y" : "3.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_qinmidu_aixin" : {
+    "f1" : {
+      "start" : {
+        "x" : "22",
+        "y" : "5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f12" : "1",
+    "f44" : "finish"
+  }
+}

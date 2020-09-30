@@ -1,0 +1,117 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "blendMode" : "add",
+        "color" : {
+          "alpha_original" : "1",
+          "alpha" : "0",
+          "red_original" : "0",
+          "red" : "255",
+          "green_original" : "0",
+          "green" : "204",
+          "blue_original" : "0",
+          "blue" : "153"
+        },
+        "png" : "effect_icon_bansanjiao_1.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "1",
+    "f13" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "blendMode" : "add",
+        "color" : {
+          "alpha_original" : "0",
+          "alpha" : "0",
+          "red_original" : "1",
+          "red" : "0",
+          "green_original" : "1",
+          "green" : "0",
+          "blue_original" : "1",
+          "blue" : "0"
+        },
+        "png" : "effect_icon_bansanjiao_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "18"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "blendMode" : "add",
+        "color" : {
+          "alpha_original" : "1",
+          "alpha" : "0",
+          "red_original" : "1",
+          "red" : "0",
+          "green_original" : "1",
+          "green" : "0",
+          "blue_original" : "1",
+          "blue" : "0"
+        },
+        "png" : "effect_icon_bansanjiao_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.25",
+        "y" : "-0.45",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255",
+        "png" : "effect_icon_bansanjiao_2.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "0",
+    "f13" : {
+      "start" : {
+        "x" : "-2.25",
+        "y" : "-0.45",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "0",
+        "png" : "effect_icon_bansanjiao_2.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "18"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "-2.25",
+        "y" : "-0.45",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255",
+        "png" : "effect_icon_bansanjiao_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f30" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_icon_bansanjiao.png"
+}

@@ -1,0 +1,89 @@
+{
+  "smoving_wujiangbreak_txt_big" : {
+    "f1" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "47.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "moving_wujiangbreak_txt1" : {
+    "f3" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "-24.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "moving_wujiangbreak_txt2" : {
+    "f5" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "-58.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "moving_wujiangbreak_txt3" : {
+    "f7" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "-92.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "moving_wujiangbreak_txt4" : {
+    "f9" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "-126.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "moving_wujiangbreak_txt5" : {
+    "f11" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "-160.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f1" : "play_big",
+    "f3" : "play_txt1",
+    "f5" : "play_txt2",
+    "f7" : "play_txt3",
+    "f9" : "play_txt4",
+    "f11" : "play_txt5",
+    "f50" : "finish"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "effect_show_qplizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "46",
+        "y" : "-350.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "xiujiang_zi_shenbing_txt" : {
+    "f1" : {
+      "start" : {
+        "x" : "412.05",
+        "y" : "272.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "5",
+    "f13" : {
+      "start" : {
+        "x" : "412.05",
+        "y" : "262.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "new_kk" : {
+    "f1" : {
+      "start" : {
+        "x" : "132",
+        "y" : "228.1",
+        "rotation" : "0",
+        "scaleX" : "0.99",
+        "scaleY" : "0.99",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "show_ssr" : {
+    "f1" : {
+      "start" : {
+        "x" : "-418.35",
+        "y" : "241.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "15"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "3",
+    "f5" : {
+      "start" : {
+        "x" : "-415.35",
+        "y" : "241.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "nianshou_name" : {
+    "f5" : {
+      "start" : {
+        "x" : "-413.25",
+        "y" : "222.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f14",
+      "frames" : "10"
+    },
+    "order" : "2",
+    "f14" : {
+      "start" : {
+        "x" : "-413.25",
+        "y" : "203.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "nianshou_dibantiao" : {
+    "f5" : {
+      "start" : {
+        "x" : "-413.25",
+        "y" : "83.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.88",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f12",
+      "frames" : "8"
+    },
+    "order" : "1",
+    "f12" : {
+      "start" : {
+        "x" : "-413.25",
+        "y" : "60.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "show_shengshou" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-215.5",
+        "rotation" : "0",
+        "scaleX" : "0.7",
+        "scaleY" : "0.7",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f9",
+      "frames" : "9"
+    },
+    "order" : "0",
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-215.5",
+        "rotation" : "0",
+        "scaleX" : "0.7",
+        "scaleY" : "0.7",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f15" : "finish"
+  }
+}

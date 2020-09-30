@@ -1,0 +1,183 @@
+{
+  "图层 4_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_1.png"
+      }
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_2.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_3.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_4.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_5.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_6.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_7.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_8.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_9.png"
+      }
+    },
+    "f28" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_10.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_11.png"
+      }
+    },
+    "f34" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_12.png"
+      }
+    },
+    "f37" : {
+      "start" : {
+        "x" : "38.5",
+        "y" : "-11.5",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "150",
+        "blendMode" : "add",
+        "png" : "effect_touxiangkuang_dadao_13.png"
+      }
+    },
+    "f40" : {
+      "remove" : "1"
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiangkuang_dadao_14.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f48" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_touxiangkuang_dadao.png"
+}

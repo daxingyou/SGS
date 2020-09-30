@@ -1,0 +1,104 @@
+{
+  "h2x.png_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "250",
+        "y" : "-25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "51",
+        "png" : "effect_juntuandati_cuowu_1.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "3",
+    "f3" : {
+      "start" : {
+        "x" : "149.35",
+        "y" : "-25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuandati_cuowu_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-52",
+        "y" : "-25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuandati_cuowu_1.png"
+      }
+    }
+  },
+  "hx.png_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-250",
+        "y" : "26.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "51",
+        "png" : "effect_juntuandati_cuowu_1.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f3" : {
+      "start" : {
+        "x" : "-149.35",
+        "y" : "26.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuandati_cuowu_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "52",
+        "y" : "26.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuandati_cuowu_1.png"
+      }
+    }
+  },
+  "zq.png_2" : {
+
+  },
+  "di.png_3" : {
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuandati_cuowu_2.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f31" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuandati_cuowu.png"
+}

@@ -1,0 +1,155 @@
+{
+  "effect_nanman_huo_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-286.2",
+        "rotation" : "0",
+        "scaleX" : "1.26",
+        "scaleY" : "1.05",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "effect" : "effect_nanman_huo",
+    "useBatchNode" : "true",
+    "order" : "7",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-213.7",
+        "rotation" : "0",
+        "scaleX" : "1.26",
+        "scaleY" : "1.05",
+        "opacity" : "84"
+      }
+    },
+    "first_frame" : "4",
+    "loop" : "loop"
+  },
+  "effect_nanman_huoxing_1" : {
+    "f16" : {
+      "start" : {
+        "x" : "-196.05",
+        "y" : "-106.15",
+        "rotation" : "0",
+        "scaleX" : "0.61",
+        "scaleY" : "0.61",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_nanman_huoxing",
+    "useBatchNode" : "true",
+    "first_frame" : "40",
+    "loop" : "loop",
+    "order" : "6"
+  },
+  "effect_nanman_huoxing_2" : {
+    "f4" : {
+      "start" : {
+        "x" : "-9.1",
+        "y" : "5.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_nanman_huoxing",
+    "useBatchNode" : "true",
+    "first_frame" : "40",
+    "loop" : "loop",
+    "order" : "5"
+  },
+  "effect_nanman_huoyan_3" : {
+    "f9" : {
+      "start" : {
+        "x" : "84.25",
+        "y" : "-355.25",
+        "rotation" : "0",
+        "scaleX" : "3.58",
+        "scaleY" : "1.95",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "4"
+  },
+  "effect_nanman_huoyan_4" : {
+    "f7" : {
+      "start" : {
+        "x" : "523.1",
+        "y" : "-346.5",
+        "rotation" : "0",
+        "scaleX" : "3.58",
+        "scaleY" : "1.95",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "3"
+  },
+  "effect_nanman_huoyan_5" : {
+    "f6" : {
+      "start" : {
+        "x" : "294.8",
+        "y" : "-341.25",
+        "rotation" : "0",
+        "scaleX" : "3.67",
+        "scaleY" : "1.56",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "2"
+  },
+  "effect_nanman_huoyan_6" : {
+    "f5" : {
+      "start" : {
+        "x" : "-284.05",
+        "y" : "-368.8",
+        "rotation" : "0",
+        "scaleX" : "5.65",
+        "scaleY" : "1.95",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "1"
+  },
+  "effect_nanman_huoyan_7" : {
+    "f4" : {
+      "start" : {
+        "x" : "-572.7",
+        "y" : "-306.1",
+        "rotation" : "0",
+        "scaleX" : "4.72",
+        "scaleY" : "2.52",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "0"
+  },
+  "events" : {
+    "f61" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}
