@@ -43,12 +43,26 @@ function DailyChallengeView:onCreate()
  	local TopBarStyleConst = require("app.const.TopBarStyleConst")
     self._topBar:updateUI(TopBarStyleConst.STYLE_COMMON)
     
+    -- i18n ja
+    local posList
+    local sizelist
+    if Lang.checkUI("ui4") then
+        posList = {cc.p(510,480),cc.p(380,320),cc.p(130,410),cc.p(800,300),
+        cc.p(130,180),cc.p(1080,350),cc.p(325,490),cc.p(550,160),}
+        sizelist = {cc.size(230,170),cc.size(230,140),cc.size(200,170),cc.size(220,170),
+        cc.size(240,250),cc.size(200,170),cc.size(130,170),cc.size(250,170),}
+    end
+
     self._panelPos = {self._panelPos1, self._panelPos2, self._panelPos3, self._panelPos4, 
         self._panelPos5, self._panelPos6, self._panelPos7,self._panelPos8}
     for idx, val in pairs(self._panelPos) do
         local city = self:createCityByType(idx)
         val:addChild(city)
         table.insert(self._cities, city)
+        if Lang.checkUI("ui4") then
+            val:setPosition(posList[idx])
+            city:setCitySize(sizelist[idx])
+        end
     end
 
     self._resetBtn:setString(Lang.get("return_reset_btn_text"))
@@ -127,6 +141,13 @@ function DailyChallengeView:_createBackGround()
     
     local picName = self._sceneData.background
     if picName ~= "" then
+        if not Lang.checkLang(Lang.CN) then
+            if Lang.isFileExist("i18n/".. Lang.lang  .."/"..picName) then
+                picName = "i18n/".. Lang.lang .."/"..picName
+            elseif Lang.isFileExist("i18n/".. Path.lang_base_path  .."/"..picName) then
+                picName = "i18n/".. Path.lang_base_path .."/"..picName
+            end
+        end
         local pic = cc.Sprite:create(picName)
         pic:setAnchorPoint(cc.p(0.5, 0.5))-- pic:setAnchorPoint(cc.p(0, 0))
         grdBack:addChild(pic)

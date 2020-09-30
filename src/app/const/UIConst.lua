@@ -22,5 +22,7 @@ UIConst.SUMMARY_OFFSET_X_GOLD = 30--玉石界面飘字偏移量
 UIConst.SUMMARY_OFFSET_X_HISTORYHERO = -50--历代名将飘字偏移量
 UIConst.SUMMARY_OFFSET_X_BOUT = -50--阵法飘字偏移量
 
+UIConst.TEAM_PICTURE_OFFSET_X_ACTIVATE = -40 -- 明将绘卷属性飘字
+
 
 return readOnly(UIConst)

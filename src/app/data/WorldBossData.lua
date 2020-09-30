@@ -346,6 +346,7 @@ function WorldBossData:_s2cGetWorldBossGrabList(id, message)
                 temp.rank = value.rank
                 temp.name = value.name
                 temp.point = value.point
+                temp.power = value.power -- i18n ja change 新增战力
                 temp.official = value.office_level
                 temp.heroList = rawget(value, "hero_base_id") or {}
                 temp.guildName = rawget(value, "guild_name") or ""

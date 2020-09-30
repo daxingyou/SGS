@@ -82,8 +82,16 @@ function SceneManager:createScene(name, ...)
 
     end)
 
+    --scene:onNodeEvent("enterTransitionFinish", function ()
+        --if not Lang.checkLang(Lang.CN) then
+        --    self:_delayClearCache( scene.clearCacheDelayTime or 0.5)
+        --end
+   -- end)
+
     scene:onNodeEvent("cleanup", function ()
-        self:_delayClearCache(0.5)
+        --if Lang.checkLang(Lang.CN) then
+            self:_delayClearCache(0.5)
+        --end
     end)
     return scene, view
 end
@@ -630,9 +638,21 @@ end
 
 --
 function SceneManager:_delayClearCache(t)
-    scheduler.performWithDelayGlobal(function()
-        self:clearCache()
-    end, t)
+    if not Lang.checkLang(Lang.CN) then
+        scheduler.performWithDelayGlobal(function()
+            sp.SpineCache:getInstance():removeUnusedSpines()
+        end, t + 0.4)
+        scheduler.performWithDelayGlobal(function()
+            cc.Director:getInstance():getTextureCache():removeUnusedTextures()
+        end, t + 0.5)
+        scheduler.performWithDelayGlobal(function()
+            collectgarbage("collect")
+        end, t + 2.6)
+    else
+        scheduler.performWithDelayGlobal(function()
+            self:clearCache()
+        end, t)
+    end
 end
 --
 function SceneManager:clearCache()

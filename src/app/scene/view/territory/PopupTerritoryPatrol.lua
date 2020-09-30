@@ -998,6 +998,12 @@ function PopupTerritoryPatrol:_updateEventLabel( label, eventCfg, serverData )
 		fontSize = fontSize,
 		opacity = 255
 	}
+
+	--i18n ja
+	if Lang.checkLang(Lang.JA) then
+		timeStr.msg = timeStr.msg .. " "
+	end
+	
 	table.insert(richContents , timeStr)
 
 	--根据奖励信息，生成奖励描述

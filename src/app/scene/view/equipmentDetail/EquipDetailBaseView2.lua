@@ -12,6 +12,7 @@ local EquipTrainHelper = require("app.scene.view.equipTrain.EquipTrainHelper")
 local TeamViewHelper = require("app.scene.view.team.TeamViewHelper")
 local LogicCheckHelper = require("app.utils.LogicCheckHelper")
 local FunctionCheck = require("app.utils.logic.FunctionCheck")
+local RedPointHelper = require("app.data.RedPointHelper")
 
 local EquipDetailStrengthenNode = require("app.scene.view.equipmentDetail.EquipDetailStrengthenNode2")
 local EquipDetailSuitNode = require("app.scene.view.equipmentDetail.EquipDetailSuitNode2")
@@ -315,6 +316,7 @@ function EquipDetailBaseView:checkRedPoint()
 	local curEquipId = G_UserData:getEquipment():getCurEquipId()
 	self._equipData = G_UserData:getEquipment():getEquipmentDataWithId(curEquipId)  -- 刷新数据
 
+	self:_checkInfoRedPoint()
 	self:_checkStrengRedPoint()
 	self:_checkRefineRedPoint()
 	self:_checkJadeRedPoint()
@@ -327,14 +329,19 @@ function EquipDetailBaseView:checkRedPoint()
     scene:getSceneView():_updateEquipment()  
 end
 
+-- 策划需求：如果装备可更换时， 信息页签要显示红点
+function EquipDetailBaseView:_checkInfoRedPoint() 
+	local unitData = self._equipData
+	local reach = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_EQUIP, "slotRP", {pos = unitData:getPos(), slot = unitData:getSlot()}) -- 更换红点
+	self._buttonInfo:showRedPoint(reach)
+end
+
 function EquipDetailBaseView:_checkStrengRedPoint() 
-	local RedPointHelper = require("app.data.RedPointHelper")
 	local reach = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_EQUIP_TRAIN_TYPE1, "slotRP", self._equipData)
 	self._tabList[1]:showRedPoint(reach)
 end
 
 function EquipDetailBaseView:_checkRefineRedPoint()
-	local RedPointHelper = require("app.data.RedPointHelper")
 	local reach = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_EQUIP_TRAIN_TYPE2, "slotRP", self._equipData)
 	self._tabList[2]:showRedPoint(reach)
 

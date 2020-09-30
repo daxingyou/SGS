@@ -9,6 +9,7 @@ local CustomActivityAvatarHelper = import(".CustomActivityAvatarHelper")
 local DataConst = require("app.const.DataConst")
 local TypeConvertHelper = require("app.utils.TypeConvertHelper")
 local CustomActivityUIHelper = require("app.scene.view.customactivity.CustomActivityUIHelper")
+local UIHelper  = require("yoka.utils.UIHelper")
 
 local IMAGE = {
 	[1] = {
@@ -74,12 +75,22 @@ function CustomActivityAvatarAdView:_updateDayNum()
 		if day >= 1 and day <= 3 then
 			if imageInfo then
 				if not Lang.checkLang(Lang.CN)  then
-					local UIHelper  = require("yoka.utils.UIHelper")
-					UIHelper.setLabelStyle(self._imageTime,{
-						style = bgIndex == 1 and  "activity_limit_3" or "activity_limit_4",
-						text = Lang.getImgText(imageInfo.dayName..day) ,
-						position =  bgIndex == 1 and  cc.p(80,144) or cc.p(80,154) ,
-					})
+					-- i18n ja change
+					if Lang.checkLang(Lang.JA) then  
+						UIHelper.setLabelStyle(self._imageTime,{
+							style = "activity_limit_3_ja", 
+							text = Lang.getImgText(imageInfo.dayName..day) , 
+						})
+						
+						self._imageTime:setAnchorPoint(cc.p(1,0.5)) 
+						self._imageTime:setPosition(363+100, -267)
+					else 
+						UIHelper.setLabelStyle(self._imageTime,{
+							style = "activity_limit_3_ja", 
+							text = Lang.getImgText(imageInfo.dayName..day) ,
+							position =  bgIndex == 1 and  cc.p(80,144) or cc.p(80,154) ,
+						})	
+					end  
 				else
 					self._imageTime:loadTexture(Path.getCustomActivityUI(imageInfo.dayName..day))
 				end
@@ -90,7 +101,6 @@ function CustomActivityAvatarAdView:_updateDayNum()
 			if imageInfo then
 				logWarn("CustomActivityAvatarAdView --------------dds  "..bgIndex)
 				if not Lang.checkLang(Lang.CN)  then
-					local UIHelper  = require("yoka.utils.UIHelper")
 					UIHelper.setLabelStyle(self._imageTime,{
 						style = bgIndex == 1 and "activity_limit_3" or "activity_limit_4",
 						text = Lang.getImgText(imageInfo.timeBgName) ,
@@ -101,27 +111,23 @@ function CustomActivityAvatarAdView:_updateDayNum()
 			end
 			self._textTime:setVisible(true)
 			self._textTime:stopAllActions()
-
-			if not Lang.checkLang(Lang.CN) then
-				self._textTime:setPositionY(bgIndex == 1 and 144 or 144+12)
-				self._imageTime:setPositionY(bgIndex == 1 and 144 or 154)
-			end
-			
+ 
 			local timeStr = CustomActivityUIHelper.getLeftDHMSFormat(actUnitdata:getEnd_time())
 			self._textTime:setString(timeStr)
 			if not Lang.checkLang(Lang.CN)  then 
-				if bgIndex ~= 1 then
-					self._imageTime:setFontSize(26)
-				else
-					self._imageTime:setFontSize(36)
-				end
-				local UIHelper  = require("yoka.utils.UIHelper")
-				if Lang.checkLang(Lang.VN)  then 
-					UIHelper.alignCenter(self._imageBg,{self._imageTime,self._textTime},{8,0})
-				else
-					UIHelper.alignCenter(self._imageBg,{self._imageTime,self._textTime},{8,30})
-				end
 				
+				if Lang.checkLang(Lang.JA) then -- i18n ja change
+					UIHelper.setLabelStyle(self._imageTime,{
+						style = "activity_limit_3_ja",
+						text = Lang.getImgText(imageInfo.timeBgName) ,
+					})
+					self._textTime:setColor(Colors.OBVIOUS_GREEN) -- 修改倒计时颜色
+					self._textTime:setAnchorPoint(cc.p(1,0.5))
+					self._imageTime:setAnchorPoint(cc.p(1,0.5))
+
+					self._textTime:setPosition(363+100, -267)
+					self._imageTime:setPosition(self._textTime:getPositionX() - self._textTime:getContentSize().width - 2, -267)
+				end  
 			end
 
 			local UIActionHelper = require("app.utils.UIActionHelper")
@@ -147,11 +153,6 @@ function CustomActivityAvatarAdView:_updateDayNum()
 			UIHelper.alignCenterToFixPos(bgIndex == 1 and 63 or 63,{text10,self._imageCostIcon,self._textResCost},{3,3,0})
 
 		end
-
-		if Lang.checkLang(Lang.JA)  then -- i18n ja 策划需求：去掉剩余时间
-			self._imageTime:setVisible(false)
-			self._textTime:setVisible(false)
-		end 
 	end
 end
 
@@ -208,7 +209,7 @@ function CustomActivityAvatarAdView:_swapImageByI18n()
 		--self._imageBg:addChild(img)
 		local text1 = UIHelper.seekNodeByName(self,"Text_1")
 		text1:setAnchorPoint(cc.p(0,0.5))
-		text1:setPositionX(text1:getPositionX()-130)
+		text1:setPosition(text1:getPositionX()-130, -267)
 
 
 		self._buttonGoto:setPositionX(self._buttonGoto:getPositionX()+15)

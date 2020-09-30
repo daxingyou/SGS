@@ -9,7 +9,8 @@ local VipViewDiscountGiftPkg = class("VipViewDiscountGiftPkg", ActivitySubView)
 local TAB_TYPE = VipConst.SUB_TAB_TYPE
 
 
-function VipViewDiscountGiftPkg:ctor()
+function VipViewDiscountGiftPkg:ctor(parntView)
+	self.parntView = parntView
 	self._imageTabBg = nil
     self._activityModuleUIList = {}
     self._selectTabIndex = 0
@@ -31,9 +32,16 @@ function VipViewDiscountGiftPkg:onEnter()
 		handler(self, self._onEventRedPointChange))
 	self._signalUserLevelUp = G_SignalManager:add(SignalConst.EVENT_USER_LEVELUP, handler(self, self._onEventUserLevelUp ))
 	self._signalVipGotoTab = G_SignalManager:add(SignalConst.EVENT_VIP_GO_TO_TAB, handler(self, self._onEventVipGotoTab))
+	self._signalUpdateShopGoods = G_SignalManager:add(SignalConst.EVENT_SHOP_INFO_NTF, 
+		handler(self, self._onEventUpdateShopGoods))-- 刷新状态
+	--self:_pullData()
 
     self:_refreshTabGroup()
     self:_refreshRedPoint()
+end
+
+function VipViewDiscountGiftPkg:_pullData()
+	--G_UserData:getShops():c2sGetShopInfo(ShopConst.VIP_EXCHANGE_SHOP)
 end
 
 -- Describle：
@@ -46,6 +54,9 @@ function VipViewDiscountGiftPkg:onExit()
 
 	self._signalVipGotoTab:remove()
 	self._signalVipGotoTab = nil
+
+	self._signalUpdateShopGoods:remove()
+	self._signalUpdateShopGoods = nil
 end
 
 
@@ -58,14 +69,27 @@ end
 
 
 function VipViewDiscountGiftPkg:_onEventRedPointChange(event,funcId)
-	if funcId == FunctionConst.FUNC_WELFARE or funcId ==  FunctionConst.FUNC_SHOP_SCENE then
+	if  funcId ==  FunctionConst.FUNC_SHOP_SCENE then
+	
 		self:_refreshRedPoint()
 	end
 end
 
+
+
 function VipViewDiscountGiftPkg:_onEventUserLevelUp(id, message)
-	self:_refreshTagGroup()
+	self:_refreshTabGroup()
 end
+
+function VipViewDiscountGiftPkg:enterModule()
+
+end
+
+
+function VipViewDiscountGiftPkg:_onEventUpdateShopGoods(id, message)
+	
+end
+
 
 function VipViewDiscountGiftPkg:gotoView(threeTabType)
 	local paramIndex = self:_getTabIndexByTabId(threeTabType)
@@ -212,9 +236,9 @@ function VipViewDiscountGiftPkg:_refreshRedPoint()
 	for tabIndex,tabData in ipairs(self._tabListData) do
 		local tabId = self:_getTabId(tabData)
 		local redPointShow = false
-		if tabId == TAB_TYPE.LEVEL_GIFT then 
-			redPointShow = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_WELFARE,"subActivity",
-				ActivityConst.ACT_ID_LEVEL_GIFT_PKG)
+
+		if self._selectTabIndex == tabIndex then
+			redPointShow =  false
 		elseif tabId == TAB_TYPE.EXCHANGE then
 		
 		elseif tabId == TAB_TYPE.LIMIT_SHOP then
@@ -229,6 +253,11 @@ function VipViewDiscountGiftPkg:_refreshRedPoint()
 		end
 		self._tabGroup:setRedPointByTabIndex(tabIndex,redPointShow)
 	end
+	--当前显示页不需要显示红点
+	if self:isVisible() and self.parntView:isVisible()  then
+		self:_sendClickRedPointEvent(false)
+	end
+	
 end
 
 
@@ -256,7 +285,10 @@ function VipViewDiscountGiftPkg:_onTabSelect(index, sender)
 	if not newCreate then
 	end
 
-	self:_sendClickRedPointEvent()
+	local imageRedPoint =  ccui.Helper:seekNodeByName(sender, "Image_RedPoint")
+	if imageRedPoint:isVisible() then
+		self:_sendClickRedPointEvent()
+	end
 end
 
 function VipViewDiscountGiftPkg:_getActivityModuleUI(tabData)
@@ -286,27 +318,29 @@ function VipViewDiscountGiftPkg:_getActivityModuleUI(tabData)
 	return activityModuleUI,false
 end
 
-function VipViewDiscountGiftPkg:_sendClickRedPointEvent()
+function VipViewDiscountGiftPkg:_sendClickRedPointEvent(needNotice)
+	needNotice = needNotice == nil and true or needNotice
 	local tabData = self._tabListData[self._selectTabIndex]
 	local tabId = self:_getTabId(tabData)
 	
-	if tabId == TAB_TYPE.LEVEL_GIFT then 
-		G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
-			FunctionConst.FUNC_WELFARE,{actId = ActivityConst.ACT_ID_LEVEL_GIFT_PKG})
-	elseif tabId == TAB_TYPE.EXCHANGE then 
+	if tabId == TAB_TYPE.EXCHANGE then 
 	elseif tabId == TAB_TYPE.LIMIT_WEEK_SHOP then
-		G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
-			FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = ShopConst.EXCHANGE_SHOP_TAB.WEEK_LIMIT,"vip"} )
-	elseif tabId == TAB_TYPE.LIMIT_SHOP then
-		G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
-			FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = ShopConst.EXCHANGE_SHOP_TAB.LIMIT,"vip"} )
-	elseif tabId == TAB_TYPE.NORMAL_SHOP then
-		logWarn("VipViewDiscountGiftPkg ddd"..tabId)
-		G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
-			FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = ShopConst.EXCHANGE_SHOP_TAB.NORMAL,"vip"} )
-	end
+		--G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
+		--	FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = ShopConst.EXCHANGE_SHOP_TAB.WEEK_LIMIT,"vip"} )
+		G_UserData:getShops():saveGoodIdListToRedPointSys(ShopConst.VIP_EXCHANGE_SHOP,ShopConst.EXCHANGE_SHOP_TAB.WEEK_LIMIT,"vip",needNotice)
 
-	--ShopConst.EXCHANGE_SHOP_TAB.LIMIT
+	elseif tabId == TAB_TYPE.LIMIT_SHOP then
+		--G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
+		--	FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = ShopConst.EXCHANGE_SHOP_TAB.LIMIT,"vip"} )
+		G_UserData:getShops():saveGoodIdListToRedPointSys(ShopConst.VIP_EXCHANGE_SHOP,ShopConst.EXCHANGE_SHOP_TAB.LIMIT,"vip",needNotice)
+	elseif tabId == TAB_TYPE.NORMAL_SHOP then
+		--logWarn("VipViewDiscountGiftPkg ddd"..tabId)
+		--G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_CLICK,
+		--	FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = ShopConst.EXCHANGE_SHOP_TAB.NORMAL,"vip"} )
+		G_UserData:getShops():saveGoodIdListToRedPointSys(ShopConst.VIP_EXCHANGE_SHOP,ShopConst.EXCHANGE_SHOP_TAB.NORMAL,"vip",needNotice)
+		
+	end
+	
 end
 
 function VipViewDiscountGiftPkg:_getTabId(tabData)

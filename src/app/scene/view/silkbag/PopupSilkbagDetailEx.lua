@@ -262,6 +262,9 @@ end
 
 -- i18n change lable
 function PopupSilkbagDetailEx:_dealI18n()
+	if Lang.checkUI("ui4") then  -- i18n ja change font size
+		self._btnWayGet:setFontSize(26)
+	end
 end
 
 return PopupSilkbagDetailEx

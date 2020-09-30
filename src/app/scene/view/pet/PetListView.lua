@@ -35,6 +35,8 @@ function PetListView:onCreate()
 	self._topbarBase:updateUI(TopBarStyleConst.STYLE_COMMON)
 
 	self:_swapImageByI18n()
+	-- i18n ja 回收
+	self:_showRecycleBtnI18n()
 
 	self:_initTabGroup()
 end
@@ -134,6 +136,16 @@ function PetListView:_updateView()
 		self._tabListView:updateListView(self._selectTabIndex, self._count, scrollViewParam)
 		self._fileNodeEmpty:setVisible(false)
 	end
+	-- i18n ja 回收
+	if Lang.checkUI("ui4") then
+		local FunctionCheck = require("app.utils.logic.FunctionCheck")
+		local isOpen = FunctionCheck.funcIsOpened(FunctionConst.FUNC_RECYCLE)
+		if isOpen then
+			self._buttonRecycle:setVisible(self._selectTabIndex == PetConst.PET_LIST_TYPE1)
+		else
+			self._buttonRecycle:setVisible(false)
+		end
+	end
 end
 
 function PetListView:_getEmptyType()
@@ -229,5 +241,23 @@ function PetListView:_swapImageByI18n()
 	end
 end
 
+-- i18n ja 回收
+function PetListView:_showRecycleBtnI18n()
+	if Lang.checkUI("ui4") then
+		local UIHelper  = require("yoka.utils.UIHelper")
+		self._buttonRecycle = self._buttonSale:clone()
+		local parent = self._buttonSale:getParent()
+		parent:addChild(self._buttonRecycle)
+		self._buttonRecycle:setVisible(true)
+		local label = UIHelper.seekNodeByName(self._buttonRecycle,"Image_21")
+		local funcInfo = require("app.config.function_level").get(FunctionConst.FUNC_RECYCLE)
+		label:setString(funcInfo.name)
+		self._buttonRecycle:loadTextureNormal(Path.getCommonIcon("main", funcInfo.icon))
+		self._buttonRecycle:addClickEventListenerEx(function ()
+			local RecoveryConst = require("app.const.RecoveryConst")
+			G_SceneManager:showScene("recovery", RecoveryConst.RECOVERY_TYPE_9)
+		end)
+	end
+end
 
 return PetListView

@@ -38,9 +38,15 @@ end
 
 function PopupInstrumentTransformResult:onEnter()
 	self._canContinue = false
-	self:_updateInfo()
-	self:_initEffect()
-	self:_playEffect()
+	-- 特效处理 
+	if Lang.checkUI("ui4") then
+		self:_initEffectByI18n()
+		self:_playEffectByI18n()
+	else
+		self:_updateInfo()
+		self:_initEffect()
+		self:_playEffect()
+	end
 end
 
 function PopupInstrumentTransformResult:onExit()
@@ -222,4 +228,154 @@ function PopupInstrumentTransformResult:_createRoleEffect()
 end
 
 
+
+function PopupInstrumentTransformResult:_createRoleEffectByI18n()
+	local function effectFunction(effect)
+		if effect == "levelup_role" then
+			local spineNode = cc.Node:create()
+    		local itemSpine = CSHelper.loadResourceNode(Path.getCSB("CommonInstrumentAvatar", "common"))
+			itemSpine:updateUI(self._data.tarItemBaseId, self._data.tarLimitLevel)
+			itemSpine:showShadow(false)
+			itemSpine:setPositionY(80)
+			spineNode:addChild(itemSpine)
+			return spineNode
+    	end
+        return cc.Node:create()
+    end
+    local function eventFunction(event)
+        if event == "finish" then
+        end
+    end
+
+    local node = cc.Node:create()
+	local effect = G_EffectGfxMgr:createPlayMovingGfx(node, "moving_zhihuan_role", effectFunction, eventFunction , false)
+    return node
+end
+
+function PopupInstrumentTransformResult:_playEffectByI18n()
+	local function effectFunction(effect)
+       
+        if effect == "moving_wujiangbreak_jiesuo" then
+        	local desNode = CSHelper.loadResourceNode(Path.getCSB("BreakResultTalentDesNode", "item"))
+            local textTalentName = ccui.Helper:seekNodeByName(desNode, "TextTalentName")
+            local textTalentDes = ccui.Helper:seekNodeByName(desNode, "TextTalentDes")
+            local imageButtomLine = ccui.Helper:seekNodeByName(desNode, "ImageButtomLine")
+            textTalentName:setString(self._talentName..":")
+            local nameSize = textTalentName:getContentSize()
+            local namePosX = textTalentName:getPositionX()
+
+            local render = textTalentDes:getVirtualRenderer()
+			render:setMaxLineWidth(290 - nameSize.width)
+            textTalentDes:setString(self._talentDes)
+            textTalentDes:setPositionX(namePosX + nameSize.width + 5)
+            local desSize = textTalentDes:getContentSize()
+            local posLineY = textTalentDes:getPositionY() - desSize.height - 5
+            posLineY = math.min(posLineY, 0)
+			imageButtomLine:setPositionY(posLineY)
+		
+            return desNode
+        end
+
+    	if effect == "moving_wujiangbreak_txt_1" then
+    	end
+
+    	if effect == "moving_zhihuan_role" then
+    		local node = self:_createRoleEffectByI18n()
+    		return node
+    	end		
+        return cc.Node:create()
+    end
+
+	local function eventFunction(event)
+		local stc, edc = string.find(event, "play_shuzhi")
+    	if stc then
+			local index = tonumber( string.sub(event, edc+1, -1) )
+			if index and index > 0 and (tonumber(index) <= PopupInstrumentTransformResult.ATTAR_SUM ) then
+				self["_fileNodeAttr"..index]:setVisible(true)
+				local function effectFunction1(effect_2)
+					if effect_2 == "target" then  				-- 创建3属性
+						local node = cc.Node:create()
+						return node
+					end
+					if effect_2 == "smoving_wujiangbreak_txt_green" then  -- 创建绿色字
+						local node = cc.Node:create()	
+						return node
+					end
+				end
+				local effectNode = self["_fileNodeAttr"..index]:getChildByName("effectNode")
+				if effectNode then
+					 G_EffectGfxMgr:createPlayMovingGfx(effectNode, "moving_wujiangbreak_txt", effectFunction1, nil , false)
+				end
+			end
+		end
+    	if event == "finish" then
+        	self._canContinue = true
+        	self._nodeContinue:setVisible(true)
+		end
+		
+		  --标题字特效
+		  if event == "zhihuan" then
+            self._nodeTxt1:setVisible(true)
+    		G_EffectGfxMgr:applySingleGfx(self._nodeTxt1, "smoving_wujiangbreak_txt_1", nil, nil, nil)
+        end
+    end
+
+	local effect = G_EffectGfxMgr:createPlayMovingGfx(self._nodeEffect, "moving_zhihuanchenggong", effectFunction, eventFunction , false)
+    effect:setPosition(cc.p(0, 0))
+end
+
+
+-- i18n
+function PopupInstrumentTransformResult:_initEffectByI18n()
+	--隐藏火焰背景图
+	local bgImg = ccui.Helper:seekNodeByName(self._resourceNode, "Image_2")  
+	bgImg:setVisible(false)
+	self._nodeContinue:setVisible(false)
+	self._nodeTxt1:setVisible(false)
+	local srcItemBaseId = self._data.srcItemBaseId
+    local tarItemBaseId = self._data.tarItemBaseId
+    local tarLimitLevel = self._data.tarLimitLevel
+    local srcParam = TypeConvertHelper.convert(TypeConvertHelper.TYPE_INSTRUMENT, srcItemBaseId, nil, nil, tarLimitLevel)
+    local tarParam = TypeConvertHelper.convert(TypeConvertHelper.TYPE_INSTRUMENT, tarItemBaseId, nil, nil, tarLimitLevel)
+
+	self._textSrcTreasure:setString(srcParam.name)
+    self._textTarTreasure:setString(tarParam.name)
+    self._textSrcTreasure:setColor(cc.c3b(0xff, 0xb8, 0x0c))
+    self._textTarTreasure:setColor(cc.c3b(0xff, 0xb8, 0x0c))
+	local pos = {
+		-115,-150,-185,-220,-255,-290
+	}
+	for i = 1,3 do
+		if self["_nodeDesDiff"..i] then
+			self["_nodeDesDiff"..i]:removeFromParent()
+		end
+		self["_fileNodeAttr"..i]  = cc.Node:create()
+		local posy = pos[i]
+		self["_fileNodeAttr"..i]:setPositionY(posy)
+		self._nodeEffect:addChild(self["_fileNodeAttr"..i])
+
+		local effectNode =  cc.Node:create()
+		effectNode:setName("effectNode")
+		self["_fileNodeAttr"..i]:addChild(effectNode)
+
+		local CSHelper = require("yoka.utils.CSHelper")
+		local desNode = CSHelper.loadResourceNode(Path.getCSB("CommonLevelUpAttr1", "common"))
+		cc.bind(desNode,"CommonAttrDiff")
+		desNode:setName("infoNode")
+		self["_fileNodeAttr"..i]:addChild(desNode)
+		self["_fileNodeAttr"..i]:setVisible(false)
+	end
+	for i = 1, PopupInstrumentTransformResult.ATTAR_SUM do
+		self:_updateAttrByI18n(i,Lang.get("instrument_transform_result_title_"..i), self._data.value[i], self._data.value[i])
+    end
+end
+
+--更新属性
+function PopupInstrumentTransformResult:_updateAttrByI18n(index,name, value, nextValue)
+	local nodeAttr = self["_fileNodeAttr"..index]:getChildByName("infoNode")
+	if not nodeAttr then
+		return
+	end 
+	nodeAttr:updateEffectAttrByI18n(name, value, nextValue)
+end	
 return PopupInstrumentTransformResult

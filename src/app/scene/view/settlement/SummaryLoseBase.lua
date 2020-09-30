@@ -87,7 +87,7 @@ function SummaryLoseBase:_createContinueNode()
     local height = math.min(640, display.height)
     local midXPos = SummaryBase.NORMAL_FIX_X
     continueNode:setPosition(cc.p(-midXPos + 30, 25 - height*0.5))
-    if Lang.checkLang(Lang.ZH) then
+    if Lang.checkLang(Lang.ZH) or Lang.checkLang(Lang.JA) then
         continueNode:setPositionX(continueNode:getPositionX()+70)
     end
     self._panelFinish:setTouchEnabled(true)
@@ -107,8 +107,11 @@ function SummaryLoseBase:_createContinueNode()
         self._btnStatistics:setPosition(cc.p(-x, -320))
         self._btnStatistics:setTouchEnabled(true)
         self._btnStatistics:addTouchEventListener(handler(self,self._onStatisticsClick))
-    
-      
+
+        --i18n ui4
+        if Lang.checkUI("ui4") then
+            self._btnStatistics:setPosition(-x + 55, -305)
+        end
 
         -- i18n change lable
         if not Lang.checkLang(Lang.CN) then
@@ -118,6 +121,10 @@ function SummaryLoseBase:_createContinueNode()
                 position = cc.p(95, 20),
                 anchorPoint = cc.p(0.5,0.5),
             })
+            --i18n ui4
+            if Lang.checkUI("ui4") then
+                label:setPosition(40, 6)
+            end
             self._btnStatistics:addChild(label)
         else
             local spriteTongji = cc.Sprite:create(Path.getBattleFont("txt_tongji01"))
@@ -140,6 +147,10 @@ function SummaryLoseBase:_createContinueNode()
         self._btnReplay:setTouchEnabled(true)
         self._btnReplay:addTouchEventListener(handler(self,self._onReplayClick))
 
+        --i18n ui4
+        if Lang.checkUI("ui4") then
+            self._btnReplay:setPositionY(-305)
+        end
        
         -- i18n change lable
         if not Lang.checkLang(Lang.CN) then
@@ -150,6 +161,10 @@ function SummaryLoseBase:_createContinueNode()
                 anchorPoint = cc.p(0.5,0.5),
             })
             self._btnReplay:addChild(label)
+            --i18n ui4
+            if Lang.checkUI("ui4") then
+                label:setPosition(40, 6)
+            end
         else
             local spriteTongji = cc.Sprite:create(Path.getBattleFont("txt_huifang02"))
             self._btnReplay:addChild(spriteTongji)

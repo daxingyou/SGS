@@ -30,6 +30,8 @@ function PopupEquipDetail:ctor(type,value)
 end
 
 function PopupEquipDetail:onCreate()
+	--i18n ja 
+	self:_dealByI18n()
 	self:_updateEquipInfo(self._value)
 	self._fileNodeEquip:setVisible(true)
 	self._fileNodeEquip:showShadow(false)
@@ -132,4 +134,12 @@ function PopupEquipDetail:_updateItemAvatar(sender, widget, index, selectPos)
 	end
 
 end
+
+-- i18n ja
+function PopupEquipDetail:_dealByI18n() 
+	if Lang.checkUI("ui4") then 
+		self._btnWayGet:setFontSize(26)
+	end
+end
+
 return PopupEquipDetail

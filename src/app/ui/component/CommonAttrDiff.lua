@@ -15,6 +15,7 @@ local EXPORTED_METHODS = {
     "showDiffValue",
 	"updateValue",
 	"setNextValueGap",-- i18n pos lable
+	"updateEffectAttrByI18n"
 }
 
 function CommonAttrDiff:ctor()
@@ -149,4 +150,26 @@ function CommonAttrDiff:setNextValueGap(gap)
 	self._textAddValue:setPositionX(self._textAddValue:getPositionX()+gap)
 end
 
+--i18n 
+function CommonAttrDiff:updateEffectAttrByI18n( name, value, nextValue)
+	local textName = ccui.Helper:seekNodeByName(self._target, "TextName")
+	local textCurValue = ccui.Helper:seekNodeByName(self._target, "TextCurValue") 
+	local textNextValue = ccui.Helper:seekNodeByName(self._target, "TextNextValue")  
+	local jiantou = ccui.Helper:seekNodeByName(self._target, "jiantou")  
+
+	textCurValue:setString( value)
+	textNextValue:setString( nextValue)
+	textName:setString(name)  
+	--调整属性
+	ccui.Helper:seekNodeByName(self._target, "ImageUpArrow"):setVisible(false) 
+	ccui.Helper:seekNodeByName(self._target, "TextAddValue"):setVisible(false) 
+	self._textName:setAnchorPoint(cc.p(0, 0))
+	self._textName:setPosition(cc.p(-160, -11))
+	self._textCurValue:setAnchorPoint(cc.p(0, 0))
+	self._textCurValue:setPosition(cc.p(-35, -11))
+	self._textNextValue:setAnchorPoint(cc.p(0, 0))
+	self._textNextValue:setPosition(cc.p(136, -11))
+	jiantou:setPositionY(-11)
+	jiantou:setPositionX(61)
+end
 return CommonAttrDiff

@@ -28,11 +28,6 @@ function VipViewLimitShopView:onCreate()
 	self._isCreate = true
 end
 
-
-function VipViewLimitShopView:_pullData()
-	G_UserData:getShops():c2sGetShopInfo(ShopConst.VIP_EXCHANGE_SHOP)
-end
-
 -- Describle：
 function VipViewLimitShopView:onEnter()
 	self._signalUpdateShopGoods = G_SignalManager:add(SignalConst.EVENT_SHOP_INFO_NTF, 
@@ -42,7 +37,6 @@ function VipViewLimitShopView:onEnter()
 		handler(self, self._onEventRecvCurrencysInfo))
 
 	self:_updateData()
-    self:_pullData()
 end
 
 -- Describle：
@@ -182,7 +176,7 @@ function VipViewLimitShopView:_popupFixShopBuyItem(shopItemData)
 			end)
 		PopupSystemAlert:openWithAction()
 		PopupSystemAlert:setCheckBoxVisible(true)
-		PopupSystemAlert:setModuleName("VipViewExchange")
+		PopupSystemAlert:setModuleName("VipViewLimitShopView")
 
 	end
 		

@@ -12,6 +12,7 @@ function PosterGirlVoiceStateData:clear()
 end
 
 function PosterGirlVoiceStateData:loadLocalSetting()
+    G_StorageManager:setUserInfo("", G_UserData:getBase():getId())
     local settingData = G_StorageManager:loadUser(SETTING_NAME)
     if not settingData then
         settingData = {version = 0}

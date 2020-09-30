@@ -38,7 +38,7 @@ function DataResetService:tick()
     end
 end
 
-function DataResetService._checkResetI18n(resetFunc)
+function DataResetService:_checkResetI18n(resetFunc)
     if not Lang.checkLang(Lang.CN) then
         for key, value in pairs(resetFunc) do
             if string.find(key,"FUNC_") and type(value) == "function" then

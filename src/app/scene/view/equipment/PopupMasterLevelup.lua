@@ -6,6 +6,8 @@ local PopupBase = require("app.ui.PopupBase")
 local PopupMasterLevelup = class("PopupMasterLevelup", PopupBase)
 local MasterConst = require("app.const.MasterConst")
 local AudioConst = require("app.const.AudioConst")
+local TextHelper = require("app.utils.TextHelper")
+
 
 local TYPE_RES = {
 	[MasterConst.MASTER_TYPE_1] = "img_btn_qianghuadashi01",
@@ -73,6 +75,10 @@ function PopupMasterLevelup:_onClickTouch()
 end
 
 function PopupMasterLevelup:_updateView()
+	if self == nil or self._parentView == nil or self._masterInfo1 == nil or self._masterInfo2 == nil then
+		return
+	end
+	
 	local totalLevel = self._masterInfo1.masterInfo.needLevel
 	self._textTotalLevel:setString(Lang.get("equipment_master_total_level", {level = totalLevel}))
 
@@ -119,6 +125,10 @@ end
 
 --特殊处理
 function PopupMasterLevelup:_createPlayEffectByI18n()
+	local  numItems = 0
+	for k,v in pairs(self._masterInfo1.masterInfo.curAttr) do
+		numItems = numItems + 1
+	end
 	local function effectFunction(effect)
 		if effect == "qianghuadengji" then
 			local totalLevel = self._masterInfo1.masterInfo.needLevel
@@ -174,7 +184,8 @@ function PopupMasterLevelup:_createPlayEffectByI18n()
 		local stc, edc = string.find(event, "play_shuzhi")
     	if stc then
 			local index = tonumber( string.sub(event, edc+1, -1) )
-			if index and index > 0 then
+
+			if index and index > 0 and index <= numItems  then
 				self["_fileNodeAttr"..index]:setVisible(true)
 				local function effectFunction1(effect_2)
 					if effect_2 == "target" then  				-- 创建3属性
@@ -204,11 +215,11 @@ function PopupMasterLevelup:_createPlayEffectByI18n()
 end
 
 --添加特效节点
-function PopupMasterLevelup:_initEffectByI18n()
+function PopupMasterLevelup:_initEffectByI18n()	
 	if Lang.checkUI("ui4") then	
 		self._nodeContinue:setVisible(false)
 		local pos = {
-			-50,-85,-120,-155,
+			-50,-85,-120,-155,-190
 		}
 
 		for i = 1, 4 do
@@ -230,6 +241,15 @@ function PopupMasterLevelup:_initEffectByI18n()
 		
 
 		end
+
+		-- 处理异常
+		if self == nil or self._parentView == nil or self._masterInfo1 == nil or self._masterInfo2 == nil then
+			return
+		end
+		if self._masterInfo1.masterInfo == nil or self._masterInfo1.masterInfo.curAttr == nil or self._masterInfo2.masterInfo == nil or self._masterInfo2.masterInfo.curAttr == nil then
+			return
+		end
+
 		local attrInfo1 = self._masterInfo1.masterInfo.curAttr
 		local attrInfo2 = self._masterInfo2.masterInfo.curAttr
 		local index = 1
@@ -247,19 +267,33 @@ function PopupMasterLevelup:_updateAttrByI18n(index, name, value, nextValue)
 	if not nodeAttr then
 		return
 	end 
+	if name == nil or value == nil then
+		return
+	end
+
 	local textName = ccui.Helper:seekNodeByName(nodeAttr, "TextName")
 	local textCurValue = ccui.Helper:seekNodeByName(nodeAttr, "TextCurValue") 
 	local textNextValue = ccui.Helper:seekNodeByName(nodeAttr, "TextNextValue")  
 	local jiantou = ccui.Helper:seekNodeByName(nodeAttr, "jiantou")  
 
-	textCurValue:setString( value)
-	textNextValue:setString( nextValue)
-	textName:setString(name)  
+	local name1, value1 = TextHelper.getAttrBasicText(name, value)
+	
+	textName:setString(name1)
+	textCurValue:setString(value1)
+
+	if nextValue == nil then --达到上限
+		textNextValue:setString(Lang.get("equipment_strengthen_max_level"))
+		return
+	end
+	
+	local _, value2 = TextHelper.getAttrBasicText(name, nextValue)
+	textNextValue:setString(value2)
+
 	--调整属性
 	ccui.Helper:seekNodeByName(nodeAttr, "ImageUpArrow"):setVisible(false) 
 	ccui.Helper:seekNodeByName(nodeAttr, "TextAddValue"):setVisible(false) 
 	textName:setAnchorPoint(cc.p(0, 0))
-	textName:setPosition(cc.p(-160, -11))
+	textName:setPosition(cc.p(-210, -11))
 	textCurValue:setAnchorPoint(cc.p(0, 0))
 	textCurValue:setPosition(cc.p(-35, -11))
 	textNextValue:setAnchorPoint(cc.p(0, 0))

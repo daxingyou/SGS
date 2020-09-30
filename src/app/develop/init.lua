@@ -17,21 +17,21 @@ local LOG_COLOR = {
 -- end
 
 logWarn = function(...)
-    dump_print(LOG_COLOR.YELLOW,...)
+   -- dump_print(LOG_COLOR.YELLOW,...)
 end
 
 --
 logDebug = function(...)
-    dump_print(LOG_COLOR.PURPLE,...)
+   --  dump_print(LOG_COLOR.PURPLE,...)
 end
 
 --
 logError = function(...)
-    dump_print(LOG_COLOR.RED,...)
+  --   dump_print(LOG_COLOR.RED,...)
 end
 
 logNewT = function( str )
-    dump_print(LOG_COLOR.BLUE,"[TutorialLog]"..str)
+  --   dump_print(LOG_COLOR.BLUE,"[TutorialLog]"..str)
 end
 
 -- 打开检查node节点引用计数

@@ -81,6 +81,9 @@ function PopupActiveJoint:_updateInfo()
 end
 
 function PopupActiveJoint:_playEffect()
+	--添加音效
+	local AudioConst = require("app.const.AudioConst")
+	G_AudioManager:playSound(Path.getUIVoice("Active_Joint_sound"))
 	local function effectFunction(effect)
         if effect == "effect_hejijihuo_jiahao" then
             local subEffect = EffectGfxNode.new("effect_hejijihuo_jiahao")
@@ -185,8 +188,17 @@ end
 function PopupActiveJoint:_createIconNode1()
 	local function effectFunction(effect)
         if effect == "icon_1" then
-            local icon1 = CSHelper.loadResourceNode(Path.getCSB("CommonHeroIcon", "common"))
+			local icon1 = CSHelper.loadResourceNode(Path.getCSB("CommonHeroIcon", "common"))
 			icon1:updateUI(self._heroId1)
+			
+			-- i18n ja pos
+			if Lang.checkLang(Lang.JA) then
+				local node = cc.Node:create()
+				node:addChild(icon1)
+				icon1:setPositionX(icon1:getPositionX() - 10)
+				return node
+			end
+			
 			return icon1
         end
 

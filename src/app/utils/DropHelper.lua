@@ -182,6 +182,8 @@ function DropHelper.sortDropList(dropList)
                 local bCfg = TypeConvertHelper.convert(b.type, b.value, b.size).cfg
                 if a.type == TypeConvertHelper.TYPE_TITLE then
                     return aCfg.colour > bCfg.colour
+                elseif a.type == TypeConvertHelper.TYPE_POSTER_GIRL_SKIN then
+                    return aCfg.quality > bCfg.quality
                 else
                     return aCfg.color > bCfg.color
                 end

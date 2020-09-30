@@ -121,12 +121,16 @@ function PopupUserDetailInfo:_initView()
 		end
 	end
 
-	self._petButton = CSHelper.loadResourceNode(Path.getCSB("CommonMainMenu", "common"))
-	self._petButton:updateUI(FunctionConst.FUNC_PET_HOME)
-	self._petButton:setScale(0.8)
-	self._petButton:addClickEventListenerEx(handler(self, self._onClickButtonPet))
-	local iconBgPet = createIcon(self._petButton)
-	self._listViewLineup:pushBackCustomItem(iconBgPet)
+	-- i18n ja 神兽功能未开启不显示神兽按钮
+    local isOpen = self._detailData:funcIsShow(FunctionConst.FUNC_PET_HOME)
+    if isOpen then
+		self._petButton = CSHelper.loadResourceNode(Path.getCSB("CommonMainMenu", "common"))
+		self._petButton:updateUI(FunctionConst.FUNC_PET_HOME)
+		self._petButton:setScale(0.8)
+		self._petButton:addClickEventListenerEx(handler(self, self._onClickButtonPet))
+		local iconBgPet = createIcon(self._petButton)
+		self._listViewLineup:pushBackCustomItem(iconBgPet)
+    end
 
 	self._partnerButton = TeamPartnerButton.new(handler(self, self._onButtonJiBanClicked))
 	local iconBgPartner = createIcon(self._partnerButton)
@@ -386,6 +390,7 @@ end
 
 -- i18n ja change zorder
 function PopupUserDetailInfo:changeLocalZorder( )
+	-- 调整层级
 	self._pageView:setLocalZOrder( self._imageBackground:getLocalZOrder() + 1)   
 
 	self._nodeContent:setLocalZOrder( self._pageView:getLocalZOrder() + 1)  
@@ -395,6 +400,12 @@ function PopupUserDetailInfo:changeLocalZorder( )
 	self._listViewLineup:getParent():setLocalZOrder( self._imageAwakeBg:getLocalZOrder() + 1)  
 
 	self._imageBackground:loadTexture(Path.getStageBG("img_transform_bg_new"))
+
+	-- 觉醒修改
+	self._imageAwakeBg:loadTexture(Path.getTeamUI("img_team_bg_name"))
+	self._imageAwakeBg:getChildByName("Image_3790"):setVisible(false) 
+	self._nodeHeroStar:setPosition(18, 0) 
+	self._imageAwakeBg:setContentSize(cc.size(188, 30))
 end
 
 return PopupUserDetailInfo

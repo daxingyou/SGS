@@ -56,6 +56,8 @@ function AudioHelper.playSound(path, loop, volume, pitch)
 		return musicId
 	else
 		if Lang.checkUI("ui4") then
+			-- i18n ja setSoundsVolume 固定为1，音量通过playSound的gain参数来控制，以区分普通音效和vc配音
+			audio.setSoundsVolume(1)
 			return audio.playSound(path, loop or false, pitch or 1,nil,volume or 1)
 		end
 		audio.setSoundsVolume(volume or 1)

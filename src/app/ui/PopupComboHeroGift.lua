@@ -134,7 +134,22 @@ function PopupComboHeroGift:play()
 				fontSize = 22,
 				color =Colors.getColor(4) ,
 				outlineColor = Colors.getColorOutline(4),
-			}
+            }
+            if Lang.checkUI("ui4") then
+                params1 ={
+                    name = "label1",
+                    text =  Lang.get("common_gift_hejijiang1"),
+                    fontSize = 22,
+                    color = cc.c3b(0xe8, 0xb8, 0x80) ,
+                }
+                 params2 ={
+                    name = "label2",
+                    text = Lang.get("common_gift_hejijiang2"),
+                    fontSize = 22,
+                    color =Colors.getColor(4) ,
+                    outlineColor = Colors.getColorOutline(4),
+                }
+            end
 			local label = UIHelper.createTwoLabel(params1,params2)
 			return label
 		elseif effect == "effect_xiujiang_heidi" then

@@ -16,9 +16,12 @@ function PosterGirlPlayTaskData:ctor(properties)
 end
 
 function PosterGirlPlayTaskData:clear()
+
 end
 
 function PosterGirlPlayTaskData:reset()
+    self:setReceive(false)
+    self:setValue(0)
 end
 
 function PosterGirlPlayTaskData:updateData(id,type,value,isReceive)  

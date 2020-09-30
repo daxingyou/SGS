@@ -676,6 +676,9 @@ function TypeConvertHelper._convert_TYPE_RESOURCE(params, info)
     end
 
     retTemp.name = info.name
+    if Lang.checkUI("ui4") then
+        retTemp.description = info.description
+    end
 
     return retTemp
 end
@@ -876,16 +879,23 @@ end
 
 --i8n ja
 function TypeConvertHelper._convert_TYPE_POSTER_GIRL_SKIN(params, info)
+
+    local skinResConfig = require("app.config.skin_res").get(info.resource)
+    assert(skinResConfig, "Could not find the skin res config with id: " .. tostring(info.resource))
+  
     local retTemp = {}
     retTemp.item_type = params.type
     retTemp.item_control = TypeConvertHelper.getTypeClass(params.type)
-    retTemp.icon = Path.getSkinIcon(info.id)
+    retTemp.icon = Path.getSkinIcon(skinResConfig.icon)
     retTemp.icon_bg = nil
     retTemp.color = 1
-    retTemp.icon_color = Colors.SKIN_NAME_COLOR --Colors.getColor(retTemp.color)
-    retTemp.icon_color_outline = nil --Colors.getColorOutline(retTemp.color)
+    retTemp.icon_color = Colors.SKIN_NAME_COLOR
+    retTemp.icon_color_outline = nil
     retTemp.name = info.name
     retTemp.nameImg = Path.getVip2("girl_name_"..info.id)
+    retTemp.showImg = Path.getVip2(skinResConfig.show_res)
+    retTemp.staticImg = Path.getVip2(skinResConfig.story_res)
+    retTemp.res_cfg = skinResConfig
     return retTemp
 end
 

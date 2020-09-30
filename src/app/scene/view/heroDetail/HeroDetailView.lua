@@ -94,8 +94,9 @@ end
 
 --只创建widget，减少开始的加载量
 function HeroDetailView:_createPageItem()
-	local widget = ccui.Widget:create()
+	local widget = ccui.Layout:create()   -- i18n ja change
 	widget:setContentSize(self._pageViewSize.width, self._pageViewSize.height)
+	widget:setClippingEnabled(true)    	-- bug: 个别武将会重叠（如：张飞）
 
 	return widget
 end
@@ -117,21 +118,23 @@ function HeroDetailView:_updatePageItem()
 				if not Lang.checkUI("ui4") then
 					local avatar = CSHelper.loadResourceNode(Path.getCSB("CommonHeroAvatar", "common"))
 					avatar:updateUI(heroBaseId, nil, nil, limitLevel, nil, nil, limitRedLevel)
-					avatar:setScale(1.4)
-					avatar:setPosition(cc.p(self._pageViewSize.width*0.57, 190))
 					widget:addChild(avatar)
 				else 
 					local story = CSHelper.loadResourceNode(Path.getCSB("CommonStoryAvatar", "common"))
 					story:updateChatUI(heroBaseId, limitLevel, limitRedLevel)
 					story:setScale(1)
 					story:setPosition(cc.p(self._pageViewSize.width / 2 , 0)) -- 调位置  会被截掉  是因为缩放导致大小变化
-					--ccui.Helper:seekNodeByName(story, "NodeAvatar"):setPositionY(ccui.Helper:seekNodeByName(story, "Panel_1"):getContentSize().height*0.2)
 					widget:addChild(story)  
+
+					local info = require("app.config.hero").get(heroBaseId) -- 位置调整
+					local resData = require("app.config.hero_res").get(info.res_id)
+					local axis = string.split(resData.cultivate_deviation, "|")
+					story:setPosition(story:getPositionX() + tonumber(axis[1]), story:getPositionY() + tonumber(axis[2])) 
 				end	
 			end
 
 			-- i18n ja change
-			if Lang.checkUI("ui4") and index == self._selectedPos then  --  bug: 因为界限突破成功后 形象会发生变化  so刷新下
+			if Lang.checkUI("ui4") and i == self._selectedPos then  --  bug: 因为界限突破成功后 形象会发生变化  so刷新下
 				local heroId = self._allHeroIds[i]
 				local unitData = G_UserData:getHero():getUnitDataWithId(heroId)
 

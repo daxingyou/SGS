@@ -45,15 +45,15 @@ function HeroLimitCostPanel:_initView()
 	-- i8n ja change
 	if Lang.checkUI("ui4") then
 		tbPos[2] = {
-			[1] = {82 + 5, -220},         
-			[2] = {3 + 5, -220},
+			[1] = {123, 84},         
+			[2] = {42, 84},
 		}
 
 		tbPos[4] = {
-			[1] = {82 + 5, -220},
-			[2] = {3 + 5, -220},
-			[3] = {-76 + 5, -220},
-			[4] = {-156 + 5, -220},
+			[1] = {42, 84},
+			[2] = {120, 84},
+			[3] = {199, 84},
+			[4] = {278, 84},
 		}
 	end
 
@@ -107,6 +107,7 @@ function HeroLimitCostPanel:_initView()
 
 	self._panelTouch:setContentSize(G_ResolutionManager:getDesignCCSize())
 	-- self._panelTouch:setSwallowTouches(false)
+	self._panelTouch:setScale(3)
 	self._panelTouch:addClickEventListener(handler(self, self._onClickPanel)) --避免0.5秒间隔
 end
 
@@ -117,12 +118,12 @@ function HeroLimitCostPanel:onEnter()
 	-- i18n ja pos 确定位置
 	if Lang.checkUI("ui4") then   
 		local num = #self._items
-		local width = self._items[1]:getChildByName("PanelTouch"):getBoundingBox().width*0.8
+		local width = self._items[1]:getChildByName("PanelTouch"):getBoundingBox().width*0.8   -- width=64
 
 		width = 10 + num*(width + 15) - 2
 		if #self._items == 1 then   		-- 仅一个材料，背景框要适配描述字
 			width = 210
-			self._items[1]:setPositionX(25)
+			self._items[1]:setPosition(width/2, 84)
 		end
 		self._imageBg:setContentSize(cc.size(width, 140))
 		self._imageBg:getChildren()[1]:setPositionX(width/2)
@@ -164,8 +165,16 @@ end
 function HeroLimitCostPanel:adjustI18n()
 	-- 策劃需求 字号调大
 	for i=1, #self._items do
-		ccui.Helper:seekNodeByName(self._items[i], "TextValue"):setFontSize(ccui.Helper:seekNodeByName(self._items[i], "TextValue"):getFontSize() + 1)
+		ccui.Helper:seekNodeByName(self._items[i], "TextValue"):setFontSize( 16 + 1 )
 	end
+
+	-- --多机型适配位置 <写在上层PopupCommonLimitCost类中， 导致点击时不会关闭>
+	-- local scene = G_SceneManager:getTopScene()   
+	-- local view = scene:getSceneView()
+	-- local _listView = ccui.Helper:seekNodeByName(view, "_listView")  
+	-- local newWorldPos = _listView:getParent():convertToWorldSpace(cc.p(_listView:getPositionX(), _listView:getPositionY()))
+	-- newWorldPos = self._imageBg:getParent():convertToNodeSpace(cc.p(newWorldPos.x - 326 - 4, newWorldPos.y - 5)) 
+	-- self._imageBg:setPosition(newWorldPos)
 
 	if #self._items == 1 then
 		return

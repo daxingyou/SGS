@@ -67,6 +67,11 @@ function PopupMailReward:onCreate()
 	self._emptyTips:setString(Lang.get("mail_text_no_tips_3"))
 
 	self:_updateListView()
+	if  Lang.checkUI("ui4") then
+		self._emptyIcon:loadTexture(Path.getMailUI("img_mail06"))
+		self._emptyIcon:getParent():loadTexture(Path.getMailUI("img_mail03"))
+		self._emptyIcon:setPositionY(291)
+	end
 end
 
 
@@ -506,7 +511,6 @@ function PopupMailReward:_updateMailDetailView(mailInfo)
 	self._btnTake:setVisible(canReceive)
 	
 end
-
 function PopupMailReward:_getAwardList(mailIdList)
 	local retList = {}
 

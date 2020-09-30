@@ -77,6 +77,10 @@ function StageRewardBoxNode:updateUI()
 		self._boxName:setVisible(true)
 		self._boxName:setString(data.name)
 	end
+	if  Lang.checkUI("ui4") then
+		self._boxName:setVisible(false)
+		self._richName:setVisible(false)
+	end
 end
 
 function StageRewardBoxNode:_addEffect()

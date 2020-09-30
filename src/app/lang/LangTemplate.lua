@@ -6165,4 +6165,15 @@ language["vip_new_tip_wrong_get_num"] = "目前只能领取#num#个奖励"
 language["vip_new_tip_reward_has_get"] = "奖励已经领取"
 language["pet_show_skill"] = "技能:"
 
+language["share_download_success"] = "画像保存成功"
+language["draw_card_more_ten"] = "再来10回"
+
+
+language["vip_select_award_hint1"] = "当日在线时长达20/50/90分钟，\n可以与桃华互动增加亲密度并获得一份桃华赠礼"
+language["vip_select_award_hint2"] = "当前可领奖励次数："
+language["vip_select_award_hint3"] = "（在线 #time#后增加一次）"
+language["vip_select_award_hint4"] = "（今日奖励次数已满）"
+language["vip_select_award_click_get"] = "点击领取"
+language["share_comment"] = "在名将传中获得了超漂亮的武将啦！一起来玩吧！"
+
 return language

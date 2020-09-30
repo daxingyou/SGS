@@ -582,7 +582,7 @@ function ChatMainView:_onClickSend(sender)
     local BlackList = require("app.utils.BlackList")
     str = BlackList.filterBlack(str) --过滤禁词
     --如果有|将其替换为*
-    str = string.gsub(str, "|", "*")
+    str = string.gsub(str, "|", BlackList.ENCRIPTION_CHAR)--i18n ja
     str = string.gsub(str, "\n", "")
     str = string.gsub(str, "\r", "")
     local content = str

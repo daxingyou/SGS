@@ -26,10 +26,23 @@ function InstrumentDetailFeatureNode:onCreate()
 	local title = self:_createTitle()
 	self._listView:pushBackCustomItem(title)
 
-	self:_buildDes(1)
-	self:_buildDes(2)
-	self:_buildDes(3)
-	self:_buildDes(4)
+	if Lang.checkUI("ui4") then
+		self._instrumentData:getAdvanceMaxLevel()
+		self:_buildDes(1)
+		self:_buildDes(2)
+		if self._instrumentData:getAdvanceMaxLevel() >= 75 then
+			self:_buildDes(3)
+		end
+		if self._instrumentData:getAdvanceMaxLevel() >= 100 then
+			self:_buildDes(4)
+		end
+	else
+		self:_buildDes(1)
+		self:_buildDes(2)
+		self:_buildDes(3)
+		self:_buildDes(4)
+	end
+
 	
 	self._listView:doLayout()
 	local contentSize = self._listView:getInnerContainerSize()

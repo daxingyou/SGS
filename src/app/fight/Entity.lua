@@ -49,7 +49,8 @@ function Entity:getBillBoard()
 end
 
 function Entity:showBillBoard(isShow)
-    if self._billBoard then
+	-- i18n ja 
+    if self._billBoard and not tolua.isnull(self._billBoard) then
         self._billBoard:setVisible(isShow)
     end
 end

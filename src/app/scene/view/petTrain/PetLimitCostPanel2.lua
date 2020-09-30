@@ -13,11 +13,12 @@ function PetLimitCostPanel:_initView()
     local info = PetTrainHelper.getCurLimitCostInfo()
     if self._costKey == LimitCostConst.LIMIT_COST_KEY_1 then
 		local tbPos = {
-			[1] = {82 + 5, -220},
-			[2] = {3 + 5, -220},
-			[3] = {-76 + 5, -220},
-			[4] = {-156 + 5, -220},
+			[1] = {42, 84},
+			[2] = {120, 84},
+			[3] = {199, 84},
+			[4] = {278, 84},
 		}
+ 
 		for i = 1, 4 do
 			local item =
 				self:_createMaterialIcon(
@@ -33,8 +34,9 @@ function PetLimitCostPanel:_initView()
 			info["consume_" .. self._costKey],
 			TypeConvertHelper.TYPE_ITEM
 		)
-    end
-    self._panelTouch:setContentSize(G_ResolutionManager:getDesignCCSize())
+	end
+	self._panelTouch:setScale(3)
+	self._panelTouch:setContentSize(G_ResolutionManager:getDesignCCSize())
     self._panelTouch:addClickEventListener(handler(self, self._onClickPanel)) --避免0.5秒间隔
 end
 
@@ -59,7 +61,7 @@ function PetLimitCostPanel:onEnter()
 		width = 10 + num*(width + 15) - 2
 		if #self._items == 1 then   		-- 仅一个材料，背景框要适配描述字
 			width = 210
-			self._items[1]:setPosition(25, -220) --cc.p(width*0.5, -220))
+			self._items[1]:setPosition(cc.p(width*0.5, 86))
 		end
 		self._imageBg:setContentSize(cc.size(width, 140))
 		self._imageBg:getChildren()[1]:setPositionX(width/2)
@@ -72,6 +74,14 @@ function PetLimitCostPanel:adjustI18n()
 	for i=1, #self._items do
 		ccui.Helper:seekNodeByName(self._items[i], "TextValue"):setFontSize(ccui.Helper:seekNodeByName(self._items[i], "TextValue"):getFontSize() + 1)
 	end
+
+	-- --多机型适配位置
+	-- local scene = G_SceneManager:getTopScene()   
+	-- local view = scene:getSceneView() 
+	-- local _listView = ccui.Helper:seekNodeByName(view, "_listView")  
+	-- local newWorldPos = _listView:getParent():convertToWorldSpace(cc.p(_listView:getPositionX(), _listView:getPositionY()))
+	-- newWorldPos = self._imageBg:getParent():convertToNodeSpace(cc.p(newWorldPos.x - 326 - 4, newWorldPos.y - 5)) 
+	-- self._imageBg:setPosition(newWorldPos)
 
 	if self._items == 1 then
 		return

@@ -225,6 +225,7 @@ end
 function WayFuncConvert._FUNC_ITEM_BAG()
 	local returnFunc = function(...)
 		G_SceneManager:showScene("package")
+		-- G_SceneManager:showScene("TeamPictureScroll")
 	end
 	return returnFunc
 end
@@ -1998,6 +1999,13 @@ function WayFuncConvert._FUNC_RECHARGE_SHOP()
 		else
 			G_SceneManager:showScene("vip",1,VipConst.TAB_TYPE.DISCOUNT_GIFT,VipConst.SUB_TAB_TYPE.LIMIT_SHOP)
 		end
+	end
+	return returnFunc
+end
+
+function WayFuncConvert._FUNC_TEAMPICTURE()
+	local returnFunc = function(...)
+		G_SceneManager:showScene("teamPictureScroll")
 	end
 	return returnFunc
 end

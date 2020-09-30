@@ -46,6 +46,12 @@ function HeroDataHelper.getHeroFriendConfig(id)
 	return info
 end
 
+function HeroDataHelper.getEmakiConfig(id)
+	local info = require("app.config.hero_emaki").get(id)
+	assert(info, string.format("hero_emaki config can not find hero_emaki_id = %d", id))
+	return info
+end
+
 function HeroDataHelper.getSameCountryHeroes(id, color)
 	local list = {}
 	local country = HeroDataHelper.getHeroConfig(id).country
@@ -1333,6 +1339,22 @@ function HeroDataHelper.getTotalAttr(param)
 	return result
 end
 
+function HeroDataHelper.getActivateAttr(heroUnitData)
+	local heroBaseId = heroUnitData:getBase_id()
+	local result = {}
+
+	for index = 1, #G_UserData:getTeamPictureData():getHeroEmakiInfoFinal() do
+		local id = G_UserData:getTeamPictureData():getHeroEmakiInfoFinal()[index].id
+		for j = 1, 4 do --有4组属性
+			local attrType = HeroDataHelper.getEmakiConfig(id)["active_type" .. j]
+			local attrValue =  HeroDataHelper.getEmakiConfig(id)["active_value" .. j]
+			AttrDataHelper.formatAttr(result, attrType, attrValue)
+		end
+	end
+
+	return result
+end
+
 --获取总基础属性（没有额外处理防御和加成）
 function HeroDataHelper.getTotalBaseAttr(param)
 	local result = {}
@@ -1367,7 +1389,10 @@ function HeroDataHelper.getTotalBaseAttr(param)
 	local attr23 = HeroDataHelper.getHorsePhotoAttr()
 	local attr24 = HeroDataHelper.getHistoryHeroAttr(heroUnitData:getPos())
     local attr25 = HeroDataHelper.getTacticsAttr(heroUnitData:getPos())
-    local attr26 = HeroDataHelper.getBoutAttr(heroUnitData:getPos())
+	local attr26 = HeroDataHelper.getBoutAttr(heroUnitData:getPos())
+	local attr27 = HeroDataHelper.getActivateAttr(heroUnitData) -- 添加武将激活属性
+	
+
 
 	-- dump(attr1, "____________________________________1")
 	-- dump(attr2, "____________________________________2")
@@ -1416,6 +1441,7 @@ function HeroDataHelper.getTotalBaseAttr(param)
 	AttrDataHelper.appendAttr(result, attr24)
     AttrDataHelper.appendAttr(result, attr25)
     AttrDataHelper.appendAttr(result, attr26)
+    AttrDataHelper.appendAttr(result, attr27)
 	return result
 end
 

@@ -86,6 +86,7 @@ function TeamView:onCreate()
 	if not Lang.checkLang(Lang.CN) then
 		self:_swapImageByI18n()
 	end
+	
 	self:_initCurPos()
 	self:_initData()
 	self:_initView()
@@ -109,6 +110,13 @@ function TeamView:_initInfo()
 		--self._buttonPet:setPositionY(70)
 		self._btnEmbattle:setPositionY(62)
 		
+		-- bug: 点布阵按钮会很容易点进武将养成界面，需要处理一下触碰响应区
+		local _imgEmbattle = ccui.Helper:seekNodeByName(self._nodeInDown, "Image_1")
+		_imgEmbattle:setTouchEnabled(true)
+		_imgEmbattle:addClickEventListenerEx(handler(self, self._onButtonEmbattleClicked))
+		
+		-- 卡顿处理
+		self._nFromPopScene = 1
 		-- 修改神兽
 		-- if not Lang.checkLang(Lang.CN) then
 		-- 	local UIHelper  = require("yoka.utils.UIHelper")
@@ -121,10 +129,7 @@ function TeamView:_initInfo()
 		-- end
 		-- ccui.Helper:seekNodeByName(self._buttonPet, "TextImage"):setLabelStyle()
 		-- ccui.Helper:seekNodeByName(self._buttonPet, "TextImage"):setColor(Colors.getStyle("limit_1_ja").color) 		 -- 一般不允许直接访问私有成员变量    _buttonPet bind只导出方法 成员变量导不出 
-		--self._buttonPet:setVisible(false) -- 屏蔽
- 
-		-- SSR
-		self:_updateHeroSSR()
+		--self._buttonPet:setVisible(false) -- 屏蔽 
 	end	
 end
 
@@ -133,9 +138,12 @@ function TeamView:_updateHeroSSR()
 	if not Lang.checkUI("ui4") then
 		return
 	end
-	
+
 	local HeroDataHelper = require("app.utils.data.HeroDataHelper")
 	local curPos = G_UserData:getTeam():getCurPos()
+	if curPos < 1 then -- 异常处理：直接返回 （不会出现0号阵容）
+		return
+	end
 	local heroId = G_UserData:getTeam():getHeroIdWithPos(curPos)
 	local unitData = G_UserData:getHero():getUnitDataWithId(heroId)
 	local heroBaseId = unitData:getBase_id()
@@ -151,6 +159,10 @@ function TeamView:_updateHeroSSR()
 						"img_com_grade_jin"
 					}
 	local picName = Path.getTextTeam(_imgList[heroParam.color])   
+	if self._imageTip:getParent():getChildByName("img_com_grade") then
+		self._imageTip:getParent():getChildByName("img_com_grade"):loadTexture(picName)
+		return
+	end
 	local imageBg = ccui.ImageView:create()
 	imageBg:loadTexture(picName)
 	imageBg:setPosition(cc.p(-125, 260-20))
@@ -159,9 +171,7 @@ function TeamView:_updateHeroSSR()
 	self._imageTip:getParent():addChild(imageBg)
 	--self._imageTip:setOpacity(0)    -- self._imageTip:setVisible(false)  
 end
-
-
-
+ 
 function TeamView:_initCurPos()
 	if
 		self._pos and self._pos ~= TeamConst.PET_POS and
@@ -282,6 +292,7 @@ function TeamView:_initPetNode()
 end
 
 function TeamView:onEnter()
+
 	self._signalChangeHeroFormation =
 		G_SignalManager:add(SignalConst.EVENT_CHANGE_HERO_FORMATION_SUCCESS, handler(self, self._changeHeroFormation))
 	self._signalPetOnTeam =
@@ -292,26 +303,37 @@ function TeamView:onEnter()
 		G_SignalManager:add(SignalConst.EVENT_AVATAR_EQUIP_SUCCESS, handler(self, self._avatarEquipSuccess))
 
 	self._funcId2HeroReach = {} --存储武将各个模块的红点值
-
-	self:_updateLeftIcons()
-	self:_updateLeftIconsSelectedState()
-	self:_updateHeroPageView()
-
-	if G_UserData:getTeam():getCurPos() == -1 then --如果已经在援军面板了
-		self:_switchPanelView(3)
-		self:_updateView()
-	elseif G_UserData:getTeam():getCurPos() == TeamConst.PET_POS then
-		self:_switchPanelView(2)
-		self:getPetLayer():checkPetTrainRP()
-	else
-		self:_switchPanelView(1)
-		self:_checkPosState()
-		self:getHeroLayer():checkHeroTrainRP()
-		self:_playEnterEffect()
-		self:_updateView()
-	end
+	if Lang.checkUI("ui4") then
+		if G_UserData:getTeam():getCurPos() == -1 then --如果已经在援军面板了
+			self:_switchPanelView(3)
+			self:_updateView()
+		elseif G_UserData:getTeam():getCurPos() == TeamConst.PET_POS then
+			self:_switchPanelView(2)
+			self:getPetLayer():checkPetTrainRP()
+		else
+			self:_switchPanelView(1)
+			self:_checkPosState()
+			self:_playEnterEffect()
+		end
+	else   
+		self:_updateLeftIcons()
+		self:_updateLeftIconsSelectedState()
+		self:_updateHeroPageView()
+		if G_UserData:getTeam():getCurPos() == -1 then --如果已经在援军面板了
+			self:_switchPanelView(3)
+			self:_updateView()
+		elseif G_UserData:getTeam():getCurPos() == TeamConst.PET_POS then
+			self:_switchPanelView(2)
+			self:getPetLayer():checkPetTrainRP()
+		else
+			self:_switchPanelView(1)
+			self:_checkPosState()
+		 	self:getHeroLayer():checkHeroTrainRP()
+			self:_playEnterEffect()
+			self:_updateView()
+		end
+	end 
 	self:_checkReinforcementPosRP(FunctionConst.FUNC_TEAM)
-	self:_updateHeroSSR() -- i18n ja hero SSR
 end
 
 --
@@ -369,8 +391,11 @@ function TeamView:_updateLeftIcons()
 			icon:updateIcon(data.type, data.value, data.funcId, data.limitLevel, data.limitRedLevel)
 		end
 	end
-	self:_checkHeroIconRP()
-	self:_checkPetIconRP()
+
+	if not Lang.checkUI("ui4") then  -- i18n ja
+		self:_checkHeroIconRP()
+		self:_checkPetIconRP()
+	end
 end
 
 --更新武将Icon列表
@@ -454,7 +479,7 @@ function TeamView:_updateHeroPageView()
 		self._pageItems[i]:updateUI(info.type, info.value, info.isEquipAvatar, info.limitLevel, info.limitRedLevel)
 	end
 	self:_gotoHeroPageItem()
-	self:_updatePageItemVisible()
+	self:_updatePageItemVisible()  
 end
 
 function TeamView:getCurHeroSpine()
@@ -1013,12 +1038,17 @@ function TeamView:_checkHeroIconRP(funcId)
 			end
 		end
 
-		if reachArrow then
-			heroIcon:showRedPoint(reachRedPoint)
-			heroIcon:showImageArrow(not reachRedPoint)
-		else
-			heroIcon:showRedPoint(reachRedPoint)
-			heroIcon:showImageArrow(false)
+		-- i18n ja 策划新需求：宝物/装备可以升级的时候 头像上要有空红点提示
+		if Lang.checkUI("ui4") then 
+			heroIcon:showRedPoint(reachArrow or reachRedPoint)
+		else  
+			if reachArrow then
+				heroIcon:showRedPoint(reachRedPoint)
+				heroIcon:showImageArrow(not reachRedPoint)
+			else
+				heroIcon:showRedPoint(reachRedPoint)
+				heroIcon:showImageArrow(false)
+			end 
 		end
 	end
 end
@@ -1055,7 +1085,7 @@ function TeamView:_playEnterEffect()
 		if event == "top_down" then
 			self:_playTopAndDownEnter()
 		elseif event == "ren" then
-			self:_playHeroEnter()
+			self:_playHeroEnter() 
 		elseif event == "left_right" then
 			self:_playLeftHeroIconEnter()
 			self:_playRightPanelEnter()
@@ -1181,7 +1211,13 @@ function TeamView:_playTopAndDownEnter()
 	table.insert(self._enterEffects, self._enterEffectDown)
 end
 
-function TeamView:_playHeroEnter()
+function TeamView:_playHeroEnter() 
+	-- i18n ja change UI
+	if  Lang.checkUI("ui4") then
+		self:_updateHeroPageView()
+		self:_updateView()
+	end
+
 	self._pageView:setVisible(true)
 	self._enterEffectHero = G_EffectGfxMgr:applySingleGfx(self._pageView, "smoving_shangdian_alpha", nil, nil, nil)
 	table.insert(self._enterEffects, self._enterEffectHero)
@@ -1189,6 +1225,12 @@ end
 
 --左侧武将Icon依次入场
 function TeamView:_playLeftHeroIconEnter()
+	-- i18n ja change UI
+	if  Lang.checkUI("ui4") then
+		self:_updateLeftIcons() 
+		self:_updateLeftIconsSelectedState()
+	end
+
 	local nodes = {}
 	for i, iconBg in ipairs(self._iconBgs) do
 		table.insert(nodes, iconBg)
@@ -1396,6 +1438,17 @@ function TeamView:_playHistoryHeroIconEnter()
 end
 
 function TeamView:_onEnterEffectFinish()
+	-- if Lang.checkUI("ui4") and self._nFromPopScene > 2 then -- i18n ja 卡顿
+	-- 	self:_updateLeftIcons() 	
+	-- end
+	if Lang.checkUI("ui4") then  -- i18n ja
+		self:_checkHeroIconRP() -- 首次进入和从养成返回都最后刷新
+		self:_checkPetIconRP()
+ 
+		self:getHeroLayer():checkHeroTrainRP()
+		self:_updateHeroSSR()  
+	end
+
 	--抛出新手事件出新手事件
 	G_SignalManager:dispatch(SignalConst.EVENT_TUTORIAL_STEP, self.__cname)
 end

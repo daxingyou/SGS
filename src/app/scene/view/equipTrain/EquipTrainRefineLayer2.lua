@@ -544,6 +544,7 @@ function EquipTrainRefineLayer:_equipRefineSuccess(eventName, data)
 	self:_updateLoading(true)
 	self:_updateCost()
 	self:_saveCurMasterInfo()
+	G_AudioManager:playSound(Path.getUIVoice("equipRefineSucess"))  -- 播音效  
 
 	local param = self:_checkMasterLevelDiff()
 

@@ -34,7 +34,8 @@ local EXPORTED_METHODS = {
     "setGlobalZOrder",
     "setIconScale", -- i18n ja
     "setBgScale", -- i18n ja
-    "getTextImage" -- i18n ja        
+    "getTextImage", -- i18n ja
+    "setCanShowBubble"-- i18n ja 主界面限时活动气泡
 }
 
 function CommonMainMenu:ctor()
@@ -91,6 +92,20 @@ function CommonMainMenu:showRunningImage(isShow)
             style = style,
             text = Lang.getImgText("txt_main_ing"),
         })
+        -- i18n ja 主界面限时活动气泡
+        if Lang.checkUI("ui4") then
+            if self._mainBubbleNode then
+                self._mainBubbleNode:removeSelf()
+                self._mainBubbleNode = nil
+            end
+            if self._canShowBubble and isShow then
+                local MainBubbleNode = require("app.scene.view.main.MainBubbleNode")
+                self._mainBubbleNode = MainBubbleNode.new()
+                self._mainBubbleNode:setScale(1/self._target:getScale())
+                self._mainBubbleNode:setPositionX(-40)
+                self._target:addChild(self._mainBubbleNode)
+            end
+        end
     end
  
 end
@@ -598,6 +613,11 @@ end
 -- i18n ja
 function CommonMainMenu:getTextImage( )
     return self._textImage
+end
+
+-- i18n ja 主界面限时活动气泡
+function CommonMainMenu:setCanShowBubble(bShow)
+    self._canShowBubble = bShow
 end
 
 return CommonMainMenu

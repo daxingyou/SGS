@@ -497,7 +497,7 @@ function HeroData:getReplaceDataBySort(filterId)
 	local awards = {}
 	if Lang.checkUI("ui4") and (G_TutorialManager:isDoingStep(34) or G_TutorialManager:isDoingStep(35)) then
 		comboSort = true
-		local data = G_TutorialManager:getGuideAwards()
+		local data = G_UserData:getBase():getGuideAwards()
 		for i, v in ipairs(data) do
 			awards[v.value] = i
 		end

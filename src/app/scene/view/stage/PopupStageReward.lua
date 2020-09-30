@@ -2,6 +2,7 @@ local PopupBase = require("app.ui.PopupBase")
 local PopupStageReward = class("PopupStageReward", PopupBase)
 local CSHelper  = require("yoka.utils.CSHelper")
 local UIHelper  = require("yoka.utils.UIHelper")
+local AudioConst = require("app.const.AudioConst")
 
 local StarBoxOpenImg =
 {
@@ -68,6 +69,8 @@ function PopupStageReward:onExit()
 end
 
 function PopupStageReward:onBoxGet()
+	-- 加上声音和获得奖励一致
+	G_AudioManager:playSoundWithId(AudioConst.SOUND_POPUP_REARD)
 	local isAllget = true
 	for _,v in pairs(self._boxDatas)do
 		if not v:isAlreadyGet(v) then
@@ -84,6 +87,25 @@ function PopupStageReward:onBoxGet()
 end
 
 function PopupStageReward:_createActionNode(effect)
+	if Lang.checkUI("ui4") then
+        if effect == "tongyongtx" then
+            local str = "effect_tongyongtx_1"
+            if self._titleImagePath == Path.getSystemImage("txt_sys_tongguanbaoxiang") then
+                str = "effect_tongyongtx_1"
+            elseif self._titleImagePath == Path.getSystemImage("txt_sys_shoutongbaoxiang") then
+                str = "effect_tongyongtx_2"
+            else
+            end 
+            local EffectGfxNode = require("app.effect.EffectGfxNode")
+            local subEffect = EffectGfxNode.new(str)
+            subEffect:play()
+            return subEffect
+        end
+		if effect == "txt_copy1" then
+			local subNode = display.newSprite(Path.getTextCommon("txt_sys_tongguanbaoxiang"))
+            return subNode
+        end
+    end
 	if effect == "txt" then
 		-- i18n change text 
 		if not Lang.checkLang(Lang.CN) then
@@ -117,8 +139,9 @@ function PopupStageReward:_createActionNode(effect)
     elseif effect == "txt_meirilibao" then
         return display.newNode()
     elseif effect == "txt_shuoming" then
-        return display.newNode()
-    end
+		return display.newNode()
+	end
+	return display.newNode()
 end
 
 function PopupStageReward:_createEffectNode()
@@ -360,6 +383,10 @@ end
 
 
 function PopupStageReward:_createBoxBtn()
+	if Lang.checkUI("ui4") then
+		self:_createBoxBtnByI18n()
+		return
+	end
     local nodeBox = CSHelper.loadResourceNode(Path.getCSB("StageRewardNode", "stage"))
 	self._boxParent = ccui.Helper:seekNodeByName(nodeBox, "BoxParent")
 	self:_initBoxData()
@@ -388,5 +415,58 @@ function PopupStageReward:_createBoxBtn()
 	end
 end
 
+--i18n 
+function PopupStageReward:_createBoxBtnByI18n()
+    local nodeBox = CSHelper.loadResourceNode(Path.getCSB("StageRewardNode", "stage"))
+	self._boxParent = ccui.Helper:seekNodeByName(nodeBox, "BoxParent")
+	self:_initBoxData()
+	local StageRewardBoxNode = require("app.scene.view.stage.StageRewardBoxNode")
+	self._boxItems = {}
+	local gap = 145
+	local stageBoxArr = {}
+	local starBoxArr = {}
+
+	for k, v in pairs(self._boxDatas) do
+		if 	v.type == "stageBox"  then
+			-- body
+			table.insert(stageBoxArr, v)
+		end
+		if 	v.type == "starBox" or  v.type == "passBox" then
+			-- body
+			table.insert(starBoxArr, v)
+		end
+	end
+	local starBoxNum = #starBoxArr
+	local stageBoxNum = #stageBoxArr
+
+	for k, v in pairs(starBoxArr) do
+		local box = StageRewardBoxNode.new(v)
+		box:updateUI()
+		self._boxParent:addChild(box)
+		box:setPositionX(-1*(starBoxNum-1)*gap/2 + gap*(k-1))
+		table.insert(self._boxItems, box)
+	end
+
+	for k, v in pairs(stageBoxArr) do
+		local box = StageRewardBoxNode.new(v)
+		box:updateUI()
+		self._boxParent:addChild(box)
+		box:setPositionX(-1*(stageBoxNum-1)*gap/2 + gap*(k-1))
+		if starBoxNum>0 then
+			box:setPositionY(-120)
+		end
+		table.insert(self._boxItems, box)
+	end
+
+	--self._boxParent:setPositionX(-1*(#self._boxDatas - 1)*gap/2)
+	self:addChild(nodeBox)
+	-- 改title的颜色 位置
+	if Lang.checkUI("ui4") then
+		local title = ccui.Helper:seekNodeByName(nodeBox, "TextBoxTitle");
+		title:setPositionY(title:getPositionY()-28)
+		title:setFontSize(18)
+		title:setColor( cc.c3b(0xe8, 0xb8, 0x80))
+	end
+end
 
 return PopupStageReward

@@ -105,7 +105,7 @@ function PopupFamousDetail:_createName()
     -- 此处颜色是白色，需要等动画好了，才好显示
     -- local fontColor = Colors.getSummaryLineColor()
     local fontColor = Colors.getFamousNameColor()
-    local label = cc.Label:createWithTTF(self._configData.name, Path.getFontW8(), 36)
+    local label = cc.Label:createWithTTF(self._configData.name, Path.getFontW8(), 26) -- i18n ja change font size
     label:setColor(fontColor)
     label:setMaxLineWidth(20)
 

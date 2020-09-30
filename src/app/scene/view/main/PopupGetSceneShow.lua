@@ -2,16 +2,18 @@ local PopupBase = require("app.ui.PopupBase")
 local PopupGetSceneShow = class("PopupGetSceneShow", PopupBase)
 local mainScene = require("app.config.main_scene")
 local UIHelper = require("yoka.utils.UIHelper")
+local AudioConst = require("app.const.AudioConst")
 
 function PopupGetSceneShow:ctor(sceneId,callback)
     self._sceneId = sceneId
     self._callback = callback
     self._isAction = true
-   
+    self._isSharing = false
     PopupGetSceneShow.super.ctor(self, nil, false, false)
 end
 
 function PopupGetSceneShow:onCreate()
+    G_AudioManager:playSoundWithId(AudioConst.SOUND_POPUP_REARD)
     self:_createTouchLayer()
 
     local cfg = mainScene.get(self._sceneId)
@@ -45,7 +47,7 @@ function PopupGetSceneShow:_createTouchLayer()
 end
 
 function PopupGetSceneShow:_onFinishTouch(sender, event)
-    if not self._isAction and event == 2 then
+    if not self._isAction and not self._isSharing and event == 2 then
         if self._callback then
             self._callback()
         end
@@ -116,9 +118,21 @@ function PopupGetSceneShow:_createShareLayer()
     self._shareLayer:setContentSize( G_ResolutionManager:getDesignCCSize())
     self._shareLayer:setAnchorPoint( cc.p(0.5, 0.5))
     self._shareLayer:setPosition(cc.p(0,0))
+    self._shareLayer:updateData()
+    self._shareLayer:setShowHideCallback(function(show)
+        self._isSharing = not show
+    end,self)
     ccui.Helper:doLayout(self._shareLayer)
     self:addChild(layer)
 end
 
+function PopupGetSceneShow:_addControlNode(node)
+    local parentNode = cc.Node:create()
+    parentNode:addChild(node)
+    parentNode:setLocalZOrder(node:getLocalZOrder())
+    parentNode:setName("share_control")
+
+    return parentNode
+end
 
 return PopupGetSceneShow

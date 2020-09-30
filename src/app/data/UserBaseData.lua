@@ -73,6 +73,7 @@ function UserBaseData:ctor(properties)
 	self._dailyGiftInfo = {} --i18n 每日礼包
 	self._keyValueUrlRequest = KeyValueUrlRequest.new() -- i18n ja 利用规约
 	self._isBinded = nil -- i18n ja 是否绑定
+	self._guideAwards = nil -- i18n ja 新手合击将奖励
 
 	self._recvGetUser = G_NetworkManager:add(MessageIDConst.ID_S2C_GetUser, handler(self, self._recvRoleInfo))
 	self._recvGetCurrency = G_NetworkManager:add(MessageIDConst.ID_S2C_GetCurrency, handler(self, self._recvGetCurrency))
@@ -107,6 +108,9 @@ function UserBaseData:ctor(properties)
 
 	-- i18n ja 周分享
 	self._s2cWeekShareListener = G_NetworkManager:add(MessageIDConst.ID_S2C_WeekShare, handler(self, self._s2cWeekShare))
+
+	-- i18n ja 新手合击将奖励
+	self._signalUpdateGuideId = G_NetworkManager:add(MessageIDConst.ID_S2C_UpdateGuideId, handler(self, self._s2cUpdateGuideId))
 end
 
 --
@@ -175,6 +179,9 @@ function UserBaseData:clear()
 	-- i18n ja 周分享
 	self._s2cWeekShareListener:remove()
 	self._s2cWeekShareListener = nil
+	-- i18n ja 新手合击将奖励
+	self._signalUpdateGuideId:remove()
+	self._signalUpdateGuideId = nil
 end
 
 --
@@ -858,13 +865,13 @@ end
 -- i18n ja 获取看板娘id
 function UserBaseData:getKanBanNiang()
 	local id = self:getKan_ban_niang()
-	if id == 0 then
-		id = G_UserData:getHero():getListDataBySort()[1]
+	local data = G_UserData:getHandBook():getMainAvatarDataById(id)
+	if data == nil then
+		id = G_UserData:getHero():getRoleBaseId()
 	else
-		local data = G_UserData:getHero():getAllHeros()["k_" .. tostring(id)]
-		if data == nil then
-            id = G_UserData:getHero():getListDataBySort()[1]
-        end
+		if data.config.type == 1 then
+			id = G_UserData:getHero():getRoleBaseId()
+		end
 	end
 	return id
 end
@@ -962,5 +969,25 @@ function UserBaseData:hasDoWeekShare()
 	end
 end
 
+-- i18n ja 新手合击将奖励
+function UserBaseData:_s2cUpdateGuideId(id, message)
+	if message.ret == MessageErrorConst.RET_OK then
+		if rawget(message, "awards") then
+			self._guideAwards = {}
+			for _, v in pairs(message.awards) do
+				local award =
+				{
+					type = v.type,
+					value = v.value,
+					size = v.size,
+				}
+				table.insert(self._guideAwards, award)
+			end
+		end
+    end
+end
+function UserBaseData:getGuideAwards()
+	return self._guideAwards or {}
+end
 
 return UserBaseData

@@ -16,6 +16,9 @@ function PosterGirlPlayUnitData:clear()
 end
 
 function PosterGirlPlayUnitData:reset()
+    self._idList = {}
+    self:setTotalIdNum(0)
+    self:setValue(0)
 end
 
 function PosterGirlPlayUnitData:updateData(msg)  

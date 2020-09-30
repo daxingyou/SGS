@@ -107,6 +107,18 @@ function PopupRankUpReward:_createNum1(num)
 			outlineSize = 3,
 		},
 	}
+	if Lang.checkUI("ui4") then
+		paramList = {
+			[1] ={
+				name = "label1",
+				text = num,
+				fontSize = 36,
+				color = cc.c3b(0xfe,0xe1,0x02),
+				outlineColor = cc.c3b(0x77,0x1f,0x00),
+				outlineSize = 2,
+			},
+		}
+	end
 	local labelNode = UIHelper.createLabels(paramList)
 	return labelNode
 end
@@ -122,6 +134,18 @@ function PopupRankUpReward:_createNum2(num)
 			outlineSize = 3,
 		},
 	}
+	if Lang.checkUI("ui4") then
+		paramList = {
+			[1] ={
+				name = "label1",
+				text = num,
+				fontSize = 44,
+				color = cc.c3b(0xa8,0xff,0x00),
+				outlineColor = cc.c3b(0x1e,0x33,0x00),
+				outlineSize = 2,
+			},
+		}
+	end
 	local labelNode = UIHelper.createLabels(paramList)
 	return labelNode
 end
@@ -157,6 +181,37 @@ function PopupRankUpReward:_createShuoMing1()
 			color = Colors.CLASS_GREEN,
 		},
 	}
+ 
+	if Lang.checkUI("ui4") then -- i18n ja change  Lang.get("arena_reward_dlg11")描述分2端
+		paramList = {
+				[1] = {
+					type = "label",
+					text = Lang.get("arena_reward_dlg11"),
+					fontSize = 22,
+					color = cc.c3b(0xff,0xb8,0x0c),
+					anchorPoint = cc.p(0, 0.5),
+				},
+			
+				[2] = {
+					type = "image",	
+					texture = Path.getUICommon("img_com_arrow06"),
+				},
+				[3] = {
+					type = "label",
+					text = Lang.get("arena_reward_dlg3",{rank= addRank}),
+					fontSize = 22,
+					color = cc.c3b(0xa8,0xff,0x00),
+				},
+				[4] = {
+					type = "label",
+					text = Lang.get("arena_reward_dlg12"),
+					fontSize = 22,
+					color = cc.c3b(0xff,0xb8,0x0c),
+					anchorPoint = cc.p(0, 0.5),
+					position = cc.p(10,0)
+				},
+			}
+	end
 	
 	local node = UIHelper.createRichItems(paramList,true)
 	--node:setPositionX(-200)
@@ -188,7 +243,30 @@ function PopupRankUpReward:_createShuoMing2(reward)
 			color = Colors.DARK_BG_ONE,
 		},
 	}
-	
+	if Lang.checkUI("ui4") then
+		 paramList = {
+			[1] = {
+				type = "label",
+				text = Lang.get("arena_reward_dlg2"),
+				fontSize = 22,
+				color = cc.c3b(0xff,0xb8,0x0c),
+				anchorPoint = cc.p(0, 0.5),
+			},
+		
+			[2] = {
+				type = "image",	
+				name = "img",
+				texture = itemParams.res_mini,
+			},
+			[3] = {
+				type = "label",
+				name = "res1",
+				text = itemParams.size,
+				fontSize = 22,
+				color = Colors.DARK_BG_ONE,
+			},
+		}
+	end
 	local node = UIHelper.createRichItems(paramList,true)
 	local resWidget = node:getSubNodeByName("res1")
 	resWidget:setPositionX(resWidget:getPositionX() + 3)
@@ -247,8 +325,8 @@ function PopupRankUpReward:play()
             subEffect:play()
             return subEffect
 		elseif effect == "effect_paiming_jiantou" then
-            local subEffect = EffectGfxNode.new("effect_paiming_jiantou")
-            subEffect:play()
+			local subEffect = EffectGfxNode.new("effect_paiming_jiantou")
+			subEffect:play()
             return subEffect
 		-- i18n change effect font
 		elseif not Lang.checkLang(Lang.CN) and effect == "routine_word_paiming_dazi" then

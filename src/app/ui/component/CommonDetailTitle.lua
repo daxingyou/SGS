@@ -23,6 +23,15 @@ end
 function CommonDetailTitle:_init()
 	self._textTitle = ccui.Helper:seekNodeByName(self._target, "TextTitle")
     self._imageBase = ccui.Helper:seekNodeByName(self._target, "ImageBase")
+    
+    -- i18n ja 标题修改:图鉴, 变身卡
+    if Lang.checkUI("ui4") then  
+        local scene = G_SceneManager:getTopScene()
+		if scene:getName() == "handbook" or scene:getName() == "avatar" then    
+            self._textTitle:setFontSize(26) 
+            self._textTitle:setColor(Colors.TacticsCommonColor)
+        end
+    end
 end
 
 function CommonDetailTitle:bind(target)

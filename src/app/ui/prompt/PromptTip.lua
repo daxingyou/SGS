@@ -51,20 +51,38 @@ end
 function PromptTip:_updateText(node, text)
     -- 更新文本
     local label = node:updateLabel("Text_tip_content", tostring(text))
-    -- i18n fontsize
-   
-    local labelContentSize = label:getVirtualRendererSize()
+ 
+    -- i18n ui4
+    if Lang.checkUI("ui4") then -- tips底图自适应宽高
+        label:ignoreContentAdaptWithSize(true) -- 老逻辑存在文字剪裁的情况，ui4这里设置一下
+        label:getVirtualRenderer():setMaxLineWidth(470) --策划要求大多情况下文字显示2行
+        local labelContentSize = label:getVirtualRendererSize()
 
-    -- 宽度超过一定范围就换行
-    if labelContentSize.width > 420 then
-        label:setTextAreaSize(contentSize or cc.size(420, 60))
-    end
-
-    local height = contentSize and contentSize.height or (labelContentSize.width > 420 and 60)
-    if height then
         local background = node:getSubNodeByName("Image_tip_background")
         local backContentSize = background:getContentSize()
-        background:setContentSize(cc.size(backContentSize.width, height + 35))
+        local bgWidth = backContentSize.width
+        local bgHeight = math.max(backContentSize.height, labelContentSize.height + 45)
+        if labelContentSize.width > 305 then  -- 305：tips的背景框两边多是近乎透明的，为了文字集中在不是透明的中间
+            if labelContentSize.width <= bgWidth then
+                bgWidth = bgWidth + (bgWidth - labelContentSize.width) + 120  -- 120：为了文字集中在不是透明的中间，背景框长度多加点
+            else
+                bgWidth = bgWidth + (labelContentSize.width - bgWidth) + 120
+            end
+        end
+        background:setContentSize(cc.size(bgWidth, bgHeight))
+    else
+        -- 宽度超过一定范围就换行
+        local labelContentSize = label:getVirtualRendererSize()
+        if labelContentSize.width > 420 then
+            label:setTextAreaSize(contentSize or cc.size(420, 60))
+        end
+
+        local height = contentSize and contentSize.height or (labelContentSize.width > 420 and 60)
+        if height then
+            local background = node:getSubNodeByName("Image_tip_background")
+            local backContentSize = background:getContentSize()
+            background:setContentSize(cc.size(backContentSize.width, height + 35))
+        end
     end
 end
 

@@ -47,7 +47,7 @@ local guild_build_postion = {
         [5] = {5,1,1,"军团BOSS","guild_build_05",857,400,"txt_guild_boss04",1080,560,},
         [6] = {6,1,1,"军团捐献","guild_build_06",1174,374,"txt_guild_jisi07",1400,534,},
         [7] = {7,3,0,"军需所","guild_build_07",872,213,"",1144,361,},
-        [8] = {8,1,1,"军团试炼","guild_build_08",401,529,"txt_guild_fuben02",548,702,},
+        [8] = {8,1,1,"军团试炼","guild_build_08",421,529,"txt_guild_fuben02",548,702,},
         [9] = {9,1,0,"东城门","guild_build_09",1226,221,"",1486,481,},
         [10] = {10,1,0,"军团战","guild_build_10",1540,225,"txt_guild_juanxian06",1800,485,},
     }

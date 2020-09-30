@@ -24,10 +24,10 @@ function EquipLimitCostPanel:_initView()
         -- i8n ja change
         if Lang.checkUI("ui4") then
             tbPos = {
-                [1] = {82 + 5, -220},
-                [2] = {3 + 5, -220},
-                [3] = {-76 + 5, -220},
-                [4] = {-156 + 5, -220},
+				[1] = {42, 84},
+				[2] = {120, 84},
+				[3] = {199, 84},
+				[4] = {278, 84},
             }
         end
 
@@ -56,6 +56,7 @@ function EquipLimitCostPanel:_initView()
     end
     self._panelTouch:setContentSize(G_ResolutionManager:getDesignCCSize())
     -- self._panelTouch:setSwallowTouches(false)
+    self._panelTouch:setScale(3)
     self._panelTouch:addClickEventListener(handler(self, self._onClickPanel)) --避免0.5秒间隔
 end
 
@@ -71,11 +72,19 @@ function EquipLimitCostPanel:onEnter()
     width = 10 + num*(width + 15) - 2
     if #self._items == 1 then   		-- 仅一个材料，背景框要适配描述字
         width = 210
-        self._items[1]:setPositionX(25)
+        self._items[1]:setPosition(cc.p(width*0.5, 86))
     end
     self._imageBg:setContentSize(cc.size(width, 140))
     self._imageBg:getChildren()[1]:setPositionX(width/2)
     --self:adjustI18n()
+
+    -- --多机型适配位置
+	-- local scene = G_SceneManager:getTopScene()   
+	-- local view = scene:getSceneView()
+	-- local _listView = ccui.Helper:seekNodeByName(view, "_listView")  
+	-- local newWorldPos = _listView:getParent():convertToWorldSpace(cc.p(_listView:getPositionX(), _listView:getPositionY()))
+	-- newWorldPos = self._imageBg:getParent():convertToNodeSpace(cc.p(newWorldPos.x - 326 - 4, newWorldPos.y - 5)) 
+	-- self._imageBg:setPosition(newWorldPos)
 end
 
 return EquipLimitCostPanel

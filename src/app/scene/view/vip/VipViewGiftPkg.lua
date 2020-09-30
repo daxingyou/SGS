@@ -21,7 +21,7 @@ function VipViewGiftPkg:onCreate()
     self._listItemSource:setCallback(handler(self, self._onItemUpdate), handler(self, self._onItemSelected))
 	self._listItemSource:setCustomCallback(handler(self, self._onItemTouch))
 	self._listItemSource:setSpacing(0)
-
+	
 	cc.bind(self._buttonPrivilege,"CommonButtonHighLight")
 	self._buttonPrivilege:setString(Lang.get("vip_privilege_btn"))
 	self._buttonPrivilege:addClickEventListenerEx(handler(self,self._onBtnPrivilege))
@@ -152,6 +152,7 @@ function VipViewGiftPkg:_refreshSkinInfo()
 		if skinInfo.value == 3 then
 			self._imageGirl:setPositionX(292)
 		end
+		self._imageTail:setPositionX(self._imageGirl:getPositionX()+self._imageGirl:getContentSize().width)
 	else
 		self._textLv:setVisible(false)
 		self._imageVipLv:setVisible(false)

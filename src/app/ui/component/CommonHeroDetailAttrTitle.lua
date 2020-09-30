@@ -4,6 +4,7 @@
 -- 通用武将国家级别名字控件
 local CommonHeroDetailAttrTitle = class("CommonHeroDetailAttrTitle")
 local TypeConvertHelper = require("app.utils.TypeConvertHelper")
+local UTF8 = require("app.utils.UTF8")
 
 local EXPORTED_METHODS = {
 	"updateUI",
@@ -23,7 +24,7 @@ function CommonHeroDetailAttrTitle:_init()
 	cc.bind(self._fileNodeCountry, "CommonHeroCountry") 
 	self._fileNodeHeroName2 = ccui.Helper:seekNodeByName(self._target, "fileNodeHeroName2")    	--名字、品质
 	cc.bind(self._fileNodeHeroName2, "CommonHeroName")
-	self._fileNodeHeroName2:getChildByName("TextName"):setFontSize(22)  
+	self._fileNodeHeroName2:setFontSize(20)  
 end
 
 function CommonHeroDetailAttrTitle:bind(target)
@@ -50,6 +51,12 @@ function CommonHeroDetailAttrTitle:updateUI(heroUnitData)
 	local HeroGoldHelper = require("app.scene.view.heroGoldTrain.HeroGoldHelper")
 	local isGold = HeroGoldHelper.isPureHeroGold(heroUnitData)
 	self._Textlevel:setVisible(not isGold)
+
+	-- bug: 名字6个字时，会重叠
+	local txtName = self._fileNodeHeroName2:getChildByName("TextName")  
+	if UTF8.utf8len(txtName:getString()) > 5 then
+		self._fileNodeHeroName2:setFontSize(20)  
+	end	 
 end
 
 function CommonHeroDetailAttrTitle:getBg( )

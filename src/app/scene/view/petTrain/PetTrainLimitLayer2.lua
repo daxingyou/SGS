@@ -162,22 +162,24 @@ function PetTrainLimitLayer:_playLvUpEffect()
 	local function eventFunction(event)
 		if event == "faguang" then
 		elseif event == "finish" then
-			self:_updateView()
-			self:_playFire(true)
-			local delay = cc.DelayTime:create(0.5) --延迟x秒播飘字
-			local sequence =
-				cc.Sequence:create(
-				delay,
-				cc.CallFunc:create(
-					function()
-						if self and self._parentView then
-							self:_playPrompt()
-							self._parentView:refreshBtnAndUI() -- 开始显示界限按钮 刷新神兽形象
+			if self and self._updateView then
+				self:_updateView()
+				self:_playFire(true)
+				local delay = cc.DelayTime:create(0.5) --延迟x秒播飘字
+				local sequence =
+					cc.Sequence:create(
+					delay,
+					cc.CallFunc:create(
+						function()
+							if self and self._parentView then
+								self:_playPrompt()
+								self._parentView:refreshBtnAndUI() -- 开始显示界限按钮 刷新神兽形象
+							end
 						end
-					end
+					)
 				)
-			)
-			self:runAction(sequence)
+				self:runAction(sequence)
+			end 
 		end
 	end
 	G_EffectGfxMgr:createPlayMovingGfx(self._parentView._nodeHetiMoving, "moving_tujieheti", effectFunction, eventFunction, true)
@@ -353,7 +355,7 @@ function PetTrainLimitLayer:_openPopupPanel(costKey, limitLevel)
 	self._popupPanelSignal = self._popupPanel.signal:add(handler(self, self._onPopupPanelClose))
 	--self._parentView._nodePopup:addChild(self._popupPanel)
 	G_SceneManager:getRunningScene():addChild(self._popupPanel)
-	self._popupPanel:setPosition(cc.p(G_ResolutionManager:getDesignWidth()*0.5, G_ResolutionManager:getDesignHeight()*0.5 )) 
+	self._popupPanel:setPosition(cc.p(0, 0))--cc.p(G_ResolutionManager:getDesignWidth()*0.5, G_ResolutionManager:getDesignHeight()*0.5 )) 
 	self._popupPanel:updateUI()
 end
 

@@ -114,7 +114,10 @@ function StrongerView:onEnter()
 	local talkList = StrongerHelper.getBubbleList()
 	self._commonTalk:showLoopBubbleList(talkList)
 	self._commonTalk:setMaxWidth(224)
-	
+	-- i18n ja change size
+	if Lang.checkUI("ui4") then   
+		self._nodeAvatar:setPositionY(self._nodeAvatar:getPositionY() - 10)  
+	end
 end
 
 -- Describle：

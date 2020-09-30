@@ -459,18 +459,21 @@ function MailData:processAwardsByI18n(mailAwards)
     local awards = {}
     local skinAwards = {}
     local sceneToken = 0
-    local sceneList = self:getMainSceneList()
+    local sceneList = clone(self:getMainSceneList())
     for i, v in ipairs(mailAwards) do
         if v.type == TypeConvertHelper.TYPE_MAIN_SCENE then
             local size = v.size
             if sceneList[v.value] == nil then
                 size = size - 1
+                sceneList[v.value] = true
+                table.insert(awards,{type = TypeConvertHelper.TYPE_MAIN_SCENE,value = v.value,size = 1})
             end
             if size > 0 then
                 local cfg = MainScene.get(v.value)
                 sceneToken = sceneToken + cfg.size_0*size
             end
         elseif v.type == TypeConvertHelper.TYPE_POSTER_GIRL_SKIN then
+            table.insert(awards,v)
             table.insert(skinAwards,v)
         else
             table.insert(awards,v)

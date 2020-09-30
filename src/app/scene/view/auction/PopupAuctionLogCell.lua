@@ -80,6 +80,7 @@ function PopupAuctionLogCell:updateUI(index, data)
 		self._textPayDesc:setFontSize(20)
 		if data.price_type == 3 then  
 			self._textPayDesc:setFontSize(16)	-- 1,2,4保持原字号  3描述过长
+			self._textPayDesc:setPositionX(492) -- 文字超框处理
 		end	
 	end
 

@@ -31,6 +31,10 @@ function PopupJadeDetail:onCreate()
 	self:_updateJadeInfo(self._value)
 	self._fileNodeJade:setVisible(true)
 	self._scrollPage:setVisible(false)
+
+	if Lang.checkUI("ui4") then  -- i18n ja change font size
+		self._btnWayGet:setFontSize(26)
+	end
 end
 
 function PopupJadeDetail:onEnter()

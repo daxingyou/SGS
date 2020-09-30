@@ -10,14 +10,15 @@ end
 
 function DrawOneEffect:onCreate()
     DrawOneEffect.super.onCreate(self)
-end
 
-function DrawOneEffect:onEnter()
-    DrawOneEffect.super.onEnter(self)
     G_SignalManager:dispatch(SignalConst.EVENT_TUTORIAL_TOUCH_AUTH_BEGIN)
     self:_reset()
     self:_pushCardData(1)
     self:playGuang()
+end
+
+function DrawOneEffect:onEnter()
+    DrawOneEffect.super.onEnter(self)
 end
 
 

@@ -9,7 +9,7 @@ function PopupAccountActivation:ctor(okCallback,cancelCallback,title,hint,tip,pl
 	local resource = {
 		file = Path.getCSB("PopupAccountActivation", "common"),
 	}
-	PopupAccountActivation.super.ctor(self, okCallback,cancelCallback,title,hint,tip,placeholderStr,maxLength)
+	PopupAccountActivation.super.ctor(self, okCallback,cancelCallback,title,hint,tip,"",maxLength)
 end
 
 function PopupAccountActivation:onInitCsb()
@@ -23,7 +23,10 @@ function PopupAccountActivation:onInitCsb()
 				events = {{event = "touch", method = "_onClickOkButton"}}
 			}
 		}
-	}
+    }
+    if Lang.checkUI("ui4") then
+        resource.file = Path.getCSB("PopupAccountActivation2", "common")
+    end
    if resource then
          local CSHelper = require("yoka.utils.CSHelper")
         CSHelper.createResourceNode(self, resource)
@@ -32,17 +35,26 @@ end
 
 function PopupAccountActivation:onCreate()
     PopupAccountActivation.super.onCreate(self)
-    self._btnAddQQ:setString("")
-    self._btnAddQQ:addClickEventListenerEx(handler(self,self._onAddQQButtonClick))
-    local richText = Lang.get("account_verify_code_add_qq_group",
-			{
-            color1 =  Colors.colorToNumber(Colors.SYSTEM_TARGET_RED),
-            color2 =  Colors.colorToNumber(Colors.BRIGHT_BG_TWO)
-            })
-    self:_createProgressRichText(richText)
-
-    self:setBtnOkName(Lang.get("account_verify_code_ok_btn"))
-    self:onlyShowOkButton()
+    if Lang.checkUI("ui4") then
+        self._popBG:hideCloseBtn()
+        self:setBtnOkName(Lang.get("common_btn_sure"))
+        self:onlyShowOkButton()
+        self._textHint:setString(Lang.get("account_verify_code_input_placeholder"))
+    else
+        self._btnAddQQ:setString("")
+        self._btnAddQQ:addClickEventListenerEx(handler(self,self._onAddQQButtonClick))
+        local richText = Lang.get("account_verify_code_add_qq_group",
+                {
+                color1 =  Colors.colorToNumber(Colors.SYSTEM_TARGET_RED),
+                color2 =  Colors.colorToNumber(Colors.BRIGHT_BG_TWO)
+                })
+        self:_createProgressRichText(richText)
+    
+        self:setBtnOkName(Lang.get("account_verify_code_ok_btn"))
+        self:onlyShowOkButton()
+        
+    end
+   
 end
 
 

@@ -53,7 +53,8 @@ function ChatCopyNode2:_makeListData()
     local ChatConst = require("app.const.ChatConst")
     if self._chatMsg:getChannel() == ChatConst.CHANNEL_GUILD or 
         self._chatMsg:getChannel() == ChatConst.CHANNEL_TEAM or 
-        self._chatMsg:getSender():isSelf() then
+        self._chatMsg:getSender():isSelf() or 
+        self._chatMsg:isEvent() then
         return {Lang.get("chat2_copy")}
     else
         return {Lang.get("chat2_copy"),Lang.get("chat2_tipoff")}
@@ -74,6 +75,7 @@ end
 function ChatCopyNode2:_onItemTouch(tag,idx)
     logWarn("ChatCopyNode2 _onItemTouch "..idx)
     if idx == 1 then
+        G_NativeAgent:clipboard(self._chatMsg:getContent())
         G_SignalManager:dispatch(SignalConst.EVENT_CHAT_COPY_MSG,self._chatMsg:getContent())
     elseif idx == 2 then
         local UserDataHelper = require("app.utils.UserDataHelper")

@@ -7,7 +7,7 @@ local VipConst = require("app.const.VipConst")
 local ViewBase = require("app.ui.ViewBase")
 local VipViewNew = class("VipViewNew", ViewBase)
 local KeyValueUrlRequest = require("app.manager.KeyValueUrlRequest")-- i18n ja
-
+local VipViewBoxNode = require("app.scene.view.vip.VipViewBoxNode")
 
 VipViewNew.AGE_VERIFICATE = 50001 -- i18n ja 年龄确认开关id
 VipViewNew.POSY_START = -40
@@ -15,7 +15,7 @@ VipViewNew.POSY_END = 30
 
 VipViewNew.EFFECT_POS = {{225,111},{220,338},{113,220}}
 
-VipViewNew.ANIMATION = {"bixin","haixiu"}
+VipViewNew.ANIMATION = {"bixin","haixiu","bixin2","deyi","huanying","liaotoufa","xuemao","zayan","zhuyi"}
 
 
 --[[
@@ -40,6 +40,9 @@ function VipViewNew:ctor(paramIndex,subTabType,threeTabType)
 	self._effectList = {}
 	self._newXinXinIndexs = {}
 	self._tipTask = {}
+	self._tipTask2 = {}
+	self._emptyTaskTimer = 0
+
     local resource = {
 		file = Path.getCSB("VipViewNew", "vip"),
 		size = G_ResolutionManager:getDesignSize(),
@@ -58,37 +61,45 @@ function VipViewNew:ctor(paramIndex,subTabType,threeTabType)
 			},
 			_imageProgressBg = {
 				events = {{event = "touch", method = "_onClickProgress"}}
-			}
+			},
+			_panelTouch = {
+				events = {{event = "touch", method = "_onClickPanelTouch"}}
+			},
 		}
     }
     VipViewNew.super.ctor(self,resource,9999)
 end
 
 function VipViewNew:onCreate()
+	self._panelTouch:setSwallowTouches(false)
 	self._topbarBase:setImageTitle("txt_sys_com_chongzhi")
 	local TopBarStyleConst = require("app.const.TopBarStyleConst")
 	self._topbarBase:updateUI(TopBarStyleConst.STYLE_VIP)
 	self._topbarBase:setCallBackOnBack(handler(self,self.onButttonBack))
 
 	local story = CSHelper.loadResourceNode(Path.getCSB("CommonPosterGirlAvatar", "common"))
-	story:updateChatUI(1)
+	story:updateChatUI(G_UserData:getPosterGirl():getWear_skin())
 	story:setAvatarScale(0.54)
 	self._posterGirlAvatar = story 
 	self._nodeAvatar:addChild(story)
+
+	
+	self._pointBox1 = VipViewBoxNode.new(self._nodeBox)
+	self._pointBox1:addTouchFunc(handler(self, self._onClickProgress))
+	local param = 
+	{
+		imageClose = Path.getChapterBox("baoxiangjin_guan"),
+		imageOpen = Path.getChapterBox("baoxiangjin_kai"),
+		imageEmpty = Path.getChapterBox("baoxiangjin_kong"),
+	}
+	self._pointBox1:setParam(param)
+
 
 	self:_initStencil()
 	self:_initLawView()
 	self:_initBoxView()
 	self:_initBoxData()
-	--[[
-	if self._paramIndex == 1 then
-		local rechargeView = VipViewRechargeView.new(self._paramSubTabType)
-		self._nodeLeftRecharge:addChild(rechargeView)
-	else
-		local rechargeView = VipViewRechargeView.new()
-		self._nodeLeftRecharge:addChild(rechargeView)
-	end
-]]
+
 	local rechargeView = VipViewRechargeView.new()
 	self._nodeLeftRecharge:addChild(rechargeView)
 
@@ -126,23 +137,15 @@ function VipViewNew:onEnter()
 		handler(self,self._onEventVipAddExpBal))
 	self._signalBuyShopGoods = G_SignalManager:add(SignalConst.EVENT_BUY_ITEM, handler(self, self._onEventBuyItem))
 	self._signalGetRechargeNotice = G_SignalManager:add(SignalConst.EVENT_RECHARGE_NOTICE, handler(self, self._onEventGetRechargeNotice))
-
+	self._signalPosterGirlChangeSkinSuccess = G_SignalManager:add(SignalConst.EVENT_POSTER_GIRL_CHANGE_SKIN_SUCCESS, 
+		handler(self, self._onEventPosterGirlChangeSkinSuccess))
 
 
 	self:_updateLevelView()
 
-	self._stayHandler = {}
-	local stayTimes = G_PosterGirlManager:getStayTime()
-	for k,v in ipairs(stayTimes) do
-		local scheduler = require("cocos.framework.scheduler")
-		local handler = scheduler.performWithDelayGlobal(function()
-			print("dddddddddddd____________ ".. v)
-			local PosterGirlVoiceConst = require("app.const.PosterGirlVoiceConst")
-			G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_VOICE_UPDATE,PosterGirlVoiceConst.TRIGGER_POS_RECHARGE_STAY,{time = v})
-		end, v)
-		table.insert(self._stayHandler,handler)
-	end
-
+	
+	
+	self:_startTimer()
 	self:showAgeVerificateBox() -- i18n ja show 
 	self._selectAge = self._KeyValueUrlRequest.signal:registerListener( handler(self, self._onEventShowAgeVerificate)) -- i18n ja
 
@@ -184,10 +187,10 @@ function VipViewNew:onExit()
 	self._signalPosterGirlPlayVoice:remove()
 	self._signalPosterGirlPlayVoice = nil
 
-	for k,v in ipairs(self._stayHandler) do
-		local scheduler = require("cocos.framework.scheduler")
-		scheduler.unscheduleGlobal(v)
-	end
+	self._signalPosterGirlChangeSkinSuccess:remove()
+	self._signalPosterGirlChangeSkinSuccess = nil
+
+	self:_cancelTimer()
 	self:unscheduleUpdate()
 	G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_VOICE_CLEAR)
 
@@ -196,7 +199,44 @@ function VipViewNew:onExit()
 	runningScene:setVipChangeTipDisable(false)
 end
 
+--skin_action
 
+function VipViewNew:_startTimer()
+	local stayTimes = G_PosterGirlManager:getStayTime()
+	for k,v in ipairs(stayTimes) do
+		self:_startDelayTimer(v)
+	end
+end
+
+function VipViewNew:_startDelayTimer(time)
+	print("VipViewNew startDelayTimer  ".. time)
+	local scheduler = require("cocos.framework.scheduler")
+	local handler = scheduler.performWithDelayGlobal(function()
+		print("VipViewNew timer end  ".. time)
+		self._stayHandler[time] = nil
+		local PosterGirlVoiceConst = require("app.const.PosterGirlVoiceConst")
+		G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_VOICE_UPDATE,PosterGirlVoiceConst.TRIGGER_POS_RECHARGE_STAY,{time = time})
+	end, time)
+	self._stayHandler[time] = handler
+end
+
+function VipViewNew:_cancelTimer()
+	for k,v in pairs(self._stayHandler) do
+		local scheduler = require("cocos.framework.scheduler")
+		scheduler.unscheduleGlobal(v)
+		print("VipViewNew cancel timer  ".. k)
+	end
+	self._stayHandler = {}
+end
+
+function VipViewNew:_onEventPosterGirlChangeSkinSuccess()
+	--local skinId = G_UserData:getPosterGirl():getWear_skin()
+	--self._posterGirlAvatar:updateChatUI(G_UserData:getPosterGirl():getWear_skin())
+end
+
+function VipViewNew:changeSkin(skinId)
+	self._posterGirlAvatar:updateChatUI(skinId)
+end
 
 function VipViewNew:_onEventVipGotoTab(event,index,subTabType,threeTabType)
 	if index ~= self._currSelectIndex then
@@ -235,9 +275,6 @@ end
 function VipViewNew:_initStencil()
 	local stencil = cc.Sprite:create(Path.getVip2("3"))
 	stencil:setScale(0.98)
---	local texParams = { gl.LINEAR_MIPMAP_LINEAR,gl.LINEAR, gl.CLAMP_TO_EDGE, gl._3DC_X_AMDCLAMP_TO_EDGE }
-	--stencil:getTexture():setAntiAliasTexParameters()
-
 
     local clippingNode = cc.ClippingNode:create()
     clippingNode:setStencil(stencil)
@@ -261,18 +298,6 @@ function VipViewNew:_onEventVipAddExpBal(event,addExp,oldLevel,newLevel)
 end 
 
 function VipViewNew:_playSingleBallEffect(isLevelUp)
-	--[[
-	local sp = display.newSprite(Path.getBackgroundEffect("img_photosphere6"))
-	local path = Path.getParticle("feishenglizi")
-	logWarn("path : "..path)
-	local emitter = cc.ParticleSystemQuad:create(Path.getParticle("feishenglizi"))
-	if emitter then
-		emitter:setPosition(cc.p(sp:getContentSize().width / 2, sp:getContentSize().height / 2))
-        sp:addChild(emitter)
-        emitter:resetSystem()
-	end
-	]]
-
 	local playLevelUpEffect = function()
 		
 		local runningScene = G_SceneManager:getRunningScene()
@@ -284,6 +309,8 @@ function VipViewNew:_playSingleBallEffect(isLevelUp)
 		imageBg:setScale9Enabled(true)
 		imageBg:setCapInsets(cc.rect(94 , 52, 12,9))
 		imageBg:setContentSize(size)
+		imageBg:ignoreContentAdaptWithSize(false)
+		--logWarn(size.width.."playAddVipTips"..size.height)
 		effect:addChild(imageBg)
 	end 
    
@@ -338,6 +365,9 @@ function VipViewNew:_setTabIndex(index)
 
 		local imageTitle = ccui.Helper:seekNodeByName(self._topbarBase, "ImageTitle")
 		if imageTitle then imageTitle:setVisible(true)  end
+
+		self:changeSkin(G_UserData:getPosterGirl():getWear_skin())
+
 	else
 		self._nodeLeftRecharge:setVisible(false)
 		self._nodeSkin:setVisible(true)
@@ -345,6 +375,14 @@ function VipViewNew:_setTabIndex(index)
 
 		local imageTitle = ccui.Helper:seekNodeByName(self._topbarBase, "ImageTitle")
 		if imageTitle then imageTitle:setVisible(false)  end
+
+		local node = self._nodeSkin:getChildren()[1]
+		node:selectEquipingItem()
+		local skinId  = node:getCurrSelectSkinId()
+		if skinId then
+			self:changeSkin(skinId)
+		end
+		
 	end
 end
 
@@ -372,81 +410,89 @@ function VipViewNew:_onButtonAddVipExp(sender)
 		end
 	end
 
-	local animIndex = math.random(1,#VipViewNew.ANIMATION)
-	self._posterGirlAvatar:playAnimationOnce(VipViewNew.ANIMATION[animIndex])
+
 
 	local PosterGirlVoiceConst = require("app.const.PosterGirlVoiceConst")
 	G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_VOICE_UPDATE,
 		PosterGirlVoiceConst.TRIGGER_POS_CLICK_AVATAR)
 end
 
-function VipViewNew:_onEventPosterGirlPlayVoice(event,voice)
+function VipViewNew:_onEventPosterGirlPlayVoice(event,voice,actionName)
+	if actionName then
+		print("VipViewNew play   "..actionName)
+		--local animIndex = math.random(1,#VipViewNew.ANIMATION)
+		--self._posterGirlAvatar:playAnimationOnce(VipViewNew.ANIMATION[animIndex])
+		self._posterGirlAvatar:playAnimationOnce(actionName)
+	end
+
 	self._posterGirlAvatar:startTalk(voice,false) 
+end
+
+function VipViewNew:_onClickPanelTouch()
+	print("click")
+	local handlerList = self._stayHandler--剩下的计时
+	self:_cancelTimer()
+	for k,v in pairs(handlerList) do
+		print("VipViewNew restart timer  ".. k)
+		self:_startDelayTimer(k)
+	end
 end
 
 function VipViewNew:_onClickProgress()
 	local canShowEffectNum = UserDataHelper.getPGCanReceiveNum(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
 	local receiveNum = UserDataHelper.getPosterGirlReceiveBoxNum(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
-	if receiveNum < canShowEffectNum then
-		logWarn(canShowEffectNum.."xxxfffx"..receiveNum)
-		local PopupVipSelectAward = require("app.scene.view.vip.PopupVipSelectAward")
-		local rewardIds = UserDataHelper.getPGReceiveRewardIds(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
-		local pop = PopupVipSelectAward.new(function(ids)
-			--检查数量
-			local canGetNum = UserDataHelper.getPGCanReceiveNum(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
-			local hasNum = UserDataHelper.getPosterGirlReceiveBoxNum(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
-			local remainNum = canGetNum - hasNum 
-			if #ids > remainNum then
-				G_Prompt:showTip(Lang.get("vip_new_tip_wrong_get_num",{num = remainNum }))
-				return
-			end
-			--检查开服时间
-			local checkServerDayNum = function(ids)
-				local openDay = G_UserData:getBase():getOpenServerDayNum()
-				local VipContent = require("app.config.vip_content")
-				for k,v in ipairs(ids) do
-					local config = VipContent.get(v) 
-					if openDay < config.day_min or openDay > config.day_max then
-						return false
-					end
+
+	logWarn(canShowEffectNum.."xxxfffx"..receiveNum)
+	local PopupVipSelectAward = require("app.scene.view.vip.PopupVipSelectAward")
+	local rewardIds = UserDataHelper.getPGReceiveRewardIds(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
+	local pop = PopupVipSelectAward.new(function(ids)
+		if #ids <= 0 then
+			return
+		end
+		--检查数量
+		local canGetNum = UserDataHelper.getPGCanReceiveNum(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
+		local hasNum = UserDataHelper.getPosterGirlReceiveBoxNum(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
+		local remainNum = canGetNum - hasNum 
+		if #ids > remainNum then
+			G_Prompt:showTip(Lang.get("vip_new_tip_wrong_get_num",{num = remainNum }))
+			return
+		end
+		--检查开服时间
+		local checkServerDayNum = function(ids)
+			local TimeConst = require("app.const.TimeConst")
+			local openDay = G_UserData:getBase():getOpenServerDayNum(TimeConst.RESET_TIME_24)
+			local VipContent = require("app.config.vip_content")
+			for k,v in ipairs(ids) do
+				local config = VipContent.get(v) 
+				if openDay < config.day_min or openDay > config.day_max then
+					return false
 				end
-				return true
 			end
-			if not checkServerDayNum(ids) then
-				G_Prompt:showTip(Lang.get("vip_new_tip_wrong_open_day"))
-				return
-			end
+			return true
+		end
+		if not checkServerDayNum(ids) then
+			G_Prompt:showTip(Lang.get("vip_new_tip_wrong_open_day"))
+			return
+		end
 
-			local checkIsHasGet = function(ids)
-				for k,v in ipairs(ids) do
-					if UserDataHelper.hasReceivePosterGirlBox(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD,v)  then
-						return false
-					end
+		local checkIsHasGet = function(ids)
+			for k,v in ipairs(ids) do
+				if UserDataHelper.hasReceivePosterGirlBox(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD,v)  then
+					return false
 				end
-				return true
 			end
-			if not checkIsHasGet(ids) then
-				G_Prompt:showTip(Lang.get("vip_new_tip_reward_has_get"))
-				return
-			end
-			
-			G_UserData:getPosterGirl():c2sPlayWithPosterGirl(self._boxInfoList[1].config.id,ids)
-			end,rewardIds,canShowEffectNum-receiveNum,#self._boxInfoList)
-		pop:open()
-	end
+			return true
+		end
+		if not checkIsHasGet(ids) then
+			G_Prompt:showTip(Lang.get("vip_new_tip_reward_has_get"))
+			return
+		end
+		
+		G_UserData:getPosterGirl():c2sPlayWithPosterGirl(self._boxInfoList[1].config.id,ids)
+		end,rewardIds,canShowEffectNum-receiveNum,#self._boxInfoList)
+	pop:open()
+	
 end
-
-
---[[
-function VipViewNew:gotoView(paramIndex,subTabType,threeTabType)
-	if paramIndex ~= self._currSelectIndex then
-		self:_setTabIndex(paramIndex)
-	end
-	if paramIndex == 1 and subTabType then
-		self._nodeLeftRecharge:getChildren()[1]:gotoView(subTabType,threeTabType)
-	end
-end
-]]
 
 
 function VipViewNew:_onButtonClickHeart(sender)
@@ -511,7 +557,7 @@ function VipViewNew:_update(dt)
 	 self:_refreshBoxView()
 	 self:_refreshEffectView()
 	 self:_refreshProgressEffectView()
-	 self:_doTask()
+	 self:_doTask(dt*1000)
 end
 
 
@@ -521,7 +567,7 @@ function VipViewNew:_initLawView()
 	local lineWidth =  self._textLaw:getContentSize().width
 	local x1 = self._textLaw:getPositionX()-lineWidth*0.5
 	local drawNode = cc.DrawNode:create()
-	local y1 =self._textLaw:getPositionY()-11
+	local y1 =self._textLaw:getPositionY()-8
 	drawNode:drawSegment(cc.p( x1, y1),cc.p(x1 + lineWidth,y1),0.5, cc.c4f(0xff/255, 0xf4/255, 0x74 /255,1))
 	self._imageLawBg:addChild(drawNode)
 end
@@ -653,6 +699,17 @@ function VipViewNew:_refreshProgressEffectView()
 			end
 		end
 	end
+	
+	local num = canShowEffectNum - receiveNum
+	if num > 0 then
+		self._pointBox1:setBoxState(VipViewBoxNode.STATE_OPEN)
+	elseif receiveNum == #self._boxNodeList then
+		self._pointBox1:setBoxState(VipViewBoxNode.STATE_EMPTY)
+	else
+		self._pointBox1:setBoxState(VipViewBoxNode.STATE_NORMAL)
+	end
+	
+
 end
 
 
@@ -708,35 +765,36 @@ function VipViewNew:_onEventPosterGirlBoxInfoUpdate(event)
 end
 
 function VipViewNew:_onEventPosterGirlBoxReceiveSuccess(event,rewards)
-	if rewards then
+	logWarn("VipViewNew onEventPosterGirlBoxReceiveSuccess")
+	if #rewards > 0 then
 		local callback = function()
 			G_Prompt:showAwards(rewards)
 		end
-		table.insert(self._tipTask ,{
+		self:_addTaskHead({
 			callback = callback,
-			time = 1*#rewards,
+			time = (10*(#rewards-1)+30)*(1000/30),
 			type = 1,
-			isHead = 2,
-			id = #self._tipTask,
+			head = {1,2},
 		})
 	end
 end
 
 function VipViewNew:_onEventVipExpChange(event,addExp ,oldLevel,newLevel)
 	--self:_updateLevelView()
+	logWarn("VipViewNew onEventVipExpChange")
 	local callback = function()
 		local runningScene = G_SceneManager:getRunningScene()
 		runningScene:playAddVipTips(addExp ,oldLevel,newLevel)
 	end
-	table.insert(self._tipTask ,{
+	self:_addTaskTail({
 		callback = callback,
-		time = 2,
+		time = 44*(1000/30),
 		type = 2,
-		id = #self._tipTask,
 	})
 end
 
 function VipViewNew:_onEventBuyItem(eventName, message)
+	logWarn("VipViewNew onEventBuyItem")
     local awards = rawget(message, "awards")
     if awards then
 		local shopId = rawget(message, "shop_id")
@@ -745,12 +803,11 @@ function VipViewNew:_onEventBuyItem(eventName, message)
 			local callback = function()
 				G_Prompt:showAwards(awards)
 			end
-			table.insert(self._tipTask ,{
+			self:_addTaskHead({
 				callback = callback,
-				time = 1*#awards,
+				time = (10*(#awards-1)+30)*(1000/30),
 				type = 1,
-				isHead = 2,
-				id = #self._tipTask,
+				head = {1,2},
 			})
         end
 	end
@@ -758,75 +815,145 @@ function VipViewNew:_onEventBuyItem(eventName, message)
 end
 
 function VipViewNew:_onEventGetRechargeNotice(event,id,message)
+	logWarn("VipViewNew onEventGetRechargeNotice")
 	local callback = function()
 		G_Prompt:showTip(Lang.getImgText("txt_pay_succeed"))
 	end
-	table.insert(self._tipTask ,{
+
+	self:_addTaskHead({
 		callback = callback,
-		time = 1,
+		time = 1350,
 		type = 0,
-		isHead = 3,
-		id = #self._tipTask,
+		head = {0,1,2},
 	})
-	
+
 	local callback2 = function()
 		local runningScene = G_SceneManager:getRunningScene()
 		runningScene:showNoticeReward(message)
 	end
-	table.insert(self._tipTask ,{
+	self:_addTaskTail({
 		callback = callback2,
-		time = 1,
+		time = 1000,
 		type = 1,
-		id = #self._tipTask,
 	})
 end
 
 
-function VipViewNew:_doTask()
-	local nextIndex = nil
-	local time = G_ServerTime:getTime()
-	--[[
-	table.sort(self._tipTask, function(left,right) 
-		if left.isFinish ~= right.isFinish then
-			return left.isFinish == true
+function VipViewNew:_addTaskHead(v)
+	local time = G_ServerTime:getMSTime()
+	local taskInfo = {typeList = v.head,taskMap = {},time = 0}
+	table.insert(self._tipTask,taskInfo)
+	taskInfo.taskMap[v.type] = v
+
+	local list = {}
+	for k,v in ipairs(self._tipTask2) do
+		local use = self:_addTaskInfoToHead(v)
+		if not use then
+			table.insert(list,v)
 		end
-		if left.isStart ~= right.isStart then
-			return left.isStart == true
-		end
-		if left.type ~= right.type then
-			return left.type < right.type
-		end
-		return left.id < right.id
-	end)
-	]]
+	end
+	self._tipTask2 = list
+end
+
+function VipViewNew:_addTaskInfoToHead(data)
+	local use = false
 	for k,v in ipairs(self._tipTask) do
-		if not v.isFinish  then
-			v.isFinish = true
-			v.callback()
+		if not v.isStart then
+			for k1,v1 in ipairs(v.typeList) do
+				if v.taskMap[v1] == nil then
+					if v1 == data.type then
+						use = true
+						v.taskMap[v1] = data
+						break
+					else
+					
+					end
+				end
+			end
 		end
 		
-	end
+	end 
+	return use
+end
 
-	--[[
-	for k,v in ipairs(self._tipTask) do
-		if v.isFinish then
-		elseif v.isStart then
-			if time >=  v.startTime + v.time  then
-				v.isFinish = true
-			else	
-				break
+function VipViewNew:_addTaskTail(data)
+	local use = self:_addTaskInfoToHead(data)
+	if use == false then
+		table.insert(self._tipTask2,data)
+	end
+end
+
+
+
+function VipViewNew:_doTask(dt)
+	local nextIndex = nil
+	local time = G_ServerTime:getMSTime()
+	if #self._tipTask <= 0 then
+		if #self._tipTask2 > 0 then
+			self._emptyTaskTimer = self._emptyTaskTimer + dt
+			if self._emptyTaskTimer > 300 then
+				logWarn("VipViewNew task wait timeout2")
+				for k,v in ipairs(self._tipTask2) do
+					v.callback()
+				end
+				self._tipTask2 = {}
 			end
 		else
-			nextIndex = k
-			break
+			self._emptyTaskTimer = 0
+		end
+		return
+	end
+	local taskInfo = self._tipTask[1]
+	local list = taskInfo.typeList
+	local taskMap = taskInfo.taskMap
+	local isStart = taskInfo.isStart
+	if not isStart then
+		local hasAll = true
+		for k,v in ipairs(list) do
+			if not taskMap[v] then
+				hasAll = false
+				break
+			end
+		end
+		if not hasAll then
+			taskInfo.time  = taskInfo.time  + dt
+			if taskInfo.time > 300 then
+				logWarn("VipViewNew task wait timeout1")
+				hasAll = true
+			end
+		end
+		if hasAll then
+			taskInfo.isStart = true
 		end
 	end
-	if nextIndex  then
-		self._tipTask[nextIndex].isStart = true
-		self._tipTask[nextIndex].startTime = time
-		self._tipTask[nextIndex].callback()
-	end		
-]]
+	if not taskInfo.isStart then
+		return
+	end
+	local hasTask = nil
+	for k,v in ipairs(list) do
+		if not taskMap[v] then
+			--没任务
+		elseif not taskMap[v].during then
+			--没开始
+			taskMap[v].during = 0--开始计时
+			taskMap[v].callback()
+			hasTask = true
+			break
+		else
+			taskMap[v].during = taskMap[v].during + dt
+			if taskMap[v].during < taskMap[v].time*0.6 then
+				--没完成
+				hasTask = true
+				break
+			else
+				--完成
+			end	
+		end
+	end
+	if hasTask == nil then
+		table.remove(self._tipTask,1)
+	end
+
 end
 
 

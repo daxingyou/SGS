@@ -178,9 +178,13 @@ function SummaryBase:_createContinueNode()
         self._btnStatistics:setPosition(cc.p(-x, -320))
         self._btnStatistics:setTouchEnabled(true)
         self._btnStatistics:addTouchEventListener(handler(self,self._onStatisticsClick))
-      
 
-           -- i18n change lable
+        --i18n ui4
+        if Lang.checkUI("ui4") then
+            self._btnStatistics:setPosition(-x + 55, -305)
+        end
+      
+        -- i18n change lable
         if not Lang.checkLang(Lang.CN) then
             local label = UIHelper.createLabel({
                 style = "fight_1",
@@ -188,6 +192,10 @@ function SummaryBase:_createContinueNode()
                 position = cc.p(95, 20),
                 anchorPoint = cc.p(0.5,0.5),
             })
+            --i18n ui4
+            if Lang.checkUI("ui4") then
+                label:setPosition(40, 6)
+            end
             self._btnStatistics:addChild(label)
         else
             local spriteTongji = cc.Sprite:create(Path.getBattleFont("txt_tongji01"))
@@ -212,8 +220,12 @@ function SummaryBase:_createContinueNode()
         self._btnReplay:setTouchEnabled(true)
         self._btnReplay:addTouchEventListener(handler(self,self._onReplayClick))
 
+        --i18n ui4
+        if Lang.checkUI("ui4") then
+            self._btnReplay:setPositionY(-305)
+        end
  
-         -- i18n change lable
+        -- i18n change lable
         if not Lang.checkLang(Lang.CN) then
             local label = UIHelper.createLabel({
                 style = "fight_1",
@@ -221,6 +233,10 @@ function SummaryBase:_createContinueNode()
                 position = cc.p(40, 20),
                 anchorPoint = cc.p(0.5,0.5),
             })
+            --i18n ui4
+            if Lang.checkUI("ui4") then
+                label:setPosition(40, 6)
+            end
             self._btnReplay:addChild(label)
         else
             local spriteTongji = cc.Sprite:create(Path.getBattleFont("txt_huifang02"))

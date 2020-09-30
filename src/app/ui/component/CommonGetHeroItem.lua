@@ -108,7 +108,7 @@ function CommonGetHeroItem:_smoving_n_lv()
 end
 
 --New图标特效
-function CommonGetHeroItem:_smoving_zhaojiang_new()
+function CommonGetHeroItem:_new_kk()
     local isHas = self._isNew
     local node = cc.Node:create()
     if isHas then
@@ -116,7 +116,7 @@ function CommonGetHeroItem:_smoving_zhaojiang_new()
 
         local image = Path.getDrawCard2("NEW")
         local sprite = display.newSprite(image)
-        sprite:setScaleX(-1)
+       -- sprite:setScaleX(-1)
         node:addChild(sprite)
     end
     return node

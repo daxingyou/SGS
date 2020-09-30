@@ -91,6 +91,10 @@ function AuctionItemCell:updateUI( index, data )
     self._textItemName:setString(itemParams.name)
     self._textItemName:setColor(itemParams.icon_color)
 
+    if Lang.checkUI("ui4") then  -- i18n ja change
+        self._commonIcon:getIconTemplate():setTextItemCountFontSize(24)
+    end 
+
     if itemParams.cfg.color == 7 then    -- 金色物品加描边
         self._textItemName:enableOutline(itemParams.icon_color_outline, 2)
     else

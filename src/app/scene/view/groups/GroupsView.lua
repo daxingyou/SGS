@@ -195,6 +195,9 @@ function GroupsView:_dealPosByI18n()
 		
 		local textChat = UIHelper.seekNodeByName(self._btnChat,"TextChat")
 		UIHelper.dealVTextWidget(textChat,textChat:getString())
+		if Lang.checkLang(Lang.JA) then
+			textChat:setFontSize(textChat:getFontSize()-2)
+		end
 	end
 end
 

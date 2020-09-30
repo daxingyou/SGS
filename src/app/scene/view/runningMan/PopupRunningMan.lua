@@ -203,11 +203,29 @@ function PopupRunningMan:_onListItemSourceItemTouch(index, params)
 			if itemNum > limitMax then
 				maxNum = limitMax
 			end
-			
-			if maxNum == 0 then
-				G_Prompt:showTip(Lang.get("runningman_running_man_no2"))
-				return
+
+			if Lang.checkUI("ui4") then
+				maxNum = itemNum - itemNum%costValue.size
+				if maxNum > limitMax then
+					maxNum = limitMax
+				end
+				if limitMax == 0 then
+					G_Prompt:showTip(Lang.get("runningman_running_man_no2"))
+					return
+				end
+				if maxNum == 0 then
+					G_Prompt:showTip(Lang.get("common_diamond_title"))
+					return
+				end
+			else
+				if maxNum == 0 then
+					G_Prompt:showTip(Lang.get("runningman_running_man_no2"))
+					return
+				end
 			end
+
+			
+		
 			
 			local tipString = ""
 			if isHomelandBuff == false then

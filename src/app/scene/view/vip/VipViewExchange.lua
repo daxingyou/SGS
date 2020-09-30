@@ -28,9 +28,6 @@ function VipViewExchange:onCreate()
 	self._isCreate = true
 end
 
-function VipViewExchange:_pullData()
-	G_UserData:getShops():c2sGetShopInfo(ShopConst.VIP_EXCHANGE_SHOP)
-end
 
 -- Describle：
 function VipViewExchange:onEnter()
@@ -40,7 +37,6 @@ function VipViewExchange:onEnter()
 	self._signalRecvCurrencysInfo = G_SignalManager:add(SignalConst.EVENT_RECV_CURRENCYS_INFO, 
 		handler(self, self._onEventRecvCurrencysInfo))
 	self:_updateData()
-    self:_pullData()
 end
 
 function VipViewExchange:onEnterTransitionFinish()

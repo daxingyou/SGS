@@ -44,6 +44,11 @@ function PopupInstrumentDetail:ctor(type,value,isSelf, limitLevel)
 end
 
 function PopupInstrumentDetail:onCreate()
+	-- i18n ja change font size
+	if Lang.checkUI("ui4") then  
+		self._btnWayGet:setFontSize(26)
+	end
+
 	self._detailWindow:updateUI(self._unitData)
 	self._btnWayGet:setString(Lang.get("way_type_goto_get"))
 

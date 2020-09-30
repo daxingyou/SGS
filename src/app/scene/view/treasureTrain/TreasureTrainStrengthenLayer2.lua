@@ -585,7 +585,7 @@ function TreasureTrainStrengthenLayer:_playEffect(costMaterials, isPlayEvent, is
     end
 
 	local effect = G_EffectGfxMgr:createPlayMovingGfx(self._parentView._parentView, "moving_baowuqianghua", effectFunction, eventFunction , false)
-	local offsetX = require("app.const.UIConst").EFFECT_OFFSET_X
+	local offsetX = require("app.const.UIConst").EFFECT_OFFSET_X + 30
 	local pos = self._parentView._parentView:convertToNodeSpace(cc.p(G_ResolutionManager:getDesignWidth()*0.5+offsetX, G_ResolutionManager:getDesignHeight()*0.5))
     effect:setPosition(cc.p(pos.x, pos.y))
 end

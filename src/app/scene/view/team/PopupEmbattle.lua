@@ -260,15 +260,30 @@ function PopupEmbattle:_dealPosByI18n()
 		self._buttonClose:loadTextureNormal(Path.getUICommon("btn_guanbi"))  
 		local title = ccui.Helper:seekNodeByName(self._buttonClose:getParent(), "Image_1")
 		title:setContentSize(cc.size(91, 206))
-		
+		local UIHelper  = require("yoka.utils.UIHelper")
+
 		for i = 1, 6 do
 			local image = self["_imageKnightPos"..i]
-			local UIHelper  = require("yoka.utils.UIHelper")
 			local text = UIHelper.seekNodeByName(image,"Image_8","Text_5")
 			text:setFontSize(18)
 			text:setColor(cc.c3b(0xfe ,0xe1,0x02))
 			text:enableOutline(cc.c3b(0x77, 0x1f,0x00), 1)
 		end
+		local bzText =  Lang.getImgText("img_btn_embattletxt01")
+		local Image_1 = UIHelper.seekNodeByName(self,"Image_1")
+		Image_1:ignoreContentAdaptWithSize(true)
+
+		local subLabel = UIHelper.createLabel({text=bzText,  style = "challenge_2_ui4"})
+		subLabel:setFontSize(32)
+		subLabel:setAnchorPoint(cc.p(0.5,1))
+		subLabel:getVirtualRenderer():setMaxLineWidth(36)
+		Image_1:addChild(subLabel)
+
+		local imageNameBgVirtualSize = Image_1:getVirtualRendererSize()
+		local imageNameVirtualSize = subLabel:getVirtualRendererSize()
+		local offset = imageNameBgVirtualSize.height - imageNameVirtualSize.height
+		subLabel:setPositionX(imageNameBgVirtualSize.width/2)
+		subLabel:setPositionY(5 +offset)
 	end
 end
 

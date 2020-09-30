@@ -398,7 +398,7 @@ function FriendInviteView:_onButtonConfirmClick(sender)
 	local code = self._inputCode:getText()  
 
 	if code == self._code then
-		local msgInfo = require("app.config.net_msg_error").get(FriendInviteView.RET_INVITE_OVER_MAX)
+		local msgInfo = require("app.config.net_msg_error").get(FriendInviteView.SELF_CODE_INVALID) 
 		if msgInfo.error_msg then
 			G_Prompt:showTip(msgInfo.error_msg) 
 		end
@@ -419,13 +419,14 @@ end
 
 -----------------------------数据处理
 
-function FriendInviteView:_initData()
+function FriendInviteView:_initData() 
 	self._level = G_UserData:getBase():getLevel()
 	self._code = G_UserData:getActivityFriendInvite():getCode()
 	self._becode = G_UserData:getActivityFriendInvite():getBecode()
 	self._day = G_UserData:getActivityFriendInvite():getDay()
 	self._rewardid = G_UserData:getActivityFriendInvite():getRewardid()  -- 已领取   数据要按id排序  
 	self._UserInviteInfo = G_UserData:getActivityFriendInvite():getUserInviteInfo()   --{ {}, {}, {uid:  name level power day}} 
+	G_StorageManager:save("friendInvite", {openDay = G_UserData:getBase():getOpenServerDayNum(), count = 1, becode = self._becode})
 
 	self._cfg = {}
 	local getCfg = function ()
@@ -481,9 +482,9 @@ end
 
 function FriendInviteView:isUnReceiveState(id)
 	local info = friend_invite.get(id)
-	if id <= 3 then
+	if info.condition == 101 then
 		return #self._UserInviteInfo >= info.require_value1
-	elseif id > 3 and id < 7 then
+	elseif info.condition == 102 then
 		local bNum = #self._UserInviteInfo >= info.require_value1
 		-- 等级
 		local nNum = 0
@@ -498,7 +499,7 @@ function FriendInviteView:isUnReceiveState(id)
 		end
 
 		return (bNum and bLevel)
-	elseif id >= 7 and id <= 9 then
+	elseif info.condition == 103 then  
 		local bNum = #self._UserInviteInfo >= info.require_value1
 
 		-- 战力
@@ -562,9 +563,9 @@ function FriendInviteView:getBeInvitedInfo()
 
 	for i=1, #self._tab2 do
 		if self:_isHaveGetReward(self._tab2[i].id) == false then
-			if i == 1 then
+			if self._tab2[i].condition == 201 then 
 				table.insert((self._becode ~= "") and unReceive or unComplete, self._tab2[i].id)
-			elseif i >= 2 and i <= 4 then  -- 登录天数
+			elseif self._tab2[i].condition == 202 then  -- 登录天数
 				if self._day >= self._tab2[i].require_value1 then 
 					table.insert((self._becode ~= "") and unReceive or unComplete, self._tab2[i].id)
 				elseif self._day < self._tab2[i].require_value1 and self._tab2[i].pre_id == 0 then
@@ -572,7 +573,7 @@ function FriendInviteView:getBeInvitedInfo()
 				elseif self._tab2[i].pre_id ~= 0 and self:_isHaveGetRewardCode(self._tab2[i].pre_id) then-- 若前置任务已领&&条件不满足 则显下个id才能显示“未完成”	
 					table.insert(unComplete, self._tab2[i].id)
 				end
-			elseif i >= 5 and i <= 7 then	-- 玩家等级
+			elseif self._tab2[i].condition == 203 then	-- 玩家等级
 				if self._level >= self._tab2[i].require_value1 then 
 					table.insert((self._becode ~= "") and unReceive or unComplete, self._tab2[i].id) -- 如果填写过邀请码，才显示未领取，Or未完成
 				elseif self._level < self._tab2[i].require_value1 and self._tab2[i].pre_id == 0 then

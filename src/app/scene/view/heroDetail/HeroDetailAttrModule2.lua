@@ -42,6 +42,9 @@ function HeroDetailAttrModule:ctor(heroUnitData, rangeType, isPure)
 end
 
 function HeroDetailAttrModule:onCreate()
+	-- bug: 突破后 详情界面未刷新
+	local curHeroId = G_UserData:getHero():getCurHeroId()
+	self._heroUnitData = G_UserData:getHero():getUnitDataWithId(curHeroId)
 	
 	self._panelBg:setSwallowTouches(false)
  

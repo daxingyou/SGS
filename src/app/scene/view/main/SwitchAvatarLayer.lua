@@ -34,10 +34,6 @@ function SwitchAvatarLayer:ctor(callback,sceneId)
 		G_SignalManager:dispatch(SignalConst.EVENT_SWITCH_SCENE, {id=sceneId})
 	end
 
-	local data = G_UserData:getHero():getUnitDataWithId(self._selectAvatarId)
-	self._selectSpineResId = data:getStoryResSpine()
-	self._countryIndex = self:_getHeroCountry(data)
-
     local resource = {
         file = Path.getCSB("SwitchAvatarLayer", "main"),
         size = G_ResolutionManager:getDesignSize(),
@@ -53,6 +49,9 @@ function SwitchAvatarLayer:ctor(callback,sceneId)
 			},
 			_commonTip = {
                 events = {{event = "touch", method = "_onCommonTip"}}
+			},
+			_commonTipAvatar = {
+                events = {{event = "touch", method = "_onCommonTipAvatar"}}
 			}
 		}
     }
@@ -74,14 +73,25 @@ function SwitchAvatarLayer:onCreate()
 		self["_btnCountry"..i]:setTag(i)
 		self["_btnCountry"..i]:addClickEventListenerEx(handler(self, self._onCountryBtn))
 	end
+	-- self:_initData()
+	-- self:_initListView()
+	-- self:_showScene(self._isScene)
+	-- self:_updateCountryBtn()
+	-- self:_updateDayBtn()
+	G_UserData:getHandBook():c2sGetHeroResPhoto()
+
+	local TopBarStyleConst = require("app.const.TopBarStyleConst")
+	self._topbarBase:updateUI(TopBarStyleConst.STYLE_BACKGROUND, false)
+end
+
+function SwitchAvatarLayer:_updateView()
 	self:_initData()
+	local data = G_UserData:getHandBook():getMainAvatarDataById(self._selectAvatarId)
+	self._countryIndex = self:_getHeroCountry(data)
 	self:_initListView()
 	self:_showScene(self._isScene)
 	self:_updateCountryBtn()
 	self:_updateDayBtn()
-
-	local TopBarStyleConst = require("app.const.TopBarStyleConst")
-	self._topbarBase:updateUI(TopBarStyleConst.STYLE_BACKGROUND, false)
 end
 
 function SwitchAvatarLayer:_onCountryBtn(sender)
@@ -144,7 +154,7 @@ end
 
 function SwitchAvatarLayer:_onItemUpdate(item, index)
 	local data = self._datas[index+1]
-	local id = self._selectSpineResId
+	local id = self._selectAvatarId
 	if self._isScene then
 		id = self._selectSceneId
 	end
@@ -172,15 +182,15 @@ function SwitchAvatarLayer:_onItemTouch(data)
 		end
 		self:_updateDayBtn()
 	else
-		if self._selectSpineResId == data:getStoryResSpine() then
+		if self._selectAvatarId == data.id then
 			return
 		end
-		self._selectSpineResId = data:getStoryResSpine()
-		self._selectAvatarId = data:getId()
+		-- self._selectSpineResId = data:getStoryResSpine()
+		self._selectAvatarId = data.id
 		G_SignalManager:dispatch(SignalConst.EVENT_SWITCH_AVATAR, data)
 		local items = self._listView:getItems()
 		for i, value in ipairs(items) do
-			value:setSelected(value._data:getStoryResSpine() == self._selectSpineResId)
+			value:setSelected(value._data.id == self._selectAvatarId)
 		end
 	end
 
@@ -204,11 +214,35 @@ function SwitchAvatarLayer:_updateListView(noAction)
 end
 
 function SwitchAvatarLayer:_initData()
-	local heroDatas = G_UserData:getHero():getHeroListByFiltSameRes()
+	-- local heroDatas = G_UserData:getHero():getHeroListByFiltSameRes()
 	self._heroDatas = {{},{},{},{}}
-	for i, value in ipairs(heroDatas) do
+	-- for i, value in ipairs(heroDatas) do
+	-- 	local heroCountry = self:_getHeroCountry(value)
+	-- 	table.insert(self._heroDatas[heroCountry],value)
+	-- end
+
+	local heroDatas = G_UserData:getHandBook():getMainAvatarList()
+	for key, value in pairs(heroDatas) do
 		local heroCountry = self:_getHeroCountry(value)
 		table.insert(self._heroDatas[heroCountry],value)
+	end
+	local sortFun = function(a, b)
+		if a.config.type ~= b.config.type then
+			if a.config.type == 1 then
+				return true
+			end
+			if b.config.type == 1 then
+				return false
+			end
+		end
+		if a.color ~= b.color then
+			return a.color > b.color
+		else
+			return a.baseId < b.baseId
+		end
+	end
+	for i = 1, 4 do
+		table.sort(self._heroDatas[i],sortFun)
 	end
 
 	self:_updateSceneData()
@@ -271,6 +305,8 @@ function SwitchAvatarLayer:_onClickChangeScene()
 end
 
 function SwitchAvatarLayer:onEnter()
+	self._signalGetHeroResPhoto =
+		G_SignalManager:add(SignalConst.EVENT_GET_HERO_RES_PHOTO_SUCCESS, handler(self, self._updateView))
 	self._signalBuyMainScene =
 		G_SignalManager:add(SignalConst.EVENT_BUY_MAIN_SCENE, handler(self, self._onSignalBuyMainScene))
 end
@@ -278,6 +314,8 @@ end
 function SwitchAvatarLayer:onExit()
 	self._signalBuyMainScene:remove()
 	self._signalBuyMainScene = nil
+	self._signalGetHeroResPhoto:remove()
+	self._signalGetHeroResPhoto = nil
 
 	if self._selectAvatarId ~= G_UserData:getBase():getKanBanNiang() then
 		G_UserData:getBase():c2sKanbanNiang(self._selectAvatarId)
@@ -294,8 +332,8 @@ function SwitchAvatarLayer:onBack()
 end
 
 function SwitchAvatarLayer:_getHeroCountry(data)
-	local heroCountry = data:getConfig().country
-	if data:isLeader() then
+	local heroCountry = data.config.country
+	if data.config.type == 1 then
 		-- local heroBaseId = AvatarDataHelper.getShowHeroBaseIdByCheck(data)
 		-- local heroConfig = Hero.get(heroBaseId)
 		-- heroCountry = heroConfig.country
@@ -325,7 +363,13 @@ end
 
 function SwitchAvatarLayer:_onCommonTip(sender)
 	local posX = self._btnDayList:getPositionX() - 70 - G_ResolutionManager:getBangDesignWidth()/2 - 240
-	local popup = require("app.scene.view.main.PopupSceneTip").new(cc.p(posX, 250))
+	local popup = require("app.scene.view.main.PopupSceneTip").new(cc.p(posX, 250),Lang.get("HELP_SWITCH_AVATAR"))
+	popup:open()
+end
+
+function SwitchAvatarLayer:_onCommonTipAvatar(sender)
+	local posX = self._changeScene:getPositionX() - 0 - G_ResolutionManager:getBangDesignWidth()/2 - 240
+	local popup = require("app.scene.view.main.PopupSceneTip").new(cc.p(posX, 250),Lang.get("HELP_SWITCH_AVATAR_1"))
 	popup:open()
 end
 

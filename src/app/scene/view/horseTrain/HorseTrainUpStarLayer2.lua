@@ -61,6 +61,7 @@ function HorseTrainUpStarLayer:ctor(parentView)
 			}
 		},
 	}
+	self:setName("HorseTrainUpStarLayer")
 	self:enableNodeEvents()  
 	HorseTrainUpStarLayer.super.ctor(self, resource)
 end
@@ -666,18 +667,20 @@ end
 
 -- 新增刷新战马装备的逻辑
 function HorseTrainUpStarLayer:_horseEquipAddSuccess(event,equipPos)
-    self._horseEquipItem:updateHorseEquip(equipPos)
+	if self and self._horseEquipItem and self._updateData and self._unitData then
+		self._horseEquipItem:updateHorseEquip(equipPos)
 
-    self:_updateData()
-
-    if not self._unitData:isInBattle() then
-        -- 没有上阵的战马不播放战力差值动画
-        self:_updateAttr()
-        return
-    end
-    --属性飘字
-    local summary = {}
-    self:_executeSummaryPrompt(summary)
+		self:_updateData()
+	
+		if not self._unitData:isInBattle() then
+			-- 没有上阵的战马不播放战力差值动画
+			self:_updateAttr()
+			return
+		end
+		--属性飘字
+		local summary = {}
+		self:_executeSummaryPrompt(summary)
+	end
 end
 
 function HorseTrainUpStarLayer:updateHorseEquipDifPrompt()

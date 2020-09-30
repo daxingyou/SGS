@@ -38,6 +38,10 @@ function CampSummaryNode:showRank(old, new)
     local size2 = self._imageArrow:getContentSize()
     self._imageArrow:setPositionX(size1.width+10)
     self._textRankNew:setPositionX(size1.width+size2.width)
+    --
+    if lang.checkUI("ui4") then
+        self._nodeRank:setPositionX(self._nodeRank:getPositionX() + 18)
+    end
 end
 
 function CampSummaryNode:showPoint(now, change)

@@ -503,6 +503,11 @@ function LoginView:reloadModule()
     G_GuildSnatchRedPacketServe:clear()
     G_SpineManager:clear()
 
+    if Lang.checkUI("ui4") then
+        G_PosterGirlManager:clear()
+        G_NewLevelPkgManager:clear()
+    end
+
     G_WaitingMask:clear()
     G_TouchEffect:clear()
     G_TopLevelNode:clear()

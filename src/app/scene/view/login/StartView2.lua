@@ -200,10 +200,17 @@ function StartView2:onButtonEnter()
 	-- 		return
 	-- 	end
 	-- end
-	local serverId = server:getServer()
-    local serverName = server:getName()
-	local serverInfo = serverId .. "|" .. serverName 
-	G_NativeAgent:eventCustom("AT_Select_ServerId", tostring(serverInfo))
+
+	if server then
+		local serverId = server:getServer()
+		local serverName = server:getName()
+		local serverInfo = serverId .. "|" .. serverName 
+		G_NativeAgent:eventCustom("AT_Select_ServerId", tostring(serverInfo))
+	else
+		self:checkUpdateList(false)
+		return
+	end
+
 	-- dump(serverInfo,"AT_Select_ServerId")
     -- G_GameAgent:enterGame()
 	

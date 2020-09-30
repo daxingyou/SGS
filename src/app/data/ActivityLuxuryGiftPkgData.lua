@@ -239,6 +239,29 @@ function ActivityLuxuryGiftPkgData:getTotalBuyTime()
 end
 
 function ActivityLuxuryGiftPkgData:hasRedPoint()
+	if Lang.checkUI("ui4") then
+		local canReceive = G_UserData:getActivityLuxuryGiftPkg():isCanReceiveGiftPkg()
+		local allData =  self:getGiftPkgPayCfgList()
+		local redPoint = false
+		for index,v in ipairs(allData) do
+			local unitDataList = G_UserData:getActivityLuxuryGiftPkg():getUnitDatasByPayType(index)
+			if unitDataList[1] then
+				local actLuxuryGiftPkgUnitData = unitDataList[1]
+				--local cfg = actLuxuryGiftPkgUnitData:getConfig()
+				--local vipConfig = actLuxuryGiftPkgUnitData:getVipConfig()
+				local remainBuyTime = actLuxuryGiftPkgUnitData:getRemainBuyTime()
+				local enabled = remainBuyTime > 0
+				if enabled and canReceive then
+					redPoint = true
+					break					
+				end
+			end
+		end
+		if redPoint then
+			return redPoint
+		end
+	end
+
 	--没有买（每日提醒一次）
 	local showed = G_UserData:getRedPoint():isTodayShowedRedPointByFuncId(
 		FunctionConst.FUNC_WELFARE,{actId = ActivityConst.ACT_ID_LUXURY_GIFT_PKG}
@@ -246,7 +269,7 @@ function ActivityLuxuryGiftPkgData:hasRedPoint()
 	if showed then
 		return false
 	end
-
+	
 	return not self:hasBuyGoods()
 end
 

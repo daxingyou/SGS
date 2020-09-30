@@ -17,6 +17,7 @@ local EXPORTED_METHODS = {
     "updateHelpUI",
     "onButtonBack", -- i18n
     "getTitleWidth", -- i18n
+    "getTitle",      -- i18n ja
     "getTopBarItemList" -- i18n ja
 }
 
@@ -264,6 +265,12 @@ end
 function CommonTopbarBase:getTopBarItemList()
     return self._topBarItemList
 end
+
+-- i18n ja
+function CommonTopbarBase:getTitle()
+    return self._textTitle   
+end
+
 
 
 

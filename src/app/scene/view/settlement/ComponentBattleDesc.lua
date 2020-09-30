@@ -33,10 +33,24 @@ function ComponentBattleDesc:_createCsbNode()
         self._playerName:setVisible(true)
         self._textDesc:setVisible(true)
         self._nodeDesc:setVisible(false)
+        -- ui4位置调整
+        if Lang.checkUI("ui4") then
+            local wid1 = self._playerName:getVirtualRendererSize().width
+            local wid2 = self._textDesc:getVirtualRendererSize().width
+            local  offset =  wid2/2 - wid1/2 - 16
+            self._playerName:setPositionX( self._playerName:getPositionX()+offset)
+            self._textDesc:setPositionX( self._textDesc:getPositionX()+offset)
+        end
     elseif self._type == ComponentBattleDesc.TYPE_REPORT then
         self._playerName:setVisible(false)
         self._textDesc:setVisible(false)
         self:_setRichText(self._battleData)
+    end
+
+    -- i18n ja
+    if Lang.checkLang(Lang.JA) then
+        self._textDesc:setVisible(false)
+        self._playerName:setVisible(false)
     end
     
     return panel

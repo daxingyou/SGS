@@ -13,7 +13,7 @@ local CSHelper = require("yoka.utils.CSHelper")
  
 local EventDispatcher = cc.Director:getInstance():getEventDispatcher()
  
- 
+HeroDetailCheckDrawing.POS_OFFSET = 0.1
 function HeroDetailCheckDrawing:ctor(value)
 	--self._value = value
 
@@ -24,12 +24,9 @@ function HeroDetailCheckDrawing:ctor(value)
 			_buttonSwitch = {
 				events = {{event = "touch", method = "_onButtonSwitchScreenClicked"}}
 			},
-			_buttonLager = {
-				events = {{event = "touch", method = "_onButtonEnlargeClicked"}}  
+			_buttonClose = {
+				events = {{event = "touch", method = "_onButtonCloseClicked"}}  
 			},
-			_buttonSmall = {
-				events = {{event = "touch", method = "_onButtonSmallClicked"}}
-			}
 		}
 	}
 
@@ -37,6 +34,12 @@ function HeroDetailCheckDrawing:ctor(value)
 end
 
 function HeroDetailCheckDrawing:onCreate()
+	self._slider:addEventListener(handler(self, self._onSlider))
+	self._slider:setPercent(50)
+
+	-- 隐藏进度条
+	self._bSlidering = false
+	self:_startTimer()
 	-- 背景图
 	self._imageBg:setOpacity(255) 
 	self._imageBg2:setOpacity(0) 
@@ -46,7 +49,7 @@ function HeroDetailCheckDrawing:onCreate()
 	self._nodeAvatar:setVisible(true)  
 	self.origPos = cc.p(self._nodeAvatar:getPositionX(), self._nodeAvatar:getPositionY())
  
-	self.isMoving = false
+	self._isMoving = false
 	-- 添加Touch   (下面多点触摸相关 暂时无用)
 	-- self:setMultipleTouchEnabled(true) 需要在native代码开启，
 	self.bgOrigin = self._nodeAvatar:getPosition() --初始化数据
@@ -98,37 +101,59 @@ end
 
 --
 function HeroDetailCheckDrawing:_onTouchBegan(touch, event)
+	self:_endTimer()
+	self._nodeSlider:setVisible(true)
   	do return true end
 	-- return false
 end
  
 function HeroDetailCheckDrawing:_onTouchMoved(touch, event)
-		self.isMoving = true
+		self._isMoving = true
 
 		local pDeltaX, pDeltaY = touch:getDelta()
 		local posX, posY = self._nodeAvatar:getPosition() 
+
 		self._nodeAvatar:setPosition( cc.pAdd( cc.p(posX, posY), cc.p(pDeltaX , pDeltaY) ) )
+		if self._nodeAvatar:getPositionX() < -1*HeroDetailCheckDrawing.POS_OFFSET then
+			self._nodeAvatar:setPositionX(-1*HeroDetailCheckDrawing.POS_OFFSET)
+			return 
+		end
+		if self._nodeAvatar:getPositionX() > self._panelDesign:getContentSize().width + HeroDetailCheckDrawing.POS_OFFSET then
+			self._nodeAvatar:setPositionX(self._panelDesign:getContentSize().width + HeroDetailCheckDrawing.POS_OFFSET)
+			return 
+		end
+		if self._nodeAvatar:getPositionY() < -1*HeroDetailCheckDrawing.POS_OFFSET then
+			self._nodeAvatar:setPositionY(-1*HeroDetailCheckDrawing.POS_OFFSET) 
+			return
+		end
+		if self._nodeAvatar:getPositionY() > self._panelDesign:getContentSize().height + HeroDetailCheckDrawing.POS_OFFSET then
+			self._nodeAvatar:setPositionY(self._panelDesign:getContentSize().height + HeroDetailCheckDrawing.POS_OFFSET)
+			return
+		end
 		--print("----------------------------_onTouchMoved", posX, posY, pDeltaX, pDeltaY)
 end
 
 function HeroDetailCheckDrawing:_onTouchEnded(touch, event)
 	print("----------------------------_onTouchEnded", touch, event)
 
-	if not self.isMoving then    -- 没有moveing时  默认退出立绘
-		self:removeFromParent()
+	if not self._isMoving then    -- 没有moveing时  默认退出立绘
+		--self:removeFromParent()
 	end
-	self.isMoving = false
+	self._isMoving = false
+	self:_startTimer()
 end
  
 function HeroDetailCheckDrawing:_onTouchCancelled(touch, event)
-	if not self.isMoving then     
-		self:removeFromParent()
+	if not self._isMoving then     
+		--self:removeFromParent()
 	end
-	self.isMoving = false
+	self._isMoving = false
+	self:_startTimer()
 end
 
 function HeroDetailCheckDrawing:onExit()
 	self:clear()
+	self:_endTimer()
 end
 
 function HeroDetailCheckDrawing:clear()
@@ -136,7 +161,7 @@ function HeroDetailCheckDrawing:clear()
         EventDispatcher:removeEventListener(self._listener)
         self._listener = nil
     end
-end
+end 
 
 function HeroDetailCheckDrawing:_onButtonSwitchScreenClicked()
 	local angel = self._nodeAvatar:getRotation() 
@@ -148,18 +173,7 @@ function HeroDetailCheckDrawing:_onButtonSwitchScreenClicked()
 	self._nodeAvatar:setRotation(angel)
 	self._nodeAvatar:setPosition(self.origPos)
 
-	-- 调整背景图
-	-- local bgName = ""
-	-- if angel == 0 then
-	-- 	bgName = Path.getStageBG("heroP_bj")
-	-- 	self._imageBg:loadTexture(bgName)
-	-- 	self._imageBg:setContentSize(cc.size(G_ResolutionManager:getDesignSize().width, G_ResolutionManager:getDesignSize().height))
-	-- else
-	-- 	bgName = Path.getStageBG("img_check_spine_bg")   
-	-- 	self._imageBg:loadTexture(bgName)
-	-- 	self._imageBg:setContentSize(cc.size(G_ResolutionManager:getDesignSize().width, G_ResolutionManager:getDesignSize().height))
-	-- end
-	-- self._imageBg:setRotation(angel)
+       
 
 	local bgName = ""
 	if angel == 0 then
@@ -172,13 +186,74 @@ function HeroDetailCheckDrawing:_onButtonSwitchScreenClicked()
 end
 
 function HeroDetailCheckDrawing:_onButtonEnlargeClicked()
+	if self._nodeAvatar:getScale() > 2 then  
+		return 
+	end
 	self._nodeAvatar:setScale(self._nodeAvatar:getScale() + 0.03)
 end
 
 function HeroDetailCheckDrawing:_onButtonSmallClicked()
+	if self._nodeAvatar:getScale() < 0.25 then  
+		return 
+	end
 	self._nodeAvatar:setScale(self._nodeAvatar:getScale() - 0.03)
 end
 
+
+function HeroDetailCheckDrawing:_onSlider(sender,event)
+    local value = self._slider:getPercent()
+	if event == ccui.SliderEventType.percentChanged then
+		self._bSlidering = true
+		local scaleRate = 0
+		
+		if value > 50 then
+			scaleRate = (value-50)*2/100
+			--print("scaleRate 0==== ", scaleRate)
+			scaleRate = scaleRate > 1 and 1 or scaleRate -- 最大为1 <0~1>
+		elseif value < 50 then  
+			scaleRate = 0.75 * (math.abs(value - 50) * 2 / 100 )
+			--print("scaleRate 0==== ", -1*scaleRate)
+			scaleRate =  scaleRate >= 0.75 and -0.75 or -1*scaleRate -- 最小为0.75 <0~0.75>
+		end 
+
+	   self._nodeAvatar:setScale(1 + scaleRate)
+	elseif event == ccui.SliderEventType.slideBallUp then
+		 -- 手指不滑动时 消失
+		self._bSlidering = false
+		self:_endTimer()
+		self:_startTimer() 
+    end
+end
+
+function HeroDetailCheckDrawing:_onButtonCloseClicked()
+	self:removeFromParent()
+end
+
+--------------------
+function HeroDetailCheckDrawing:_startTimer()
+	local SchedulerHelper = require("app.utils.SchedulerHelper")
+	if self._refreshHandler ~= nil then
+        return
+	end
+	self._refreshHandler = SchedulerHelper.newScheduleOnce(handler(self,self._onRefreshTick), 3)
+end
+
+function HeroDetailCheckDrawing:_endTimer()
+	local SchedulerHelper = require("app.utils.SchedulerHelper")
+	if self._refreshHandler ~= nil then
+		SchedulerHelper.cancelSchedule(self._refreshHandler)
+		self._refreshHandler = nil
+	end
+end
+
+function HeroDetailCheckDrawing:_onRefreshTick(dt)
+	if self._bSlidering or self._isMoving then  -- 正在滑动进度条中/触摸屏幕
+		self._nodeSlider:setVisible(true)
+		return
+	end 
+
+	self._nodeSlider:setVisible(false)
+end
 
  
 return HeroDetailCheckDrawing

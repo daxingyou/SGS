@@ -106,6 +106,23 @@ function PopupBoxReward:_createCellEx(award)
 	uiNode:updateUI(award.type, award.value, award.size)
 	uiNode:showItemBg(true)
 	uiNode:setTouchEnabled(true)
+
+	-- i18n ui4  名字三行时与下面文字重合
+	if Lang.checkUI("ui4") and G_UserData:getChapterBox():isCurBoxAwardsCanGet() == false then
+		local iconName = ccui.Helper:seekNodeByName(uiNode, "Icon_name")
+		if require("app.utils.UTF8").utf8len(iconName:getString()) > 8 then  
+			iconName:getVirtualRenderer():setMaxLineWidth(90)
+			iconName:ignoreContentAdaptWithSize(true)  
+			iconName:setAnchorPoint(0.5, 1)
+			iconName:setFontSize(iconName:getFontSize() - 5) 
+			iconName:setPositionY(iconName:getPositionY() - 5 / 2) 
+			iconName:setString(iconName:getString())
+			local size = iconName:getVirtualRendererSize()
+			local imageNameBg = ccui.Helper:seekNodeByName(uiNode,"ImageNameBg")
+			imageNameBg:setContentSize(cc.size(96, size.height + 5)) 
+		end 
+	end
+
 	
 	local panelSize = uiNode:getPanelSize()
 

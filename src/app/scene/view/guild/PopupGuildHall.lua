@@ -142,6 +142,11 @@ function PopupGuildHall:_refreshRedPoint()
 			 redPointShow = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_ARMY_GROUP,"checkApplicationRP")
 		elseif tabId == 6 then--红包
 			 redPointShow = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_ARMY_GROUP,"redPacketRP")
+
+			 -- i18n ja bug:今日领取红包量已经达到上限，但是还有红点提示我去领取红包，达到上限不再红点提示
+			 if Lang.checkUI("ui4") and UserDataHelper.getCanSnatchRedPacketNum() < 0 then 
+				 redPointShow = false
+			 end
 		elseif tabId == 1 then--任务
 			 redPointShow = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_ARMY_GROUP,"guildTaskRP")	 
 		end

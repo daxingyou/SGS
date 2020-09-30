@@ -154,6 +154,11 @@ function TreasureDetailView:_initLeftIcons()
 		return
 	end
 
+	local itemList = self._listViewLineup:getChildren()  --bug: 装备精炼界面，精炼石不够去商店返回，左侧英雄列表会额外初始化一次
+	if #itemList > 0 then
+		self._listViewLineup:removeAllItems()
+	end
+
 	local function createIcon(icon, isHeroBust)
 		local iconBg = ccui.Widget:create()
 		local iconBgSize = cc.size(114, 108)
@@ -357,7 +362,7 @@ end
 function TreasureDetailView:getAllTreasureIds() 
 	for index = 1, TreasureDetailView.TREASURE_COUNT do   
 		if not self._allTreasureIds[index] then
-			self._allTreasureIds[index] = 0	--table.insert(self._allEquipIds, index, 0)
+			self._allTreasureIds[index] = 0	--table.insert(self._allTreasureIds, index, 0)
 		end
 	end
 end 
@@ -474,9 +479,31 @@ function TreasureDetailView:_treasureAddSuccess(eventName, oldId, pos, slot)
 	end
 	G_UserData:getTreasure():setCurTreasureId(treasureId)
 	
-	
+	self:_reCreateLeftIcons() -- bug: 抢装备导致闪退
 	self:updateInfo() 
 	self:_playTreasureAddSummary(oldId, pos, slot)
+end
+
+-- bug: 把别的武将装备抢完后， 头像列表要删除此武将
+function TreasureDetailView:_reCreateLeftIcons() 
+
+	local nNum = 0
+	local iconData = TeamViewHelper.getHeroIconData()
+	for i, data in ipairs(iconData) do
+		if data.id ~= 0 then
+			local heroId = data.id
+			local unitData = G_UserData:getHero():getUnitDataWithId(heroId)
+			local _allTreasureIds = G_UserData:getBattleResource():getTreasureIdsWithPos( unitData:getPos() )
+			if #_allTreasureIds > 0 then
+				nNum = nNum + 1
+			end
+		end
+	end
+
+	local itemList = self._listViewLineup:getChildren() 
+	if #itemList ~= nNum then
+		self:_initLeftIcons()
+	end
 end
 
 function TreasureDetailView:_onButtonUnloadClicked()

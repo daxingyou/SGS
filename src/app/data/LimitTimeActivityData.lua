@@ -404,4 +404,71 @@ function LimitTimeActivityData:isActivityOpen(funcId)
 	return false
 end
 
+-- i18n ja 获取军团boss活动
+function LimitTimeActivityData:getWorldBossActivityIcon()
+	if not self._mainMenuActivityTimes then
+		self:_initMainMenuLayerActivityIcons()
+	end
+
+	local curTime = G_ServerTime:getTime()
+	local data
+
+	--判断是否下次开启隔天了 隔天了不显示
+	local nextCleanTime = G_ServerTime:getNextCleanDataTime()
+	for k, v in pairs(self._mainMenuActivityTimes) do
+		if v.funcId == FunctionConst.FUNC_WORLD_BOSS then
+			local startTime = v.getStartTime()
+			local endTime = v.getEndTime()
+			if startTime > 0 and startTime < nextCleanTime then
+				data = {startTime = startTime, endTime = endTime, funcId = v.funcId, showEffectTime = v.showEffectTime, weight = v.weight}
+			end
+			break
+		end
+	end
+
+	if data == nil then
+		return
+	end
+
+	local curInfo = data
+	local minStartTime = curInfo.startTime or 0
+	local minEndTime = curInfo.endTime or 0
+	local funcId = curInfo.funcId or 0
+	local showEffectTime = curInfo.showEffectTime
+
+	local isNeedShowEffect = false
+	--注册一个活动结束 刷新主界面图标的事件
+	if funcId ~= 0 then
+		G_ServiceManager:registerOneAlarmClock(
+			"LIMIT_TIME_ACTIVITY_DATA_MAINMENULAYER_ICON_END",
+			minEndTime,
+			function()
+				G_SignalManager:dispatch(SignalConst.EVENT_MAIN_CITY_CHECK_BTNS, funcId)
+				G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_UPDATE, FunctionConst.FUNC_AUCTION)
+			end
+		)
+		--在倒计时前显示特效
+		if showEffectTime ~= nil then
+			local showEffectStartTime = minStartTime - showEffectTime
+			assert(showEffectStartTime > 0, "showEffectStartTime <= 0 ")
+			if curTime < showEffectStartTime then
+				isNeedShowEffect = false
+				--替换之前 通知变化时间
+				G_ServiceManager:registerOneAlarmClock(
+					"LIMIT_TIME_ACTIVITY_DATA_MAINMENULAYER_ICON",
+					showEffectStartTime,
+					function()
+						G_SignalManager:dispatch(SignalConst.EVENT_MAIN_CITY_CHECK_BTNS, funcId)
+					end
+				)
+			else
+				isNeedShowEffect = true
+			end
+		end
+	end
+
+	return funcId, minStartTime, minEndTime, isNeedShowEffect
+end
+
+
 return LimitTimeActivityData

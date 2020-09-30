@@ -142,6 +142,10 @@ function RecoveryView:_initTab()
 			-- text:setString(str)
 		end
 	end
+	-- i18n ja 跳转定位
+	if Lang.checkUI("ui4") then
+		self._scrollViewTab:jumpToItem(self._selectTabIndex - 1, cc.p(0, 0), cc.p(0, 0))
+	end
 end
 
 function RecoveryView:_onClickTabIcon(index)

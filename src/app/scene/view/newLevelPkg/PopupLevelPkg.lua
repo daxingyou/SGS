@@ -1,7 +1,7 @@
 local PopupBase = require("app.ui.PopupBase")
 local PopupLevelPkg = class("PopupLevelPkg", PopupBase)
 
-
+--[[
 function PopupLevelPkg:waitEnterMsg(callBack)
 	local function onMsgCallBack()
 		callBack()
@@ -14,7 +14,7 @@ function PopupLevelPkg:waitEnterMsg(callBack)
 		callBack()
 	end
 end
-
+]]
 function PopupLevelPkg:ctor(condition,conditionValue,callback)
 	self._condition = condition
 	self._conditionValue = conditionValue
@@ -23,6 +23,7 @@ function PopupLevelPkg:ctor(condition,conditionValue,callback)
 	self._listItem = nil  --ListView
 	self._nodeContinue = nil
 	self._nodeBubble = nil
+	self._time = 0
 	local resource = {
 		file = Path.getCSB("PopupLevelPkg", "new_level_pkg"),
 	}
@@ -38,6 +39,16 @@ function PopupLevelPkg:onCreate()
 	self._nodeBubble:getSubNodeByName("Text"):setString(text)
 end
 
+function PopupLevelPkg:onShowFinish()
+	self._time = G_ServerTime:getMSTime()
+end
+
+function PopupLevelPkg:closeWithAction()
+	local time = G_ServerTime:getMSTime()
+	if time - self._time >= 500 then
+		PopupLevelPkg.super.closeWithAction(self)
+	end 
+end
 
 -- Describle：
 function PopupLevelPkg:onEnter()

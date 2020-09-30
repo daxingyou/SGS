@@ -312,7 +312,9 @@ function Actor:showSkill(imageId,name)
 				local UIHelper = require("yoka.utils.UIHelper")
 				local TypeConst = require("app.i18n.utils.TypeConst")
 				local subLabel = UIHelper.createLabel({text=name,style="skill",styleType=TypeConst.TEXT})
-
+                if Lang.checkUI("ui4") then
+                    subLabel = UIHelper.createLabel({text=name,style="skill_ui4",styleType=TypeConst.TEXT})
+                end
 				if Lang.checkLatinLanguage() then
 					local node =  cc.Node:create()
 					subLabel:setPositionY(5)
@@ -568,7 +570,7 @@ function Actor:_createChatBubble2()
         self._chatBubble:setPositionX(positionX + 20)
     end
 
-    self._chatText:setMaxLineWidth(195)
+    self._chatText:setWidth(195)
 end
 --i18n ja 自适应说话泡泡
 function Actor:_updateChatBubble()

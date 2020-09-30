@@ -17,6 +17,7 @@ local SPINE_POINT_DEFAULT_ACTION    = {
 
 function CommonPosterGirlAvatar:ctor()
     CommonPosterGirlAvatar.super.ctor(self)
+    self._skinId = nil
 end
 
 
@@ -35,12 +36,16 @@ function CommonPosterGirlAvatar:unbind(target)
 end
 
 function CommonPosterGirlAvatar:updateUI(skinId)
+    if self._skinId == skinId then
+        return
+    end
+    self._skinId = skinId 
     local param = TypeConvertHelper.convert(TypeConvertHelper.TYPE_POSTER_GIRL_SKIN,skinId )
-    --local resData = param.res_cfg
-   -- if resData.story_res_spine ~= 0 then
-        self:_createHeroSpine("123")
+    local resData = param.res_cfg
+    if resData.spine_res ~= "" then
+        self:_createHeroSpine(resData.spine_res)
         self._imageAvatar:setVisible(false)
-    --end
+    end
 end
 
 function CommonPosterGirlAvatar:_createHeroSpine(spineId)
@@ -59,6 +64,10 @@ function CommonPosterGirlAvatar:setAvatarScale(scale)
 end
 
 function CommonPosterGirlAvatar:updateChatUI(skinId)
+    if self._skinId == skinId then
+        return
+    end
+    self._skinId = skinId 
     local param = TypeConvertHelper.convert(TypeConvertHelper.TYPE_POSTER_GIRL_SKIN,skinId )
     if self._schedulerMouth then
         scheduler.unscheduleGlobal(self._schedulerMouth)
@@ -67,10 +76,10 @@ function CommonPosterGirlAvatar:updateChatUI(skinId)
     self._spinePoints = {}
     self._hasMouth = true
 
-    local resData = { story_res_spine = "123" }
-    
+    local resData = param.res_cfg
+
     if not self._hasMouth then
-        self:_createHeroSpine(resData.story_res_spine)
+        self:_createHeroSpine(resData.spine_res)
         self._imageAvatar:setVisible(false)
         return
     end
@@ -78,7 +87,7 @@ function CommonPosterGirlAvatar:updateChatUI(skinId)
     local function callback()
         self:_createPointNode("mouth",skinId)
     end
-    self:_createChatHeroSpine(resData.story_res_spine,callback)
+    self:_createChatHeroSpine(resData.spine_res,callback)
     self._imageAvatar:setVisible(false)
     
 end
@@ -132,15 +141,15 @@ function CommonPosterGirlAvatar:_createChatHeroSpine(spineId,callback)
 end
 
 function CommonPosterGirlAvatar:_createPointNode(pointName,skinId)
-   
-    local resData = { story_res_spine = "123" }
+    local param = TypeConvertHelper.convert(TypeConvertHelper.TYPE_POSTER_GIRL_SKIN,skinId )
+    local resData = param.res_cfg
     dump(self._spinePoints[pointName])
     
     assert(self._spinePoints[pointName] == nil,"Spine 已经包含了节点 "..pointName.." 不能重复创建")
     
     local parent        = self._spine:getSpinePoint(pointName)
 
-    local assetPath     = resData.story_res_spine.."_"..pointName
+    local assetPath     = resData.spine_res.."_"..pointName
     local spinePoint    = require("yoka.node.SpineNode").new(1, cc.size(50, 50))
     spinePoint:setAsset(Path.getSkinSpinePointAsset(assetPath))
     spinePoint:setAnimation(SPINE_POINT_DEFAULT_ACTION[pointName],true)

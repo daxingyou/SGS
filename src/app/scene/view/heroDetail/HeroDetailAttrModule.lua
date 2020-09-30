@@ -43,8 +43,9 @@ function HeroDetailAttrModule:onCreate()
 	self._nodeTitle:setFontSize(24)
 	self._nodeTitle:setTitle(Lang.get("hero_detail_title_attr"))
 	if Lang.checkUI("ui4") then -- i18n ja change
+		self._panelBg:removeBackGroundImage() 	
         ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):loadTexture(Path.getTextTeam("img_zr_di03"))
-        ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):setContentSize(cc.size(398, 37))  
+		ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):setContentSize(cc.size(398, 37))  
 	end
 	self._nodeLevel:setFontSize(20)
 	self._buttonGold:setString(Lang.get("goldenhero_train_button_text"))

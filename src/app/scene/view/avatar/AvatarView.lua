@@ -369,11 +369,14 @@ function AvatarView:_buildCombinationModule()
 	for i, showId in ipairs(showIds) do
 		local AvatarDataHelper = require("app.utils.data.AvatarDataHelper")
 		local showConfig = AvatarDataHelper.getAvatarShowConfig(tonumber(showId))
-		local moduleItem = AvatarDetailCombinationModule.new()
-		moduleItem:setTitle(index)
-		moduleItem:updateUI(tonumber(showId))
-		self._listView:pushBackCustomItem(moduleItem)
-		index = index + 1
+		if Lang.checkUI("ui4") and showConfig.is_work ~= 1 then
+		else
+			local moduleItem = AvatarDetailCombinationModule.new()
+			moduleItem:setTitle(index)
+			moduleItem:updateUI(tonumber(showId))
+			self._listView:pushBackCustomItem(moduleItem)
+			index = index + 1
+		end
 	end
 end
 

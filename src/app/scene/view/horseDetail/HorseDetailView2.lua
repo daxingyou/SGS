@@ -170,6 +170,11 @@ function HorseDetailView:_initLeftIcons()
 	if self._rangeType == HorseConst.HORSE_RANGE_TYPE_1 then  
 		return
 	end
+ 
+	local itemList = self._listViewLineup:getChildren()  --bug: 装备精炼界面，精炼石不够去商店返回，左侧英雄列表会额外初始化一次
+	if #itemList > 0 then
+		return
+	end
 
 	local function createIcon(icon, isHeroBust)
 		local iconBg = ccui.Widget:create()
@@ -535,7 +540,6 @@ end
 function HorseDetailView:getCurPos()
 	return self.curPos
 end
-
 
 
 ------------------------------------------------------------ --播放战马穿戴飘字

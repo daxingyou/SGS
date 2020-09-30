@@ -23,6 +23,7 @@ end
 
 --
 function PopupUpdateAlert:onCreate()
+	self._image:ignoreContentAdaptWithSize(true)
 end
 
 function PopupUpdateAlert:setOKBtn(str)

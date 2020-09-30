@@ -465,11 +465,6 @@ function Path.getArenaUI(id)
 	return "ui3/arena/"..id..png_suffix
 end
 
--- 首冲界面图片
-function Path.getFirstChargeUI(id)
-	return "ui3/the_first_charge/"..id..png_suffix
-end
-
 function Path.getStageMapPath(path)
 
 	local function getfile(path, fileName)

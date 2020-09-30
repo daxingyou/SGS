@@ -22,14 +22,17 @@ function TeamHeroPageItem:updateUI(type, value, isEquipAvatar, limitLevel, limit
 		if Lang.checkUI("ui4") and type == TypeConvertHelper.TYPE_HERO then
 			self._avatar = CSHelper.loadResourceNode(Path.getCSB("CommonStoryAvatar", "common"))
 			self._avatar:updateChatUI(value, limitLevel, limitRedLevel)
-			--self._avatar:setScale(0.75)
 			local size = self:getContentSize()
 			self._avatar:setPosition(cc.p(size.width / 2, 0)) -- 调位置  会被截掉  是因为缩放导致大小变化
 			self:addChild(self._avatar)
-	
+			
 			self._avatar:getChildByName("Panel_1"):setTouchEnabled(true)
 			self._avatar:getChildByName("Panel_1"):addClickEventListenerEx(handler(self, self._onClickAvatar))   -- 备注有可能导致  整个屏幕无法触摸	 
-
+			
+			local info = require("app.config.hero").get(value) -- 位置调整
+			local resData = require("app.config.hero_res").get(info.res_id)
+			local axis = string.split(resData.cultivate_deviation, "|")
+			self._avatar:setPosition(self._avatar:getPositionX() + 50 + tonumber(axis[1]), self._avatar:getPositionY() + tonumber(axis[2])) 
 		else
 			self._avatar = CSHelper.loadResourceNode(Path.getCSB("CommonHeroAvatar", "common"))
 			self._avatar:setTouchEnabled(true)
@@ -122,3 +125,4 @@ function TeamHeroPageItem:setAvatarScale(scale)
 end
 
 return TeamHeroPageItem
+

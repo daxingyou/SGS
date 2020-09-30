@@ -17,8 +17,10 @@ function PosterGirlManager:clear()
 		self._signalPosterGirlVoiceUpdate = nil
     end
     
-    self._signalFinishLogin:remove()
-    self._signalFinishLogin = nil
+    if self._signalFinishLogin then
+        self._signalFinishLogin:remove()
+        self._signalFinishLogin = nil
+    end
 
     if self._signalPosterGirlVoiceClear then
 		self._signalPosterGirlVoiceClear:remove()
@@ -28,10 +30,12 @@ function PosterGirlManager:clear()
     
     if self._voiceStateData then
         self._voiceStateData:clear()
+        self._voiceStateData = nil
     end
     
     if self._request then
         self._request.signal:removeAll()
+        self._request = nil
     end
 
     self:_closeUpdate()
@@ -81,6 +85,7 @@ function PosterGirlManager:_startUpdate()
 end 
 
 function PosterGirlManager:_closeUpdate()
+    local SchedulerHelper = require("app.utils.SchedulerHelper")
     if self._tickHandler ~= nil then
         SchedulerHelper.cancelSchedule(self._tickHandler)
         self._tickHandler = nil
@@ -107,6 +112,28 @@ function PosterGirlManager:_tick(t)
         G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_PLAY_VOICE,self._lastPlayVoice.voice.voice1)
     end
     
+end
+
+function PosterGirlManager:_playVoice(voiceInfo)
+    self:_clearVoice()
+    local time = G_ServerTime:getTime()
+    self._lastPlayTime = time
+    self._lastPlayVoice = voiceInfo
+    self._lastPlayAudioId = nil
+    if self._lastPlayVoice.voice.voice1 ~= "" then
+        logWarn("PosterGirlManager play sound :"..Path.getPosterGirlVoice(self._lastPlayVoice.voice.voice1).."  time"..self._lastPlayVoice.voice.length)
+        self._lastPlayAudioId = G_AudioManager:playSound(Path.getPosterGirlVoice(self._lastPlayVoice.voice.voice1))
+
+        local actionStr = self._lastPlayVoice.voice.skin_action
+        local actionName = nil
+        if actionStr and actionStr ~= "" then
+            local actionList = string.split(actionStr,",")
+            local index = math.random(1,#actionList)
+            actionName = actionList[index]
+        end 
+        
+        G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_PLAY_VOICE,self._lastPlayVoice.voice.voice1,actionName)
+    end
 end
 
 function PosterGirlManager:_getPlayingVoiceData()
@@ -206,6 +233,7 @@ function PosterGirlManager:_onEventPosterGirlVoiceClear(event)
 end
 
 function PosterGirlManager:_onEventPosterGirlVoiceUpdate(event,triggerId,param)
+    --[[
     --剔除和正在播放的语音相同TRIGGER_ID的语音
     local playingVoiceData = self:_getPlayingVoiceData()
     if playingVoiceData then
@@ -214,6 +242,7 @@ function PosterGirlManager:_onEventPosterGirlVoiceUpdate(event,triggerId,param)
             return 
         end
     end
+]]
 
     local PosterGirlVoiceConst = require("app.const.PosterGirlVoiceConst")
     local PosterGirlVoiceHelper = require("app.utils.data.PosterGirlVoiceHelper")
@@ -285,7 +314,7 @@ function PosterGirlManager:_onEventPosterGirlVoiceUpdate(event,triggerId,param)
     if #dateVoiceList > 0 then
         newTriggerSuccessList = dateVoiceList
     end
-   
+    local playVoiceList = {}
     local currSkinVoiceConfig = self:_getCurrSkinVoiceConfig()
     for k,config in ipairs(newTriggerSuccessList) do
         local voiceStr = config.voice
@@ -306,11 +335,15 @@ function PosterGirlManager:_onEventPosterGirlVoiceUpdate(event,triggerId,param)
             if tonumber(voiceArr[index]) ~= 0 then
                 local voiceConfig = VipVoiceLibrary.get(tonumber(voiceArr[index]))
                 assert(voiceConfig,"vip_voice_library can not find id :  "..tostring(voiceArr[index]).." "..tostring(voiceStr))
-                table.insert(self._waitPlayVoiceList,{cfg = config,voice = voiceConfig})
+                table.insert(playVoiceList,{cfg = config,voice = voiceConfig})
             end
         end
     end
-    self:_tick()
+    if #playVoiceList > 0 then
+        self:_playVoice(playVoiceList[1])
+    end
+     
+   
 end
 
 function PosterGirlManager:getState(key)

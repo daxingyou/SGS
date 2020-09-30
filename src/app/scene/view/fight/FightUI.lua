@@ -79,6 +79,9 @@ function FightUI:onCreate()
         self._imageJumpStory:loadTexture(Path.getStoryChat("img_skip"))
         self._imageJumpStory:ignoreContentAdaptWithSize(true)
         self._imageJumpStory:setPositionY(583)
+        self._imageSpeed:removeSelf()
+        self._nodeLeft:addChild(self._imageSpeed)
+        self._image_ACC_BG:setVisible(false)
     end
     self._textBoxNum:setString(0)
     if CONFIG_JUMP_BATTLE_ENABLE then
@@ -105,6 +108,7 @@ function FightUI:onCreate()
     end
     if Lang.checkUI("ui4") then
         self._imageJump:setAnchorPoint(1,0)
+        self:dealImgByI18n()
     end
 
     self:hideTotalHurt()
@@ -125,7 +129,9 @@ end
 
 function FightUI:setSpeedVisible(s)
     self._imageSpeed:setVisible(s)
-    self._image_ACC_BG:setVisible(s)
+    if not Lang.checkUI("ui4") then
+        self._image_ACC_BG:setVisible(s)
+    end
 end
 
 function FightUI:setSpeedCallback(callback)
@@ -135,6 +141,12 @@ end
 function FightUI:refreshSpeed(speed)
     local image = Path.getBattleRes("btn_battle_acc0"..speed)
     self._imageSpeed:loadTexture(image)
+    if Lang.checkUI("ui4") then
+        self._imageSpeed:setScale(0.8)
+        -- self._imageSpeed:setPositionX(85)
+        -- self._imageSpeed:setPositionY(35)
+        self._imageSpeed:setPosition(30,-285)
+    end
     
 end
 
@@ -449,4 +461,48 @@ function FightUI:addEnterBackgroundListener()
     cc.Director:getInstance():getEventDispatcher():addEventListenerWithSceneGraphPriority(listener, self)
 end
 
+-- i18n extend
+function FightUI:dealImgByI18n()
+    local UIHelper  = require("yoka.utils.UIHelper")
+    self._imageJump:loadTexture(Path.getBattleRes("btn_battle_skip"))
+    self._imageJump:setPositionX(self._imageJump:getPositionX()+ 12)
+
+    local ImageBoxBG = UIHelper.seekNodeByName(self,"ImageBoxBG")
+    ImageBoxBG:ignoreContentAdaptWithSize(true)
+    ImageBoxBG:loadTexture(Path.getBattleRes("img_ziyuandi"))
+    ImageBoxBG:setPositionX(ImageBoxBG:getPositionX()+ 50)
+    ImageBoxBG:setPositionY(ImageBoxBG:getPositionY()+ 20)
+
+    local Image_11 = UIHelper.seekNodeByName(self,"Image_11")
+    Image_11:setScale(0.7)
+    Image_11:loadTexture(Path.getBattleRes("baoxiangjin_guan"))
+    Image_11:setPositionY(Image_11:getPositionY()+7)
+    Image_11:setPositionX(Image_11:getPositionX()- 75)
+
+    self._textBoxNum:disableEffect(cc.LabelEffect.OUTLINE)
+    self._textBoxNum:setFontSize(20)
+    self._textBoxNum:setPositionX(self._textBoxNum:getPositionX()- 68)
+    self._textBoxNum:setPositionY( self._textBoxNum:getPositionY()+3)
+
+
+    local ImageRoundBG = UIHelper.seekNodeByName(self,"ImageRoundBG")
+    ImageRoundBG:ignoreContentAdaptWithSize(true)
+    ImageRoundBG:loadTexture(Path.getBattleRes("img_ziyuandi"))
+    ImageRoundBG:setPositionX(ImageRoundBG:getPositionX()-50)
+    ImageRoundBG:setPositionY(ImageRoundBG:getPositionY()+ 20)
+
+
+    local Round = UIHelper.seekNodeByName(self,"Round")
+    Round:setFontSize(20)
+    Round:disableEffect(cc.LabelEffect.OUTLINE)
+    Round:setPositionY(Round:getPositionY()+ 20)
+    Round:setPositionX(Round:getPositionX()+ 6)
+
+
+    self._textRound:disableEffect(cc.LabelEffect.OUTLINE)
+    self._textRound:setFontSize(20)
+    self._textRound:setPositionY(self._textRound:getPositionY()+ 20)
+    self._textRound:setPositionX( self._textRound:getPositionX()- 11)
+
+end
 return FightUI

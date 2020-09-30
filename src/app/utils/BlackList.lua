@@ -1,4 +1,10 @@
-local BlackList = {}
+local BlackList = {} 
+
+BlackList.ENCRIPTION_CHAR = "*"--i18n ja
+if Lang.checkLang(Lang.JA) then
+	BlackList.ENCRIPTION_CHAR = "♥"--i18n ja
+end
+
 
 function BlackList.isMatchText(text)
 	local UTF8 = require("app.utils.UTF8")
@@ -85,7 +91,8 @@ function BlackList.filterBlack(text)
 					local len = UTF8.utf8len(old_v)
 					local replace = ""
 					for j=1,len do
-						replace = replace .. "*"
+
+						replace = replace .. BlackList.ENCRIPTION_CHAR--i18n ja
 					end
 					text = string.gsub(text,v,replace)
 				end
@@ -100,7 +107,7 @@ function BlackList.filterBlack(text)
 		local matches = string.split(blackList,",")
 
 		for i,v in ipairs(matches) do
-			text = string.gsub(text,v,"*")
+			text = string.gsub(text,v,BlackList.ENCRIPTION_CHAR)--i18n ja
 		end
 	end
 

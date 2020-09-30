@@ -815,7 +815,7 @@ function TeamHeroNode:_updateOneYoke(index)
 			text:setString(info.name)
 		end
 		text:setColor(color)
-		if not Lang.checkLang(Lang.CN) then
+		if not Lang.checkLang(Lang.CN) and not Lang.checkLang(Lang.JA) then -- i18n ja 
 			mark:setVisible(false)
 		else
 			mark:setVisible(info.isActivated)

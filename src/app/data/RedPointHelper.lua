@@ -272,7 +272,22 @@ RedPointHelper._FUNC_DRAW_HERO = {
 		local DataConst = require("app.const.DataConst")
 		local hasToken1 = G_UserData:getItems():getItemNum(DataConst.ITEM_RECRUIT_TOKEN) > 0
 		local hasToken2 = G_UserData:getItems():getItemNum(DataConst.ITEM_RECRUIT_GOLD_TOKEN) > 0
-		return hasFreeTime or hasFreeTimeGold or valueBox or hasToken1 or hasToken2
+	
+		local redPoint = hasFreeTime or hasFreeTimeGold or valueBox or hasToken1 or hasToken2--i18n ja 
+		if Lang.checkUI("ui4") then
+			if not redPoint then
+				redPoint= RedPointHelper.isModuleReach(FunctionConst.FUNC_TEAMPICTURE)
+			end
+		end
+		return redPoint--i18n ja 
+	end
+}
+
+--i18n ja
+RedPointHelper._FUNC_TEAMPICTURE = {
+	mainRP = function()
+		local redPoint = G_UserData:getTeamPictureData():isHasRedPoint()
+		return redPoint
 	end
 }
 
@@ -1038,13 +1053,16 @@ RedPointHelper._FUNC_SHOP_SCENE = {
 	exchangeShop = function(...)
 		local param = {...}
 		local tabId = param[1]
+	
+		--[[
 		local showed = G_UserData:getRedPoint():isTodayShowedRedPointByFuncId(
 			FunctionConst.FUNC_SHOP_SCENE,{shopId = ShopConst.VIP_EXCHANGE_SHOP,tabIndex = tabId,"vip"}
 		)
 		if showed then
 			return false
 		end
-		local redValue1 = G_UserData:getShops():isFixShopHasNewGoods(ShopConst.VIP_EXCHANGE_SHOP, tabId)
+		]]
+		local redValue1 = G_UserData:getShops():isFixShopHasNewGoods(ShopConst.VIP_EXCHANGE_SHOP, tabId,"vip")
 		logWarn("RedPointHelper dddddddddddddddd"..tostring(tabId))
 		return redValue1
 	end,
@@ -1052,10 +1070,12 @@ RedPointHelper._FUNC_SHOP_SCENE = {
 	exchangeShopMain = function()
 		local ShopConst = require("app.const.ShopConst")
 		for k,tabId in pairs(ShopConst.EXCHANGE_SHOP_TAB) do
-			local redValue = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_SHOP_SCENE, "exchangeShop",tabId)
-			logWarn(tabId.." RedPointHelper sssssssssssssssssss"..tostring(redValue))
-			if redValue == true then
-				return true
+			if tabId ~= ShopConst.EXCHANGE_SHOP_TAB.EXCHANGE then
+				local redValue = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_SHOP_SCENE, "exchangeShop",tabId)
+				logWarn(tabId.." RedPointHelper sssssssssssssssssss"..tostring(redValue))
+				if redValue == true then
+					return true
+				end
 			end
 		end
 		return false
@@ -1835,6 +1855,16 @@ RedPointHelper._FUNC_PET_ACTIVITY = {
 RedPointHelper._FUNC_HORSE_CONQUER_ACTIVITY = {
 	mainRP = function()
 		return G_UserData:getCustomActivity():_horseConquerActivityHasRedPoint()
+	end,
+}
+
+-- i18n ja 游历红点，精力满提示红点
+RedPointHelper._FUNC_TRAVEL = {
+	mainRP = function()
+		local DataConst = require("app.const.DataConst")
+		local energyNum = G_UserData:getBase():getResValue(DataConst.RES_SPIRIT)
+		local maxNum = G_RecoverMgr:getRecoverLimitByResId(DataConst.RES_SPIRIT)
+		return energyNum >= maxNum
 	end,
 }
 

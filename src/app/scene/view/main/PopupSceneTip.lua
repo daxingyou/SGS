@@ -1,8 +1,9 @@
 local PopupBase = require("app.ui.PopupBase")
 local PopupSceneTip = class("PopupSceneTip", PopupBase)
 
-function PopupSceneTip:ctor(dstPosition)
-    self._dstPosition = dstPosition or cc.p(0, 0)
+function PopupSceneTip:ctor(dstPosition,tipContent)
+	self._dstPosition = dstPosition or cc.p(0, 0)
+	self._tipContent = tipContent
 	local resource = {
 		file = Path.getCSB("PopupSceneTip", "main"),
 		binding = {
@@ -48,7 +49,7 @@ function PopupSceneTip:_updateView()
 		self._desNode:addChild(self._label)
 	end
 
-	self._label:setString(Lang.get("HELP_SWITCH_AVATAR"))
+	self._label:setString(self._tipContent)
 
 	local txtHeight = self._label:getContentSize().height
 	local panelHeight = txtHeight + 70

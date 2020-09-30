@@ -150,10 +150,7 @@ function LuxuryGiftPkgView:_onShowRewardItems(message)
 	if awards then
 		G_Prompt:showAwards(awards)
 	end
-	-- 不在弹窗提示
-	if Lang.checkUI("ui4") then
-		return
-	end
+
 	if randomAwards then
 	--[[
 		local scheduler = require("cocos.framework.scheduler")
@@ -162,6 +159,11 @@ function LuxuryGiftPkgView:_onShowRewardItems(message)
 			popupGetRewards:show(randomAwards,nil,nil,nil)
 		end, 0.8)
 		]]
+			-- 弹窗提示
+		if Lang.checkUI("ui4") then
+			G_Prompt:showAwards(randomAwards)
+			return
+		end
 		self:runAction(cc.Sequence:create(
 			cc.DelayTime:create(1.5),
 			cc.CallFunc:create(function()
@@ -169,7 +171,7 @@ function LuxuryGiftPkgView:_onShowRewardItems(message)
 					popupGetRewards:show(randomAwards,nil,nil,nil)
 			end)
 		) )
-	end
+		end
 
 end
 

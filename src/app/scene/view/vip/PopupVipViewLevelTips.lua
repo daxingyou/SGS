@@ -51,7 +51,7 @@ function PopupVipViewLevelTips:_updateView()
 	--确定位置
 	local nodePos = self._fromNode:convertToWorldSpace(cc.p(0,0))
 	local nodeSize = self._fromNode:getContentSize()
-	local posX = nodePos.x + self._panelBg:getContentSize().width / 2 + 5
+	local posX = nodePos.x + self._panelBg:getContentSize().width / 2 + 5 + G_ResolutionManager:getBangOffset() -- 适配刘海屏
 	local posY = nodePos.y  - 5 - self._panelBg:getContentSize().height / 2
 	local dstPos = self:convertToNodeSpace(cc.p(posX, posY))
 	self._panelBg:setPosition(dstPos)

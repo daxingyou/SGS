@@ -269,19 +269,25 @@ end
 function PopupMovieText:onCloseEvent()
 	-- i18n ja change 
 	if Lang.checkUI("ui4") then
+		crashPrint("[Level Gift] PopupMovieText start close")
+		crashPrint("[Level Gift] PopupMovieText tutorial state "..tostring(G_TutorialManager:isDoingStep()) )
+		
 		local LevelPkgConst = require("app.const.LevelPkgConst")
 		local aa = self._callback
 		local callback = function()
+			crashPrint("[Level Gift] PopupMovieText callback after pop")
 			if aa then
 				aa()
 			end
 		end
 		if G_TutorialManager:isDoingStep() == false and G_NewLevelPkgManager:hasPop(LevelPkgConst.CONDITION_STAGE) then
+			crashPrint("[Level Gift] PopupMovieText  has pop ")
 			G_SignalManager:dispatch(SignalConst.EVENT_NEW_LEVEL_PKG_OPEN_NOTICE,LevelPkgConst.CONDITION_STAGE,callback)
 		else
+			crashPrint("[Level Gift] PopupMovieText not pop ")
 			callback()
 		end
-		
+		crashPrint("[Level Gift] PopupMovieText end close")
 	else
 		if self._callback then
 			self._callback()

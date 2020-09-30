@@ -343,13 +343,19 @@ function EquipTrainStrengthenLayer:_playEffect()
     end
 
     local function eventFunction(event)
-    	if event == "play" then
+		if event == "play" then
+			if self == nil or self._getAvatar == nil then
+				return
+			end
 			--播装备颤抖
 			local node = self:_getAvatar()
 			if node then
 				G_EffectGfxMgr:applySingleGfx(node, "smoving_zhuangbei", nil, nil, nil)
 			end
 		elseif event == "next" then
+			if self == nil or self._newMasterLevel == nil or self._checkIsReachNewMasterLevel == nil then
+				return
+			end
 			self._newMasterLevel = self:_checkIsReachNewMasterLevel()
     		if not self._newMasterLevel then
 				self:_playStrSuccessPrompt()

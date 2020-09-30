@@ -386,5 +386,4 @@ cc.register("CommonShowHeroName", import(".CommonShowHeroName"))--i18n ui4
 cc.register("CommonCvName", import(".CommonCvName"))--i18n ui4
 cc.register("CommonSkipLayer", import(".CommonSkipLayer"))--i18n ui4
 cc.register("CommonPosterGirlAvatar", import(".CommonPosterGirlAvatar"))--i18n ui4
-
-
+cc.register("CommonShareUserInfo", import(".CommonShareUserInfo"))--i18n ui4

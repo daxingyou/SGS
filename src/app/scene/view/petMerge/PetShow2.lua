@@ -65,10 +65,10 @@ function PetShow2:ctor(heroId, callback, needAutoClose, isRight)
 
     self._isBgShow = true
     self._isContinueShow = true
-    self._isSkipShow = true
+    self._isSkipShow = false
     self._isShareShow = true
     self._isNewShow = true
-
+    self._isSharing = false
     PetShow2.super.ctor(self, nil, false, false)
 end
 
@@ -99,6 +99,14 @@ function PetShow2:onCreate()
     
 end
 
+function PetShow2:_addControlNode(node)
+    local parentNode = cc.Node:create()
+    parentNode:addChild(node)
+    parentNode:setLocalZOrder(node:getLocalZOrder())
+    parentNode:setName("share_control")
+    return parentNode
+end
+
 function PetShow2:_createSkip()
     local layer = CSHelper.loadResourceNode(Path.getCSB("CommonSkipLayer", "common"))
     layer:setContentSize( G_ResolutionManager:getDesignCCSize())
@@ -107,7 +115,7 @@ function PetShow2:_createSkip()
     ccui.Helper:doLayout(layer)
     layer:addClickEventListenerEx(handler(self, self._onClickSkip))
     layer:setLocalZOrder(PetShow2.Z_OEDER_SKIP)
-    self:addChild(layer)
+    self:addChild(self:_addControlNode(layer))
     self._skipLayer = layer
 end
 
@@ -164,8 +172,13 @@ function PetShow2:onExit()
     end
 end
 
+function PetShow2:_isCanClose()
+    return not self._isSharing and not self._isAction
+end
+
+
 function PetShow2:_onFinishTouch(sender, event)
-    if not self._isAction and event == 2 then
+    if self:_isCanClose() and event == 2 then
         if self._callback then
             self._callback()
         end
@@ -174,7 +187,7 @@ function PetShow2:_onFinishTouch(sender, event)
 end
 
 function PetShow2:_onClickSkip(sender, event)
-    if not self._isAction  then
+    if self:_isCanClose() then
         if self._skipCallback then
             self._skipCallback()
         end
@@ -215,11 +228,8 @@ function PetShow2:_xiujiang_zi_shenbing_txt()
     local content = ""
     content = content ..UTF8.unicode_to_utf8("\\u25C6")
     content = content ..Lang.get("pet_show_skill")..self._petCfg.skill_name
-
-    content = string.gsub(content, ":", UTF8.unicode_to_utf8("\\u2025"))
-    content = string.gsub(content, "%[", UTF8.unicode_to_utf8("\\uFE47"))
-    content = string.gsub(content, "%]", UTF8.unicode_to_utf8("\\uFE48"))
-
+    content = UIHelper.convertToVerticalTxt(content)
+    
 
     local label = cc.Label:createWithTTF(content, Path.getFontW8(), 30)
     local color = Colors.D_WHITE
@@ -231,7 +241,7 @@ function PetShow2:_xiujiang_zi_shenbing_txt()
     node:addChild(label)
     
     local content = self._petCfg.skill_description
-    local UIHelper = require("yoka.utils.UIHelper")
+    content = UIHelper.convertToVerticalTxt(content)
     local tempList = UIHelper.getUTF8TxtList(content,16)
     x = x - 47
     for k,v in ipairs(tempList) do
@@ -282,6 +292,9 @@ function PetShow2:_show()
     self._shareLayer:setAnchorPoint( cc.p(0.5, 0.5))
     self._shareLayer:setPosition(cc.p(0,0))
     self._shareLayer:updateData()
+    self._shareLayer:setShowHideCallback(function(show)
+        self._isSharing = not show
+    end,self)
     ccui.Helper:doLayout(self._shareLayer)
     return layer
 end
@@ -365,8 +378,8 @@ end
 
 function PetShow2:_createContinueNode()
     local continueNode = CSHelper.loadResourceNode(Path.getCSB("CommonContinueNode", "common"))
-    self:addChild(continueNode)
     continueNode:setLocalZOrder(PetShow2.Z_OEDER_CONTINUE)
+    self:addChild(self:_addControlNode(continueNode))
     self._continueNode  = continueNode
     continueNode:setPosition(cc.p(0, -250))
     self._isAction = false

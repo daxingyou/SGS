@@ -76,6 +76,11 @@ AttributeConst.BOUT_POWER = 118 -- 阵法战力
 AttributeConst.TYPE_1 = 1 --绝对值
 AttributeConst.TYPE_2 = 2 --百分比
 
+AttributeConst.ATTR_ATK_FREE = 80       -- 80 全体攻击(不受加成和神兽影响)
+AttributeConst.ATTR_PD_FREE  = 81       -- 81 全体物防(不受加成和神兽影响)
+AttributeConst.ATTR_MD_FREE  = 82       -- 82 全体魔防(不受加成和神兽影响)
+AttributeConst.ATTR_HP_FREE  = 83       -- 83 全体HP(不受加成和神兽影响)
+
 --属性加成映射表
 --说明：1攻击对应8攻击加成
 AttributeConst.MAPPING = {
@@ -100,6 +105,10 @@ AttributeConst.SPECIAL_MAPPING = {
 	[49] = 5,
 	[50] = 6,
 	[51] = 7,
+	[80] = 1, -- 名将绘卷
+	[81] = 5,
+	[82] = 6,
+	[83] = 7,
 }
 
 return readOnly(AttributeConst)

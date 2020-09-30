@@ -179,8 +179,9 @@ function AudioManager:getSoundVolume()
     return self._soundVolume
 end
 
---
-function AudioManager:setSoundVolume(volume,needSetPlayingSound)
+-- i18n ja originVolume
+function AudioManager:setSoundVolume(volume,needSetPlayingSound,originVolume)
+	originVolume = originVolume or volume
 	self._soundVolume = volume
 	if needSetPlayingSound then--需要设置正在播放的音效
 		local time = G_ServerTime:getTime()
@@ -188,12 +189,7 @@ function AudioManager:setSoundVolume(volume,needSetPlayingSound)
 			-- i18n ja 设置音效音量排除配音
 			if not v.isVC then
 				if v.isRun and (time-v.startPlayTime) < 20 then
-					-- i18n ja 音效音量非0即1，音量大小通过gain控制
-					if volume == 0 then
-						AudioHelper.setSoundVolume(k, 0)
-					else
-						AudioHelper.setSoundVolume(k, 1)
-					end
+					AudioHelper.setSoundVolume(k, originVolume)
 				else
 					self._soundList[k] = nil
 				end
@@ -367,12 +363,13 @@ function AudioManager:getConvertPath(key)
 end
 
 -- i18n ja 设置配音音量
-function AudioManager:setVcVolume(volume,needSetPlayingSound)
+function AudioManager:setVcVolume(volume,needSetPlayingSound,originVolume)
+	originVolume = originVolume or volume
 	self._vcVolume = volume
 	if needSetPlayingSound then--需要设置正在播放的音效
 		local time = G_ServerTime:getTime()
 		for k,v in pairs(self._soundList) do
-			if volume == 0 then
+			if originVolume == 0 then
 				AudioHelper.stopSound(k)
 			end
 			-- if v.isVC then

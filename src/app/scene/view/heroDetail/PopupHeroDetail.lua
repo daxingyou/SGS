@@ -29,6 +29,10 @@ function PopupHeroDetail:ctor(type, value, isPage, limitLevel, limitRedLevel)
 		}
 	}
 
+	-- i18n ja change
+	if Lang.checkUI("ui4") then 
+		resource.file = Path.getCSB("PopupHeroDetail2", "hero")
+	end
 	PopupHeroDetail.super.ctor(self, resource)
 end
 
@@ -59,7 +63,8 @@ function PopupHeroDetail:_updateHeroInfo(heroBaseId, limitLevel, limitRedLevel)
 	self._heroBaseId = heroBaseId
 	self._fileNodeCountry:updateUI(heroBaseId)
 	self._fileNodeCountryFlag:updateUI(TypeConvertHelper.TYPE_HERO, heroBaseId, limitLevel, limitRedLevel)
-
+ 
+ 
 	self._detailWindow:updateUI(nil, heroBaseId, nil, limitLevel, limitRedLevel)
 	
 	
@@ -71,7 +76,7 @@ function PopupHeroDetail:_updateHeroInfo(heroBaseId, limitLevel, limitRedLevel)
 	local heroParam = TypeConvertHelper.convert(TypeConvertHelper.TYPE_HERO, heroBaseId)
 	self._commonVerticalText:setString(heroParam.cfg.feature)
 	--i18n
-	self:_dealByI18n()
+	self:_dealByI18n(heroParam)
 	self:_updateHeroState(heroBaseId)
 	self._btnWayGet:setEnabled(heroParam.cfg.type ~= 1) --主角没有获取途径
 
@@ -179,7 +184,7 @@ function PopupHeroDetail:_updateHeroItem(sender, widget, index, selectPos)
 				local story = CSHelper.loadResourceNode(Path.getCSB("CommonStoryAvatar", "common"))
 				story:updateUI(heroBaseId, limitLevel, limitRedLevel)
 				story:setScale(0.8)
-				story:setPosition(cc.p(self._scrollPageStory:getPageSize().width / 2 + 100, 0))
+				story:setPosition(cc.p(self._scrollPageStory:getPageSize().width / 2 + 150, 0)) -- i18n ja change
 				storyItem:addChild(story)
 			end
 		end
@@ -215,15 +220,71 @@ function PopupHeroDetail:_playCurHeroVoice(must)
 end
 
 --i18n
-function PopupHeroDetail:_dealByI18n()
+function PopupHeroDetail:_dealByI18n(heroParam)
 	if Lang.checkHorizontal() then
 		self._commonVerticalText:setPosition(65+self._commonVerticalText:getImageWidth()/2,483)
 	end
 
 	-- i18n ja change font size
 	if Lang.checkUI("ui4") then
-		ccui.Helper:seekNodeByName(self._commonVerticalText, "Text"):setFontSize(20)
+		self._fileNodeCountry:setPositionY(482)
+		self._commonVerticalText:setPosition(55, 400)
+		self._buttonVoice:loadTextureNormal(Path.getVoiceRes("btn_hero_voice"))
+		self._buttonVoice:setContentSize(cc.size(53, 53))
+		self._btnWayGet:setFontSize(26)
+		self._hasText:setFontSize(20)
+		self._hasText:enableOutline(Colors.CUSTOM_ACT_DES_OUTLINE,  1) 	
+
+		-- bug:个别立绘尺寸有问题（如：孙权）
+		local pageView = ccui.Helper:seekNodeByName(self._scrollPageStory, "Page_View") 
+		pageView:setContentSize(cc.size(790, 600))
+		pageView:setPositionX(-110)
+
+		-- bug: 2个标题 
+		local imageBg = ccui.Helper:seekNodeByName(self, "Image_bg_all") 
+		self._textTitle:retain()  -- 必须retrain  or节点的referentCount=0
+		self._textTitle:removeFromParent(false)
+		imageBg:addChild(self._textTitle)  
+		self._textTitle:setPosition(imageBg:getContentSize().width*0.5, 573) 
+		self._textTitle:release()    -- 在release
+		ccui.Helper:seekNodeByName(self, "Image_1"):setVisible(false) 
+
+		-- 更换标签
+		if heroParam then
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Text"):setFontSize(18) 
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Text"):setPositionY(63)
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Text"):setFontName(Path.getCommonFont())
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Image"):setAnchorPoint(cc.p(0.5, 1))
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Image"):setPositionY(82)
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Image"):loadTexture(Path.getUICommon("img_wujiangcv"))
+			ccui.Helper:seekNodeByName(self._commonVerticalText, "Image"):setContentSize(cc.size(27, 224))
+
+
+			local UTF8 = require("app.utils.UTF8")
+			local heroData = require("app.config.hero").get(heroParam.cfg.id) 
+			local resInfo = require("app.config.hero_res").get(heroData.res_id)
+			local strContent = ""    
+			local len = UTF8.utf8len(resInfo.cast_name)
+			for i=1, len do  
+				local strEle = UTF8.utf8sub(resInfo.cast_name, i, i)
+				if i ~= len then
+					strEle = strEle .. "\n"
+				end
+				strContent = strContent .. strEle
+			end
+			self._txtCV:setString("CV\n" .. strContent)
+
+			if self._commonVerticalText:isVisible() == false then-- 蓝将 绿将
+				self._nodeCV:setPosition(55, 380)
+				self._txtCV:setPositionY(197-15)
+			else   -- 红将...
+				self._nodeCV:setPosition(84, 342)
+				self._txtCV:setPositionY(210-18)
+			end
+		end
 	end
 end
 
 return PopupHeroDetail
+
+

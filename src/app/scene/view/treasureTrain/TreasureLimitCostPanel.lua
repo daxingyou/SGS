@@ -57,10 +57,10 @@ function TreasureLimitCostPanel:_initView()
 		-- i8n ja change
 		if Lang.checkUI("ui4") then
 			tbPos = {
-				[1] = {45, 86},
-				[2] = {124, 86},
-				[3] = {202, 86},
-				[4] = {280, 86},
+				[1] = {42, 84},
+				[2] = {120, 84},
+				[3] = {199, 84},
+				[4] = {278, 84},
 			}
 		end
 
@@ -97,6 +97,7 @@ function TreasureLimitCostPanel:_initView()
 		table.insert(self._itemIds, itemId)
 	end
 
+	self._panelTouch:setScale(3)
 	self._panelTouch:setContentSize(G_ResolutionManager:getDesignCCSize())
 	self._panelTouch:addClickEventListener(handler(self, self._onClickPanel)) --避免0.5秒间隔
 end
@@ -189,6 +190,14 @@ end
 
 -- i18n ja change line
 function TreasureLimitCostPanel:adjustI18n()
+	--多机型适配位置
+	local scene = G_SceneManager:getTopScene()   
+	local view = scene:getSceneView()
+	local _listView = ccui.Helper:seekNodeByName(view, "_listView")  
+	local newWorldPos = _listView:getParent():convertToWorldSpace(cc.p(_listView:getPositionX(), _listView:getPositionY()))
+	newWorldPos = self._imageBg:getParent():convertToNodeSpace(cc.p(newWorldPos.x - 326 - 4, newWorldPos.y - 5)) 
+	self._imageBg:setPosition(newWorldPos)
+
 	if #self._items == 1 then
 		return
 	end

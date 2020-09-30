@@ -9,4 +9,12 @@ function DataResetFunc24._FUNC_WELFARE()
 	return returnFunc
 end
 
+--i18n ja 
+function DataResetFunc24._FUNC_RECHARGE()
+    local returnFunc = function(...)
+		G_UserData:getPosterGirl():c2sGetPosterGirlRewardInfo()
+	end
+	return returnFunc
+end
+
 return DataResetFunc24

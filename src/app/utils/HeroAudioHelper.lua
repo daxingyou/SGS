@@ -79,4 +79,34 @@ function HeroAudioHelper.getVoiceByAction(heroId, actionName)
 	end
 end
 
+
+--i18n ja
+function HeroAudioHelper.getShowVoiceRes(id)
+	local res = nil
+	local heroInfo = HeroDataHelper.getHeroConfig(id)
+	local resId = heroInfo.res_id
+	local names = HeroAudioHelper.getShowVoiceResNamesWithResId(resId)
+	local index = math.random(#names)
+	local name =  names[index]
+	if name then
+		res = Path.getHeroVoice(name)
+	end
+	return res,name
+end
+
+
+--i18n ja
+function HeroAudioHelper.getShowVoiceResNamesWithResId(resId)
+	local resInfo = require("app.config.hero_res").get(resId)
+	assert(resInfo, string.format("hero_res config can not find id = %d", resId))
+	
+	local names = {}
+	local voice = resInfo.show_voice
+	if voice ~= "" and voice ~= "0" then
+		names = string.split(voice,"|")
+	end
+	return names
+end
+
+
 return HeroAudioHelper

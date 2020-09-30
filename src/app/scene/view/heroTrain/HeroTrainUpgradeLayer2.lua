@@ -533,12 +533,14 @@ function HeroTrainUpgradeLayer:_playSingleBallEffect(itemId, isPlayFinishEffect,
         emitter:resetSystem()
     end
 
-    local index = ITEM_ID_2_MATERICAL_INDEX[itemId]
+	local index = ITEM_ID_2_MATERICAL_INDEX[itemId]
+	if self == nil or self._parentView == nil or self["_fileNodeMaterial1"] == nil then  -- 异常处理: 对象不存在 return
+		return    
+	end
     local startPos = UIHelper.convertSpaceFromNodeToNode(self["_fileNodeMaterial"..index], self._parentView)--self)
     sp:setPosition(startPos)
-	--self:addChild(sp)
-	self._parentView:addChild(sp)
-  --  local curSelectedPos = self._parentView:getSelectedPos()
+	self._parentView:addChild(sp)  	--self:addChild(sp)
+  	-- local curSelectedPos = self._parentView:getSelectedPos()
 	local curAvatar = self._parentView.avatar   -- self._pageItems[curSelectedPos].avatar 
     local endPos = UIHelper.convertSpaceFromNodeToNode(curAvatar, self._parentView, cc.p(0, 1024*0.4)) --飞到中心点
     local pointPos1 = cc.p(startPos.x, startPos.y + 200)

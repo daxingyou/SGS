@@ -4,6 +4,7 @@ local UIActionHelper = require("app.utils.UIActionHelper")
 local EXPORTED_METHODS = {
     "setShowHideCallback",
     "setDownloadFileName",
+    "setPopShareCallback",
     "updateData",
 }
 
@@ -52,6 +53,10 @@ function CommonShareLayer:_init()
     self._imageArrow = ccui.Helper:seekNodeByName(self._target, "ImageArrow")
     
     
+    self._nodeShareUI = ccui.Helper:seekNodeByName(self._target, "NodeShareUI")
+    self._nodeUserInfo = ccui.Helper:seekNodeByName(self._target, "NodeUserInfo")
+    self._nodeUserInfo:setVisible(false)
+
     self:playFloatXEffect(self._imageArrow)
    
 
@@ -68,6 +73,8 @@ function CommonShareLayer:_init()
         self._signalWeelShareReward = nil
         self._signalShareResultNotice:remove()
         self._signalShareResultNotice = nil
+        self._signalCaptureResultNotice:remove()
+        self._signalCaptureResultNotice = nil
     end)
 
      self._target:onNodeEvent("enter", function ()
@@ -76,6 +83,15 @@ function CommonShareLayer:_init()
             handler(self,self._onEventWeelShareReward))
         self._signalShareResultNotice = G_SignalManager:add(SignalConst.EVENT_SHARE_RESULT_NOTICE,
              handler(self,self._onEventShareResultNotice))
+        self._signalCaptureResultNotice = G_SignalManager:add(SignalConst.EVENT_CAPTURED_RESULT_NOTICE,
+             handler(self,self._onEventCaptureResultNotice))
+    end)
+
+    self._target:onNodeEvent("cleanup", function ()
+        self._callback = nil
+        self._popView = nil
+        self._popShareCallback = nil
+        self._target = nil
     end)
 
     
@@ -120,10 +136,13 @@ function CommonShareLayer:bind(target)
 	self._target = target
     self:_init()
     cc.setmethods(target, self, EXPORTED_METHODS)
+
+    cc.bind(self._nodeUserInfo, "CommonShareUserInfo")
 end
 
 function CommonShareLayer:unbind(target)
     cc.unsetmethods(target, EXPORTED_METHODS)
+    cc.unbind(self._nodeUserInfo, "CommonShareUserInfo")
 end
 
 
@@ -139,6 +158,9 @@ function CommonShareLayer:_showSharePanel(show)
         self._imageShare:setVisible(true)
         self._nodeShareRewardParent:setVisible(true)
     end
+    if self._popShareCallback then
+        self._popShareCallback(show)
+    end
 end
 
 function CommonShareLayer:_onXClickCallBack(sender,state)
@@ -150,6 +172,7 @@ function CommonShareLayer:_onShareClickCallBack(sender,state)
 end
 
 function CommonShareLayer:_onShareTwitter(sender,state)
+    logWarn("CommonShareLayer  onShareTwitter click")
     self:_startShare()
 end
 
@@ -158,47 +181,72 @@ function CommonShareLayer:_onDownload(sender,state)
 
     local platform = G_NativeAgent:getNativeType()
     if platform == "windows" then
-        local seq = cc.Sequence:create(cc.DelayTime:create(2),cc.CallFunc:create(function(actionNode)
-            self:_showHideUI(true)
-            --测试
-            local weekShare = G_UserData:getBase():hasDoWeekShare()
-            if not weekShare then
-                G_UserData:getBase():c2sWeekShare()
-            end
-        end))
+        local NativeConst = require("app.const.NativeConst")
+        local fileName = Lang.getTxt( NativeConst.SDK_DOWNLOAD_IMG_NAME,
+            { name = tostring(G_ServerTime:getTime()) }) --tostring(self._downloadName)..
 
-        self._target:runAction(seq)
+        local imagePath = cc.FileUtils:getInstance():getWritablePath()..fileName
+        print("imagePath "..imagePath)
+
+        local SchedulerHelper = require("app.utils.SchedulerHelper")
+        self._countDownHandler = SchedulerHelper.newScheduleOnce(
+            function() 
+               -- G_SignalManager:dispatch(SignalConst.EVENT_CAPTURED_RESULT_NOTICE,...)
+                self:_showHideUI(true)
+                --测试
+                local weekShare = G_UserData:getBase():hasDoWeekShare()
+                if not weekShare then
+                    G_UserData:getBase():c2sWeekShare()
+                end
+            end, 3)
+            --[[
+        local seq = cc.Sequence:create(cc.DelayTime:create(3),cc.CallFunc:create(function(actionNode)
+          
+        end))
+         self._target:runAction(seq)
+]]
+       
         self:_showHideUI(false)
         
     end
 end
 
 
-function CommonShareLayer:_startDownload(  )
+function CommonShareLayer:_startDownload()
+    local platform = G_NativeAgent:getNativeType()
     logWarn("CommonShareLayer download ")
     if platform ~= "ios" and platform ~= "android" then
         return
     end
-
-    local fileName =  tostring(G_ServerTime:getTime()) --tostring(self._downloadName)..
+    logWarn("PopupCitationCode save photo takePhoto ")
+	local NativeConst = require("app.const.NativeConst")
 	local FileUtils = cc.FileUtils:getInstance()
 	logWarn(FileUtils:getWritablePath())
 
+	local imagePath =  cc.FileUtils:getInstance():getWritablePath()..NativeConst.SDK_TEMP_CITATIONCODE_IMG
+	local function doShare()
+		logWarn("PopupCitationCode save photo doShare ")
+		G_NativeAgent:savePhoto(imagePath)
+	end
+
 	local function afterCaptured( success, fileName )
 		if success then
-			G_Prompt:showTip("capture ok")	
+			logWarn("PopupCitationCode save capture successs ")
+			doShare()
 		else
+			logWarn("PopupCitationCode save capture fail ")
 			G_Prompt:showTip("capture fail")	
         end
         self:_showHideUI(true)
+        
 	end
-
     self:_showHideUI(false)
-
 	cc.utils:captureScreen(function( ... )
-		afterCaptured( ... )
-	end,FileUtils:getWritablePath()..fileName)
-
+        afterCaptured( ... )
+      
+		logWarn("PopupCitationCode save photo close ")
+		
+	end,imagePath)
 end
 
 function CommonShareLayer:_startShare()
@@ -209,7 +257,9 @@ function CommonShareLayer:_startShare()
 		-- self:_takePhoto(NativeConst.SDK_CHANNEL_TWITTER, NativeConst.SDK_SHARE_IMAGE)
 		local channel = NativeConst.SDK_CHANNEL_TWITTER
 		self:_takePhoto(channel, NativeConst.SDK_SHARE_IMAGE)
-	end
+    end
+    
+
 end
 
 function CommonShareLayer:_takePhoto( channel, type )
@@ -220,10 +270,11 @@ function CommonShareLayer:_takePhoto( channel, type )
 	logWarn(FileUtils:getWritablePath())
 
     
-
 	local function doShare()
 		local FileUtils = cc.FileUtils:getInstance()
-		G_GameAgent:shareImage(channel, type, FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME)
+        G_GameAgent:shareImage(channel, type, 
+            FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME,Lang.get("share_comment")
+        )
 	end
 
 	local function afterCaptured( success, fileName )
@@ -239,29 +290,48 @@ function CommonShareLayer:_takePhoto( channel, type )
 
     self:_showHideUI(false)
 
-	-- cc.utils:captureScreen(handler(self,self._afterCaptured),FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME)
-	cc.utils:captureScreen(function( ... )
+
+    cc.utils:captureScreen(function( ... )
+       
 		afterCaptured( ... )
 	end,FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME)
-	--[[
-	local starNode = self
-	local fileName = FileUtils:getWritablePath().."/"..NativeConst.SDK_SHARE_IMG_NAME
-	local image = cc.utils:captureNode(starNode,1)
-	local success = image:saveToFile(fileName)
-	self:_afterCaptured(success,fileName)
-	]]
+
 end
 
 
 function CommonShareLayer:_showHideUI(show)
-    
+    if not self._target then
+        return
+    end
+    local popView = self._popView
+    if not popView then
+        popView = self._target:getParent()
+    end
+    if popView then
+        local list = {}
+        local UIHelper = require("yoka.utils.UIHelper")
+        UIHelper.seekNodeListByName(popView,"share_control",list)
+        for k,v in ipairs(list) do
+            v:setVisible(show)
+        end
+    end
+
+    self._nodeUserInfo:updateUI()
+    self._nodeUserInfo:setVisible(not show)
+    self._nodeShareUI:setVisible(show)
     if self._callback then
         self._callback(show)
     end
 end
 
-function CommonShareLayer:setShowHideCallback(callback)
+function CommonShareLayer:setShowHideCallback(callback,popView)
+    
     self._callback = callback
+    self._popView = popView
+end
+
+function CommonShareLayer:setPopShareCallback(callback)
+    self._popShareCallback = callback
 end
 
 function CommonShareLayer:setDownloadFileName(downloadName)
@@ -283,7 +353,7 @@ function CommonShareLayer:_onEventWeelShareReward(event,awards)
 end
 
 
-function CommonShareLayer:_onEventShareResultNotice()
+function CommonShareLayer:_onEventShareResultNotice(event,ret)
     local NativeConst = require("app.const.NativeConst")
     if ret == NativeConst.STATUS_SUCCESS then
         --G_Prompt:showTip(Lang.get("common_share_success"))
@@ -293,6 +363,10 @@ function CommonShareLayer:_onEventShareResultNotice()
         end
 		
 	end
+
+end
+
+function CommonShareLayer:_onEventCaptureResultNotice(event,success,fileName)
 
 end
 

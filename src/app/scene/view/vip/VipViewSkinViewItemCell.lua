@@ -16,15 +16,21 @@ end
 function VipViewSkinViewItemCell:onCreate()
 	local size = self._resourceNode:getContentSize()
     self:setContentSize(size.width, size.height)
-    
+
+    self._textName:getVirtualRenderer():setMaxLineWidth(28)
     self._text:setString(Lang.get("vip_skin_button_equiped"))
 end
 
 function VipViewSkinViewItemCell:updateUI(config,selectIndex)
-    self._image:loadTexture( Path.getMonthlyCardRes2("img_huan"..config.id))
+    local TypeConvertHelper = require("app.utils.TypeConvertHelper")
+    local itemParams = TypeConvertHelper.convert(TypeConvertHelper.TYPE_POSTER_GIRL_SKIN,config.id )
+
+    self._image:loadTexture(itemParams.staticImg)
     local has = UserDataHelper.isHasPosterGirl(config.id)
     local isEquip = UserDataHelper.isEquipPosterGirl(config.id)
     self._imageLock:setVisible(not has)
+    self._textName:setString(config.name)
+    self._imageShade:setVisible(not has)
     self._imageEquip:setVisible(isEquip)
    
     local index = self:getTag()

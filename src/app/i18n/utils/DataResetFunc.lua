@@ -64,9 +64,9 @@ end
 
 --i18n ja 
 function DataResetFunc._FUNC_RECHARGE()
-    local returnFunc = function(...)
+	local returnFunc = function(...)
+		local ShopConst = require("app.const.ShopConst")
 		G_UserData:getShops():c2sGetShopInfo(ShopConst.VIP_EXCHANGE_SHOP)
-		G_UserData:getPosterGirl():c2sGetPosterGirlRewardInfo()
 	end
 	return returnFunc
 end

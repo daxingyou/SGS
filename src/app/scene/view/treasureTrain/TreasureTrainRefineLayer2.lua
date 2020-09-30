@@ -407,21 +407,23 @@ function TreasureTrainRefineLayer:_playEffect()
 			    G_EffectGfxMgr:applySingleGfx(sp, "smoving_baowujinglian_lizi"..index, finishCallback, nil, nil)
     		end
 
-    		if self._smovingZB and self._parentView:getRangeType() ~= TreasureConst.TREASURE_RANGE_TYPE_1 then
+    		if self and self._smovingZB and self._parentView:getRangeType() ~= TreasureConst.TREASURE_RANGE_TYPE_1 then
     			self._smovingZB:reset()
     		end
 			--local selectedPos = self._parentView:getSelectedPos()
 			local avatar = self:_getAvatar() -- self._pageItems[selectedPos].avatar
     		self._smovingZB = G_EffectGfxMgr:applySingleGfx(avatar, "smoving_baowujinglian_zhuangbei", nil, nil, nil)
 		elseif event == "next" then
-			self:_updateBaseInfo()
-			self:_updateMaterial()
-			self:_updateCost()
-			self:_setButtonEnable(true)
-
-			self._newMasterLevel = self:_checkIsReachNewMasterLevel()
-			if not self._newMasterLevel then
-				self:_playPrompt()
+			if self and self._updateBaseInfo then
+				self:_updateBaseInfo()
+				self:_updateMaterial()
+				self:_updateCost()
+				self:_setButtonEnable(true)
+	
+				self._newMasterLevel = self:_checkIsReachNewMasterLevel()
+				if not self._newMasterLevel then
+					self:_playPrompt()
+				end
 			end
 		elseif event == "finish" then
 			if self and self._onEffectFinish then

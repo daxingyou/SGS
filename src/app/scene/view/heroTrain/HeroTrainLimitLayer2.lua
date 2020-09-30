@@ -492,8 +492,10 @@ function HeroTrainLimitLayer:_openPopupPanel(costKey)
 		and self._limitUIType==LIMIT_UI_TYPE_6 then
 		-- self._popupPanel:turnDown()
 	end
-	self._parentView._nodePopup:addChild(self._popupPanel)
-	self._popupPanel:updateUI()
+	--self._parentView._nodePopup:addChild(self._popupPanel)
+	G_SceneManager:getRunningScene():addChild(self._popupPanel)
+	self._popupPanel:setPosition(cc.p(0, 0))
+	self._popupPanel:updateUI() 
 end
 
 function HeroTrainLimitLayer:_onPopupPanelClose(event)
@@ -734,7 +736,7 @@ function HeroTrainLimitLayer:_playEmitterEffect(emitter, startNode, endNode, cos
 
     local startPos = UIHelper.convertSpaceFromNodeToNode(startNode, self._parentView._panelDesign) -- self) 
     emitter:setPosition(startPos)
-	self._parentView._panelDesign:addChild(emitter) 				-- self:addChild(emitter)  -- 父节点  坐标转换???
+	G_SceneManager:getRunningScene():addChild(emitter) 		 
 	local costName = self:getCostNodeName()
     local endPos = UIHelper.convertSpaceFromNodeToNode(endNode, self._parentView._panelDesign) -- self)
     local pointPos1, pointPos2 = getRandomPos(startPos, endPos)

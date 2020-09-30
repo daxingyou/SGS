@@ -45,6 +45,14 @@ function ChapterBox:updateUI()
 	if self._boxInfo then
 		local lastChapterID = G_UserData:getChapter():getLastOpenChapterId()
 		self._chapterName:setString(self._boxInfo.config.title)
+		-- i18n ja 超框
+		if Lang.checkUI("ui4") and string.match(self._boxInfo.config.title, "%d+") then
+			if tonumber(string.match(self._boxInfo.config.title, "%d+")) > 9 and tonumber(string.match(self._boxInfo.config.title, "%d+")) <= 99 then
+				self._chapterName:setFontSize(21)	
+			elseif tonumber(string.match(self._boxInfo.config.title, "%d+")) > 99 then
+				self._chapterName:setFontSize(20)	
+			end
+		end
 		if G_UserData:getChapterBox():isCurBoxAwardsCanGet() then
 			self._loadingBarProgress:setPercent(100)
 			self._textProgress:setString(string.format("%d/%d", self._boxInfo.config.chapter, self._boxInfo.config.chapter))

@@ -19,7 +19,8 @@ function PopupLevelPkgMenuTipsItemCell:onCreate()
     
     self._button = ccui.Helper:seekNodeByName(self._menu, "Button")
     self._button:setSwallowTouches(false)
-    self._menu:addClickEventListenerEx(handler(self, self._onButtonClick))
+    self._button:addTouchEventListener(handler(self, self._onTouchCallBack))
+    --self._menu:addClickEventListenerEx(handler(self, self._onButtonClick))
 end
 
 
@@ -44,5 +45,18 @@ function PopupLevelPkgMenuTipsItemCell:_onButtonClick()
     G_SceneManager:showDialog("app.scene.view.newLevelPkg.PopupLevelPkg", nil, nil,
         self._data.condition,self._data.conditionValue)
 end
+
+function PopupLevelPkgMenuTipsItemCell:_onTouchCallBack(sender,state)
+	-----------防止拖动的时候触发点击
+	if(state == ccui.TouchEventType.ended)then
+		local moveOffsetX = math.abs(sender:getTouchEndPosition().x-sender:getTouchBeganPosition().x)
+		local moveOffsetY = math.abs(sender:getTouchEndPosition().y-sender:getTouchBeganPosition().y)
+		if moveOffsetX < 20 and moveOffsetY < 20 then
+            G_SceneManager:showDialog("app.scene.view.newLevelPkg.PopupLevelPkg", nil, nil,
+            self._data.condition,self._data.conditionValue)
+		end
+	end
+end
+
 
 return PopupLevelPkgMenuTipsItemCell

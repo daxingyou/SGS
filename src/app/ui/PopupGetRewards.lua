@@ -235,14 +235,17 @@ end
 ---@text02 tips文字
 ---@finishCallback 结束回调
 ---==========================
-function PopupGetRewards:show(awards,fromText,tipsText,finishCallback, titleImagePath, isDouble)
+function PopupGetRewards:show(awards,fromText,tipsText,finishCallback, titleImagePath, isDouble, mustShow)
     G_AudioManager:playSoundWithId(AudioConst.SOUND_POPUP_REARD)
     
     assert(awards or type(awards) == "table", "Invalid awards " .. tostring(awards))
 
     if #awards == 0 then
         print("awards length is 0")
-        return
+        if Lang.checkUI("ui4") and mustShow then
+        else
+            return
+        end
     end
     if finishCallback then
          self._finishCallback = finishCallback
@@ -519,8 +522,42 @@ end
 
 
 function PopupGetRewards:_createActionNode(effect)
-    
-    
+    if Lang.checkUI("ui4") then
+        if effect == "tongyongtx" then
+            local str = "effect_tongyongtx_1"
+            if self._titleImagePath == Path.getSystemImage("txt_sys_tongguanbaoxiang") then
+                str = "effect_tongyongtx_1"
+            elseif self._titleImagePath == Path.getSystemImage("txt_sys_shoutongbaoxiang") then
+                str = "effect_tongyongtx_2"
+            else
+            end 
+            local EffectGfxNode = require("app.effect.EffectGfxNode")
+            local subEffect = EffectGfxNode.new(str)
+            subEffect:play()
+            return subEffect
+        end
+        if effect == "txt_copy1" then
+            -- local subNode = ccui.ImageView:create()
+            -- subNode:loadTexture(Path.getTextCommon("txt_system_gongxihuode"))
+            -- if self._titleImagePath == Path.getSystemImage("txt_sys_tongguanbaoxiang") then
+            --     subNode:loadTexture(Path.getTextCommon("txt_sys_tongguanbaoxiang"))
+            -- elseif self._titleImagePath == Path.getSystemImage("txt_sys_shoutongbaoxiang") then
+            --     subNode:loadTexture(Path.getTextCommon("txt_sys_shoutongbaoxiang"))
+            -- else
+            --     subNode:loadTexture(self._titleImagePath)
+            -- end 
+            -- return subNode
+            local subNode = display.newSprite(Path.getTextCommon("txt_system_gongxihuode"))
+            if self._titleImagePath == Path.getSystemImage("txt_sys_tongguanbaoxiang") then
+                subNode = display.newSprite(Path.getTextCommon("txt_sys_tongguanbaoxiang"))
+            elseif self._titleImagePath == Path.getSystemImage("txt_sys_shoutongbaoxiang") then
+                subNode = display.newSprite(Path.getTextCommon("txt_sys_shoutongbaoxiang"))
+            else
+                subNode = display.newSprite(self._titleImagePath)
+            end 
+            return subNode
+        end
+    end
     if effect == "txt" then
         -- i18n change text 
         if not Lang.checkLang(Lang.CN) then
@@ -586,8 +623,8 @@ function PopupGetRewards:_createActionNode(effect)
         else
             return display.newNode()
         end
-
     end
+    return display.newNode()
 end
 
 function PopupGetRewards:_createEffectNode(rootNode)
@@ -614,7 +651,7 @@ end
 -- i18n ja 新手合击将获得
 function PopupGetRewards:showRewardsTutorial(awards,finishCallback)
     local titleImagePath = Path.getGuide("txt_tutorial_combo_title")
-    self:show(awards,nil,nil,finishCallback,titleImagePath)
+    self:show(awards,nil,nil,finishCallback,titleImagePath,nil,true)
     local UIHelper = require("yoka.utils.UIHelper")
     local label = UIHelper.createLabel({text=Lang.get("tutorial_combo_desc")})
     label:setFontSize(18)

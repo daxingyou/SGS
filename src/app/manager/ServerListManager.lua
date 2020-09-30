@@ -141,13 +141,16 @@ function ServerListManager:getRemoteServerList(isback, eventName)
 		url = string.gsub(url, "#isback#", isback)
 
         print("get server list: " .. tostring(url))
+        release_print("get server list: " .. tostring(url))
 
         local xhr = cc.XMLHttpRequest:new()
         xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
         --xhr:setRequestHeader("Accept-Encoding", "gzip")
         --xhr:setRequestHeader("Host", domain)
         xhr:open("POST", url)
-		print("ServerListManager:getRemoteServerList, url = ", url)
+        print("ServerListManager:getRemoteServerList, url = ", url) 
+        release_print("ServerListManager:getRemoteServerList, url = ", url)
+
         local function onReadyStateChange()
 			G_WaitingMask:showWaiting(false)
         	local e = "fail"

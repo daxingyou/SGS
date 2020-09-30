@@ -26,6 +26,18 @@ end
 function PopupCommonLimitCost:onCreate()
     self:_initData()
     self:_initView()
+    
+    self:_screenAdaptation()
+end
+  
+function PopupCommonLimitCost:_screenAdaptation()  
+    --多机型适配位置
+    local scene = G_SceneManager:getTopScene()   
+    local view = scene:getSceneView()
+    local _listView = ccui.Helper:seekNodeByName(view, "_listView")  
+    local newWorldPos = _listView:getParent():convertToWorldSpace(cc.p(_listView:getPositionX(), _listView:getPositionY()))
+    newWorldPos = self._imageBg:getParent():convertToNodeSpace(cc.p(newWorldPos.x - 326 - 4, newWorldPos.y - 5)) 
+    self._imageBg:setPosition(newWorldPos)
 end
 
 function PopupCommonLimitCost:_initData()
@@ -49,14 +61,7 @@ function PopupCommonLimitCost:_createMaterialIcon(itemId, costCount, itemType)
     item:setStopCallback(handler(self, self._onStopCallback))
     item:setIsShift(true)
     item:setPosition(cc.p(170, 53))         
-    -- i18n ja pos      
-    if Lang.checkUI("ui4") then 
-        item:setPosition(cc.p(82+5, -220))          -- 一个时的位置
-        ccui.Helper:seekNodeByName(item, "TextValue"):setFontSize(16);
-        self:addChild(item) 
-    else 
-        self._imageBg:addChild(item)
-    end
+    self._imageBg:addChild(item)
     
     table.insert(self._items, item)
     table.insert(self._itemIds, itemId)
@@ -65,14 +70,13 @@ end
 
 function PopupCommonLimitCost:onEnter()
     -- i18n ja change 
-    if not Lang.checkUI("ui4") then 
+    if Lang.checkUI("ui4") then 
+        self:updateUI()
+    else  
         local nodePos = self._fromNode:convertToWorldSpaceAR(cc.p(0, 0))
         local dstPos = self:convertToNodeSpace(cc.p(nodePos.x, nodePos.y))
-        self._imageBg:setPosition(dstPos)
-        return
+        self._imageBg:setPosition(dstPos)   
     end
-
-    self:updateUI()
 end
 
 function PopupCommonLimitCost:onExit()

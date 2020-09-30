@@ -99,6 +99,7 @@ end
 
 -- Describle：
 function HandBookView:onExit()
+	G_UserData:getHandBook():setIsClickHeroBook(0)  -- i18n ja 招募界面点击图鉴只显示武将图鉴
 end
 
 -- i18n change lable

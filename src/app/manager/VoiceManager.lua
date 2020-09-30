@@ -80,14 +80,18 @@ function VoiceManager:_resumeMusic()
     end
     if self._currSoundVolume then
         logWarn("VoiceManager.... resumeSound ok "..tostring(self._currSoundVolume))
-        G_AudioManager:setSoundVolume(self._currSoundVolume,true)
+        if Lang.checkUI("ui4") then
+            G_AudioManager:setSoundVolume(self._currSoundVolume,true,1)
+        else
+            G_AudioManager:setSoundVolume(self._currSoundVolume,true)
+        end
         self._currSoundVolume = nil
     end
     -- i18n ja
     if Lang.checkUI("ui4") then
         if self._currVcVolume then
             logWarn("VoiceManager.... resumeVC ok "..tostring(self._currVcVolume))
-            G_AudioManager:setVcVolume(self._currVcVolume,true)
+            G_AudioManager:setVcVolume(self._currVcVolume,true,1)
             self._currVcVolume = nil
         end
     end
@@ -100,13 +104,17 @@ function VoiceManager:_stopMusic()
 
     self._currSoundVolume = G_AudioManager:getSoundVolume()--停止音效
     logWarn("VoiceManager....... stopSound "..tostring(self._currSoundVolume))
-    G_AudioManager:setSoundVolume(0,true)
+    if Lang.checkUI("ui4") then
+        G_AudioManager:setSoundVolume(0,true,0)
+    else
+        G_AudioManager:setSoundVolume(0,true)
+    end
 
     -- i18n ja
     if Lang.checkUI("ui4") then
         self._currVcVolume = G_AudioManager:getVcVolume()--停止配音
         logWarn("VoiceManager....... stopVC "..tostring(self._currVcVolume))
-        G_AudioManager:setVcVolume(0,true)
+        G_AudioManager:setVcVolume(0,true,0)
     end
 end
 
@@ -313,8 +321,8 @@ function VoiceManager:onRecordVoiceSuccess(voiceUrl,voiceTime,voiceText)
         end
         voiceText = UTF8.utf8sub(voiceText,1,chatTextLength) 
         voiceText = BlackList.filterBlack(voiceText) --过滤禁词
-        voiceText = string.gsub(voiceText, "|", "*")
-        voiceText = string.gsub(voiceText, "#", "*")
+        voiceText = string.gsub(voiceText, "|", BlackList.ENCRIPTION_CHAR)--i18n ja
+        voiceText = string.gsub(voiceText, "#", BlackList.ENCRIPTION_CHAR)--i18n ja
     end
 
     local chatObject = self._currChatObject--取出对应的聊天对象

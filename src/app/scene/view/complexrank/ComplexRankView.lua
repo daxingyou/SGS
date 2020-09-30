@@ -80,6 +80,14 @@ function ComplexRankView:onCreate()
 	}
 
 	self._nodeTabRoot:recreateTabs(param)
+
+	-- i18n ui4
+	if Lang.checkUI("ui4") then
+		for index = 1, #tabNameList do
+			local item = self._nodeTabRoot:getTabItem(index)
+			item.textWidget:setTextHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER)
+		end
+	end
 end
 
 function ComplexRankView:onEnter()

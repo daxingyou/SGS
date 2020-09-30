@@ -417,7 +417,7 @@ function TreasureTrainLimitLayer:_openPopupPanel(costKey, limitLevel)
 	self._popupPanelSignal = self._popupPanel.signal:add(handler(self, self._onPopupPanelClose))
 	--self._parentView._nodePopup:addChild(self._popupPanel)
 	G_SceneManager:getRunningScene():addChild(self._popupPanel)
-	self._popupPanel:setPosition(cc.p(G_ResolutionManager:getDesignWidth()*0.5, G_ResolutionManager:getDesignHeight()*0.5 ))  
+	self._popupPanel:setPosition(cc.p(0, 0))--(G_ResolutionManager:getDesignWidth()*0.5, G_ResolutionManager:getDesignHeight()*0.5 ))  
 	self._popupPanel:updateUI()
 end
 

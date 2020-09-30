@@ -74,6 +74,10 @@ function PopupAvatarDetail:_updateAvatarInfo(baseId)
 
 	local param = TypeConvertHelper.convert(self._type, self._value)
 	self._commonVerticalText:setString(param.name)
+
+	if Lang.checkUI("ui4") then -- i18n ja change font size
+		ccui.Helper:seekNodeByName(self._commonVerticalText, "Text"):setFontSize(20)
+	end
 end
 
 --使用了翻页功能
@@ -118,6 +122,10 @@ end
 function PopupAvatarDetail:_dealByI18n()
 	if Lang.checkHorizontal() then
 		self._commonVerticalText:setPosition(self._btnWayGet:getPositionX(),450)
+	end
+
+	if Lang.checkUI("ui4") then  -- i18n ja change font size
+		self._btnWayGet:setFontSize(26)
 	end
 end
 

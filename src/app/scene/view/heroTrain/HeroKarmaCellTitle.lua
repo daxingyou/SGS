@@ -49,9 +49,9 @@ function HeroKarmaCellTitle:_onClickButton()
 end
 
 
--- i18n change lable
+-- i18n ja change lable
 function HeroKarmaCellTitle:_createLabelByI18n()
-	if not Lang.checkLang(Lang.CN) then
+	if not Lang.checkLang(Lang.CN) and not Lang.checkLang(Lang.JA) then  
 		local UIHelper  = require("yoka.utils.UIHelper")
 		local size = self._imageActivated:getContentSize()
 		local label = UIHelper.createLabel({
@@ -61,6 +61,11 @@ function HeroKarmaCellTitle:_createLabelByI18n()
 		})
 		
 		self._imageActivated:addChild(label)
+	end
+
+	if Lang.checkLang(Lang.JA) then  
+		self._imageActivated:setPositionY(34)
+		self._imageActivated:loadTexture(Path.getFetterRes("img_fatter_yijihuo"))
 	end
 end
 

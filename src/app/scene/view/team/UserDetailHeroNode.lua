@@ -631,8 +631,14 @@ function UserDetailHeroNode:_dealPosByI18n()
 	self._heroTitle:getBg():setContentSize(cc.size(300, 40))
 	self._heroTitle:getBg():setPosition(148, 20)
 	self._nodeDetailTitleBasic:getParent():addChild(self._heroTitle)
-	self._heroTitle:setPosition(17, 428+15)
+	self._heroTitle:setPosition(17, 428+7)
 
+
+	-- 觉醒修改
+	self._imageAwakeBg:loadTexture(Path.getTeamUI("img_team_bg_name"))
+	self._imageAwakeBg:getChildByName("Image_3790"):setVisible(false) 
+	self._nodeHeroStar:setPosition(18, 0) 
+	self._imageAwakeBg:setContentSize(cc.size(188, 30))
 
 	if Lang.checkUI("ui4") then  -- i18n ja 策划最新需求：羁绊显示前面的Icon
 		return

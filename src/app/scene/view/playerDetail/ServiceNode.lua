@@ -18,7 +18,7 @@ local btnList = {
 	-- {icon = "img_private", text = Lang.get("CitationLogin"), callback = "_onClickTempCitationLogin"},
 	-- {icon = "img_private", text = Lang.get("ShareFacebook"), callback = "_onClickTempShareFb"},
 	-- {icon = "img_private", text = Lang.get("ShareTwitter"), callback = "_onClickTempShareTw"},
-	-- {icon = "img_private", text = Lang.get("ShareLine"), callback = "_onClickTempShareLine"},
+	-- {icon = "img_private", text = Lang.get("ShareLINE"), callback = "_onClickTempShareLINE"},
 }
 
 function ServiceNode:ctor()
@@ -103,7 +103,11 @@ function ServiceNode:_openURL(urlType)
 	local urlList = json.decode(urlJson)
 	assert(urlList, "centerForumUrl not configure")
 	local url = urlList[urlType]
-	assert(url, "centerForumUrl not configure for "..urlType)
+	if url == nil or url == "" then
+		G_Prompt:showTip(Lang.get("player_detail_not_open"))
+		return
+	end
+	-- assert(url, "centerForumUrl not configure for "..urlType)
 	G_NativeAgent:openURL(url)
 end
 
@@ -210,7 +214,7 @@ function ServiceNode:_takePhoto( channel, type )
 
 	local function doShare()
 		local FileUtils = cc.FileUtils:getInstance()
-		G_GameAgent:shareImage(channel, type, FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME)
+		G_GameAgent:shareImage(channel, type, FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME,Lang.get("share_comment"))
 	end
 
 	local function afterCaptured( success, fileName )

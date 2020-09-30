@@ -121,12 +121,16 @@ function StageView:onCreate()
 	if self._topBar then
 		self._topBar:updateUI(TopBarStyleConst.STYLE_PVE)
         -- self._topBar:setBGType(TopBarStyleConst.BG_TYPE_STAGE)
-        if Lang.checkLang(Lang.CN) or Lang.checkLang(Lang.ZH) or Lang.checkLang(Lang.JA) then  -- i18n ja change title
+        if Lang.checkLang(Lang.CN) or Lang.checkLang(Lang.ZH) then  
              self._topBar:setTitle(chapterName, 32, Colors.DARK_BG_THREE, Colors.DARK_BG_OUTLINE, true)
         elseif Lang.checkLatinLanguage() then
             self._topBar:setTitle(chapterName, 36, Colors.DARK_BG_THREE, Colors.DARK_BG_OUTLINE,true)
+        elseif Lang.checkLang(Lang.JA) then    -- i18n ja change title
+            self._topBar:setTitle(chapterName, 32, Colors.getStyle("big_tab").color, Colors.getStyle("big_tab").outlineColor, true)
         end
-        -- self._topBar:pauseUpdate()
+        -- self._topBar:pauseUpdate()    
+       
+   
         
         -- i18n ja pos
         if Lang.checkLang(Lang.JA) then
@@ -919,8 +923,13 @@ function StageView:_onPassBoxTouch()
 	local StoryStage = require("app.config.story_stage")
 	local lastStageInfo = StoryStage.get(lastStageID)
 	assert(lastStageInfo ~= nil, "lastStageInfo is nil")
-	local qColor = Colors.getColor(lastStageInfo.color)
-	local detail = Lang.get("stage_pass_box_detail", {name = lastStageInfo.name, color = Colors.colorToNumber(qColor)})
+    local qColor = Colors.getColor(lastStageInfo.color)
+    local detail = ""
+    if Lang.checkUI("ui4") and self._chapterInfo.id >= 2001 then -- i18n ja change
+        detail = Lang.get("stage_pass_box_detail", {name = lastStageInfo.name, color = Colors.colorToNumber(qColor)})
+    else      
+        detail = Lang.get("stage_pass_box_detail_2", {name = lastStageInfo.name, color = Colors.colorToNumber(qColor)})
+    end
 
 	local chapterData = self._chapterData
 	if chapterData:getPreward() == 0 then
@@ -1060,6 +1069,11 @@ function StageView:_onStarEftFinish()
     for i, v in pairs(self._stageList) do 
         if v:getStageId() == fightStageId and not v:isPass() then 
             nextStageNode = self._stageList[i+1]
+            if Lang.checkUI("ui4") and nextStageNode then
+                if nextStageNode._stageData:isIs_finished() then
+                    nextStageNode = nil
+                end
+            end
         end 
     end
     if nextStageNode then

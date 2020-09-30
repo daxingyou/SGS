@@ -8,23 +8,53 @@ function PopupResultView:ctor(rewards,callback)
     self._isAction = true
     self._effectShow = nil
     self._textGetDetail = nil
-
+    self._nodeUI = nil
+    self._nodeEffect = nil
+    
     self._isContinueShow = true
     self._isShareShow = true
-
+    self._isTen = #self._rewards == 10
+    self._showButton = self._isTen and  G_TutorialManager:isDoingStep() == false
+    self._isSharing = false
     dump(rewards)
-   
-    PopupResultView.super.ctor(self, nil, false, false)
+    local resource = {
+		file = Path.getCSB("PopupResultView", "drawCard"),
+		size = G_ResolutionManager:getDesignSize(),
+		binding = {
+            _buttonOk = {
+				events = {{event = "touch", method = "_onButtonOk"}}
+            },   
+            _buttonTenMore = {
+				events = {{event = "touch", method = "_onButtonTenMore"}}
+			},      
+		}		
+	}
+    PopupResultView.super.ctor(self, resource, false, false)
 end
 
+
 function PopupResultView:onCreate()
-    self._isTen = #self._rewards == 10
+    self._buttonOk:setString(Lang.get("guild_btn_ok"))
+    self._buttonTenMore:setString(Lang.get("draw_card_more_ten"))
+    self._nodeButton:setVisible(false)
     self:_createTouchLayer()
     self:_createAnimation()
     if self._isShareShow then
         self:_createShareLayer()
     end
+
+    local AudioConst = require("app.const.AudioConst")
+    G_AudioManager:playSound(Path.getUIVoice("drawcard_result"))
 end
+
+function PopupResultView:_addControlNode(node)
+    local parentNode = cc.Node:create()
+    parentNode:addChild(node)
+    parentNode:setLocalZOrder(node:getLocalZOrder())
+    parentNode:setName("share_control")
+    return parentNode
+end
+
 
 
 function PopupResultView:setShareVisible(bool)
@@ -59,7 +89,7 @@ end
 
 
 function PopupResultView:onEnter()
-    
+   
 end
 
 function PopupResultView:onExit()
@@ -76,18 +106,46 @@ function PopupResultView:_createTouchLayer()
     self._panelFinish:setTouchEnabled(true)
     self._panelFinish:setSwallowTouches(true)
     self._panelFinish:addTouchEventListener(handler(self,self._onFinishTouch))
-    self:addChild(self._panelFinish)
+    self._nodeUI:addChild(self._panelFinish)
+end
+
+function PopupResultView:_isCanClose()
+    return not self._isSharing and not self._isAction
 end
 
 function PopupResultView:_onFinishTouch(sender, event)
-    if not self._isAction and event == 2 then
-        if self._callback then
-            self._callback()
-        end
+    if self:_isCanClose() and event == 2 then
         self:close()
     end
 end
 
+
+function PopupResultView:onClose()
+    if self._callback then
+        self._callback()
+    end
+end
+
+function PopupResultView:_onButtonOk()
+    if not self:_isCanClose() then
+        return
+    end
+    self:close()
+end
+
+function PopupResultView:_onButtonTenMore()
+    if not self:_isCanClose() then
+       return
+    end
+    local scene = G_SceneManager:getRunningScene()
+    local view = scene:getSceneView()
+    if view.doMoreTen then
+        local success = view:doMoreTen()
+        if success then
+            self:close()
+        end
+    end
+end
 
 function PopupResultView:_kapai(index)
     local node = cc.Node:create()
@@ -95,6 +153,14 @@ function PopupResultView:_kapai(index)
     local reward = self._rewards[index]
     local isNew =  G_UserData:getHandBook():isNewHero(reward.value,"ShowResult") 
     node:playAnimation(reward.value,isNew)
+
+    if self._isTen then
+        local parentNode = cc.Node:create()
+        parentNode:addChild(node)
+        node:setPositionY(10)
+        node = parentNode
+    end
+
     return node
 end
 
@@ -159,7 +225,8 @@ function PopupResultView:_createAnimation()
     local function eventFunction(event)
         if event == "finish" then
             self._isAction = false
-            if self._isContinueShow then
+            self._nodeButton:setVisible(self._showButton)
+            if self._isContinueShow and not self._showButton then
                 self:_createContinueNode()
             end
         end
@@ -171,7 +238,7 @@ function PopupResultView:_createAnimation()
     if self._isTen then
         movingName = "moving_kapai_ruchang_shige"
     end
-    local effect = G_EffectGfxMgr:createPlayMovingGfx( self, movingName, effectFunction, eventFunction , false )
+    local effect = G_EffectGfxMgr:createPlayMovingGfx(self._nodeEffect, movingName, effectFunction, eventFunction , false )
     self._effectShow = effect
 end
 
@@ -183,13 +250,23 @@ function PopupResultView:_createShareLayer()
     self._shareLayer:setAnchorPoint( cc.p(0.5, 0.5))
     self._shareLayer:setPosition(cc.p(0,0))
     self._shareLayer:updateData()
+    self._shareLayer:setPopShareCallback(function(show) 
+        if not show then
+            self._nodeButton:setVisible(self._showButton)
+        else
+            self._nodeButton:setVisible(false)
+        end
+    end)
+    self._shareLayer:setShowHideCallback(function(show)
+        self._isSharing = not show
+    end,self)
     ccui.Helper:doLayout(self._shareLayer)
-    self:addChild(layer)
+    self._nodeUI:addChild(self._shareLayer )
 end
 
 function PopupResultView:_createContinueNode()
     local continueNode = CSHelper.loadResourceNode(Path.getCSB("CommonContinueNode", "common"))
-    self:addChild(continueNode)
+    self._nodeUI:addChild(self:_addControlNode(continueNode))
     continueNode:setPosition(cc.p( 0, -250 ))
     self._continueNode = continueNode
 end

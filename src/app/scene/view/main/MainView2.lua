@@ -124,13 +124,23 @@ function MainView:onEnter()
 		self._sceneId = nil
 	end
 	self:_showPopupNotice()
+
+	local tutorialChatNode = G_TopLevelNode:getRootNode():getChildByName("PopupStoryChat")
+	if tutorialChatNode and not tolua.isnull(tutorialChatNode) then
+		local storyAvatarNode = self:getEffectLayer(ViewBase.Z_ORDER_GRD_BACK + 1):getChildByName("StoryAvatarNode")
+		if storyAvatarNode then
+			storyAvatarNode:setVisible(false)
+		end
+	end
 end
 
 -- i18n ja change 
 function MainView:onEnterTransitionFinish()
 	if Lang.checkUI("ui4") then
+		crashPrint("[Level Gift] MainView start ")
 		local LevelPkgConst = require("app.const.LevelPkgConst")
 		G_SignalManager:dispatch(SignalConst.EVENT_NEW_LEVEL_PKG_OPEN_NOTICE,nil)
+		crashPrint("[Level Gift] MainView end ")
 	end
 end
 

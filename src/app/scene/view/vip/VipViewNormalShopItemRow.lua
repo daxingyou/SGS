@@ -36,8 +36,13 @@ function VipViewNormalShopItemRow:update(itemLine)
             local listViewItem = fileNode:getSubNodeByName("CommonListViewItem")
             cc.bind(listViewItem, "CommonListViewLineItem")
 			local buttonExchange = fileNode:getSubNodeByName("ButtonExchange")
+			local buttonExchange2 = fileNode:getSubNodeByName("ButtonExchange2")
 			buttonExchange:setTag(i)
-    		buttonExchange:addTouchEventListener(handler(self,self._onTouchCallBack))
+			buttonExchange:setSwallowTouches(false)
+			buttonExchange2:setTag(i)
+			buttonExchange2:setSwallowTouches(false)
+			buttonExchange:addTouchEventListener(handler(self,self._onTouchCallBack))
+			buttonExchange2:addTouchEventListener(handler(self,self._onTouchCallBack))
 			self:_updateCell(fileNode, itemValue )
 		end
 	end
@@ -63,6 +68,16 @@ function VipViewNormalShopItemRow:_updateCell(itemNode,shopItem)
 		
 	local imageBgLight = itemNode:getSubNodeByName("Image_bg_light")
 	imageBgLight:setVisible(newRemind == 2)
+	if newRemind == 2 then
+		local image = imageBgLight:getChildByName("Image_18")
+		local effect = image:getChildByName("Effect")
+		if not effect then
+			--print("------------ssss")
+			local effect = G_EffectGfxMgr:createPlayGfx(image, "effect_xbioti_lizi")
+			effect:setName("Effect")
+		end
+	end
+	
 	
     local imageTip = itemNode:getSubNodeByName("Image_tip")
     imageTip:setVisible(newRemind == 1)
@@ -79,31 +94,41 @@ function VipViewNormalShopItemRow:_updateCell(itemNode,shopItem)
     self:_updateLimitDes(textCondition,shopItem)
 
 	local btnImg = nil
+	local buttonExchange = itemNode:getSubNodeByName("ButtonExchange")
+	local buttonExchange2 = itemNode:getSubNodeByName("ButtonExchange2")
 	if newRemind == 2 then
 		listViewItem:setPositionY(125)
 		textCondition:setPositionY(68)
 		textCondition:setColor(cc.c3b(0xff, 0xff, 0xff) )
 		textCondition:enableOutline( cc.c3b(0xff, 0x6c, 0x5d) , 2)
 		btnImg =  Path.getVip2("img_btn_topups_anniu2")
+		buttonExchange:setVisible(false)
+		buttonExchange2:setVisible(true)
 	else
 		listViewItem:setPositionY(131)
 		textCondition:setPositionY(65)
 		textCondition:setColor(cc.c3b(0xB4, 0x64, 0x14) )
 		textCondition:disableEffect(cc.LabelEffect.OUTLINE)
 		btnImg =  Path.getVip2("img_btn_topups_anniu")
+		buttonExchange:setVisible(true)
+		buttonExchange2:setVisible(false)
+	--	buttonExchange:loadTextures(btnImg, btnImg, nil)
 	end
 	
-	local buttonExchange = itemNode:getSubNodeByName("ButtonExchange")
-	buttonExchange:loadTextures(btnImg, btnImg, nil)
+
+	
+
 
 	local success, errorMsgs, funcNames = LogicCheckHelper.shopFixBtnCheckExt(shopItem)
 	local isGray = false
 	if success == false then
 		isGray = true
 		buttonExchange:setEnabled(false)
+		buttonExchange2:setEnabled(false)
 	else
 		isGray = false
 		buttonExchange:setEnabled(true)
+		buttonExchange2:setEnabled(true)
 	end
 
 	local resourceNode = itemNode:getSubNodeByName("_resource")

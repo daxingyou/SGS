@@ -214,13 +214,13 @@ function BattleDataHelper.parseChallengeDailyData(message, configData)
 end
 
 --爬塔挑战
-function BattleDataHelper.parseChallengeTowerData(message, layerConfig, star)
+function BattleDataHelper.parseChallengeTowerData(message, layerConfig, star, historyStar)
     local battleData = clone(BattleData)
     battleData.battleType = BattleDataHelper.BATTLE_TYPE_CHALLENGE_TOWER
     table.insert(battleData.background, layerConfig.in_res)
 
     local layerId = layerConfig.id
-    local historyStar = G_UserData:getTowerData():getHistoryStarByLayer(layerId)
+    -- local historyStar = G_UserData:getTowerData():getHistoryStarByLayer(layerId)
     battleData.monsterTeamId = layerConfig["monster_team_id_" .. star]
     battleData.star = star
     if historyStar >= battleData.star then

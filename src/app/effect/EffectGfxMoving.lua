@@ -249,6 +249,8 @@ function EffectGfxMoving:_createSpineNode(strArray)
     return node
 end
 
+
+
 --创建粒子特效(lizi_xnamex_copy1)
 function EffectGfxMoving:_createParticleNode(strArray)
     local path = ""

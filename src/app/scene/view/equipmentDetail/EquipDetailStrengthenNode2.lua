@@ -54,27 +54,12 @@ end
 
 function EquipDetailStrengthenNode:_createEquipTitle()
 	local title = CSHelper.loadResourceNode(Path.getCSB("CommonDetailTitle2", "common"))
-	-- title:setFontSize(18)
-    -- ccui.Helper:seekNodeByName(title, "ImageBase"):loadTexture( Path.getTextTeam("img_com_board_zrd4") )
-	-- ccui.Helper:seekNodeByName(title, "ImageBase"):setContentSize(cc.size(self._listView:getContentSize().width, 40))
-	-- --名字
-	-- local equipData = self._equipData
-	-- local equipBaseId = equipData:getBase_id()
-	-- local TypeConvertHelper = require("app.utils.TypeConvertHelper")
-	-- local equipParam = TypeConvertHelper.convert(TypeConvertHelper.TYPE_EQUIPMENT, equipBaseId)
-	-- local equipName = equipParam.name
-	-- local rLevel = equipData:getR_level()
-	-- if rLevel > 0 then
-	-- 	equipName = equipName .. "+" .. rLevel
-	-- end
-	-- title:setTitle(equipName) 
-	-- title:setTitleColor(equipParam.icon_color)  
 	title:setName(1)
 
 	local widget = ccui.Widget:create()
-	local titleSize = cc.size(self._listView:getContentSize().width, 40)  
+	local titleSize = cc.size(self._listView:getContentSize().width, 40+2)  
 	widget:setContentSize(titleSize)
-	title:setPosition(titleSize.width / 2, 20)
+	title:setPosition(titleSize.width / 2, 21)
 	widget:addChild(title)
 	return widget
 end

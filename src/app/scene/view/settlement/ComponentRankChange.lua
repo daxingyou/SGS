@@ -19,6 +19,17 @@ function ComponentRankChange:_createLabel(rank, type)
     -- if type == 2 then
     --     fontColor, fontOutline = Colors.getRankColor2()
     -- end
+    if Lang.checkUI("ui4") then
+        local color = Colors.D_YEllOW
+        if type == 1 then
+            color = Colors.D_YEllOW
+        else
+            color = Colors.OBVIOUS_GREEN
+        end
+        local label = cc.Label:createWithTTF(rank, Path.getCommonFont(), 30)
+        label:setColor(color)
+        return label    
+    end
     local fontColor, fontOutline = Colors.getSettlementRankColor(type)
     local label = cc.Label:createWithTTF(rank, Path.getCommonFont(), 30)
     label:setColor(fontColor)

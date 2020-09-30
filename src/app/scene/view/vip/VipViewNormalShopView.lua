@@ -27,10 +27,6 @@ function VipViewNormalShopView:onCreate()
 end
 
 
-function VipViewNormalShopView:_pullData()
-	G_UserData:getShops():c2sGetShopInfo(ShopConst.VIP_EXCHANGE_SHOP)
-end
-
 -- Describle：
 function VipViewNormalShopView:onEnter()
 	self._signalUpdateShopGoods = G_SignalManager:add(SignalConst.EVENT_SHOP_INFO_NTF, 
@@ -38,7 +34,6 @@ function VipViewNormalShopView:onEnter()
 	self._signalRecvCurrencysInfo = G_SignalManager:add(SignalConst.EVENT_RECV_CURRENCYS_INFO, 
 		handler(self, self._onEventRecvCurrencysInfo))
 	self:_updateData()
-    self:_pullData()
 end
 
 -- Describle：
@@ -192,7 +187,7 @@ function VipViewNormalShopView:_popupFixShopBuyItem(shopItemData)
 			end)
 		PopupSystemAlert:openWithAction()
 		PopupSystemAlert:setCheckBoxVisible(true)
-		PopupSystemAlert:setModuleName("VipViewExchange")
+		PopupSystemAlert:setModuleName("VipViewNormalShopView")
 
 	end
 		

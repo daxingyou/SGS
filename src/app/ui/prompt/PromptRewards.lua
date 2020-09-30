@@ -108,8 +108,11 @@ function PromptRewards:_createRewardAndRun(award)
     local itemParams = icon:getItemParams()
     assert(type(itemParams) == "table", "Invalid itemParams " .. tostring(itemParams))
     itemName:setString(itemParams.name)
-	itemName:setColor(itemParams.icon_color)
-	itemName:enableOutline(itemParams.icon_color_outline, 2)
+    itemName:setColor(itemParams.icon_color)
+    -- i18n ja
+    if itemParams.icon_color_outline then
+	    itemName:enableOutline(itemParams.icon_color_outline, 2)
+    end
     itemNum:setPositionX(itemName:getPositionX() + itemName:getContentSize().width + 20)
     itemNum:setString(string.format("x%s", award.size))
 

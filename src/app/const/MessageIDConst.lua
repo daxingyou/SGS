@@ -376,6 +376,8 @@ return {
     ID_S2C_ShopCrystalBuy = 30843,
     ID_C2S_GetResPhoto = 30845,
     ID_S2C_GetResPhoto = 30846,
+    ID_C2S_GetHeroResPhoto = 30847,
+    ID_S2C_GetHeroResPhoto = 30848,
     ID_C2S_GetTower = 30850,
     ID_S2C_GetTower = 30851,
     ID_C2S_ExecuteTower = 30852,
@@ -1155,6 +1157,12 @@ return {
     ID_C2S_ChatSliencePrivate = 38032,
     ID_S2C_ChatSliencePrivate = 38033,
     ID_S2C_NotifySliencedUser = 38034,
+    ID_C2S_GetHeroEmakiInfo = 38050,
+    ID_S2C_GetHeroEmakiInfo = 38051,
+    ID_C2S_ActivateHeroEmaki = 38052,
+    ID_S2C_ActivateHeroEmaki = 38053,
+    ID_C2S_LevelUpHeroEmaki = 38054,
+    ID_S2C_LevelUpHeroEmaki = 38055,
     ID_C2S_Test = 39998,
     ID_S2C_Test = 39999
 }

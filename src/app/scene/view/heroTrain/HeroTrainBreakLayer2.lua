@@ -436,7 +436,7 @@ end
 
 function HeroTrainBreakLayer:_playEffect()
 	local function eventFunction(event)
-		if event == "finish" then
+		if event == "bao" then
 			if self and self.setButtonEnable and self._updateInfo then
 				local popupBreakResult = require("app.scene.view.heroTrain.PopupBreakResult2").new(self, self._heroId)
 				popupBreakResult:open()
@@ -447,7 +447,7 @@ function HeroTrainBreakLayer:_playEffect()
         end
     end
 	local gfxEffect = G_EffectGfxMgr:createPlayGfx(self._parentView._nodeBreakEffect, "effect_wujiang_up", eventFunction) 
-	G_AudioManager:playSoundWithId(AudioConst.SOUND_HERO_BREAK) --播音效
+	G_AudioManager:playSound(Path.getUIVoice("herotpSucess")) --WithId(AudioConst.SOUND_HERO_BREAK) --播音效   
 	do return end 
  
 	local function effectFunction(effect)

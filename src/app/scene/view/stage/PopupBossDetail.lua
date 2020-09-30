@@ -46,7 +46,12 @@ function PopupBossDetail:ctor(chapterType,chapterId, bossData, isBossPage, isPop
                 events = {{event = "touch", method = "_onCloseClick"}}
             }
 		}
-	}
+    }
+    
+    if Lang.checkUI("ui4") then
+        resource.file = Path.getCSB("PopupBossDetail2", "stage")
+    end
+
 	PopupBossDetail.super.ctor(self, resource)
 end
 
@@ -60,6 +65,8 @@ function PopupBossDetail:onCreate()
 
     self:_createHeroSpine()
     self._btnAttack:setString(Lang.get("stage_fight"))
+    -- i18n ui4
+    self:_dealUi4()
 end
 
 function PopupBossDetail:onEnter()
@@ -74,13 +81,10 @@ function PopupBossDetail:onEnter()
 
     self._cost:updateUI(TypeConvertHelper.TYPE_RESOURCE, DataConst.RES_VIT, self._bossData.cost)
 
-
-
    
     if not Lang.checkLang(Lang.CN) and not Lang.checkHorizontal() then
          local UIHelper  = require("yoka.utils.UIHelper")
          UIHelper.dealVTextWidget(self._textTitle,self._bossData.name)
-        
     else
         self._textTitle:setString(self._bossData.name)
     end
@@ -148,8 +152,16 @@ function PopupBossDetail:_updateDropList()
     for i, v in pairs(awards) do
         v.size = 1
     end
-    self._listDrop:updateUI(awards, 1,false,true)
-    self._listDrop:setItemsMargin(20)
+
+    -- i18n ui4
+    local scale = 1
+    local margin = 20
+    if Lang.checkUI("ui4") then
+        scale = 0.8
+        margin = 13
+    end
+    self._listDrop:updateUI(awards, scale, false, true)
+    self._listDrop:setItemsMargin(margin)
     self._awardsList = awards
 end
 
@@ -195,7 +207,7 @@ function PopupBossDetail:_swapImageByI18n()
 			 text = Lang.getImgText("txt_essence_huodejiangli") ,
 		})
 
-         self._textTitle:setTextHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER)
+        self._textTitle:setTextHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER)
 
 
         local image3 = UIHelper.seekNodeByName(self._btnFormation,"Image_11")
@@ -239,5 +251,47 @@ function PopupBossDetail:_dealHorizontal()
     end
 end
 
+-- i18n ui4
+function PopupBossDetail:_dealUi4()
+    if Lang.checkUI("ui4") then
+        local UIHelper  = require("yoka.utils.UIHelper")
+        local image1 = UIHelper.seekNodeByName(self,"ImageGetBG","ImageGet")
+        local image2 = UIHelper.seekNodeByName(self,"ImageGetBG2","ImageGet")
+        image1:setVisible(false)
+        image2:setVisible(false)
+
+        self._text1:setString(Lang.getImgText("txt_essence_huodejiangli"))
+        self._text2:setString(Lang.getImgText("txt_essence_huodejiangli"))
+        self._drop1:setTextCountSize(20)
+        self._drop2:setTextCountSize(20)
+        self._cost:setTextCountSize(20)
+
+        self._textTitle:setTextVerticalAlignment(cc.TEXT_ALIGNMENT_CENTER)
+        self._textTitle:getVirtualRenderer():setLineSpacing(6)
+
+        if Lang.checkLang(Lang.JA) or Lang.checkLang(Lang.ZH) then
+            local UIHelper  = require("yoka.utils.UIHelper")
+            local titleBg = UIHelper.seekNodeByName(self._panelBase,"ImageTitleBG")
+            local bgPosY = titleBg:getPositionY()
+            titleBg:ignoreContentAdaptWithSize(true)
+            local UTF8 = require("app.utils.UTF8")
+            local len = UTF8.utf8len(self._bossData.name)
+            local titlePosY = self._textTitle:getPositionY()
+            if len == 3 then
+                titleBg:loadTexture(Path.getElitechapterUI("img_com_labelbg_02"))
+                self._textTitle:setPositionY(titlePosY + 9)
+            elseif len == 4 then
+                titleBg:loadTexture(Path.getElitechapterUI("img_com_labelbg_03"))
+                self._textTitle:getVirtualRenderer():setLineSpacing(2)
+                titleBg:setPositionY(bgPosY - 14)
+                self._textTitle:setPositionY(titlePosY + 22)
+            elseif len >= 5 then
+                titleBg:loadTexture(Path.getElitechapterUI("img_com_labelbg_04"))   
+                self._textTitle:getVirtualRenderer():setLineSpacing(2)
+                self._textTitle:setPositionY(titlePosY + 35)
+            end
+        end
+    end
+end
 
 return PopupBossDetail

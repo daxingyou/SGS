@@ -31,12 +31,21 @@ end
 function CommonGuildTalk:setText(text)
     local render = self._textTalk:getVirtualRenderer()
     render:setMaxLineWidth(140)
+    if Lang.checkUI("ui4") then
+        render:setMaxLineWidth(135)
+    end
     self._textTalk:setString(text)
 end
 
 
 function CommonGuildTalk:_dealPosI18n()
-	if not Lang.checkLang(Lang.CN) then
+    if Lang.checkUI("ui4") then
+        self._textTalk:setColor(cc.c3b(0x70,0x38,0x0d))
+        self._textTalk:setFontSize(18)
+        self._imageTalkBG:ignoreContentAdaptWithSize(true)
+        self._textTalk:setPosition(23,45)
+        self._textTalk:getVirtualRenderer():setLineSpacing(5)
+    elseif not Lang.checkLang(Lang.CN) then
         local size = self._imageTalkBG:getContentSize()
         self._imageTalkBG:setContentSize(cc.size(size.width,size.height+30))
         self._textTalk:setPositionY(self._textTalk:getPositionY()+15)

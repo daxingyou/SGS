@@ -89,14 +89,13 @@ function ExaminationOption:_dealPosByI18n()
     if not Lang.checkLang(Lang.CN) then
         self._optionABCD:setPositionX(self._optionABCD:getPositionX()-10)
         self._optionText:setPositionX(self._optionText:getPositionX()-10)
-		self._optionText:setFontSize(self._optionText:getFontSize()-2)
+		self._optionText:setFontSize(self._optionText:getFontSize()-2)	
+	end
 
-
-
-		--self._optionText:setTextHorizontalAlignment( cc.TEXT_ALIGNMENT_LEFT )
-		--self._optionText:getVirtualRenderer():setLineSpacing(0 )
-		--self._optionText:getVirtualRenderer():setMaxLineWidth(140)
-	
+	-- 处理答题超框
+	if Lang.checkLang(Lang.JA) then
+		self._optionText:setTextHorizontalAlignment( cc.TEXT_ALIGNMENT_LEFT )
+		self._optionText:getVirtualRenderer():setMaxLineWidth(220)
 	end
 end
 

@@ -516,6 +516,7 @@ end
   
 function HeroTrainAwakeLayer:setButtonEnable(enable)
 	self._buttonAwake:setEnabled(enable and self._isAllEquip and not self._isLimit)
+	self._buttonAwake:showRedPoint(self._buttonAwake:isEnabled())  -- 策划需求：点完觉醒按钮后，红点立即消失
 	--self._pageView:setEnabled(enable)
 	-- if self._parentView and self._parentView.setArrowBtnEnable then
 	-- 	self._parentView:setArrowBtnEnable(enable)
@@ -719,10 +720,10 @@ function HeroTrainAwakeLayer:_playEffect(isUpStar)
 		onFinishCallback = handler(self, self._onCommonFinishEffect)  
 	end
 
-	self:_playCommonEffect(onFinishCallback)
+	self:_playCommonEffect(isUpStar, onFinishCallback)
 end
 
-function HeroTrainAwakeLayer:_playCommonEffect(callback)
+function HeroTrainAwakeLayer:_playCommonEffect(isUpStar, callback)
 
 	local function effectFunction(effect)
         return cc.Node:create()
@@ -754,7 +755,13 @@ function HeroTrainAwakeLayer:_playCommonEffect(callback)
     end  
 
 	local effect = G_EffectGfxMgr:createPlayMovingGfx(self._parentView._nodeAwakeEffect, "moving_juexing", effectFunction, eventFunction , false)
-    effect:setPosition(cc.p(0-50, 0))
+	effect:setPosition(cc.p(0-50, 0))
+
+	-- 策划需求：引起升星时， 去掉装备成功的特效 
+	self._parentView._nodeAwakeEffect:setOpacity(255)
+	if isUpStar then
+		self._parentView._nodeAwakeEffect:setOpacity(0)
+	end
 end
 
 function HeroTrainAwakeLayer:_onButtonPreview()

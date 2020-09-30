@@ -51,9 +51,6 @@ function TutorialManager:ctor()
 	-- 开场动画是否正在进行
 	self._isPlayingOpening = false
 
-	-- i18n ja
-	self._guideAwards = nil
-	self._signalUpdateGuideId = G_NetworkManager:add(MessageIDConst.ID_S2C_UpdateGuideId, handler(self, self._recvUpdateGuideId))
 end
 
 function TutorialManager:clear()
@@ -73,12 +70,6 @@ function TutorialManager:clear()
 	end
 	self:_resetTipLayer(true)
 
-	-- i18n ja
-	self._guideAwards = nil
-	if self._signalUpdateGuideId then 
-        self._signalUpdateGuideId:remove()
-        self._signalUpdateGuideId = nil
-    end
 end
 
 --构建stageMap
@@ -674,17 +665,5 @@ function TutorialManager:hasOpeningTutorial(onFinishCallback)
 
 end
 
--- i18n ja
-function TutorialManager:_recvUpdateGuideId(id, message)
-    if message.ret == MessageErrorConst.RET_OK then
-		if rawget(message, "awards") then
-			self._guideAwards = rawget(message, "awards")
-		end
-    end
-end
--- i18n ja
-function TutorialManager:getGuideAwards()
-	return self._guideAwards or {}
-end
 
 return TutorialManager

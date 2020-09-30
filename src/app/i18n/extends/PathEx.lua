@@ -228,6 +228,10 @@ function PathEx.getImgRunway(id)
     return PathEx.get(id,"runway","ui3","")
 end
 
+function PathEx.getImgRunway2(id)
+    return PathEx.get(id,"runway","ui3")
+end
+
 -- --
 function PathEx.getUICommon(id)
     -- return "ui3/common/" .. id .. png_suffix
@@ -742,9 +746,10 @@ function PathEx.getActivityTextRes(id)
 end
 
 
--- function PathEx.getVoiceRes(id)
--- 	return "ui3/voice/"..id..png_suffix
--- end
+function PathEx.getVoiceRes(id)
+    --return "ui3/voice/"..id..png_suffix
+    return PathEx.get(id,"voice","ui3")
+end
 
 
 function PathEx.getTextMain(id)
@@ -1211,4 +1216,32 @@ end
 
 function PathEx.getBossComeUI(id)
     return PathEx.get(id,"embattle/bossCome","ui3")
+end
+
+-- 首冲界面图片
+function PathEx.getFirstChargeUI(id)
+	return PathEx.get(id,"the_first_charge","ui3")
+end
+
+-- 紧急军情挑战界面图片
+function PathEx.getElitechapterUI(id)
+	return PathEx.get(id,"elitechapter","ui3")
+end
+-- i18n ja add
+function PathEx.getUIVoice(id)
+	return PathEx.getAudio(id,"ui","audio",mp3_suffix) 
+end
+-- 邮箱界面图片
+function PathEx.getMailUI(id)
+	return PathEx.get(id,"mail","ui3")
+end
+
+-- 名将绘卷图片
+function PathEx.getTeamPictureScroll(id, suffix)
+    if suffix == nil then
+        suffix = png_suffix
+    else
+        suffix = jpg_suffix
+    end
+	return PathEx.get(id,"teamPictureScroll","ui3",suffix)
 end

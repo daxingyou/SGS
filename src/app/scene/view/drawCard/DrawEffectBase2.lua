@@ -12,6 +12,12 @@ local Hero = require("app.config.hero")
 DrawEffectBase2.DRAW_TYPE_MONEY = 1
 DrawEffectBase2.DRAW_TYPE_GOLD = 2
 
+
+DrawEffectBase2.Z_ORDER_BK = 1
+DrawEffectBase2.Z_ORDER_EFFECT = 2
+DrawEffectBase2.Z_ORDER_TOUCH = 3
+
+
 local Parameter = require("app.config.parameter")
 local ParameterIDConst = require("app.const.ParameterIDConst")
 
@@ -26,7 +32,7 @@ function DrawEffectBase2:ctor(awards, type)
 end
 
 function DrawEffectBase2:onCreate()
-    self:_createTouchLayer()
+    self:_createEffectRootNode()
 end
 
 function DrawEffectBase2:onEnter()
@@ -37,9 +43,13 @@ function DrawEffectBase2:onExit()
 end
 
 function DrawEffectBase2:_reset()
+    self._isAction = true 
     self._cardNode = {}
     self._cardToOpen = {}
     self._showEffectCard = {}
+    if self._effectRootNode then
+        self._effectRootNode:removeAllChildren()
+    end
 end
 
 --滑动触发卡牌特效
@@ -80,7 +90,11 @@ function DrawEffectBase2:_onFinishTouch(sender, event)
             if point.x >= left and point.x <= right then
                 self:_lightCard(k)
                 local matchK = getMatchCardIndex(k)
+                self:_playAudio(k,matchK)
                 self:_lightCard(matchK)
+
+              
+
                 if self:_checkIsAllCardLight() then
                      self:playGuang()
                 end
@@ -99,6 +113,22 @@ function DrawEffectBase2:_onFinishTouch(sender, event)
                 self:playGuang()
            end
         end
+    end
+end
+
+function DrawEffectBase2:_playAudio(k,matchK)
+    local heroId = self._awards[k].value
+    local hero = Hero.get(heroId)
+
+    local heroId2 = self._awards[matchK].value
+    local hero2 = Hero.get(heroId2)
+
+    local color = math.max(hero.color,hero2.color)
+    local AudioConst = require("app.const.AudioConst")
+    if color <= 4 then
+        G_AudioManager:playSound(Path.getUIVoice("drawcard_touch1"))
+    else
+        G_AudioManager:playSound(Path.getUIVoice("drawcard_touch2"))
     end
 end
 
@@ -130,10 +160,8 @@ function DrawEffectBase2:_checkIsAllCardLight()
     return count == #self._cardNode
 end
 
-
 function DrawEffectBase2:play()
     self:_reset()
-    self._isAction = true 
     G_SignalManager:dispatch(SignalConst.EVENT_TUTORIAL_TOUCH_AUTH_BEGIN)
 end
 
@@ -272,7 +300,9 @@ function DrawEffectBase2:playGuang()
         elseif event == "finish" then
         end
     end
-    local effect = G_EffectGfxMgr:createPlayMovingGfx(self, "moving_lingpai_qptx", 
+    local AudioConst = require("app.const.AudioConst")
+    G_AudioManager:playSound(Path.getUIVoice("drawcard_shine"))
+    local effect = G_EffectGfxMgr:createPlayMovingGfx(self._effectRootNode, "moving_lingpai_qptx", 
         effectFunction, eventFunction , true )
 end
 
@@ -306,7 +336,16 @@ function DrawEffectBase2:_createTouchLayer()
     self._panelFinish:setTouchEnabled(true)
     self._panelFinish:setSwallowTouches(true)
     self._panelFinish:addTouchEventListener(handler(self,self._onFinishTouch))
+    self._panelFinish:setLocalZOrder(DrawEffectBase2.Z_ORDER_TOUCH)
+
     self:addChild(self._panelFinish)
+end
+
+function DrawEffectBase2:_createEffectRootNode()
+    local node = cc.Node:create()
+    node:setLocalZOrder(DrawEffectBase2.Z_ORDER_EFFECT)
+    self:addChild(node)
+    self._effectRootNode = node
 end
 
 return DrawEffectBase2

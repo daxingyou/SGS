@@ -2,16 +2,19 @@ local PopupBase = require("app.ui.PopupBase")
 local PopupGetVipSkinShow = class("PopupGetVipSkinShow", PopupBase)
 local skinConfig = require("app.config.skin")
 local UIHelper = require("yoka.utils.UIHelper")
+local AudioConst = require("app.const.AudioConst")
+local UTF8 = require("app.utils.UTF8")
 
 function PopupGetVipSkinShow:ctor(skinId,callback)
     self._skinId = skinId
     self._callback = callback
     self._isAction = true
-   
+    self._isSharing = false
     PopupGetVipSkinShow.super.ctor(self, nil, false, false)
 end
 
 function PopupGetVipSkinShow:onCreate()
+    G_AudioManager:playSoundWithId(AudioConst.SOUND_POPUP_REARD)
     self:_createTouchLayer()
 
     local icon = UIHelper.createImage({texture = Path.getUICommon("img_skin_bg")})
@@ -42,7 +45,7 @@ function PopupGetVipSkinShow:_createTouchLayer()
 end
 
 function PopupGetVipSkinShow:_onFinishTouch(sender, event)
-    if not self._isAction and event == 2 then
+    if not self._isAction and not self._isSharing and event == 2 then
         if self._callback then
             self._callback()
         end
@@ -72,7 +75,10 @@ end
 function PopupGetVipSkinShow:_biaoti_tx()
     local cfg = skinConfig.get(self._skinId)
     local TypeConst = require("app.i18n.utils.TypeConst")
-    local label = UIHelper.createLabel({text=cfg.name,style="challenge_2_ui4",styleType=TypeConst.TEXT})
+    local content = cfg.name
+    content = UIHelper.convertToVerticalTxt(content)
+
+    local label = UIHelper.createLabel({text=content,style="challenge_2_ui4",styleType=TypeConst.TEXT})
     label:setAnchorPoint(0.5,1)
     label:getVirtualRenderer():setMaxLineWidth(24)
     label:setPositionY(80)
@@ -83,8 +89,10 @@ end
 
 function PopupGetVipSkinShow:_biaotiban_tx()
     local cfg = skinConfig.get(self._skinId)
+    local content = cfg.name
+    content = UIHelper.convertToVerticalTxt(content)
     local image = UIHelper.createImage({})
-    UIHelper.loadCommonBgImageByI18n(image,cfg.name)
+    UIHelper.loadCommonBgImageByI18n(image,content)
     image:setAnchorPoint(0.5,1)
     image:setPositionY(115)
     local node = cc.Node:create()
@@ -93,8 +101,9 @@ function PopupGetVipSkinShow:_biaotiban_tx()
 end
 
 function PopupGetVipSkinShow:_kanbanniang_tx()
-    local cfg = skinConfig.get(self._skinId)
-    local image = Path.getVip2("img_skinshow"..cfg.id)
+    local TypeConvertHelper = require("app.utils.TypeConvertHelper")
+    local itemParams = TypeConvertHelper.convert(TypeConvertHelper.TYPE_POSTER_GIRL_SKIN,self._skinId )
+    local image = itemParams.showImg 
     local sprite = display.newSprite(image)
     return sprite
 end
@@ -131,8 +140,21 @@ function PopupGetVipSkinShow:_createShareLayer()
     self._shareLayer:setContentSize( G_ResolutionManager:getDesignCCSize())
     self._shareLayer:setAnchorPoint( cc.p(0.5, 0.5))
     self._shareLayer:setPosition(cc.p(0,0))
+    self._shareLayer:updateData()
+    self._shareLayer:setShowHideCallback(function(show)
+        self._isSharing = not show
+    end,self)
     ccui.Helper:doLayout(self._shareLayer)
     self:addChild(layer)
+end
+
+
+function PopupGetVipSkinShow:_addControlNode(node)
+    local parentNode = cc.Node:create()
+    parentNode:addChild(node)
+    parentNode:setLocalZOrder(node:getLocalZOrder())
+    parentNode:setName("share_control")
+    return parentNode
 end
 
 

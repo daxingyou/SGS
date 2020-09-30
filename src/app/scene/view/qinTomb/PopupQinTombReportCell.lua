@@ -21,6 +21,13 @@ end
 function PopupQinTombReportCell:onCreate()
 	local size = self._resourceNode:getContentSize()
 	self:setContentSize(size.width, size.height)
+
+	-- i18n ui4
+	if Lang.checkUI("ui4") then
+		local bg = ccui.Helper:seekNodeByName(self._resourceNode, "BG")
+		local img = ccui.Helper:seekNodeByName(bg, "Image_166")
+		img:ignoreContentAdaptWithSize(true)
+	end
 end
 
 --[[

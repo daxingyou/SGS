@@ -555,5 +555,4 @@ end
  
 return HeroDetailBaseView 
 
-
  

@@ -67,7 +67,7 @@ function TutorialTipLayer:showHighLightClick(targetPosition,info)
 
         clippingNode:setStencil(stencil)  
         local contentSize = G_ResolutionManager:getDesignCCSize()
-        local layerColor = cc.LayerColor:create(cc.c4b(0, 0, 0, 127), contentSize.width, contentSize.height )
+        local layerColor = cc.LayerColor:create(cc.c4b(0, 0, 0, 255*0.65), contentSize.width, contentSize.height )
         clippingNode:addChild(layerColor)
 
         clippingNode:setInverted(true)

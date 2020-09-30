@@ -31,6 +31,7 @@ function PopupFirstPayView:onCreate()
     if Lang.checkUI("ui4") then
         self._avatorImg:loadTexture(Path.getFirstChargeUI("charge_ren"))
         self._avatorImg:ignoreContentAdaptWithSize(true)
+        self:_addEffect()
     else
         self._commonStoryAvator:updateUI(302)--小乔
         self._commonStoryAvator:setScale(0.8)
@@ -155,6 +156,11 @@ function PopupFirstPayView:_dealPosByI18n()
 		local UIHelper  = require("yoka.utils.UIHelper")	
         self._listItemSource:setClippingEnabled(false) 
 	end
+end
+
+-- i18n ui4 addEffect
+function PopupFirstPayView:_addEffect()
+	G_EffectGfxMgr:createPlayGfx(self._effectNode, "effect_chulibao_tx")  
 end
 
 return PopupFirstPayView

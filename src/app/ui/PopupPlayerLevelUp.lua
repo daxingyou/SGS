@@ -216,12 +216,13 @@ function PopupPlayerLevelUp:onClose( ... )
 				aa(true)
 			end
 		end
+		crashPrint("[Level Gift] PopupPlayerLevelUp start ")
 		if G_TutorialManager:isDoingStep() == false and G_NewLevelPkgManager:hasPop(LevelPkgConst.CONDITION_LEVEL) then
 			G_SignalManager:dispatch(SignalConst.EVENT_NEW_LEVEL_PKG_OPEN_NOTICE,LevelPkgConst.CONDITION_LEVEL,callback)
 		else
 			callback()
 		end
-		
+		crashPrint("[Level Gift] PopupPlayerLevelUp end ")
 	else
 		if self._callBack then
 			self._callBack(true)

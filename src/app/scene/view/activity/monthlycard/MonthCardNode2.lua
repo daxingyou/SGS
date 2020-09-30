@@ -54,9 +54,11 @@ function MonthCardNode2:_updateDropAwards()
     end
 
     self._dropListView:setMaxItemSize(3)
-    self._dropListView:setListViewSize(350,120)
+    self._dropListView:setListViewSize(280,120)
     self._dropListView:setItemsMargin(1)
-    self._dropListView:updateUI(dropList, 1)
+    self._dropListView:setItemSpacing(3)
+    self._dropListView:updateUI(dropList, 0.6)
+    self._dropListView:setTextItemCountFontSize(26)
 
     local num = table.nums(dropList)
     if num < 3 then

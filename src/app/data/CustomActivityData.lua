@@ -514,7 +514,18 @@ function CustomActivityData:hasActivityCanVisible()
      for k,v in pairs( self._actUnitDataList) do
         -- i18n ja 军团活跃从活动移到任务
         if Lang.checkUI("ui4") then
-            if v:getAct_id() ~= CustomActivityConst.CUSTOM_ACTIVITY_GUILD_ID
+            if CustomActivityConst.CUSTOM_ACTIVITY_TYPE_FUNDS == v:getAct_type() then
+                local bActived, rewardedFinishTime = self:_checkActivedFunds(v:getAct_id())
+                if bActived then
+                    if v:checkFundsActIsVisible(rewardedFinishTime) then
+                        return true
+                    end
+                else
+                    if v:checkActIsVisible() then
+                        return true
+                    end
+                end
+            elseif v:getAct_id() ~= CustomActivityConst.CUSTOM_ACTIVITY_GUILD_ID
                 and not self:_isFourActivity(v) then
                 if v:checkActIsVisible() then
                     return true
@@ -591,7 +602,24 @@ function CustomActivityData:hasRedPoint(params)
         for k,v in pairs(self._actUnitDataList) do
             -- i18n ja 军团活跃从活动移到任务
             if Lang.checkUI("ui4") then
-                if v:getAct_id() ~= CustomActivityConst.CUSTOM_ACTIVITY_GUILD_ID
+                if CustomActivityConst.CUSTOM_ACTIVITY_TYPE_FUNDS == v:getAct_type() then
+                    local bActived, rewardedFinishTime = self:_checkActivedFunds(v:getAct_id())
+                    if bActived then
+                        if v:checkFundsActIsVisible(rewardedFinishTime) then
+                            local red = self:hasRedPointByActId(v:getAct_id())
+                            if red then
+                                return true
+                            end
+                        end
+                    else
+                        if v:checkActIsVisible() then
+                            local red = self:hasRedPointByActId(v:getAct_id())
+                            if red then
+                                return true
+                            end
+                        end
+                    end
+                elseif v:getAct_id() ~= CustomActivityConst.CUSTOM_ACTIVITY_GUILD_ID
                 and not self:_isFourActivity(v) then
                     if v:checkActIsVisible() then
                         local red = self:hasRedPointByActId(v:getAct_id())
@@ -1075,6 +1103,29 @@ function CustomActivityData:_fundsRedPoint(actId)
     elseif table.nums(maskBit) == 0 and bFundsSigned then
         return true
     end
+
+    if Lang.checkUI("ui4") then
+        if bFundsSigned then
+            local signedDay = math.ceil(math.abs(G_ServerTime:getLeftSeconds(taskData.time2_)) / CustomActivityConst.FUNDS_ONEDAY_TIME)
+            local questData = G_UserData:getCustomActivity():getActTaskUnitDataForFundsById(actId)
+            if questData ~= nil then
+                local data = table.values(questData)[1]
+                if data:getQuest_type() == CustomActivityConst.FUNDS_TYPE_WEEKV2 then
+                    local fundsData = G_UserData:getCustomActivity():getFundsByGroupId(data:getParam3())
+                    local days = table.nums(fundsData)
+                    if signedDay > days then
+                        signedDay = days
+                    end
+                    for i = 1, signedDay do
+                        if maskBit[i] == nil then
+                            return true
+                        end
+                    end
+                end
+            end
+        end
+    end
+    
     return false
 end
 

@@ -137,6 +137,9 @@ schema["activityFriendInvite"] = {"table"}
 --i18n ja
 schema["posterGirl"] = {"table"}
 
+-- 名将绘卷
+schema["teamPictureData"] = {"table"}
+
 UserData.schema = schema
 
 --
@@ -271,7 +274,10 @@ function UserData:ctor()
 		mainScene = require("app.data.MainSceneData").new(),
 		activityFriendInvite = require("app.data.ActivityFriendInviteData").new(), -- i18n ja friendInvite
 		--i18n ja
-		posterGirl =  require("app.data.PosterGirlData").new()
+		posterGirl =  require("app.data.PosterGirlData").new(),
+
+		-- 名将绘卷数据
+		teamPictureData = require("app.data.TeamPictureData").new()
 	}
 	UserData.super.ctor(self, properties)
 
@@ -428,6 +434,9 @@ function UserData:clear()
 	self._signalActivityNotice = nil
 	self._signalRecvSellOnlyObjects:remove()
 	self._signalRecvSellOnlyObjects = nil
+
+	-- 名将绘卷
+	self:getTeamPictureData():clear()
 end
 
 -- 重置
@@ -559,6 +568,9 @@ function UserData:reset()
 	self:getActivityFriendInvite():reset()-- i18n ja friendInvite
 	--i18n ja 
 	self:getPosterGirl():reset()
+
+	-- 名将绘卷
+	self:getTeamPictureData():reset()
 end
 
 --
@@ -593,6 +605,10 @@ function UserData:_recvOpObject(id, message)
 			if rawget(hero, "delete") then
 				self:getHero():deleteData(hero.delete)
 			end
+			if rawget(hero, "insert") then
+				G_UserData:getHandBook():c2sGetResPhoto()
+			end
+			
 		end
 	end
 

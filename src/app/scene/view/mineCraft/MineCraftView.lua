@@ -270,6 +270,9 @@ function MineCraftView:_updatePrivilege( ... )
     local bVisible = (vipLimit <= vipLevel)
     self._btnPrivilege:setVisible(bVisible)
     --i18n change function show
+    if Lang.checkLang(Lang.JA) then
+        self._btnPrivilege:setVisible(false)
+    end
 end
 
 function MineCraftView:onExit()

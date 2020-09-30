@@ -57,11 +57,11 @@ function CommonStoryAvatar:unbind(target)
     cc.unsetmethods(target, EXPORTED_METHODS)
 end
 
-function CommonStoryAvatar:updateUI(heroId, limitLevel, limitRedLevel)
+function CommonStoryAvatar:updateUI(heroId, limitLevel, limitRedLevel, setGray)
     local param = TypeConvertHelper.convert(TypeConvertHelper.TYPE_HERO, heroId, nil, nil, limitLevel, limitRedLevel)
     local resData = param.res_cfg
     if resData.story_res_spine ~= 0 then
-        self:_createHeroSpine(resData.story_res_spine)
+        self:_createHeroSpine(resData.story_res_spine, setGray)
         self._imageAvatar:setVisible(false)
     else
         self:_createHeroImage(resData.story_res)
@@ -71,9 +71,9 @@ function CommonStoryAvatar:updateUI(heroId, limitLevel, limitRedLevel)
     end
 end
 
-function CommonStoryAvatar:_createHeroSpine(spineId)
+function CommonStoryAvatar:_createHeroSpine(spineId, setGray)
     if not self._spine then
-        self._spine = require("yoka.node.SpineNode").new(1, cc.size(1024, 1024))
+        self._spine = require("yoka.node.SpineNode").new(1, cc.size(1024, 1024), setGray)
         self._nodeAvatar:addChild(self._spine)
     end
     self._spine:setAsset(Path.getStorySpine(spineId))
@@ -143,7 +143,7 @@ function CommonStoryAvatar:updateChatUI(heroId,limitLevel,limitRedLevel)
         end
 
         local function callback()
-            self:_createPointNode("mouth",heroId)
+            self:_createPointNode("mouth",resData)
         end
         self:_createChatHeroSpine(resData.story_res_spine,callback)
         self._imageAvatar:setVisible(false)
@@ -155,12 +155,16 @@ function CommonStoryAvatar:updateChatUI(heroId,limitLevel,limitRedLevel)
     end
 end
 
-function CommonStoryAvatar:_createPointNode(pointName,heroId)
-    local resData = HeroRes.get(heroId)
+function CommonStoryAvatar:_createPointNode(pointName,resData)
+    -- local resData = HeroRes.get(heroId)
     logWarn("[ CommonStoryAvatar:_createPointNode heroId "..resData.story_res_spine.." pointName "..pointName.." ]")
-    dump(self._spinePoints[pointName])
+    -- dump(self._spinePoints[pointName])
+    if self._spinePoints[pointName] then
+        self._spinePoints[pointName].spinePoint:removeFromParent()
+        self._spinePoints[pointName] = nil
+    end
     
-    assert(self._spinePoints[pointName] == nil,"Spine 已经包含了节点 "..pointName.." 不能重复创建")
+    -- assert(self._spinePoints[pointName] == nil,"Spine 已经包含了节点 "..pointName.." 不能重复创建")
     
     local parent        = self._spine:getSpinePoint(pointName)
 
@@ -321,5 +325,6 @@ end
 function CommonStoryAvatar:_playAnim(anim, isLoop, isReset)
     self._spine:setAnimation(anim, isLoop, isReset)
 end
+
 
 return CommonStoryAvatar

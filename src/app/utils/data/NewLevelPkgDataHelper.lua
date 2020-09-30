@@ -37,6 +37,15 @@ function NewLevelPkgDataHelper.getNewLevelPkgMainIconData()
             end
         end
     end
+    table.sort(mainIconData.list,function(left,right)
+        if left.endTime ~= right.endTime then
+            return left.endTime < right.endTime
+        elseif left.condition ~= right.condition then
+            return left.condition < right.condition
+        else
+            return left.conditionValue < right.conditionValue
+        end
+    end)
     return mainIconData
 end
 

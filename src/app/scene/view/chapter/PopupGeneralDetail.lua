@@ -156,6 +156,30 @@ end
 
 --i18n
 function PopupGeneralDetail:_createListViewByI18n()
+    if Lang.checkUI("ui4") then
+        self._textDetail:ignoreContentAdaptWithSize(true)
+        self._textDetail:setTextAreaSize(cc.size(561, 0))
+        local renderLabel = self._textDetail:getVirtualRenderer()
+        local labelSize = renderLabel:getContentSize()
+        labelSize.height = math.max(113,labelSize.height+10)
+        local scrollView = ccui.ScrollView:create()
+        scrollView:setDirection(ccui.ScrollViewDir.vertical)
+        scrollView:setScrollBarEnabled(false)
+        local scrollSize = cc.size(561, 113)
+        scrollView:setContentSize(scrollSize)
+        local parent = self._textDetail:getParent()
+        local x,y = self._textDetail:getPosition()
+        self._textDetail:retain()
+        self._textDetail:removeFromParent()
+        scrollView:addChild(self._textDetail)
+        self._textDetail:release()
+        scrollView:setAnchorPoint(cc.p(0.5,0.5))
+        scrollView:setPosition(x,y)
+        self._textDetail:setAnchorPoint(cc.p(0,1))
+        self._textDetail:setPosition(0,labelSize.height-5)
+        scrollView:setInnerContainerSize(labelSize)
+        parent:addChild(scrollView)
+    end
 end
 
 

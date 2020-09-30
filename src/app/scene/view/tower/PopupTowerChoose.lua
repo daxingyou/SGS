@@ -108,7 +108,7 @@ function PopupTowerChoose:_onChallengeClick(difficulty)
     end
 end
 
-function PopupTowerChoose:_onEventExecute(eventName, message)
+function PopupTowerChoose:_onEventExecute(eventName, message, historyStar)
     -- local ReportParser = require("app.fight.report.ReportParser")
     -- local reportData = ReportParser.parse(message.battle_report)
     -- local battleData = require("app.utils.BattleDataHelper").parseChallengeTowerData(message, self._layerConfig, self._fightDifficulty)
@@ -126,7 +126,11 @@ function PopupTowerChoose:_onEventExecute(eventName, message)
         local ReportParser = require("app.fight.report.ReportParser")
         local battleReport = G_UserData:getFightReport():getReport()
         local reportData = ReportParser.parse(battleReport)
-        local battleData = require("app.utils.BattleDataHelper").parseChallengeTowerData(message, self._layerConfig, self._fightDifficulty)
+        -- i18n ja 加保护
+        if message == nil or self._layerConfig == nil or self._fightDifficulty == nil then
+            return
+        end
+        local battleData = require("app.utils.BattleDataHelper").parseChallengeTowerData(message, self._layerConfig, self._fightDifficulty, historyStar)
         G_SceneManager:showScene("fight", reportData, battleData)
 
         -- if  not message.battle_report.is_win then

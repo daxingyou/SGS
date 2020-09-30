@@ -684,4 +684,22 @@ function ServerTimeManager:getBannerTimeString(t)
     return string.format("%02d/%02d %02d:%02d", localdate.month, localdate.day,localdate.hour, localdate.min)
 end
 
+--i18n ja 打印函数执行时间
+function ServerTimeManager:millisecondNow(type, id)
+    local socket = G_SocketManager --require "socket"
+
+    id = (id == nil) and "" or id
+    if type == 1 then
+        self._start_time = G_ServerTime:getMSTime()
+        release_print(id .. " start time: "..self._start_time  .."ms \n")
+    elseif type == 2 then  
+        self._end_time = G_ServerTime:getMSTime()
+        local use_time = (self._end_time - self._start_time ) 
+        release_print(id .. " used time: "..use_time .."ms --------------------------------------------------------------------------------- \n")
+    end  
+end  
+
 return ServerTimeManager
+
+
+ 

@@ -24,7 +24,7 @@ function PopupHomelandUpResult:ctor(power)
 end
 
 function PopupHomelandUpResult:onCreate()
-	self.currLevel =  G_UserData:getHomeland():getMainTreeLevel()
+    self.currLevel =  G_UserData:getHomeland():getMainTreeLevel()
 	self.currData =  G_UserData:getHomeland():getMainTreeCfg(self.currLevel - 1)
 	self.nextData =  G_UserData:getHomeland():getMainTreeCfg(self.currLevel)
 end
@@ -162,6 +162,9 @@ end
 --添加特效节点
 function PopupHomelandUpResult:_initEffectByI18n()
 	if Lang.checkUI("ui4") then	
+		--多了一层遮罩
+		local panel1 =	ccui.Helper:seekNodeByName(self._resourceNode, "Panel_1")
+		panel1:setVisible(false)
 		local pos = {
 			50,15,-20,-55,-90,-125
 		}

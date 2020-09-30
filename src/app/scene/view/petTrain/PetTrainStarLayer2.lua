@@ -428,7 +428,7 @@ end
 
 function PetTrainStarLayer:_playEffect()
 	local function eventFunctionBo(event)
-		if event == "finish" and self and self._petId then
+		if event == "bao" and self and self._petId then
 			local popupBreakResult = require("app.scene.view.petTrain.PopupPetBreakResult2").new(self, self._petId)
 			popupBreakResult:open()
 			

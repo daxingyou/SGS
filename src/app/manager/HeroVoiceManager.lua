@@ -47,6 +47,36 @@ function HeroVoiceManager:playVoiceWithHeroId(heroId, must, avatar)
 	end
 end
 
+
+
+-- i18n ja 播放口型动画
+function HeroVoiceManager:playShowVoiceWithHeroId(heroId, must, avatar)
+	local res,sound = HeroAudioHelper.getShowVoiceRes(heroId)
+
+	local function play()
+		if self._curHeroVoice then
+			G_AudioManager:stopSound(self._curHeroVoice)
+		end
+		local voice = nil
+		if res then
+			voice = G_AudioManager:playSound(res)
+			if avatar and avatar.startTalk then
+				avatar:startTalk(sound)
+			end
+		end
+		
+		self._curHeroVoice = voice
+		self._curHeroId = heroId
+	end
+
+	if must then --一定播
+		play()
+	elseif heroId ~= self._curHeroId then
+		play()
+	end
+end
+
+
 -- i18n ja change voice  （备注：若传actionId，则播放actionId对应音效， 否则播放秀将动作对应音效）
 function HeroVoiceManager:playSpineVoiceWithHeroId(heroId, must, actionId)
 	local res = HeroAudioHelper.getVoiceByAction(heroId, actionId)
@@ -104,7 +134,7 @@ function HeroVoiceManager:startPlayMainMenuVoice()
 	local heroIds = G_UserData:getTeam():getHeroBaseIdsInBattle()
 
 	local function getInterval()
-		return math.random(15, 20)
+		return math.random(25, 30)
 	end
 
 	local function playHeroVoice()
@@ -137,8 +167,10 @@ function HeroVoiceManager:stopPlayMainMenuVoice()
 end
 
 -- i18n ja 看板娘说话start
-function HeroVoiceManager:playVoiceWithHeroId2(data,avatar)
-	local voiceCfg = data:getHeroResConfig().voice
+function HeroVoiceManager:playVoiceWithHeroId2(resId,avatar)
+	local resCfg = require("app.config.hero_res").get(resId)
+	local voiceCfg = resCfg.voice
+	-- local voiceCfg = data:getHeroResConfig().voice
 	local res
 	local sound = ""
     if voiceCfg ~= "" then
@@ -167,14 +199,14 @@ function HeroVoiceManager:playVoiceWithHeroId2(data,avatar)
 	play()
 end
 
-function HeroVoiceManager:startPlayMainMenuVoice2(data,avatar)
+function HeroVoiceManager:startPlayMainMenuVoice2(resId,avatar)
 	local function getInterval()
-		return math.random(15, 20)
+		return math.random(25, 30)
 	end
 
 	local function playHeroVoice()
 		if self._isInMainMenu then
-			self:playVoiceWithHeroId2(data,avatar)
+			self:playVoiceWithHeroId2(resId,avatar)
     	end
 	end
 

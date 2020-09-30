@@ -76,6 +76,7 @@ function HeadFrameData:initFrameData( ... )
 			time_type = 7,    --时间类型-int 
 			time_value = 8,    --时间类型值-int 
 			des = 9,    --条件描述-string 
+			priority = 10,    -- i18n ja 排序-int 
 	    }
 
 	    for k,v in pairs(keyMap) do
@@ -97,6 +98,19 @@ end
 
 
 function HeadFrameData:_sortFrameList( ... )
+	-- i18n ja 头像框排序
+	table.sort(self._headFrameList,function ( a,b )
+		if a:isHave() == b:isHave() then
+			if a:getPriority() == b:getPriority() then
+				return a:getId() > b:getId()
+			else
+				return a:getPriority() > b:getPriority()
+			end
+		else
+			return a:isHave()
+		end
+	end)
+	do return end
 	table.sort(self._headFrameList,function ( a,b )
 		-- local curA = a:getId() == 1 and 0 or 1  -- 默认的排在第一个
 		-- local curB = b:getId() == 1 and 0 or 1

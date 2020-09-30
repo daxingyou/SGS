@@ -81,15 +81,18 @@ function UserSettingData:initMusic()
     local isChange = false
     if data["musicEnabled"] == nil then
         data["musicEnabled"] = 1
+        data["mus_volume"] = 0.5    -- i18n ja 默认音量
         isChange = true
     end
     if data["soundEnabled"] == nil then
         data["soundEnabled"] = 1
+        data["sou_volume"] = 0.75   -- i18n ja 默认音量
         isChange = true
     end
     if Lang.checkUI("ui4") then
         if data["vcEnabled"] == nil then
             data["vcEnabled"] = 1
+            data["vc_volume"] = 1   -- i18n ja 默认音量
             isChange = true
         end
     end

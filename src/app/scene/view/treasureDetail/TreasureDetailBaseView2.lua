@@ -300,6 +300,7 @@ function TreasureDetailBaseView:checkRedPoint(nIndex)
 	local treasureId = G_UserData:getTreasure():getCurTreasureId()
 	local unitData = G_UserData:getTreasure():getTreasureDataWithId(treasureId)
  
+	self:_checkInfoRedPoint(unitData)
 	if nIndex ~= nil then
 		if self._tabList[nIndex] then
 			local reach = RedPointHelper.isModuleSubReach(FunctionConst["FUNC_TREASURE_TRAIN_TYPE"..nIndex], "slotRP", unitData)
@@ -320,6 +321,12 @@ function TreasureDetailBaseView:checkRedPoint(nIndex)
  	-- 刷新4个装备状态(写在上层 不用每个类都处理)
 	local scene = G_SceneManager:getTopScene()   
 	scene:getSceneView():_updateTreasure()  
+end
+
+-- 策划需求：如果装备可更换时， 信息页签要显示红点
+function TreasureDetailBaseView:_checkInfoRedPoint(unitData) 
+	local reach = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_TREASURE, "slotRP", {pos = unitData:getPos(), slot = unitData:getSlot()})
+	self._buttonInfo:showRedPoint(reach)
 end
  
 -- 回调

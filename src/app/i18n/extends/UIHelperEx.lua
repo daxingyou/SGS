@@ -256,6 +256,18 @@ function UIHelperEx.setLabelStyle(label,param)
 
 end
 
+function UIHelperEx.seekNodeListByName(node,name,list)
+    if not node or not name or not list then
+        return 
+    end
+    if node:getName() == name then
+        table.insert(list, node)
+    end
+    
+    for k,v in ipairs(node:getChildren()) do
+        UIHelperEx.seekNodeListByName(v,name,list)
+    end
+end
 
 
 function UIHelperEx.seekNodeByNameEx(node,name)
@@ -278,6 +290,7 @@ function UIHelperEx.seekNodeByNameEx(node,name)
     
     return nil
 end
+
 
 function UIHelperEx.seekNodeByName(node,...)
     local param = {...}
@@ -663,4 +676,21 @@ function UIHelperEx.getUTF8TxtList(content,wordNum)
     end
     dump(tempList)
     return tempList
+end
+
+function UIHelperEx.convertToVerticalTxt(content)
+    if Lang.checkLang(Lang.JA) then
+        local UTF8 = require("app.utils.UTF8")
+        content = string.gsub(content, ":", UTF8.unicode_to_utf8("\\u2025"))
+        content = string.gsub(content, "%[", UTF8.unicode_to_utf8("\\uFE47"))
+        content = string.gsub(content, "%]", UTF8.unicode_to_utf8("\\uFE48"))
+        content = string.gsub(content, "。", UTF8.unicode_to_utf8("\\uFE12"))
+        content = string.gsub(content, "ー", UTF8.unicode_to_utf8("\\uFE31") )
+        content = string.gsub(content, "『", UTF8.unicode_to_utf8("\\uFE43") )
+        content = string.gsub(content, "』", UTF8.unicode_to_utf8("\\uFE44") )
+        --content = string.gsub(content, "、", UTF8.unicode_to_utf8("\\uFE11") )
+        
+        return content
+    end
+    return content
 end

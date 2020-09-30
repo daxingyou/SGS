@@ -41,6 +41,10 @@ function PopupHistoryHeroDetail:onCreate()
 	self["historicalDetailView"]:updateScrollHeight()
 	self._nodeLayer:addChild(self["historicalDetailView"])
 	-- self:_updateDetailLayer()
+
+	if Lang.checkUI("ui4") then  -- i18n ja change font size
+		self._btnWayGet:setFontSize(26)
+	end
 end
 
 function PopupHistoryHeroDetail:onEnter()

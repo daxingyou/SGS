@@ -100,7 +100,7 @@ function AnswerClientEnd:_dealI18n()
 		text:setContentSize(cc.size(200,100))
 		--text:setPositionX(text:getPositionX()-14)
 		if Lang.checkLang(Lang.JA) then
-			text:setFontSize(18)
+			text:setFontSize(17)
 			self._textTimeDesc:setAnchorPoint(1,0)
 			self._textTimeDesc:setPositionX(205)
 		end

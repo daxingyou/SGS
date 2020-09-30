@@ -973,5 +973,12 @@ function UIPopupHelper.popupAwardsBackgroundSkin(callback,skinAwards,bShowScene)
 	showAwards()
 end
 
+-- 名将绘卷弹窗
+function UIPopupHelper.popupActivate(type, info)
+	local PopupActivate = require("app.scene.view.teamPictureScroll.PopupActivate")
+	local popupActivate = PopupActivate.new(type, info)
+	popupActivate:open()
+end
+
 return UIPopupHelper
 

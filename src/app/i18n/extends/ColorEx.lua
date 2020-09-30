@@ -32,6 +32,7 @@ ColorEx.EffectStyle =
 -- @data  typeConst 对应类型 size：文字大小 outlineSize：描边大小 color:颜色 outlineColor：描边颜色
 ColorEx.TextStyle =
 {
+    ["skill_ui4"] = { typeConst = TypeConst.FONT_TITLE, size = 28, color = cc.c3b(0xf3, 0xc1, 0x02)},   --技能文本
     ["skill"] = { typeConst = TypeConst.FONT_TITLE, size = 30, outlineSize = 3, color = cc.c3b(0xff, 0xe4, 0x03), outlineColor =  cc.c3b(0x8c, 0x2e, 0x00)},   --技能文本
     ["city"] = { typeConst = TypeConst.FONT_TITLE, size = 46, outlineSize = 3, color = cc.c3b(0xff, 0xf2, 0x66), outlineColor =  cc.c3b(0xa8, 0x54, 0x07)},   --章节文本
     ["talent"] = { typeConst = TypeConst.FONT_TITLE, size = 36, outlineSize = 2, color = cc.c3b(0xff, 0xed, 0x50), outlineColor =  cc.c3b(0x8e, 0x29, 0x00)},   --被动技能文本
@@ -129,6 +130,7 @@ ColorEx.TextStyle =
     ["challenge_3"] = { typeConst = TypeConst.FONT_TITLE, size = 24, outlineSize = 2, color = cc.c3b(0x95 , 0x79  , 0x5a ), outlineColor =  cc.c3b(0x19 , 0x0e , 0x0e )},   -- 暗色    1.宝物精炼石 2.宝物经验 3.突破丹 4.神兵进阶石 5.神兽经验 6.武将经验 7.银两 8.装备精炼石
     ["challenge_2_ui4"] = { typeConst = TypeConst.FONT_TITLE, size = 22, color = cc.c3b(0xff , 0xfc  , 0xd0 )},   --    1.宝物精炼石 2.宝物经验 3.突破丹 4.神兵进阶石 5.神兽经验 6.武将经验 7.银两 8.装备精炼石
     ["challenge_3_ui4"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0x99 , 0x97  , 0x7d )},   -- 暗色    1.宝物精炼石 2.宝物经验 3.突破丹 4.神兵进阶石 5.神兽经验 6.武将经验 7.银两 8.装备精炼石
+    ["challenge_4_ui4"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xe7, 0xe7, 0xe7)},   -- 暗色    日常副本新暗色
     ["guild_1"] = { typeConst = TypeConst.FONT_TITLE, size = 24, outlineSize = 2, color = cc.c3b(0xfb , 0xcf  , 0x31 ), outlineColor =  cc.c3b(0x64 , 0x24 , 0x01 )},   -- 黄色    
     ["guild_2"] = { typeConst = TypeConst.FONT_TITLE, size = 24, outlineSize = 2, color = cc.c3b(0x95 , 0x79  , 0x5a ), outlineColor =  cc.c3b(0x19 , 0x0e , 0x0e )},   -- 暗色   
     ["countryboss_1"] = { typeConst = TypeConst.FONT_NORMAL, size = 18, outlineSize = 2, color = cc.c3b(0xff , 0xd5  , 0x47 ), outlineColor =  cc.c3b(0x93 , 0x33 , 0x09 )},  -- 三国战纪 1.个人积分
@@ -227,9 +229,9 @@ ColorEx.TextStyle =
      ["homeland_tree_ui4_8"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0xe3  , 0x00), outlineColor =  cc.c3b(0xcc  , 0x74  , 0x2a  )},   -- 家园 神树8阶
      ["homeland_tree_ui4_9"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0xb0  , 0x00), outlineColor =  cc.c3b(0xbc  , 0x43  , 0x00  )},   -- 家园 神树9阶
      ["homeland_tree_ui4_10"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0x6f  , 0x80), outlineColor =  cc.c3b(0xa2  , 0x09  , 0x26  )},   -- 家园 神树10阶
-     ["homeland_tree_ui4_11"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0x47  , 0x47), outlineColor =  cc.c3b(0x95  , 0x15  , 0x00  )},   -- 家园 神树11阶
-     ["homeland_tree_ui4_12"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0xaa  , 0xae), outlineColor =  cc.c3b(0xa7  , 0x0e  , 0x0f  )},   -- 家园 神树12阶  
-     ["homeland_tree_ui4_13"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xf4 , 0xf4  , 0x80), outlineColor =  cc.c3b(0xee  , 0x5b  , 0x26  )},   -- 家园 神树13阶 
+     ["homeland_tree_ui4_11"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0x60  , 0x5b), outlineColor =  cc.c3b(0xb6  , 0x26  , 0x24  )},   -- 家园 神树11阶
+     ["homeland_tree_ui4_12"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xfe , 0x4c  , 0x48), outlineColor =  cc.c3b(0xa8  , 0x18  , 0x00  )},   -- 家园 神树12阶  
+     ["homeland_tree_ui4_13"] = { typeConst = TypeConst.FONT_TITLE, size = 22, outlineSize = 2, color = cc.c3b(0xff , 0x56  , 0x2d), outlineColor =  cc.c3b(0xb8  , 0x24  , 0x00  )},   -- 家园 神树13阶 
  
      
      ["homeland_4"] = { typeConst = TypeConst.FONT_TITLE, size = 20, outlineSize = 1, color = cc.c3b(0x90, 0xff  , 0x14), outlineColor =  cc.c3b(0x0e  , 0x47  , 0x03  )},   -- 家园 绿色 拜访 返回 
@@ -397,7 +399,7 @@ ui4_TextStyle["ranking_1_ja"] = { typeConst = TypeConst.FONT_TITLE, size = 32, o
 ui4_TextStyle["ranking_2_ja"] = { typeConst = TypeConst.FONT_TITLE, size = 32, outlineSize = 2, color = cc.c3b(0xfa , 0xd4  , 0x5f ), outlineColor =  cc.c3b(0xd6  , 0x52  , 0x01  )}   -- 标签 胜利
 ui4_TextStyle["text_explore_1_ja"] = {typeConst = TypeConst.FONT_TITLE,size = 24,color = cc.c3b(0xff,0xfa,0xe5) }   -- 5折出售
 ui4_TextStyle["text_Rlevel_ja"] = { typeConst = TypeConst.FONT_TITLE, size = 20, outlineSize = 2, color = cc.c3b(0xa8 , 0xff  , 0x00 ), outlineColor =  cc.c3b(0x32  , 0x69  , 0x11  )}  -- icon精炼等级
-
+ui4_TextStyle["activity_limit_3_ja"] = { typeConst = TypeConst.FONT_NORMAL, size = 20, color = cc.c3b(0xa8, 0xff, 0x00) }  -- 限时活动 活动剩余 新换的字体和颜色
 
 
 

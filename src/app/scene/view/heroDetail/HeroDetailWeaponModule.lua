@@ -37,7 +37,8 @@ function HeroDetailWeaponModule:onCreate()
 	self._nodeTitle:setTitle(Lang.get("hero_detail_title_weapon"))
 	if Lang.checkUI("ui4") then -- i18n ja change
         ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):loadTexture(Path.getTextTeam("img_zr_di03"))
-        ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):setContentSize(cc.size(398, 37))  
+		ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):setContentSize(cc.size(398, 37))  
+		self._panelBg:removeBackGroundImage() 	
 	end
 	self._buttonAdvance:setString(Lang.get("hero_detail_btn_advance"))
 

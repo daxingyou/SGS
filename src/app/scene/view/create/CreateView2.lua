@@ -7,6 +7,9 @@ local CSHelper = require("yoka.utils.CSHelper")
 function CreateView2:ctor()
     self._selectIdx = 0
     self._defaultName = nil
+    self._sex = 1
+
+    self:_seekActivateCodeName()
 
     local resource = {
         file = Path.getCSB("CreateView2", "create"),
@@ -23,9 +26,20 @@ function CreateView2:ctor()
     CreateView2.super.ctor(self, resource, 9999)
 end
 
+function CreateView2:_seekActivateCodeName()
+    local config = G_UserData:getCreateRole():getActivationCodeConfig()
+    if not config then
+        return
+    end
+    self._sex = config.gender
+end
+
 function CreateView2:onCreate()
-  
-    self:_onMaleClick()
+    if self._sex == 1 then
+        self:_onMaleClick()
+    else
+        self:_onFemaleClick()
+    end
 end
 
 function CreateView2:onEnter()
@@ -127,10 +141,43 @@ function CreateView2:_createUI()
             if self._selectIdx == 2 then
                 id = 998
             end
-            local spineNode = require("yoka.node.SpineNode").new(1)
-            spineNode:setAsset(Path.getStorySpine(id))
-            spineNode:setAnimation("idle", true)
-            return spineNode
+            local heroId = 0
+            local posY
+            local scale
+            if self._selectIdx == 1 then
+                heroId = 1 --男
+                posY = -260
+                scale = 1/0.88
+            else
+                heroId = 11 --女
+                posY = -240
+                scale = 1/0.94
+            end
+            local spineNode = CSHelper.loadResourceNode(Path.getCSB("CommonStoryAvatar", "common"))
+            spineNode:updateChatUI(heroId)
+            spineNode:startTalk(self._selectIdx == 1 and  "1_voice7" or 
+            "11_voice8",true)
+            spineNode:setPositionY(posY)
+            spineNode:setScale(scale)
+           
+
+            -- if self._nowPlayId then
+            --     G_AudioManager:stopSound(self._nowPlayId)
+            --     self._nowPlayId = nil
+            -- end
+            -- self._nowPlayId = G_AudioManager:playSound(Path.getHeroVoice(self._selectIdx == 1 and  "1_voice7" or 
+            --     "11_voice8"
+            -- ))
+            -- local spineNode = require("yoka.node.SpineNode").new(1)
+            -- spineNode:setAsset(Path.getStorySpine(id))
+            -- spineNode:setAnimation("idle", true)
+           
+            local node = cc.Node:create()
+            if self._selectIdx == 1 then
+                spineNode:setScaleX(-spineNode:getScaleX())
+            end
+            node:addChild(spineNode)
+            return node
   --[[
             local id = 1
             if self._selectIdx == 2 then

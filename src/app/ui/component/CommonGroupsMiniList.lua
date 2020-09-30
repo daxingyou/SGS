@@ -223,7 +223,9 @@ function CommonGroupsMiniList:_adjustPosByI18n()
 	-- i18n ja font size
 	if Lang.checkLang(Lang.JA) then
 		local UIHelper  = require("yoka.utils.UIHelper")
-		UIHelper.seekNodeByName(self._imageBg ,"TextAwardTips"):setFontSize(20)	
+		local awardTips = UIHelper.seekNodeByName(self._imageBg ,"TextAwardTips")
+		awardTips:setFontSize(19)	
+		awardTips:setPositionX(awardTips:getPositionX() + 3)
 	end
 end
 

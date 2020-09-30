@@ -53,7 +53,8 @@ TopBarStyleConst.STYLE_TEN_JADE_AUCTION = 35
 TopBarStyleConst.STYLE_RED_PET_ACTIVITY = 36
 TopBarStyleConst.STYLE_VIP = 38 --i18n ja
 TopBarStyleConst.STYLE_BACKGROUND = 39 --i18n ja
-TopBarStyleConst.STYLE_END = 39
+TopBarStyleConst.STYLE_TERRITORY = 40 --i18n ja
+TopBarStyleConst.STYLE_END = 40
 
 
 TopBarStyleConst.BG_TYPE_COMMON = 1
@@ -311,6 +312,14 @@ TopBarStyleConst.STYLE_VALUE[TopBarStyleConst.STYLE_BACKGROUND] = {
 	[2] = {type = TypeConvertHelper.TYPE_RESOURCE, value = DataConst.RES_GOLD},
 	[3] = {type = TypeConvertHelper.TYPE_RESOURCE, value = DataConst.RES_DIAMOND},
     [4] = {type = TypeConvertHelper.TYPE_RESOURCE, value = DataConst.RES_JADE2}
+}
+
+--i18n ja 领地巡逻
+TopBarStyleConst.STYLE_VALUE[TopBarStyleConst.STYLE_TERRITORY] = {
+	[1] = {type = TypeConvertHelper.TYPE_RESOURCE, value = DataConst.RES_VIT},
+	[2] = {type = TypeConvertHelper.TYPE_POWER, value = DataConst.RES_POWER},
+	[3] = {type = TypeConvertHelper.TYPE_RESOURCE, value = DataConst.RES_GOLD},
+	[4] = {type = TypeConvertHelper.TYPE_RESOURCE, value = DataConst.RES_DIAMOND}
 }
 --------------------------------------------------------------------------
 

@@ -49,7 +49,9 @@ end
 function PopupCampMap:onCreate()
 	self:_initData()
 	self:_initView()
-
+	if Lang.checkLang(Lang.JA) then
+		self._imageCamp:setPositionY(self._imageCamp:getPositionY()+3)
+	end
 	-- i18n change lable
 	self:_swapImageByI18n()
 end

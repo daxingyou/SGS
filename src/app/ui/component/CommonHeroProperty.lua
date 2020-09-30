@@ -206,12 +206,18 @@ function CommonHeroProperty:updateUI(heroId, heroBaseId, rangeType, limitLevel, 
 
 	local moduleKey = self:_getModuleKey()
     self:_updateListView()
-    local index, isInBottom = self:_getLocationIndex(moduleKey)
-    if isInBottom then
-    	self._listView:jumpToBottom()
-    else
-    	self._listView:jumpToItem(index, cc.p(0, 1), cc.p(0, 1))
-    end
+	local index, isInBottom = self:_getLocationIndex(moduleKey)
+	
+	-- i18n ja change font size
+	if Lang.checkUI("ui4") then
+		self._listView:jumpToTop()
+	else  
+		if isInBottom then
+			self._listView:jumpToBottom()
+		else
+			self._listView:jumpToItem(index, cc.p(0, 1), cc.p(0, 1))
+		end
+	end
   
 	self._heroName2:setName(self._heroUnitData:getBase_id(), rank, limitLevel, nil, limitRedLevel)
 end

@@ -151,7 +151,7 @@ function PopupNewFunction:_createActionNode(effect)
 					name = "label2",
 					text = Lang.get("common_txt_open_new_func2",{ fuc_name = self._funcInfo.name}),
 					fontSize = 18,
-					color = Colors.getATypeGreen(),
+					color = cc.c3b(0xa8,0xff,0x00),
 					spaceX = spaceX,
 				},
 				[3] ={

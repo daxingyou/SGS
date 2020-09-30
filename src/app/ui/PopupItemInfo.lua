@@ -96,10 +96,20 @@ function PopupItemInfo:updateUI(itemType, itemId)
 		self._itemOwnerCount:setVisible(true)
 	end
 	self._itemDesc:setString(itemParams.cfg.description)
+	if Lang.checkUI("ui4") then
+		if itemType == TypeConvertHelper.TYPE_MAIN_SCENE then
+			local text = itemParams.cfg.description..string.gsub(itemParams.cfg.description_1,"#num#",itemParams.cfg.size_0)
+			self._itemDesc:setString(text)
+		end
+	end
 	local desRender = self._itemDesc:getVirtualRenderer()
 	desRender:setWidth(272)
 	if Lang.checkUI("ui4") then
-		desRender:setWidth(402)
+		if  itemType == TypeConvertHelper.TYPE_TITLE or itemType == TypeConvertHelper.TYPE_MAIN_SCENE then
+			desRender:setWidth(350)
+		else
+			desRender:setWidth(402)
+		end
 	end
 	local scrollViewSize = self._scrollView:getContentSize()
 	local desSize = desRender:getContentSize()

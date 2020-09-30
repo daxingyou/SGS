@@ -36,6 +36,17 @@ end
 function InstrumentLimitCostPanel:onCreate()
 	self:_initData()
 	self:_initView()
+	self:_screenAdaptation()
+end
+
+function InstrumentLimitCostPanel:_screenAdaptation()  
+    --多机型适配位置
+    local scene = G_SceneManager:getTopScene()   
+    local view = scene:getSceneView()
+    local _listView = ccui.Helper:seekNodeByName(view, "_listView")  
+    local newWorldPos = _listView:getParent():convertToWorldSpace(cc.p(_listView:getPositionX(), _listView:getPositionY()))
+    newWorldPos = self._imageBg:getParent():convertToNodeSpace(cc.p(newWorldPos.x - 326 - 4, newWorldPos.y - 5)) 
+    self._imageBg:setPosition(newWorldPos)
 end
 
 function InstrumentLimitCostPanel:_initData()
@@ -60,6 +71,7 @@ function InstrumentLimitCostPanel:_initView()
 	table.insert(self._items, item)
 	table.insert(self._itemIds, itemId)
 
+	self._panelTouch:setScale(3)
 	self._panelTouch:setContentSize(G_ResolutionManager:getDesignCCSize())
 	self._panelTouch:addClickEventListener(handler(self, self._onClickPanel)) --避免0.5秒间隔
 end

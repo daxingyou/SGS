@@ -36,6 +36,8 @@ function HeroListView:onCreate()
 
 	-- i18n change lable
 	self:_swapImageByI18n()
+	-- i18n ja 回收
+	self:_showRecycleBtnI18n()
 
 	self:_initTabGroup()
 end
@@ -61,6 +63,8 @@ function HeroListView:onExit()
 		self._signalSellObjects:remove()
 		self._signalSellObjects = nil
 	end
+
+	G_UserData:getItems():setCurSelectItemId(0)  -- i18n ja 道具背包点击杜康酒进行跳转至武将背包，需要屏蔽男/女主角
 end
 
 function HeroListView:_onEventRedPointUpdate(event,funcId,param)
@@ -137,6 +141,16 @@ function HeroListView:_updateView()
 		self._tabListView:updateListView(self._selectTabIndex, self._count, scrollViewParam)
 		self._fileNodeEmpty:setVisible(false)
 	end
+	-- i18n ja 回收
+	if Lang.checkUI("ui4") then
+		local FunctionCheck = require("app.utils.logic.FunctionCheck")
+		local isOpen = FunctionCheck.funcIsOpened(FunctionConst.FUNC_RECYCLE)
+		if isOpen then
+			self._buttonRecycle:setVisible(self._selectTabIndex == HeroConst.HERO_LIST_TYPE1)
+		else
+			self._buttonRecycle:setVisible(false)
+		end
+	end
 end
 
 function HeroListView:_getEmptyType()
@@ -154,8 +168,27 @@ function HeroListView:_initData()
 	self._datas = {}
 	if self._selectTabIndex == HeroConst.HERO_LIST_TYPE1 then
 		self._datas = G_UserData:getHero():getListDataBySort()
+		self:_deletLeaderDataByItem()	-- i18n ja 道具背包点击杜康酒进行跳转至武将背包，需要屏蔽男/女主角
 	elseif self._selectTabIndex == HeroConst.HERO_LIST_TYPE2 then
 		self._datas = G_UserData:getFragments():getFragListByType(1, G_UserData:getFragments().SORT_FUNC_HEROLIST)
+	end
+
+	self._count = math.ceil(#self._datas / 2)
+end
+
+-- i18n ja 道具背包点击杜康酒进行跳转至武将背包，需要屏蔽男/女主角
+function HeroListView:_deletLeaderDataByItem()
+	if not Lang.checkUI("ui4") then
+		return
+	end
+
+	local isHave = false
+	local itemId = G_UserData:getItems():getCurSelectItemId() 
+	if itemId == 61 or itemId == 62 or itemId == 63 or itemId == 64 then
+		local data = clone(self._datas)  -- 要clone 因为是._data是全局的
+		table.remove(data, 1)
+		self._datas = data
+		isHave = true
 	end
 
 	self._count = math.ceil(#self._datas / 2)
@@ -164,6 +197,7 @@ end
 function HeroListView:_onItemUpdate(item, index)
 	logWarn("HeroListView:_onItemUpdate "..(index+1))
 	local index = index * 2
+
 	item:update(self._datas[index + 1], self._datas[index + 2])
 end
 
@@ -234,5 +268,23 @@ function HeroListView:_swapImageByI18n()
 	end
 end
 
+-- i18n ja 回收
+function HeroListView:_showRecycleBtnI18n()
+	if Lang.checkUI("ui4") then
+		local UIHelper  = require("yoka.utils.UIHelper")
+		self._buttonRecycle = self._buttonSale:clone()
+		local parent = self._buttonSale:getParent()
+		parent:addChild(self._buttonRecycle)
+		self._buttonRecycle:setVisible(true)
+		local label = UIHelper.seekNodeByName(self._buttonRecycle,"Image_21")
+		local funcInfo = require("app.config.function_level").get(FunctionConst.FUNC_RECYCLE)
+		label:setString(funcInfo.name)
+		self._buttonRecycle:loadTextureNormal(Path.getCommonIcon("main", funcInfo.icon))
+		self._buttonRecycle:addClickEventListenerEx(function ()
+			local RecoveryConst = require("app.const.RecoveryConst")
+			G_SceneManager:showScene("recovery", RecoveryConst.RECOVERY_TYPE_1)
+		end)
+	end
+end
 
 return HeroListView

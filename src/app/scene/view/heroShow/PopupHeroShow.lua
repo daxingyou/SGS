@@ -59,7 +59,7 @@ function PopupHeroShow:ctor(heroId, callback, needAutoClose, isRight,isFight)
     self._isSkipShow = false
     self._isShareShow = true
     self._isNewShow = true
-    self._shareContrlNodeList = {}
+    self._isSharing = false
     PopupHeroShow.super.ctor(self, nil, false, false)
 end
 
@@ -99,7 +99,6 @@ function PopupHeroShow:_addControlNode(node)
     parentNode:addChild(node)
     parentNode:setLocalZOrder(node:getLocalZOrder())
     parentNode:setName("share_control")
-    table.insert(self._shareContrlNodeList, parentNode)
     return parentNode
 end
 
@@ -158,7 +157,10 @@ function PopupHeroShow:setContinueVisible(bool)
 end
 
 function PopupHeroShow:onEnter()
+    logWarn("PopupHeroShow onEnter")
     self:play()
+    local AudioConst = require("app.const.AudioConst")
+    G_AudioManager:playSound(Path.getUIVoice("showhero"))
 end
 
 function PopupHeroShow:onExit()
@@ -175,8 +177,12 @@ function PopupHeroShow:_stopVoice()
     end
 end
 
+function PopupHeroShow:_isCanClose()
+    return not self._isSharing and not self._isAction
+end
+
 function PopupHeroShow:_onFinishTouch(sender, event)
-    if not self._isAction and event == 2 then
+    if self:_isCanClose() and event == 2 then
         self:_stopVoice()
         if self._callback then
             self._callback()
@@ -186,7 +192,7 @@ function PopupHeroShow:_onFinishTouch(sender, event)
 end
 
 function PopupHeroShow:_onClickSkip(sender, event)
-    if not self._isAction  then
+    if self:_isCanClose()  then
         self:_stopVoice()
         if self._skipCallback then
             self._skipCallback()
@@ -232,11 +238,11 @@ function PopupHeroShow:_xiujiang_zi_dingwei_txt()
     local content = ""
     content = content ..UTF8.unicode_to_utf8("\\u25C6")
     content = content .. Lang.get("hero_show_position")..self._hero.feature
-
-    content = string.gsub(content, ":", UTF8.unicode_to_utf8("\\u2025"))
+    content = UIHelper.convertToVerticalTxt(content)
     content = string.gsub(content, "-", "・")
 
-    --UTF8.unicode_to_utf8("\\u002E")
+
+
     local label = cc.Label:createWithTTF(content, Path.getFontW8(), 30)
     local color = Colors.D_WHITE
     label:setColor(color)
@@ -250,11 +256,9 @@ function PopupHeroShow:_xiujiang_zi_dingwei_txt()
     
     
     local content2 = self._hero.skill_name..self._hero.skill_description
-    content2 = string.gsub(content2, "%[", UTF8.unicode_to_utf8("\\uFE47"))
-    content2 = string.gsub(content2, "%]", UTF8.unicode_to_utf8("\\uFE48"))
-    --content2 = string.gsub(content2, "。", UTF8.unicode_to_utf8("\\uFE12"))
-    content2 = string.gsub(content2, "ー", UTF8.unicode_to_utf8("\\uFE31") )
+    content2 = UIHelper.convertToVerticalTxt(content2)
     
+   
     local UIHelper = require("yoka.utils.UIHelper")
     local tempList = UIHelper.getUTF8TxtList(content2,16)
     x = x - 47
@@ -276,8 +280,7 @@ function PopupHeroShow:_xiujiang_zi_shenbing_txt()
     local node = cc.Node:create()
     local x = 0
     local content = UTF8.unicode_to_utf8("\\u25C6") .. Lang.get("hero_show_instrument")..self._instrument.name
-    content = string.gsub(content, ":", UTF8.unicode_to_utf8("\\u2025"))
-
+    content = UIHelper.convertToVerticalTxt(content)
 
     local label = cc.Label:createWithTTF(content, Path.getFontW8(), 30)
     local color = Colors.D_WHITE
@@ -291,7 +294,7 @@ function PopupHeroShow:_xiujiang_zi_shenbing_txt()
 
 
     local content = self._hero.instrument_description
-    content = string.gsub(content, "ー", UTF8.unicode_to_utf8("\\uFE31") )
+    content = UIHelper.convertToVerticalTxt(content)
     local UIHelper = require("yoka.utils.UIHelper")
     local tempList = UIHelper.getUTF8TxtList(content,16)
   
@@ -316,8 +319,10 @@ function PopupHeroShow:_xiujiang_role()
     -- return sprite
     local CSHelper  = require("yoka.utils.CSHelper")
     local heroAvatar = CSHelper.loadResourceNode(Path.getCSB("CommonStoryAvatar2", "common"))
-    heroAvatar:updateUI(self._hero.id)
-    G_HeroVoiceManager:playVoiceWithHeroId(self._hero.id, true)
+    cc.unbind(heroAvatar,"CommonStoryAvatar2")
+    cc.bind(heroAvatar,"CommonStoryAvatar")
+    heroAvatar:updateChatUI(self._hero.id)
+    G_HeroVoiceManager:playShowVoiceWithHeroId(self._hero.id,true,heroAvatar)
     return heroAvatar
 end
 
@@ -351,14 +356,12 @@ function PopupHeroShow:_show()
     self._shareLayer:setPosition(cc.p(0,0))
     self._shareLayer:updateData()
     self._shareLayer:setShowHideCallback(function(show)
-        for k,v in ipairs(self._shareContrlNodeList) do
-            v:setVisible(show)
-        end
-    end)
+        self._isSharing = not show
+    end,self)
 
     
     ccui.Helper:doLayout(self._shareLayer)
-    return self:_addControlNode(layer)
+    return self._shareLayer 
 end
 
 --配音名
@@ -384,6 +387,9 @@ end
 --名字背景
 function PopupHeroShow:_show_pingzhi_ditu()
     local color = self._hero.color
+    if color < 4 then
+        return cc.Node:create()
+    end
     local image = Path.getDrawCard2(PopupHeroShow.HERO_NAME_BG[color])
     local sprite = display.newSprite(image)
     return sprite
@@ -458,6 +464,15 @@ function PopupHeroShow:_createContinueNode()
     continueNode:setPosition(cc.p(0, -250))
     self._continueNode  = continueNode
     self:addChild(self:_addControlNode(continueNode))
+    -- 调整闪烁速率
+    if Lang.checkUI("ui4") then
+        local fadein = cc.FadeIn:create(0.8)
+        local fadeout = cc.FadeOut:create(0.8)
+        local seq = cc.Sequence:create(fadein,fadeout)
+        local repeatAction = cc.RepeatForever:create(seq)
+        self._continueNode:stopAllActions()
+        self._continueNode:runAction(repeatAction)
+    end
 end
 
 

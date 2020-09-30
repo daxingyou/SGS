@@ -44,7 +44,24 @@ function TutorialStepHelper.STEP_TYEP_TALK(stepData,tipLayer,params)
 	local stepTable = TutorialStepExtend["step"..stepData.cfg.id]
 	local eventName = params
 
+	-- i18n ja 主界面播放剧情时隐藏看板娘
+	local function showMainAvatar(bVisible)
+		if Lang.checkUI("ui4") then
+			if G_SceneManager:getRunningSceneName() == "main" then
+				local ViewBase = require("app.ui.ViewBase")
+				local mainView = G_SceneManager:getRunningScene():getSceneView()
+				local storyAvatarNode= mainView:getEffectLayer(ViewBase.Z_ORDER_GRD_BACK + 1):getChildByName("StoryAvatarNode")
+				if storyAvatarNode then
+					storyAvatarNode:setVisible(bVisible)
+				end
+			end
+		end
+	end
+
 	local function onChatFinish( ... )
+		if Lang.checkUI("ui4") then
+			showMainAvatar(true)
+		end
 		--扔出新手引导事件
 		G_SignalManager:dispatch(SignalConst.EVENT_TUTORIAL_STEP,"OnChatFinish")
 	end
@@ -60,6 +77,9 @@ function TutorialStepHelper.STEP_TYEP_TALK(stepData,tipLayer,params)
 	
 		chatView:setPosition(G_ResolutionManager:getDesignCCPoint())
 		G_TopLevelNode:addTutorialLayer(chatView)
+		if Lang.checkUI("ui4") then
+			showMainAvatar(false)
+		end
 	end
 end
 
@@ -969,6 +989,13 @@ function TutorialStepHelper.showGuideFinger(stepData, tipLayer, boxRect, offset,
 	--显示蒙层高亮
 	tipLayer:showHighLightClick(targetPosition,info)
 	
+	-- i18n ja 更多按钮特殊特效
+	if Lang.checkUI("ui4") then
+		if info.id == 3005 or info.id == 7503 then
+			local moreEffect = G_EffectGfxMgr:createPlayMovingGfx( tipLayer, "moving_icon_bansanjiao", nil, nil , false )
+			moreEffect:setPosition(targetPosition)
+		end
+	end
 	-- 手指
 	local effect = "effect_finger"
 	if Lang.checkUI("ui4") then
@@ -1248,6 +1275,13 @@ function TutorialStepHelper.buildStageFightTable()
 		end,
 		
 		clickfunc = function(sender, stepData)
+			if Lang.checkUI("ui4") then
+				local PopupStageDetail = ccui.Helper:seekNodeByName(display.getRunningScene(), "PopupStageDetail")
+				if PopupStageDetail and PopupStageDetail._onFightClick then
+					PopupStageDetail:_onFightClick()
+				end
+				return
+			end
 			local PopupStageDetail = display.getRunningScene():getSubNodeByName("PopupStageDetail")
 			PopupStageDetail:_onFightClick()
 		end,
@@ -1444,6 +1478,16 @@ function TutorialStepHelper.buildMainIconGoTable(btnName, wayFuncId)
 			logNewT("TutorialStepHelper.buildMainIconGoTable "..tostring(wayFuncId))
 			local WayFuncDataHelper = require("app.utils.data.WayFuncDataHelper")
 			WayFuncDataHelper.gotoModuleByFuncId(wayFuncId)
+
+			if Lang.checkUI("ui4") then
+				local sceneName = G_SceneManager:getRunningSceneName()
+				if sceneName == "main" and wayFuncId ~= FunctionConst.FUNC_MORE then
+					local MainMenuLayer = G_SceneManager:getRunningScene():getSubNodeByName("MainMenuLayer")
+					if MainMenuLayer then
+						MainMenuLayer:closeMorePanel()
+					end
+				end
+			end
 		end,
 	}
 	return tempTable
@@ -1597,7 +1641,8 @@ function TutorialStepHelper.createComboHeroStepList2()
 	local tableList = {}
 	local stepData1 = TutorialStepHelper.createFuncStep(function(stepData, tipLayer)
 		local popupGetRewards = require("app.ui.PopupGetRewards").new()
-		popupGetRewards:showRewardsTutorial(G_TutorialManager:getGuideAwards())
+		print("lkmGuideAwardsCount=",#G_UserData:getBase():getGuideAwards())
+		popupGetRewards:showRewardsTutorial(G_UserData:getBase():getGuideAwards())
 		--弹出newFunction界面后，走强制蒙层
 		stepData.doNextStep()
 	end)

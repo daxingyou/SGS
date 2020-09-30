@@ -46,7 +46,12 @@ function PopupStatistics:_initTab()
 		isVertical = 2,
 		offset = 3,
 		textList = {Lang.get("fight_statistics_damage"), Lang.get("fight_statistics_features"), Lang.get("fight_statistics_pet")}
-	}
+    }
+    -- i18n ja 神兽功能未开启不显示神兽统计
+    local petData = self._statisticsData:getPetStatistics()
+    if #petData == 0 then
+        param.textList = {Lang.get("fight_statistics_damage"), Lang.get("fight_statistics_features")}
+    end
 	self._tabPage:recreateTabs(param)
 end
 

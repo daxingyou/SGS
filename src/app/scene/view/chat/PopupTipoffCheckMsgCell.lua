@@ -110,9 +110,10 @@ function PopupTipoffCheckMsgCell:_updateVoiceChatMsg()
     local timeElement = self:_createTimeElement(G_ServerTime:getTimeString(self._chatMsg:getTime()))
     table.insert(richElementList, 1, timeElement)
 
-
+  --[[
     local channelElement = self:_createChannelRichElement(channel)
     table.insert(richElementList, 1, channelElement)
+]]
 
     local richStr = json.encode(richElementList)
 

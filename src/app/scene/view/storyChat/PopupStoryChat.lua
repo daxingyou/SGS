@@ -85,6 +85,7 @@ function PopupStoryChat:ctor(touchId, callback, isTutorial)
 	if Lang.checkUI("ui4") then
 		self._timeScale = cc.Director:getInstance():getScheduler():getTimeScale()
 	end
+	self._isPreloadFinish = false
 end
 
 function PopupStoryChat:onCreate()
@@ -109,7 +110,9 @@ function PopupStoryChat:onCreate()
 			end
 		end
 		local soundPath = Path.getSkillVoice(sound)
-		G_AudioManager:preLoadSound(soundPath)
+		-- if not Lang.checkUI("ui4") then
+			G_AudioManager:preLoadSound(soundPath)
+		-- end
 		table.insert(self._soundList, soundPath)
 
 		if touch.story_res1 ~= 1 then
@@ -233,7 +236,19 @@ end
 function PopupStoryChat:_onSpineLoaded()
 	self._loadCount = self._loadCount + 1
 	if self._loadCount == self._totalSpine then 
-		self:_playNext()
+		if Lang.checkUI("ui4") then
+			if G_NativeAgent:getNativeType() == "android" then
+				Scheduler.performWithDelayGlobal(function()
+					self._isPreloadFinish = true
+					self:_playNext()
+				end, 0.5)
+			else
+				self._isPreloadFinish = true
+				self:_playNext()
+			end
+		else
+			self:_playNext()
+		end
 	end
 end
 
@@ -385,6 +400,9 @@ function PopupStoryChat:_talkEnd()
 end
 
 function PopupStoryChat:_onPanelTouch()
+	if Lang.checkUI("ui4") and not self._isPreloadFinish then
+		return
+	end
 	self:_playNext()
 end
 
@@ -393,6 +411,9 @@ function PopupStoryChat:setJumpCallback(callback)
 end
 
 function PopupStoryChat:_onJumpTouch()
+	if Lang.checkUI("ui4") and not self._isPreloadFinish then
+		return
+	end
     if self._jumpCallback then
 		self._jumpCallback()
 	end

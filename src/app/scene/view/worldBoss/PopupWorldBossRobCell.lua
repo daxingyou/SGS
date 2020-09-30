@@ -17,6 +17,10 @@ function PopupWorldBossRobCell:ctor()
         binding = {
 		}
     }
+    -- i18n ja change CSB
+	if Lang.checkUI("ui4") then
+        resource.file = Path.getCSB("PopupWorldBossRobCell2", "worldBoss")
+    end
     PopupWorldBossRobCell.super.ctor(self, resource)
 end
 
@@ -68,6 +72,7 @@ function PopupWorldBossRobCell:updateUI( index, data )
 
     if data.guildName == nil or data.guildName == "" then
         self._textGuildName:setString(" ")
+     
     else
         self._textGuildName:setString("("..data.guildName..")")
     end
@@ -95,11 +100,17 @@ function PopupWorldBossRobCell:updateUI( index, data )
 	end
 	  if not Lang.checkLang(Lang.CN) then
         self._playerName:updateNameGap(-10)
-        self._textGuildName:setPositionX( self._playerName:getPositionX()+ self._playerName:getWidth())
 
         if Lang.checkLang(Lang.JA) then -- i18n ja change
-            self._playerName:updateNameGap(30)
-            self._textGuildName:setPositionX(254)
+            self._playerName:updateNameGap(-10)
+            
+            if self._textGuildName:getString() == " " then
+                self._txtGuild:setString(" ")
+            end
+            
+            self._imgPower:setPositionX(30 + self._playerName:getWidth() + 10)
+            self._txtPower:setString(tostring(data.power))   
+            self._txtPower:setColor(ccui.Helper:seekNodeByName(self._playerName, "TextPlayerName"):getColor()) 
         end
     end
 
@@ -165,6 +176,8 @@ function PopupWorldBossRobCell:_dealPosByI18n()
         if title then
             title:setPositionY(title:getPositionY()-5)
         end
+        self._txtGuild:setString(Lang.get("worldbossGuildName"))   
+        self._textGuildName:setPositionX( self._txtGuild:getPositionX()+ self._txtGuild:getContentSize().width)
     end
     
 end

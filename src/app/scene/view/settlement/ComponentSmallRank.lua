@@ -42,6 +42,14 @@ function ComponentSmallRank:_createRankPanel()
         arrow:setPositionX(arrow:getPositionX() + 70)
         newRank:setPositionX(newRank:getPositionX() + 70)
     end
+    -- i18n ja
+    if Lang.checkLang(Lang.JA) and self._oldRank ~= 0 then
+        rankTitle:setPositionX(rankTitle:getPositionX() - 30)
+        oldRank:setPositionX(oldRank:getPositionX() - 30)
+        local arrow = ccui.Helper:seekNodeByName(panel, "Image_2")
+        arrow:setPositionX(arrow:getPositionX() -30)
+        newRank:setPositionX(newRank:getPositionX() - 30)
+    end
 
     local imageRes = ccui.Helper:seekNodeByName(panel, "ImageRes")
     imageRes:setVisible(false)

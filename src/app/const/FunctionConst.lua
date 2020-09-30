@@ -701,6 +701,8 @@ FunctionConst.FUNC_GUILD_ACTIVITY = 3201--任务军团活跃度页签
 FunctionConst.FUNC_RECHARGE_SHOP = 3202--充值2-2页签
 
 
+FunctionConst.FUNC_TEAMPICTURE = 90001 -- 名将绘卷
+
 function FunctionConst.getFuncName(resId)
     for key, value in pairs(FunctionConst) do
         if string.find(key,"FUNC_") and value == resId then

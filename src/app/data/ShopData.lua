@@ -433,17 +433,62 @@ function ShopData:isFixShopTypeItemCanBuy(shopId, subId, checkType)
 end
 
 --i18n 固定商店是否有新商品
-function ShopData:isFixShopHasNewGoods(shopId, subId)
+function ShopData:isFixShopHasNewGoods(shopId,subId,stamp)
     if not self:isShopOpened(shopId) then
         return false
     end
-    local itemList = self:_getFixShopGoods(shopId, subId)
-    for i, data in ipairs(itemList) do
-        if data:getConfig().new_remind == 1 then
-            return true
+    local key = FunctionConst.FUNC_SHOP_SCENE .."_"..shopId.."_"..subId.."_"..stamp
+    local oldData = G_UserData:getRedPoint():getPointValue(key)
+    if not oldData then
+        local goodIdList = self:_getGoodInfoList(shopId,subId)
+        return #table.keys(goodIdList)  > 0
+    end
+    local oldGoodIdList = json.decode(oldData)
+    if not oldGoodIdList then
+        return true
+    end
+    local goodIdList = self:_getGoodInfoList(shopId,subId)
+    local hasNew = false
+    for k,v in pairs(goodIdList) do
+        if (oldGoodIdList[k] == nil and v) or (oldGoodIdList[k] == false and v)  then
+            hasNew = true
+            break
         end
     end
-    return false
+    
+   
+    return hasNew
+end
+
+--i18n 商店List
+function ShopData:_getGoodInfoList(shopId, subId,checkRes)
+    local LogicCheckHelper = require("app.utils.LogicCheckHelper")
+    local DataConst = require("app.const.DataConst")
+    local itemList = self:_getFixShopGoods(shopId, subId)
+    local goodIdList = {}
+    for i, data in ipairs(itemList) do
+        local success1, errorMsgs, funcNames = LogicCheckHelper.shopFixBtnCheckExt(data)
+        local canBuy = success1
+        if checkRes and canBuy == true then
+            local success2, errorMsgs, funcNames = LogicCheckHelper.shopFixBuyCheck(data, 1, false, nil, nil)
+            canBuy = canBuy and success2
+        end
+      
+        goodIdList[tostring(data:getGoodId())] = canBuy
+    end
+    return goodIdList
+end
+
+
+--i18n 固定商店是否有新商品
+function ShopData:saveGoodIdListToRedPointSys(shopId, subId,stamp,needNotice)
+    local key = FunctionConst.FUNC_SHOP_SCENE .."_"..shopId.."_"..subId.."_"..stamp
+    local goodIdList = self:_getGoodInfoList(shopId,subId)
+    G_UserData:getRedPoint():setPointValue(key,json.encode(goodIdList) )
+    if needNotice then
+        G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_UPDATE,FunctionConst.FUNC_SHOP_SCENE)
+    end
+    
 end
 
 --用于奖励页面，判定是否有奖励可购买

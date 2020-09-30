@@ -82,6 +82,12 @@ function ExploreMapView:onCreate()
  	local TopBarStyleConst = require("app.const.TopBarStyleConst")
     self._topBar:updateUI(TopBarStyleConst.STYLE_EXPLORE)
     if Lang.checkUI("ui4") then
+        local UIHelper = require("yoka.utils.UIHelper")
+        UIHelper.setLabelStyle(self._topBar:getTitle(),{  
+            style = "big_tab",
+            text = self._data:getConfigData().name,
+        })
+
         self._topBar:setCallBackOnBack(function()
             if self:_isAutoExplore() or self:_isOneKeyExplore() or self._canDoDice then
                 G_SceneManager:popScene()
@@ -556,7 +562,7 @@ function ExploreMapView:_exploreOver()
         else
             isPopScene = true--i18n ja
         end
-        
+        crashPrint("[Level Gift] ExploreMapView start ")
         -- i18n ja change 
         local callback = function()
             if isPopScene then
@@ -570,7 +576,7 @@ function ExploreMapView:_exploreOver()
         else
             callback()
         end
-
+        crashPrint("[Level Gift] ExploreMapView start ")
     end)
 end
 

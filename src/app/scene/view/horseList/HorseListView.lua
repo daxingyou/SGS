@@ -37,6 +37,8 @@ function HorseListView:onCreate()
 
 	-- i18n change lable
 	self:_swapImageByI18n()
+	-- i18n ja 回收
+	self:_showRecycleBtnI18n()
 
 	self:_initTabGroup()
 end
@@ -97,8 +99,11 @@ function HorseListView:_initTabGroup()
 	table.insert(tabNameList, Lang.get("horse_list_tab_1"))
 	table.insert(tabNameList, Lang.get("horse_list_tab_2"))
 	--i18n change function show
-	table.insert(tabNameList, Lang.get("horse_list_tab_3"))
-	table.insert(tabNameList, Lang.get("horse_list_tab_4"))
+	if Lang.checkLang(Lang.JA) then
+	else
+		table.insert(tabNameList, Lang.get("horse_list_tab_3"))
+		table.insert(tabNameList, Lang.get("horse_list_tab_4"))
+	end
 
 	local param = {
 		callback = handler(self, self._onTabSelect),
@@ -148,6 +153,16 @@ function HorseListView:_updateView()
 		end
 		self._tabListView:updateListView(self._selectTabIndex, self._count, scrollViewParam)
 		self._fileNodeEmpty:setVisible(false)
+	end
+	-- i18n ja 回收
+	if Lang.checkUI("ui4") then
+		local FunctionCheck = require("app.utils.logic.FunctionCheck")
+		local isOpen = FunctionCheck.funcIsOpened(FunctionConst.FUNC_RECYCLE)
+		if isOpen then
+			self._buttonRecycle:setVisible(self._selectTabIndex == HorseConst.HORSE_LIST_TYPE1)
+		else
+			self._buttonRecycle:setVisible(false)
+		end
 	end
 end
 
@@ -272,5 +287,23 @@ function HorseListView:_swapImageByI18n()
 	end
 end
 
+-- i18n ja 回收
+function HorseListView:_showRecycleBtnI18n()
+	if Lang.checkUI("ui4") then
+		local UIHelper  = require("yoka.utils.UIHelper")
+		self._buttonRecycle = self._buttonSale:clone()
+		local parent = self._buttonSale:getParent()
+		parent:addChild(self._buttonRecycle)
+		self._buttonRecycle:setVisible(true)
+		local label = UIHelper.seekNodeByName(self._buttonRecycle,"Image_21")
+		local funcInfo = require("app.config.function_level").get(FunctionConst.FUNC_RECYCLE)
+		label:setString(funcInfo.name)
+		self._buttonRecycle:loadTextureNormal(Path.getCommonIcon("main", funcInfo.icon))
+		self._buttonRecycle:addClickEventListenerEx(function ()
+			local RecoveryConst = require("app.const.RecoveryConst")
+			G_SceneManager:showScene("recovery", RecoveryConst.RECOVERY_TYPE_11)
+		end)
+	end
+end
 
 return HorseListView

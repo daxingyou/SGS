@@ -43,7 +43,8 @@ function HeroDetailAwakeModule:_createTitle()
 	local title = CSHelper.loadResourceNode(Path.getCSB("CommonDetailTitleWithBg", "common"))
 	if Lang.checkUI("ui4") then -- i18n ja change
         ccui.Helper:seekNodeByName(title, "ImageBase"):loadTexture(Path.getTextTeam("img_zr_di03"))
-        ccui.Helper:seekNodeByName(title, "ImageBase"):setContentSize(cc.size(398, 37))  
+		ccui.Helper:seekNodeByName(title, "ImageBase"):setContentSize(cc.size(398, 37))  
+		self._listView:removeBackGroundImage() 	
 	end
 	title:setFontSize(24)
 	title:setTitle(Lang.get("hero_detail_title_awake"))

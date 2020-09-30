@@ -64,7 +64,13 @@ function SummaryArenaWin:ctor(battleData, callback)
             table.insert(list, componentItemInfo)
         end
     end
-
+    --ui4 界面上移动
+    if  Lang.checkUI("ui4")  then
+        for key, value in pairs(list) do
+            -- body
+            value:setPositionY(value:getPositionY()+60)
+        end
+    end
     SummaryArenaWin.super.ctor(self, battleData, callback, list, midXPos, true)
 end
 

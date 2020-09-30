@@ -103,6 +103,12 @@ function PopupStoryChatNode:enterStage(callback)
                                             callback() 
                                         end 
                                     end)
+    if Lang.checkUI("ui4") then
+        local action3 = cc.DelayTime:create(0.1)
+        local action = cc.Sequence:create(action1, action3, action2)
+        self:runAction(action)
+        return
+    end
     local action = cc.Sequence:create(action1, action2)
 	self:runAction(action)
 end

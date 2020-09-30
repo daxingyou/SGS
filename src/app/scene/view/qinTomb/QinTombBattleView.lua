@@ -350,8 +350,11 @@ function QinTombBattleView:_dealPosByI18n()
 	if not Lang.checkLang(Lang.CN) then
 		local UIHelper  = require("yoka.utils.UIHelper")	
 		self._commonHelp:setPositionX(self._commonHelp:getPositionX()+42)
-		
 		self._autoMovingNode:setPositionY(self._autoMovingNode:getPositionY()+10)
+		-- i18n ja pos
+		if Lang.checkLang(Lang.JA) then
+			self._commonHelp:setPositionX(self._commonHelp:getPositionX() - 15)
+		end
 	end
 end
 

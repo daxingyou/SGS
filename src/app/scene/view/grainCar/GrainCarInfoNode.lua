@@ -153,8 +153,14 @@ function GrainCarInfoNode:setTextType(type)
 		self._labelHp:setColor(Colors.NUMBER_WHITE)
 		self._labelAbility:setColor(Colors.NUMBER_WHITE)
 	elseif type == 2 then
-		self._labelHp:setColor(Colors.NUMBER_GREEN)
-		self._labelAbility:setColor(Colors.NUMBER_GREEN)
+		-- i18n ja labelColor
+		if Lang.checkLang(Lang.JA) then
+			self._labelHp:setColor(Colors.OBVIOUS_GREEN)
+			self._labelAbility:setColor(Colors.OBVIOUS_GREEN)
+		else
+			self._labelHp:setColor(Colors.NUMBER_GREEN)
+			self._labelAbility:setColor(Colors.NUMBER_GREEN)
+		end
 	end
 end
 

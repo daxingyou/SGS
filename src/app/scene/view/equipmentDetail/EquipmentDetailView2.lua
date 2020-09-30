@@ -171,8 +171,14 @@ end
 
 -- 头像列表
 function EquipmentDetailView:_initLeftIcons()
+
 	if self._rangeType == EquipConst.EQUIP_RANGE_TYPE_1 then  
 		return
+	end
+
+	local itemList = self._listViewLineup:getChildren()  --bug: 装备精炼界面，精炼石不够去商店返回，左侧英雄列表会额外初始化一次
+	if #itemList > 0 then
+		self._listViewLineup:removeAllItems()
 	end
 
 	local function createIcon(icon, isHeroBust)
@@ -347,10 +353,10 @@ function EquipmentDetailView:refreshEquipRedPoint(slot)
 	local type2 = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_EQUIP_TRAIN_TYPE2, "slotRP", unitData)
 
 	local isOpen3 = LogicCheckHelper.funcIsOpened(FunctionConst.FUNC_EQUIP_TRAIN_TYPE3)
-	local isRed3 = EquipTrainHelper.needJadeRedPoint(unitData:getId()) and isOpen
+	local isRed3 = EquipTrainHelper.needJadeRedPoint(unitData:getId()) and isOpen3
 	
 	local isOpen4 = LogicCheckHelper.funcIsOpened(FunctionConst.FUNC_EQUIP_TRAIN_TYPE4)
-	local isRed4 = EquipTrainHelper.isNeedRedPoint() and isOpen
+	local isRed4 = EquipTrainHelper.isNeedRedPoint() and isOpen4
 
 	local reach = RedPointHelper.isModuleSubReach(FunctionConst.FUNC_EQUIP, "slotRP", {pos = unitData:getPos(), slot = unitData:getSlot()}) -- 更换红点
 	--return (type1 or type2 or isRed3 or isRed4)  
@@ -508,8 +514,29 @@ function EquipmentDetailView:_equipAddSuccess(eventName, oldId, pos, slot)
 	end
 	G_UserData:getEquipment():setCurEquipId(equipId)
 	
+	self:_reCreateLeftIcons() -- bug: 抢装备导致闪退
 	self:updateInfo() 
 	self:_playEquipAddSummary(oldId, pos, slot)	-- 装备穿戴飘字
+end
+
+-- bug: 把别的武将装备抢完后， 头像列表要删除此武将
+function EquipmentDetailView:_reCreateLeftIcons() 
+	local nNum = 0
+	local iconData = TeamViewHelper.getHeroIconData()
+	for i, data in ipairs(iconData) do
+		if data.id ~= 0 then
+			local unitData = G_UserData:getHero():getUnitDataWithId(data.id)
+			local _allEquipIds = G_UserData:getBattleResource():getEquipIdsWithPos( unitData:getPos() )
+			if #_allEquipIds > 0 then
+				nNum = nNum + 1
+			end
+		end
+	end
+
+	local itemList = self._listViewLineup:getChildren() 
+	if #itemList ~= nNum then
+		self:_initLeftIcons()
+	end
 end
 
 function EquipmentDetailView:_onEventRedPointUpdate(eventName, funcId)
@@ -561,7 +588,7 @@ function EquipmentDetailView:_changeCurSelectEquipPos()
 			end
 		end
 	end 
-end
+ end
 
 function EquipmentDetailView:_checkRedPoint()
 	local pos = self._equipData:getPos()
@@ -804,6 +831,10 @@ function EquipmentDetailView:_playEquipSuperUpgradeSummary(crits, saveMoney, pos
 		startPosition = {x = UIConst.SUMMARY_OFFSET_X_TRAIN},
 		-- anchorPoint = cc.p(0.5, 0.5),
 		finishCallback = function()
+			if self == nil or self._lastEquipStrMasterInfo == nil or self._lastEquipStrMasterInfo.masterInfo == nil or self._lastEquipStrMasterInfo.masterInfo.curAttr == nil then
+				return
+			end
+
 			if self._diffEquipStrMasterLevel > 0 then --强化大师
 				local curPos = G_UserData:getTeam():getCurPos()
 				local curMasterInfo = EquipMasterHelper.getCurMasterInfo(curPos, MasterConst.MASTER_TYPE_1)
@@ -1069,3 +1100,5 @@ end
   
 
 return EquipmentDetailView
+
+  

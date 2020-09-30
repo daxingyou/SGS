@@ -45,6 +45,13 @@ function ChapterGeneralIcon:_updateHeroAvatar()
 	local height = self._nodeHero:getHeight()
 	self._nodeInfo:setPositionY(height)
 	-- self._nodeInfo:setScale(ChapterGeneralIcon.ICON_SCALE)
+
+	-- i18n ja pos 第一个位置特殊处理
+	if Lang.checkLang(Lang.JA) then
+		if self._configData.id == 1 then
+			self._nodeInfo:setPositionY(height - 25)
+		end
+	end
 end
 
 function ChapterGeneralIcon:getId()

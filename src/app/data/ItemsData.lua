@@ -36,8 +36,14 @@ function ItemBaseData:initData(data)
 	self:setConfig(info)
 end
 ---------------------------------------------------------------------------------------------------------------------
--- Item数据集
+
 local ItemsData = class("ItemsData", BaseData)
+
+ -- i18n ja 道具背包点击杜康酒进行跳转至武将背包，需要屏蔽男/女主角
+local schemaItems = {}
+schemaItems["curSelectItemId"] 			={"number", 0}
+ItemsData.schema = schemaItems
+
 function ItemsData:ctor(properties)
 	ItemsData.super.ctor(self, properties)
 

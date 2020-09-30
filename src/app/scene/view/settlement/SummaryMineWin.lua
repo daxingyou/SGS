@@ -52,7 +52,14 @@ function SummaryMineWin:ctor(battleData, callback)
         local panelTired = ComponentSmallRank.new(cc.p(midXPos, 90 - height*0.5), Lang.get("fight_end_my_infame"), beforeInfame, nowInfame, nil, "0")
         table.insert(list, panelTired) 
     end
-   
+
+    --ui4 界面上移动
+    if  Lang.checkUI("ui4")  then
+        for key, value in pairs(list) do
+            -- body
+            value:setPositionY(value:getPositionY()+30)
+        end
+    end
     SummaryMineWin.super.ctor(self, battleData, callback, list, midXPos, true)
 end
 

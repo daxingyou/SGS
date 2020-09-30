@@ -123,7 +123,8 @@ MainMenuLayer.RIGHT_BOTTOM_ICON_A2 = {
 
 --更多按钮
 MainMenuLayer.MORE_ICON = {
-    {funcId = FunctionConst.FUNC_HAND_BOOK},
+    -- {funcId = FunctionConst.FUNC_HAND_BOOK},
+    {funcId = FunctionConst.FUNC_TEAMPICTURE},
     -- { funcId = FunctionConst.FUNC_FRIEND },
     {funcId = FunctionConst.FUNC_RANK},
     -- { funcId = FunctionConst.FUNC_ACHIEVEMENT },

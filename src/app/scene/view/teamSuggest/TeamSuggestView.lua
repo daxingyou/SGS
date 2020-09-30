@@ -206,6 +206,8 @@ function TeamSuggestView:_dealI18n()
 		local UIHelper  = require("yoka.utils.UIHelper")
 		local image = UIHelper.seekNodeByName(self,"Node","Node_Mid","Image_20")
 		image:setPositionX(image:getPositionX()+15)
+	else
+		self["_title"]:setFontSize(self["_title"]:getFontSize()-4)
 	end
 end
 

@@ -622,7 +622,7 @@ function GameAgent:checkAndLoginGame()
     local AgreementSetting = require("app.data.AgreementSetting")
     if Lang.checkLang(Lang.CN) and not AgreementSetting.isAllAgreementCheck() then
         G_SceneManager:showDialog("app.scene.view.login.PopupSecretView")
-    elseif Lang.checkLang(Lang.JA) and self:isShowUsingConvente() then
+    elseif Lang.checkLang(Lang.JA) and self:isShowUsingConvente() then  
         G_UserData:getBase():sendUsingConventeRequest()
     else
 		if G_ConfigManager:isOpenSdkRealName() == false then --没开启sdk认证功能
@@ -754,7 +754,7 @@ function GameAgent:_onNativeCallback(data)
                             if G_NativeAgent:hasCitationCode() then
                                 self:_openLoginCitation()
                             end
-                        else
+                        elseif channel and channel ~= "" then
                             self:_clearLocalLoginData()
                             self:returnToLogin()
                         end   
@@ -958,6 +958,7 @@ function GameAgent:_onNativeCallback(data)
             self._isAdult = false
 			self._sdkRealName = nil
 
+            G_Prompt:showTip(Lang.get("citation_login_sucess"))
             self:returnToLogin()
         else    
             if codeInfo["error"] then
@@ -984,7 +985,11 @@ function GameAgent:_onNativeCallback(data)
         if ret == NativeConst.STATUS_SUCCESS then
             G_Prompt:showTip(Lang.get("save_success"))
         elseif ret == NativeConst.STATUS_FAILED then
-            G_Prompt:showTip(Lang.get("save_failed"))
+            if tostring(param) == "1" then
+                G_Prompt:showTip(Lang.get("save_not_permission"))
+            else
+                G_Prompt:showTip(Lang.get("save_failed"))
+            end
         end
     
     end
@@ -1842,6 +1847,12 @@ function GameAgent:returnToLogin()
     --清除武将声音回调
     G_HeroVoiceManager:stopPlayMainMenuVoice()
 
+    if Lang.checkUI("ui4") then
+        G_PosterGirlManager:clear()
+        G_NewLevelPkgManager:clear()
+    end
+
+
     -- 返回登陆界面
     local scene = G_SceneManager:getRunningSceneName()
     if scene ~= "login" then
@@ -2005,9 +2016,9 @@ function GameAgent:shareWeb(platform, scene, url, title, content)
 end
 
 --
-function GameAgent:shareImage(platform, scene, imagePath)
+function GameAgent:shareImage(platform, scene, imagePath,content)
     crashPrint("[GameAgent] shareImage")
-    G_NativeAgent:shareImage(platform, scene, imagePath)
+    G_NativeAgent:shareImage(platform, scene, imagePath,content)
 end
 
 --
@@ -2475,7 +2486,11 @@ function GameAgent:_recvReportEvent(id, message)
 end
 
 -- i18n ja 判断是否弹出利用规约
-function GameAgent:isShowUsingConvente()
+function GameAgent:isShowUsingConvente() 
+    if self:getLoginServer() == nil then  -- 在切换服务器时，若全都关闭，此时不存在登录服务器
+        return false
+    end
+
     if G_StorageManager:load("UsingConvente") ~= nil then 
         return false
     end

@@ -439,6 +439,11 @@ function AnswerClientStart:_dealPosByI18n()
 		self._questionIndexText:setPositionX(self._questionIndexText:getPositionX()-20)
 		self._questionContent:setPositionX(self._questionContent:getPositionX()-20)
 	end
+
+	if Lang.checkLang(Lang.JA) then
+		self._questionIndexText:setPositionX(self._questionIndexText:getPositionX()-15)
+		self._questionContent:setPositionX(self._questionContent:getPositionX()-15)
+	end
 end
 
 return AnswerClientStart

@@ -45,7 +45,8 @@ function PosterGirlData:clear()
 end
 
 function PosterGirlData:reset()
-	self._taskMap = {}
+	self._skinList = {}
+	self:_initAllTaskData()
 end
 
 function PosterGirlData:_initAllTaskData()
@@ -139,18 +140,28 @@ function PosterGirlData:c2sGetPosterGirlRewardInfo()
 	)
 end
 
+function PosterGirlData:_resetRewardInfo()
+	for k,v in pairs(self._playDataList) do
+		v:reset()
+    end
+	for k,v in pairs(self._taskMap) do
+		v:reset()
+    end
+end
+
 function PosterGirlData:_s2cGetPosterGirlRewardInfo(id, message)
 	local tasks = rawget(message,"tasks") or {}
-
+	self:_resetRewardInfo()
 	for k,v in ipairs(tasks) do
-
 		if self._playDataList[v.type] then
 			self._playDataList[v.type]:updateData(v)
 		end
 		for k,taskId in ipairs(v.rewards) do
-			local taskData = self._taskMap[v.type.."_"..taskId]
-			if taskData then
-				taskData:setReceive(true)
+			if v.type ~= VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD then
+				local taskData = self._taskMap[v.type.."_"..taskId]
+				if taskData then
+					taskData:setReceive(true)
+				end
 			end
 		end
 	end
@@ -209,13 +220,26 @@ end
 --有宝箱奖励可以领取
 function PosterGirlData:hasRedPoint()
 
-	if self:hasRedPointByType(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD) then
-		return true
-	end
 	if self:hasRedPointByType(VipConst.VIP_ADD_EXP_TYPE_CLICK_POSTER_GIRL) then
 		return true
 	end
-	return false
+	
+	local redPot = false
+	--宝箱数量大于可领取次数
+	local onlineTime = G_UserData:getBase():getOnlineTime()
+	local list = self:getAllTaskDatasByType(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
+	local count = 0
+	for k,v in ipairs(list) do
+		if onlineTime >= v:getConfig().require_value * 60 then
+			count = count + 1 
+		end
+	end
+	local playUnitData = self:getPlayUnitDataByType(VipConst.VIP_ADD_EXP_TYPE_SELECT_REWARD)
+	if count > playUnitData:getTotalIdNum() then
+		redPot = true
+	end
+
+	return redPot
 end
 
 function PosterGirlData:hasRedPointByType(type)

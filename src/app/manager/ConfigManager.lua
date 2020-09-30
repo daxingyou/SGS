@@ -205,7 +205,8 @@ function ConfigManager:fresh()
     --
     --url = string.gsub(url, "#t#", tostring(os.time()))                          --灰度测试
 
-    print("get setting url = " .. url)
+    print("get setting url = " .. url) 
+    release_print("get setting url = " .. url)
     --
 	local xhr = cc.XMLHttpRequest:new()
     xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING

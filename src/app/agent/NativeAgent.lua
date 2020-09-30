@@ -394,14 +394,16 @@ function NativeAgent:shareWeb(platform, scene, url, title, content)
 end
 
 --
-function NativeAgent:shareImage(channel, scene, imagePath)
+function NativeAgent:shareImage(channel, scene, imagePath,content,extension)
 	crashPrint("[NativeAgent] shareImage")
-	local extension = ""
+	local content = content or ""--i18n ja
+	local extension = extension or ""
 	local params = {}
 	table.insert(params, {platform="yoka"})
 	table.insert(params, {channel=channel})
 	table.insert(params, {scene=scene})
 	table.insert(params, {imagePath=imagePath})
+	table.insert(params, {content=content})--i18n ja
 	table.insert(params, {extension=extension})
 	dump(params,"shareImage")
 	self:callNativeFunction("shareImage", params)

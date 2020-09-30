@@ -14,13 +14,18 @@ end
 
 function DrawTenEffect:onCreate()
     DrawTenEffect.super.onCreate(self)
+
+    local node = self:_createBackEffect()
+    node:setLocalZOrder(DrawEffectBase.Z_ORDER_BK)
+    self:addChild(node)
+
+    self:_createTouchLayer()
+
+    self:play()
 end
 
 function DrawTenEffect:onEnter()
     DrawTenEffect.super.onEnter(self)
-    local node = self:_createBackEffect()
-    self:addChild(node)
-    self:play()
 end
 
 function DrawTenEffect:onExit()
@@ -53,23 +58,27 @@ function DrawTenEffect:play()
     end
     local function eventFunction(event)
         if event == "finish" then
+            
+            local AudioConst = require("app.const.AudioConst")
+            G_AudioManager:playSound(Path.getUIVoice("drawcard_fall"))
+
             self._isAction = false
             self._actionFinishTime = G_ServerTime:getTime()
             self:_startCountDown(DrawTenEffect.TIME_OUT)
           
-            local effect = G_EffectGfxMgr:createPlayGfx(self, "effect_lingpai_huaxian")
+            local effect = G_EffectGfxMgr:createPlayGfx(self._effectRootNode, "effect_lingpai_huaxian")
             --effect:setDouble(0.8)
             effect:setPositionY(-55)
         end
     end
-    local effect = G_EffectGfxMgr:createPlayMovingGfx( self, "moving_zhaomu_up", effectFunction, eventFunction , false )
+    local effect = G_EffectGfxMgr:createPlayMovingGfx(self._effectRootNode, "moving_zhaomu_up", effectFunction, eventFunction , false )
 end
 
 function DrawTenEffect:_timeOutCallback()
     if not self._actionFinishTime then
         return 
     end
-    local effect = G_EffectGfxMgr:createPlayGfx(self, "effect_lingpai_huaxian")
+    local effect = G_EffectGfxMgr:createPlayGfx(self._effectRootNode, "effect_lingpai_huaxian")
     --effect:setDouble(0.8)
     effect:setPositionY(-55)
 end

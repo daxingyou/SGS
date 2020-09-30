@@ -51,7 +51,11 @@ function TerritoryView:onCreate()
 	self._topbarBase:setImageTitle("txt_sys_com_lingdixunluo")
 	--self._topbarBase:setTitle(Lang.get("lang_territory_title"))
 	local TopBarStyleConst = require("app.const.TopBarStyleConst")
-	self._topbarBase:updateUI(TopBarStyleConst.STYLE_COMMON)
+	if Lang.checkUI("ui4") then
+		self._topbarBase:updateUI(TopBarStyleConst.STYLE_TERRITORY)
+	else
+		self._topbarBase:updateUI(TopBarStyleConst.STYLE_COMMON)
+	end
 
 	self._btnReport:updateUI(FunctionConst.FUNC_RIOT_INFO)
 	self._btnTakeAll:updateUI(FunctionConst.FUNC_TERRITORY_GET_ALL)

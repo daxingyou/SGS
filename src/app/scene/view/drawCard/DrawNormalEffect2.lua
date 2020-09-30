@@ -10,15 +10,15 @@ end
 
 function DrawNormalEffect:onCreate()
     DrawNormalEffect.super.onCreate(self)
-end
 
-function DrawNormalEffect:onEnter()
-    DrawNormalEffect.super.onEnter(self)
     G_SignalManager:dispatch(SignalConst.EVENT_TUTORIAL_TOUCH_AUTH_BEGIN)
     self:_reset()
     self:_pushCardData(1)
     self:playGuang()
 end
 
+function DrawNormalEffect:onEnter()
+    DrawNormalEffect.super.onEnter(self)
+end
 
 return DrawNormalEffect

@@ -17,12 +17,7 @@ function HeroMerge:ctor(heroId, count)
     self._rewards = { {type = TypeConvertHelper.TYPE_HERO ,value =  heroId,size = count }}
     assert(self._heroData, "wrong hero id = "..heroId)
 
-    local resource = {
-		file = Path.getCSB("HeroMerge2", "heroMerge"),
-		size = G_ResolutionManager:getDesignSize(),
-		binding = {     
-		}		
-    }
+
     HeroMerge.super.ctor(self,nil,nil)
 end
 

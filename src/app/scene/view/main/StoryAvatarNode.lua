@@ -1,6 +1,7 @@
 local ViewBase = require("app.ui.ViewBase")
 local AvatarDataHelper = require("app.utils.data.AvatarDataHelper")
 local StoryAvatarNode = class("StoryAvatarNode", ViewBase)
+local SchedulerHelper = require("app.utils.SchedulerHelper")
 
 local HeroRes = require("app.config.hero_res")
 local Hero = require("app.config.hero")
@@ -31,16 +32,28 @@ end
 
 function StoryAvatarNode:updateUI(data)
     if data == nil then
-        local id = G_UserData:getBase():getKanBanNiang()
-        data = G_UserData:getHero():getUnitDataWithId(id)
+        local id = G_UserData:getBase():getKan_ban_niang()
+        -- data = G_UserData:getHero():getUnitDataWithId(id)
+        data = G_UserData:getHandBook():getMainAvatarDataById(id)
+    end
+    if data == nil then
+        local heroInfo = require("app.config.hero")
+        local baseId = G_UserData:getHero():getRoleBaseId()
+		local config = heroInfo.get(baseId)
+        data = {
+			baseId = baseId,
+			limitLevel = 0,
+			limitRedLevel = 0,
+			resId = config.res_id
+        }
     end
     self._data = data
     -- local heroBaseId, isEquipAvatar, avatarLimitLevel, arLimitLevel = AvatarDataHelper.getShowHeroBaseIdByCheck(data)
     -- local limitLevel = avatarLimitLevel or data:getLimit_level()
     -- local limitRedLevel = arLimitLevel or data:getLimit_rtg()
-    local heroBaseId = data:getBase_id()
-    local limitLevel = data:getLimit_level()
-    local limitRedLevel = data:getLimit_rtg()
+    local heroBaseId = data.baseId
+    local limitLevel = data.limitLevel
+    local limitRedLevel = data.limitRedLevel
     -- self._storyAvatarNode:updateUI(heroBaseId, limitLevel, limitRedLevel)
     self._storyAvatarNode:updateChatUI(heroBaseId, limitLevel, limitRedLevel)
 
@@ -51,7 +64,9 @@ end
 function StoryAvatarNode:playTalk()
     if not G_TutorialManager:isDoingStep() then
         G_HeroVoiceManager:stopPlayMainMenuVoice()
-        G_HeroVoiceManager:startPlayMainMenuVoice2(self._data,self._storyAvatarNode)
+        if self._data and self._data.resId then
+            G_HeroVoiceManager:startPlayMainMenuVoice2(self._data.resId,self._storyAvatarNode)
+        end
     end
 end
 
@@ -78,7 +93,16 @@ function StoryAvatarNode:onEnter()
 
     G_HeroVoiceManager:setIsInMainMenu(true)
     if not G_TutorialManager:isDoingStep() then
-        G_HeroVoiceManager:startPlayMainMenuVoice2(self._data,self._storyAvatarNode)
+        if self._playVoiceScheduler then
+            SchedulerHelper.cancelSchedule(self._playVoiceScheduler)
+            self._playVoiceScheduler = nil
+        end
+		self._playVoiceScheduler = SchedulerHelper.newScheduleOnce(function()
+            if self._data and self._data.resId then
+                G_HeroVoiceManager:stopPlayMainMenuVoice()
+                G_HeroVoiceManager:startPlayMainMenuVoice2(self._data.resId,self._storyAvatarNode)
+            end
+    	end, 1)
     end
 end
 

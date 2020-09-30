@@ -115,7 +115,14 @@ function QinTombBattleResultAnimation:_createActionNode(effect)
 			local node  = cc.Node:create()
 			if self._isWin then
 				local image = UIHelper.createImage({texture = Path.getTextBattle("txt_com_battle_v05")}) -- 胜利
-				image:setScale(0.6)
+				
+				-- i18n ja
+				if Lang.checkLang(Lang.JA) then
+					image:setScale(0.8)
+				else
+					image:setScale(0.6)
+				end
+			
 				node:addChild(image)
 			else
 				local image = UIHelper.createImage({texture = Path.getTextBattle("txt_com_battle_f01")}) -- 失败

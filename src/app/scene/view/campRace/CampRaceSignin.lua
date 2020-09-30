@@ -29,6 +29,9 @@ function CampRaceSignin:onCreate()
 
 	-- i18n change lable
 	self:_swapImageByI18n()
+	if Lang.checkLang(Lang.JA) then
+		self._imageCampBig:setPositionY(self._imageCampBig:getPositionY()- 2)
+	end
 end
 
 function CampRaceSignin:_initData()

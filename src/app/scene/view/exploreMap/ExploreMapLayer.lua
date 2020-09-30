@@ -354,7 +354,12 @@ function ExploreMapLayer:_createActor(  )
             end
         end	
         self._autoExploreEffect = G_EffectGfxMgr:createPlayMovingGfx(self._actor, "moving_zidongyouli_zi", _effectFunction, nil , false)
-        self._autoExploreEffect:setPosition(cc.p(0,185))
+        -- ii18n ja pos
+        if Lang.checkLang(Lang.JA) then
+            self._autoExploreEffect:setPosition(cc.p(25,185))
+        else
+            self._autoExploreEffect:setPosition(cc.p(0,185))
+        end
     else
 	    self._autoExploreEffect = G_EffectGfxMgr:createPlayGfx(self._actor, "effect_zidongyouli_zi", nil, false, cc.p(0,185))
 	    self._autoExploreEffect:setVisible(false)
@@ -384,7 +389,15 @@ end
 
 function ExploreMapLayer:_setActorScaleX(scale)
 	self._actor:setScaleX(scale)
-	self._autoExploreEffect:setScaleX(scale)
+    self._autoExploreEffect:setScaleX(scale)
+    -- ii18n ja pos
+    if Lang.checkLang(Lang.JA) then
+        if scale == 1 then
+            self._autoExploreEffect:setPosition(cc.p(25, 185))
+        elseif scale == -1 then
+            self._autoExploreEffect:setPosition(cc.p(-25, 185))
+        end
+    end
 end
 
 -- 设置角色位置

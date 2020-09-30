@@ -37,7 +37,6 @@ function SummaryTerritoryWin:ctor(battleData, callback)
         table.insert(list, componentTwoItems)
         local componentLevel = ComponentLevel.new(battleData.exp, cc.p(midXPos, 220 - height*0.5))
         table.insert(list, componentLevel)
-
     end
    
 
@@ -46,8 +45,13 @@ function SummaryTerritoryWin:ctor(battleData, callback)
 
     local componentDrop = ComponentDrop.new(battleData.awards, cc.p(midXPos, 107 - height*0.5))
     table.insert(list, componentDrop)
-
-   
+    --ui4 界面上移动
+    if  Lang.checkUI("ui4")  then
+        for key, value in pairs(list) do
+            -- body
+            value:setPositionY(value:getPositionY()+90)
+        end
+    end   
     SummaryTerritoryWin.super.ctor(self,battleData, callback, list, midXPos, true)
 end
 

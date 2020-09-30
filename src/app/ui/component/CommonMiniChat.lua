@@ -46,6 +46,11 @@ function CommonMiniChat:_init()
             self._chatMiniNode:onEnter()
         end
     end)
+
+    if Lang.checkUI("ui4") then
+        local bg = ccui.Helper:seekNodeByName(self._target, "BG")
+        bg:setBackGroundImage(Path.getUICommon("img_commonblackbg02"))
+    end
 end
 
 function CommonMiniChat:bind(target)

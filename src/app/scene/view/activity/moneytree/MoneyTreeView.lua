@@ -54,15 +54,20 @@ function MoneyTreeView:onCreate()
 	self:_dealI18n()
 	--self._textTitle:setString(actCfg.name)
 
+	local spineName = 312
+	-- i18n ja change
+	if Lang.checkUI("ui4") then
+		spineName = 319
+	end
 	self._commonButtonOnce:setString(Lang.get("lang_activity_moneytree_shakeOnce"))
 	self._commonButton10Times:setString(Lang.get("lang_activity_moneytree_shake10Times"))
 	--self._commonResourceInfoOnce:showResName(true,Lang.get("lang_activity_moneytree_consume"))
     self._commonResourceInfoOnce:setTextColor(Colors.uiColors.THIN_YELLOW)
 	self._commonResourceInfo10Times:setTextColor(Colors.uiColors.THIN_YELLOW)
-	self._commonHeroAvatar:updateUI(312)
+	self._commonHeroAvatar:updateUI(spineName)
 	-- self._commonHeroAvatar2:updateUI(312)
 	self._effectSpineSkillNode = require("yoka.node.SpineNode").new(0.5)
-	self._effectSpineSkillNode:setAsset(Path.getSpine("312_fore_effect"))
+	self._effectSpineSkillNode:setAsset(Path.getSpine( spineName .. "_fore_effect"))
     self._effectSpineSkillNode:setVisible(false)
 	self._effectSpine:addChild(self._effectSpineSkillNode)
 

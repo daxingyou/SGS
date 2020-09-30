@@ -143,7 +143,8 @@ function PopupOfficialRankUpResult:_initEffect()
 		self._fileNodePower:setPositionX(568)
 		self._fileNodePower:setPositionY(self._fileNodePower:getPositionY() + 30)
 		self._textAddPlayerJoint:setPositionY(self._textAddPlayerJoint:getPositionY() + 30)
-
+		local bgImg = ccui.Helper:seekNodeByName(self._resourceNode, "Image_2")  
+		bgImg:setVisible(false)
 	end
 	local pos = {
 		365,330,295,260,225

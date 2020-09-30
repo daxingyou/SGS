@@ -118,7 +118,7 @@ function PopupNotice:_onWebViewDidFailLoading(sender, url)
         if isLocal then
             local param = WebviewHelper.getLocalParams(url)
             dump(param,"PopupNotice onWebViewDidFailLoading param")
-            if param then
+            if param and param["game_system_id"] ~= nil then
                 -- local://?extension=213&game_system_id=33
                 local game_system_id = param["game_system_id"]
                 local extension = param["extension"]
@@ -162,7 +162,7 @@ function PopupNotice:_onWebViewShouldStartLoading(sender, url)
         if isLocal then
             local param = WebviewHelper.getLocalParams(url)
             dump(param,"PopupNotice onWebViewDidFailLoading param")
-            if param then
+            if param and param["game_system_id"] ~= nil then
                 -- local://?extension=213&game_system_id=33
                 local game_system_id = param["game_system_id"]
                 local extension = param["extension"]

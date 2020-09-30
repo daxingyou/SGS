@@ -170,7 +170,8 @@ function PackageView:_onItemTouchItem(index, itemPos)
     local lineIndex = index
     local itemData = self._curSelectData[itemPos]
     if itemData then
-        if itemData:getType() == TypeConvertHelper.TYPE_ITEM then
+        if itemData:getType() == TypeConvertHelper.TYPE_ITEM then    
+            G_UserData:getItems():setCurSelectItemId(itemData:getId())  -- i18n ja 道具背包点击杜康酒进行跳转至武将背包，需要屏蔽男/女主角
             PackageHelper.popupUseItem(itemData:getId())
         elseif itemData:getType() == TypeConvertHelper.TYPE_FRAGMENT then
             UIPopupHelper.popupFragmentDlg(itemData:getId())
@@ -253,8 +254,8 @@ function PackageView:_onItemTouch(index, itemPos)
     local funcTabIndex = self._tabFuncIndex
     if funcTabIndex == PackageViewConst.TAB_GEMSTONE then
         self:_onItemTouchGemstone(index, itemPos)
-    elseif funcTabIndex == PackageViewConst.TAB_ITEM then
-        self:_onItemTouchItem(index, itemPos)
+    elseif funcTabIndex == PackageViewConst.TAB_ITEM then     
+        self:_onItemTouchItem(index, itemPos)   
     elseif funcTabIndex == PackageViewConst.TAB_SILKBAG then
         self:_onItemTouchSilkbag(index, itemPos)
     elseif funcTabIndex == PackageViewConst.TAB_JADESTONE then

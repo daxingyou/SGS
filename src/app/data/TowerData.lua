@@ -337,8 +337,8 @@ function TowerData:_recvBattle(id, message)
 	if message.ret ~= 1 then
 		return
 	end
-	local nowLayer = self:getNow_layer()
-	G_SignalManager:dispatch(SignalConst.EVENT_TOWER_EXECUTE, message)
+	local historyStar = self:getHistoryStarByLayer(message.layer)
+	G_SignalManager:dispatch(SignalConst.EVENT_TOWER_EXECUTE, message, historyStar)
     if rawget(message, "tower") then
         self:refreshData(message.tower)
     end

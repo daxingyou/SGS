@@ -267,7 +267,10 @@ function MainMenuLayer:ctor(callback)
             -- },
             _panelInfo = {
                 events = {{event = "touch", method = "_onClickPanelInfo"}}
-            }
+            },
+            _btnMoreEx = {
+                events = {{event = "touch", method = "onMoreBtn"}}
+            },
         }
     }
 
@@ -338,6 +341,7 @@ function MainMenuLayer:onCreate()
     self._btnMore:getButton():setAnchorPoint(0,0.5)
     -- self._btnChangeLabel:setString(Lang.get("switch_avatar_label"))
     self._btnChange:addClickEventListenerEx(handler(self, self._onChangeBtn))
+    self._btnMoreEx:setLocalZOrder(-1)
 end
 
 --初始化背包合并
@@ -1175,8 +1179,17 @@ function MainMenuLayer:_getWorldBossVisibleAndCustomData()
         customData.icon = iconPath
     end
 
-    local isVisible, callFunc =
+    local isVisible, callFunc
+    -- i18n ja 第一天的军团boss达到开启等级后就显示
+    local openDay = G_UserData:getBase():getOpenServerDayNum()
+    if openDay == 1 then
+        isVisible, callFunc =
+        self:_getVisibleAndCountDownCallbackForWorldBoss(Lang.get("worldboss_main_layer_running"))
+    else
+        isVisible, callFunc =
         self:_getVisibleAndCountDownCallback(FunctionConst.FUNC_WORLD_BOSS, Lang.get("worldboss_main_layer_running"))
+    end
+    
     if isVisible then
         customData.callFunc = callFunc
         return true, customData
@@ -1642,6 +1655,16 @@ function MainMenuLayer:_getNewLevelPkgVisibleAndCustomData()
         local callBack = function(menuBtn, menuData)
             local curTime = G_ServerTime:getTime()
             local endTime = menuData.customData.iconData.main.endTime
+
+            local newImage = menuBtn:getChildByName("newImage")
+            if not newImage then
+                newImage = ccui.ImageView:create(Path.getUICommon("new"))
+                newImage:setName("newImage")
+                newImage:setAnchorPoint(0.5,0.5)
+                newImage:setPosition(25,22)
+                menuBtn:addChild(newImage)
+            end
+           
             if endTime > curTime then
                 menuBtn:playBtnMoving()
                 menuBtn:playFuncGfx()
@@ -2045,6 +2068,9 @@ function MainMenuLayer:_createMenuList(funcList, rootPanel, isShowFalseVisible)
     table.sort(
         menuDataList,
         function(item1, item2)
+            if item1.cfg.home_index == item2.cfg.home_index then
+                return item1.cfg.function_id < item2.cfg.function_id
+            end
             return item1.cfg.home_index < item2.cfg.home_index
         end
     )
@@ -2181,6 +2207,14 @@ end
 function MainMenuLayer:_resetRightTop1()
     local starX = G_ResolutionManager:getBangDesignWidth() + 30
     local menuList = self:_createMenuList(MainMenuLayer.RIGHT_TOP_ICON_A1)
+    -- i18n ja 限时活动气泡
+    local checkBubble = function (index,node,functionId)
+        if index == 1 and #menuList == 1 and functionId ~= FunctionConst.FUNC_SEASONSOPRT and functionId ~= FunctionConst.FUNC_GROUPS then
+            node:setCanShowBubble(true)
+        else
+            node:setCanShowBubble(false)
+        end
+    end
     for i, value in ipairs(menuList) do
         local node = value.node
         if node then
@@ -2190,6 +2224,7 @@ function MainMenuLayer:_resetRightTop1()
             node:setPositionY(565)
             node:moveLetterToRight()
             node:setIconScale(0.8)
+            checkBubble(i,node,value.functionId)
             -- node:playBtnMoving()
             local customData = value.customData
             if customData then
@@ -2572,10 +2607,13 @@ function MainMenuLayer:_updateRoleInfo()
         self._labelWan = labelWan
     end
     self._label:updateTxtValue(power)
+
+    crashPrint("[Level Gift] MainMenuLayer start ")
     local LevelPkgConst = require("app.const.LevelPkgConst")
     if G_TutorialManager:isDoingStep() == false and G_NewLevelPkgManager:hasPop(LevelPkgConst.CONDITION_POWER) then
         G_SignalManager:dispatch(SignalConst.EVENT_NEW_LEVEL_PKG_OPEN_NOTICE,LevelPkgConst.CONDITION_POWER)
     end
+    crashPrint("[Level Gift] MainMenuLayer end ")
 end
 
 function MainMenuLayer:setNumberValue(value)
@@ -3733,6 +3771,9 @@ function MainMenuLayer:_updateNoticeRedPoint()
         return
     end
     local strStart = string.find(noticeUrl,"pass_id")
+    if strStart == nil then
+        return
+    end
     local passId = string.sub(noticeUrl,strStart,-1)
 
     local urlContent = ""
@@ -3770,6 +3811,51 @@ end
 
 function MainMenuLayer:_onEventNoticeRedPoint()
     self:_updateNoticeRedPoint()
+end
+
+function MainMenuLayer:closeMorePanel()
+    self._morePanel:setVisible(false)
+    self._morePanel:setScale(0)
+end
+
+-- i18n ja 第一天的军团boss达到开启等级后就显示
+function MainMenuLayer:_getVisibleAndCountDownCallbackForWorldBoss(labelStr)
+    local targetFuncId = FunctionConst.FUNC_WORLD_BOSS
+    local curTime = G_ServerTime:getTime()
+    local funcId, _, endTime = G_UserData:getLimitTimeActivity():getWorldBossActivityIcon()
+    if funcId ~= targetFuncId or curTime > endTime then
+        return false
+    end
+
+    local callBack = function(menuBtn, menuData)
+        local curTime = G_ServerTime:getTime()
+        local _, startTime, endTime, isNeedShowEffect =
+            G_UserData:getLimitTimeActivity():getWorldBossActivityIcon()
+        if curTime < startTime then
+            menuBtn:removeCustomLabel()
+            menuBtn:showRunningImage(false)
+            menuBtn:openCountDown(
+                startTime,
+                function(menuBtnImp)
+                    menuBtnImp:showRunningImage(true)
+                end
+            )
+        else
+            if not Lang.checkLang(Lang.CN)  then
+                menuBtn:stopCountDown()
+            end
+            --menuBtn:addCustomLabel(labelStr, 18, cc.p(0, -30), Colors.WHITE, Colors.strokeBlack)
+            menuBtn:showRunningImage(true)
+        end
+        if isNeedShowEffect then
+            menuBtn:playBtnMoving()
+            menuBtn:playFuncGfx()
+        else
+            menuBtn:stopBtnMoving()
+            menuBtn:stopFuncGfx()
+        end
+    end
+    return true, callBack
 end
 
 return MainMenuLayer

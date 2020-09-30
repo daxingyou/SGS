@@ -74,7 +74,7 @@ function AchievementView:onCreate()
 		local CustomActivityConst = require("app.const.CustomActivityConst")
 		local data = G_UserData:getCustomActivity():getActUnitDataById(CustomActivityConst.CUSTOM_ACTIVITY_GUILD_ID)
 		self._isGuildActivityOpen = false
-		if data then
+		if data and data:checkActIsVisible() then
 			self._isGuildActivityOpen = true
 			table.insert(self._fullScreenTitles,2,Lang.get("achievement_tab_title_guild"))
 		end
@@ -84,7 +84,10 @@ function AchievementView:onCreate()
 	local openServerDays = G_UserData:getBase():getOpenServerDayNum()
 	local firstMeetOpenDays = tonumber(require("app.config.parameter").get(871).content)
 	if openServerDays >= firstMeetOpenDays then
-		table.insert(self._fullScreenTitles, Lang.get("achievement_tab_title5"))
+		if not Lang.checkLang(Lang.JA) then
+			table.insert(self._fullScreenTitles, Lang.get("achievement_tab_title5"))
+		end
+		
 	end
 
 	local param = {

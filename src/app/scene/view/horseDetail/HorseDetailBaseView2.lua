@@ -175,24 +175,46 @@ end
 
 -- 新增刷新战马装备的逻辑
 function HorseDetailBaseView:_horseEquipAddSuccess(event,equipPos)
-    self._horseEquipItem:updateHorseEquip(equipPos)
+	if self._tabSelect == HorseDetailBaseView.BUTTON_INFO then 		  --信息
+		self._horseEquipItem:updateHorseEquip(equipPos)
 
-    local attrInfo = HorseDataHelper.getHorseAttrInfo(self._horseData)    
-    self._recordAttr:updateData(attrInfo)
+		local attrInfo = HorseDataHelper.getHorseAttrInfo(self._horseData)    
+		self._recordAttr:updateData(attrInfo)
 
-    -- 播放属性变化
-    self._attrItem:playBaseAttrPromptSummary(self._recordAttr)
+		-- 播放属性变化
+		self._attrItem:playBaseAttrPromptSummary(self._recordAttr)
+
+	elseif self._tabSelect == HorseDetailBaseView.BUTTON_UPSTAR  then  --升阶   
+		local horseUpStar = ccui.Helper:seekNodeByName(G_SceneManager.getRunningScene(), "HorseTrainUpStarLayer")
+
+		self._horseEquipItem:updateHorseEquip(equipPos)
+		horseUpStar:_updateData()
+	
+		if not horseUpStar._unitData:isInBattle() then
+			-- 没有上阵的战马不播放战力差值动画
+			horseUpStar:_updateAttr()
+			return
+		end
+		--属性飘字
+		local summary = {}
+		horseUpStar:_executeSummaryPrompt(summary)
+	end
 end
 
 function HorseDetailBaseView:updateHorseEquipDifPrompt()
-    logWarn("HorseDetailBaseView:updateHorseEquipDifPrompt")
-
-    local refresh = false
-    if not self._horseData:isInBattle() then
-        refresh = true
-    end
-
-    self._attrItem:playBaseAttrPromptSummary(self._recordAttr,refresh)
+	logWarn("HorseDetailBaseView:updateHorseEquipDifPrompt")
+	
+	if self._tabSelect == HorseDetailBaseView.BUTTON_INFO then 		  --信息
+		local refresh = false
+		if not self._horseData:isInBattle() then
+			refresh = true
+		end
+	
+		self._attrItem:playBaseAttrPromptSummary(self._recordAttr,refresh)
+	elseif self._tabSelect == HorseDetailBaseView.BUTTON_UPSTAR  then  --升阶  
+		-- local horseUpStar = ccui.Helper:seekNodeByName(G_SceneManager.getRunningScene(), "HorseTrainUpStarLayer")
+		-- horseUpStar:updateHorseEquipDifPrompt()
+	end	
 end
 
 

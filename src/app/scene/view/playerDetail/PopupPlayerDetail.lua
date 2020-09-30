@@ -1063,7 +1063,7 @@ function PopupPlayerDetail:_takePhoto( channel, type )
 
 	local function doShare()
 		local FileUtils = cc.FileUtils:getInstance()
-		G_GameAgent:shareImage(channel, type, FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME)
+		G_GameAgent:shareImage(channel, type, FileUtils:getWritablePath()..NativeConst.SDK_SHARE_IMG_NAME,Lang.get("share_comment"))--i18n
 	end
 
 	local function afterCaptured( success, fileName )

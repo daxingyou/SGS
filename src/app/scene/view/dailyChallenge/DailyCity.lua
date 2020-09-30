@@ -111,17 +111,13 @@ function DailyCity:_refreshState()
     -- self._imageRes:ignoreContentAdaptWithSize(true)
     -- i18n change lable
     if not Lang.checkLang(Lang.CN) then
-        if  Lang.checkUI("ui4") then   
+        if Lang.checkUI("ui4") then   
             local UIHelper  = require("yoka.utils.UIHelper")
             UIHelper.setLabelStyle(self._imageName,{
-                style = self._open and "challenge_2_ui4" or "challenge_3_ui4",
+                style = self._open and "challenge_2_ui4" or "challenge_4_ui4",
                 text = Lang.getImgText(self._info.pic  ),
             })
-            -- if self._open then
-	        --     ShaderHalper.filterNode(self._imageNameBG, "", true)
-            -- else
-            --     ShaderHalper.filterNode(self._imageNameBG, "gray")
-            -- end
+            self:setNameBgGray(not self._open)
         else
             local UIHelper  = require("yoka.utils.UIHelper")
             UIHelper.setLabelStyle(self._imageName,{
@@ -303,5 +299,20 @@ function DailyCity:_dealCityFormatByI18n(cityNameX,cityNameY)
 	end
 end
 
+-- i18n
+function DailyCity:setCitySize(size)
+    self._btnCity:setContentSize(size)
+end
+
+-- i18n ja
+function DailyCity:setNameBgGray(bGray)
+    local state = "ShaderPositionTextureColor_noMVP"
+    if bGray then
+        state = "ShaderUIGrayScale"
+    end
+    local p_state = cc.GLProgramState:getOrCreateWithGLProgramName(state)
+    local render = self._imageNameBG:getVirtualRenderer():getSprite()
+    render:setGLProgramState(p_state)
+end
 
 return DailyCity

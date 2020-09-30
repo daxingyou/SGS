@@ -643,7 +643,7 @@ function TowerView:_dealPosI18n()
         local textHistoryStar = UIHelper.seekNodeByName(self._imageInfoBG,"TextHistoryStar")
 
         self._textHistoryStar:setAnchorPoint(cc.p(0,0.5))
-        self._textHistoryStar:setPositionX(textHistoryStar:getPositionX()+textHistoryStar:getContentSize().width )
+        self._textHistoryStar:setPositionX(textHistoryStar:getPositionX()+textHistoryStar:getContentSize().width)
     
         self._textStar:setAnchorPoint(cc.p(0,0.5))
         self._textStar:setPositionX(self._textStar:getPositionX()-10)
@@ -657,6 +657,7 @@ function TowerView:_dealPosI18n()
         self._textRecoverTitle:setPositionX( self._textChallengeCount:getPositionX() +  self._textChallengeCount:getContentSize().width +2)
         
         if Lang.checkUI("ui4") then
+            textChallengeCount:setPositionX(textChallengeCount:getPositionX() - 1)
             self._textChallengeCount:setAnchorPoint(cc.p(0,0.5))
             self._textChallengeCount:setPositionX(textChallengeCount:getPositionX() + textChallengeCount:getContentSize().width)
         end
@@ -668,13 +669,13 @@ function TowerView:_dealPosI18n()
 
         -- i18n ja pos
         if Lang.checkLang(Lang.JA) then
-            self._textHistoryStar:setPositionX(self._textHistoryStar:getPositionX() + 13)
+            self._textHistoryStar:setPosition(self._textHistoryStar:getPositionX() + 11, 51)
             -- 今日挑战次数
-            self._textStar:setPositionX(self._textStar:getPositionX() + 8)
+            self._textStar:setPosition(self._textStar:getPositionX() - 3, 51)
             -- 今日挑战
             text6:setPositionX(self._textStar:getPositionX() - text6:getContentSize().width - 12)
             -- 挑战回数
-            self._textChallengeCount:setPositionX(self._textChallengeCount:getPositionX() + 13)
+            self._textChallengeCount:setPosition(self._textChallengeCount:getPositionX() + 11, 21)
             self._textRecoverTitle:setPositionX( self._textChallengeCount:getPositionX() +  self._textChallengeCount:getContentSize().width +2)
         end
 	end
@@ -685,8 +686,8 @@ function TowerView:_adjustPosI18n()
 	if not Lang.checkLang(Lang.CN)  then
         -- i18n ja
         if Lang.checkLang(Lang.JA) then
-            self._imageHistoryStar:setPositionX(self._textHistoryStar:getPositionX()+self._textHistoryStar:getContentSize().width + 27)
-            self._imageHistoryStar_0:setPositionX(self._textStar:getPositionX()+self._textStar:getContentSize().width + 27)
+            self._imageHistoryStar:setPosition(self._textHistoryStar:getPositionX()+self._textHistoryStar:getContentSize().width + 23, 56)
+            self._imageHistoryStar_0:setPosition(self._textStar:getPositionX()+self._textStar:getContentSize().width + 23, 56)
         else
             self._imageHistoryStar:setPositionX(self._textHistoryStar:getPositionX()+self._textHistoryStar:getContentSize().width + 17)
             self._imageHistoryStar_0:setPositionX(self._textStar:getPositionX()+self._textStar:getContentSize().width + 17)

@@ -16,6 +16,11 @@ function HorseDetailEquipNode:ctor()
     }
     
     HorseDetailEquipNode.super.ctor(self, resource)
+
+    --i18n change function show
+    if Lang.checkLang(Lang.JA) then
+        self:setVisible(false)
+    end
 end
 
 function HorseDetailEquipNode:onCreate()

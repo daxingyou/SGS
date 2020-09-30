@@ -41,6 +41,7 @@ function PopupBreakResult:onEnter()
 	self:_playEffect()
 	--self:_createRoleEffect()
 	self:_playCurHeroVoice()
+	G_AudioManager:playSound(Path.getUIVoice("4herotp2"))
 end
 
 function PopupBreakResult:onShowFinish( ... )
@@ -123,8 +124,10 @@ end
 
 
 function PopupBreakResult:_playCurHeroVoice()
-    local baseId = AvatarDataHelper.getShowHeroBaseIdByCheck(self._heroUnitData)
-    G_HeroVoiceManager:playVoiceWithHeroId(baseId, true,self._storyAvatar)
+	if G_TutorialManager:isDoingStep() == false then
+		local baseId = AvatarDataHelper.getShowHeroBaseIdByCheck(self._heroUnitData)
+		G_HeroVoiceManager:playVoiceWithHeroId(baseId, true,self._storyAvatar)
+	end
 end
 
 function PopupBreakResult:_initEffect()  

@@ -26,9 +26,17 @@ function ActivityLevelGiftPkgUnitData:isReachUnLockLevel()
 	
 	local config = self:getConfig()
 	if Lang.checkUI("ui4") then
+		--[[
+		if self:getStart_time() > 0 then
+			return true
+		end
+		]]
+		if config.is_work ~= 1 then
+			return false
+		end
 		if config.condition == LevelPkgConst.CONDITION_LEVEL then
 			local curLevel = G_UserData:getBase():getLevel()
-			logWarn("level now： " .. curLevel.." xxxxxxxxxx target: "..config.require_value)
+			--logWarn("level now： " .. curLevel.." xxxxxxxxxx target: "..config.require_value)
 			if curLevel >= config.require_value then
 				return true
 			end
@@ -262,6 +270,7 @@ function ActivityLevelGiftPkgData:_s2cGetActLevelDiscount(id, message)
 		end
 	end
 	print("ActivityLevelGiftPkgData _s2cGetActLevelDiscount")
+	crashPrint("[Level Gift]  s2cGetActLevelDiscount "..tostring(#newAddUnitList))
 	G_SignalManager:dispatch(SignalConst.EVENT_WELFARE_LEVEL_GIFT_INFO,newAddUnitList)--i18n ja add param
 	G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_UPDATE, FunctionConst.FUNC_WELFARE)
 	G_SignalManager:dispatch(SignalConst.EVENT_MAIN_CITY_CHECK_BTNS, FunctionConst.FUNC_LEVEL_GIFTPKG)-- i18n ja
@@ -304,14 +313,14 @@ function ActivityLevelGiftPkgData:getListViewData()
 			-- 达到显示等级并且没有购买
 			if v:isReachShowLevel() and not v:getIs_buy()  then
 				if not v:isReachUnLockLevel() then --没达到解锁等级
-					logWarn("ssssssssssssssss")
+					--logWarn("ssssssssssssssss")
 					table.insert(datas, v)
 				elseif not isTimeOut then --没超时
-					logWarn("ggggggggggggggggggg")
+					--logWarn("ggggggggggggggggggg")
 					table.insert(datas, v)
 				else
 					
-					logWarn("oooooooooooo")
+					--logWarn("oooooooooooo")
 				end
 			end
 		end

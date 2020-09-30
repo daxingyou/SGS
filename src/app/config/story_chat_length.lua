@@ -9599,6 +9599,7 @@ local story_chat_length = {
         [9573] = {"story_zz_7",10900,},
         [9574] = {"story_zz_8",5400,},
         [9575] = {"story_zz_9",11500,},
+        [9576] = {"story_lb2_321",8500,},
     }
 }
 
@@ -14366,6 +14367,7 @@ local __index_chat = {
     ["story_lb2_319"] = 4760,
     ["story_lb2_32"] = 4761,
     ["story_lb2_320"] = 4762,
+    ["story_lb2_321"] = 9576,
     ["story_lb2_322"] = 4763,
     ["story_lb2_323"] = 4764,
     ["story_lb2_324"] = 4765,
@@ -23946,6 +23948,7 @@ local __main_key_map = {
     [4760] = "story_lb2_319",
     [4761] = "story_lb2_32",
     [4762] = "story_lb2_320",
+    [9576] = "story_lb2_321",
     [4763] = "story_lb2_322",
     [4764] = "story_lb2_323",
     [4765] = "story_lb2_324",

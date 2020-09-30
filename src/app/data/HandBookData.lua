@@ -7,8 +7,10 @@ local HandBookData = class("HandBookData", BaseData)
 local HeroConst = require("app.const.HeroConst")
 
 local schema = {}
+schema["isClickHeroBook"] 			={"number", 0}     -- i18n ja 招募界面点击图鉴只显示武将图鉴
 --schema
 HandBookData.schema = schema
+ 
 
 HandBookData.HERO_TYPE = 1
 HandBookData.EQUIP_TYPE = 2
@@ -48,16 +50,26 @@ function HandBookData:ctor(properties)
 	self._hasList = {}-- i18n ui4
 	self._firstSetFlag = true--i18n
 	self._loginHandbookList = {}--i18n
+
+	-- i18n ja 看板娘列表
+	self._recvGetHeroResPhoto = G_NetworkManager:add(MessageIDConst.ID_S2C_GetHeroResPhoto, handler(self, self._s2cGetHeroResPhoto))
+	self._mainAvatarList = {}
 end
 
 function HandBookData:clear()
 	self._recvGetResPhoto:remove()
 	self._recvGetResPhoto = nil
+
+	-- i18n ja 看板娘列表
+	self._recvGetHeroResPhoto:remove()
+	self._recvGetHeroResPhoto = nil
 end
 
 function HandBookData:reset()
 	self._firstSetFlag = true--i18n
 	self._loginHandbookList = {}--i18n
+
+	self._mainAvatarList = {}-- i18n ja 看板娘列表
 end
 
 -- Describle：
@@ -90,6 +102,10 @@ function HandBookData:_s2cGetResPhoto(id, message)
 		if rawget(value, "res_rtg") and value.res_rtg>item.limitRedLevel then
 			item.limitRedLevel = value.res_rtg
 		end
+
+		if Lang.checkUI("ui4") then
+			self:_processHeroInfoI18n(value)
+		end
 	end
 
 	--i18n
@@ -110,6 +126,11 @@ function HandBookData:_s2cGetResPhoto(id, message)
 	self:_initHomelandBuffInfos()
 	
 	G_SignalManager:dispatch(SignalConst.EVENT_GET_RES_PHOTO_SUCCESS)
+
+	--i18n ja 
+	G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_UPDATE,FunctionConst.FUNC_DRAW_HERO)
+    G_SignalManager:dispatch(SignalConst.EVENT_RED_POINT_UPDATE,FunctionConst.FUNC_TEAMPICTURE)
+    
 end
 
 function HandBookData:isHeroHave(baseId, limitLevel, limitRedLevel)
@@ -978,6 +999,81 @@ function HandBookData:_initHomelandBuffInfos()
 			end
 		end
 	)
+end
+
+-- i18n ja 看板娘数据
+local function getBitByNum(number, bitLength)
+    local bitNumber = bit.tobits(number)
+    local bitTbl = {}
+    for i = 1, bitLength do
+        bitTbl[i] = bitNumber[i] or 0
+	end
+	return bitTbl
+end
+function HandBookData:_processHeroInfoI18n(value)
+	if value.res_type == HandBookData.HERO_TYPE then
+		local heroInfo = require("app.config.hero")
+		local config = heroInfo.get(value.res_id)
+		if config.type == 1 and G_UserData:getHero():getRoleBaseId() ~= value.res_id then
+			return
+		end
+		local color = config.color
+		local resId = config.res_id
+		if value.res_lv == HeroConst.HERO_LIMIT_RED_MAX_LEVEL  then
+			resId = config.limit_res_id
+			color = 6
+		end
+		if value.res_rtg == HeroConst.HERO_LIMIT_GOLD_MAX_LEVEL then
+			resId = config.limit_red_res_id
+			color = 7
+		end
+		local baseId = getBitByNum(value.res_id,32)
+		local limitLevel = getBitByNum(value.res_lv,8)
+		local limitRedLevel = getBitByNum(value.res_rtg,8)
+		local id = baseId
+		for i, value in ipairs(limitLevel) do
+			table.insert(id,value)
+		end
+		for i, value in ipairs(limitRedLevel) do
+			table.insert(id,value)
+		end
+		id = bit.tonumb(id)
+		self._mainAvatarList[id] = {
+			id = id,
+			baseId = value.res_id,
+			limitLevel = value.res_lv,
+			limitRedLevel = value.res_rtg,
+			config = config,
+			color = color,
+			resId = resId
+		}
+	end
+end
+function HandBookData:getMainAvatarDataById(id)
+	return self._mainAvatarList[id]
+end
+function HandBookData:getMainAvatarList()
+	return self._mainAvatarList
+end
+function HandBookData:c2sGetHeroResPhoto()
+	G_NetworkManager:send(MessageIDConst.ID_C2S_GetHeroResPhoto, {})
+end
+function HandBookData:_s2cGetHeroResPhoto(id, message)
+	if message.ret ~= MessageErrorConst.RET_OK then
+		return
+	end
+	local res_photo = rawget(message, "res_photo")
+	if not res_photo then
+		return
+	end
+	self._mainAvatarList = {}
+	for i, value in ipairs(res_photo) do
+		if Lang.checkUI("ui4") then
+			self:_processHeroInfoI18n(value)
+		end
+	end
+
+	G_SignalManager:dispatch(SignalConst.EVENT_GET_HERO_RES_PHOTO_SUCCESS)
 end
 
 return HandBookData

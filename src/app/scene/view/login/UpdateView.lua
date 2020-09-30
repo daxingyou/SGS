@@ -30,6 +30,7 @@ function UpdateView:ctor()
 		self._nodeIndicator = nil
 		self._cellHead = nil
 		self._currPage = 0
+		self._isAction = false
 	end
 	
 	UpdateView.super.ctor(self, resource)
@@ -47,16 +48,7 @@ function UpdateView:onCreate()
 	-- i18n ja change CSB
 	if Lang.checkUI("ui4") then
 		self:_initNewUI()
-		local stayAction = cc.DelayTime:create(STAR_TIME )
-		self._bulletParentNode:runAction(stayAction)
-		self._bulletParentNode:runAction(
-			cc.Sequence:create(
-				stayAction,
-				cc.CallFunc:create(function()
-					self:_startAutoRoll()
-				end)
-			)
-		)
+		self:_delayDoAction()
 		
 	end
 end
@@ -116,6 +108,7 @@ function UpdateView:_initNewUI()
 	self:_setCurrPage(1)
 end
 
+
 --i18n ja change CSB
 function UpdateView:_createBulletinCells()
 	local firstCellInfo = nil
@@ -123,6 +116,7 @@ function UpdateView:_createBulletinCells()
 	for index = 1,CREATE_NODE_NUM,1 do
 		local cell = UpdateViewBulletinCell.new()
 		cell:setCascadeOpacityEnabled(true)
+		cell:setCustomCallback(handler(self,self._onClickItemCell))
 		cell:setAnchorPoint(cc.p(0.5,0.5))
 		self._bulletParentNode:addChild(cell)
 		local cellInfo = {node = cell,left = nil,right = nil,data = nil}
@@ -197,16 +191,46 @@ function UpdateView:_getCellByIndex(index)
 	return nil
 end
 
+--i18n ja change CSB
+function UpdateView:_delayDoAction()
+	local stayAction = cc.DelayTime:create(STAR_TIME )
+	self._bulletParentNode:runAction(
+		cc.Sequence:create(
+			stayAction,
+			cc.CallFunc:create(function()
+				self:_startAutoRoll()
+			end)
+		)
+	)
+end
 
+--i18n ja change CSB
+function UpdateView:_onClickItemCell(tag,index)
+	--立即切换图片
+	if self._isAction == true then
+		return
+	end
 
+	self:_cancelAction()
+	self:_startAutoRoll()
+end
+
+--i18n ja change CSB
+function UpdateView:_cancelAction()
+	self._bulletParentNode:stopAllActions()
+end
+
+function UpdateView:_onRollComplete()
+	self:_delayDoAction()
+end
 
 --i18n ja change CSB
 function UpdateView:_startAutoRoll()
+	self._isAction = true
 	local cell = self:_getCellByIndex(self._currPage)
 	local fadeAction = cc.FadeTo:create(ACTION_TIME,0)
 	cell.node:runAction(fadeAction)
 
-	
 	local delayAction = cc.DelayTime:create(ACTION_TIME)
 	local action2 = cc.FadeIn:create(ACTION_TIME)
 	local stayAction = cc.DelayTime:create(STAR_TIME)
@@ -218,14 +242,12 @@ function UpdateView:_startAutoRoll()
 			end),
 			action2,
 			cc.CallFunc:create(function()
+				self._isAction = false
 				local index = self:_nextIndex(self._currPage)
 				self._nodeIndicator:setPageViewIndex(index-1)--从0开始
-			end),
-			stayAction,
-			cc.CallFunc:create(function()
 				self._cellHead = cell.right--优化，避免刷新Cell
 				self:_setCurrPage(self:_nextIndex(self._currPage))
-				self:_startAutoRoll()
+				self:_onRollComplete()
 			end)
 		)
 	)

@@ -29,6 +29,7 @@ DrawCardView.GOLD_DRAW_FREE = 1
 DrawCardView.GOLD_DRAW_TOKEN = 2
 DrawCardView.GOLD_DRAW_GOLD = 3
 
+
 function DrawCardView:ctor()
 	self._moneyDrawCell = nil	--普通招募
 	self._goldDrawCell = nil 	--元宝招募
@@ -121,7 +122,9 @@ function DrawCardView:onCreate()
 	self._goldTenDrawCell:setResourceVisible(true)		
 	local value = tonumber(Parameter.get(ParameterIDConst.RECRUIT_GOLD_COST10).content)
 	self._goldTenDrawCell:updateResourceInfo(TypeConvertHelper.TYPE_RESOURCE, DataConst.RES_DIAMOND, value)
-
+	if Lang.checkUI("ui4") then
+		G_EffectGfxMgr:createPlayGfx(self._goldTenDrawCell._imageBook, "effect_lingpai_datx")
+	end
 	self._pointBox1 = DrawBoxCell.new(self._box1)
 	self._pointBox1:addTouchFunc(handler(self, self._boxTouch))
 	local param = 
@@ -194,7 +197,15 @@ function DrawCardView:onEnter()
 	self:_refreshBoxState()
 	self._scheduleHandler = SchedulerHelper.newSchedule(handler(self, self._refreshMoneyCell), 1)
 
-	self._btnBook:updateUI(FunctionConst.FUNC_DRAW_CARD_HAND_BOOK )
+	
+	if Lang.checkUI("ui4") then
+		self._btnBook:updateUI(FunctionConst.FUNC_TEAMPICTURE)
+
+		self._btnBook:showRedPoint(G_UserData:getTeamPictureData():isHasRedPoint())
+	else
+		self._btnBook:updateUI(FunctionConst.FUNC_DRAW_CARD_HAND_BOOK)
+	end
+	
 	-- self._btnBook:addClickEventListenerEx(handler(self, self._onBookClick))
 
 	-- self._btnRule:setIconAndString("btn_pass_explain_nml", Lang.get("recruit_rule"))
@@ -208,6 +219,9 @@ function DrawCardView:onEnter()
 		self._signalItemOpDelete = G_SignalManager:add(SignalConst.EVENT_ITEM_OP_DELETE, handler(self, self._onEventRecruitInfo))
 	end
 
+	--i18n ja 
+	self._signalRedPointUpdate = G_SignalManager:add(SignalConst.EVENT_RED_POINT_UPDATE, handler(self,self._onEventRedPointUpdate))
+	self:_refreshRedPoint()--i18n ja 
 end
 
 function DrawCardView:onExit()
@@ -233,10 +247,26 @@ function DrawCardView:onExit()
 		self._signalItemOpDelete = nil
 	end
 
+	--i18n ja 
+	self._signalRedPointUpdate:remove()
+	self._signalRedPointUpdate = nil
+
 	if self._scheduleHandler then
 		SchedulerHelper.cancelSchedule(self._scheduleHandler)
 	end
 	self._scheduleHandler = nil
+end
+
+--i18n ja 
+function DrawCardView:_onEventRedPointUpdate(event,funcId)
+	self:_refreshRedPoint()
+end
+
+--i18n ja 
+function DrawCardView:_refreshRedPoint()
+	local RedPointHelper = require("app.data.RedPointHelper")
+	local redPoint = RedPointHelper.isModuleReach(FunctionConst.FUNC_TEAMPICTURE)	
+	self._btnBook:showRedPoint(redPoint)
 end
 
 DrawCardView.BOX_NUM = 3
@@ -509,13 +539,29 @@ function DrawCardView:_onGoldTenClick()
 	end
 end
 
+--i18n ja
+function DrawCardView:doMoreTen()
+	--检查背包
+	local bagFull = LogicCheckHelper.isPackFull(TypeConvertHelper.TYPE_HERO)
+	if bagFull then
+		return false
+	end
+	if self._goldDrawTenType == DrawCardView.GOLD_DRAW_GOLD then
+		return self:_sendGoldTenDraw()
+		
+	else
+		G_UserData:getRecruitData():c2sRecruitGoldTen(self._goldDrawTenType)
+		return true
+	end
+end
+
 function DrawCardView:_sendGoldTenDraw()
 	if self._isBanshu then
 		local leftCount = tonumber(Parameter.get(ParameterIDConst.DRAW_BANSHU_MONEY_CNT).content) - G_UserData:getRecruitData():getDaily_gold_cnt()
 		local leftTenCount = math.floor(leftCount/10)
 		if leftTenCount <= 0 then
 			G_Prompt:showTip(Lang.get("recruit_no_count"))
-			return
+			return false--i18n ja
 		end
 	end
 	local needValue = tonumber(Parameter.get(ParameterIDConst.RECRUIT_GOLD_COST10).content)
@@ -523,6 +569,7 @@ function DrawCardView:_sendGoldTenDraw()
 	if success then 
 		G_UserData:getRecruitData():c2sRecruitGoldTen(self._goldDrawTenType)
 	end
+	return success --i18n ja
 end
 
 function DrawCardView:_onEventRecruitInfo(eventName, message)
@@ -533,13 +580,12 @@ function DrawCardView:_onEventRecruitInfo(eventName, message)
 end
 
 function DrawCardView:_onEventRecruitNormal(eventName, awards)
-	local AudioConst = require("app.const.AudioConst")
-    G_AudioManager:playSoundWithId(AudioConst.SOUND_DRAW_CARD1)
-
 	if Lang.checkUI("ui4") then
 		local effect = DrawNormalEffect2.new(awards)
 		effect:open()
 	else
+		local AudioConst = require("app.const.AudioConst")
+   		 G_AudioManager:playSoundWithId(AudioConst.SOUND_DRAW_CARD1)
 		local effect = DrawNormalEffect.new(awards)
 		effect:open()
 	end
@@ -549,12 +595,12 @@ function DrawCardView:_onEventRecruitNormal(eventName, awards)
 end
 
 function DrawCardView:_onEventRecruitGold(eventName, awards)
-	local AudioConst = require("app.const.AudioConst")
-	G_AudioManager:playSoundWithId(AudioConst.SOUND_DRAW_CARD1)
 	if Lang.checkUI("ui4") then
 		local effect = DrawOneEffect2.new(awards)
 		effect:open()
 	else
+		local AudioConst = require("app.const.AudioConst")
+		G_AudioManager:playSoundWithId(AudioConst.SOUND_DRAW_CARD1)
 		local effect = DrawOneEffect.new(awards)
 		effect:open()
 	end
@@ -565,12 +611,12 @@ function DrawCardView:_onEventRecruitGold(eventName, awards)
 end
 
 function DrawCardView:_onEventRecruitGoldTen(eventName, awards)
-	local AudioConst = require("app.const.AudioConst")
-    G_AudioManager:playSoundWithId(AudioConst.SOUND_DRAW_CARD10)
 	if Lang.checkUI("ui4") then
 		local effect = DrawTenEffect2.new(awards)
 		effect:open()
 	else
+		local AudioConst = require("app.const.AudioConst")
+    	G_AudioManager:playSoundWithId(AudioConst.SOUND_DRAW_CARD10)
 		local effect = DrawTenEffect.new(awards)
 		effect:open()
 	end
@@ -591,6 +637,23 @@ function DrawCardView:_boxTouch(sender)
 	end
 end
 
+--i18n ja
+function DrawCardView:hasAllHeroOfBox(itemList)
+	for k,awards in pairs(itemList) do
+		for index, award in ipairs(awards) do
+			if award.type == TypeConvertHelper.TYPE_HERO then
+				if not G_UserData:getHandBook():isHeroHave(award.value, nil, nil) then
+					return false
+				end
+			else
+				return false
+			end
+		end
+	end
+	return true
+end
+
+
 function DrawCardView:_openBox(index, state)
 	if state == DrawBoxCell.STATE_EMPTY then
 		G_Prompt:showTip(Lang.get("recruit_already_get_hero"))
@@ -600,6 +663,15 @@ function DrawCardView:_openBox(index, state)
 	self._selectedBoxIndex = index
 	local UIPopupHelper	 = require("app.utils.UIPopupHelper")
 	local itemList = UIPopupHelper.getBoxItemList(boxId)
+
+	if Lang.checkLang(Lang.JA) then
+		local hasAllHero = self:hasAllHeroOfBox(itemList)
+		if hasAllHero then
+			boxId = tonumber(Parameter.get(ParameterIDConst["RECRUIT_POINT_BOX_NEW_"..index]).content)
+			itemList = UIPopupHelper.getBoxItemList(boxId)
+		end
+	end
+
 	local popupSelectRewardTab = require("app.ui.PopupSelectRewardTab").new(Lang.get("recruit_point_box_title"),handler(self, self._getBoxReward))
 	popupSelectRewardTab:updateUI(itemList)
 	popupSelectRewardTab:openWithAction()
@@ -625,9 +697,14 @@ function DrawCardView:_onEventRecruitPointGet(eventName, awards)
 	self:_refreshBoxState()
 end
 
-function DrawCardView:_onBookClick()
+function DrawCardView:_onBookClick() 
+    G_UserData:getHandBook():setIsClickHeroBook(1)  -- i18n ja 招募界面点击图鉴只显示武将图鉴
 	local WayFuncDataHelper = require("app.utils.data.WayFuncDataHelper")
-    WayFuncDataHelper.gotoModuleByFuncId(FunctionConst.FUNC_HAND_BOOK)
+	if Lang.checkUI("ui4") then
+		WayFuncDataHelper.gotoModuleByFuncId(FunctionConst.FUNC_TEAMPICTURE)
+	else
+		WayFuncDataHelper.gotoModuleByFuncId(FunctionConst.FUNC_HAND_BOOK)
+	end
 end
 
 -- function DrawCardView:_onRuleClick()

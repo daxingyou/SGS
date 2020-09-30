@@ -35,7 +35,11 @@ function PopupTreasureDetail:onCreate()
 		local name2 = UIHelper.seekNodeByName(self._detailWindow,"Name2")
 		local size = name2:getContentSize()
 		name2:setContentSize(cc.size(size.width + 200,size.height))
-    end
+	end
+	
+	if Lang.checkUI("ui4") then  -- i18n ja change font size
+		self._btnWayGet:setFontSize(26)
+	end
 end
 
 function PopupTreasureDetail:onEnter()

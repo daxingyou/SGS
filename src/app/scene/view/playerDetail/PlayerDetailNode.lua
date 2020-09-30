@@ -429,9 +429,9 @@ function PlayerDetailNode:_refreshExpOver()
 	-- 宝箱
 	local iconPath = ""
 	if percent < 100 then
-		iconPath = Path.getPlayerDetail("img_box1")
+		iconPath = Path.getChapterBox("baoxiangjin_guan") --getPlayerDetail("img_box1")   
 	else
-		iconPath = Path.getPlayerDetail("img_box2")
+		iconPath = Path.getChapterBox("baoxiangjin_kai") --getPlayerDetail("img_box2")
 	end
 	self._btnBox:setOpacity(255)
 	self._btnBox:ignoreContentAdaptWithSize(true)
@@ -502,7 +502,7 @@ function PlayerDetailNode:_showAward()
 	textDetail:setString(content)
 
 	local listViewDrop = ccui.Helper:seekNodeByName(popupReward, "_listViewDrop")
-	listViewDrop:setPositionY(-80)
+	listViewDrop:setPositionY(-60)
 	listViewDrop:doLayout()
 
  
@@ -510,6 +510,9 @@ function PlayerDetailNode:_showAward()
 	for i, item in ipairs(items) do
 		 local imageNameBg = ccui.Helper:seekNodeByName(item,"ImageNameBg")
 		 imageNameBg:setVisible(false)
+
+		local icon_name =  ccui.Helper:seekNodeByName(item,"Icon_name")
+		icon_name:setFontSize(icon_name:getFontSize()-4)
 	end
 	listViewDrop:doLayout()
 end

@@ -33,7 +33,7 @@ function CommonRewardListNode:_init()
     self._scrollView:setSwallowTouches(false)
 
     if Lang.checkLang(Lang.JA) then
-        self._nodeOr:setFontSize(18)
+        self._nodeOr:setFontSize(16)
     elseif not Lang.checkLang(Lang.CN) then
         self._nodeOr:setFontSize(22)
 	end

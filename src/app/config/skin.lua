@@ -10,7 +10,7 @@ local __key_map = {
   id = 1,    --编号-int 
   name = 2,    --皮肤名称-string 
   quality = 3,    --品质-int 
-  resource = 4,    --资源-string 
+  resource = 4,    --资源-int 
   is_work = 5,    --是否生效-int 
   des = 6,    --条件描述-string 
 
@@ -21,7 +21,7 @@ local __key_type = {
   id = "int",    --编号-1 
   name = "string",    --皮肤名称-2 
   quality = "int",    --品质-3 
-  resource = "string",    --资源-4 
+  resource = "int",    --资源-4 
   is_work = "int",    --是否生效-5 
   des = "string",    --条件描述-6 
 
@@ -32,9 +32,8 @@ local __key_type = {
 local skin = {
     version =  1,
     _data = {
-        [1] = {1,"桃华",0,"",0,"默认",},
-        [2] = {2,"浪漫女仆",1,"",0,"亲密度达到v7获得",},
-        [3] = {3,"兔女郎",1,"",0,"亲密度达到v10获得",},
+        [1] = {1,"桃华",0,1,0,"默认",},
+        [2] = {2,"女仆",1,2,0,"亲密度达到v7获得",},
     }
 }
 
@@ -42,7 +41,6 @@ local skin = {
 local __index_id = {
     [1] = 1,
     [2] = 2,
-    [3] = 3,
 
 }
 
@@ -50,7 +48,6 @@ local __index_id = {
 local __main_key_map = {
     [1] = 1,
     [2] = 2,
-    [3] = 3,
 
 }
 

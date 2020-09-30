@@ -43,6 +43,12 @@ function ChatVoiceView:refreshState(inRecordVoice)
     self._textHint:setVisible(inRecordVoice)
     self._imageVoice2:setVisible(not inRecordVoice)
     self._textHint2:setVisible(not inRecordVoice)
+
+    -- i18n ja change size
+    if Lang.checkUI("ui4") then   
+        self._textHint:setFontSize(15)
+        self._textHint2:setFontSize(15)
+    end 
 end
 
 return ChatVoiceView

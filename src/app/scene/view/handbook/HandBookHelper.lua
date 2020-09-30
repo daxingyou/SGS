@@ -102,6 +102,12 @@ function HandBookHelper.getHandBookTabList(forceShowFunctionId)
         table.insert(funcList, HandBookHelper.TBA_HISTORY_HERO)
     end
 
+     -- i18n ja 招募界面点击图鉴只显示武将图鉴
+    if G_UserData:getHandBook():getIsClickHeroBook() == 1 then
+        tabNameList = {Lang.get("handbook_tab1")}
+        funcList = {HandBookHelper.TBA_HERO}
+    end
+
     return tabNameList, funcList
 end
 

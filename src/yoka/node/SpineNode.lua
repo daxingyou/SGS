@@ -9,7 +9,7 @@ local fileUtils = cc.FileUtils:getInstance()
 local PrioritySignal = require("yoka.event.PrioritySignal")
 
 --
-function SpineNode:ctor(scale, size)
+function SpineNode:ctor(scale, size, setGray)
     self:enableNodeEvents()
     self:setCascadeOpacityEnabled(true)
     self:setCascadeColorEnabled(true)
@@ -24,6 +24,7 @@ function SpineNode:ctor(scale, size)
     self._scale = scale or 1
     self._size = size
     self._registerSpineEventHandler = false
+    self._setGray = setGray
 
     self.signalLoad = PrioritySignal.new("string")
     self.signalStart = PrioritySignal.new("string")
@@ -64,9 +65,16 @@ function SpineNode:setAsset(path,callback)
             self:addChild(spineAni)
             self._spine = spineAni
 
+            if self._setGray then
+                local ShaderHalper = require("app.utils.ShaderHelper")
+                ShaderHalper.filterNode(self._spine, "gray")
+            end
+           
+
             if self._size then
                 self:setSize(self._size)
             end
+
 
             self:_registerSpineEvent()
 
@@ -85,6 +93,11 @@ function SpineNode:setAsset(path,callback)
     end, self)
 
 end
+
+-- function SpineNode:applyShader(shaderName)
+--     local ShaderHalper = require("app.utils.ShaderHelper")
+--     ShaderHalper.filterNode(spine, shaderName)
+-- end
 
 --
 function SpineNode:_registerSpineEvent()
@@ -278,5 +291,6 @@ function SpineNode:_spinePointUpdate(dt)
     end
 end
 -- i18n ja mouth end
+
 
 return SpineNode

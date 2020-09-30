@@ -283,6 +283,15 @@ function ChapterView:_refreshTypeTitle()
     end
     --self._textTitle:setString(Lang.get("chapter_type")[self._pageType])
     self._topbarBase:setTitle(Lang.get("chapter_type")[self._pageType], 40, cc.c3b(0xff, 0xcc, 0x00), cc.c3b(0xb2, 0x5d, 0x1e))
+    -- i18n ja change size
+    if Lang.checkUI("ui4") then   
+        local UIHelper = require("yoka.utils.UIHelper")
+        UIHelper.setLabelStyle(self._topbarBase:getTitle(),{  
+            style = "big_tab",
+            text = Lang.get("chapter_type")[self._pageType],
+        })        
+    end
+
 end
 
 --清除现在地图

@@ -234,4 +234,10 @@ ParameterIDConst.SPECIAL_CONFIG_TIME			= 920 --用于读取特殊配置的判别
 
 ParameterIDConst.TSHIRT_LIMIT                   = 922 --T恤活动资格判定（充值金额）
 
+
+
+ParameterIDConst.RECRUIT_POINT_BOX_NEW_1 = 57008           --积分宝箱1 -- i18n ja 
+ParameterIDConst.RECRUIT_POINT_BOX_NEW_2 = 57009           --积分宝箱2 -- i18n ja 
+ParameterIDConst.RECRUIT_POINT_BOX_NEW_3 = 23           --积分宝箱3 -- i18n ja 
+
 return ParameterIDConst

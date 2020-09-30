@@ -25,6 +25,7 @@ function HeroDetailJointModule:onCreate()
 	self._nodeTitle:setFontSize(24)
 	self._nodeTitle:setTitle(Lang.get("hero_detail_title_joint"))
 	if Lang.checkUI("ui4") then -- i18n ja change
+		self._panelBg:removeBackGroundImage()
         ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):loadTexture(Path.getTextTeam("img_zr_di03"))
         ccui.Helper:seekNodeByName(self._nodeTitle, "ImageBase"):setContentSize(cc.size(398, 37))  
 	end

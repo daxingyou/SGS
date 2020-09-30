@@ -95,6 +95,13 @@ function CommonIconNameNode:updateUI(iconType, iconValue, iconCount)
 			end
 			if not Lang.checkLang(Lang.CN) then
 				self._iconName:getVirtualRenderer():setMaxLineWidth(88)
+				-- i18n ui4
+				if Lang.checkUI("ui4") then
+					self._iconName:getVirtualRenderer():setMaxLineWidth(90)
+					self._iconName:ignoreContentAdaptWithSize(true) -- 老逻辑存在文字剪裁的情况，ui4这里设置一下
+					self._iconName:setAnchorPoint(0.5, 1)
+					self._iconName:setPositionY(self._imageNameBg:getPositionY() - 5 / 2)
+				end
 				local size = self._iconName:getVirtualRendererSize()
 				self._imageNameBg:setContentSize(cc.size(96, size.height + 5)) 
 			end

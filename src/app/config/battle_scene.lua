@@ -1,4 +1,4 @@
---battle_scene
+﻿--battle_scene
 
 local _lang = "cn"
 local _isExist = false

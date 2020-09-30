@@ -162,6 +162,12 @@ function PopupGrainCarDonate:_initUI()
     self._btnLaunch:setString(Lang.get("grain_car_btn_launch"))
     self._btnGo2Car:setString(Lang.get("grain_car_btn_go2Car"))
     self._donateCount:setString(Lang.get("grain_car_donate_tip_at_least", {num = GrainCarConfigHelper.getGrainCarLevelUp()}))
+   
+    -- i18n ja labelColor
+    if Lang.checkLang(Lang.JA) then
+        self._donateCount:setColor(Colors.NUMBER_WHITE)
+    end
+    
     if not Lang.checkLang(Lang.CN) then
         self:_updateDonateCountPosByI18n()
     end
@@ -724,7 +730,16 @@ function PopupGrainCarDonate:_swapImageByI18n()
         self._expTitle = UIHelper.swapWithLabel(self._expTitle,{
             style = "text_escort_1",
             text = Lang.getImgText("txt_escort_dengji01"),
-        })     
+        })   
+
+        -- i18n ja labelColor
+        if Lang.checkLang(Lang.JA) then
+            self._expTitle:removeFromParent()
+            self._expTitle = ccui.Text:create(Lang.getImgText("txt_escort_dengji01"), Path.getCommonFont(), 14)
+            self._nodeDonate:addChild(self._expTitle, 10)
+            self._expTitle:setPosition(0, 138)
+            self._expTitle:setColor(Colors.BRIGHT_BG_ONE)
+        end
     end
     if Lang.checkLang(Lang.JA) then
         local offset = 15

@@ -135,6 +135,8 @@ function PopupRunningManResult:_createLabelByI18n()
 	if Lang.checkSquareLanguage() then
 		local UIHelper  = require("yoka.utils.UIHelper")
 		local image1 = UIHelper.seekNodeByName(self,"Image_title")
+		image1:loadTexture(Path.getImgRunway2("img_runway_concord_biaoti"))
+
 		local lable1 = UIHelper.createLabel({
 			style = "runway_1",
 			text = Lang.getImgText("img_runway_concord_biaoti_1") ,
@@ -178,6 +180,7 @@ function PopupRunningManResult:_createLabelByI18n()
 
 
 		local image2 = UIHelper.seekNodeByName(self,"Image_title_0")
+		image2:loadTexture(Path.getImgRunway2("img_runway_concord_first"))
 
 		local lable3 = UIHelper.createLabel({
 			style = "runway_2",

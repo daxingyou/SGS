@@ -119,7 +119,41 @@ function ActivityFriendInviteData:pullData()
 	self:c2sMyInviteInfo() 
 end
 
+-- 新需求：每天第一次打开好友邀请显示红点(条件becode为空)
+function ActivityFriendInviteData:_isFirstOpenView()
+
+	local data = G_StorageManager:load("friendInvite")
+	if data == nil or  data["becode"] == "" then
+		
+		if data == nil then 			-- 新玩家/包含删除缓存 
+			local openDay = G_UserData:getBase():getOpenServerDayNum()  
+			G_StorageManager:save("friendInvite", {openDay = openDay, count = 0, becode = ""})
+			return true
+		end
+ 
+		if data and data["count"] == 0 then  
+			return true
+		end
+		
+		if data and data["count"] == 1 then  	  -- 新的一天
+			local openDay = G_UserData:getBase():getOpenServerDayNum()  
+
+			if openDay ~= data["openDay"] then
+				G_StorageManager:save("friendInvite", {openDay = openDay, count = 0, becode = data["becode"]})
+				return true
+			end
+		end
+	end
+ 
+	return false
+end
+ 
 function ActivityFriendInviteData:hasRedPoint()
+
+	if self:_isFirstOpenView() then
+		return true
+	end
+
 	local cfg = {}
 	local getCfg = function ()
 		local len = friend_invite.length()
@@ -155,11 +189,11 @@ function ActivityFriendInviteData:hasRedPoint()
 	-- 受邀信息有可领取
 	for i=1, #tab2 do
 		if self:_isHaveGetRewardCode(tab2[i].id) == false then
-			if i == 1 then
+			if tab2[i].condition == 201 then  
 				return true
-			elseif i>=2 and i<=4 and self:getDay() >= tab2[i].require_value1 then 
+			elseif tab2[i].condition == 202 and self:getDay() >= tab2[i].require_value1 then 
 				return true
-			elseif i>=5 and i<=7 and G_UserData:getBase():getLevel() >= tab2[i].require_value1 then 
+			elseif tab2[i].condition == 203 and G_UserData:getBase():getLevel() >= tab2[i].require_value1 then 
 				return true
 			end
 		end
@@ -181,9 +215,9 @@ end
 function ActivityFriendInviteData:_isUnReceiveState(id)
 	local userInviteInfo =  self:getUserInviteInfo()
 	local info = friend_invite.get(id)
-	if id <= 3 then
+	if info.condition == 101 then
 		return #userInviteInfo >= info.require_value1
-	elseif id > 3 and id < 7 then
+	elseif info.condition == 102 then
 		local bNum = #userInviteInfo >= info.require_value1
 		-- 等级
 		local nNum = 0
@@ -198,7 +232,7 @@ function ActivityFriendInviteData:_isUnReceiveState(id)
 		end
 
 		return (bNum and bLevel)
-	elseif id >= 7 and id <= 9 then
+	elseif info.condition == 103 then
 		local bNum = #userInviteInfo >= info.require_value1
 		-- 战力
 		local nNum = 0

@@ -14,6 +14,7 @@ schema["color"] = {"number",0}
 schema["time_type"] = {"number",0}
 schema["time_value"] = {"number",0}
 schema["des"] = {"string",nil}
+schema["priority"] = {"number",0}	-- i18n ja 排序
 
 -- 自定义
 schema["have"] = {"boolean",false} -- 是否含有该头像框

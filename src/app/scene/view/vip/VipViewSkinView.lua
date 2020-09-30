@@ -54,6 +54,12 @@ function VipViewSkinView:_onEventPosterGirlChangeSkinSuccess()
 	self:_refreshView()
 end
 
+
+function VipViewSkinView:selectEquipingItem()
+	self._selectIndex = nil
+	self:_refreshView()
+end
+
 function VipViewSkinView:_refreshView()
 	local oldSelectSkinId = nil
 	if self._selectIndex then
@@ -145,6 +151,9 @@ function VipViewSkinView:_onItemSelected(item, index)
 	if newItem then
 		newItem:setSelect(true)
 	end
+
+	local PosterGirlVoiceConst = require("app.const.PosterGirlVoiceConst")
+	G_SignalManager:dispatch(SignalConst.EVENT_POSTER_GIRL_VOICE_UPDATE,PosterGirlVoiceConst.TRIGGER_POS_CLICK_WARDROBE)
 end
 
 function VipViewSkinView:_onItemTouch(index, shopItemData)
@@ -185,6 +194,28 @@ function VipViewSkinView:_refreshSelectPosterGirlInfo(config)
 		self._buttonEquip:setString(Lang.get("vip_skin_button_equip"))
 		self._buttonEquip:setEnabled(false)
 	end
+	
+	if self:getParent():isVisible() then
+		local scene = G_SceneManager:getRunningScene()
+		local sceneView = scene:getSceneView()
+		if sceneView.changeSkin then
+			sceneView:changeSkin(config.id)
+		end
+	end
+
 end
+
+function VipViewSkinView:getCurrSelectSkinId()
+	if self._selectIndex == nil then
+		return nil
+	end
+	local config = self._itemList[self._selectIndex]
+	if config == nil then
+		return nil
+	end
+	return config.id
+end
+
+
 
 return VipViewSkinView

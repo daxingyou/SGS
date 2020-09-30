@@ -85,6 +85,7 @@ NativeConst.SDK_SHARE_URL                   = "url"             --i18n sdk 分�
 
 NativeConst.SDK_SHARE_IMG_NAME              = "week_share.jpg"              --i18n sdk 分享图片名字
 NativeConst.SDK_TEMP_CITATIONCODE_IMG       = "temp_citationcode.jpg"       --i18n sdk 保存引继码图片名字
+NativeConst.SDK_DOWNLOAD_IMG_NAME           = "#name#.jpg"       --i18n sdk 下载图片名称
 
 
 return NativeConst
