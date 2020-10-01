@@ -31,7 +31,7 @@ function __G__TRACKBACK__(message)
         if APP_DEVELOP_MODE or (G_ConfigManager ~= nil and G_ConfigManager:isError()) then
             -- 
             local errorTip = "请将截图发送至相关人员！\n"
-            if not Lang.checkLang(Lang.CN) then
+            if Lang and  not Lang.checkLang(Lang.CN) then
                 errorTip = Lang.getImgText("error_hint_when_app_crash")
             end
 
