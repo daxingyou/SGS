@@ -1,0 +1,54 @@
+{
+    "url": {
+        "cdn_list": [
+            "http://47.91.14.149:81/update"
+        ], 
+        "clientserv": "http://clientserv.meishoden.playbest.co.jp", 
+        "rolelist": "http://role.meishoden.playbest.co.jp", 
+        "server": "http://eagle.meishoden.playbest.co.jp", 
+        "config": "http://openresty.meishoden.playbest.co.jp", 
+        "gateway": "http://eagle.meishoden.playbest.co.jp"
+    }, 
+    "i18n": {
+        "lang": "ja", 
+        "matchLang": "ja", 
+        "channel": "ja"
+    }, 
+    "version": [
+        {
+            "svn": 540, 
+            "path": "2.14.0", 
+            "name": "10.10.1"
+        }, 
+        {
+            "svn": 3706, 
+            "path": "2.14.0", 
+            "name": "10.10.2"
+        }, 
+        {
+            "svn": 3709, 
+            "path": "2.14.0", 
+            "name": "10.10.3"
+        }, 
+        {
+            "svn": 4081, 
+            "path": "2.14.0", 
+            "name": "10.10.4"
+        }, 
+        {
+            "svn": 4081, 
+            "path": "2.14.0", 
+            "name": "10.10.5"
+        }, 
+        {
+            "svn": 5691, 
+            "path": "2.14.0", 
+            "name": "10.10.6"
+        }, 
+        {
+            "svn": 5933, 
+            "path": "2.14.0", 
+            "name": "10.10.7"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "app": {
+        "run": 8000,
+        "name": "三国志名将",
+        "file": "xgame",
+        "ios": {
+            "name": "日本",
+            "target": "xgame-mobile",
+            "identifier": "yoka.hw.sgmj",
+            "sdk": "yoka-ja",
+            "provisioning": {
+                "teamID": "XSJR7GAU45",
+                "development": {
+                    "profiles": "com.ykhw.sgmj_dev_2020.08.26",
+                    "export": "ios_export_dev"
+                },
+                "distribution": {
+                    "profiles": "com.ykhw.sgmj_dis_2020.08.26",
+                    "export": "ios_export_dis"
+                }
+            }
+        }
+    },
+    "i18n": {
+        "top_server": "http://topserver.meishoden.playbest.co.jp/topserver",
+        "replace": {
+            "bundle_name": "三国志名将",
+            "language": "ja_JP",
+            "entitlements": "xgame-mobile.entitlements",
+            "mic_desc": "You need to record an audio message to send a voice chat message. Are you allowed to turn on the microphone?"
+        }
+    }
+}

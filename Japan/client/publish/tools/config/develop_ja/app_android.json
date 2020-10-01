@@ -1,0 +1,28 @@
+{
+    "app": {
+        "run": 8000,
+        "name": "内网日本开发",
+        "file": "xgame",
+        "android": {
+            "name": "开发",
+            "identifier": "com.qygame.xgame1",
+            "sdk": "yoka-ja",
+            "keystore": {
+                "psw": "QY@keystore601",
+                "file": "keystore/xgame.keystore"
+            },
+            "alias": {
+                "name": "yoka.qiyu.xgame",
+                "psw": "QY@keystore601"
+            },
+            "abi": [
+                "armeabi-v7a",
+                "arm64-v8a"
+            ]
+        }
+    },
+    "i18n": {
+        "top_server": "47.91.14.149:8080/topserver",
+        "ap": "android-28"
+    }
+}

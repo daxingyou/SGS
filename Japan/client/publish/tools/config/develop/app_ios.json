@@ -1,0 +1,32 @@
+{
+    "app": {
+        "run": 8000, 
+        "name": "内网开发", 
+        "file": "xgame",
+        "ios": {
+            "name": "开发", 
+            "target": "xgame-mobile",
+            "identifier": "com.sanguosha.mjz",
+            "sdk": "yoka-appstore",
+            "provisioning": {
+                "teamID": "BFAMSYQ84F",
+                "development": {
+                    "profiles": "sgsmjz_dev_0527",
+                    "export": "ios_export_dev"
+                },
+                "distribution": {
+                    "profiles": "sgsmjz_dis_0527",
+                    "export": "ios_export_dis"
+                }
+            }
+        }
+    },
+    "i18n": {
+        "top_server": "https://sgmjztopserver.mecheast.com/topserver",
+        "replace": {
+            "bundle_name": "三国志名将伝",
+            "language": "zh-Hant",
+            "mic_desc": "需要錄製音訊進行發送語音聊天資訊，是否允許打開麥克風？"
+        }
+    }
+}

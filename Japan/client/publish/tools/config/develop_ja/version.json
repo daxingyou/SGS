@@ -1,0 +1,37 @@
+{
+    "url": {
+        "rolelist": "http://47.91.14.149:10167", 
+        "config": "http://47.91.14.149:8787", 
+        "cdn_list": [
+            "http://47.91.14.149:81/update"
+        ], 
+        "gateway": "http://47.91.14.149:38434", 
+        "server": "http://47.91.14.149:38434",
+        "clientserv": "http://47.91.14.149:12168"
+    }, 
+    "test": {
+        "speedBattle": "false", 
+        "gameop": "7001", 
+        "token": "31b751398deb6435f14adba54ae8a9b8", 
+        "mode": 1, 
+        "fps": "true", 
+        "fakeReport": "false", 
+        "jumpBattle": "false", 
+        "op": "200", 
+        "proxy": "app.platform.testPlatform.TestProxy", 
+        "guide": "true", 
+        "recharge": "10.235.200.13:27999"
+    }, 
+    "version": [
+        {
+            "svn": 1058, 
+            "path": "2.14.0", 
+            "name": "10.10.1"
+        }
+    ], 
+    "i18n": {
+        "lang": "ja", 
+        "matchLang": "ja", 
+        "channel": "ja"
+    }
+}

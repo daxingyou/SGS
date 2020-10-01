@@ -1,0 +1,28 @@
+{
+    "app": {
+        "run": 8000,
+        "name": "三国志名将伝",
+        "file": "xgame",
+        "android": {
+            "name": "开发",
+            "identifier": "com.ykhw.sgsmjz",
+            "sdk": "yoka-ja",
+            "keystore": {
+                "psw": "YKHW@keystore3a01",
+                "file": "keystore/ja.keystore"
+            },
+            "alias": {
+                "name": "com.ykhw.sgsmjz",
+                "psw": "YKHW@keystore3a01"
+            },
+            "abi": [
+                "armeabi-v7a",
+                "arm64-v8a"
+            ]
+        }
+    },
+    "i18n": {
+        "top_server": "47.91.14.149:8080/topserver",
+        "ap": "android-28"
+    }
+}
