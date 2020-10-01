@@ -1,0 +1,1 @@
+	self.${VAR_NAME}:addEventListener(handler(self, self.${FUNCTION_NAME}))

@@ -1,0 +1,1 @@
+	self.${VAR_NAME}:setString(Lang.get("common_btn_name_confirm"))

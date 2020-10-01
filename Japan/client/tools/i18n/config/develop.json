@@ -1,0 +1,59 @@
+{
+    "test": {}, 
+    "app": {
+        "run": 1000, 
+        "name": "develop", 
+        "file": "xgame"
+    }, 
+    "version": [
+        {
+            "svn": 45, 
+            "path": "trunk", 
+            "name": "1.0.0"
+        }, 
+        {
+            "svn": 1466, 
+            "path": "trunk", 
+            "name": "1.11.0"
+        }, 
+        {
+            "svn": 2524, 
+            "path": "trunk", 
+            "name": "1.14.0"
+        }, 
+        {
+            "svn": 3556, 
+            "path": "trunk", 
+            "name": "2.0.0"
+        }, 
+        {
+            "svn": 7065, 
+            "path": "trunk", 
+            "name": "2.7.0"
+        }
+    ], 
+    "build": {
+        "lang": "cn", 
+        "lua": {
+            "compile": true, 
+            "encrypt": false, 
+            "key": "com.qygame.xgame.lua", 
+            "sign": "com.qygame.xgame.lua.sign"
+        }, 
+        "version": {
+            "svn": 7065, 
+            "path": "trunk", 
+            "name": "2.7.0"
+        }, 
+        "mode": "release", 
+        "package": {
+            "compress": true, 
+            "encrypt": true, 
+            "key": "com.qygame.xgame.pack"
+        }
+    }, 
+    "channel": {
+        "android": {}, 
+        "ios": {}
+    }
+}
