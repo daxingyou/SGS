@@ -1,2 +1,0 @@
-
-print("------KrEX.lua execute------")

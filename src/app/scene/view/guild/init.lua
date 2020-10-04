@@ -1,9 +1,0 @@
---
--- Author: Liangxu
--- Date: 2017-06-15 14:16:39
--- 
-local scene = {}
-
-scene.view = import(".GuildMainView")
-
-return scene

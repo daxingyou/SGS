@@ -1,5 +1,0 @@
-
-local TimeLimitActivityDataHelper = {}
-
-
-return TimeLimitActivityDataHelper
