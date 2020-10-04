@@ -1,0 +1,47 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "255",
+        "png" : "effect_hongbao_chuxiannew_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.16",
+        "scaleY" : "2.16",
+        "opacity" : "255",
+        "png" : "effect_hongbao_chuxiannew_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "6"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.8",
+        "scaleY" : "0.8",
+        "opacity" : "255",
+        "png" : "effect_hongbao_chuxiannew_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f11" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_hongbao_chuxiannew.png"
+}

@@ -1,0 +1,251 @@
+{
+  "图层 18" : {
+
+  },
+  "effect_juntuanzhan_guangxian_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "245.75",
+        "y" : "11.45",
+        "rotation" : "0",
+        "scaleX" : "-0.46",
+        "scaleY" : "-1.66",
+        "opacity" : "102"
+      }
+    },
+    "order" : "20"
+  },
+  "effect_juntuanzhan_guangxian_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-257.75",
+        "y" : "11.45",
+        "rotation" : "0",
+        "scaleX" : "-0.46",
+        "scaleY" : "-1.66",
+        "opacity" : "102"
+      }
+    },
+    "order" : "19"
+  },
+  "effect_juntuanzhan_guangxian_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.85",
+        "y" : "-211.8",
+        "rotation" : "90",
+        "scaleX" : "0.31",
+        "scaleY" : "2.03",
+        "opacity" : "76"
+      }
+    },
+    "order" : "18"
+  },
+  "effect_juntuanzhan_guangxian_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-10.25",
+        "y" : "198.4",
+        "rotation" : "90",
+        "scaleX" : "0.38",
+        "scaleY" : "1.96",
+        "opacity" : "63"
+      }
+    },
+    "order" : "17"
+  },
+  "图层 23" : {
+
+  },
+  "effect_juntuanzhan_guangqiang3_copy6" : {
+    "f1" : {
+      "start" : {
+        "x" : "244.15",
+        "y" : "144.15",
+        "rotation" : "0",
+        "scaleX" : "-0.86",
+        "scaleY" : "1",
+        "opacity" : "63"
+      }
+    },
+    "order" : "15"
+  },
+  "effect_juntuanzhan_guangqiang3_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "247.95",
+        "y" : "28.25",
+        "rotation" : "0",
+        "scaleX" : "1.18",
+        "scaleY" : "1",
+        "opacity" : "63"
+      }
+    },
+    "order" : "14"
+  },
+  "effect_juntuanzhan_guangqiang3_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "247.95",
+        "y" : "-104.75",
+        "rotation" : "0",
+        "scaleX" : "-0.5",
+        "scaleY" : "1",
+        "opacity" : "63"
+      }
+    },
+    "order" : "13"
+  },
+  "effect_juntuanzhan_guangqiang3_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-257.45",
+        "y" : "144.15",
+        "rotation" : "0",
+        "scaleX" : "-0.86",
+        "scaleY" : "1",
+        "opacity" : "63"
+      }
+    },
+    "order" : "12"
+  },
+  "effect_juntuanzhan_guangqiang3_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-253.65",
+        "y" : "28.25",
+        "rotation" : "0",
+        "scaleX" : "1.18",
+        "scaleY" : "1",
+        "opacity" : "63"
+      }
+    },
+    "order" : "11"
+  },
+  "effect_juntuanzhan_guangqiang3_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-253.65",
+        "y" : "-104.75",
+        "rotation" : "0",
+        "scaleX" : "-0.66",
+        "scaleY" : "1",
+        "opacity" : "63"
+      }
+    },
+    "order" : "10"
+  },
+  "图层 11" : {
+
+  },
+  "effect_juntuanzhan_guangqiang2_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "182.45",
+        "y" : "-183",
+        "rotation" : "0",
+        "scaleX" : "-1.07",
+        "scaleY" : "0.71",
+        "opacity" : "63"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_juntuanzhan_guangqiang1_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "60.55",
+        "y" : "-183",
+        "rotation" : "0",
+        "scaleX" : "1.18",
+        "scaleY" : "0.71",
+        "opacity" : "63"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_juntuanzhan_guangqiang2_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-58.05",
+        "y" : "-183",
+        "rotation" : "0",
+        "scaleX" : "-1.18",
+        "scaleY" : "0.71",
+        "opacity" : "63"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_juntuanzhan_guangqiang1_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-190.7",
+        "y" : "-183",
+        "rotation" : "0",
+        "scaleX" : "1.15",
+        "scaleY" : "0.71",
+        "opacity" : "63"
+      }
+    },
+    "order" : "5"
+  },
+  "图层 6" : {
+
+  },
+  "effect_juntuanzhan_guangqiang2_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "182.45",
+        "y" : "224.45",
+        "rotation" : "0",
+        "scaleX" : "-1.07",
+        "scaleY" : "0.75",
+        "opacity" : "63"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_juntuanzhan_guangqiang1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "60.55",
+        "y" : "224.45",
+        "rotation" : "0",
+        "scaleX" : "1.18",
+        "scaleY" : "0.75",
+        "opacity" : "63"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_juntuanzhan_guangqiang2_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-58.05",
+        "y" : "224.45",
+        "rotation" : "0",
+        "scaleX" : "-1.18",
+        "scaleY" : "0.75",
+        "opacity" : "63"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_juntuanzhan_guangqiang1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-190.7",
+        "y" : "224.45",
+        "rotation" : "0",
+        "scaleX" : "1.15",
+        "scaleY" : "0.75",
+        "opacity" : "63"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "finish"
+  }
+}

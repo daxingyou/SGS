@@ -1,0 +1,31 @@
+{
+  "effect_huanqingduanwu_nvshenjiebiaoti" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.55",
+        "y" : "270.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_huanqingduanwu_effect11" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

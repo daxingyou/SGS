@@ -1,0 +1,148 @@
+{
+  "图层 15_0" : {
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "-88.45",
+        "scaleX" : "4.71",
+        "scaleY" : "4.71",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_zhandou_shengfu_1.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "16"
+    },
+    "order" : "2",
+    "f21" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "-88.45",
+        "scaleX" : "8.89",
+        "scaleY" : "8.89",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_zhandou_shengfu_1.png"
+      }
+    },
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_1" : {
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_zhandou_shengfu_2.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.47",
+        "scaleY" : "1.47",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_zhandou_shengfu_2.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "12"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.67",
+        "scaleY" : "1.67",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_zhandou_shengfu_2.png"
+      }
+    },
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "图层 4_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "140",
+        "rotation" : "0",
+        "scaleX" : "2.75",
+        "scaleY" : "2.75",
+        "opacity" : "45",
+        "png" : "effect_zhandou_shengfu_2.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "255",
+        "png" : "effect_zhandou_shengfu_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandou_shengfu_2.png"
+      }
+    },
+    "f39" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_zhandou_shengfu_2.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "6"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_zhandou_shengfu_2.png"
+      }
+    },
+    "f45" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f46" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_zhandou_shengfu.png"
+}

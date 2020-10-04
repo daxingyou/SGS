@@ -1,0 +1,44 @@
+{
+  "effect_shengdanjie_wujiaoxing" : {
+    "f1" : {
+      "start" : {
+        "x" : "544.4",
+        "y" : "50.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_hulaoguanlizi1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-20.35",
+        "y" : "366.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_hulaoguanlizi2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-164.35",
+        "y" : "363.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f91" : "finish"
+  }
+}

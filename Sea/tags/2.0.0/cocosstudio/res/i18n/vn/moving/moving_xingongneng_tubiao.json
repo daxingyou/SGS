@@ -1,0 +1,93 @@
+{
+  "icon_zi" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "-117.95",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "3",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-58.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_xingongneng_tubiao_sangceng" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.75",
+        "y" : "-108.95",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "2",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-53.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "icon_tubiao" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.45",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_xingongneng_tubiao_di" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "14.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f72" : "finish"
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_gatdenglu1_zhugeliang_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{655,640}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{655,640}}</string>
+                <key>sourceSize</key>
+                <string>{655,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_gatdenglu1_zhugeliang.png</string>
+            <key>size</key>
+            <string>{659,644}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:d4721a3d3abc98a7611507fe568f0817$</string>
+            <key>textureFileName</key>
+            <string>effect_gatdenglu1_zhugeliang.png</string>
+        </dict>
+    </dict>
+</plist>

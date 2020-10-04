@@ -1,0 +1,61 @@
+{
+  "img_create_txt_weapon1.png_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-4.35",
+        "y" : "-3.3",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "51",
+        "png" : "effect_chuangjueui_zinan_1.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "1",
+    "f3" : {
+      "start" : {
+        "x" : "-4.35",
+        "y" : "-3.3",
+        "rotation" : "0",
+        "scaleX" : "0.98",
+        "scaleY" : "0.98",
+        "opacity" : "255",
+        "png" : "effect_chuangjueui_zinan_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "3"
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-4.35",
+        "y" : "-3.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_chuangjueui_zinan_1.png"
+      }
+    }
+  },
+  "图层 5_1" : {
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_chuangjueui_zinan_2.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f30" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_chuangjueui_zinan.png"
+}

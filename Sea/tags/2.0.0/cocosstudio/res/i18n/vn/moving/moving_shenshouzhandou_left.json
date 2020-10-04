@@ -1,0 +1,171 @@
+{
+  "routine_word_shenshou_zi_sb" : {
+    "f1" : {
+      "start" : {
+        "x" : "263.05",
+        "y" : "-266.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "order" : "3",
+    "f7" : {
+      "start" : {
+        "x" : "263.05",
+        "y" : "-266.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f10",
+      "frames" : "4"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "156.05",
+        "y" : "-266.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f12",
+      "frames" : "3"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "161.05",
+        "y" : "-266.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_hei_sb" : {
+    "f1" : {
+      "start" : {
+        "x" : "264.95",
+        "y" : "-273.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "order" : "2",
+    "f7" : {
+      "start" : {
+        "x" : "264.95",
+        "y" : "-273.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f10",
+      "frames" : "4"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "157.95",
+        "y" : "-273.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f12",
+      "frames" : "3"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "162.95",
+        "y" : "-273.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "shenshou_tu_sb" : {
+    "f1" : {
+      "start" : {
+        "x" : "-192.25",
+        "y" : "-124.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "-192.25",
+        "y" : "-124.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "176.65",
+        "y" : "-124.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "171.75",
+        "y" : "-124.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "shenshou_pinzhi_sb" : {
+    "f1" : {
+      "start" : {
+        "x" : "-106.85",
+        "y" : "-148.75",
+        "rotation" : "0",
+        "scaleX" : "0.45",
+        "scaleY" : "1",
+        "opacity" : "127"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "234.1",
+        "y" : "-148.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f41" : "finish"
+  }
+}

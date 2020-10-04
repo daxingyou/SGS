@@ -1,0 +1,50 @@
+{
+  "smoving_wujiangbreak_txt_1" : {
+    "f51" : {
+      "start" : {
+        "x" : "-1.6",
+        "y" : "-73.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "smoving_wujiangbreak_txt_2" : {
+    "f61" : {
+      "start" : {
+        "x" : "-1.45",
+        "y" : "-222.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "moving_zhihuan_role" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "play_txt1",
+    "f53" : "play_txt2_1",
+    "f55" : "play_txt2_2",
+    "f57" : "play_txt2_3",
+    "f59" : "play_txt2_4",
+    "f61" : "play_txt2_5",
+    "f100" : "finish"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "routine_word_wujiangbreak_jiesuotianfu" : {
+    "f79" : {
+      "start" : {
+        "x" : "212.7",
+        "y" : "182.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "25"
+      },
+      "nextFrame" : "f82",
+      "frames" : "4"
+    },
+    "order" : "12",
+    "f82" : {
+      "start" : {
+        "x" : "275.7",
+        "y" : "182.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f84",
+      "frames" : "3"
+    },
+    "f84" : {
+      "start" : {
+        "x" : "257.7",
+        "y" : "182.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "moving_wujiangbreak_jiesuo" : {
+    "f84" : {
+      "start" : {
+        "x" : "318",
+        "y" : "133",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "25"
+      },
+      "nextFrame" : "f87",
+      "frames" : "4"
+    },
+    "order" : "11",
+    "f87" : {
+      "start" : {
+        "x" : "381",
+        "y" : "133",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f89",
+      "frames" : "3"
+    },
+    "f89" : {
+      "start" : {
+        "x" : "363",
+        "y" : "133",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "smoving_wujiangbreak_txt_1" : {
+    "f51" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-113",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "10"
+  },
+  "smoving_wujiangbreak_txt_2" : {
+    "f59" : {
+      "start" : {
+        "x" : "-1.45",
+        "y" : "-245.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_wujiangbreak_jiantou" : {
+    "f63" : {
+      "start" : {
+        "x" : "156.95",
+        "y" : "-196.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "smoving_wujiangbreak_txt_3" : {
+    "f72" : {
+      "start" : {
+        "x" : "186.15",
+        "y" : "-245.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "moving_wujiangbreak_role" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.05",
+        "y" : "-0.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "play_txt1",
+    "f53" : "play_txt2_1",
+    "f55" : "play_txt2_2",
+    "f57" : "play_txt2_3",
+    "f59" : "play_txt2_4",
+    "f63" : "play_jiantou",
+    "f72" : "play_txt3",
+    "f100" : "finish"
+  }
+}

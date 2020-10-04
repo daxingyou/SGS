@@ -1,0 +1,135 @@
+{
+  "effect_denglu_shanghei" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "307.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_denglu3_xiahei" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-294.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_denglu5_logo" : {
+    "f1" : {
+      "start" : {
+        "x" : "-491.1",
+        "y" : "226.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_denglu6_xue" : {
+    "f1" : {
+      "start" : {
+        "x" : "-93.85",
+        "y" : "-43.05",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "lizi_denglu6xuehua1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-747.6",
+        "y" : "-184.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_denglu6_front" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "29",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_denglu6_middle" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "27.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "lizi_denglu6xuehua2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-739.55",
+        "y" : "52.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_denglu6_back" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "26",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_denglu6_bg" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

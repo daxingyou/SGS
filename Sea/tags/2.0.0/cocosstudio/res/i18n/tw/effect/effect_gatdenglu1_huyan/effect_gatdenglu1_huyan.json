@@ -1,0 +1,50 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "9.35",
+        "y" : "-2.85",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "1.98",
+        "opacity" : "51",
+        "blendMode" : "add",
+        "png" : "effect_gatdenglu1_huyan_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "30"
+    },
+    "order" : "0",
+    "f30" : {
+      "start" : {
+        "x" : "9.35",
+        "y" : "-2.85",
+        "rotation" : "0",
+        "scaleX" : "0.42",
+        "scaleY" : "0.61",
+        "opacity" : "175",
+        "blendMode" : "add",
+        "png" : "effect_gatdenglu1_huyan_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "31"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "9.35",
+        "y" : "-2.85",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "1.98",
+        "opacity" : "51",
+        "blendMode" : "add",
+        "png" : "effect_gatdenglu1_huyan_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f101" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_gatdenglu1_huyan.png"
+}

@@ -1,0 +1,130 @@
+{
+  "图层 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_1.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_6.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_7.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_8.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_9.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.5",
+        "scaleY" : "2.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_denglu1_guang3_10.png"
+      }
+    }
+  },
+  "events" : {
+    "f20" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_denglu1_guang3.png"
+}

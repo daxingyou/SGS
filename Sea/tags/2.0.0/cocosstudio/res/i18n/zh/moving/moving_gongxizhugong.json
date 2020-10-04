@@ -1,0 +1,67 @@
+{
+  "effect_gongxizhugong" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.6",
+        "y" : "225.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_benpaojiesuan_di" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "143.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.31",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "48.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.07",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "57.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.99",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f8",
+      "frames" : "3"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "0",
+        "y" : "54.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.02",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f71" : "finish"
+  }
+}

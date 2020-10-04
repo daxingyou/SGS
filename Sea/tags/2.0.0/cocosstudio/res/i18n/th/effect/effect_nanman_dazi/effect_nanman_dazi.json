@@ -1,0 +1,655 @@
+{
+  "effect_nanman_huo_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-286.2",
+        "rotation" : "0",
+        "scaleX" : "1.26",
+        "scaleY" : "1.05",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "effect" : "effect_nanman_huo",
+    "useBatchNode" : "true",
+    "order" : "20",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-213.7",
+        "rotation" : "0",
+        "scaleX" : "1.26",
+        "scaleY" : "1.05",
+        "opacity" : "84"
+      }
+    },
+    "first_frame" : "4",
+    "loop" : "loop"
+  },
+  "effect_nanman_huoxing_1" : {
+    "f4" : {
+      "start" : {
+        "x" : "-9.1",
+        "y" : "5.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_nanman_huoxing",
+    "useBatchNode" : "true",
+    "first_frame" : "40",
+    "loop" : "loop",
+    "order" : "19"
+  },
+  "effect_nanman_huoyan_copy5_2" : {
+    "f9" : {
+      "start" : {
+        "x" : "84.25",
+        "y" : "-355.25",
+        "rotation" : "0",
+        "scaleX" : "3.58",
+        "scaleY" : "1.95",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "18"
+  },
+  "effect_nanman_huoyan_copy4_3" : {
+    "f7" : {
+      "start" : {
+        "x" : "523.1",
+        "y" : "-346.5",
+        "rotation" : "0",
+        "scaleX" : "3.58",
+        "scaleY" : "1.95",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "17"
+  },
+  "effect_nanman_huoyan_copy3_4" : {
+    "f6" : {
+      "start" : {
+        "x" : "294.8",
+        "y" : "-341.25",
+        "rotation" : "0",
+        "scaleX" : "3.67",
+        "scaleY" : "1.56",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "16"
+  },
+  "effect_nanman_huoyan_copy2_5" : {
+    "f5" : {
+      "start" : {
+        "x" : "-284.05",
+        "y" : "-368.8",
+        "rotation" : "0",
+        "scaleX" : "5.65",
+        "scaleY" : "1.95",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "15"
+  },
+  "effect_nanman_huoyan_copy1_6" : {
+    "f4" : {
+      "start" : {
+        "x" : "-572.7",
+        "y" : "-306.1",
+        "rotation" : "0",
+        "scaleX" : "4.72",
+        "scaleY" : "2.52",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_nanman_huoyan",
+    "useBatchNode" : "true",
+    "first_frame" : "4",
+    "loop" : "loop",
+    "order" : "14"
+  },
+  "图层 13_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-218.1",
+        "rotation" : "0",
+        "scaleX" : "1.26",
+        "scaleY" : "1.05",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_1.png"
+      }
+    },
+    "order" : "13"
+  },
+  "元件 4_8" : {
+    "f38" : {
+      "start" : {
+        "x" : "-317.5",
+        "y" : "19.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_2.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "18"
+    },
+    "order" : "12",
+    "f55" : {
+      "start" : {
+        "x" : "-317.5",
+        "y" : "19.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_2.png"
+      },
+      "nextFrame" : "f56",
+      "frames" : "2"
+    },
+    "f56" : {
+      "remove" : "1"
+    }
+  },
+  "元件 3_9" : {
+    "f38" : {
+      "start" : {
+        "x" : "-427.5",
+        "y" : "28.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_3.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "18"
+    },
+    "order" : "11",
+    "f55" : {
+      "start" : {
+        "x" : "-427.5",
+        "y" : "28.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_3.png"
+      },
+      "nextFrame" : "f56",
+      "frames" : "2"
+    },
+    "f56" : {
+      "remove" : "1"
+    }
+  },
+  "元件 2_10" : {
+    "f38" : {
+      "start" : {
+        "x" : "-214",
+        "y" : "140.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_4.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "18"
+    },
+    "order" : "10",
+    "f55" : {
+      "start" : {
+        "x" : "-214",
+        "y" : "140.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_4.png"
+      },
+      "nextFrame" : "f56",
+      "frames" : "2"
+    },
+    "f56" : {
+      "remove" : "1"
+    }
+  },
+  "元件 1_11" : {
+    "f38" : {
+      "start" : {
+        "x" : "-398",
+        "y" : "150.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_5.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "18"
+    },
+    "order" : "9",
+    "f55" : {
+      "start" : {
+        "x" : "-398",
+        "y" : "150.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_5.png"
+      },
+      "nextFrame" : "f56",
+      "frames" : "2"
+    },
+    "f56" : {
+      "remove" : "1"
+    }
+  },
+  "元件 4_12" : {
+    "f31" : {
+      "start" : {
+        "x" : "-317.5",
+        "y" : "19.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_2.png"
+      },
+      "nextFrame" : "f37",
+      "frames" : "7"
+    },
+    "order" : "8",
+    "f37" : {
+      "start" : {
+        "x" : "-317.5",
+        "y" : "19.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_2.png"
+      }
+    },
+    "f38" : {
+      "start" : {
+        "x" : "-317.5",
+        "y" : "19.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_2.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "7"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "-317.5",
+        "y" : "19.3",
+        "rotation" : "0",
+        "scaleX" : "1.4",
+        "scaleY" : "1.4",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_2.png"
+      }
+    },
+    "f45" : {
+      "remove" : "1"
+    }
+  },
+  "元件 3_13" : {
+    "f25" : {
+      "start" : {
+        "x" : "-427.5",
+        "y" : "28.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_3.png"
+      },
+      "nextFrame" : "f31",
+      "frames" : "7"
+    },
+    "order" : "7",
+    "f31" : {
+      "start" : {
+        "x" : "-427.5",
+        "y" : "28.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_3.png"
+      }
+    },
+    "f38" : {
+      "start" : {
+        "x" : "-427.5",
+        "y" : "28.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_3.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "7"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "-427.5",
+        "y" : "28.3",
+        "rotation" : "0",
+        "scaleX" : "1.4",
+        "scaleY" : "1.4",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_3.png"
+      }
+    },
+    "f45" : {
+      "remove" : "1"
+    }
+  },
+  "元件 2_14" : {
+    "f19" : {
+      "start" : {
+        "x" : "-214",
+        "y" : "140.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_4.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "7"
+    },
+    "order" : "6",
+    "f25" : {
+      "start" : {
+        "x" : "-214",
+        "y" : "140.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_4.png"
+      }
+    },
+    "f38" : {
+      "start" : {
+        "x" : "-214",
+        "y" : "140.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_4.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "7"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "-214",
+        "y" : "140.3",
+        "rotation" : "0",
+        "scaleX" : "1.4",
+        "scaleY" : "1.4",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_4.png"
+      }
+    },
+    "f45" : {
+      "remove" : "1"
+    }
+  },
+  "元件 1_15" : {
+    "f13" : {
+      "start" : {
+        "x" : "-398",
+        "y" : "150.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_5.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "7"
+    },
+    "order" : "5",
+    "f19" : {
+      "start" : {
+        "x" : "-398",
+        "y" : "150.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_5.png"
+      }
+    },
+    "f38" : {
+      "start" : {
+        "x" : "-398",
+        "y" : "150.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_5.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "7"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "-398",
+        "y" : "150.8",
+        "rotation" : "0",
+        "scaleX" : "1.4",
+        "scaleY" : "1.4",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_nanman_dazi_5.png"
+      }
+    },
+    "f45" : {
+      "remove" : "1"
+    }
+  },
+  "元件 4_16" : {
+    "f28" : {
+      "start" : {
+        "x" : "-319.5",
+        "y" : "21.3",
+        "rotation" : "0",
+        "scaleX" : "4",
+        "scaleY" : "4",
+        "opacity" : "25",
+        "png" : "effect_nanman_dazi_6.png"
+      },
+      "nextFrame" : "f31",
+      "frames" : "4"
+    },
+    "order" : "4",
+    "f31" : {
+      "start" : {
+        "x" : "-319.5",
+        "y" : "21.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_6.png"
+      }
+    }
+  },
+  "元件 3_17" : {
+    "f22" : {
+      "start" : {
+        "x" : "-429.5",
+        "y" : "29.8",
+        "rotation" : "0",
+        "scaleX" : "4",
+        "scaleY" : "4",
+        "opacity" : "25",
+        "png" : "effect_nanman_dazi_7.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "4"
+    },
+    "order" : "3",
+    "f25" : {
+      "start" : {
+        "x" : "-429.5",
+        "y" : "29.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_7.png"
+      }
+    }
+  },
+  "元件 2_18" : {
+    "f16" : {
+      "start" : {
+        "x" : "-216",
+        "y" : "141.8",
+        "rotation" : "0",
+        "scaleX" : "4",
+        "scaleY" : "4",
+        "opacity" : "25",
+        "png" : "effect_nanman_dazi_8.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "4"
+    },
+    "order" : "2",
+    "f19" : {
+      "start" : {
+        "x" : "-216",
+        "y" : "141.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_8.png"
+      }
+    }
+  },
+  "元件 1_19" : {
+    "f10" : {
+      "start" : {
+        "x" : "-400",
+        "y" : "152.8",
+        "rotation" : "0",
+        "scaleX" : "4",
+        "scaleY" : "4",
+        "opacity" : "25",
+        "png" : "effect_nanman_dazi_9.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f13" : {
+      "start" : {
+        "x" : "-400",
+        "y" : "152.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_9.png"
+      }
+    }
+  },
+  "图层 7_20" : {
+    "f1" : {
+      "start" : {
+        "x" : "-869.9",
+        "y" : "363.6",
+        "rotation" : "0",
+        "scaleX" : "2.05",
+        "scaleY" : "2.05",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_10.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "-397",
+        "y" : "21.05",
+        "rotation" : "0",
+        "scaleX" : "2.05",
+        "scaleY" : "2.05",
+        "opacity" : "255",
+        "png" : "effect_nanman_dazi_10.png"
+      }
+    }
+  },
+  "events" : {
+    "f61" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_nanman_dazi.png"
+}

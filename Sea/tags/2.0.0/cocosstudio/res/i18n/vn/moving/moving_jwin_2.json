@@ -1,0 +1,87 @@
+{
+  "mid" : {
+    "f15" : {
+      "start" : {
+        "x" : "128.4",
+        "y" : "128.85",
+        "rotation" : "0",
+        "scaleX" : "3.66",
+        "scaleY" : "3.66",
+        "opacity" : "38"
+      },
+      "nextFrame" : "f17",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f17" : {
+      "start" : {
+        "x" : "278.9",
+        "y" : "128.85",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "278.9",
+        "y" : "131.35",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "278.9",
+        "y" : "128.85",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "278.9",
+        "y" : "131.35",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_allwin_star" : {
+    "f6" : {
+      "start" : {
+        "x" : "278.3",
+        "y" : "159.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "129.45",
+        "y" : "-5.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f25" : "play_begin",
+    "f70" : "finish"
+  }
+}
