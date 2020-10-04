@@ -1,0 +1,297 @@
+{
+  "图层 4_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_1.png"
+      },
+      "nextFrame" : "f18",
+      "frames" : "18"
+    },
+    "order" : "3",
+    "f18" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "2.6",
+        "rotation" : "0",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "23"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "2.6",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_1.png"
+      }
+    },
+    "f41" : {
+      "remove" : "1"
+    }
+  },
+  "图层 7_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_1.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "25"
+    },
+    "order" : "2",
+    "f25" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_1.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "26"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_1.png"
+      }
+    }
+  },
+  "图层 2_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "16.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_2.png"
+      }
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "16.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "16.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_4.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "16.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_5.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "16.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_6.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "3",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_7.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "3",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_8.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "3",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_9.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "3",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_10.png"
+      }
+    },
+    "f28" : {
+      "start" : {
+        "x" : "3",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_11.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "3",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_12.png"
+      }
+    },
+    "f34" : {
+      "start" : {
+        "x" : "3.35",
+        "y" : "-9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_13.png"
+      }
+    },
+    "f37" : {
+      "start" : {
+        "x" : "10.1",
+        "y" : "-9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_14.png"
+      }
+    },
+    "f40" : {
+      "start" : {
+        "x" : "17.05",
+        "y" : "-9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_15.png"
+      }
+    },
+    "f43" : {
+      "start" : {
+        "x" : "20.55",
+        "y" : "-9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_shouchongtish_16.png"
+      }
+    },
+    "f46" : {
+      "remove" : "1"
+    }
+  },
+  "effect_shouchongtishi_xx_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_shouchongtishi_xx",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f50" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_shouchongtish.png"
+}

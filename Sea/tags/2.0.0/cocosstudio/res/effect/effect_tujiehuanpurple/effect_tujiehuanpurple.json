@@ -1,0 +1,21 @@
+{
+  "8989898989.png_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.45",
+        "y" : "-0.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_tujiehuanpurple_1.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f11" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_tujiehuanpurple.png"
+}

@@ -1,0 +1,22 @@
+{
+  "effect_boxflash_xingxing_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-11",
+        "rotation" : "0",
+        "scaleX" : "0.43",
+        "scaleY" : "0.43",
+        "opacity" : "226"
+      }
+    },
+    "effect" : "effect_boxflash_xingxing",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f41" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

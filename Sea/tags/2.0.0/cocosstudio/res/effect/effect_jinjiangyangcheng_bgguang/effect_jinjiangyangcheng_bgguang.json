@@ -1,0 +1,191 @@
+{
+  "图层 3_0" : {
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.7",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_1.png"
+      }
+    },
+    "order" : "3",
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.7",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_2.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.7",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_3.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.7",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_4.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.7",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_5.png"
+      }
+    },
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_1" : {
+    "f3" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.36",
+        "opacity" : "155",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_6.png"
+      },
+      "nextFrame" : "f22",
+      "frames" : "20"
+    },
+    "order" : "2",
+    "f22" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.36",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_6.png"
+      }
+    }
+  },
+  "图层 4_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.12",
+        "scaleY" : "0.12",
+        "opacity" : "51",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_7.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "1",
+    "f3" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_7.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "12"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_7.png"
+      }
+    }
+  },
+  "图层 5_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.59",
+        "scaleY" : "0.59",
+        "opacity" : "51",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_8.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.32",
+        "scaleY" : "0.32",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "6"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "0.42",
+        "scaleY" : "0.42",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jinjiangyangcheng_bgguang_8.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f25" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_jinjiangyangcheng_bgguang.png"
+}

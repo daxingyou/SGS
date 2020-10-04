@@ -1,0 +1,225 @@
+{
+  "star_1_0" : {
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_daxingxing_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_daxingxing_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "6"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_daxingxing_1.png"
+      }
+    }
+  },
+  "star_1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.45",
+        "y" : "60.7",
+        "rotation" : "0",
+        "scaleX" : "3",
+        "scaleY" : "3",
+        "opacity" : "25",
+        "png" : "effect_daxingxing_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255",
+        "png" : "effect_daxingxing_2.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_daxingxing_2.png"
+      }
+    }
+  },
+  "图层 4_2" : {
+    "f4" : {
+      "start" : {
+        "x" : "-1.3",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_3.png"
+      }
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_4.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_5.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_6.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_7.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_8.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_9.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_10.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_11.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-0.85",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_12.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_daxingxing_13.png"
+      }
+    },
+    "f15" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f16" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_daxingxing.png"
+}

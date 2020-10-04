@@ -1,0 +1,201 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "22.6",
+        "y" : "-42.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_fire_1.png"
+      }
+    },
+    "order" : "1"
+  },
+  "图层 3_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_2.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_3.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_4.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_5.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_6.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_7.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_8.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_9.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_10.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_11.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_12.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_13.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_14.png"
+      }
+    },
+    "f27" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_15.png"
+      }
+    },
+    "f29" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_16.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "-0.95",
+        "y" : "-2.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_fire_17.png"
+      }
+    }
+  },
+  "events" : {
+    "f32" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_fire.png"
+}

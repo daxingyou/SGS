@@ -1,0 +1,109 @@
+{
+  "图层 4_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-546",
+        "y" : "807.3",
+        "rotation" : "0",
+        "scaleX" : "2.34",
+        "scaleY" : "-5.72",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      },
+      "nextFrame" : "f92",
+      "frames" : "92"
+    },
+    "order" : "1",
+    "f92" : {
+      "start" : {
+        "x" : "-1278.45",
+        "y" : "807.4",
+        "rotation" : "0",
+        "scaleX" : "2.34",
+        "scaleY" : "-5.73",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      }
+    },
+    "f93" : {
+      "start" : {
+        "x" : "1127.95",
+        "y" : "807.4",
+        "rotation" : "0",
+        "scaleX" : "2.34",
+        "scaleY" : "-5.68",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      },
+      "nextFrame" : "f300",
+      "frames" : "208"
+    },
+    "f300" : {
+      "start" : {
+        "x" : "-537.95",
+        "y" : "807.3",
+        "rotation" : "0",
+        "scaleX" : "2.34",
+        "scaleY" : "-5.72",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "323.2",
+        "y" : "807.5",
+        "rotation" : "0",
+        "scaleX" : "2.03",
+        "scaleY" : "4.98",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      },
+      "nextFrame" : "f200",
+      "frames" : "200"
+    },
+    "order" : "0",
+    "f200" : {
+      "start" : {
+        "x" : "-1278.45",
+        "y" : "807.4",
+        "rotation" : "0",
+        "scaleX" : "2.03",
+        "scaleY" : "4.98",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      }
+    },
+    "f201" : {
+      "start" : {
+        "x" : "1127.95",
+        "y" : "807.4",
+        "rotation" : "0",
+        "scaleX" : "2.03",
+        "scaleY" : "4.98",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      },
+      "nextFrame" : "f300",
+      "frames" : "100"
+    },
+    "f300" : {
+      "start" : {
+        "x" : "331.25",
+        "y" : "807.5",
+        "rotation" : "0",
+        "scaleX" : "2.03",
+        "scaleY" : "4.98",
+        "opacity" : "127",
+        "png" : "effect_juntuan_yun3_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f300" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuan_yun3.png"
+}

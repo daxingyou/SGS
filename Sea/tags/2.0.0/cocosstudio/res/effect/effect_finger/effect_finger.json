@@ -1,0 +1,296 @@
+{
+  "图层 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "51.95",
+        "y" : "-57.35",
+        "rotation" : "0.58",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_finger_1.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "8"
+    },
+    "order" : "4",
+    "f8" : {
+      "start" : {
+        "x" : "38.9",
+        "y" : "-47.25",
+        "rotation" : "0.57",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255",
+        "png" : "effect_finger_1.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "18"
+    },
+    "f25" : {
+      "start" : {
+        "x" : "51.95",
+        "y" : "-57.35",
+        "rotation" : "0.58",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_finger_1.png"
+      }
+    }
+  },
+  "图层 4_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "-0.2",
+        "rotation" : "0",
+        "scaleX" : "0.16",
+        "scaleY" : "0.16",
+        "opacity" : "0",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "3",
+    "f7" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "-0.8",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "9"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "1.35",
+        "y" : "-1.35",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f16",
+      "frames" : "2"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-1.4",
+        "rotation" : "0",
+        "scaleX" : "1.14",
+        "scaleY" : "1.14",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "5"
+    },
+    "f20" : {
+      "start" : {
+        "x" : "1.7",
+        "y" : "-1.7",
+        "rotation" : "0",
+        "scaleX" : "1.35",
+        "scaleY" : "1.35",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "6"
+    },
+    "f25" : {
+      "start" : {
+        "x" : "2.35",
+        "y" : "-2.35",
+        "rotation" : "0",
+        "scaleX" : "1.84",
+        "scaleY" : "1.84",
+        "opacity" : "0",
+        "png" : "effect_finger_2.png"
+      }
+    }
+  },
+  "图层 5_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-1.4",
+        "rotation" : "0",
+        "scaleX" : "1.14",
+        "scaleY" : "1.14",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "2",
+    "f5" : {
+      "start" : {
+        "x" : "1.7",
+        "y" : "-1.7",
+        "rotation" : "0",
+        "scaleX" : "1.35",
+        "scaleY" : "1.35",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "6"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "2.35",
+        "y" : "-2.35",
+        "rotation" : "0",
+        "scaleX" : "1.84",
+        "scaleY" : "1.84",
+        "opacity" : "0",
+        "png" : "effect_finger_2.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "-0.2",
+        "rotation" : "0",
+        "scaleX" : "0.16",
+        "scaleY" : "0.16",
+        "opacity" : "0",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "7"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "-0.8",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "9"
+    },
+    "f25" : {
+      "start" : {
+        "x" : "1.35",
+        "y" : "-1.35",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "255",
+        "png" : "effect_finger_2.png"
+      }
+    }
+  },
+  "图层 6_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "0",
+        "png" : "effect_finger_3.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "1",
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.39",
+        "scaleY" : "1.39",
+        "opacity" : "255",
+        "png" : "effect_finger_3.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "11"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.68",
+        "scaleY" : "2.68",
+        "opacity" : "255",
+        "png" : "effect_finger_3.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "9"
+    },
+    "f25" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "4.04",
+        "scaleY" : "4.04",
+        "opacity" : "0",
+        "png" : "effect_finger_3.png"
+      }
+    }
+  },
+  "图层 7_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.15",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "2.34",
+        "scaleY" : "2.34",
+        "opacity" : "153",
+        "png" : "effect_finger_4.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "0",
+    "f13" : {
+      "start" : {
+        "x" : "-0.15",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "2.77",
+        "scaleY" : "2.77",
+        "opacity" : "216",
+        "png" : "effect_finger_4.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "13"
+    },
+    "f25" : {
+      "start" : {
+        "x" : "-0.15",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "2.34",
+        "scaleY" : "2.34",
+        "opacity" : "153",
+        "png" : "effect_finger_4.png"
+      }
+    }
+  },
+  "events" : {
+    "f25" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_finger.png"
+}

@@ -1,0 +1,365 @@
+{
+  "rcfb_yun1.png_1" : {
+    "f231" : {
+      "start" : {
+        "x" : "-89.55",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_1.png"
+      },
+      "nextFrame" : "f284",
+      "frames" : "54"
+    },
+    "order" : "7",
+    "f284" : {
+      "start" : {
+        "x" : "-67.9",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_1.png"
+      }
+    },
+    "f285" : {
+      "remove" : "1"
+    }
+  },
+  "rcfb_yun1.png_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-167.5",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_1.png"
+      },
+      "nextFrame" : "f230",
+      "frames" : "230"
+    },
+    "order" : "6",
+    "f230" : {
+      "start" : {
+        "x" : "-89.95",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_1.png"
+      },
+      "nextFrame" : "f231",
+      "frames" : "2"
+    },
+    "f231" : {
+      "start" : {
+        "x" : "-273.9",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_1.png"
+      },
+      "nextFrame" : "f284",
+      "frames" : "54"
+    },
+    "f284" : {
+      "start" : {
+        "x" : "-252.25",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_1.png"
+      },
+      "nextFrame" : "f510",
+      "frames" : "227"
+    },
+    "f510" : {
+      "start" : {
+        "x" : "-167.9",
+        "y" : "163.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_1.png"
+      }
+    }
+  },
+  "rcfb_yun2.png_3" : {
+    "f66" : {
+      "start" : {
+        "x" : "-301.4",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_2.png"
+      },
+      "nextFrame" : "f120",
+      "frames" : "55"
+    },
+    "order" : "5",
+    "f120" : {
+      "start" : {
+        "x" : "-288",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_2.png"
+      }
+    },
+    "f121" : {
+      "remove" : "1"
+    }
+  },
+  "rcfb_yun2.png_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-317.55",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_2.png"
+      },
+      "nextFrame" : "f65",
+      "frames" : "65"
+    },
+    "order" : "4",
+    "f65" : {
+      "start" : {
+        "x" : "-301.65",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_2.png"
+      },
+      "nextFrame" : "f66",
+      "frames" : "2"
+    },
+    "f66" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_2.png"
+      },
+      "nextFrame" : "f120",
+      "frames" : "55"
+    },
+    "f120" : {
+      "start" : {
+        "x" : "-414.6",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_2.png"
+      },
+      "nextFrame" : "f510",
+      "frames" : "391"
+    },
+    "f510" : {
+      "start" : {
+        "x" : "-317.8",
+        "y" : "244",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_2.png"
+      }
+    }
+  },
+  "rcfb_yun4.png_5" : {
+    "f139" : {
+      "start" : {
+        "x" : "540.35",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_3.png"
+      },
+      "nextFrame" : "f203",
+      "frames" : "65"
+    },
+    "order" : "3",
+    "f203" : {
+      "start" : {
+        "x" : "558.2",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_3.png"
+      }
+    },
+    "f204" : {
+      "remove" : "1"
+    }
+  },
+  "rcfb_yun4.png_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "501.9",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_3.png"
+      },
+      "nextFrame" : "f138",
+      "frames" : "138"
+    },
+    "order" : "2",
+    "f138" : {
+      "start" : {
+        "x" : "540.1",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_3.png"
+      },
+      "nextFrame" : "f139",
+      "frames" : "2"
+    },
+    "f139" : {
+      "start" : {
+        "x" : "398.2",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_3.png"
+      },
+      "nextFrame" : "f203",
+      "frames" : "65"
+    },
+    "f203" : {
+      "start" : {
+        "x" : "416.05",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_3.png"
+      },
+      "nextFrame" : "f510",
+      "frames" : "308"
+    },
+    "f510" : {
+      "start" : {
+        "x" : "501.65",
+        "y" : "211.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_3.png"
+      }
+    }
+  },
+  "rcfb_yun3.png_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "88.35",
+        "y" : "277.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_4.png"
+      },
+      "nextFrame" : "f65",
+      "frames" : "65"
+    },
+    "order" : "1",
+    "f65" : {
+      "start" : {
+        "x" : "110.65",
+        "y" : "277.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_4.png"
+      }
+    },
+    "f66" : {
+      "remove" : "1"
+    }
+  },
+  "rcfb_yun3.png_8" : {
+    "f1" : {
+      "start" : {
+        "x" : "-69.35",
+        "y" : "277.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_richangfuben_back_4.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "60"
+    },
+    "order" : "0",
+    "f60" : {
+      "start" : {
+        "x" : "-50.8",
+        "y" : "277.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_4.png"
+      },
+      "nextFrame" : "f510",
+      "frames" : "451"
+    },
+    "f510" : {
+      "start" : {
+        "x" : "88",
+        "y" : "277.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_richangfuben_back_4.png"
+      }
+    }
+  },
+  "events" : {
+    "f510" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_richangfuben_back.png"
+}

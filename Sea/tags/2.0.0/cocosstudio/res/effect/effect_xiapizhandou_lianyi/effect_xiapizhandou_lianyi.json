@@ -1,0 +1,325 @@
+{
+  "effect_xiapizhandou_yu_copy18_1" : {
+    "f72" : {
+      "start" : {
+        "x" : "-232.45",
+        "y" : "10.5",
+        "rotation" : "0",
+        "scaleX" : "0.45",
+        "scaleY" : "0.19",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "17"
+  },
+  "effect_xiapizhandou_yu_copy17_2" : {
+    "f68" : {
+      "start" : {
+        "x" : "-139",
+        "y" : "-25.2",
+        "rotation" : "0",
+        "scaleX" : "0.47",
+        "scaleY" : "0.2",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "16",
+    "f98" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy16_3" : {
+    "f62" : {
+      "start" : {
+        "x" : "469.2",
+        "y" : "-107.55",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "15",
+    "f93" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy15_4" : {
+    "f18" : {
+      "start" : {
+        "x" : "-232.45",
+        "y" : "10.5",
+        "rotation" : "0",
+        "scaleX" : "0.45",
+        "scaleY" : "0.19",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "14",
+    "f48" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy14_5" : {
+    "f14" : {
+      "start" : {
+        "x" : "-139",
+        "y" : "-25.2",
+        "rotation" : "0",
+        "scaleX" : "0.47",
+        "scaleY" : "0.2",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "13",
+    "f44" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy13_6" : {
+    "f8" : {
+      "start" : {
+        "x" : "469.2",
+        "y" : "-107.55",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "12",
+    "f39" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy12_7" : {
+    "f38" : {
+      "start" : {
+        "x" : "511.35",
+        "y" : "-108.45",
+        "rotation" : "0",
+        "scaleX" : "0.74",
+        "scaleY" : "0.32",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "11",
+    "f99" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy11_8" : {
+    "f34" : {
+      "start" : {
+        "x" : "266.7",
+        "y" : "-96.25",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "10",
+    "f94" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy10_9" : {
+    "f30" : {
+      "start" : {
+        "x" : "251.7",
+        "y" : "-111.25",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "9",
+    "f91" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy9_10" : {
+    "f21" : {
+      "start" : {
+        "x" : "11.95",
+        "y" : "-62.25",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "8",
+    "f81" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy8_11" : {
+    "f71" : {
+      "start" : {
+        "x" : "71.4",
+        "y" : "-79.25",
+        "rotation" : "0",
+        "scaleX" : "0.75",
+        "scaleY" : "0.33",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "7",
+    "f101" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy7_12" : {
+    "f12" : {
+      "start" : {
+        "x" : "71.4",
+        "y" : "-79.25",
+        "rotation" : "0",
+        "scaleX" : "0.75",
+        "scaleY" : "0.33",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "6",
+    "f42" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy6_13" : {
+    "f5" : {
+      "start" : {
+        "x" : "33.95",
+        "y" : "-84.25",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "5",
+    "f95" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy5_14" : {
+    "f25" : {
+      "start" : {
+        "x" : "-267.05",
+        "y" : "28.25",
+        "rotation" : "0",
+        "scaleX" : "0.49",
+        "scaleY" : "0.2",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "4",
+    "f84" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy4_15" : {
+    "f22" : {
+      "start" : {
+        "x" : "-416.2",
+        "y" : "1.1",
+        "rotation" : "0",
+        "scaleX" : "0.48",
+        "scaleY" : "0.21",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "3",
+    "f81" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy3_16" : {
+    "f12" : {
+      "start" : {
+        "x" : "-397.55",
+        "y" : "13.75",
+        "rotation" : "0",
+        "scaleX" : "0.73",
+        "scaleY" : "0.31",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_xiapizhandou_yu_copy2_17" : {
+    "f9" : {
+      "start" : {
+        "x" : "-280.55",
+        "y" : "-5.75",
+        "rotation" : "0",
+        "scaleX" : "0.73",
+        "scaleY" : "0.31",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "1",
+    "f99" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xiapizhandou_yu_copy1_18" : {
+    "f1" : {
+      "start" : {
+        "x" : "-245.05",
+        "y" : "6.25",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xiapizhandou_yu",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f91" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f101" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

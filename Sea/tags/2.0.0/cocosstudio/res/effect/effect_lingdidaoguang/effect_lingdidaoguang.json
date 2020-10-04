@@ -1,0 +1,287 @@
+{
+  "ggge_1" : {
+    "f19" : {
+      "start" : {
+        "x" : "215.8",
+        "y" : "238.15",
+        "rotation" : "-61.46",
+        "scaleX" : "0.26",
+        "scaleY" : "0.26",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_1.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "8"
+    },
+    "order" : "2",
+    "f26" : {
+      "start" : {
+        "x" : "215.8",
+        "y" : "238.15",
+        "rotation" : "0",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "178",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_1.png"
+      },
+      "nextFrame" : "f43",
+      "frames" : "18"
+    },
+    "f43" : {
+      "start" : {
+        "x" : "215.8",
+        "y" : "238.15",
+        "rotation" : "45.97",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_1.png"
+      }
+    },
+    "f44" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_2" : {
+    "f27" : {
+      "start" : {
+        "x" : "384.15",
+        "y" : "157.45",
+        "rotation" : "26.66",
+        "scaleX" : "1.98",
+        "scaleY" : "1.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_2.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "14"
+    },
+    "order" : "1",
+    "f40" : {
+      "start" : {
+        "x" : "384.15",
+        "y" : "157.45",
+        "rotation" : "26.66",
+        "scaleX" : "1.98",
+        "scaleY" : "1.86",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_2.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "21"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "384.15",
+        "y" : "157.45",
+        "rotation" : "26.66",
+        "scaleX" : "1.98",
+        "scaleY" : "1.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_2.png"
+      }
+    },
+    "f61" : {
+      "remove" : "1"
+    }
+  },
+  "图层 6_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_3.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_4.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_5.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_6.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_7.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_8.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_9.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_10.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_11.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_12.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_13.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_14.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_15.png"
+      }
+    },
+    "f26" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_16.png"
+      },
+      "nextFrame" : "f32",
+      "frames" : "7"
+    },
+    "f32" : {
+      "start" : {
+        "x" : "413.15",
+        "y" : "139.25",
+        "rotation" : "25.59",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_lingdidaoguang_16.png"
+      }
+    },
+    "f33" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f110" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_lingdidaoguang.png"
+}

@@ -1,0 +1,35 @@
+{
+  "图层 6_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "480.2",
+        "y" : "-209.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_huodongqiutian_yuenan_1.png"
+      }
+    },
+    "order" : "1"
+  },
+  "图层 5_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-368.05",
+        "y" : "-218.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_huodongqiutian_yuenan_2.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_huodongqiutian_yuenan.png"
+}

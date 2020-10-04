@@ -1,0 +1,99 @@
+{
+  "图层 1_0" : {
+    "f7" : {
+      "start" : {
+        "x" : "2.8",
+        "y" : "-4.05",
+        "rotation" : "0",
+        "scaleX" : "4.55",
+        "scaleY" : "5.47",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_daguang_1.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "6"
+    },
+    "order" : "1",
+    "f12" : {
+      "start" : {
+        "x" : "2.8",
+        "y" : "-4.05",
+        "rotation" : "0",
+        "scaleX" : "4.55",
+        "scaleY" : "5.47",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_daguang_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "4"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0.35",
+        "y" : "-1.1",
+        "rotation" : "0",
+        "scaleX" : "6.68",
+        "scaleY" : "8.04",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_daguang_1.png"
+      }
+    },
+    "f16" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-0.5",
+        "rotation" : "0",
+        "scaleX" : "4.39",
+        "scaleY" : "8.57",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_daguang_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "9"
+    },
+    "order" : "0",
+    "f9" : {
+      "start" : {
+        "x" : "0.85",
+        "y" : "1",
+        "rotation" : "0",
+        "scaleX" : "6.24",
+        "scaleY" : "9.89",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_daguang_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "7"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-2.3",
+        "y" : "3.1",
+        "rotation" : "0",
+        "scaleX" : "8.99",
+        "scaleY" : "11.72",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_daguang_1.png"
+      }
+    },
+    "f16" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f17" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_wujiangtupo_daguang.png"
+}

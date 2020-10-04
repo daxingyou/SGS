@@ -1,0 +1,49 @@
+{
+  "happyholiday_qixi_youxia2.png_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "534.85",
+        "y" : "-220.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_huodongqixi_yuenan_1.png"
+      }
+    },
+    "order" : "2"
+  },
+  "happyholiday_qixi_youxia.png_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "315.65",
+        "y" : "-262.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_huodongqixi_yuenan_2.png"
+      }
+    },
+    "order" : "1"
+  },
+  "happyholiday_qixi_deng03.png_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-405.35",
+        "y" : "237.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_huodongqixi_yuenan_3.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_huodongqixi_yuenan.png"
+}

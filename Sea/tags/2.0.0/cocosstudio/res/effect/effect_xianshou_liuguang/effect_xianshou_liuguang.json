@@ -1,0 +1,115 @@
+{
+  "ervrt_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-144.2",
+        "y" : "-523.9",
+        "rotation" : "-165.22",
+        "scaleX" : "0.91",
+        "scaleY" : "1.95",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_1.png"
+      }
+    },
+    "order" : "1",
+    "f2" : {
+      "start" : {
+        "x" : "-47.1",
+        "y" : "-174.6",
+        "rotation" : "-165.23",
+        "scaleX" : "0.91",
+        "scaleY" : "1.95",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_1.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "49.95",
+        "y" : "174.8",
+        "rotation" : "-165.23",
+        "scaleX" : "0.91",
+        "scaleY" : "1.95",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_1.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "50.5",
+        "y" : "162.25",
+        "rotation" : "-165.22",
+        "scaleX" : "1.74",
+        "scaleY" : "1.25",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_1.png"
+      }
+    },
+    "f5" : {
+      "remove" : "1"
+    }
+  },
+  "fcgrtugt_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-163.2",
+        "y" : "-565.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_2.png"
+      }
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "-61.2",
+        "y" : "-171.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_3.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "-6.95",
+        "y" : "15.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_4.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "79.35",
+        "y" : "298.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_xianshou_liuguang_5.png"
+      }
+    },
+    "f5" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f61" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_xianshou_liuguang.png"
+}

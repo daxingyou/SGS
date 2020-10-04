@@ -1,0 +1,38 @@
+{
+  "effect_jinjiangzhaoma_yuanquan_chengse_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.35",
+        "y" : "-31.45",
+        "rotation" : "0",
+        "scaleX" : "0.62",
+        "scaleY" : "0.2",
+        "opacity" : "102"
+      }
+    },
+    "effect" : "effect_jinjiangzhaoma_yuanquan_chengse",
+    "useBatchNode" : "true",
+    "first_frame" : "8",
+    "loop" : "play once",
+    "order" : "1"
+  },
+  "图层 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-30.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_jinjiangzhaomu_dianjiang_chengse_1.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_jinjiangzhaomu_dianjiang_chengse.png"
+}

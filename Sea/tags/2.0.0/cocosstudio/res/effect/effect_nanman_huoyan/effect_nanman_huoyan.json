@@ -1,0 +1,106 @@
+{
+  "Layer 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "7.05",
+        "y" : "6.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_1.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "5.4",
+        "y" : "6.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "6.35",
+        "y" : "7.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "6.95",
+        "y" : "11.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "9.25",
+        "y" : "13.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "6.8",
+        "y" : "11.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_6.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "6.6",
+        "y" : "14.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_7.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "8.35",
+        "y" : "8.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_nanman_huoyan_8.png"
+      }
+    }
+  },
+  "events" : {
+    "f16" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_nanman_huoyan.png"
+}

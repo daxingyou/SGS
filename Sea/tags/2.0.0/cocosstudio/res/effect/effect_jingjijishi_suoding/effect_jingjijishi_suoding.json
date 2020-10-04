@@ -1,0 +1,132 @@
+{
+  "img_runway_star.png_0" : {
+    "f4" : {
+      "start" : {
+        "x" : "1.7",
+        "y" : "-13.3",
+        "rotation" : "179.22",
+        "scaleX" : "0.77",
+        "scaleY" : "2.42",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_jingjijishi_suoding_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "order" : "2",
+    "f7" : {
+      "start" : {
+        "x" : "3.65",
+        "y" : "-4.65",
+        "rotation" : "179.24",
+        "scaleX" : "2.44",
+        "scaleY" : "0.62",
+        "opacity" : "145",
+        "blendMode" : "add",
+        "png" : "effect_jingjijishi_suoding_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "5"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "2.15",
+        "y" : "-4.1",
+        "rotation" : "179.22",
+        "scaleX" : "1.25",
+        "scaleY" : "0.48",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_jingjijishi_suoding_1.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "2"
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "img_runway_star.png_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "3",
+        "scaleY" : "3",
+        "opacity" : "25",
+        "png" : "effect_jingjijishi_suoding_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255",
+        "png" : "effect_jingjijishi_suoding_2.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_jingjijishi_suoding_2.png"
+      }
+    }
+  },
+  "effect_jingjijishi_di_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "-3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "effect" : "effect_jingjijishi_di",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "-3",
+        "rotation" : "0",
+        "scaleX" : "0.96",
+        "scaleY" : "0.96",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "-3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f31" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_jingjijishi_suoding.png"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_heji_duizhan44_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{684,774}}</string>
+                <key>offset</key>
+                <string>{-25,-33}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{17,79},{684,774}}</string>
+                <key>sourceSize</key>
+                <string>{768,866}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_heji_duizhan44.png</string>
+            <key>size</key>
+            <string>{688,778}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:857de61de4d3da70b412aa63e55902e8$</string>
+            <key>textureFileName</key>
+            <string>effect_heji_duizhan44.png</string>
+        </dict>
+    </dict>
+</plist>

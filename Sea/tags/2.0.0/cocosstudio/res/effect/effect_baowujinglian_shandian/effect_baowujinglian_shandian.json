@@ -1,0 +1,85 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "50.25",
+        "y" : "37.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_baowujinglian_shandian_1.png"
+      }
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "-27",
+        "y" : "17.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_baowujinglian_shandian_2.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-27.25",
+        "y" : "18.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_baowujinglian_shandian_3.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-32.5",
+        "y" : "18.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_baowujinglian_shandian_4.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-43.1",
+        "y" : "20.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_baowujinglian_shandian_5.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-39.5",
+        "y" : "19.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_baowujinglian_shandian_6.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f16" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_baowujinglian_shandian.png"
+}

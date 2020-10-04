@@ -1,0 +1,39 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "13.93",
+        "scaleY" : "13.93",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_mingjiangling_luoxia_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "0",
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "17.46",
+        "scaleY" : "17.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_mingjiangling_luoxia_1.png"
+      }
+    },
+    "f7" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f8" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_mingjiangling_luoxia.png"
+}
