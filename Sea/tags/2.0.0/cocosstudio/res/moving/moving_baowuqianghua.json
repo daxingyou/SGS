@@ -1,0 +1,85 @@
+{
+  "effect_baowuqianghua" : {
+    "f18" : {
+      "start" : {
+        "x" : "-160.8",
+        "y" : "-21.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "smoving_baowuqianghua_lizi1" : {
+    "f1" : {
+      "start" : {
+        "x" : "178.3",
+        "y" : "-122.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3",
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_baowuqianghua_lizi2" : {
+    "f1" : {
+      "start" : {
+        "x" : "281.05",
+        "y" : "-123.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2",
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_baowuqianghua_lizi3" : {
+    "f1" : {
+      "start" : {
+        "x" : "380.4",
+        "y" : "-122.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_baowuqianghua_lizi4" : {
+    "f1" : {
+      "start" : {
+        "x" : "480.15",
+        "y" : "-124.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f1" : "start",
+    "f18" : "play",
+    "f20" : "next",
+    "f45" : "finish"
+  }
+}

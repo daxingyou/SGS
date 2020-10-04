@@ -1,0 +1,31 @@
+{
+  "lizi_hulaoguanlizi2_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "374.5",
+        "y" : "306",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_hulaoguanlizi2_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-360.5",
+        "y" : "306",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

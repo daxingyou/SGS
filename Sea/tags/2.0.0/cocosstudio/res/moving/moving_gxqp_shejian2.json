@@ -1,0 +1,59 @@
+{
+  "effect_gxqp_zx" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "60.25",
+        "rotation" : "0",
+        "scaleX" : "0.84",
+        "scaleY" : "0.84",
+        "opacity" : "96"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "1",
+    "f2" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "60.25",
+        "rotation" : "0",
+        "scaleX" : "0.73",
+        "scaleY" : "0.73",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f4",
+      "frames" : "3"
+    },
+    "f4" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "60.25",
+        "rotation" : "0",
+        "scaleX" : "0.52",
+        "scaleY" : "0.52",
+        "opacity" : "255"
+      }
+    },
+    "f5" : {
+      "remove" : "1"
+    }
+  },
+  "effect_gxqp_gong" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.55",
+        "y" : "-279",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f5" : "hit",
+    "f14" : "finish"
+  }
+}

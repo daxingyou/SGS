@@ -1,0 +1,31 @@
+{
+  "effect_zhanma_guangzise" : {
+    "f1" : {
+      "start" : {
+        "x" : "-11.85",
+        "y" : "-10.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhanma_xingxingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-21",
+        "y" : "-14.1",
+        "rotation" : "0",
+        "scaleX" : "1.85",
+        "scaleY" : "1.85",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

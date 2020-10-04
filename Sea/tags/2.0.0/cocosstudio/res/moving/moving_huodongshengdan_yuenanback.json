@@ -1,0 +1,18 @@
+{
+  "effect_huodongshengdan_yuenanback" : {
+    "f1" : {
+      "start" : {
+        "x" : "-42.25",
+        "y" : "-103.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

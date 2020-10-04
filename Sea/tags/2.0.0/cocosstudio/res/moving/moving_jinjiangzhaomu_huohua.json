@@ -1,0 +1,31 @@
+{
+  "effect_tujie_huoxingpiao_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-647.15",
+        "y" : "-77.15",
+        "rotation" : "-9.44",
+        "scaleX" : "-1.13",
+        "scaleY" : "0.73",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_tujie_huoxingpiao_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "271.65",
+        "y" : "-107.25",
+        "rotation" : "0.32",
+        "scaleX" : "-0.49",
+        "scaleY" : "0.54",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f136" : "finish"
+  }
+}

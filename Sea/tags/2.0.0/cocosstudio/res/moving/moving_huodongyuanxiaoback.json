@@ -1,0 +1,44 @@
+{
+  "lizi_huodongyuanxiaojie_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "542.75",
+        "y" : "128.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_huodongyuanxiaojie_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-541.25",
+        "y" : "128.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_huanqingduanwu_effect101" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

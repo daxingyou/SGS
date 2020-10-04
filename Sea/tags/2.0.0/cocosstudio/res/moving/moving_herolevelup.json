@@ -1,0 +1,156 @@
+{
+  "effect_herolevelup_shanguang" : {
+    "f4" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "198.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f20",
+      "frames" : "17"
+    },
+    "order" : "9",
+    "f20" : {
+      "start" : {
+        "x" : "-0.3",
+        "y" : "198.9",
+        "rotation" : "0",
+        "scaleX" : "0.66",
+        "scaleY" : "0.66",
+        "opacity" : "0"
+      }
+    }
+  },
+  "effect_herolevelup_guangxian" : {
+    "f4" : {
+      "start" : {
+        "x" : "0.55",
+        "y" : "95.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_herolevelup_star_2" : {
+    "f4" : {
+      "start" : {
+        "x" : "-5",
+        "y" : "89",
+        "rotation" : "0",
+        "scaleX" : "0.72",
+        "scaleY" : "0.72",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_herolevelup_shengjila" : {
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "138.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6",
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "effect_herolevelup_qizihezi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.35",
+        "y" : "142.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_herolevelup_star_1" : {
+    "f4" : {
+      "start" : {
+        "x" : "1.5",
+        "y" : "210.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_herolevelup_littlestar" : {
+    "f4" : {
+      "start" : {
+        "x" : "-15.5",
+        "y" : "181",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_herolevelup_win_2" : {
+    "f4" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "192.9",
+        "rotation" : "0",
+        "scaleX" : "1.37",
+        "scaleY" : "0.52",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_herolevelup_fasanguang" : {
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "175",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_herolevelup_qizi2" : {
+    "f6" : {
+      "start" : {
+        "x" : "-10.75",
+        "y" : "137.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f11" : "play_shuzhi1",
+    "f16" : "play_shuzhi2",
+    "f21" : "play_shuzhi3",
+    "f24" : "play_zhaomu1",
+    "f30" : "play_zhaomu2",
+    "f47" : "play_dianji",
+    "f50" : "finish"
+  }
+}

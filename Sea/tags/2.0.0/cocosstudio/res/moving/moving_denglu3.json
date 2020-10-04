@@ -1,0 +1,109 @@
+{
+  "effect_denglu_shanghei" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "295.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_denglu3_xiahei" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-256.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_denglu3_logo" : {
+    "f1" : {
+      "start" : {
+        "x" : "-471.05",
+        "y" : "225.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_denglu3niao_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "242.75",
+        "y" : "-166.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_denglu3renwu_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-327.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_denglu3maozi_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "604.5",
+        "y" : "234.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_denglu3yumao_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "6.45",
+        "y" : "-309.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_denglu3changjing_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-278.05",
+        "y" : "271.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

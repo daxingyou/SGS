@@ -1,0 +1,215 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "3.55",
+        "y" : "0.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "3.55",
+        "dy" : "0.35"
+      }
+    },
+    "f2" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "23",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "0.8",
+        "dy" : "23"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "-3.2",
+        "y" : "45.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-3.2",
+        "dy" : "45.15"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-8.7",
+        "y" : "67.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-8.7",
+        "dy" : "67.1"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-16",
+        "y" : "88.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-16",
+        "dy" : "88.6"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-25.45",
+        "y" : "109.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-25.45",
+        "dy" : "109.35"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-37.3",
+        "y" : "129",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-37.3",
+        "dy" : "129"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-51.7",
+        "y" : "146.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-51.7",
+        "dy" : "146.95"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-68.75",
+        "y" : "162.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-68.75",
+        "dy" : "162.55"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-88.05",
+        "y" : "175.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-88.05",
+        "dy" : "175.35"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-155.15",
+        "y" : "195.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-155.15",
+        "dy" : "195.95"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-228.2",
+        "y" : "194.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-228.2",
+        "dy" : "194.9"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-298.95",
+        "y" : "180.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-298.95",
+        "dy" : "180.65"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-366.7",
+        "y" : "158.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-366.7",
+        "dy" : "158.9"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-431.9",
+        "y" : "132.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-431.9",
+        "dy" : "132.5"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-497.35",
+        "y" : "104.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "dx" : "-497.35",
+        "dy" : "104.3"
+      }
+    }
+  },
+  "events" : {
+    "f18" : "finish"
+  }
+}

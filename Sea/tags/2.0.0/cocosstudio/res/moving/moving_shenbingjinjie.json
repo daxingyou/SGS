@@ -1,0 +1,81 @@
+{
+  "effect_shenbingjinjie" : {
+    "f16" : {
+      "start" : {
+        "x" : "-184.45",
+        "y" : "-24.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "smoving_shenbingjinjie_lizi1" : {
+    "f1" : {
+      "start" : {
+        "x" : "286.55",
+        "y" : "-121.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3",
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_shenbingjinjie_lizi2" : {
+    "f1" : {
+      "start" : {
+        "x" : "174.1",
+        "y" : "-130.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2",
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_shenbingjinjie_lizi3" : {
+    "f1" : {
+      "start" : {
+        "x" : "373.25",
+        "y" : "-126.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f18" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_shenbingjinjie_zhuangbei" : {
+    "f1" : {
+      "start" : {
+        "x" : "-160.05",
+        "y" : "-5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f1" : "play",
+    "f26" : "next",
+    "f59" : "finish"
+  }
+}

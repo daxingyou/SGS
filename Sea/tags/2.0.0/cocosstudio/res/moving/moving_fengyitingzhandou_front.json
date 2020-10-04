@@ -1,0 +1,18 @@
+{
+  "spine_fengyitingcao_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "62",
+        "y" : "-273.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

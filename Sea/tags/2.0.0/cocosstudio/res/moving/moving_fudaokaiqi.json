@@ -1,0 +1,49 @@
+{
+  "effect_fudaokaiqi_texiao" : {
+    "f93" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2",
+    "f111" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_fudao_zhangjiezi" : {
+    "f44" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-149.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "smoving_fudao_jianzhu" : {
+    "f42" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f45" : "yan",
+    "f95" : "shuangjian",
+    "f111" : "finish"
+  }
+}

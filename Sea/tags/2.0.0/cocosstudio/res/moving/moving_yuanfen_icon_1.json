@@ -1,0 +1,44 @@
+{
+  "effect_yuanfen_faguangkuang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "icon_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_yuanfen_fasanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "-3.85",
+        "y" : "-0.95",
+        "rotation" : "0",
+        "scaleX" : "0.86",
+        "scaleY" : "0.86",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f71" : "finish"
+  }
+}

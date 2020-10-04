@@ -1,0 +1,35 @@
+{
+  "effect_xiangma_shanguang" : {
+    "f19" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f48" : {
+      "remove" : "1"
+    }
+  },
+  "spine_xiangmazhenji_attack" : {
+    "f1" : {
+      "start" : {
+        "x" : "180.4",
+        "y" : "-175",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f37" : "huode",
+    "f66" : "finish"
+  }
+}

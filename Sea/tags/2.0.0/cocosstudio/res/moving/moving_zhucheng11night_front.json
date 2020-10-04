@@ -1,0 +1,31 @@
+{
+  "lizi_zhucheng111lizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-21",
+        "y" : "379.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_zhucheng11lizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-98.25",
+        "y" : "353.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

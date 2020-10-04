@@ -1,0 +1,57 @@
+{
+  "mingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.05",
+        "y" : "-80.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "icon" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_yuanfen_faguangkuang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.12",
+        "scaleY" : "1.12",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_chufaqiyu_fasanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.15",
+        "y" : "0.45",
+        "rotation" : "0",
+        "scaleX" : "1.07",
+        "scaleY" : "1.07",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "finish"
+  }
+}

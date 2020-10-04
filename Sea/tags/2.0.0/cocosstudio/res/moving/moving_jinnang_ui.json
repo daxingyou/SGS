@@ -1,0 +1,9 @@
+{
+  "events" : {
+    "f1" : "ren",
+    "f4" : "left_right",
+    "f7" : "xiangqing",
+    "f10" : "left_right_icon",
+    "f20" : "finish"
+  }
+}

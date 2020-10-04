@@ -1,0 +1,75 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "0.75",
+        "rotation" : "0",
+        "scaleX" : "0.69",
+        "scaleY" : "0.69",
+        "opacity" : "255",
+        "dx" : "0.25",
+        "dy" : "0.75"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "f3" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "40.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0.25",
+        "dy" : "40.75"
+      },
+      "nextFrame" : "f6",
+      "frames" : "4"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-56.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0.25",
+        "dy" : "-56.25"
+      },
+      "nextFrame" : "f8",
+      "frames" : "3"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-44.25",
+        "rotation" : "0",
+        "scaleX" : "1.03",
+        "scaleY" : "1.03",
+        "opacity" : "255",
+        "dx" : "0.25",
+        "dy" : "-44.25"
+      },
+      "nextFrame" : "f10",
+      "frames" : "3"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "0.25",
+        "y" : "-56.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0.25",
+        "dy" : "-56.25"
+      }
+    }
+  },
+  "events" : {
+    "f27" : "finish"
+  }
+}

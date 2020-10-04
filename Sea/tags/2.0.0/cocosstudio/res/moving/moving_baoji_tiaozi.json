@@ -1,0 +1,67 @@
+{
+  "baoji" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "20.5",
+        "rotation" : "0",
+        "scaleX" : "2.85",
+        "scaleY" : "2.85",
+        "opacity" : "150"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f5",
+      "frames" : "3"
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f37",
+      "frames" : "23"
+    },
+    "f37" : {
+      "start" : {
+        "x" : "0",
+        "y" : "108.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    },
+    "f38" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f39" : "finish"
+  }
+}

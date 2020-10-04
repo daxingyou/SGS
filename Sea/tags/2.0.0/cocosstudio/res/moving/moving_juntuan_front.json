@@ -1,0 +1,44 @@
+{
+  "effect_juntuan_yun3" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "287",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "-1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_juntuan_yun2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "287",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "-1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_juntuan_yun1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-82",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "-1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f1001" : "finish"
+  }
+}

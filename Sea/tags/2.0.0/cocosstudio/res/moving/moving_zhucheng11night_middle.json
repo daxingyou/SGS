@@ -1,0 +1,57 @@
+{
+  "effect_nanman_huoguang_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "441.95",
+        "y" : "158.35",
+        "rotation" : "90.75",
+        "scaleX" : "-2.08",
+        "scaleY" : "2.29",
+        "opacity" : "178"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_nanman_huoguang_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "511.15",
+        "y" : "60.45",
+        "rotation" : "90.75",
+        "scaleX" : "-3.54",
+        "scaleY" : "3.89",
+        "opacity" : "178"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_nanman_huoguang_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-467.5",
+        "y" : "158.35",
+        "rotation" : "-90.75",
+        "scaleX" : "2.72",
+        "scaleY" : "2.99",
+        "opacity" : "178"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_nanman_huoguang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-519.3",
+        "y" : "60.45",
+        "rotation" : "-90.75",
+        "scaleX" : "2.08",
+        "scaleY" : "2.29",
+        "opacity" : "178"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

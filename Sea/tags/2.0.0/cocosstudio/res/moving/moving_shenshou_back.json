@@ -1,0 +1,44 @@
+{
+  "spine_shenshoufront2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-8.5",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_shenshouxianhe_effect1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_shenshouyun1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "-0.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f91" : "finish"
+  }
+}

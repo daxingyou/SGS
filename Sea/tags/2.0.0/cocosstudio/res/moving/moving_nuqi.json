@@ -1,0 +1,57 @@
+{
+  "effect_nuqi_huoyan1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "20.85",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1.21",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_nuqi_huoyan3" : {
+    "f1" : {
+      "start" : {
+        "x" : "6.65",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1.33",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_nuqi_huoyan2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-8.5",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1.29",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_nuqi_huoyan1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-23.65",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f21" : "finish"
+  }
+}

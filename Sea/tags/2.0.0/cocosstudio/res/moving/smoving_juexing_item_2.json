@@ -1,0 +1,33 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "f13" : {
+      "start" : {
+        "x" : "190.6",
+        "y" : "141.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "190.6",
+        "dy" : "141.95"
+      }
+    }
+  },
+  "events" : {
+    "f14" : "finish"
+  }
+}

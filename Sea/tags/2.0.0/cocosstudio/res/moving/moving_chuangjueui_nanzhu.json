@@ -1,0 +1,194 @@
+{
+  "juese" : {
+    "f13" : {
+      "start" : {
+        "x" : "-153.35",
+        "y" : "248.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "25"
+      },
+      "nextFrame" : "f16",
+      "frames" : "4"
+    },
+    "order" : "8",
+    "f16" : {
+      "start" : {
+        "x" : "-153.35",
+        "y" : "212.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_chuangjueui_zinan" : {
+    "f10" : {
+      "start" : {
+        "x" : "-118.6",
+        "y" : "511.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_bianshenka_xx" : {
+    "f16" : {
+      "start" : {
+        "x" : "-159.3",
+        "y" : "216.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_bianshenka_copy2" : {
+    "f16" : {
+      "start" : {
+        "x" : "-159.3",
+        "y" : "217.1",
+        "rotation" : "0",
+        "scaleX" : "-0.94",
+        "scaleY" : "0.37",
+        "opacity" : "127"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_bianshenka_copy1" : {
+    "f16" : {
+      "start" : {
+        "x" : "-159.3",
+        "y" : "217.1",
+        "rotation" : "0",
+        "scaleX" : "1.33",
+        "scaleY" : "0.52",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_chuangjueui_yingzi" : {
+    "f16" : {
+      "start" : {
+        "x" : "-158.55",
+        "y" : "215.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.9",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "anniu" : {
+    "f4" : {
+      "start" : {
+        "x" : "-169",
+        "y" : "6.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f6" : {
+      "start" : {
+        "x" : "-169",
+        "y" : "90.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f8",
+      "frames" : "3"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-169",
+        "y" : "76.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "shurukuang" : {
+    "f6" : {
+      "start" : {
+        "x" : "-162.45",
+        "y" : "128.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f8",
+      "frames" : "3"
+    },
+    "order" : "1",
+    "f8" : {
+      "start" : {
+        "x" : "-162.45",
+        "y" : "170.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f10",
+      "frames" : "3"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-162.45",
+        "y" : "163.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_chuangjueui_di" : {
+    "f1" : {
+      "start" : {
+        "x" : "-253.8",
+        "y" : "-322",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.83",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "-253.8",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f22" : "finish"
+  }
+}

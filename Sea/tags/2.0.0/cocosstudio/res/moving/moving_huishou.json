@@ -1,0 +1,18 @@
+{
+  "effect_huishou" : {
+    "f1" : {
+      "start" : {
+        "x" : "40.6",
+        "y" : "3.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f32" : "finish"
+  }
+}

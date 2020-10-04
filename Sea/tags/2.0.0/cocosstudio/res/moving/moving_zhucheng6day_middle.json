@@ -1,0 +1,135 @@
+{
+  "spine_zhucheng6shu1_effect1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_zhucheng_boat2" : {
+    "f1" : {
+      "start" : {
+        "x" : "447.7",
+        "y" : "57.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_zhucheng_boat1_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "646.1",
+        "y" : "-6.4",
+        "rotation" : "0",
+        "scaleX" : "0.7",
+        "scaleY" : "0.7",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_zhucheng_boat1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "636.5",
+        "y" : "66",
+        "rotation" : "0",
+        "scaleX" : "0.51",
+        "scaleY" : "0.51",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_zhucheng_boat1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "492.3",
+        "y" : "51",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_zhucheng_boat3" : {
+    "f1" : {
+      "start" : {
+        "x" : "373.65",
+        "y" : "98.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_zhucheng_boat4" : {
+    "f1" : {
+      "start" : {
+        "x" : "389.7",
+        "y" : "107.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_zhucheng_boat5" : {
+    "f1" : {
+      "start" : {
+        "x" : "388.75",
+        "y" : "123.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_zhucheng_chuandi" : {
+    "f1" : {
+      "start" : {
+        "x" : "475.6",
+        "y" : "40.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhucheng_shuibo" : {
+    "f1" : {
+      "start" : {
+        "x" : "550.35",
+        "y" : "31.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

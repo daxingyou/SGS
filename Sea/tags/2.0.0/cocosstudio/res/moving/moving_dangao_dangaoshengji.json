@@ -1,0 +1,18 @@
+{
+  "effect_dangao_shengji" : {
+    "f1" : {
+      "start" : {
+        "x" : "-156.15",
+        "y" : "-182.3",
+        "rotation" : "0",
+        "scaleX" : "2.83",
+        "scaleY" : "2.83",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f43" : "finish"
+  }
+}

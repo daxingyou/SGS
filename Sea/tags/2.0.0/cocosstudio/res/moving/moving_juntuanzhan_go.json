@@ -1,0 +1,53 @@
+{
+  "effect_juntuanzhan_yuanquan_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "-63.21",
+        "scaleX" : "1.14",
+        "scaleY" : "1.14",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2",
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "effect_juntuanzhan_yuanquan_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.78",
+        "scaleY" : "0.78",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "effect_juntuanzhan_yuanquan2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.35",
+        "scaleY" : "1.35",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f24" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f33" : "finish"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "qizi4" : {
+    "f1" : {
+      "start" : {
+        "x" : "309.05",
+        "y" : "13.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "qizi3" : {
+    "f1" : {
+      "start" : {
+        "x" : "217.85",
+        "y" : "14.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "qizi2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-325.05",
+        "y" : "13.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "qizi1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-414.7",
+        "y" : "14.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhucheng_chuan" : {
+    "f1" : {
+      "start" : {
+        "x" : "453.4",
+        "y" : "79.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f301" : "finish"
+  }
+}

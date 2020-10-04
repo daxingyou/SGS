@@ -1,0 +1,96 @@
+{
+  "lizi_gongchengmenguanqializi" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1060",
+        "y" : "285.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "spine_xuchangguanqiashu5_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "783.4",
+        "y" : "-279.7",
+        "rotation" : "0",
+        "scaleX" : "1.03",
+        "scaleY" : "1.03",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_xuchangguanqiashu4_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "142.4",
+        "y" : "-251.45",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_xuchangguanqiashu3_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "68.9",
+        "y" : "-258.1",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.04",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_xuchangguanqiashu1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-863.25",
+        "y" : "-308.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_scene02_fengsha_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-460.9",
+        "y" : "-162.05",
+        "rotation" : "0",
+        "scaleX" : "1.81",
+        "scaleY" : "-1.26",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_scene02_fengsha_copy1" : {
+    "f51" : {
+      "start" : {
+        "x" : "447.55",
+        "y" : "-93.7",
+        "rotation" : "-3.73",
+        "scaleX" : "2.11",
+        "scaleY" : "1.48",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f201" : "finish"
+  }
+}

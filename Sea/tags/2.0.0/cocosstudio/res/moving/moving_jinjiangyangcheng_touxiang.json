@@ -1,0 +1,45 @@
+{
+  "effect_jinjiangyangcheng_touxiangguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "6.6",
+        "y" : "-6.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add"
+      }
+    },
+    "order" : "2"
+  },
+  "touxiang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_jinjiangyangcheng_touxiangdi" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

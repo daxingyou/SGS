@@ -1,0 +1,18 @@
+{
+  "effect_nanman_huoguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "-355.35",
+        "y" : "314.45",
+        "rotation" : "-90.75",
+        "scaleX" : "5.21",
+        "scaleY" : "5.98",
+        "opacity" : "204"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f16" : "finish"
+  }
+}

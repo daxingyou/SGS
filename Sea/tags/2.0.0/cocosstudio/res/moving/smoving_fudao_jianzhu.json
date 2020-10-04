@@ -1,0 +1,101 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "-3.05",
+        "y" : "117.4",
+        "rotation" : "-2.45",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "dx" : "-3.05",
+        "dy" : "117.4"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "f4" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-1.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-0.05",
+        "dy" : "-1.95"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-0.05",
+        "dy" : "0.05"
+      }
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-0.05",
+        "dy" : "0.05"
+      },
+      "nextFrame" : "f53",
+      "frames" : "4"
+    },
+    "f53" : {
+      "start" : {
+        "x" : "-0.4",
+        "y" : "-2.05",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "255",
+        "dx" : "-0.4",
+        "dy" : "-2.05"
+      },
+      "nextFrame" : "f56",
+      "frames" : "4"
+    },
+    "f56" : {
+      "start" : {
+        "x" : "0.2",
+        "y" : "1.45",
+        "rotation" : "0",
+        "scaleX" : "1.02",
+        "scaleY" : "1.02",
+        "opacity" : "255",
+        "dx" : "0.2",
+        "dy" : "1.45"
+      },
+      "nextFrame" : "f58",
+      "frames" : "3"
+    },
+    "f58" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-0.05",
+        "dy" : "0.05"
+      }
+    }
+  },
+  "events" : {
+    "f71" : "finish"
+  }
+}

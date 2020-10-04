@@ -1,0 +1,44 @@
+{
+  "effect_huangjinzhandou_yun_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-477.35",
+        "y" : "-24.6",
+        "rotation" : "-6.98",
+        "scaleX" : "-2.74",
+        "scaleY" : "1.56",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_huangjinzhandou_yun_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "155.6",
+        "y" : "-201.8",
+        "rotation" : "0",
+        "scaleX" : "2.42",
+        "scaleY" : "1.39",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhucheng_niaofei_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-238.7",
+        "y" : "72.2",
+        "rotation" : "-4.08",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "137"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f241" : "finish"
+  }
+}

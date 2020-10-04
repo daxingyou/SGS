@@ -1,0 +1,47 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "-55.5",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "25",
+        "dx" : "-55.5",
+        "dy" : "0"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "f4" : {
+      "start" : {
+        "x" : "18.5",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "18.5",
+        "dy" : "0"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0"
+      }
+    }
+  },
+  "events" : {
+    "f41" : "finish"
+  }
+}

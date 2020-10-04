@@ -1,0 +1,19 @@
+{
+  "effect_zhandoujiasu_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-20",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "fei",
+    "f61" : "finish"
+  }
+}

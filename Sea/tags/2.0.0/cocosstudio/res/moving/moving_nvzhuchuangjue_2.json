@@ -1,0 +1,115 @@
+{
+  "lizi_xinchuangjue" : {
+    "f14" : {
+      "start" : {
+        "x" : "-19.95",
+        "y" : "430.25",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_nvzhuchuangjue_2_jianzhu2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4",
+    "f10" : {
+      "remove" : "1"
+    }
+  },
+  "spine_998_big_idle" : {
+    "f1" : {
+      "start" : {
+        "x" : "-254.6",
+        "y" : "-375.8",
+        "rotation" : "0",
+        "scaleX" : "0.84",
+        "scaleY" : "0.84",
+        "opacity" : "0"
+      }
+    },
+    "order" : "3",
+    "f14" : {
+      "start" : {
+        "x" : "-254.6",
+        "y" : "-375.8",
+        "rotation" : "0",
+        "scaleX" : "0.84",
+        "scaleY" : "0.84",
+        "opacity" : "255"
+      }
+    }
+  },
+  "spine_92998_go" : {
+    "f1" : {
+      "start" : {
+        "x" : "236.85",
+        "y" : "-273",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "2",
+    "f13" : {
+      "start" : {
+        "x" : "-292.35",
+        "y" : "-1019.15",
+        "rotation" : "0",
+        "scaleX" : "3.28",
+        "scaleY" : "3.28",
+        "opacity" : "255"
+      }
+    },
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "effect_nvzhuchuangjue_2_jianzhu1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f13" : {
+      "remove" : "1"
+    }
+  },
+  "effect_nvzhuchuangjue_2_bg" : {
+    "f13" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f25" : "ui",
+    "f45" : "finish"
+  }
+}

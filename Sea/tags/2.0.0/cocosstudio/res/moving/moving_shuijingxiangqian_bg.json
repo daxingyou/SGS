@@ -1,0 +1,57 @@
+{
+  "effect_shuijingxiangqian_bg_shitou" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_shuijingxiangqian_bg_taizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "23.3",
+        "y" : "-227.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_shuijingxiangqian2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-373.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_shuijingxiangqian1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-373.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f91" : "finish"
+  }
+}
