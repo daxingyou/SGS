@@ -1,0 +1,1 @@
+	self:_init${LISTVIEW_NAME}()

@@ -1,0 +1,61 @@
+{
+    "url": {
+        "rolelist": "https://rolekr.igamepub.co.kr", 
+        "config": "https://configkr.igamepub.co.kr", 
+        "cdn_list": [
+            "http://tks-cdn.gamepub.co.kr/mjz_test"
+        ], 
+        "gateway": "http://133.186.212.81:38434", 
+        "server": "http://133.186.212.81:38434"
+    }, 
+    "i18n": {
+        "lang": "kr"
+    }, 
+    "version": [
+        {
+            "svn": 7458, 
+            "path": "1.11.0", 
+            "name": "0.1.0"
+        }, 
+        {
+            "svn": 7805, 
+            "path": "1.11.0", 
+            "name": "0.1.1"
+        }, 
+        {
+            "svn": 7845, 
+            "path": "1.11.0", 
+            "name": "0.1.2"
+        }, 
+        {
+            "svn": 7895, 
+            "path": "1.11.0", 
+            "name": "0.1.3"
+        }, 
+        {
+            "svn": 7984, 
+            "path": "1.11.0", 
+            "name": "0.1.4"
+        }, 
+        {
+            "svn": 8090, 
+            "path": "1.11.0", 
+            "name": "0.1.11"
+        }, 
+        {
+            "svn": 9416, 
+            "path": "2.0.0", 
+            "name": "2.0.1"
+        }, 
+        {
+            "svn": 12336, 
+            "path": "2.0.0", 
+            "name": "2.0.2"
+        }, 
+        {
+            "svn": 14962, 
+            "path": "2.7.0", 
+            "name": "2.0.3"
+        }
+    ]
+}

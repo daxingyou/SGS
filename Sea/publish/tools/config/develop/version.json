@@ -1,0 +1,44 @@
+{
+    "url": {
+        "rolelist": "http://10.235.102.205:10167", 
+        "config": "http://10.235.102.205:8080", 
+        "cdn_list": [
+            "http://10.235.102.201/update"
+        ], 
+        "gateway": "http://10.235.102.205:38434", 
+        "server": "http://10.235.102.205:38434"
+    }, 
+    "test": {
+        "speedBattle": "false", 
+        "gameop": "1000", 
+        "token": "9d4923d485d78a95503d7979173a2876", 
+        "mode": 1, 
+        "fps": "true", 
+        "fakeReport": "false", 
+        "jumpBattle": "false", 
+        "op": "1", 
+        "proxy": "app.platform.testPlatform.TestProxy", 
+        "guide": "true", 
+        "recharge": "http://192.168.180.123/tools/charge_test.php"
+    },
+    "i18n": {
+        "lang": "vn"
+    },  
+    "version": [
+        {
+            "svn": 84365, 
+            "path": "trunk", 
+            "name": "2.1.0"
+        }, 
+        {
+            "svn": 84491, 
+            "path": "trunk", 
+            "name": "2.1.1"
+        }, 
+        {
+            "svn": 87814, 
+            "path": "trunk", 
+            "name": "2.1.2"
+        }
+    ]
+}

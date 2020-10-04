@@ -1,0 +1,82 @@
+{
+"c0ad1a666bb723a0983a203b9e3b8624ece700d2":"zhanglinsen",
+"0dbf674a6890be0e16e41ff4e9f2505d4d13a0fb":"meiwei",
+"4b4fafba6970c1cb462779b3b2e93d52c453ee18":"lishuang",
+"865422037810629":"hujunjing",
+"415b527e119564ccb77f1159d81bf15e64839d0e":"kr1",
+"38a300f32c41c52768ffeb4610aaf865a5a1b05a":"kr3",
+"825edc433c7d16714843d8c94a4395d9b4ea86ba":"kr4",
+"cb784cc577727f1adf2ba41b615b83ca89529cde":"kr5",
+"ac78928936fc8494e5527bd293025dc218b0a130":"kr6",
+"709b0f852b3cba5e2bffb943b6d17a002f16d3c3":"kr7",
+"352003033447754":"kr8",
+"358333086692608":"kr9",
+"351519101349003":"kr11",
+"357146071980932":"kr12",
+"357451094549676":"kr13",
+"356356083058285":"kr14",
+"353511090760074":"kr15",
+"355914072395638":"kr16",
+"827227758761522":"kr17",
+"355238080178871":"kr18",
+"c272ca8851a8aedb042fd85c5d257fe0ecb994e4":"kr19",
+"865166025740468":"kr20",
+"865166027478893":"kr21",
+"865166024901673":"kr22",
+"865166023145819":"kr23",
+"865166021830321":"kr24",
+"864793368051574":"kr25",
+"865223353260443":"kr26",
+"862431471883599":"kr27",
+"865166024510383":"kr28",
+"865166028704321":"kr29",
+"865166024077383":"kr30",
+"865166022056140":"kr31",
+"867496032955900":"kr32",
+"865166023752861":"kr33",
+"865166022093127":"kr34",
+"355693105453875":"kr35",
+"250ddc9fe6ae19995de02c6e4c4745e898879512":"huangxukang",
+"f46f335fb1be1d0f0d48e6d147dcbaa68436f721":"kr36",
+"352677100332229":"kr37",
+"b64dbd47b10d73314d39ef885ed69b0baf4bf63a":"kr38",
+"ffffffff9792fc7d0000000002584379_uuid":"kr39",
+"865166026553910":"kr40",
+"865166021062800":"kr41",
+"865166023485538":"kr42",
+"865166022771516":"kr43",
+"865166026171184":"kr44",
+"865166029854844":"kr45",
+"865166027457145":"kr46",
+"865166022825197":"kr47",
+"ffffffff9792fc7d000000000258b823_uuid":"kr48"
+}
+
+
+
+
+{     
+    "ios": {         "url": "itunes.apple.com/app/id1465687542?l=ko&ls=1&mt=8",         "type": "openurl"     },     
+    "android": {     "url": "play.google.com/store/apps/details?id=com.gamepub.ss.g",         "type": "openurl"     } 
+    "android": {     "url": "onesto.re/0000741482",         "type": "openurl"     } 
+}
+
+
+
+
+{     
+    "ios": {         "url": "itunes.apple.com/app/id1465687542?l=ko&ls=1&mt=8",         "type": "openurl"     },     
+    "android": {     "url": "play.google.com/store/apps/details?id=com.gamepub.ss.g",         "type": "download"     } 
+    "android": {     "url": "onesto.re/0000741482",         "type": "download"     }  
+}
+
+
+
+1.	GOOGLE
+https://play.google.com/store/apps/details?id=com.gamepub.ss.g
+
+2.	ONESTORE 
+http://onesto.re/0000741482
+
+3.	IOS 
+https://itunes.apple.com/app/id1465687542?l=ko&ls=1&mt=8

@@ -1,0 +1,32 @@
+{
+    "app": {
+        "run": 10000, 
+        "name": "三國殺名將傳", 
+        "file": "xgame",
+        "ios": {
+            "name": "港澳台", 
+            "target": "xgame-mobile", 
+            "identifier": "com.eskyfun.sgsmjzios", 
+            "sdk": "yoka-appstore-tw",
+            "provisioning":{
+                "teamID":"X6L8G76FZT",
+                "development":{
+                    "profiles": "com.eskyfun.sgsmjzios_dev_20200924", 
+                    "export": "ios_export_dev"
+                },
+                "distribution":{
+                    "profiles": "com.eskyfun.sgsmjzios_dis_20200924", 
+                    "export": "ios_export_dis"
+                }
+            }
+        }
+    }, 
+    "i18n": {
+        "top_server": "https://sgmjztopserver.mecheast.com/topserver",
+        "replace": {
+            "bundle_name": "三國殺名將傳", 
+            "language": "zh-Hant", 
+            "mic_desc": "需要錄製音訊進行發送語音聊天資訊，是否允許打開麥克風？"
+        }
+    }
+}

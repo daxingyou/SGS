@@ -1,0 +1,33 @@
+{
+    "app": {
+        "run": 10000, 
+        "name": "쌍삼국지", 
+        "file": "xgame",
+        "ios": {
+            "name": "开发", 
+            "target": "xgame-mobile",
+            "identifier": "com.gamepub.ss.g", 
+            "sdk": "default",
+            "provisioning":{
+                "teamID":"BFAMSYQ84F",
+                "development":{
+                    "profiles": "sgsmjz_dev_0527", 
+                    "export": "ios_export_dev"
+                },
+                "distribution":{
+                    "profiles": "sgsmjz_dis_0527", 
+                    "export": "ios_export_dis"
+                }
+            }
+        }
+    }, 
+    "i18n": {
+        "top_server": "http://133.186.208.49:8080/topserver",
+        "replace": {
+            "entitlements": "xgame-mobile.entitlements", 
+            "bundle_name": "쌍삼국지", 
+            "language": "ko", 
+            "mic_desc": "Game 쌍삼국지 cần xin quyền 'Microphone usage' để dùng cho tính năng 'trò chuyện' trong game?"
+        }
+    }
+}

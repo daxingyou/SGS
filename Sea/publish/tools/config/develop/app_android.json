@@ -1,0 +1,23 @@
+{
+    "app": {
+        "run": 8000, 
+        "name": "内网开发", 
+        "file": "xgame",
+        "android": {
+            "name": "开发", 
+            "identifier": "com.qygame.xgame1", 
+            "sdk": "mubao",
+            "abi": [
+                "armeabi-v7a"
+            ], 
+            "keystore": {
+                "psw": "QY@keystore601", 
+                "file": "keystore/xgame.keystore"
+            }, 
+            "alias": {
+                "name": "yoka.qiyu.xgame", 
+                "psw": "QY@keystore601"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "app": {
+        "run": 1000, 
+        "name": "Danh Tướng 3Q", 
+        "file": "xgame",
+        "android": {
+            "name": "越南外网测试", 
+            "identifier": "vn.pp.dt3q", 
+            "sdk": "mubao_vn",
+            "keystore": {
+                "psw": "QY@keystore601", 
+                "file": "keystore/xgame.keystore"
+            }, 
+            "alias": {
+                "name": "yoka.qiyu.xgame", 
+                "psw": "QY@keystore601"
+            }, 
+            "abi": [
+                "armeabi-v7a", 
+                "arm64-v8a"
+            ] 
+        }
+    }, 
+    "i18n": {
+        "top_server": "61.28.241.220:8080/topserver",
+        "ap": "android-26"
+    }
+}

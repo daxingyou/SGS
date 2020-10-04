@@ -1,0 +1,39 @@
+{
+    "url": {
+        "rolelist": "http://61.28.254.67:10167", 
+        "config": "http://47.244.89.96:8080", 
+        "cdn_list": [
+            "https://dt3q.vcdn.vn/mjz_test"
+        ], 
+        "gateway": "http://61.28.254.66:38434", 
+        "server": "http://61.28.254.66:38434"
+    }, 
+    "test": {
+        "speedBattle": "false", 
+        "gameop": 3001, 
+        "token": "31b751398deb6435f14adba54ae8a9b8", 
+        "mode": 1, 
+        "fps": "true", 
+        "fakeReport": "false", 
+        "jumpBattle": "false", 
+        "op": 105, 
+        "proxy": "app.platform.testPlatform.TestProxy", 
+        "guide": "true", 
+        "recharge": "http://61.28.254.66:9999/tools/charge_test.php"
+    }, 
+    "version": [
+        {
+            "svn": 9024, 
+            "path": "2.0.0", 
+            "name": "1.3.10"
+        }, 
+        {
+            "svn": 10993, 
+            "path": "2.7.0", 
+            "name": "1.3.11"
+        }
+    ], 
+    "i18n": {
+        "lang": "vn"
+    }
+}

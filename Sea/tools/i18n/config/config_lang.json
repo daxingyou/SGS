@@ -1,0 +1,84 @@
+{
+    "url": {
+        "config": "https://configmjzlang.sanguosha.com", 
+        "cdn_list": [
+            "http://mjzipa.sanguosha.com/mjz_android_lang"
+        ], 
+        "gateway": "https://eaglemjzml.sanguosha.com", 
+        "server": "https://eaglemjzml.sanguosha.com"
+    }, 
+    "app": {
+        "run": 10000, 
+        "name": "三国杀名将传", 
+        "file": "xgame"
+    }, 
+    "upload": {
+        "update": {
+            "port": 22, 
+            "ip": "182.254.208.180", 
+            "user": "root", 
+            "psw": "JBXR+mxxxR4jK9x3j", 
+            "path": "/data/wwwroot"
+        }, 
+        "install": {
+            "ip": "192.168.180.97", 
+            "user": "root", 
+            "port": 22, 
+            "psw": "z6ULPYUBvFpKu5TrW5HL", 
+            "path": "/data/wgame.youzu.com/installs"
+        }
+    }, 
+    "version": [
+        {
+            "svn": 52862, 
+            "path": "1.2.0", 
+            "name": "1.2.7"
+        },
+        {
+            "svn": 53112,
+            "path": "1.3.0",
+            "name": "1.3.1"
+        }
+    ], 
+    "build": {
+        "lua": {
+            "compile": true, 
+            "encrypt": false, 
+            "key": "com.qygame.xgame.lua", 
+            "sign": "com.qygame.xgame.lua.sign"
+        }, 
+        "mode": "release",
+        "lang":"en", 
+        "package": {
+            "compress": true, 
+            "encrypt": true, 
+            "key": "com.qygame.xgame.pack"
+        }
+    }, 
+    "channel": {
+        "android": {
+            "keystore": {
+                "psw": "QY@keystore601", 
+                "file": "keystore/xgame.keystore"
+            }, 
+            "ap": "android-19", 
+            "abi": [
+                "armeabi-v7a"
+            ], 
+            "list": [
+                {
+                    "identifier": "com.sanguosha.mjz", 
+                    "name": "开发", 
+                    "sdk": "mubao"
+                }
+            ], 
+            "alias": {
+                "name": "yoka.qiyu.xgame", 
+                "psw": "QY@keystore601"
+            }, 
+            "secret": "MieAQ8fCyAn07H2WxCbGrDBfC7da8Cwm", 
+            "id": "196377495", 
+            "bugly": "aa6ed58ff7"
+        }
+    }
+}

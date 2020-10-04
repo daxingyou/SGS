@@ -1,0 +1,61 @@
+{
+"05ddecc6212d09be8058abfdede1150b20b0416c":"zhanglinsen",
+"0de915f05e8f4daa035f677b4d3f701ab80e2045":"lkm",
+"d9f0391f55f18f6b4e89a396ebf57373a615455f":"sea-1",
+"ffffffffd1cafbf0000000002e5a969a_uuid":"sea-2",
+"5b90fef9_sn":"sea-4",
+"000000004bfccaeaffffffffacfd0acc_uuid":"sea-5",
+"0000000003afef41000000004f4c6b3f_uuid":"sea-6",
+"0000000064fafc6ffffffffbd60823c_uuid":"sea-8",
+"d24eea0cb7faccb19edcdbc6b303e79dee699a4c":"sea-9",
+"ed30a07d40139a0f7db9a0d67f28ed246e79981f":"sea-10",
+"8ca3df7af5230c3318dbf4e5367efd582432f95f":"sea-11",
+"00000000634eb62dffffffff96bfaf42_uuid":"sea-12",
+"ff07bdba3d7310cf494437633e3ab906bd9f59b5":"sea-13",
+"7f7a004570e6dc03bd6a345e62006e3b773ffb8d":"sea-14",
+"ffffffffd1cafbf0fffffffff6682859_uuid":"sea-15",
+"322a2a3a0504_sn":"sea-16",
+"00000000580568a0ffffffffede6419a_uuid":"sea-17",
+"0000000003afef41000000004f64f749_uuid":"sea-18",
+"00000000580568a0ffffffffecbf1329_uuid":"sea-19",
+"ffffffffbf18a2beffffffffe433ad21_uuid":"sea-20",
+"00000000766a99deffffffffe4342180_uuid":"sea-21",
+"00000000580568a0fffffffffefff670_uuid":"sea-22",
+"ffffffffbf18a2beffffffffe4342180_uuid":"sea-23",
+"000000002b3c4e9f000000001574707e_uuid":"sea-24",
+"ffffffffb9335f1effffffffb7876a94_uuid":"sea-25",
+"00000000580568a0ffffffff93e4a931_uuid":"sea-26"
+}
+
+
+
+[{"name":"SamKok-1","status":4,"server":"60010001","opentime":"1521597600"}]
+
+{"zh":"服务器正在进行维护更新，维护时间请查看官方公告","en":"The server is under maintenance. Please check the official notice for more details.","th":"เซิร์ฟเวอร์กำลังปรับปรุง เวลาอัปเดตกรุณาตรวจดูตามประกาศอย่างเป็นทางการ"}
+
+
+local language_en = require("app.i18n.en.LangTemplate")
+local language_zh = require("app.i18n.zh.LangTemplate")
+local language_th = require("app.i18n.th.LangTemplate")
+language_zh["login_network_timeout"]            = "主公，Dynasty Heroes 将于2020.5.13 10:00（UTC+8）正式上线公测，更多精彩活动预告请在公告上查看。"
+language_en["login_network_timeout"]            = "My lord, Dynasty Heroes will be officially released at 2020.5.13 10:00 (UTC+8). For more event preview, please check in the notice."
+language_en["login_network_disconnect"]            = "My lord, Dynasty Heroes will be officially released at 2020.5.13 10:00 (UTC+8). For more event preview, please check in the notice."
+language_zh["login_network_disconnect"]            = "主公，Dynasty Heroes 将于2020.5.13 10:00（UTC+8）正式上线公测，更多精彩活动预告请在公告上查看。"
+language_en["sdk_platform_mantain"]            = "My lord, Dynasty Heroes will be officially released at 2020.5.13 10:00 (UTC+8). For more event preview, please check in the notice."
+language_zh["sdk_platform_mantain"]            = "主公，Dynasty Heroes 将于2020.5.13 10:00（UTC+8）正式上线公测，更多精彩活动预告请在公告上查看。"
+language_th["login_network_timeout"]            = "นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"
+language_th["login_network_disconnect"]            = "นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"
+language_th["sdk_platform_mantain"]            = "นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"
+
+
+language_th["sdk_platform_mantain"]            = "นายท่าน Dynasty Heroes จะเปิดตัวอย่างเป็น ทางการในวันที่ 13 พฤษภาคม 2563 เวลา 10:00 น.（UTC+8）กรุณาชมกิจกรรมสุดยอด มากมายที่ประกาศ"
+language_th["login_network_disconnect"]            = "นายท่าน Dynasty Heroes จะเปิดตัวอย่างเป็น ทางการในวันที่ 13 พฤษภาคม 2563 เวลา 10:00 น.（UTC+8）กรุณาชมกิจกรรมสุดยอด มากมายที่ประกาศ"
+language_th["login_network_timeout"]            = "นายท่าน Dynasty Heroes จะเปิดตัวอย่างเป็น ทางการในวันที่ 13 พฤษภาคม 2563 เวลา 10:00 น.（UTC+8）กรุณาชมกิจกรรมสุดยอด มากมายที่ประกาศ"
+
+language_th["login_network_timeout"]            = "นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"
+language_th["login_network_disconnect"]            = "นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"
+language_th["sdk_platform_mantain"]            = "นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"
+
+{"zh":"主公，Dynasty Heroes 将于2020.5.13 10:00（UTC+8）正式上线公测，更多精彩活动预告请在公告上查看。","en":"My lord, Dynasty Heroes will be officially released at 2020.5.13 10:00 (UTC+8). For more event preview, please check in the notice.","th":"นายท่าน\nDynasty Heroes จะเปิดในวันที่\n13 พฤษภาคม 10:00 น.(UTC+8)\nกรุณาดูกิจกรรมสนุกที่ประกาศ~"}
+
+

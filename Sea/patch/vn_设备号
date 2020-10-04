@@ -1,0 +1,41 @@
+{ 
+"ac8116512c23085f914995dcbbc171cf080637d6":"zhanglinsen", 
+"1696e019c1354de9e53654537a89c69deae283bf":"fanmiao", 
+"8cc83990e140810202aefe4b705f3b0bc40a116e":"meiwei", 
+"03f22138c3d8cea0219eab8d10b122dc336d97ac":"haochaliang", 
+"eba56fd5e5e9323afefff562c54d0d23d65cffd8":"likaiming", 
+"a3766110_sn":"yktest0", 
+"59eeced29804_sn":"vn0", 
+"3300a5468ea262d1_sn":"vn1", 
+"ffc199e31f0f9c3ea435103bc93f75e34be016ad":"vn2", 
+"54A885EF-81C6-4B23-BC9F-17F730134C9D":"vn3", 
+"00f267640f7d30d1_sn":"vn4", 
+"44c4da31854fc4dd_sn":"vn5", 
+"0037c34e_sn":"vn6", 
+"7e005f1d9ab48af626f570484761f9dd5375fb0b":"vn7", 
+"RCBIORAQ8HTGAQSK_sn":"vn8", 
+"7POBLZMZ99999999_sn":"vn9", 
+"00e3a476_sn":"vn10", 
+"00d28943_sn":"vn11", 
+"00be4e80_sn":"vn12", 
+"fc1fdec8d60837d70b286831be14e01c79478512":"vn13", 
+"454c127ce20628af82aae7569008c53ac7c1bc64":"vn14", 
+"00b116d3_sn":"vn15",
+"00445d2e_sn":"vn16",
+"865166025815997":"vn-0", 
+"ffffffffc4d2c18effffffff96bfaf42_uuid":"yktest1",  
+"ffffffffa1f78eef000000006c9f1c38_uuid":"vn17",
+"ffffffffa1f78eef000000006c9f1c39_uuid":"vn18",
+"0e81ba7ba968a537ee170cf63dba3d713d7b08fc":"vn19"
+}
+
+
+{     
+    "ios": {         "url": "https://apps.apple.com/VN/app/id1439414645?mt=8",         "type": "openurl"     },     
+    "android": {     "url": "http://download.dt3q.zing.vn/dt3q_v1.1.0.apk",         "type": "download"     } 
+}
+
+{     
+    "ios": {         "url": "https://apps.apple.com/VN/app/id1439414645?mt=8",         "type": "openurl"     },     
+    "android": {     "url": "https://play.google.com/store/apps/details?id=vn.pp.dt3q",         "type": "openurl"     } 
+}

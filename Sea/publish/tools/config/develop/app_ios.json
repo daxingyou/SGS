@@ -1,0 +1,24 @@
+{
+    "app": {
+        "run": 8000, 
+        "name": "内网开发", 
+        "file": "xgame",
+        "ios": {
+            "name": "开发", 
+            "target": "xgame-mobile",
+            "identifier": "com.sanguosha.mjz", 
+            "sdk": "default",
+            "provisioning":{
+                "teamID":"BFAMSYQ84F",
+                "development":{
+                    "profiles": "sgsmjz_dev_0527", 
+                    "export": "ios_export_dev"
+                },
+                "distribution":{
+                    "profiles": "sgsmjz_dis_0527", 
+                    "export": "ios_export_dis"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "url": {
+        "rolelist": "http://133.186.208.49:10167", 
+        "config": "http://133.186.208.49:8787", 
+        "cdn_list": [
+            "http://tks-cdn.gamepub.co.kr/mjz_update"
+        ], 
+        "gateway": "http://133.186.208.49:38434", 
+        "server": "http://133.186.208.49:38434"
+    }, 
+    "test": {
+        "speedBattle": "false", 
+        "gameop": 4001, 
+        "token": "31b751398deb6435f14adba54ae8a9b8", 
+        "mode": 1, 
+        "fps": "true", 
+        "fakeReport": "false", 
+        "jumpBattle": "false", 
+        "op": 106, 
+        "proxy": "app.platform.testPlatform.TestProxy", 
+        "guide": "true", 
+        "recharge": "http://192.168.180.123/tools/charge_test.php"
+    },
+    "i18n": {
+        "lang": "kr"
+    },  
+    "version": [
+        {
+            "svn": 5230, 
+            "path": "1.8.0", 
+            "name": "0.0.1"
+        }
+    ]
+}

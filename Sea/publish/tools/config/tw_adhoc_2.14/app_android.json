@@ -1,0 +1,28 @@
+{
+    "app": {
+        "run": 10000, 
+        "name": "三國殺名將傳", 
+        "file": "xgame",
+        "android": {
+            "name": "港澳台", 
+            "identifier": "com.eskyfun.sgsmjzgp", 
+            "sdk": "mubao_tw",
+            "keystore": {
+                "psw": "QY@keystore601", 
+                "file": "keystore/xgame.keystore"
+            }, 
+            "alias": {
+                "name": "yoka.qiyu.xgame", 
+                "psw": "QY@keystore601"
+            }, 
+            "abi": [
+                "armeabi-v7a", 
+                "arm64-v8a"
+            ] 
+        }
+    }, 
+    "i18n": {
+        "top_server": "175.97.137.54:8080/topserver",
+        "ap": "android-28"
+    }
+}

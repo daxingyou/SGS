@@ -1,0 +1,32 @@
+{
+    "app": {
+        "run": 10000, 
+        "name": "Dynasty Heroes", 
+        "file": "xgame",
+        "ios": {
+            "name": "东南亚", 
+            "target": "xgame-mobile", 
+            "identifier": "com.dynasty.hero.legend", 
+            "sdk": "yoka-appstore-sea",
+            "provisioning":{
+                "teamID":"5D4Q2ZL4G3",
+                "development":{
+                    "profiles": "com.dynasty.hero.legend_dev_20200706", 
+                    "export": "ios_export_dev"
+                },
+                "distribution":{
+                    "profiles": "com.dynasty.hero.legend_dis_20200706", 
+                    "export": "ios_export_dis"
+                }
+            }
+        }
+    }, 
+    "i18n": {
+        "top_server": "http://sgmjztopserversg.mecheast.com/topserver",
+        "replace": {
+            "bundle_name": "Dynasty Heroes", 
+            "language": "en-US", 
+            "mic_desc": "You need to record audio messages to send voice chat messages. Is it allowed to turn on the microphone?"
+        }
+    }
+}

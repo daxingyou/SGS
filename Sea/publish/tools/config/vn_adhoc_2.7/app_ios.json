@@ -1,0 +1,33 @@
+{
+    "app": {
+        "run": 1000, 
+        "name": "Danh Tướng 3Q", 
+        "file": "xgame",
+        "ios": {
+            "name": "越南外网测试", 
+            "target": "xgame-mobile", 
+            "identifier": "vn.pp.tqs", 
+            "sdk": "yoka-appstore-vn",
+            "provisioning":{
+                "teamID":"64S26BR49K",
+                "development":{
+                    "profiles": "dt3q_dev_20190419", 
+                    "export": "ios_export_dev"
+                },
+                "adhoc":{
+                    "profiles": "dt3q_adhoc_20190419", 
+                    "export": "ios_export_adhoc"
+                }
+            }
+        }
+    }, 
+    "i18n": {
+        "top_server": "https://61.28.241.220:8080/topserver",
+        "replace": {
+            "entitlements": "xgame-mobile.entitlements", 
+            "bundle_name": "Danh Tướng 3Q", 
+            "language": "vi", 
+            "mic_desc": "Game Danh Tướng 3Q cần xin quyền 'Microphone usage' để dùng cho tính năng 'trò chuyện' trong game?"
+        }
+    }
+}

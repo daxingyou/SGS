@@ -1,0 +1,42 @@
+{
+    "url": {
+        "rolelist": "http://45.43.63.71:10167", 
+        "config": "http://45.43.63.71:8787", 
+        "cdn_list": [
+            "http://sgmjz.sg.cdn.mecheast.com/mjz_test"
+        ], 
+        "gateway": "http://128.1.61.237:38434", 
+        "server": "http://128.1.61.237:38434"
+    }, 
+    "i18n": {
+        "matchLang": "zh|en|th", 
+        "channel": "sea"
+    }, 
+    "version": [
+        {
+            "svn": 13737, 
+            "path": "2.0.0", 
+            "name": "0.1.28"
+        }, 
+        {
+            "svn": 13800, 
+            "path": "2.0.0", 
+            "name": "0.1.29"
+        }, 
+        {
+            "svn": 13839, 
+            "path": "2.0.0", 
+            "name": "0.1.30"
+        }, 
+        {
+            "svn": 14562, 
+            "path": "2.0.0", 
+            "name": "0.1.31"
+        }, 
+        {
+            "svn": 14881, 
+            "path": "2.0.0", 
+            "name": "0.1.45"
+        }
+    ]
+}
