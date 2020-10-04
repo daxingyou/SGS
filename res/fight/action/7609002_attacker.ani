@@ -1,0 +1,130 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 133,
+	"layers": [
+		{
+			"name": "se2160032",
+			"frameCount": 133,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 133,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 740,
+					"height": -740,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se76090022",
+			"frameCount": 133,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 133,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -500,
+					"height": 500,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 133,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 130,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"130": {
+					"id": 130,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"131": {
+					"id": 131,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"132": {
+					"id": 132,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_7609002",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"76": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

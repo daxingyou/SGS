@@ -1,0 +1,19 @@
+--mine_event
+
+local mine_event = {
+    -- key
+    __key_map = {
+      id = 1,    --id_key-int 
+      count_down_title = 2,    --倒计时标题-越南语-string 
+      count_down_txt = 3,    --倒计时说明-越南语-string 
+    
+    },
+    -- data
+    _data = {
+        [1] = {1,"Mỏ Khoáng-Thường: ","Mỏ Khoáng-Thường không thể chiến đấu",},
+        [2] = {2,"Mỏ Khoáng-Cao: ","Mỏ Khoáng-Cao có thể chiến đấu, chiếm Mỏ Khoáng",},
+        [3] = {3,"Mỏ Khoáng-Siêu: ","Chiếm Mỏ Khoáng-Siêu nhận lợi ích cao nhất",},
+    }
+}
+
+return mine_event

@@ -1,0 +1,459 @@
+{
+  "denglong_copy6_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "251.75",
+        "y" : "-121.75",
+        "rotation" : "8.47",
+        "scaleX" : "0.26",
+        "scaleY" : "0.26",
+        "opacity" : "30",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "29"
+    },
+    "order" : "10",
+    "f29" : {
+      "start" : {
+        "x" : "253.75",
+        "y" : "-117.75",
+        "rotation" : "8.47",
+        "scaleX" : "0.26",
+        "scaleY" : "0.26",
+        "opacity" : "84",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "52"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "251.75",
+        "y" : "-121.75",
+        "rotation" : "8.47",
+        "scaleX" : "0.26",
+        "scaleY" : "0.26",
+        "opacity" : "30",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "denglong_copy5_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-299.15",
+        "y" : "-92.6",
+        "rotation" : "-43.49",
+        "scaleX" : "0.15",
+        "scaleY" : "0.15",
+        "opacity" : "89",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f37",
+      "frames" : "37"
+    },
+    "order" : "9",
+    "f37" : {
+      "start" : {
+        "x" : "-299.15",
+        "y" : "-89.1",
+        "rotation" : "-34.75",
+        "scaleX" : "0.15",
+        "scaleY" : "0.15",
+        "opacity" : "89",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "44"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-299.15",
+        "y" : "-92.6",
+        "rotation" : "-43.49",
+        "scaleX" : "0.15",
+        "scaleY" : "0.15",
+        "opacity" : "89",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "denglong_copy4_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "263.45",
+        "y" : "-11.8",
+        "rotation" : "10.99",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "56",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "26"
+    },
+    "order" : "8",
+    "f26" : {
+      "start" : {
+        "x" : "261.45",
+        "y" : "-15.8",
+        "rotation" : "10.99",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "56",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "55"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "263.45",
+        "y" : "-11.8",
+        "rotation" : "10.99",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "56",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "dengguang_copy3_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-260.6",
+        "y" : "-35.95",
+        "rotation" : "-23.76",
+        "scaleX" : "0.17",
+        "scaleY" : "0.17",
+        "opacity" : "145",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "7",
+    "f39" : {
+      "start" : {
+        "x" : "-261.6",
+        "y" : "-36.95",
+        "rotation" : "-23.76",
+        "scaleX" : "0.17",
+        "scaleY" : "0.17",
+        "opacity" : "188",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "42"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-260.6",
+        "y" : "-35.95",
+        "rotation" : "-23.76",
+        "scaleX" : "0.17",
+        "scaleY" : "0.17",
+        "opacity" : "145",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      }
+    }
+  },
+  "denglong_copy3_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-260.75",
+        "y" : "-33.05",
+        "rotation" : "-31.74",
+        "scaleX" : "0.19",
+        "scaleY" : "0.19",
+        "opacity" : "89",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "6",
+    "f39" : {
+      "start" : {
+        "x" : "-260.75",
+        "y" : "-38.05",
+        "rotation" : "-31.74",
+        "scaleX" : "0.19",
+        "scaleY" : "0.19",
+        "opacity" : "89",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "42"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-260.75",
+        "y" : "-33.05",
+        "rotation" : "-31.74",
+        "scaleX" : "0.19",
+        "scaleY" : "0.19",
+        "opacity" : "89",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "dengguang_copy2_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "174.55",
+        "y" : "113.15",
+        "rotation" : "-20.77",
+        "scaleX" : "0.34",
+        "scaleY" : "0.34",
+        "opacity" : "91",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "5",
+    "f39" : {
+      "start" : {
+        "x" : "174.55",
+        "y" : "119.15",
+        "rotation" : "-20.77",
+        "scaleX" : "0.34",
+        "scaleY" : "0.34",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "42"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "174.55",
+        "y" : "113.15",
+        "rotation" : "-20.77",
+        "scaleX" : "0.34",
+        "scaleY" : "0.34",
+        "opacity" : "91",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      }
+    }
+  },
+  "denglong_copy2_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "174.65",
+        "y" : "116.95",
+        "rotation" : "-31.74",
+        "scaleX" : "0.44",
+        "scaleY" : "0.44",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "4",
+    "f39" : {
+      "start" : {
+        "x" : "174.65",
+        "y" : "122.95",
+        "rotation" : "-16.25",
+        "scaleX" : "0.44",
+        "scaleY" : "0.44",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "42"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "174.65",
+        "y" : "116.95",
+        "rotation" : "-31.74",
+        "scaleX" : "0.44",
+        "scaleY" : "0.44",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "dengguang_copy1_8" : {
+    "f1" : {
+      "start" : {
+        "x" : "-259.7",
+        "y" : "111.35",
+        "rotation" : "-20.47",
+        "scaleX" : "0.49",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f34",
+      "frames" : "34"
+    },
+    "order" : "3",
+    "f34" : {
+      "start" : {
+        "x" : "-262.7",
+        "y" : "116.35",
+        "rotation" : "-20.47",
+        "scaleX" : "0.49",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "47"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-259.7",
+        "y" : "111.35",
+        "rotation" : "-20.47",
+        "scaleX" : "0.49",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      }
+    }
+  },
+  "denglong_copy1_9" : {
+    "f1" : {
+      "start" : {
+        "x" : "-260",
+        "y" : "116.45",
+        "rotation" : "-27.8",
+        "scaleX" : "0.63",
+        "scaleY" : "0.63",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f34",
+      "frames" : "34"
+    },
+    "order" : "2",
+    "f34" : {
+      "start" : {
+        "x" : "-263",
+        "y" : "121.45",
+        "rotation" : "-27.8",
+        "scaleX" : "0.63",
+        "scaleY" : "0.63",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "47"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-260",
+        "y" : "116.45",
+        "rotation" : "-27.8",
+        "scaleX" : "0.63",
+        "scaleY" : "0.63",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "dengguang_10" : {
+    "f1" : {
+      "start" : {
+        "x" : "236.55",
+        "y" : "123.7",
+        "rotation" : "0.95",
+        "scaleX" : "0.73",
+        "scaleY" : "0.73",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "1",
+    "f39" : {
+      "start" : {
+        "x" : "239.55",
+        "y" : "134.7",
+        "rotation" : "0.95",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "183",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "42"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "236.55",
+        "y" : "123.7",
+        "rotation" : "0.95",
+        "scaleX" : "0.73",
+        "scaleY" : "0.73",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_tupochenggong_denglong_2.png"
+      }
+    }
+  },
+  "denglong_11" : {
+    "f1" : {
+      "start" : {
+        "x" : "240.15",
+        "y" : "130.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f39",
+      "frames" : "39"
+    },
+    "order" : "0",
+    "f39" : {
+      "start" : {
+        "x" : "241.2",
+        "y" : "141.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "42"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "240.15",
+        "y" : "130.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_tupochenggong_denglong_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f80" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_tupochenggong_denglong.png"
+}

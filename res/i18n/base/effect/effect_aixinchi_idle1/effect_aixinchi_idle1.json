@@ -1,0 +1,111 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.34",
+        "scaleY" : "0.34",
+        "opacity" : "15",
+        "blendMode" : "add",
+        "png" : "effect_aixinchi_idle1_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "2",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.12",
+        "scaleY" : "1.12",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_aixinchi_idle1_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "8"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.9",
+        "scaleY" : "2.9",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_aixinchi_idle1_1.png"
+      }
+    }
+  },
+  "图层 4_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "4.15",
+        "scaleY" : "4.15",
+        "opacity" : "15",
+        "blendMode" : "add",
+        "png" : "effect_aixinchi_idle1_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "4.15",
+        "scaleY" : "4.15",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_aixinchi_idle1_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "7.97",
+        "scaleY" : "7.97",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_aixinchi_idle1_2.png"
+      }
+    },
+    "f8" : {
+      "remove" : "1"
+    }
+  },
+  "effect_zhaomu_xx_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.1",
+        "y" : "2.1",
+        "rotation" : "0",
+        "scaleX" : "0.77",
+        "scaleY" : "0.72",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_zhaomu_xx",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f12" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_aixinchi_idle1.png"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_zhaomu_yingzi_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{127,154}}</string>
+                <key>offset</key>
+                <string>{-4,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{5,9},{127,154}}</string>
+                <key>sourceSize</key>
+                <string>{145,174}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_zhaomu_yingzi.png</string>
+            <key>size</key>
+            <string>{131,158}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:d903c3df8318ac6546008e0b379fe199$</string>
+            <key>textureFileName</key>
+            <string>effect_zhaomu_yingzi.png</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,227 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 176,
+	"layers": [
+		{
+			"name": "se2520023",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -674.3,
+					"height": 674.3,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2520021",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 312.25,
+					"y": -781.35,
+					"height": 781.4,
+					"scaleX": 1.0999755859375,
+					"scaleY": 1.0999755859375,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2520021",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 524.6,
+					"y": -721.35,
+					"height": 754.15,
+					"scaleX": 1.04998779296875,
+					"scaleY": 1.04998779296875,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2520021",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 644.75,
+					"y": -457.35,
+					"height": 539.45,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 174,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -360.7,
+					"height": 360.7,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"174": {
+					"id": 174,
+					"duration": 2,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2520021",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 514.55,
+					"y": 502.65,
+					"height": -350.45,
+					"scaleX": 0.9499969482421875,
+					"scaleY": 0.9499969482421875,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2520021",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 386.35,
+					"y": 582.65,
+					"height": -384.34999999999997,
+					"scaleX": 0.899993896484375,
+					"scaleY": 0.899993896484375,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2520022",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": -0.05,
+					"y": 653.7,
+					"height": -653.6500000000001,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "shadow",
+			"frameCount": 176,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 176,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_252_skill_1_1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"35": [
+			{
+				"type": "sound",
+				"value1": "fy_252_skill_1_2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"22": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

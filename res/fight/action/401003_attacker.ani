@@ -1,0 +1,181 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 230,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 230,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 224,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -248.85,
+					"height": 248.85,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"224": {
+					"id": 224,
+					"duration": 6,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body_2",
+			"frameCount": 230,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 224,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -294.85,
+					"height": 294.85,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"224": {
+					"id": 224,
+					"duration": 6,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se4020032",
+			"frameCount": 230,
+			"frames": {
+				"39": {
+					"id": 39,
+					"duration": 191,
+					"isMotion": false,
+					"element": true,
+					"x": 783.95,
+					"y": -212.5,
+					"height": -133.45,
+					"scaleX": 0.9999762822465434,
+					"scaleY": 0.9999762822465434,
+					"rotation": -6.5475616455078125,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se4020032",
+			"frameCount": 230,
+			"frames": {
+				"39": {
+					"id": 39,
+					"duration": 191,
+					"isMotion": false,
+					"element": true,
+					"x": 487.95,
+					"y": 242.9,
+					"height": -565.65,
+					"scaleX": 0.9999995392621878,
+					"scaleY": 0.9999995392621878,
+					"rotation": 7.950714111328126,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se4020032",
+			"frameCount": 230,
+			"frames": {
+				"39": {
+					"id": 39,
+					"duration": 191,
+					"isMotion": false,
+					"element": true,
+					"x": 921.95,
+					"y": 233.45,
+					"height": -443.65,
+					"scaleX": -1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se4010031",
+			"frameCount": 230,
+			"frames": {
+				"42": {
+					"id": 42,
+					"duration": 188,
+					"isMotion": false,
+					"element": true,
+					"x": 380.25,
+					"y": 277.85,
+					"height": -176.20000000000002,
+					"scaleX": 1.0912322998046875,
+					"scaleY": 1.0912322998046875,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_401_hj",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill3",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation_2",
+				"value1": "skill3",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"25": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

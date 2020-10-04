@@ -1,0 +1,173 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1.02",
+        "scaleY" : "1.02",
+        "opacity" : "135",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_1.png"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "1",
+    "f2" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_1.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "3"
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.04",
+        "opacity" : "114",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "3"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.55",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "9.6",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.04",
+        "opacity" : "114",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "9.75",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.98",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_2.png"
+      },
+      "nextFrame" : "f2",
+      "frames" : "2"
+    },
+    "order" : "0",
+    "f2" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "9.35",
+        "rotation" : "0",
+        "scaleX" : "0.89",
+        "scaleY" : "0.89",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_2.png"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "9.35",
+        "rotation" : "0",
+        "scaleX" : "0.89",
+        "scaleY" : "0.89",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_2.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "3"
+    },
+    "f5" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "10.2",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "1.07",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "3"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "9.35",
+        "rotation" : "0",
+        "scaleX" : "0.89",
+        "scaleY" : "0.89",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_2.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "10.2",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "1.07",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_huanggongguanqia_zhuguang2_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f9" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_huanggongguanqia_zhuguang2.png"
+}

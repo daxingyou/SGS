@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_biankuangur_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{154,509}}</string>
+                <key>offset</key>
+                <string>{-2,2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{5,10},{154,509}}</string>
+                <key>sourceSize</key>
+                <string>{168,533}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_biankuangur.png</string>
+            <key>size</key>
+            <string>{158,513}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:4ca049a8e9ae99b7a7b14e59cb79d54e$</string>
+            <key>textureFileName</key>
+            <string>effect_biankuangur.png</string>
+        </dict>
+    </dict>
+</plist>

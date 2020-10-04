@@ -1,0 +1,41 @@
+{
+  "effect_scene01_fire_copy2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "77.35",
+        "y" : "-68.15",
+        "rotation" : "4.2",
+        "scaleX" : "-0.85",
+        "scaleY" : "0.78",
+        "opacity" : "196"
+      }
+    },
+    "effect" : "effect_scene01_fire",
+    "useBatchNode" : "true",
+    "first_frame" : "15",
+    "loop" : "loop",
+    "order" : "1"
+  },
+  "effect_scene01_fire_copy1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-23.85",
+        "y" : "-88.25",
+        "rotation" : "20.27",
+        "scaleX" : "-0.81",
+        "scaleY" : "0.74",
+        "opacity" : "196"
+      }
+    },
+    "effect" : "effect_scene01_fire",
+    "useBatchNode" : "true",
+    "first_frame" : "15",
+    "loop" : "loop",
+    "order" : "0"
+  },
+  "events" : {
+    "f32" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

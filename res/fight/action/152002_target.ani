@@ -1,0 +1,118 @@
+{
+	"version": "1.0",
+	"damage": 5,
+	"frameCount": 40,
+	"layers": [
+		{
+			"name": "sh1520021",
+			"frameCount": 40,
+			"frames": {
+				"20": {
+					"id": 20,
+					"duration": 20,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "sh1520021",
+			"frameCount": 40,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 40,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 40,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 40,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "idle",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"6": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"12": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"18": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"24": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

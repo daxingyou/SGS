@@ -1,0 +1,75 @@
+--return_activity
+
+local return_activity = {
+    -- key
+    __key_map = {
+      id = 1,    --编号_key-int 
+      mission_description = 2,    --任务说明-string 
+    
+    },
+    -- data
+    _data = {
+        [1] = {1,"Tham gia hoạt động BOSS Quân Đoàn 12:00",},
+        [2] = {2,"Tham gia Vấn Đáp Quân Đoàn",},
+        [3] = {3,"Tham gia Thí Luyện Quân Đoàn",},
+        [4] = {4,"Tham gia hoạt động BOSS Quân Đoàn 19:00",},
+        [5] = {5,"Tham gia Đấu Phe",},
+        [6] = {6,"Tham gia Quân Đoàn Chiến",},
+        [7] = {7,"Tham gia Tam Quốc Chiến Kỷ",},
+        [8] = {8,"Tham gia Hoa Dung Đạo #num#",},
+        [9] = {9,"",},
+        [10] = {10,"",},
+        [11] = {11,"Tham gia hoạt động BOSS Quân Đoàn 12:00",},
+        [12] = {12,"Tham gia Vấn Đáp Quân Đoàn",},
+        [13] = {13,"Tham gia Thí Luyện Quân Đoàn",},
+        [14] = {14,"Tham gia hoạt động BOSS Quân Đoàn 19:00",},
+        [15] = {15,"Tham gia Đấu Phe",},
+        [16] = {16,"Tham gia Quân Đoàn Chiến",},
+        [17] = {17,"Tham gia Tam Quốc Chiến Kỷ",},
+        [18] = {18,"Tham gia Hoa Dung Đạo #num#",},
+        [19] = {19,"",},
+        [20] = {20,"",},
+        [21] = {21,"Tham gia hoạt động BOSS Quân Đoàn 12:00",},
+        [22] = {22,"Tham gia Vấn Đáp Quân Đoàn",},
+        [23] = {23,"Tham gia Thí Luyện Quân Đoàn",},
+        [24] = {24,"Tham gia hoạt động BOSS Quân Đoàn 19:00",},
+        [25] = {25,"Tham gia Đấu Phe",},
+        [26] = {26,"Tham gia Quân Đoàn Chiến",},
+        [27] = {27,"Tham gia Tam Quốc Chiến Kỷ",},
+        [28] = {28,"Tham gia Hoa Dung Đạo #num#",},
+        [29] = {29,"",},
+        [30] = {30,"",},
+        [31] = {31,"Tham gia hoạt động BOSS Quân Đoàn 12:00",},
+        [32] = {32,"Tham gia Vấn Đáp Quân Đoàn",},
+        [33] = {33,"Tham gia Thí Luyện Quân Đoàn",},
+        [34] = {34,"Tham gia hoạt động BOSS Quân Đoàn 19:00",},
+        [35] = {35,"Tham gia Đấu Phe",},
+        [36] = {36,"Tham gia Quân Đoàn Chiến",},
+        [37] = {37,"Tham gia Tam Quốc Chiến Kỷ",},
+        [38] = {38,"Tham gia Hoa Dung Đạo #num#",},
+        [39] = {39,"",},
+        [40] = {40,"",},
+        [41] = {41,"Tham gia hoạt động BOSS Quân Đoàn 12:00",},
+        [42] = {42,"Tham gia Vấn Đáp Quân Đoàn",},
+        [43] = {43,"Tham gia Thí Luyện Quân Đoàn",},
+        [44] = {44,"Tham gia hoạt động BOSS Quân Đoàn 19:00",},
+        [45] = {45,"Tham gia Đấu Phe",},
+        [46] = {46,"Tham gia Quân Đoàn Chiến",},
+        [47] = {47,"Tham gia Tam Quốc Chiến Kỷ",},
+        [48] = {48,"Tham gia Hoa Dung Đạo #num#",},
+        [49] = {49,"",},
+        [50] = {50,"",},
+        [51] = {51,"Tham gia hoạt động BOSS Quân Đoàn 12:00",},
+        [52] = {52,"Tham gia Vấn Đáp Quân Đoàn",},
+        [53] = {53,"Tham gia Thí Luyện Quân Đoàn",},
+        [54] = {54,"Tham gia hoạt động BOSS Quân Đoàn 19:00",},
+        [55] = {55,"Tham gia Đấu Phe",},
+        [56] = {56,"Tham gia Quân Đoàn Chiến",},
+        [57] = {57,"Tham gia Tam Quốc Chiến Kỷ",},
+        [58] = {58,"Tham gia Hoa Dung Đạo #num#",},
+        [59] = {59,"",},
+        [60] = {60,"",},
+    }
+}
+
+return return_activity

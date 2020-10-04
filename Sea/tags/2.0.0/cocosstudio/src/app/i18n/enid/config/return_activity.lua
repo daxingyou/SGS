@@ -1,0 +1,75 @@
+--return_activity
+
+local return_activity = {
+    -- key
+    __key_map = {
+      id = 1,    --编号-int 
+      mission_description = 2,    --任务说明-string 
+    
+    },
+    -- data
+    _data = {
+        [1] = {1,"Mengikuti event BOSS Legiun pk 12:00",},
+        [2] = {2,"Ikuti event Kuis Legiun",},
+        [3] = {3,"Ikuti event Percobaan Legiun",},
+        [4] = {4,"Mengikuti event BOSS Legiun pk 19:00",},
+        [5] = {5,"Mengikuti Kompetisi Faksi",},
+        [6] = {6,"Mengikuti Perang Legiun",},
+        [7] = {7,"Mengikuti Perang Samkok",},
+        [8] = {8,"Mengikuti Jalan Huarong #num#",},
+        [9] = {9,"",},
+        [10] = {10,"",},
+        [11] = {11,"Mengikuti event BOSS Legiun pk 12:00",},
+        [12] = {12,"Ikuti event Kuis Legiun",},
+        [13] = {13,"Ikuti event Percobaan Legiun",},
+        [14] = {14,"Mengikuti event BOSS Legiun pk 19:00",},
+        [15] = {15,"Mengikuti Kompetisi Faksi",},
+        [16] = {16,"Mengikuti Perang Legiun",},
+        [17] = {17,"Mengikuti Perang Samkok",},
+        [18] = {18,"Mengikuti Jalan Huarong #num#",},
+        [19] = {19,"",},
+        [20] = {20,"",},
+        [21] = {21,"Mengikuti event BOSS Legiun pk 12:00",},
+        [22] = {22,"Ikuti event Kuis Legiun",},
+        [23] = {23,"Ikuti event Percobaan Legiun",},
+        [24] = {24,"Mengikuti event BOSS Legiun pk 19:00",},
+        [25] = {25,"Mengikuti Kompetisi Faksi",},
+        [26] = {26,"Mengikuti Perang Legiun",},
+        [27] = {27,"Mengikuti Perang Samkok",},
+        [28] = {28,"Mengikuti Jalan Huarong #num#",},
+        [29] = {29,"",},
+        [30] = {30,"",},
+        [31] = {31,"Mengikuti event BOSS Legiun pk 12:00",},
+        [32] = {32,"Ikuti event Kuis Legiun",},
+        [33] = {33,"Ikuti event Percobaan Legiun",},
+        [34] = {34,"Mengikuti event BOSS Legiun pk 19:00",},
+        [35] = {35,"Mengikuti Kompetisi Faksi",},
+        [36] = {36,"Mengikuti Perang Legiun",},
+        [37] = {37,"Mengikuti Perang Samkok",},
+        [38] = {38,"Mengikuti Jalan Huarong #num#",},
+        [39] = {39,"",},
+        [40] = {40,"",},
+        [41] = {41,"Mengikuti event BOSS Legiun pk 12:00",},
+        [42] = {42,"Ikuti event Kuis Legiun",},
+        [43] = {43,"Ikuti event Percobaan Legiun",},
+        [44] = {44,"Mengikuti event BOSS Legiun pk 19:00",},
+        [45] = {45,"Mengikuti Kompetisi Faksi",},
+        [46] = {46,"Mengikuti Perang Legiun",},
+        [47] = {47,"Mengikuti Perang Samkok",},
+        [48] = {48,"Mengikuti Jalan Huarong #num#",},
+        [49] = {49,"",},
+        [50] = {50,"",},
+        [51] = {51,"Mengikuti event BOSS Legiun pk 12:00",},
+        [52] = {52,"Ikuti event Kuis Legiun",},
+        [53] = {53,"Ikuti event Percobaan Legiun",},
+        [54] = {54,"Mengikuti event BOSS Legiun pk 19:00",},
+        [55] = {55,"Mengikuti Kompetisi Faksi",},
+        [56] = {56,"Mengikuti Perang Legiun",},
+        [57] = {57,"Mengikuti Perang Samkok",},
+        [58] = {58,"Mengikuti Jalan Huarong #num#",},
+        [59] = {59,"",},
+        [60] = {60,"",},
+    }
+}
+
+return return_activity

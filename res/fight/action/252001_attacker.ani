@@ -1,0 +1,120 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 127,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 127,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 124,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -360.7,
+					"height": 360.7,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"124": {
+					"id": 124,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"125": {
+					"id": 125,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"126": {
+					"id": 126,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "shadow",
+			"frameCount": 127,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 127,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_252_at_1_1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"69": [
+			{
+				"type": "sound",
+				"value1": "fy_252_at_1_2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"29": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

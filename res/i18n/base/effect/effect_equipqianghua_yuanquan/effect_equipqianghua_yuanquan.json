@@ -1,0 +1,94 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_1.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_6.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "5.2",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_equipqianghua_yuanquan_7.png"
+      }
+    }
+  },
+  "events" : {
+    "f15" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_equipqianghua_yuanquan.png"
+}

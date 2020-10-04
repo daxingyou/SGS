@@ -1,0 +1,102 @@
+--instrument
+
+local instrument = {
+    -- key
+    __key_map = {
+      id = 1,    --id_key-int 
+      name = 2,    --名称-string 
+      instrument_description = 3,    --神兵描述-string 
+      hero = 4,    --相关武将-string 
+      description = 5,    --神兵+25特性描述-string 
+      description_1 = 6,    --神兵+50特性描述-string 
+      description_2 = 7,    --神兵+75特性描述-string 
+    
+    },
+    -- data
+    _data = {
+        [1] = {1,"Long Đảm Thương ","Khảm Đá Long Đảm, cứng chắc.","Nhân vật nam","ST kỹ năng tăng 25%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [2] = {2,"Minh Hồng Đao ","Tương truyền là bảo đao do hoàng đế đúc, rất đẹp, lưỡi đao như sương thu, chém sắt như chém bùn.","Nhân vật nữ","ST kỹ năng tăng 25%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [3] = {101,"Kiêu Thủ Trượng ","Pháp trượng sắc bén, âm khí đáng sợ.","Tư Mã Ý","Thi triển kỹ năng có 40% thêm kỹ năng 1 lần, gây cho toàn thể địch 41% sát thương phép","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [4] = {102,"Bích Ngọc Tiêu ","Viên ngọc của Tuân Lệnh Quân tỏa ánh sáng lấp lánh, chứa đựng sức sống vô hạn.","Tuân Úc","Trị liệu từ kỹ năng tăng 25%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [5] = {103,"Mạnh Đức Kiếm ","Thanh kiếm theo Tào Tháo nửa đời chinh chiến, lập công vô số.","Tào Tháo","Tỉ lệ bạo kích toàn đội +30%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [6] = {104,"Quân Phiến ","Cầm quạt này trèo lên cao nhìn ra xa, thiên quân vạn mã hiện ra trước mắt, Quách Phục hiếu tài trí vô song, giúp Tào Tháo lấy được nửa giang sơn.","Quách Gia","Sau khi thi triển bản thân hồi 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [7] = {105,"Tu La Đao ","Tu La Đao của người kiên cường, lưỡi đao có gai, thân đỏ sậm, đem ra chiến trường, càng chiến càng dũng mãnh.","Hạ Hầu Đôn","Khi bị tấn công thường, bản thân hồi 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [8] = {106,"Thiết Thuẫn ","Vũ khí vô cùng cứng chắc, nổi danh thiên hạ.","Tào Nhân","Khi tử vong 100% gây choáng tướng địch","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [9] = {107,"Song Thủ Kích ","Song kích của Điển Vi nặng 80 cân, vững như Thái Sơn, dũng mãnh vô song.","Điển Vi","ST kỹ năng tăng 25%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [10] = {108,"Lưu Tinh Chùy ","Cầm Lưu Tinh Chùy này xông trận, sát thương vô số người.","Hứa Chử","Diệt 1 mục tiêu, hồi 1 nộ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [11] = {109,"Câu Liêm Đao ","Lưỡi liềm cán dài, một đầu đao, một đầu gai, xông trận diệt địch rất linh hoạt, khiến địch khó lòng đề phòng được.","Trương Liêu","Mỗi hiệp bản thân hồi 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [12] = {110,"Thấu Cốt Trảo ","2 móng 6 gai, áp sát đoạt mạng địch nhanh chóng.","Trương Hợp","Xác suất bạo kích Tướng ra trận tăng 20%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [13] = {111,"Diệt Hồn Trảo ","Hấp thu khí hắc ám, diệt vô số người!","Tào Phi","Cứ giảm 1 kỹ năng mục tiêu, sát thương kỹ năng tăng 10%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [14] = {112,"Toái Vân Tiên ","Trong roi này có cơ quan, mọc gai, có thể rải ra thành bím, có thể khép thành gai, tấn công, phòng thủ, quấn hoặc chích, biến hóa khôn lường","Chân Cơ","Chuyển 50% ST kỹ năng thành hồi HP cho đồng đội yếu nhất","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [15] = {113,"Thủ Lý Kiếm ","Nhạc Tiến khi trẻ từng đến Tây Vực du ngoạn, theo Kim Luân Pháp Vương học võ, sau khi xuất sư, được ban vũ khí.","Nhạc Tiến","Đánh thường, chuyển 50% ST thành hồi HP cho bản thân","0","0",},
+        [16] = {114,"Trường Bính Phủ ","Từ Hoảng đã dùng số tiền lớn mua rìu này để xứng với đầu khôi của mình.","Từ Hoảng","Chắn chắn bạo kích ở hiệp đầu","0","0",},
+        [17] = {115,"Liên Gia Tượng ","Tào Xung cân voi có 3 bước, bước 1 là để voi lên đĩa cân, bước 2 bắt đầu cân, bước 3 bắt đầu nói một chữ số. Nếu ai không tin thì hãy khuyên hắn, bạn cân thử xem.","Tào Xung","Xác suất thi triển kỹ năng kèm hiệu quả Trầm Mặc tăng đến 70%","0","0",},
+        [18] = {116,"Vân Văn Hào ","Tào Thực viết: Nấu đậu đun cành đậu, đậu ở trong nồi khóc, sinh ra từ một gốc, sao nỡ đốt thiêu nhau.","Tào Thực","Thi triển kỹ năng có 80% gây Choáng","0","0",},
+        [19] = {117,"Liệp Báo Cung ","Cung này không thể xem thường, tên bắn ra nhanh như chớp và chính xác.","Hạ Hầu Uyên","Chuyển 40% ST kỹ năng thành hồi HP cho đồng đội yếu nhất","0","0",},
+        [20] = {118,"Tuyệt Tình Kiếm","Trương Xuân Hoa cả đời bầu bạn với Tư Mã Ý. Kiếm này là mẫu tử kiếm, khi đối địch sẽ biến hóa khôn lường, khó mà né tránh.","Xuân Hoa","Hộ thuẫn giúp tỉ lệ giảm sát thương đồng đội phải chịu tăng 45%","0","0",},
+        [21] = {119,"Tật Phong Đao","Kiếm và áo choàng của Tất Phong Kiếm Hào.","Vu Cấm","Khi bị tấn công, chuyển 20% ST thành HP hồi cho bản thân","0","0",},
+        [22] = {201,"Long Đảm Thương ","Ném thương đi sẽ hóa thành một con rồng bạc từ trên không bay xuống và tiêu diệt kẻ địch.","Triệu Vân","Diệt mục tiêu, thêm 1 lần công thường (Công thường thêm không hồi nộ khí)","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [23] = {202,"Song Cổ Kiếm","Song Cổ Kiếm, một xanh một tím, người nắm giữ sẽ được làm vua. Hai kiếm có thể ghép lại thành một kiếm lớn.","Lưu Bị","Khi bị tấn công, chuyển 18% ST thành HP hồi cho toàn đội","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [24] = {203,"Thất Tinh Phiến ","Dùng ngọc trắng chế tạo khung quạt, lông chim ưng chế tạo mặt quạt, điểm xuyến bảy sao và khảm bát quái, khi dùng sẽ như rồng vẫy đuôi.","Gia Cát Lượng","Sau khi thi triển khiến mục tiêu giảm 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [25] = {204,"Xe Ngựa Gỗ","Bụng vuông đầu cong, có bốn chân, đầu gắn sâu vào cổ, lưỡi gắn trong bụng. Tải nhiều mà đi ít, đi một mình có thể đi 10 dặm.","Nguyệt Anh","Sau khi thi triển toàn đội hồi 1 nộ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [26] = {205,"Thanh Long Đao","Thanh đao mà Quan Vũ dùng, thân đao như trăng lưỡi liềm, rất sắc bén.","Quan Vũ","Diệt 1 mục tiêu, hồi 1 nộ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [27] = {206,"Bát Mâu","Lúc kết nghĩa ở vườn đào, Trung Sơn Đại Thương đã hỗ trợ 500 lượng, ngàn cân thép để chế tạo nên cây mâu này.","Trương Phi","HP bản thân giảm 10%, Công tăng 5%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [28] = {207,"Hổ Đầu Thương","Thương này được chế tạo bằng phương pháp bí mật của tộc Khương, nặng 80 cân, địch bị đánh trúng chắc chắn sẽ bị thương nặng.","Mã Siêu","Trị liệu nhận được +50%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [29] = {208,"Liệt Hỏa Cung ","Cung của Hoàng Trung, có thể dùng làm đao hoặc cung, vừa đánh gần vừa đánh xa.","Hoàng Trung","Diệt mục tiêu, thêm 1 lần công thường (Công thường thêm không hồi nộ khí)","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [30] = {209,"Kim Long Nỏ ","Gia Cát Liên Nỏ do Khổng Minh phát minh ra, có thể gắn được vài mũi tên và bắn ra liên tục, uy lực rất mạnh.","Khương Duy","Mỗi hiệp bản thân tăng tấn công 8%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [31] = {210,"Thị Huyết Đao ","Cán được làm từ vàng, lưỡi đao hình lưỡi liềm sắc bén.","Ngụy Diên","Thi triển kỹ năng có 65% gây Choáng","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [32] = {211,"Pháp Trượng ","Khi Bàng Thống xuống núi, Thủy Kính tiên sinh đã tặng cho ông cây trượng này, sau Bàng Thống đã dùng trượng này giúp Lưu Bị xưng đế.","Bàng Thống","Toàn đội tăng 20% bạo kích","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [33] = {212,"Vô Ảnh Kiếm ","Từ Thứ lúc nhỏ là hiệp khách giang hồ, sau bỏ võ theo văn, lại sợ bị người khác chỉ trích nên giấu kiếm trong cây dù thường mang bên mình, kẻ địch rất khó phòng bị.","Từ Thứ","Sau khi thi triển bản thân hồi 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [34] = {213,"Hám Địa Trang ","Cọc gỗ được làm từ gỗ trăm năm, người thường không thể vác nổi, chỉ có Mạnh Hoạch trời sinh thần lực mới dùng được nó.","Mạnh Hoạch","Diệt 1 mục tiêu, +8% công bản thân","0","0",},
+        [35] = {214,"Lĩnh Vân Mâu ","Chúc Dung sống trong núi từ nhỏ, thường dùng cây gỗ trong rừng tạo thành trường mâu, rất sắc bén và tinh chuẩn, thú săn và kẻ địch khó mà tránh được.","Chúc Dung","Khi tử vong thi triển kỹ năng 1 lần","0","0",},
+        [36] = {215,"Thúy Trúc ","A Đẩu dùng cây tre chế tạo một thanh kiếm nhỏ, sau đó bị phụ thân Huyền Đức trừng phạt một trận.","A Đẩu","Hộ thuẫn giúp tỉ lệ giảm sát thương bản thân phải chịu tăng 45%","0","0",},
+        [37] = {216,"Thanh Hà","Một cây hoa sen xanh tươi tràn đầy sức sống, đảm bảo chúa công ra trận không còn lo lắng.","Tinh Thái","Khi tử vong thi triển kỹ năng 1 lần","0","0",},
+        [38] = {217,"Yển Nguyệt Đao ","Yển Nguyệt Đao do Quan Vũ địch thân chế tạo cho Ngân Bình.","Ngân Bình","Diệt mục tiêu bản thân hồi 20% sinh lực","0","0",},
+        [39] = {218,"Long Lân Đao ","Nghe nói được làm từ nguyên liệu còn dư sau khi chế tạo xong Yển Nguyệt Đao.","Quan Bình","ST kỹ năng tăng 15%","0","0",},
+        [40] = {219,"Đằng Xà Trượng ","Pháp trượng do ba con rắn vàng quấn lại với nhau tạo thành, nghe nói nhìn vào nó sẽ bị mê hoặc, không thể động đậy.","Pháp Chính","Thi triển kỹ năng có 70% gây Tê Liệt","0","0",},
+        [41] = {301,"Kim Long Giản ","Song giản của Tôn Sách, được làm từ thần binh thượng cổ, trong có cơ quan, có thể biến thành bao tay.","Tôn Sách","Khi tấn công, tỉ lệ bạo kích mục tiêu thiêu đốt tăng thêm 80%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [42] = {302,"Liên Hoa Tản ","Dùng tre Tiêu Tương chế tạo khung dù, dùng cây sồi ở Thái Sơn làm cán dù, mềm mại uyển chuyển, nhìn vào thấy tâm tình rất thoải mái.","Đại Kiều","Hiệu quả hồi HP cho đồng đội tăng lên 32% dựa trên tấn công của bản thân","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [43] = {303,"Đô Đốc Đao","Bội đao mà Đô Đốc thường mang bên người, đao này toàn thân xanh như ngọc, dài hơn tám thước, cùng chủ nhân tâm ý tương thông.","Chu Du","Khi bị tấn công thường có 80% khiến người tấn công bị bỏng, duy trì 2 lượt","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [44] = {304,"Tinh Hoa Phiến ","Khung quạt làm từ vàng, mặt quạt làm từ tơ lụa, cao quý, nho nhã và xinh đẹp như chủ nhân của nó.","Tiểu Kiều","Tạo thuẫn hút HP cho 2 tướng có HP ít nhất, duy trì 1 lượt","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [45] = {305,"Lạc Nhật Cung ","Tương truyền cung này do Hán Vũ Đế tặng cho Hoắc Quang, sau lưu lạc nhân gian và rơi vào tay phụ thân của Thái Sử Từ. Từ nhỏ Thái Sử Từ đã dùng cây cung này luyện tập bắn cung, có lần không cẩn thận đánh rơi cung vào lửa, nào ngờ cung này lại không bị đốt cháy, từ đó nó có sức mạnh của lửa, bắn trúng sẽ khiến địch bị thiêu cháy.","Thái Sử Từ","Khi bị tấn công thường có 50% khiến người tấn công bị bỏng, duy trì 2 lượt","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [46] = {306,"Thanh Minh Kiếm","Sau khi Tôn Quyền xưng đế đã đích thân đốc thúc chế tạo 6 cây kiếm, Thanh Minh Kiếm này là thanh thứ 5, Tôn Quyền rất thích thanh kiếm này.","Tôn Quyền","Sau khi diệt mục tiêu thiêu đốt, bản thân hồi 50% sinh lực","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [47] = {307,"Diệt Thiên Miêu ","Khi Lữ Mông qua sông đã dùng mỏ neo này ngụy trang thành bá tánh và thương gia, nhân cơ hội đánh ngất hộ vệ Kinh Châu, dẫn đại quân vào thành Kinh Châu.","Lữ Mông","Gây 80% Choáng với mục tiêu Thiêu Đốt","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [48] = {308,"Kim Linh Đao ","Đại đao của Cam Ninh, rất đẹp đẽ quý giá, trang trí bằng hoa văn vàng.","Cam Ninh","Công thường gây sát thương thêm cho mục tiêu thiêu đốt tăng 80% ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [49] = {309,"Liệt Diệm Thuẫn ","Khiên của Tôn Kiên, rất nặng, đầu thú mặt trước như hổ lửa tấn công, có thể khiến kẻ địch bốc cháy.","Tôn Kiên","Khi bị mục tiêu thiêu đốt tấn công, sát thương phải chịu giảm 65%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [50] = {310,"La Sát Luân ","Thượng Hương từ nhỏ thích múa đao múa kiếm nên Tôn Kiên đã tìm hai vòng đao này cho con gái, khi xoay sẽ rất đẹp và sắc bén, dễ dàng tiêu diệt kẻ địch.","Thượng Hương","Sau khi thi triển thêm 1 lần công thường (Công thường thêm không hồi nộ khí)","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [51] = {311,"Chước Nguyệt Đao","Khi Lục Tốn vung cây kiếm lấp lánh ánh sáng này, xung quanh Lục Tốn sẽ có vô số ánh sáng kiếm, chỉ cần địch nhân sơ ý là sẽ bị tiêu diệt ngay.","Lục Tốn","Thi triển kỹ năng có 96% gây Thiêu Đốt","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [52] = {312,"Tụ Bảo Bồn","Lỗ Túc đại nhân thích giúp đỡ người, cả đời chưa bao giờ đói khổ qua, bởi vì thứ trong tay ông là Tụ Bảo Bồn của thần tài, tiền tài dùng không hết.","Lỗ Túc","Đánh thường, mục tiêu bị giảm 1 nộ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [53] = {313,"Vô Cực Côn ","Kim Cô Bổng hóa thân vô số cây gậy, không ngừng chiến đấu, nhiệt huyết dâng trào như đang bốc cháy hừng hực.","Lăng Thống","Khi bị tấn công thường có 40% khiến người tấn công bị bỏng, duy trì 2 lượt","0","0",},
+        [54] = {314,"Đoạn Hải Tiên ","Tương truyền Chu Du chính là dùng Đoạn Hải Tiên này đánh Hoàng Cái đến nỗi không xuống được giường, như vậy Tào Tháo mới tin tưởng khổ nhục kế.","Hoàng Cái","Hiệu quả trị liệu phải chịu tăng 40%","0","0",},
+        [55] = {315,"Kim Ngọc Hốt ","Hãy sợ hãi Kim Ngọc Hốt trong tay của ta đi.","Trương Chiêu","Tỉ lệ hộ thuẫn hút sát thương tấn công bản thân tăng đến 100%","0","0",},
+        [56] = {316,"Bất Khuất Nhẫn ","Lưỡi dao như trắng sáng, sắc bén vô cùng, trên thân điêu khắc hoa văn rồng, thể hiện ý chí bất khuất của nó.","Chu Thái","Diệt 1 mục tiêu, hồi 1 nộ","0","0",},
+        [57] = {317,"Tiêu Dao Cầm ","Cao sơn lưu thủy, cầm âm không dứt, đàn nhẹ vui tai, đàn mạnh diệt địch.","Bộ Luyện Sư","Gây 80% Choáng với mục tiêu Thiêu Đốt","0","0",},
+        [58] = {318,"Kinh Thiên Cung ","Thân cung làm từ ngà voi và khảm đá quý, một cung bắn ra tiêu diệt địch dễ như trở bàn tay.","Hàn Đương","Sát thương kỹ năng gây cho mục tiêu thiêu đốt tăng 80%","0","0",},
+        [59] = {319,"Vân Đăng ","Đèn cung đình truyền thống làm từ vàng, đẹp đẽ trang nhã.","Gia Cát Cẩn","Khi bị tấn công kỹ năng, 30% gây thiêu đốt cho mục tiêu, duy trì 2 hiệp","0","0",},
+        [60] = {401,"Thanh Hư Phất ","Phất trần lưu truyền từ thượng cổ, trông bình thường nhưng thật ra rất phi thường, khi tĩnh như vực sâu lặng lẽ, khi động như sóng biển cuồn cuộn.","Tả Từ","Thi triển kỹ năng có 70% gây Choáng","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [61] = {402,"Thiên Xu Trượng","Pháp trượng do Tả Từ lấy cành cây bàn đào chế tạo thành, lên núi hái thuốc có thể dùng làm gậy chống.","Hoa Đà","Sinh lực mục tiêu mỗi giảm 10%, trị liệu cho mục tiêu tăng 5%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [62] = {403,"Họa Kích","Ba mũi nhọn hai lưỡi, nặng trăm cân. Lữ Bố dùng kích này tung hoành sa trường, biến hóa khôn lường, chiến ý vô song.","Lữ Bố","Diệt 1 mục tiêu, hồi 2 nộ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [63] = {404,"Tiên Xu Mỹ Hoa ","Một đóa hoa sen ẩn chứa linh khí trời đất, uyển chuyển xuất trần, đẹp không thể tả.","Điêu Thuyền","Chuyển 50% sát thương kỹ năng thành HP, trị liệu đồng đội có HP thấp nhất","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [64] = {405,"Ma Vương Câu ","Ma Vương Câu được chế tạo từ xương, dùng Thất Tinh Bảo Đao mài nhẵn!","Đổng Trác","Tỉ lệ giảm tất cả sát thương phải chịu của Giảm Thương Thuẫn tăng đến 50%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [65] = {406,"Bá Thiên Phủ ","Cán rìu làm từ gốc của Tây Lương Cổ Mộc, lưỡi rìu làm từ huyền thiết Lương Châu, toàn thân tím nhạt, cầm vào sẽ có khí phách của đại tướng.","Hoa Hùng","Diệt 1 mục tiêu, hồi 1 nộ","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [66] = {407,"Diêm Vương Bút ","Cây bút của Giả Hủ, bên trong chứa đầy chất độc, dễ dàng dùng độc diệt địch.","Giả Hủ","Thi triển kỹ năng có 96% gây Trúng Độc","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [67] = {408,"Phi Vân Thương ","Công Tôn Toản dẫn ba ngàn kỵ binh đánh hạ Ô Hoàn, Tham Chí Vương đầu hàng Công Tôn Toản và dâng lên cây thương này, tên là Phi Vân Thương.","Công Tôn Toản","Sau khi thi triển bản thân hồi 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [68] = {409,"Giác Trượng ","Pháp trượng đầu dê làm từ vàng, ẩn chứa sức mạnh sấm sét.","Trương Giác","Sau khi thi triển khiến mục tiêu giảm 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [69] = {410,"Rối Thiên Độc","Con rối do Vu Cát dùng gỗ chế tạo thành, giữa bụng trống rỗng để chứa chất độc.","Vu Cát","Sau khi thi triển khiến mục tiêu giảm 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [70] = {411,"Chân Bá Kiếm ","Nhữ Ân Viên Gia bảo vật vô số, bảo kiếm sắc bén này thích hợp cho anh hùng mang hoài bão giành thiên hạ nên kiếm này được trao cho Viên Thiệu.","Viên Thiệu","Thi triển kỹ năng có 50% gây Tê Liệt","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [71] = {412,"Ngọc Tỉ","Lý Tư phụng mệnh Tần Thủy Hoàng chế tạo ra, dùng Hòa Thị Bích điêu khắc thành, là minh chứng của hoàng đế chính thống, chân mệnh thiên tử có được ấn này sẽ đoạt được thiên hạ.","Viên Thuật","Sau khi thi triển bản thân hồi 1 nộ khí","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [72] = {413,"Liệt Không Đao ","Liệt Không Đao rất dài, xếp hạng nhất trong các loại vũ khí ngắn.","Nhan Lương","Chắn chắn bạo kích ở hiệp đầu","0","0",},
+        [73] = {414,"Toái Nhạc Chùy ","Tuế Nguyệt là cây đao mổ heo, Toái Nhạc là cây búa cán dài.","Văn Xú","Diệt 1 mục tiêu, +8% công bản thân","0","0",},
+        [74] = {415,"Thiên Bi Cầm ","Vũ khí của tài nữ nổi tiếng, đàn này có nét đặc sắc của Tây Vực, Thái Văn Cơ nhẹ nhàng đàn lên, tiếng nhạc như kể lại cuộc đời của mình.","Thái Văn Cơ","Thi triển kỹ năng có 80% gây Choáng","0","0",},
+        [75] = {416,"Long Tuyền Kiếm","Bảo kiểm thượng cổ đã trải qua năm tháng dài đằng đẵng.","Trần Cung","ST kỹ năng tăng 15%","0","0",},
+        [76] = {417,"Trúc Mã","Vì lúc nhỏ nhường quả lê nên ngựa gỗ nhỏ đã trở thành vũ khí của Khổng Dung, còn ông là đời sau của Không Tử hay chư hầu ở cuối thời Hán đều không quan trọng.","Khổng Dung","Đánh thường, hồi 1 nộ","0","0",},
+        [77] = {418,"Tiểu Họa Kích","Chỉ nhìn tên vũ khí đã biết thân phận của chủ nhân.","Lữ Linh Thư ","Đánh thường, chuyển 50% ST thành hồi HP cho bản thân","0","0",},
+        [78] = {419,"Tuyệt Tôn Tiễn ","Kéo từ trên không trung rơi xuống, không ai cản nổi, hãy cẩn thận.","Trương Nhượng","Thi triển kỹ năng có 80% gây Trầm Mặc","0","0",},
+        [79] = {150,"Tru Tiên Đao","Dao đúc bằng sức mạnh U Minh, có ác linh phụ thể","Tử Thượng","Thi triển kỹ năng tấn công tướng nữ hồi 2 điểm nộ bản thân, tấn công tướng nam tăng thêm 1 lần đánh thường gây sát thương bằng 36% HP tối đa","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [80] = {250,"Thủy Vận Cầm","Đàn cổ Thủy Vận, tụ hồn Thương Tùng, ngưng lực Thương Lang, kết hợp với linh hồn tự nhiên","Thủy Kính","Mỗi 1 người tử vong trên chiến trường, sát thương tăng 10%","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [81] = {350,"Nghê Hoàng Đao","Hồn phượng hoàng ngưng tụ trong bảo đao, kết hợp cùng Hồng Liên, Dục Hỏa có thể trùng sinh","Chu Cơ","Thi triển kỹ năng tấn công tướng nam gây thêm sát thương bằng 10% HP tối đa, tấn công tướng nữ xóa hiệu quả khống chế 2 mục tiêu HP thấp nhất phe ta đang chịu","Nộ ban đầu +1","Nộ ban đầu +1",},
+        [82] = {450,"Truy Hồn Trượng","Chứa sức mạnh vô hạn, người có được sẽ học được vô thượng thần công, kéo dài tuổi thọ, cải lão hoàn đồng","Nam Hoa","Sát thương kỹ năng tăng 36%, sát thương đánh thường tăng 72%","Nộ ban đầu +1","Nộ ban đầu +1",},
+    }
+}
+
+return instrument

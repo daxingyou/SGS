@@ -1,0 +1,288 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 201,
+	"layers": [
+		{
+			"name": "se2500014",
+			"frameCount": 201,
+			"frames": {
+				"107": {
+					"id": 107,
+					"duration": 94,
+					"isMotion": false,
+					"element": true,
+					"x": 524.15,
+					"y": -1360,
+					"height": 1360,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500013",
+			"frameCount": 201,
+			"frames": {
+				"107": {
+					"id": 107,
+					"duration": 94,
+					"isMotion": false,
+					"element": true,
+					"x": 524.15,
+					"y": -1080,
+					"height": 1080,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500011",
+			"frameCount": 201,
+			"frames": {
+				"52": {
+					"id": 52,
+					"duration": 149,
+					"isMotion": false,
+					"element": true,
+					"x": 112.1,
+					"y": 0,
+					"height": 158.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500012",
+			"frameCount": 201,
+			"frames": {
+				"52": {
+					"id": 52,
+					"duration": 149,
+					"isMotion": false,
+					"element": true,
+					"x": 112.1,
+					"y": 0,
+					"height": 158.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500011",
+			"frameCount": 201,
+			"frames": {
+				"45": {
+					"id": 45,
+					"duration": 156,
+					"isMotion": false,
+					"element": true,
+					"x": 112.1,
+					"y": 0,
+					"height": 158.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500012",
+			"frameCount": 201,
+			"frames": {
+				"45": {
+					"id": 45,
+					"duration": 156,
+					"isMotion": false,
+					"element": true,
+					"x": 112.1,
+					"y": 0,
+					"height": 158.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500011",
+			"frameCount": 201,
+			"frames": {
+				"42": {
+					"id": 42,
+					"duration": 159,
+					"isMotion": false,
+					"element": true,
+					"x": -21.9,
+					"y": 0,
+					"height": 298.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500012",
+			"frameCount": 201,
+			"frames": {
+				"42": {
+					"id": 42,
+					"duration": 159,
+					"isMotion": false,
+					"element": true,
+					"x": -21.9,
+					"y": 0,
+					"height": 298.25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500011",
+			"frameCount": 201,
+			"frames": {
+				"39": {
+					"id": 39,
+					"duration": 162,
+					"isMotion": false,
+					"element": true,
+					"x": -153.9,
+					"y": 0,
+					"height": 166.3,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "se2500012",
+			"frameCount": 201,
+			"frames": {
+				"39": {
+					"id": 39,
+					"duration": 162,
+					"isMotion": false,
+					"element": true,
+					"x": -153.9,
+					"y": 0,
+					"height": 166.3,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 201,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 107,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"107": {
+					"id": 107,
+					"duration": 93,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": -641.3,
+					"height": 641.3,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"200": {
+					"id": 200,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "shadow",
+			"frameCount": 201,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 201,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_250_at_1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"62": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

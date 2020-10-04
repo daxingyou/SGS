@@ -1,0 +1,105 @@
+{
+  "jieshu_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.76",
+        "scaleY" : "2.76",
+        "opacity" : "0",
+        "png" : "effect_battleend_jieshu_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-4.6",
+        "rotation" : "0",
+        "scaleX" : "0.98",
+        "scaleY" : "0.98",
+        "color" : {
+          "alpha_original" : "1",
+          "alpha" : "0",
+          "red_original" : "0.2",
+          "red" : "204",
+          "green_original" : "0.2",
+          "green" : "204",
+          "blue_original" : "0.2",
+          "blue" : "204"
+        },
+        "png" : "effect_battleend_jieshu_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "3"
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "color" : {
+          "alpha_original" : "1",
+          "alpha" : "0",
+          "red_original" : "1",
+          "red" : "0",
+          "green_original" : "1",
+          "green" : "0",
+          "blue_original" : "1",
+          "blue" : "0"
+        },
+        "png" : "effect_battleend_jieshu_1.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-3.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "color" : {
+          "alpha_original" : "1",
+          "alpha" : "0",
+          "red_original" : "1",
+          "red" : "0",
+          "green_original" : "1",
+          "green" : "0",
+          "blue_original" : "1",
+          "blue" : "0"
+        },
+        "png" : "effect_battleend_jieshu_1.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "color" : {
+          "alpha_original" : "1",
+          "alpha" : "0",
+          "red_original" : "1",
+          "red" : "0",
+          "green_original" : "1",
+          "green" : "0",
+          "blue_original" : "1",
+          "blue" : "0"
+        },
+        "png" : "effect_battleend_jieshu_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f31" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_battleend_jieshu.png"
+}

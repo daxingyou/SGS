@@ -1,0 +1,25 @@
+{
+  "moving_zhihuan_role" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f30" : "zhihuan",
+    "f36" : "play_shuzhi1",
+    "f41" : "play_shuzhi2",
+    "f46" : "play_shuzhi3",
+    "f50" : "play_shuzhi4",
+    "f55" : "play_shuzhi5",
+    "f60" : "play_dianji",
+    "f65" : "finish"
+  }
+}

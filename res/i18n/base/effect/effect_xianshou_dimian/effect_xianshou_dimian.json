@@ -1,0 +1,333 @@
+{
+  "effect_xianshou_liuguang_0" : {
+    "f4" : {
+      "start" : {
+        "x" : "139.8",
+        "y" : "81.4",
+        "rotation" : "-132.81",
+        "scaleX" : "1",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xianshou_liuguang",
+    "useBatchNode" : "true",
+    "order" : "8",
+    "f8" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xianshou_liuguang_1" : {
+    "f4" : {
+      "start" : {
+        "x" : "-137.3",
+        "y" : "-69.95",
+        "rotation" : "47.19",
+        "scaleX" : "1",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xianshou_liuguang",
+    "useBatchNode" : "true",
+    "order" : "7",
+    "f8" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xianshou_guangxian_2" : {
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-3.9",
+        "rotation" : "-27.69",
+        "scaleX" : "2.39",
+        "scaleY" : "1.25",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_xianshou_guangxian",
+    "useBatchNode" : "true",
+    "order" : "6",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "元件 9_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "570.2",
+        "y" : "-323.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "5",
+    "f4" : {
+      "start" : {
+        "x" : "390.5",
+        "y" : "-241.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_1.png"
+      }
+    },
+    "f50" : {
+      "start" : {
+        "x" : "390.5",
+        "y" : "-241.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_1.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "6"
+    },
+    "f55" : {
+      "start" : {
+        "x" : "570.2",
+        "y" : "-323.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_1.png"
+      }
+    }
+  },
+  "元件 10_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-572.75",
+        "y" : "326.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "4",
+    "f4" : {
+      "start" : {
+        "x" : "-380",
+        "y" : "237.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_2.png"
+      }
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-380",
+        "y" : "237.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_2.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "6"
+    },
+    "f55" : {
+      "start" : {
+        "x" : "-572.75",
+        "y" : "326.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_2.png"
+      }
+    }
+  },
+  "effect_xianshou_huohua_5" : {
+    "f5" : {
+      "start" : {
+        "x" : "194.9",
+        "y" : "89.9",
+        "rotation" : "-46.26",
+        "scaleX" : "-1.2",
+        "scaleY" : "0.83",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f6",
+      "frames" : "2"
+    },
+    "effect" : "effect_xianshou_huohua",
+    "useBatchNode" : "true",
+    "order" : "3",
+    "f6" : {
+      "start" : {
+        "x" : "-194.05",
+        "y" : "-105.05",
+        "rotation" : "-46.35",
+        "scaleX" : "-1.2",
+        "scaleY" : "0.83",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f7",
+      "frames" : "2"
+    },
+    "first_frame" : "2",
+    "loop" : "loop",
+    "f7" : {
+      "remove" : "1"
+    }
+  },
+  "effect_xianshou_huohua_6" : {
+    "f5" : {
+      "start" : {
+        "x" : "-203.4",
+        "y" : "-97.65",
+        "rotation" : "-10.45",
+        "scaleX" : "1.27",
+        "scaleY" : "0.69",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f6",
+      "frames" : "2"
+    },
+    "effect" : "effect_xianshou_huohua",
+    "useBatchNode" : "true",
+    "order" : "2",
+    "f6" : {
+      "start" : {
+        "x" : "200.1",
+        "y" : "114.75",
+        "rotation" : "-10.31",
+        "scaleX" : "1.27",
+        "scaleY" : "0.69",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f7",
+      "frames" : "2"
+    },
+    "first_frame" : "2",
+    "loop" : "loop",
+    "f7" : {
+      "remove" : "1"
+    }
+  },
+  "元件 11_7" : {
+    "f4" : {
+      "start" : {
+        "x" : "-1136",
+        "y" : "-569.05",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_3.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "17",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_3.png"
+      }
+    },
+    "f50" : {
+      "start" : {
+        "x" : "0",
+        "y" : "17",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_3.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "6"
+    },
+    "f55" : {
+      "start" : {
+        "x" : "-429.35",
+        "y" : "439.05",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_3.png"
+      }
+    }
+  },
+  "元件 12_8" : {
+    "f4" : {
+      "start" : {
+        "x" : "1136",
+        "y" : "578.8",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_4.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-17",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_4.png"
+      }
+    },
+    "f50" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-17",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_4.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "6"
+    },
+    "f55" : {
+      "start" : {
+        "x" : "454.3",
+        "y" : "-442.1",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_xianshou_dimian_4.png"
+      }
+    }
+  },
+  "events" : {
+    "f56" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_xianshou_dimian.png"
+}
