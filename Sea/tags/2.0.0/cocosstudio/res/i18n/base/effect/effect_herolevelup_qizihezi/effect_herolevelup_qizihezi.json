@@ -1,0 +1,74 @@
+{
+  "diban_0" : {
+    "f7" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "-84.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.25",
+        "opacity" : "255",
+        "png" : "effect_herolevelup_qizihezi_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f10" : {
+      "start" : {
+        "x" : "-1",
+        "y" : "-185.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_herolevelup_qizihezi_1.png"
+      }
+    }
+  },
+  "1q_1" : {
+    "f4" : {
+      "start" : {
+        "x" : "-12",
+        "y" : "9.5",
+        "rotation" : "0",
+        "scaleX" : "0.63",
+        "scaleY" : "0.63",
+        "opacity" : "51",
+        "png" : "effect_herolevelup_qizihezi_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "-12",
+        "y" : "9.5",
+        "rotation" : "0",
+        "scaleX" : "1.14",
+        "scaleY" : "1.14",
+        "opacity" : "255",
+        "png" : "effect_herolevelup_qizihezi_2.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "4"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-12",
+        "y" : "9.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_herolevelup_qizihezi_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f51" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_herolevelup_qizihezi.png"
+}

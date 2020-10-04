@@ -1,0 +1,99 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "8"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-1.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "7"
+    },
+    "f20" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-2.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "7"
+    },
+    "f26" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      },
+      "nextFrame" : "f34",
+      "frames" : "9"
+    },
+    "f34" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "7"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_xianqinhuangling_zidongxunluzhong_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f40" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_xianqinhuangling_zidongxunluzhong.png"
+}

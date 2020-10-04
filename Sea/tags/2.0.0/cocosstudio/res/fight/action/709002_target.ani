@@ -1,0 +1,56 @@
+{
+	"version": "1.0",
+	"damage": 1,
+	"frameCount": 23,
+	"layers": [
+		{
+			"name": "sh7090021",
+			"frameCount": 23,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 23,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "body",
+			"frameCount": 23,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 23,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}
