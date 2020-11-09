@@ -1,0 +1,113 @@
+{
+  "图层 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "170.25",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.07",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wuchabiebuzhen_red2_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "2",
+    "f5" : {
+      "start" : {
+        "x" : "-133.35",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.96",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wuchabiebuzhen_red2_1.png"
+      },
+      "nextFrame" : "f38",
+      "frames" : "34"
+    },
+    "f38" : {
+      "start" : {
+        "x" : "-178.15",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.89",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wuchabiebuzhen_red2_1.png"
+      }
+    },
+    "f39" : {
+      "remove" : "1"
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wuchabiebuzhen_red2_2.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "1",
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wuchabiebuzhen_red2_2.png"
+      },
+      "nextFrame" : "f48",
+      "frames" : "44"
+    },
+    "f48" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wuchabiebuzhen_red2_2.png"
+      }
+    },
+    "f49" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.05",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_wuchabiebuzhen_red2_3.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_wuchabiebuzhen_red2.png"
+}

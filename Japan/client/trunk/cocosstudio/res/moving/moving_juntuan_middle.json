@@ -1,0 +1,135 @@
+{
+  "effect_fengyitingguanqia_maquechang_copy5" : {
+    "f16" : {
+      "start" : {
+        "x" : "340.25",
+        "y" : "-506",
+        "rotation" : "-20.75",
+        "scaleX" : "0.91",
+        "scaleY" : "0.91",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_fengyitingguanqia_maquechang_copy4" : {
+    "f13" : {
+      "start" : {
+        "x" : "356.25",
+        "y" : "-506",
+        "rotation" : "-20.75",
+        "scaleX" : "0.91",
+        "scaleY" : "0.91",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_fengyitingguanqia_maquechang_copy3" : {
+    "f10" : {
+      "start" : {
+        "x" : "372.25",
+        "y" : "-514",
+        "rotation" : "-34.74",
+        "scaleX" : "0.91",
+        "scaleY" : "0.91",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_fengyitingguanqia_maquechang_copy2" : {
+    "f5" : {
+      "start" : {
+        "x" : "347.25",
+        "y" : "-499",
+        "rotation" : "-24.48",
+        "scaleX" : "0.75",
+        "scaleY" : "0.75",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_fengyitingguanqia_maquechang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "353.55",
+        "y" : "-496",
+        "rotation" : "-20.75",
+        "scaleX" : "0.91",
+        "scaleY" : "0.91",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_taoyuanguanqia_shuiwu_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "465.5",
+        "y" : "215.9",
+        "rotation" : "-176.46",
+        "scaleX" : "0.75",
+        "scaleY" : "1.65",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_taoyuanguanqia_shuiwu_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "539.75",
+        "y" : "236.25",
+        "rotation" : "-176.45",
+        "scaleX" : "1.1",
+        "scaleY" : "2.07",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_taoyuanguanqia_shuiwu_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "574",
+        "y" : "265.75",
+        "rotation" : "-174.85",
+        "scaleX" : "-0.89",
+        "scaleY" : "2.07",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_taoyuanguanqia_shuiwu_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "583.15",
+        "y" : "350.4",
+        "rotation" : "-159.21",
+        "scaleX" : "0.93",
+        "scaleY" : "1.52",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_juntuan_pubu1" : {
+    "f1" : {
+      "start" : {
+        "x" : "560.2",
+        "y" : "253.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f201" : "finish"
+  }
+}

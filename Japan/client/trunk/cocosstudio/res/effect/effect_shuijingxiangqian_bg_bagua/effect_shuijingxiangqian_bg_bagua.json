@@ -1,0 +1,99 @@
+{
+  "图层 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "0",
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "26"
+    },
+    "f35" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "11"
+    },
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      },
+      "nextFrame" : "f55",
+      "frames" : "11"
+    },
+    "f55" : {
+      "start" : {
+        "x" : "0",
+        "y" : "1.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      },
+      "nextFrame" : "f80",
+      "frames" : "26"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "11"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_shuijingxiangqian_bg_bagua_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f90" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_shuijingxiangqian_bg_bagua.png"
+}

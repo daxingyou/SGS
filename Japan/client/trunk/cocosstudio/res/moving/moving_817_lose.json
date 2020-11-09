@@ -1,0 +1,31 @@
+{
+  "spine_817_lassolose" : {
+    "f1" : {
+      "start" : {
+        "x" : "-259.7",
+        "y" : "-397.15",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_lasso205_lose" : {
+    "f1" : {
+      "start" : {
+        "x" : "238.05",
+        "y" : "-394.35",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f94" : "finish"
+  }
+}

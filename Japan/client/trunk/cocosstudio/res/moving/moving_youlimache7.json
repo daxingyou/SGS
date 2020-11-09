@@ -1,0 +1,212 @@
+{
+  "spine_youlimache_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "415.8",
+        "y" : "60.75",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "414",
+        "y" : "56.1",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f10",
+      "frames" : "6"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "404.05",
+        "y" : "21.6",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f16",
+      "frames" : "7"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "417",
+        "y" : "-18.2",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f22",
+      "frames" : "7"
+    },
+    "f22" : {
+      "start" : {
+        "x" : "451.7",
+        "y" : "-44.75",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f28",
+      "frames" : "7"
+    },
+    "f28" : {
+      "start" : {
+        "x" : "463.65",
+        "y" : "-85.6",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f34",
+      "frames" : "7"
+    },
+    "f34" : {
+      "start" : {
+        "x" : "474.9",
+        "y" : "-126.15",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f41",
+      "frames" : "8"
+    },
+    "f41" : {
+      "start" : {
+        "x" : "509.95",
+        "y" : "-164.3",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f48",
+      "frames" : "8"
+    },
+    "f48" : {
+      "start" : {
+        "x" : "517.15",
+        "y" : "-214.6",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f55",
+      "frames" : "8"
+    },
+    "f55" : {
+      "start" : {
+        "x" : "523.2",
+        "y" : "-263.1",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f61",
+      "frames" : "7"
+    },
+    "f61" : {
+      "start" : {
+        "x" : "564.3",
+        "y" : "-279.95",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f67",
+      "frames" : "7"
+    },
+    "f67" : {
+      "start" : {
+        "x" : "608.55",
+        "y" : "-282.6",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f73",
+      "frames" : "7"
+    },
+    "f73" : {
+      "start" : {
+        "x" : "650.95",
+        "y" : "-280.55",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f79",
+      "frames" : "7"
+    },
+    "f79" : {
+      "start" : {
+        "x" : "692.5",
+        "y" : "-273.65",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f85",
+      "frames" : "7"
+    },
+    "f85" : {
+      "start" : {
+        "x" : "731.3",
+        "y" : "-256.7",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "6"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "751.25",
+        "y" : "-227.45",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f100",
+      "frames" : "11"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "752.65",
+        "y" : "-218.6",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "0"
+      }
+    }
+  },
+  "events" : {
+    "f1" : "lihua",
+    "f90" : "icon",
+    "f92" : "shuangjian"
+  }
+}

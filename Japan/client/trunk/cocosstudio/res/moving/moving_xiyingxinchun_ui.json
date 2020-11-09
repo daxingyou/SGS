@@ -1,0 +1,57 @@
+{
+  "effect_xinyingxinchun_hudie" : {
+    "f1" : {
+      "start" : {
+        "x" : "-9.5",
+        "y" : "295.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_xiyingxinchun_zuochunnian" : {
+    "f1" : {
+      "start" : {
+        "x" : "-607.65",
+        "y" : "342.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_xiyingxinchun_youchunnian" : {
+    "f1" : {
+      "start" : {
+        "x" : "507.35",
+        "y" : "342.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_chunjiehuodong_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.95",
+        "y" : "-308.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f66" : "finish"
+  }
+}

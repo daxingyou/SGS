@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_shenshu_lianhuadengguangquan_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{82,83}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{82,83}}</string>
+                <key>sourceSize</key>
+                <string>{82,83}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_shenshu_lianhuadengguangquan.png</string>
+            <key>size</key>
+            <string>{86,87}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:7666ac613d9e810f49149e391ea4e7a4$</string>
+            <key>textureFileName</key>
+            <string>effect_shenshu_lianhuadengguangquan.png</string>
+        </dict>
+    </dict>
+</plist>

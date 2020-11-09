@@ -1,0 +1,31 @@
+{
+  "effect_chongzhi_guangyun6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-24.25",
+        "y" : "-22.4",
+        "rotation" : "0",
+        "scaleX" : "0.84",
+        "scaleY" : "0.94",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_chongzhi_yuanbaox1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-24.4",
+        "y" : "-8.1",
+        "rotation" : "0",
+        "scaleX" : "0.41",
+        "scaleY" : "0.41",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f91" : "finish"
+  }
+}

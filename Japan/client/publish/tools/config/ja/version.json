@@ -1,7 +1,7 @@
 {
     "url": {
         "cdn_list": [
-            "http://47.91.14.149:81/update"
+            "http://cdn.meishoden.playbest.co.jp/mjz_update"
         ], 
         "clientserv": "http://clientserv.meishoden.playbest.co.jp", 
         "rolelist": "http://role.meishoden.playbest.co.jp", 
@@ -16,39 +16,135 @@
     }, 
     "version": [
         {
-            "svn": 540, 
-            "path": "2.14.0", 
-            "name": "10.10.1"
+            "ignore": true, 
+            "svn": 7355, 
+            "name": "0.0.9", 
+            "path": "smart"
         }, 
         {
-            "svn": 3706, 
-            "path": "2.14.0", 
-            "name": "10.10.2"
+            "svn": 8553, 
+            "path": "smart", 
+            "name": "0.0.19"
         }, 
         {
-            "svn": 3709, 
+            "svn": 6668, 
             "path": "2.14.0", 
-            "name": "10.10.3"
+            "name": "0.0.3"
         }, 
         {
-            "svn": 4081, 
+            "svn": 6835, 
             "path": "2.14.0", 
-            "name": "10.10.4"
+            "name": "0.0.4"
         }, 
         {
-            "svn": 4081, 
+            "svn": 6891, 
             "path": "2.14.0", 
-            "name": "10.10.5"
+            "name": "0.0.5"
         }, 
         {
-            "svn": 5691, 
+            "svn": 7110, 
             "path": "2.14.0", 
-            "name": "10.10.6"
+            "name": "0.0.6"
         }, 
         {
-            "svn": 5933, 
+            "svn": 7160, 
             "path": "2.14.0", 
-            "name": "10.10.7"
+            "name": "0.0.7"
+        }, 
+        {
+            "svn": 7322, 
+            "path": "2.14.0", 
+            "name": "0.0.8"
+        }, 
+        {
+            "svn": 7356, 
+            "path": "2.14.0", 
+            "name": "0.0.10"
+        }, 
+        {
+            "svn": 7371, 
+            "path": "2.14.0", 
+            "name": "0.0.11"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7539, 
+            "name": "0.0.12", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7543, 
+            "name": "0.0.13", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7727, 
+            "name": "0.0.14", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7762, 
+            "name": "0.0.15", 
+            "path": "2.14.0"
+        }, 
+        {
+            "svn": 7762, 
+            "path": "2.14.0", 
+            "name": "0.0.16"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7763, 
+            "name": "0.0.17", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7763, 
+            "name": "0.0.18", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7763, 
+            "name": "0.0.19", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7763, 
+            "name": "0.0.20", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 7763, 
+            "name": "0.0.21", 
+            "path": "2.14.0"
+        }, 
+        {
+            "ignore": true, 
+            "svn": 8460, 
+            "name": "0.0.22", 
+            "path": "2.14.0"
+        }, 
+        {
+            "svn": 8553, 
+            "path": "2.14.0", 
+            "name": "0.0.23"
+        }, 
+        {
+            "svn": 8559, 
+            "path": "2.14.0", 
+            "name": "0.0.24"
+        }, 
+        {
+            "svn": 8581, 
+            "path": "2.14.0", 
+            "name": "0.0.25"
         }
     ]
 }

@@ -1,0 +1,470 @@
+{
+  "图层 1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "6",
+        "y" : "-51",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_chuping_ui_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "4",
+    "f5" : {
+      "start" : {
+        "x" : "6",
+        "y" : "-36",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "255",
+        "png" : "effect_chuping_ui_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "6"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "6",
+        "y" : "-51",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_chuping_ui_1.png"
+      }
+    }
+  },
+  "图层 4_2" : {
+    "f3" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-1.3",
+        "rotation" : "0",
+        "scaleX" : "0.95",
+        "scaleY" : "0.95",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_2.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "5"
+    },
+    "order" : "3",
+    "f7" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-1.3",
+        "rotation" : "0",
+        "scaleX" : "1.32",
+        "scaleY" : "1.32",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_2.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "6"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-1.3",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_2.png"
+      }
+    }
+  },
+  "图层 5_3" : {
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_3.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "5"
+    },
+    "order" : "2",
+    "f14" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_3.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "12"
+    },
+    "f25" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "1.38",
+        "scaleY" : "1.38",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_3.png"
+      }
+    }
+  },
+  "图层 3_4" : {
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.61",
+        "scaleY" : "0.61",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_3.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "6"
+    },
+    "order" : "1",
+    "f10" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_3.png"
+      },
+      "nextFrame" : "f17",
+      "frames" : "8"
+    },
+    "f17" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.1",
+        "rotation" : "0",
+        "scaleX" : "0.86",
+        "scaleY" : "0.86",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_3.png"
+      }
+    }
+  },
+  "图层 2_5" : {
+    "f2" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_4.png"
+      }
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_5.png"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_6.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_7.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_8.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_9.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_10.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_11.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_12.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_13.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_14.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_15.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_16.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_17.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_18.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_19.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_20.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_21.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_22.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_23.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_24.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_25.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_26.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "1.13",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_chuping_ui_27.png"
+      }
+    },
+    "f26" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f30" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_chuping_ui.png"
+}

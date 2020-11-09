@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_lidaimingjiang_ui_jian_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{305,687}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{305,687}}</string>
+                <key>sourceSize</key>
+                <string>{305,687}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_lidaimingjiang_ui_jian.png</string>
+            <key>size</key>
+            <string>{309,691}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:e18f529b8d44be2933884d8045ce7b61$</string>
+            <key>textureFileName</key>
+            <string>effect_lidaimingjiang_ui_jian.png</string>
+        </dict>
+    </dict>
+</plist>

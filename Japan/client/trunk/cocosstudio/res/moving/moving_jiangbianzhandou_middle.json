@@ -1,0 +1,44 @@
+{
+  "effect_jiangbianzhandou_guang2" : {
+    "f1" : {
+      "start" : {
+        "x" : "366.95",
+        "y" : "128.15",
+        "rotation" : "-26.66",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_jiangbianzhandou_guang1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-84.15",
+        "y" : "102.1",
+        "rotation" : "-17.72",
+        "scaleX" : "1.53",
+        "scaleY" : "1.53",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_jiangbianzhandouqizi_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "493.8",
+        "y" : "122.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

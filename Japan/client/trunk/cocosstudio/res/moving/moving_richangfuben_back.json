@@ -1,0 +1,57 @@
+{
+  "effect_richangfuben_back" : {
+    "f1" : {
+      "start" : {
+        "x" : "-71.95",
+        "y" : "7.8",
+        "rotation" : "0",
+        "scaleX" : "1.16",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_richangfuben_pubu_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "240.55",
+        "y" : "157.9",
+        "rotation" : "-0.63",
+        "scaleX" : "-0.64",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_richangfuben_pubu_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "244.4",
+        "y" : "106.85",
+        "rotation" : "0.06",
+        "scaleX" : "0.81",
+        "scaleY" : "1.9",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "richang_shenshou" : {
+    "f1" : {
+      "start" : {
+        "x" : "253.7",
+        "y" : "181.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f511" : "finish"
+  }
+}

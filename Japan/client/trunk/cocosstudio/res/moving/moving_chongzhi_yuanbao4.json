@@ -1,0 +1,44 @@
+{
+  "effect_chongzhi_xingxing1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-5.5",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "0.94",
+        "scaleY" : "0.94",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_chongzhi_guangyun2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-8.9",
+        "y" : "0.15",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_chongzhi_yuanbaox4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-5.9",
+        "y" : "1.9",
+        "rotation" : "0",
+        "scaleX" : "0.94",
+        "scaleY" : "0.94",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f91" : "finish"
+  }
+}

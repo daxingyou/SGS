@@ -1,0 +1,22 @@
+{
+  "effect_luoyangzhandou_wuyun_copy1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-273.55",
+        "y" : "47.45",
+        "rotation" : "-23.23",
+        "scaleX" : "-1.94",
+        "scaleY" : "1.7",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_luoyangzhandou_wuyun",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f241" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

@@ -1,0 +1,297 @@
+{
+	"version": "1.0",
+	"damage": 6,
+	"frameCount": 93,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 93,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 2,
+					"isMotion": false,
+					"element": true,
+					"x": -75,
+					"y": 0,
+					"height": 25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"2": {
+					"id": 2,
+					"duration": 4,
+					"isMotion": false,
+					"element": true,
+					"x": -75,
+					"y": 0,
+					"height": 25,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"6": {
+					"id": 6,
+					"duration": 22,
+					"isMotion": false,
+					"element": true,
+					"x": -75,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"28": {
+					"id": 28,
+					"duration": 8,
+					"isMotion": true,
+					"element": true,
+					"x": -83,
+					"y": 0,
+					"height": 32,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"36": {
+					"id": 36,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": -144.05,
+					"y": 0,
+					"height": 111.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"37": {
+					"id": 37,
+					"duration": 9,
+					"isMotion": true,
+					"element": true,
+					"x": -171.05,
+					"y": 0,
+					"height": 103.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"46": {
+					"id": 46,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": -173.05,
+					"y": 0,
+					"height": 18,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"47": {
+					"id": 47,
+					"duration": 11,
+					"isMotion": false,
+					"element": true,
+					"x": -173.05,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"58": {
+					"id": 58,
+					"duration": 10,
+					"isMotion": true,
+					"element": true,
+					"x": -220.1,
+					"y": 0,
+					"height": 95.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"68": {
+					"id": 68,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": -291.1,
+					"y": 0,
+					"height": 186.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"69": {
+					"id": 69,
+					"duration": 8,
+					"isMotion": true,
+					"element": true,
+					"x": -303.05,
+					"y": 0,
+					"height": 170.05,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"77": {
+					"id": 77,
+					"duration": 1,
+					"isMotion": false,
+					"element": true,
+					"x": -388.05,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"78": {
+					"id": 78,
+					"duration": 15,
+					"isMotion": false,
+					"element": true,
+					"x": -394.1,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"1": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"7": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"28": [
+			{
+				"type": "damage",
+				"value1": "1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hitfly",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"58": [
+			{
+				"type": "damage",
+				"value1": "3",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "hitfly",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"0": [
+			{
+				"type": "animation",
+				"value1": "hitfly",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"2": [
+			{
+				"type": "animation",
+				"value1": "hitfall",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"6": [
+			{
+				"type": "animation",
+				"value1": "hit",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"37": [
+			{
+				"type": "animation",
+				"value1": "hitfall",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"47": [
+			{
+				"type": "animation",
+				"value1": "hitlie",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"69": [
+			{
+				"type": "animation",
+				"value1": "hitfall",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"78": [
+			{
+				"type": "animation",
+				"value1": "hitlie",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

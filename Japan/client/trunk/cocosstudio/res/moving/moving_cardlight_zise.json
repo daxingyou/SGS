@@ -1,0 +1,153 @@
+{
+  "effect_cardlight_ziseshanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "3",
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "10.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_zisexing" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "2",
+    "f45" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      }
+    }
+  },
+  "effect_cardlight_zise" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "1",
+    "f45" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_zisecard" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "0",
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "8.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f90" : "forever"
+  }
+}

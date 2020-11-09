@@ -1,0 +1,66 @@
+{
+  "spine_fudaotongguanqizi_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.05",
+        "y" : "197.25",
+        "rotation" : "0",
+        "scaleX" : "0.82",
+        "scaleY" : "1.58",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "0",
+    "f6" : {
+      "start" : {
+        "x" : "-1.05",
+        "y" : "1.25",
+        "rotation" : "0",
+        "scaleX" : "0.82",
+        "scaleY" : "1.58",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f7",
+      "frames" : "2"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-1.15",
+        "y" : "1.2",
+        "rotation" : "0",
+        "scaleX" : "1.21",
+        "scaleY" : "0.85",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-1.1",
+        "y" : "1.2",
+        "rotation" : "0",
+        "scaleX" : "0.94",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f11",
+      "frames" : "3"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-1.1",
+        "y" : "1.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f13" : "finish"
+  }
+}

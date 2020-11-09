@@ -1,0 +1,18 @@
+{
+  "lizi_fengyitingguanqia" : {
+    "f1" : {
+      "start" : {
+        "x" : "906",
+        "y" : "284.6",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

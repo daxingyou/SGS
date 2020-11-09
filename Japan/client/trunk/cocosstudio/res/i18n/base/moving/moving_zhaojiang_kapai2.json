@@ -1,0 +1,70 @@
+{
+  "smoving_namewj" : {
+    "f7" : {
+      "start" : {
+        "x" : "-11.25",
+        "y" : "-200.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "smoving_n_lv" : {
+    "f1" : {
+      "start" : {
+        "x" : "8.8",
+        "y" : "210.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "new_kk" : {
+    "f1" : {
+      "start" : {
+        "x" : "-7",
+        "y" : "165.1",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "smoving_zhaojiang_ssr" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.55",
+        "y" : "1.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "smoving_kapai_idle2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f52" : "finish"
+  }
+}

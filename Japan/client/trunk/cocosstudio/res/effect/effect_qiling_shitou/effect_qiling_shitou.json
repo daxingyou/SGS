@@ -1,0 +1,771 @@
+{
+  "st7_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-131.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "6",
+    "f10" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-132.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "31"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-139.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "11"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-140.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "11"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-139.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "31"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-132.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "11"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "487",
+        "y" : "-131.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_1.png"
+      }
+    }
+  },
+  "st4_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-142.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "5",
+    "f10" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-143.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "31"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-147.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "11"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-148.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "11"
+    },
+    "f60" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-147.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "31"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-143.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "11"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-142.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_2.png"
+      }
+    }
+  },
+  "st6_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-77",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "4",
+    "f13" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-76.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f23",
+      "frames" : "11"
+    },
+    "f23" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-75.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-75.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f33",
+      "frames" : "10"
+    },
+    "f33" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-76",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f63",
+      "frames" : "31"
+    },
+    "f63" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-78.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f73",
+      "frames" : "11"
+    },
+    "f73" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-78.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f83",
+      "frames" : "11"
+    },
+    "f83" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-78.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "18"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "3",
+        "y" : "-77.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_3.png"
+      }
+    }
+  },
+  "st3_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-58.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "3",
+    "f13" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-60.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f23",
+      "frames" : "11"
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-61.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-61.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f33",
+      "frames" : "10"
+    },
+    "f33" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-60.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f63",
+      "frames" : "31"
+    },
+    "f63" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-56.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f73",
+      "frames" : "11"
+    },
+    "f73" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-55.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f83",
+      "frames" : "11"
+    },
+    "f83" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-56.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "18"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-524.5",
+        "y" : "-58.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_4.png"
+      }
+    }
+  },
+  "st5_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-273.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "2",
+    "f4" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-273.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "11"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-273.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "31"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-274.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f54",
+      "frames" : "11"
+    },
+    "f54" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-274.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      }
+    },
+    "f55" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-274.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f64",
+      "frames" : "10"
+    },
+    "f64" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-274.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f94",
+      "frames" : "31"
+    },
+    "f94" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-273.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "7"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-4.5",
+        "y" : "-273.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_5.png"
+      }
+    }
+  },
+  "st2_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "147.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "147.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "11"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "146.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f44",
+      "frames" : "31"
+    },
+    "f44" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "144.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f54",
+      "frames" : "11"
+    },
+    "f54" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "144.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      }
+    },
+    "f55" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "144.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f64",
+      "frames" : "10"
+    },
+    "f64" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "144.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f94",
+      "frames" : "31"
+    },
+    "f94" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "146.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "7"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-428",
+        "y" : "147",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_6.png"
+      }
+    }
+  },
+  "st1_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "21",
+        "y" : "224.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "25"
+    },
+    "order" : "0",
+    "f25" : {
+      "start" : {
+        "x" : "21",
+        "y" : "235.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "11"
+    },
+    "f35" : {
+      "start" : {
+        "x" : "21",
+        "y" : "237.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "11"
+    },
+    "f45" : {
+      "start" : {
+        "x" : "21",
+        "y" : "235.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f75",
+      "frames" : "31"
+    },
+    "f75" : {
+      "start" : {
+        "x" : "21",
+        "y" : "222.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f85",
+      "frames" : "11"
+    },
+    "f85" : {
+      "start" : {
+        "x" : "21",
+        "y" : "220.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      }
+    },
+    "f86" : {
+      "start" : {
+        "x" : "21",
+        "y" : "220.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f95",
+      "frames" : "10"
+    },
+    "f95" : {
+      "start" : {
+        "x" : "21",
+        "y" : "221.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "6"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "21",
+        "y" : "224",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_qiling_shitou_7.png"
+      }
+    }
+  },
+  "events" : {
+    "f100" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_qiling_shitou.png"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_fudao_luoyang_ditu_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{300,216}}</string>
+                <key>offset</key>
+                <string>{0,-9}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,51},{300,216}}</string>
+                <key>sourceSize</key>
+                <string>{300,300}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_fudao_luoyang_ditu.png</string>
+            <key>size</key>
+            <string>{220,304}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:ed754899c3862f27d1ec49b780a22f3b$</string>
+            <key>textureFileName</key>
+            <string>effect_fudao_luoyang_ditu.png</string>
+        </dict>
+    </dict>
+</plist>

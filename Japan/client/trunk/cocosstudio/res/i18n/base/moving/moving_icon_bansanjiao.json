@@ -1,0 +1,31 @@
+{
+  "effect_bansanjiao_lizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "6.1",
+        "y" : "-0.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_icon_bansanjiao" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.8",
+        "y" : "0.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "finish"
+  }
+}

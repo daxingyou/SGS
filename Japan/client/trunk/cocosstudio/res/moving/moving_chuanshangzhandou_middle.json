@@ -1,0 +1,31 @@
+{
+  "effect_chuanshangzhandou_chuanfan" : {
+    "f1" : {
+      "start" : {
+        "x" : "-25.2",
+        "y" : "314.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_chuanshangzhandou_shengzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "7.1",
+        "y" : "279.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

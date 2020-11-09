@@ -1,0 +1,284 @@
+{
+  "图层 1_0" : {
+
+  },
+  "图层 5_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_ui_suolie_1.png"
+      },
+      "nextFrame" : "f6",
+      "frames" : "6"
+    },
+    "order" : "5",
+    "f6" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "1.44",
+        "scaleY" : "1.44",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_suolie_1.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "16"
+    },
+    "f21" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-0.05",
+        "rotation" : "0",
+        "scaleX" : "1.73",
+        "scaleY" : "1.73",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_ui_suolie_1.png"
+      }
+    },
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "图层 4_2" : {
+    "f8" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_ui_suolie_2.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "6"
+    },
+    "order" : "4",
+    "f13" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_ui_suolie_2.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "9"
+    },
+    "f21" : {
+      "start" : {
+        "x" : "1",
+        "y" : "-1.55",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_ui_suolie_2.png"
+      }
+    },
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_3" : {
+    "f11" : {
+      "start" : {
+        "x" : "13",
+        "y" : "0.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_3.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "3"
+    },
+    "order" : "3",
+    "f13" : {
+      "start" : {
+        "x" : "13",
+        "y" : "0.3",
+        "rotation" : "23.24",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_3.png"
+      },
+      "nextFrame" : "f16",
+      "frames" : "4"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "19",
+        "y" : "-10.7",
+        "rotation" : "23.24",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_3.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "6"
+    },
+    "f21" : {
+      "start" : {
+        "x" : "19",
+        "y" : "-36.7",
+        "rotation" : "23.24",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_ui_suolie_3.png"
+      }
+    },
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_4" : {
+    "f11" : {
+      "start" : {
+        "x" : "-11.1",
+        "y" : "0.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_4.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "3"
+    },
+    "order" : "2",
+    "f13" : {
+      "start" : {
+        "x" : "-13.1",
+        "y" : "0.45",
+        "rotation" : "-29.94",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_4.png"
+      },
+      "nextFrame" : "f16",
+      "frames" : "4"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-13.1",
+        "y" : "-18.55",
+        "rotation" : "-29.94",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_4.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "6"
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-13.1",
+        "y" : "-38.55",
+        "rotation" : "-29.94",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_ui_suolie_4.png"
+      }
+    },
+    "f22" : {
+      "remove" : "1"
+    }
+  },
+  "suoxin_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_5.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "-10.44",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_5.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "4"
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "5.8",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_5.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "4"
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-0.1",
+        "y" : "0.4",
+        "rotation" : "-11.17",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_5.png"
+      }
+    },
+    "f11" : {
+      "remove" : "1"
+    }
+  },
+  "lALPD2eDJwtbg5RgYA_96_96.png_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_ui_suolie_6.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f31" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_ui_suolie.png"
+}

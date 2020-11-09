@@ -1,0 +1,135 @@
+{
+  "effect_huangjinzhandou_yun_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-60.3",
+        "y" : "59.2",
+        "rotation" : "12.95",
+        "scaleX" : "1.56",
+        "scaleY" : "0.79",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_huangjinzhandou_yun_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-311.1",
+        "y" : "-238.25",
+        "rotation" : "8.22",
+        "scaleX" : "1.82",
+        "scaleY" : "0.91",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_huangjinzhandou_yun_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "245.8",
+        "y" : "-33.05",
+        "rotation" : "-12.98",
+        "scaleX" : "-2.51",
+        "scaleY" : "1.26",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_huangjinzhandou_yun_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "264.35",
+        "y" : "-202.2",
+        "rotation" : "-8.52",
+        "scaleX" : "-2.18",
+        "scaleY" : "1.01",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_qiling_qianjing" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_qiling_shitou" : {
+    "f1" : {
+      "start" : {
+        "x" : "103.5",
+        "y" : "53.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "lizi_qiling3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-71",
+        "y" : "166.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "lizi_qiling2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-71",
+        "y" : "166.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_qiling1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-69.2",
+        "y" : "177.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_qiling_shu" : {
+    "f1" : {
+      "start" : {
+        "x" : "-129",
+        "y" : "39.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f201" : "finish"
+  }
+}

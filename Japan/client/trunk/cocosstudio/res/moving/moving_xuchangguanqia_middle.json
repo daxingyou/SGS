@@ -1,0 +1,291 @@
+{
+  "spine_xuchangguanqiald_effect2_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-314",
+        "y" : "-246.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "21"
+  },
+  "spine_xuchangguanqiald_effect2_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-130.3",
+        "y" : "-171.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "20"
+  },
+  "spine_xuchangguanqiald_effect1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-443.9",
+        "y" : "-204.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "19"
+  },
+  "spine_xuchangguanqiashu2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-475.85",
+        "y" : "-123.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "18"
+  },
+  "spine_xuchangguanqiadl2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-672.85",
+        "y" : "117.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "17"
+  },
+  "spine_xuchangguanqiazp_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-350",
+        "y" : "-23.75",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "16"
+  },
+  "spine_xuchangguanqiadl3_effect2_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-239.65",
+        "y" : "138.3",
+        "rotation" : "-7.03",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "15"
+  },
+  "spine_xuchangguanqiadl3_effect2_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-144.85",
+        "y" : "138.3",
+        "rotation" : "-10.48",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "14"
+  },
+  "spine_xuchangguanqiadl3_effect1_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-277.35",
+        "y" : "148.45",
+        "rotation" : "-0.26",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "13"
+  },
+  "spine_xuchangguanqiadl3_effect1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-192.1",
+        "y" : "137.7",
+        "rotation" : "-0.26",
+        "scaleX" : "1.12",
+        "scaleY" : "1.12",
+        "opacity" : "255"
+      }
+    },
+    "order" : "12"
+  },
+  "spine_xuchangguanqiadl3_effect1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-83.9",
+        "y" : "142.75",
+        "rotation" : "-11.24",
+        "scaleX" : "1.11",
+        "scaleY" : "1.11",
+        "opacity" : "255"
+      }
+    },
+    "order" : "11"
+  },
+  "spine_xuchangguanqiaqizi1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-45.1",
+        "y" : "-179.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "10"
+  },
+  "spine_xuchangguanqiadl1_effect2_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-570.15",
+        "y" : "151.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "spine_xuchangguanqiadl1_effect1_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-402.2",
+        "y" : "124.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "spine_xuchangguanqiadl1_effect2_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-404.15",
+        "y" : "52.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "spine_xuchangguanqiadl1_effect1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-580.5",
+        "y" : "89.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "spine_xuchangguanqiadl1_effect2_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "90.2",
+        "y" : "62.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_xuchangguanqiadl1_effect1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "32.95",
+        "y" : "75.65",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_xuchangguanqiaright_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "160.1",
+        "y" : "63.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_zhucheng_niaofei_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-289.65",
+        "y" : "238.55",
+        "rotation" : "6.9",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "137"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_zhucheng_niaofei_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1014.65",
+        "y" : "253.05",
+        "rotation" : "6.9",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "137"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhucheng_niaofei_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "978.3",
+        "y" : "207.95",
+        "rotation" : "2.07",
+        "scaleX" : "-0.68",
+        "scaleY" : "0.68",
+        "opacity" : "137"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f201" : "finish"
+  }
+}

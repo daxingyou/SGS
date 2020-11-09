@@ -1,0 +1,142 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 126,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 126,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 126,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		},
+		{
+			"name": "shadow",
+			"frameCount": 126,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 9,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"9": {
+					"id": 9,
+					"duration": 11,
+					"isMotion": false,
+					"element": true,
+					"x": 280,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"20": {
+					"id": 20,
+					"duration": 101,
+					"isMotion": false,
+					"element": true,
+					"x": 360,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"121": {
+					"id": 121,
+					"duration": 3,
+					"isMotion": true,
+					"element": true,
+					"x": 310,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				},
+				"124": {
+					"id": 124,
+					"duration": 2,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_350_at_1_1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill1",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"69": [
+			{
+				"type": "sound",
+				"value1": "fy_350_at_1_2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"96": [
+			{
+				"type": "sound",
+				"value1": "fy_350_at_1_3",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"15": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

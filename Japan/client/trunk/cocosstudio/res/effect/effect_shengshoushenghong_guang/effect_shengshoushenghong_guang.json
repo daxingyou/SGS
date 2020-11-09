@@ -1,0 +1,222 @@
+{
+  "元件 32_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-130",
+        "y" : "-17.6",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_1.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "51"
+    },
+    "order" : "4",
+    "f51" : {
+      "start" : {
+        "x" : "-130",
+        "y" : "-17.6",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_1.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "50"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-130",
+        "y" : "-17.6",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_1.png"
+      }
+    }
+  },
+  "元件 32_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "130",
+        "y" : "-17.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_1.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "51"
+    },
+    "order" : "3",
+    "f51" : {
+      "start" : {
+        "x" : "130",
+        "y" : "-17.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "119",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_1.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "50"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "130",
+        "y" : "-17.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_1.png"
+      }
+    }
+  },
+  "元件 28_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "99.85",
+        "y" : "34.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_2.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "51"
+    },
+    "order" : "2",
+    "f51" : {
+      "start" : {
+        "x" : "99.85",
+        "y" : "34.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "91",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_2.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "50"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "99.85",
+        "y" : "34.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_2.png"
+      }
+    }
+  },
+  "元件 28_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-112.45",
+        "y" : "34.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_2.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "51"
+    },
+    "order" : "1",
+    "f51" : {
+      "start" : {
+        "x" : "-112.45",
+        "y" : "34.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "91",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_2.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "50"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-112.45",
+        "y" : "34.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_2.png"
+      }
+    }
+  },
+  "元件 6_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-8.8",
+        "y" : "-12.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_3.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "51"
+    },
+    "order" : "0",
+    "f51" : {
+      "start" : {
+        "x" : "-8.8",
+        "y" : "-12.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "53",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_3.png"
+      },
+      "nextFrame" : "f100",
+      "frames" : "50"
+    },
+    "f100" : {
+      "start" : {
+        "x" : "-8.8",
+        "y" : "-12.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shengshoushenghong_guang_3.png"
+      }
+    }
+  },
+  "events" : {
+    "f100" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_shengshoushenghong_guang.png"
+}

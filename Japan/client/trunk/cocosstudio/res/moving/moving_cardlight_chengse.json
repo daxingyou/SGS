@@ -1,0 +1,266 @@
+{
+  "effect_cardlight_chengsexingxingshan" : {
+    "f1" : {
+      "start" : {
+        "x" : "-55.8",
+        "y" : "95.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_cardlight_hongsexuanzhuanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "-82.15",
+        "rotation" : "0",
+        "scaleX" : "1.13",
+        "scaleY" : "0.65",
+        "opacity" : "153"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_cardlight_ziseshanguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "7",
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "10.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_chengsexing" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "6",
+    "f45" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "1.05",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.71",
+        "scaleY" : "0.71",
+        "opacity" : "178"
+      }
+    }
+  },
+  "effect_cardlight_chengse" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "5",
+    "f45" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "9.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-1.2",
+        "y" : "0.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_chengsecard" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "4",
+    "f45" : {
+      "start" : {
+        "x" : "0",
+        "y" : "8.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_chengseshangshengguang" : {
+    "f1" : {
+      "start" : {
+        "x" : "8.35",
+        "y" : "-7.4",
+        "rotation" : "0",
+        "scaleX" : "1.23",
+        "scaleY" : "1.19",
+        "opacity" : "181"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_cardlight_chengseyanwu_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-54.45",
+        "y" : "1.75",
+        "rotation" : "-14.68",
+        "scaleX" : "1.25",
+        "scaleY" : "1.66",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "1",
+    "f45" : {
+      "start" : {
+        "x" : "-55.65",
+        "y" : "10.7",
+        "rotation" : "-14.68",
+        "scaleX" : "1.25",
+        "scaleY" : "1.66",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-54.45",
+        "y" : "1.75",
+        "rotation" : "-14.68",
+        "scaleX" : "1.25",
+        "scaleY" : "1.66",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_cardlight_chengseyanwu_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "49.65",
+        "y" : "1.75",
+        "rotation" : "14.68",
+        "scaleX" : "-1.25",
+        "scaleY" : "1.66",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "0",
+    "f45" : {
+      "start" : {
+        "x" : "50.85",
+        "y" : "10.7",
+        "rotation" : "14.68",
+        "scaleX" : "-1.25",
+        "scaleY" : "1.66",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "49.65",
+        "y" : "1.75",
+        "rotation" : "14.68",
+        "scaleX" : "-1.25",
+        "scaleY" : "1.66",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f90" : "forever"
+  }
+}

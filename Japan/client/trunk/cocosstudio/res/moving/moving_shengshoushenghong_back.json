@@ -1,0 +1,122 @@
+{
+  "spine_shengshoushenghonghe_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-0.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_shengshoushenghong_yun2_copy8" : {
+    "f1" : {
+      "start" : {
+        "x" : "535.55",
+        "y" : "88.1",
+        "rotation" : "8.66",
+        "scaleX" : "0.6",
+        "scaleY" : "0.28",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_shengshoushenghong_yun2_copy7" : {
+    "f1" : {
+      "start" : {
+        "x" : "550.65",
+        "y" : "209.3",
+        "rotation" : "8.49",
+        "scaleX" : "0.49",
+        "scaleY" : "0.23",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_shengshoushenghong_yun2_copy6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-247.95",
+        "y" : "263.6",
+        "rotation" : "10.46",
+        "scaleX" : "0.4",
+        "scaleY" : "0.19",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_shengshoushenghong_yun2_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-251.3",
+        "y" : "132.6",
+        "rotation" : "-6.02",
+        "scaleX" : "-0.91",
+        "scaleY" : "0.42",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_shengshoushenghong_yun2_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-409.85",
+        "y" : "144.35",
+        "rotation" : "-6.02",
+        "scaleX" : "-0.82",
+        "scaleY" : "0.38",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_shengshoushenghong_yun2_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-264.75",
+        "y" : "15.85",
+        "rotation" : "-8.5",
+        "scaleX" : "-0.52",
+        "scaleY" : "0.24",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_shengshoushenghong_yun2_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-535.1",
+        "y" : "-16.9",
+        "rotation" : "-6.97",
+        "scaleX" : "-1.28",
+        "scaleY" : "0.59",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_shengshoushenghong_yun2_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "544.05",
+        "y" : "-55.3",
+        "rotation" : "18.37",
+        "scaleX" : "1.31",
+        "scaleY" : "0.85",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "effect_zhucheng14_yangguang1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "lizi_zhianmazhucheng1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-606",
+        "y" : "344.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "spine_zhucheng14day_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_fengyitingguanqia_maquechang_copy5" : {
+    "f16" : {
+      "start" : {
+        "x" : "-432.7",
+        "y" : "37.15",
+        "rotation" : "-6.78",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_fengyitingguanqia_maquechang_copy4" : {
+    "f13" : {
+      "start" : {
+        "x" : "-421.2",
+        "y" : "34.3",
+        "rotation" : "-6.78",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_fengyitingguanqia_maquechang_copy3" : {
+    "f10" : {
+      "start" : {
+        "x" : "-411.1",
+        "y" : "25.65",
+        "rotation" : "-20.77",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_fengyitingguanqia_maquechang_copy2" : {
+    "f5" : {
+      "start" : {
+        "x" : "-426.4",
+        "y" : "40.95",
+        "rotation" : "-10.52",
+        "scaleX" : "0.56",
+        "scaleY" : "0.56",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_fengyitingguanqia_maquechang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-421.35",
+        "y" : "41.95",
+        "rotation" : "-6.78",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f201" : "finish"
+  }
+}

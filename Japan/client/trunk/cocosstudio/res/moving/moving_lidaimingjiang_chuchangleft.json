@@ -1,0 +1,53 @@
+{
+  "lihui" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.65",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "0.5",
+        "scaleY" : "0.5",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "0.65",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "255"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "0.65",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "0.65",
+        "scaleY" : "0.65",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f24",
+      "frames" : "7"
+    },
+    "f24" : {
+      "start" : {
+        "x" : "0.65",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "0"
+      }
+    }
+  },
+  "events" : {
+    "f20" : "skill",
+    "f24" : "finish"
+  }
+}

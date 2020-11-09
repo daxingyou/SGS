@@ -1,0 +1,18 @@
+{
+  "effect_hejitiaozi_duang" : {
+    "f1" : {
+      "start" : {
+        "x" : "3.15",
+        "y" : "-1.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f26" : "finish"
+  }
+}

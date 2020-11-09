@@ -1,0 +1,36 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "2.1",
+        "rotation" : "0",
+        "scaleX" : "1.49",
+        "scaleY" : "5.32",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_guangxian_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "0",
+    "f15" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "2.1",
+        "rotation" : "0",
+        "scaleX" : "0.93",
+        "scaleY" : "3.29",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_herolevelup_guangxian_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f51" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_herolevelup_guangxian.png"
+}

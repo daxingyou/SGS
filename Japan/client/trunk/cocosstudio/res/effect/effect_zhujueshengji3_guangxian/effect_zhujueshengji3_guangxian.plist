@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_zhujueshengji3_guangxian_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{86,387}}</string>
+                <key>offset</key>
+                <string>{0,-17}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{57,121},{86,387}}</string>
+                <key>sourceSize</key>
+                <string>{200,595}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_zhujueshengji3_guangxian.png</string>
+            <key>size</key>
+            <string>{90,391}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:654ae1bda081c3c52c268c064f018396$</string>
+            <key>textureFileName</key>
+            <string>effect_zhujueshengji3_guangxian.png</string>
+        </dict>
+    </dict>
+</plist>

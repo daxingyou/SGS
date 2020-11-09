@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_shuijingshangdian_shuijing_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{142,152}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{142,152}}</string>
+                <key>sourceSize</key>
+                <string>{142,152}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_shuijingshangdian_shuijing.png</string>
+            <key>size</key>
+            <string>{146,156}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:56a5b3747077aa6f094fab507eddede4$</string>
+            <key>textureFileName</key>
+            <string>effect_shuijingshangdian_shuijing.png</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,18 @@
+{
+  "effect_haiwaixinchun_hudie" : {
+    "f1" : {
+      "start" : {
+        "x" : "-9.5",
+        "y" : "295.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f66" : "finish"
+  }
+}

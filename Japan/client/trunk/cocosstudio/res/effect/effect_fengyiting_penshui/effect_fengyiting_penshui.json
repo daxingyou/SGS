@@ -1,0 +1,105 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.95",
+        "y" : "-12.85",
+        "rotation" : "0",
+        "scaleX" : "-0.96",
+        "scaleY" : "1.7",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "1",
+    "f7" : {
+      "start" : {
+        "x" : "1.95",
+        "y" : "-33.35",
+        "rotation" : "0",
+        "scaleX" : "-0.96",
+        "scaleY" : "2.39",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "1.95",
+        "y" : "1.1",
+        "rotation" : "0",
+        "scaleX" : "-0.96",
+        "scaleY" : "1.11",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "7"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "1.95",
+        "y" : "-8.7",
+        "rotation" : "0",
+        "scaleX" : "-0.96",
+        "scaleY" : "1.57",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "0.35",
+        "rotation" : "0",
+        "scaleX" : "1.21",
+        "scaleY" : "1.09",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "7"
+    },
+    "order" : "0",
+    "f7" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-9.3",
+        "rotation" : "0",
+        "scaleX" : "1.21",
+        "scaleY" : "1.55",
+        "opacity" : "76",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "8"
+    },
+    "f14" : {
+      "start" : {
+        "x" : "1.4",
+        "y" : "-33.6",
+        "rotation" : "0",
+        "scaleX" : "1.21",
+        "scaleY" : "2.35",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_fengyiting_penshui_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f14" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_fengyiting_penshui.png"
+}

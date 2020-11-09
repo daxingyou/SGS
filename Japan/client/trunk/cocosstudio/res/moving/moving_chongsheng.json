@@ -1,0 +1,39 @@
+{
+  "effect_chongsheng" : {
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f48" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_chongsheng_icon" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f23" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f1" : "start",
+    "f23" : "play",
+    "f48" : "finish"
+  }
+}

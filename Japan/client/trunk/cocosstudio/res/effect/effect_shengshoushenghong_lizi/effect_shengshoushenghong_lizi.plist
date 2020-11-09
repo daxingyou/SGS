@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_shengshoushenghong_lizi_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{14,15}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,15}}</string>
+                <key>sourceSize</key>
+                <string>{16,17}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_shengshoushenghong_lizi.png</string>
+            <key>size</key>
+            <string>{18,19}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:a655ccdea6255571dc74ff69695b5873$</string>
+            <key>textureFileName</key>
+            <string>effect_shengshoushenghong_lizi.png</string>
+        </dict>
+    </dict>
+</plist>

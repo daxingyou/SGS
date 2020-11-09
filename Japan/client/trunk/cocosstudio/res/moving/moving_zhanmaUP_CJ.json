@@ -1,0 +1,57 @@
+{
+  "effect_zhanmaUP_guangdian2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-394.95",
+        "y" : "-95.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_zhanmaUP_guangdian" : {
+    "f1" : {
+      "start" : {
+        "x" : "383.55",
+        "y" : "-95.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_zhanmaUP_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-5.8",
+        "y" : "-187.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhanmaUP_huiceng" : {
+    "f1" : {
+      "start" : {
+        "x" : "301.7",
+        "y" : "198.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f179" : "finish"
+  }
+}

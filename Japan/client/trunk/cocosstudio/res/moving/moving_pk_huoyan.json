@@ -1,0 +1,31 @@
+{
+  "effect_scene01_huoxing" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.25",
+        "y" : "-1.7",
+        "rotation" : "12.94",
+        "scaleX" : "-0.46",
+        "scaleY" : "0.43",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_PK_huoyan" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "-6.98",
+        "scaleX" : "0.51",
+        "scaleY" : "0.51",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f55" : "finish"
+  }
+}

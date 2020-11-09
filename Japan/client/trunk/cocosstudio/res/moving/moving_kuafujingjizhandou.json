@@ -1,0 +1,44 @@
+{
+  "spine_kuafugerenjingjizhandou_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_kuafujingjixuehua" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-347.8",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_kuafujingji_ying_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "167.4",
+        "y" : "203.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f666" : "finish"
+  }
+}

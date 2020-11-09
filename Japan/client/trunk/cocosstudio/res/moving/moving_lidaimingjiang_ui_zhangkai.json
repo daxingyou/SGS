@@ -1,0 +1,32 @@
+{
+  "smoving_lidaimingjiang_ui_jianqiaozhangkai" : {
+    "f1" : {
+      "start" : {
+        "x" : "417.35",
+        "y" : "-113.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "smoving_lidaimingjiang_ui_jianzhangkai" : {
+    "f1" : {
+      "start" : {
+        "x" : "417.35",
+        "y" : "-19.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f1" : "start",
+    "f22" : "finish"
+  }
+}

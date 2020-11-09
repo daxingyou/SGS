@@ -187,24 +187,18 @@ def main(cfgFile=None):
         copyItem["from"] = ("../../../audio")
         copyItem["to"] = "audio"
         copy_resources.append(copyItem)
-        if not isSubpackage:
-            copyItem = {}
-            copyItem["from"] = ("../../../%s" % cfgPackageName)
-            copyItem["to"] = ""
-            copy_resources.append(copyItem)
-        else:  # 分包处理
-            count = 0
-            while True:
-                assetName = "%s%03d" % (cfgPackageName,count)
-                assetPath = os.path.join(dirProject, assetName)
-                if not os.path.exists(assetPath):
-                    break
-                copyItem = {}
-                copyItem["from"] = ("../../../%s" % assetName)
-                copyItem["to"] = ""
-                copy_resources.append(copyItem)
-                count = count+1
-            pass        
+
+        copyItem = {}
+        copyItem["from"] = ("../../../package/res")
+        copyItem["to"] = "res"
+        copy_resources.append(copyItem)
+
+        copyItem = {}
+        copyItem["from"] = ("../../../package/src/temp")
+        copyItem["to"] = "src"
+        copy_resources.append(copyItem)
+        
+       
 
     json.dump(build_cfg, open(filename, "w"), indent=4)
 
@@ -329,6 +323,13 @@ def main(cfgFile=None):
     print(cfgBuildMode)
     print(androidTarget)
     print(app_abi)
+
+    #cmd = "cocos compile -s %s -j 8 -p android -m %s --ap %s --app-abi %s --compile-script 0" % (dirProject, cfgBuildMode, androidTarget, app_abi)
+    #print(cmd)
+    #output = os.popen(cmd).read()
+    #print(output)
+
+
     ndkGradleAntBuild.startBuild(cfgBuildMode, androidTarget, app_abi, bAndroidStudio, bCompatible)
 
     utils.printSplit("重命名App")
@@ -351,6 +352,7 @@ def main(cfgFile=None):
         utils.printSplit("处理obb文件")
         utils.mkOutDir(dirPublishInstall,1)
         shutil.copy(newPath, dirPublishInstall)
+        # utils.mkOutDir(os.path.join(dirPublishInstall,cfgAppPackage),1)
         utils.copyDir(os.path.join(dirRuntime, cfgAppPackage), os.path.join(dirPublishInstall,cfgAppPackage))
 
         utils.printSplit("copy obb文件到 channel path")

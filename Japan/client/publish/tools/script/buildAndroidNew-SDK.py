@@ -101,7 +101,7 @@ def main(cfgFile=None):
     #
     backupFileList = list()
     utils.printSplit("修改AppDelegate.cpp")
-    utils.modifyAppDelegate(backupFileList, os.path.join(dirProjectFramework, "runtime-src/Classes/AppDelegate.cpp"), cfgApp["run"])
+    utils.modifyAppDelegate(backupFileList, os.path.join(dirProjectFramework, "runtime-src/Classes/AppDelegate.cpp"), cfgApp["run"], cfgNewVersion["path"], cfgUseObb)
     
     apversion = int(androidTarget[8:])
 

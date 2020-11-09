@@ -1,0 +1,52 @@
+{
+  "effect_fail_di_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.65",
+        "y" : "0.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fail_di",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_fail_huoxing_1" : {
+    "f11" : {
+      "start" : {
+        "x" : "113.05",
+        "y" : "18.85",
+        "rotation" : "8.46",
+        "scaleX" : "-2.17",
+        "scaleY" : "2.75",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fail_huoxing",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "effect_fail_huoxing_2" : {
+    "f11" : {
+      "start" : {
+        "x" : "-101.5",
+        "y" : "20.85",
+        "rotation" : "3.21",
+        "scaleX" : "2.16",
+        "scaleY" : "3.68",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fail_huoxing",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f56" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

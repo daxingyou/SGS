@@ -1,0 +1,29 @@
+{
+    "url": {
+        "cdn_list": [
+            "http://cdn.meishoden.playbest.co.jp/mjz_update/reshd"
+        ]
+    }, 
+    "i18n": {
+        "lang": "ja", 
+        "matchLang": "ja", 
+        "channel": "ja"
+    }, 
+    "version": [
+        {
+            "svn": 100, 
+            "path": "2.14.0", 
+            "name": "0.0.0"
+        }, 
+        {
+            "svn": 6635, 
+            "path": "2.14.0", 
+            "name": "0.0.1"
+        }, 
+        {
+            "svn": 7660, 
+            "path": "2.14.0", 
+            "name": "0.0.2"
+        }
+    ]
+}

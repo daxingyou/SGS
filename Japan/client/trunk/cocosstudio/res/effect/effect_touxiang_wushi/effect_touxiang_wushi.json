@@ -1,0 +1,1714 @@
+{
+  "图层 21_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-11.15",
+        "y" : "-16.1",
+        "rotation" : "-154.87",
+        "scaleX" : "0.45",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_1.png"
+      }
+    },
+    "order" : "29",
+    "f3" : {
+      "start" : {
+        "x" : "-11.15",
+        "y" : "-16.1",
+        "rotation" : "-154.87",
+        "scaleX" : "0.45",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-11.15",
+        "y" : "-16.1",
+        "rotation" : "-154.87",
+        "scaleX" : "0.45",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_3.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-11.15",
+        "y" : "-16.1",
+        "rotation" : "-154.87",
+        "scaleX" : "0.45",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_4.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-11.15",
+        "y" : "-16.1",
+        "rotation" : "-154.87",
+        "scaleX" : "0.45",
+        "scaleY" : "0.45",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_5.png"
+      }
+    },
+    "f11" : {
+      "remove" : "1"
+    }
+  },
+  "图层 20_2" : {
+    "f23" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_6.png"
+      }
+    },
+    "order" : "28",
+    "f25" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_7.png"
+      }
+    },
+    "f27" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_8.png"
+      }
+    },
+    "f29" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_9.png"
+      }
+    },
+    "f31" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_10.png"
+      }
+    },
+    "f33" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_11.png"
+      }
+    },
+    "f35" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_12.png"
+      }
+    },
+    "f37" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_13.png"
+      }
+    },
+    "f39" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_14.png"
+      }
+    },
+    "f41" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_1.png"
+      }
+    },
+    "f43" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_2.png"
+      }
+    },
+    "f45" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_3.png"
+      }
+    },
+    "f47" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_4.png"
+      }
+    },
+    "f49" : {
+      "start" : {
+        "x" : "19.35",
+        "y" : "-20.4",
+        "rotation" : "96.02",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_5.png"
+      }
+    }
+  },
+  "图层 19_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_6.png"
+      }
+    },
+    "order" : "27",
+    "f3" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_7.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_8.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_9.png"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_10.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_11.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_12.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_13.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_14.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_1.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_2.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_3.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_4.png"
+      }
+    },
+    "f27" : {
+      "start" : {
+        "x" : "21.5",
+        "y" : "17.95",
+        "rotation" : "-14.94",
+        "scaleX" : "0.68",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_5.png"
+      }
+    },
+    "f29" : {
+      "remove" : "1"
+    }
+  },
+  "xingguang_copy17_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "23.35",
+        "y" : "52.15",
+        "rotation" : "0",
+        "scaleX" : "0.24",
+        "scaleY" : "0.24",
+        "opacity" : "247",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "35"
+    },
+    "order" : "26",
+    "f35" : {
+      "start" : {
+        "x" : "23.35",
+        "y" : "54.65",
+        "rotation" : "0",
+        "scaleX" : "0.24",
+        "scaleY" : "0.24",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f36" : {
+      "start" : {
+        "x" : "23.35",
+        "y" : "50",
+        "rotation" : "0",
+        "scaleX" : "0.24",
+        "scaleY" : "0.24",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "15"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "23.35",
+        "y" : "52.1",
+        "rotation" : "0",
+        "scaleX" : "0.24",
+        "scaleY" : "0.24",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy16_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "8.9",
+        "y" : "56.4",
+        "rotation" : "0",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "94",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "25",
+    "f14" : {
+      "start" : {
+        "x" : "8.9",
+        "y" : "57.55",
+        "rotation" : "0",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "8.9",
+        "y" : "51.9",
+        "rotation" : "0",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "15"
+    },
+    "f29" : {
+      "start" : {
+        "x" : "8.9",
+        "y" : "54.5",
+        "rotation" : "0",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "22"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "8.9",
+        "y" : "56.35",
+        "rotation" : "0",
+        "scaleX" : "0.3",
+        "scaleY" : "0.3",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy15_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.15",
+        "y" : "41.6",
+        "rotation" : "0",
+        "scaleX" : "0.19",
+        "scaleY" : "0.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "24",
+    "f15" : {
+      "start" : {
+        "x" : "-1.15",
+        "y" : "43.2",
+        "rotation" : "0",
+        "scaleX" : "0.19",
+        "scaleY" : "0.19",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "36"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-1.15",
+        "y" : "45.15",
+        "rotation" : "0",
+        "scaleX" : "0.19",
+        "scaleY" : "0.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy14_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "51.9",
+        "y" : "47.5",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "247",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "35"
+    },
+    "order" : "23",
+    "f35" : {
+      "start" : {
+        "x" : "51.9",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f36" : {
+      "start" : {
+        "x" : "51.9",
+        "y" : "43.9",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "15"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "51.9",
+        "y" : "47.4",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy13_8" : {
+    "f1" : {
+      "start" : {
+        "x" : "35.65",
+        "y" : "58.95",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "94",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "22",
+    "f14" : {
+      "start" : {
+        "x" : "35.65",
+        "y" : "60.45",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "35.65",
+        "y" : "53.35",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "15"
+    },
+    "f29" : {
+      "start" : {
+        "x" : "35.65",
+        "y" : "56.65",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "22"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "35.65",
+        "y" : "58.95",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy12_9" : {
+    "f1" : {
+      "start" : {
+        "x" : "19.95",
+        "y" : "39.9",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "21",
+    "f15" : {
+      "start" : {
+        "x" : "19.95",
+        "y" : "43.9",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "36"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "19.95",
+        "y" : "48.75",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy11_10" : {
+    "f1" : {
+      "start" : {
+        "x" : "-18.15",
+        "y" : "44.35",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "247",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "35"
+    },
+    "order" : "20",
+    "f35" : {
+      "start" : {
+        "x" : "-18.15",
+        "y" : "48.4",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f36" : {
+      "start" : {
+        "x" : "-18.15",
+        "y" : "40.75",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "15"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-18.15",
+        "y" : "44.3",
+        "rotation" : "0",
+        "scaleX" : "0.39",
+        "scaleY" : "0.39",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy10_11" : {
+    "f1" : {
+      "start" : {
+        "x" : "-26",
+        "y" : "61.4",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "94",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "19",
+    "f14" : {
+      "start" : {
+        "x" : "-26",
+        "y" : "62.9",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-26",
+        "y" : "55.8",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "15"
+    },
+    "f29" : {
+      "start" : {
+        "x" : "-26",
+        "y" : "59.1",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "22"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-26",
+        "y" : "61.4",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy9_12" : {
+    "f1" : {
+      "start" : {
+        "x" : "-51.55",
+        "y" : "44.6",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "18",
+    "f15" : {
+      "start" : {
+        "x" : "-51.55",
+        "y" : "48.7",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "36"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-51.55",
+        "y" : "53.55",
+        "rotation" : "0",
+        "scaleX" : "0.46",
+        "scaleY" : "0.46",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy8_13" : {
+    "f1" : {
+      "start" : {
+        "x" : "16.3",
+        "y" : "-36.05",
+        "rotation" : "0",
+        "scaleX" : "0.2",
+        "scaleY" : "0.2",
+        "opacity" : "247",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "35"
+    },
+    "order" : "17",
+    "f35" : {
+      "start" : {
+        "x" : "16.3",
+        "y" : "-34",
+        "rotation" : "0",
+        "scaleX" : "0.2",
+        "scaleY" : "0.2",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f36" : {
+      "start" : {
+        "x" : "16.3",
+        "y" : "-37.8",
+        "rotation" : "0",
+        "scaleX" : "0.2",
+        "scaleY" : "0.2",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "15"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "16.3",
+        "y" : "-36.1",
+        "rotation" : "0",
+        "scaleX" : "0.2",
+        "scaleY" : "0.2",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy7_14" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "-32.55",
+        "rotation" : "0",
+        "scaleX" : "0.25",
+        "scaleY" : "0.25",
+        "opacity" : "94",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "16",
+    "f14" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "-31.6",
+        "rotation" : "0",
+        "scaleX" : "0.25",
+        "scaleY" : "0.25",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "-36.25",
+        "rotation" : "0",
+        "scaleX" : "0.25",
+        "scaleY" : "0.25",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "15"
+    },
+    "f29" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "-34.1",
+        "rotation" : "0",
+        "scaleX" : "0.25",
+        "scaleY" : "0.25",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "22"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "4.35",
+        "y" : "-32.6",
+        "rotation" : "0",
+        "scaleX" : "0.25",
+        "scaleY" : "0.25",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy6_15" : {
+    "f1" : {
+      "start" : {
+        "x" : "-3.95",
+        "y" : "-44.75",
+        "rotation" : "0",
+        "scaleX" : "0.15",
+        "scaleY" : "0.15",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "15",
+    "f15" : {
+      "start" : {
+        "x" : "-3.95",
+        "y" : "-43.45",
+        "rotation" : "0",
+        "scaleX" : "0.15",
+        "scaleY" : "0.15",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "36"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-3.95",
+        "y" : "-41.8",
+        "rotation" : "0",
+        "scaleX" : "0.15",
+        "scaleY" : "0.15",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy5_16" : {
+    "f1" : {
+      "start" : {
+        "x" : "39.9",
+        "y" : "-39.9",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "247",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "35"
+    },
+    "order" : "14",
+    "f35" : {
+      "start" : {
+        "x" : "39.9",
+        "y" : "-36.55",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f36" : {
+      "start" : {
+        "x" : "39.9",
+        "y" : "-42.85",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "15"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "39.9",
+        "y" : "-39.95",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy4_17" : {
+    "f1" : {
+      "start" : {
+        "x" : "26.45",
+        "y" : "-30.4",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "94",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "13",
+    "f14" : {
+      "start" : {
+        "x" : "26.45",
+        "y" : "-29.2",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "26.45",
+        "y" : "-35.05",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "15"
+    },
+    "f29" : {
+      "start" : {
+        "x" : "26.45",
+        "y" : "-32.3",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "22"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "26.45",
+        "y" : "-30.4",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy3_18" : {
+    "f1" : {
+      "start" : {
+        "x" : "13.5",
+        "y" : "-46.2",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "12",
+    "f15" : {
+      "start" : {
+        "x" : "13.5",
+        "y" : "-42.85",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "36"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "13.5",
+        "y" : "-38.85",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy2_19" : {
+    "f1" : {
+      "start" : {
+        "x" : "-18",
+        "y" : "-42.5",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "247",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f35",
+      "frames" : "35"
+    },
+    "order" : "11",
+    "f35" : {
+      "start" : {
+        "x" : "-18",
+        "y" : "-39.15",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f36" : {
+      "start" : {
+        "x" : "-18",
+        "y" : "-45.45",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "15"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-18",
+        "y" : "-42.55",
+        "rotation" : "0",
+        "scaleX" : "0.33",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_copy1_20" : {
+    "f1" : {
+      "start" : {
+        "x" : "-24.5",
+        "y" : "-28.4",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "94",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f14",
+      "frames" : "14"
+    },
+    "order" : "10",
+    "f14" : {
+      "start" : {
+        "x" : "-24.5",
+        "y" : "-27.2",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-24.5",
+        "y" : "-33.05",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f29",
+      "frames" : "15"
+    },
+    "f29" : {
+      "start" : {
+        "x" : "-24.5",
+        "y" : "-30.3",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "22"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-24.5",
+        "y" : "-28.4",
+        "rotation" : "0",
+        "scaleX" : "0.31",
+        "scaleY" : "0.31",
+        "opacity" : "102",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "xingguang_21" : {
+    "f1" : {
+      "start" : {
+        "x" : "-45.6",
+        "y" : "-42.25",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "9",
+    "f15" : {
+      "start" : {
+        "x" : "-45.6",
+        "y" : "-38.9",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "36"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-45.6",
+        "y" : "-34.9",
+        "rotation" : "0",
+        "scaleX" : "0.38",
+        "scaleY" : "0.38",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_15.png"
+      }
+    }
+  },
+  "图层 2_22" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "38",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_16.png"
+      },
+      "nextFrame" : "f25",
+      "frames" : "25"
+    },
+    "order" : "8",
+    "f25" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "81",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_16.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "26"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "38",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_16.png"
+      }
+    }
+  },
+  "图层 1_23" : {
+    "f9" : {
+      "start" : {
+        "x" : "0.55",
+        "y" : "50.25",
+        "rotation" : "0",
+        "scaleX" : "1.02",
+        "scaleY" : "1.02",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_17.png"
+      }
+    },
+    "order" : "7",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "10.png_24" : {
+    "f1" : {
+      "start" : {
+        "x" : "44.5",
+        "y" : "7.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_18.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "6",
+    "f20" : {
+      "start" : {
+        "x" : "46.4",
+        "y" : "7.7",
+        "rotation" : "-5.22",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_18.png"
+      },
+      "nextFrame" : "f41",
+      "frames" : "22"
+    },
+    "f41" : {
+      "start" : {
+        "x" : "42.8",
+        "y" : "7.65",
+        "rotation" : "4.67",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_18.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "10"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "44.5",
+        "y" : "7.6",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_18.png"
+      }
+    }
+  },
+  "9.png_25" : {
+    "f1" : {
+      "start" : {
+        "x" : "-44",
+        "y" : "8.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_19.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "5",
+    "f20" : {
+      "start" : {
+        "x" : "-40.7",
+        "y" : "8.35",
+        "rotation" : "-8.72",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_19.png"
+      },
+      "nextFrame" : "f41",
+      "frames" : "22"
+    },
+    "f41" : {
+      "start" : {
+        "x" : "-45.15",
+        "y" : "8.2",
+        "rotation" : "2.94",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_19.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "10"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "-44",
+        "y" : "8.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_19.png"
+      }
+    }
+  },
+  "图层 13_26" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "-44.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_20.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "26"
+    },
+    "order" : "4",
+    "f26" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "-44.3",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "1.1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_20.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "25"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "-44.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_20.png"
+      }
+    }
+  },
+  "图层 8_27" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "-44.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_20.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "26"
+    },
+    "order" : "3",
+    "f26" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "-44.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "40",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_20.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "25"
+    },
+    "f50" : {
+      "start" : {
+        "x" : "2.45",
+        "y" : "-44.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_touxiang_wushi_20.png"
+      }
+    }
+  },
+  "8.png_28" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.5",
+        "y" : "-39.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_21.png"
+      }
+    },
+    "order" : "2"
+  },
+  "6.png_29" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.5",
+        "y" : "44.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_22.png"
+      }
+    },
+    "order" : "1"
+  },
+  "7.png_30" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_touxiang_wushi_23.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f50" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_touxiang_wushi.png"
+}

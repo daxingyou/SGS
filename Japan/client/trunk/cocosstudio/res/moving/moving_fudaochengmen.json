@@ -1,0 +1,200 @@
+{
+  "effect_fudao_yanwu_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "26.35",
+        "y" : "26.1",
+        "rotation" : "-5.33",
+        "scaleX" : "-0.79",
+        "scaleY" : "0.78",
+        "opacity" : "255"
+      }
+    },
+    "order" : "14"
+  },
+  "effect_fudao_yanwu_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-45.45",
+        "y" : "25.2",
+        "rotation" : "-13.44",
+        "scaleX" : "0.71",
+        "scaleY" : "0.61",
+        "opacity" : "255"
+      }
+    },
+    "order" : "13"
+  },
+  "effect_fudao_yanwu_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "94.35",
+        "y" : "12.5",
+        "rotation" : "-4.82",
+        "scaleX" : "0.73",
+        "scaleY" : "0.67",
+        "opacity" : "76"
+      }
+    },
+    "order" : "12"
+  },
+  "effect_fudao_yanwu_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "67.45",
+        "y" : "-21.6",
+        "rotation" : "-0.97",
+        "scaleX" : "-0.51",
+        "scaleY" : "0.54",
+        "opacity" : "155"
+      }
+    },
+    "order" : "11"
+  },
+  "effect_fudao_fire_copy6" : {
+    "f1" : {
+      "start" : {
+        "x" : "85.5",
+        "y" : "-7.25",
+        "rotation" : "-13.39",
+        "scaleX" : "0.9",
+        "scaleY" : "0.69",
+        "opacity" : "132"
+      }
+    },
+    "order" : "10"
+  },
+  "effect_fudao_fire_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "76.5",
+        "y" : "-9.5",
+        "rotation" : "1.33",
+        "scaleX" : "-0.6",
+        "scaleY" : "0.51",
+        "opacity" : "158"
+      }
+    },
+    "order" : "9"
+  },
+  "effect_fudao_fire_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "37",
+        "y" : "17.1",
+        "rotation" : "14.52",
+        "scaleX" : "0.48",
+        "scaleY" : "0.43",
+        "opacity" : "132"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_fudao_fire_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "22",
+        "y" : "-7.55",
+        "rotation" : "23.12",
+        "scaleX" : "-0.66",
+        "scaleY" : "0.51",
+        "opacity" : "132"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_fudao_fire_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "13.05",
+        "y" : "-8.65",
+        "rotation" : "1.33",
+        "scaleX" : "1.01",
+        "scaleY" : "0.78",
+        "opacity" : "173"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_fudao_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-6.1",
+        "y" : "79.8",
+        "rotation" : "28.9",
+        "scaleX" : "-0.94",
+        "scaleY" : "0.72",
+        "opacity" : "117"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_scene01_huoguang_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.9",
+        "y" : "80.45",
+        "rotation" : "100.34",
+        "scaleX" : "-0.54",
+        "scaleY" : "0.74",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_fudaochengmenqizi_effect_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "37.15",
+        "y" : "-41.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_fudaochengmenqizi_effect_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-96.05",
+        "y" : "28.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_fudao_chengmen_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_fudao_yingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "73.95",
+        "y" : "-53.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f49" : "finish"
+  }
+}

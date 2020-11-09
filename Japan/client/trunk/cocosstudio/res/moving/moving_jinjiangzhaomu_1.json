@@ -1,0 +1,119 @@
+{
+  "effect_jinjiangzhaomu_huoyan" : {
+    "f6" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-255",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f9",
+      "frames" : "4"
+    },
+    "order" : "4",
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "mingzi" : {
+    "f5" : {
+      "start" : {
+        "x" : "-405.15",
+        "y" : "288.7",
+        "rotation" : "0",
+        "scaleX" : "3.02",
+        "scaleY" : "3.02",
+        "opacity" : "51"
+      },
+      "nextFrame" : "f7",
+      "frames" : "3"
+    },
+    "order" : "3",
+    "f7" : {
+      "start" : {
+        "x" : "-405.15",
+        "y" : "103.7",
+        "rotation" : "0",
+        "scaleX" : "0.9",
+        "scaleY" : "0.9",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f9",
+      "frames" : "3"
+    },
+    "f9" : {
+      "start" : {
+        "x" : "-405.15",
+        "y" : "103.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "lihui" : {
+    "order" : "2",
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-320",
+        "rotation" : "0",
+        "scaleX" : "0.88",
+        "scaleY" : "0.88",
+        "opacity" : "255"
+      }
+    }
+  },
+  "effect_jinjiangzhaomu_heise" : {
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "28",
+        "scaleY" : "12.8",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f8",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f8" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "28",
+        "scaleY" : "12.8",
+        "opacity" : "204"
+      }
+    }
+  },
+  "spine_jinjiangzhaomu_effect1_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f9" : "anniu",
+    "f11" : "finish"
+  }
+}

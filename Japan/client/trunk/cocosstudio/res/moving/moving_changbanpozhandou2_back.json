@@ -1,0 +1,122 @@
+{
+  "spine_changbanqiaozhandou2shu2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-362.4",
+        "y" : "90.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "spine_changbanqiaozhandou2cao1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-81.25",
+        "y" : "159.4",
+        "rotation" : "3.28",
+        "scaleX" : "0.47",
+        "scaleY" : "0.47",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "spine_changbanqiaozhandou2qizi_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "480.35",
+        "y" : "84.2",
+        "rotation" : "0",
+        "scaleX" : "0.97",
+        "scaleY" : "0.97",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "spine_changbanqiaozhandou2qizi_effect1" : {
+    "f1" : {
+      "start" : {
+        "x" : "283.35",
+        "y" : "91.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_changbanqiaozhandou2shu1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "289.35",
+        "y" : "117.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_taohuayuan_shuibo_1_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-143.1",
+        "y" : "171.8",
+        "rotation" : "1",
+        "scaleX" : "0.16",
+        "scaleY" : "0.26",
+        "opacity" : "102"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_taohuayuan_shuibo_1_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-212.65",
+        "y" : "157.7",
+        "rotation" : "-1",
+        "scaleX" : "-0.17",
+        "scaleY" : "0.26",
+        "opacity" : "76"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_taohuayuan_shuibo_1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-165.4",
+        "y" : "133.8",
+        "rotation" : "0",
+        "scaleX" : "-0.43",
+        "scaleY" : "0.26",
+        "opacity" : "102"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_taohuayuan_shuibo_1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-300.4",
+        "y" : "138.3",
+        "rotation" : "0",
+        "scaleX" : "0.43",
+        "scaleY" : "0.3",
+        "opacity" : "102"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "图层 3_0" : {
+
+  },
+  "图层 8_1" : {
+    "f27" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-58.15",
+        "rotation" : "0",
+        "scaleX" : "2.3",
+        "scaleY" : "0.64",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "4"
+    },
+    "order" : "5",
+    "f30" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-58.15",
+        "rotation" : "0",
+        "scaleX" : "5.78",
+        "scaleY" : "1.61",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_1.png"
+      },
+      "nextFrame" : "f33",
+      "frames" : "4"
+    },
+    "f33" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-58.15",
+        "rotation" : "0",
+        "scaleX" : "6.8",
+        "scaleY" : "1.89",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_1.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "19"
+    },
+    "f51" : {
+      "start" : {
+        "x" : "-0.05",
+        "y" : "-58.15",
+        "rotation" : "0",
+        "scaleX" : "9.53",
+        "scaleY" : "2.65",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_1.png"
+      }
+    },
+    "f52" : {
+      "remove" : "1"
+    }
+  },
+  "图层 9_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "107.65",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_2.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "8"
+    },
+    "order" : "4",
+    "f8" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "107.65",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_2.png"
+      },
+      "nextFrame" : "f12",
+      "frames" : "5"
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "107.65",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_2.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "4"
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "107.65",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_2.png"
+      }
+    },
+    "f34" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "107.65",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_2.png"
+      },
+      "nextFrame" : "f49",
+      "frames" : "16"
+    },
+    "f49" : {
+      "start" : {
+        "x" : "-3.9",
+        "y" : "107.65",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_2.png"
+      }
+    },
+    "f60" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_3" : {
+    "f20" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_3.png"
+      }
+    },
+    "order" : "3",
+    "f21" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_4.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_5.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_6.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_7.png"
+      }
+    },
+    "f25" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_8.png"
+      }
+    },
+    "f26" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_9.png"
+      }
+    },
+    "f27" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_10.png"
+      }
+    },
+    "f28" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_11.png"
+      }
+    },
+    "f29" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_12.png"
+      }
+    },
+    "f30" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_13.png"
+      }
+    },
+    "f31" : {
+      "remove" : "1"
+    }
+  },
+  "图层 4_4" : {
+    "f14" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_3.png"
+      }
+    },
+    "order" : "2",
+    "f15" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_4.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_5.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_6.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_7.png"
+      }
+    },
+    "f19" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_8.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_9.png"
+      }
+    },
+    "f21" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_10.png"
+      }
+    },
+    "f22" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_11.png"
+      }
+    },
+    "f23" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_12.png"
+      }
+    },
+    "f24" : {
+      "start" : {
+        "x" : "-99.95",
+        "y" : "105.8",
+        "rotation" : "-79.15",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_13.png"
+      }
+    },
+    "f25" : {
+      "remove" : "1"
+    }
+  },
+  "图层 11_5" : {
+    "f8" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_3.png"
+      }
+    },
+    "order" : "1",
+    "f9" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_4.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_5.png"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_6.png"
+      }
+    },
+    "f12" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_7.png"
+      }
+    },
+    "f13" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_8.png"
+      }
+    },
+    "f14" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_9.png"
+      }
+    },
+    "f15" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_10.png"
+      }
+    },
+    "f16" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_11.png"
+      }
+    },
+    "f17" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_12.png"
+      }
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-2.45",
+        "y" : "68",
+        "rotation" : "0",
+        "scaleX" : "0.85",
+        "scaleY" : "0.85",
+        "opacity" : "255",
+        "png" : "effect_BOSShudun_skill_13.png"
+      }
+    },
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "图层 5_6" : {
+    "f21" : {
+      "start" : {
+        "x" : "0.35",
+        "y" : "-34.1",
+        "rotation" : "-89.96",
+        "scaleX" : "2.23",
+        "scaleY" : "7.81",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_14.png"
+      },
+      "nextFrame" : "f27",
+      "frames" : "7"
+    },
+    "order" : "0",
+    "f27" : {
+      "start" : {
+        "x" : "0.1",
+        "y" : "-34.05",
+        "rotation" : "-89.99",
+        "scaleX" : "3.91",
+        "scaleY" : "13.67",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_14.png"
+      },
+      "nextFrame" : "f41",
+      "frames" : "15"
+    },
+    "f41" : {
+      "start" : {
+        "x" : "0.35",
+        "y" : "-34.1",
+        "rotation" : "-89.96",
+        "scaleX" : "4.94",
+        "scaleY" : "17.26",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_BOSShudun_skill_14.png"
+      }
+    },
+    "f42" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f61" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_BOSShudun_skill.png"
+}

@@ -1,0 +1,184 @@
+{
+  "spine_juntuanchuanqi_effect2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-27.65",
+        "y" : "75.45",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.54",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "4",
+    "f45" : {
+      "start" : {
+        "x" : "-28.45",
+        "y" : "74.35",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.54",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_1.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-27.65",
+        "y" : "75.45",
+        "rotation" : "0",
+        "scaleX" : "0.54",
+        "scaleY" : "0.54",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_1.png"
+      }
+    }
+  },
+  "spine_juntuanchuanqi_effect1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-42.45",
+        "y" : "34.35",
+        "rotation" : "0",
+        "scaleX" : "0.57",
+        "scaleY" : "0.57",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_1.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "3",
+    "f45" : {
+      "start" : {
+        "x" : "-42.75",
+        "y" : "33.2",
+        "rotation" : "0",
+        "scaleX" : "0.57",
+        "scaleY" : "0.57",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_1.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-42.45",
+        "y" : "34.35",
+        "rotation" : "0",
+        "scaleX" : "0.57",
+        "scaleY" : "0.57",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_1.png"
+      }
+    }
+  },
+  "图层 1_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-22.2",
+        "y" : "24.45",
+        "rotation" : "1",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_2.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "2",
+    "f45" : {
+      "start" : {
+        "x" : "-22.7",
+        "y" : "23.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_2.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-22.2",
+        "y" : "24.45",
+        "rotation" : "1",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_2.png"
+      }
+    }
+  },
+  "effect_taohuayuan_shuibo_1_copy1_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-13.85",
+        "y" : "-19.9",
+        "rotation" : "-17.52",
+        "scaleX" : "-0.22",
+        "scaleY" : "0.23",
+        "opacity" : "158"
+      }
+    },
+    "effect" : "effect_taohuayuan_shuibo_1",
+    "useBatchNode" : "true",
+    "first_frame" : "18",
+    "loop" : "loop",
+    "order" : "1"
+  },
+  "图层 2_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-17.4",
+        "y" : "-12.9",
+        "rotation" : "-8.19",
+        "scaleX" : "-0.76",
+        "scaleY" : "0.73",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_3.png"
+      },
+      "nextFrame" : "f45",
+      "frames" : "45"
+    },
+    "order" : "0",
+    "f45" : {
+      "start" : {
+        "x" : "-17.5",
+        "y" : "-12.3",
+        "rotation" : "-8.19",
+        "scaleX" : "-0.76",
+        "scaleY" : "0.68",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_3.png"
+      },
+      "nextFrame" : "f90",
+      "frames" : "46"
+    },
+    "f90" : {
+      "start" : {
+        "x" : "-17.4",
+        "y" : "-12.9",
+        "rotation" : "-8.19",
+        "scaleX" : "-0.76",
+        "scaleY" : "0.73",
+        "opacity" : "255",
+        "png" : "effect_juntuan_chuan2_3.png"
+      }
+    }
+  },
+  "events" : {
+    "f90" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuan_chuan2.png"
+}

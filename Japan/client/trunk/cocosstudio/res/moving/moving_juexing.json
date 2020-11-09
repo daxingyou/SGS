@@ -1,0 +1,83 @@
+{
+  "smoving_juexing_item_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "23.25",
+        "y" : "-130.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_juexing_item_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "25.45",
+        "y" : "143.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_juexing_item_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-357.45",
+        "y" : "-131.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "smoving_juexing_item_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-357.45",
+        "y" : "143.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1",
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "effect_wujiang_tupojiemian" : {
+    "f13" : {
+      "start" : {
+        "x" : "-181.9",
+        "y" : "49.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f1" : "play",
+    "f35" : "finish"
+  }
+}

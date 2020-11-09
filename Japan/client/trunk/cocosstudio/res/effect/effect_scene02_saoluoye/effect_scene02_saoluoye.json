@@ -1,0 +1,125 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.4",
+        "y" : "0",
+        "rotation" : "163.05",
+        "scaleX" : "-0.29",
+        "scaleY" : "0.29",
+        "opacity" : "0",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "0",
+    "f10" : {
+      "start" : {
+        "x" : "7.9",
+        "y" : "-2.4",
+        "rotation" : "163.18",
+        "scaleX" : "-0.29",
+        "scaleY" : "0.29",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "4"
+    },
+    "f13" : {
+      "start" : {
+        "x" : "10.4",
+        "y" : "-3.2",
+        "rotation" : "-16.78",
+        "scaleX" : "0.29",
+        "scaleY" : "0.32",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f16",
+      "frames" : "4"
+    },
+    "f16" : {
+      "start" : {
+        "x" : "12.9",
+        "y" : "-3.95",
+        "rotation" : "163.23",
+        "scaleX" : "-0.29",
+        "scaleY" : "0.29",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "4"
+    },
+    "f19" : {
+      "start" : {
+        "x" : "15.45",
+        "y" : "-4.8",
+        "rotation" : "-16.77",
+        "scaleX" : "0.29",
+        "scaleY" : "0.33",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f23",
+      "frames" : "5"
+    },
+    "f23" : {
+      "start" : {
+        "x" : "18.85",
+        "y" : "-5.85",
+        "rotation" : "163.22",
+        "scaleX" : "-0.29",
+        "scaleY" : "0.29",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f26",
+      "frames" : "4"
+    },
+    "f26" : {
+      "start" : {
+        "x" : "21.3",
+        "y" : "-6.65",
+        "rotation" : "-16.77",
+        "scaleX" : "0.29",
+        "scaleY" : "0.32",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "5"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "24.65",
+        "y" : "-7.65",
+        "rotation" : "163.2",
+        "scaleX" : "-0.29",
+        "scaleY" : "0.29",
+        "opacity" : "255",
+        "png" : "effect_scene02_saoluoye_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "11"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "28.7",
+        "y" : "-9.05",
+        "rotation" : "163.05",
+        "scaleX" : "-0.29",
+        "scaleY" : "0.29",
+        "opacity" : "0",
+        "png" : "effect_scene02_saoluoye_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f41" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_scene02_saoluoye.png"
+}

@@ -1,0 +1,109 @@
+{
+  "effect_zhucheng12day_huaban" : {
+    "f1" : {
+      "start" : {
+        "x" : "-517.9",
+        "y" : "193.45",
+        "rotation" : "6.95",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "spine_zhucheng12day_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_zhucheng_niaofei" : {
+    "f1" : {
+      "start" : {
+        "x" : "338.65",
+        "y" : "225.5",
+        "rotation" : "3.09",
+        "scaleX" : "-0.55",
+        "scaleY" : "0.55",
+        "opacity" : "137"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_zhucheng12day_shuibo_copy5" : {
+    "f1" : {
+      "start" : {
+        "x" : "-530.75",
+        "y" : "70.35",
+        "rotation" : "0",
+        "scaleX" : "-0.3",
+        "scaleY" : "0.53",
+        "opacity" : "201"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_zhucheng12day_shuibo_copy4" : {
+    "f1" : {
+      "start" : {
+        "x" : "56.35",
+        "y" : "81.2",
+        "rotation" : "0",
+        "scaleX" : "-0.4",
+        "scaleY" : "0.58",
+        "opacity" : "201"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_zhucheng12day_shuibo_copy3" : {
+    "f1" : {
+      "start" : {
+        "x" : "367.45",
+        "y" : "89.2",
+        "rotation" : "0",
+        "scaleX" : "-0.23",
+        "scaleY" : "0.52",
+        "opacity" : "201"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_zhucheng12day_shuibo_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "533.3",
+        "y" : "77.2",
+        "rotation" : "0",
+        "scaleX" : "-0.4",
+        "scaleY" : "0.41",
+        "opacity" : "201"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_zhucheng12day_shuibo_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "559.3",
+        "y" : "104.2",
+        "rotation" : "0",
+        "scaleX" : "-0.4",
+        "scaleY" : "0.32",
+        "opacity" : "201"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f141" : "finish"
+  }
+}

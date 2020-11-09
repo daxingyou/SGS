@@ -1,0 +1,453 @@
+{
+  "图层 2_0" : {
+    "f3" : {
+      "start" : {
+        "x" : "-3.3",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_1.png"
+      }
+    },
+    "order" : "9",
+    "f4" : {
+      "start" : {
+        "x" : "5.1",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_2.png"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "5.1",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_3.png"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "5.1",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_4.png"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "5.1",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_5.png"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-0.15",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_6.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "5.1",
+        "y" : "251.95",
+        "rotation" : "0",
+        "scaleX" : "0.81",
+        "scaleY" : "1.58",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_7.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "图层 5_1" : {
+    "f2" : {
+      "start" : {
+        "x" : "-25.55",
+        "y" : "577.3",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.5",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "7"
+    },
+    "order" : "8",
+    "f8" : {
+      "start" : {
+        "x" : "-25.55",
+        "y" : "273.45",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "2.23",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "4"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-25.55",
+        "y" : "114.65",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.75",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "图层 4_2" : {
+    "f3" : {
+      "start" : {
+        "x" : "-63.05",
+        "y" : "506.25",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.57",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "5"
+    },
+    "order" : "7",
+    "f7" : {
+      "start" : {
+        "x" : "-63.05",
+        "y" : "331.05",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "1.33",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "5"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-63.05",
+        "y" : "76.75",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.75",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_3" : {
+    "f2" : {
+      "start" : {
+        "x" : "50.95",
+        "y" : "556",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.56",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f7",
+      "frames" : "6"
+    },
+    "order" : "6",
+    "f7" : {
+      "start" : {
+        "x" : "50.95",
+        "y" : "185.1",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.65",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "5"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "50.95",
+        "y" : "80.9",
+        "rotation" : "0",
+        "scaleX" : "0.36",
+        "scaleY" : "0.66",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f12" : {
+      "remove" : "1"
+    }
+  },
+  "图层 8_4" : {
+    "f1" : {
+      "start" : {
+        "x" : "-25",
+        "y" : "570.85",
+        "rotation" : "0",
+        "scaleX" : "1.09",
+        "scaleY" : "0.94",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "8"
+    },
+    "order" : "5",
+    "f8" : {
+      "start" : {
+        "x" : "-25",
+        "y" : "90.05",
+        "rotation" : "0",
+        "scaleX" : "1.09",
+        "scaleY" : "0.94",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "图层 7_5" : {
+    "f1" : {
+      "start" : {
+        "x" : "21.65",
+        "y" : "599.6",
+        "rotation" : "0",
+        "scaleX" : "0.91",
+        "scaleY" : "1.03",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "8"
+    },
+    "order" : "4",
+    "f8" : {
+      "start" : {
+        "x" : "21.65",
+        "y" : "212.75",
+        "rotation" : "0",
+        "scaleX" : "-0.41",
+        "scaleY" : "1.79",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "图层 6_6" : {
+    "f1" : {
+      "start" : {
+        "x" : "-15.15",
+        "y" : "634.1",
+        "rotation" : "0",
+        "scaleX" : "0.79",
+        "scaleY" : "1.37",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "8"
+    },
+    "order" : "3",
+    "f8" : {
+      "start" : {
+        "x" : "-15.15",
+        "y" : "153.3",
+        "rotation" : "0",
+        "scaleX" : "0.79",
+        "scaleY" : "1.37",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "元件 3_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1.35",
+        "y" : "654.85",
+        "rotation" : "0",
+        "scaleX" : "5.72",
+        "scaleY" : "1.12",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "2",
+    "f5" : {
+      "start" : {
+        "x" : "-1.35",
+        "y" : "293.5",
+        "rotation" : "0",
+        "scaleX" : "5.24",
+        "scaleY" : "2.21",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "4"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-1.35",
+        "y" : "320.1",
+        "rotation" : "0",
+        "scaleX" : "2.76",
+        "scaleY" : "2.75",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "元件 3_8" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.1",
+        "y" : "613.25",
+        "rotation" : "0",
+        "scaleX" : "6.26",
+        "scaleY" : "1.15",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "8"
+    },
+    "order" : "1",
+    "f8" : {
+      "start" : {
+        "x" : "0.1",
+        "y" : "99.3",
+        "rotation" : "0",
+        "scaleX" : "6.26",
+        "scaleY" : "1.15",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangbreak_guangluoxia1_8.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "effect_wujiangbreak_xuanzhuanguangquan_9" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "497.5",
+        "rotation" : "0",
+        "scaleX" : "0.59",
+        "scaleY" : "0.59",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "effect" : "effect_wujiangbreak_xuanzhuanguangquan",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "0",
+        "y" : "2",
+        "rotation" : "0",
+        "scaleX" : "0.44",
+        "scaleY" : "0.44",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f8",
+      "frames" : "4"
+    },
+    "first_frame" : "10",
+    "loop" : "loop",
+    "f8" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-15.5",
+        "rotation" : "0",
+        "scaleX" : "0.37",
+        "scaleY" : "0.37",
+        "opacity" : "255"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f13" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_wujiangbreak_guangluoxia1.png"
+}

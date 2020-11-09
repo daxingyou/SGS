@@ -1,0 +1,135 @@
+{
+  "spine_taoyuanguanqiahua8_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "604.15",
+        "y" : "-260.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "9"
+  },
+  "spine_taoyuanguanqiahua7_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "962.45",
+        "y" : "-204.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "spine_taoyuanguanqiahua6_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "119.8",
+        "y" : "-265.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "spine_taoyuanguanqiahua5_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-552.55",
+        "y" : "-272.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "spine_taoyuanguanqiahua4_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-836.15",
+        "y" : "-210.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_taoyuanguanqiahua3_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-964.1",
+        "y" : "-277.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "spine_taoyuanguanqiahua2_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-796.2",
+        "y" : "316.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_taoyuanguanqiahua1_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "1121.3",
+        "y" : "199.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "lizi_huaban_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "1273.6",
+        "y" : "313.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "lizi_huaban_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-1263.8",
+        "y" : "306.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}

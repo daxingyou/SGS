@@ -1,0 +1,36 @@
+{
+  "effect_equipqianghua_shuxian" : {
+    "f1" : {
+      "start" : {
+        "x" : "-159.05",
+        "y" : "-4.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "smoving_zhuangbei" : {
+    "f12" : {
+      "start" : {
+        "x" : "-171.05",
+        "y" : "-61.05",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0",
+    "f23" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f12" : "play",
+    "f20" : "next",
+    "f43" : "finish"
+  }
+}

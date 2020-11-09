@@ -1,0 +1,12 @@
+{
+  "events" : {
+    "f1" : "top_down",
+    "f2" : "ren",
+    "f5" : "left_right",
+    "f10" : "zhanli",
+    "f11" : "left_right_icon",
+    "f12" : "mingcheng",
+    "f18" : "shenbing",
+    "f25" : "finish"
+  }
+}

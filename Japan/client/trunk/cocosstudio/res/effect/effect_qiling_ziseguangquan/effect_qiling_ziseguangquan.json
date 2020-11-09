@@ -1,0 +1,111 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "-0.6",
+        "scaleY" : "-0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "60"
+    },
+    "order" : "2",
+    "f60" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "-0.6",
+        "scaleY" : "-0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_1.png"
+      },
+      "nextFrame" : "f60",
+      "frames" : "60"
+    },
+    "order" : "1",
+    "f60" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_1.png"
+      }
+    }
+  },
+  "图层 3_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.5",
+        "y" : "-1.5",
+        "rotation" : "0",
+        "scaleX" : "0.96",
+        "scaleY" : "0.96",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_2.png"
+      },
+      "nextFrame" : "f10",
+      "frames" : "10"
+    },
+    "order" : "0",
+    "f10" : {
+      "start" : {
+        "x" : "1.5",
+        "y" : "-1.5",
+        "rotation" : "0",
+        "scaleX" : "1.07",
+        "scaleY" : "1.07",
+        "opacity" : "183",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_2.png"
+      },
+      "nextFrame" : "f33",
+      "frames" : "24"
+    },
+    "f33" : {
+      "start" : {
+        "x" : "1.5",
+        "y" : "-1.5",
+        "rotation" : "0",
+        "scaleX" : "1.19",
+        "scaleY" : "1.19",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_qiling_ziseguangquan_2.png"
+      }
+    },
+    "f34" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_qiling_ziseguangquan.png"
+}

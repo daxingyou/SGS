@@ -1,0 +1,18 @@
+{
+  "effect_fudaokaiqi_lihua" : {
+    "f1" : {
+      "start" : {
+        "x" : "9.6",
+        "y" : "6.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f39" : "finish"
+  }
+}

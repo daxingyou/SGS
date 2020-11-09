@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_shengshoushenghong_yun2_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{188,142}}</string>
+                <key>offset</key>
+                <string>{-3,2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{2,6},{188,142}}</string>
+                <key>sourceSize</key>
+                <string>{198,158}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_shengshoushenghong_yun2.png</string>
+            <key>size</key>
+            <string>{192,146}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:196c9b6c2922037e92646913e957c7d1$</string>
+            <key>textureFileName</key>
+            <string>effect_shengshoushenghong_yun2.png</string>
+        </dict>
+    </dict>
+</plist>

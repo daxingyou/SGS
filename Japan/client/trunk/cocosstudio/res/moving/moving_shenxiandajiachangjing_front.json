@@ -1,0 +1,31 @@
+{
+  "effect_nanman_huoxing_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "709.7",
+        "y" : "71.4",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_nanman_huoxing_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-264.95",
+        "y" : "-133.6",
+        "rotation" : "116.03",
+        "scaleX" : "0.67",
+        "scaleY" : "0.67",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f51" : "finish"
+  }
+}

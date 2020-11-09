@@ -1,0 +1,37 @@
+{
+  "effect_baodong_jiangli_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.08",
+        "scaleY" : "1.08",
+        "opacity" : "127"
+      }
+    },
+    "effect" : "effect_baodong_jiangli",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "effect_taozhuang_orange_lizi_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "2.1",
+        "y" : "-0.45",
+        "rotation" : "-89.5",
+        "scaleX" : "-0.6",
+        "scaleY" : "0.6",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taozhuang_orange_lizi",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f60" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

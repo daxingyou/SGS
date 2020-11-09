@@ -17,6 +17,35 @@ import getopt
 from distutils.version import LooseVersion
 from argparse import ArgumentParser
 
+def removeInvalidFile(lang, dirRes): 
+    i18n_lang = "i18n/" + lang + "/"
+    i18n_base = "i18n/base/"
+    file_list = os.listdir(dirRes)
+    for f in file_list:
+        full_path = os.path.join(dirRes, f)
+        if platform.system() == "Windows":
+                full_path = full_path.replace('\\', '/')
+
+
+        if os.path.isdir(full_path):
+            removeInvalidFile(lang, full_path)
+        elif os.path.isfile(full_path) and full_path.find(i18n_lang) != -1: 
+            base_path = full_path.replace(i18n_lang, i18n_base)  
+            if os.path.exists(base_path):  
+                print("remove base File  : " + base_path)  
+                utils.removeFile(base_path)
+             
+            res_path = full_path.replace(i18n_lang, "")  
+            if os.path.exists(res_path):      
+                print("remove res File  : " + res_path)  
+                utils.removeFile(res_path)    
+                
+        elif os.path.isfile(full_path) and full_path.find(i18n_base) != -1:   
+            res_path = full_path.replace(i18n_base, "")  
+            if os.path.exists(res_path):     
+                print("remove res File by base : " + res_path) 
+                utils.removeFile(res_path)           
+
 def checkNotUsedLang(lang,cfgLangList=None,cfgLang=None):
     if cfgLangList:
         return not lang in cfgLangList
@@ -154,19 +183,9 @@ def main(cfgFile=None):
                     utils.printSplit("cfgLangList = %s" % str(cfgLangList))
                 else:
                     # 热更新不更新不相关语言内容
-                    utils.printSplit("cfgLang = "+cfgLang)
-                dirResI18n = os.path.join(dirProject, "i18n")
-                print("dirResI18n = %s"%dirResI18n)
-                dirIgnores = ["base"]
-                for dirpath, dirnames, filenames in os.walk(dirResI18n):
-                    for d in dirnames:
-                        # print("dirResI18n dir: = %s" % d)
-                        fullPath = os.path.join(dirResI18n, d)
-                        if os.path.isdir(fullPath) and not d in dirIgnores:
-                            if checkNotUsedLang(d,cfgLangList,cfgLang): 
-                                print("res 删除不使用语言 " + fullPath)
-                                utils.removeDir(fullPath)    
-                dirSrcI18n = os.path.join(dirProject,"app","i18n")
+                    utils.printSplit("cfgLang = "+cfgLang) 
+                
+                dirSrcI18n = os.path.join(dirProject,"src/app","i18n")
                 dirIgnores = ["extends", "utils"]
                 print("dirSrcI18n = %s"%dirSrcI18n)
                 for dirpath, dirnames, filenames in os.walk(dirSrcI18n):
@@ -199,6 +218,27 @@ def main(cfgFile=None):
     utils.printSplit("拷贝res")
     utils.copyDir(os.path.join(dirProjectCCS, "res"), os.path.join(dirProject, "res"))
     utils.printSplit("拷贝res")
+
+    # 删除重复资源
+    if isHD == False and cfgTest == None and cfgLang != None:
+        dirResI18n = os.path.join(dirProject, "res/i18n")
+        print("dirResI18n = %s"%dirResI18n)
+        dirIgnores = ["base"]
+        for dirpath, dirnames, filenames in os.walk(dirResI18n):
+            for d in dirnames:
+                # print("dirResI18n dir: = %s" % d)
+                fullPath = os.path.join(dirResI18n, d)
+                if os.path.isdir(fullPath) and not d in dirIgnores:
+                    if checkNotUsedLang(d,cfgLangList,cfgLang): 
+                        print("res 删除不使用语言 " + fullPath)
+                        utils.removeDir(fullPath)    
+
+        utils.printSplit("开始删除重复资源")   
+        dirResLang = os.path.join(dirResI18n, cfgLang)
+        dirResBase = os.path.join(dirResI18n, "base") 
+        removeInvalidFile(cfgLang, dirResLang)
+        removeInvalidFile(cfgLang, dirResBase)
+        utils.printSplit("删除重复资源结束")  
     
     if isHD :
         # 写入HD资源最新版本versionhd

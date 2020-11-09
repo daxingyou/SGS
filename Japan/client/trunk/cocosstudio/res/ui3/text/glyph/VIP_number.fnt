@@ -1,0 +1,18 @@
+info face="CTZongYiSF" size=55 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=2,2
+common lineHeight=59 base=47 scaleW=219 scaleH=228 pages=1 packed=0
+page id=0 file="VIP_number.png"
+chars count=13
+char id=48     x=2     y=2     width=42    height=55    xoffset=-3    yoffset=-2    xadvance=31    page=0  chnl=0  letter="0"
+char id=49     x=88    y=116   width=31    height=54    xoffset=-1    yoffset=-2    xadvance=31    page=0  chnl=0  letter="1"
+char id=50     x=2     y=116   width=41    height=54    xoffset=-4    yoffset=-2    xadvance=31    page=0  chnl=0  letter="2"
+char id=51     x=134   y=2     width=41    height=55    xoffset=-4    yoffset=-2    xadvance=31    page=0  chnl=0  letter="3"
+char id=52     x=143   y=59    width=42    height=54    xoffset=-4    yoffset=-2    xadvance=31    page=0  chnl=0  letter="4"
+char id=53     x=45    y=116   width=41    height=54    xoffset=-4    yoffset=-1    xadvance=31    page=0  chnl=0  letter="5"
+char id=54     x=2     y=59    width=41    height=55    xoffset=-3    yoffset=-2    xadvance=31    page=0  chnl=0  letter="6"
+char id=55     x=146   y=116   width=42    height=53    xoffset=-4    yoffset=-1    xadvance=31    page=0  chnl=0  letter="7"
+char id=56     x=46    y=2     width=42    height=55    xoffset=-3    yoffset=-2    xadvance=31    page=0  chnl=0  letter="8"
+char id=57     x=90    y=2     width=42    height=55    xoffset=-3    yoffset=-2    xadvance=31    page=0  chnl=0  letter="9"
+char id=73     x=121   y=116   width=23    height=54    xoffset=-1    yoffset=-2    xadvance=15    page=0  chnl=0  letter="I"
+char id=80     x=96    y=59    width=45    height=54    xoffset=-1    yoffset=-2    xadvance=37    page=0  chnl=0  letter="P"
+char id=86     x=45    y=59    width=49    height=54    xoffset=-4    yoffset=-2    xadvance=37    page=0  chnl=0  letter="V"
+kernings count=0

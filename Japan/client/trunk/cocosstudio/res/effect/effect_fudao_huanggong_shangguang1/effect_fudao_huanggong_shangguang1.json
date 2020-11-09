@@ -1,0 +1,199 @@
+{
+  "effect_fudao_huanggong_qilin_copy_2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "9",
+        "y" : "-68.7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fudao_huanggong_qilin",
+    "useBatchNode" : "true",
+    "order" : "6",
+    "f25" : {
+      "remove" : "1"
+    }
+  },
+  "effect_fudao_huanggong_qilin_copy_1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-93.6",
+        "y" : "-14.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fudao_huanggong_qilin",
+    "useBatchNode" : "true",
+    "order" : "5",
+    "f25" : {
+      "remove" : "1"
+    }
+  },
+  "effect_fudao_huanggong_longliang2_3" : {
+    "f33" : {
+      "start" : {
+        "x" : "-14.45",
+        "y" : "106.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f45",
+      "frames" : "13"
+    },
+    "effect" : "effect_fudao_huanggong_longliang2",
+    "useBatchNode" : "true",
+    "order" : "4",
+    "f45" : {
+      "start" : {
+        "x" : "-14.45",
+        "y" : "106.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "102"
+      },
+      "nextFrame" : "f53",
+      "frames" : "9"
+    },
+    "f53" : {
+      "start" : {
+        "x" : "-14.45",
+        "y" : "106.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "102"
+      },
+      "nextFrame" : "f80",
+      "frames" : "28"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "-14.45",
+        "y" : "106.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    }
+  },
+  "effect_fudao_huanggong_longfaguang2_4" : {
+    "f33" : {
+      "start" : {
+        "x" : "-12.6",
+        "y" : "81.15",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "127"
+      }
+    },
+    "effect" : "effect_fudao_huanggong_longfaguang2",
+    "useBatchNode" : "true",
+    "order" : "3",
+    "f45" : {
+      "remove" : "1"
+    }
+  },
+  "effect_fudao_huanggong_longliang1_5" : {
+    "f30" : {
+      "start" : {
+        "x" : "101.95",
+        "y" : "19.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f45",
+      "frames" : "16"
+    },
+    "effect" : "effect_fudao_huanggong_longliang1",
+    "useBatchNode" : "true",
+    "order" : "2",
+    "f45" : {
+      "start" : {
+        "x" : "101.95",
+        "y" : "19.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "102"
+      },
+      "nextFrame" : "f53",
+      "frames" : "9"
+    },
+    "f53" : {
+      "start" : {
+        "x" : "101.95",
+        "y" : "19.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "102"
+      },
+      "nextFrame" : "f80",
+      "frames" : "28"
+    },
+    "f80" : {
+      "start" : {
+        "x" : "101.95",
+        "y" : "19.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      }
+    }
+  },
+  "effect_fudao_huanggong_longfaguang1_6" : {
+    "f17" : {
+      "start" : {
+        "x" : "102.95",
+        "y" : "21.35",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fudao_huanggong_longfaguang",
+    "useBatchNode" : "true",
+    "order" : "1",
+    "f48" : {
+      "remove" : "1"
+    }
+  },
+  "effect_fudao_huanggong_wapian_7" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.35",
+        "y" : "42.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fudao_huanggong_wapian",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f35" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f80" : "forever"
+  },
+  "scale" : "1",
+  "png" : ""
+}

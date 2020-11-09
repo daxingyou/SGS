@@ -1,0 +1,19 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "-12.5",
+        "y" : "12.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "NaN",
+        "dx" : "-12.5",
+        "dy" : "12.5"
+      }
+    }
+  },
+  "events" : {
+    "f2" : "finish"
+  }
+}

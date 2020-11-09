@@ -1,0 +1,96 @@
+{
+  "lizi_fudao_dongguanlizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_fudao_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-16.15",
+        "y" : "-66.7",
+        "rotation" : "-0.91",
+        "scaleX" : "1.36",
+        "scaleY" : "0.88",
+        "opacity" : "96"
+      }
+    },
+    "order" : "5"
+  },
+  "spine_dongguanxiaoqi_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "40.4",
+        "y" : "61.5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_fudaodongguan_m" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_dongguansongshu_effect" : {
+    "f1" : {
+      "start" : {
+        "x" : "-16",
+        "y" : "20.95",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_fudaodongguan_b" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_fudao_yingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "81.95",
+        "y" : "-56.85",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f31" : "finish"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "effect_hongbaofaguang_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.95",
+        "y" : "-7.7",
+        "rotation" : "0",
+        "scaleX" : "0.64",
+        "scaleY" : "0.75",
+        "opacity" : "204"
+      }
+    },
+    "effect" : "effect_hongbaofaguang",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f61" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

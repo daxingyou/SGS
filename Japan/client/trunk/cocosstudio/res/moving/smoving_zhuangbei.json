@@ -1,0 +1,139 @@
+{
+  "target" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0"
+      }
+    },
+    "f2" : {
+      "start" : {
+        "x" : "-7",
+        "y" : "7",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-7",
+        "dy" : "7"
+      }
+    },
+    "f3" : {
+      "start" : {
+        "x" : "2",
+        "y" : "-5",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "2",
+        "dy" : "-5"
+      }
+    },
+    "f4" : {
+      "start" : {
+        "x" : "3",
+        "y" : "4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "3",
+        "dy" : "4"
+      }
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "-4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-2",
+        "dy" : "-4"
+      }
+    },
+    "f6" : {
+      "start" : {
+        "x" : "-3",
+        "y" : "3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-3",
+        "dy" : "3"
+      }
+    },
+    "f7" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "-1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-2",
+        "dy" : "-1"
+      }
+    },
+    "f8" : {
+      "start" : {
+        "x" : "2",
+        "y" : "3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "2",
+        "dy" : "3"
+      }
+    },
+    "f9" : {
+      "start" : {
+        "x" : "0",
+        "y" : "4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "4"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "-2.55",
+        "y" : "2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "-2.55",
+        "dy" : "2"
+      }
+    },
+    "f11" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "dx" : "0",
+        "dy" : "0"
+      }
+    }
+  },
+  "events" : {
+    "f12" : "finish"
+  }
+}

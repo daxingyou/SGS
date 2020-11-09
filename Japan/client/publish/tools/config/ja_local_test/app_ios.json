@@ -7,7 +7,7 @@
             "name": "日本",
             "target": "xgame-mobile",
             "identifier": "yoka.hw.sgmj",
-            "sdk": "yoka-ja",
+            "sdk": "yoka-ja-test",
             "provisioning": {
                 "teamID": "XSJR7GAU45",
                 "development": {

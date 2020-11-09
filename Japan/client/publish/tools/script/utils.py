@@ -144,7 +144,15 @@ def getSubDir(ROOT, path):
 def removeDir(DIR):
     if os.path.exists(DIR):
         shutil.rmtree(DIR)
-        
+
+def moveFile(oldname,newname):
+    if os.path.exists(oldname):
+        shutil.copy(oldname,newname)
+
+def copyFile(oldname,newname):
+    if os.path.exists(oldname):
+        shutil.copy2(oldname,newname)        
+                
 def copyDir(olddir, newdir):
     print("copyDir", olddir, newdir)
     if os.path.exists(newdir):
@@ -463,11 +471,21 @@ def modifyLangLua(backUp, filename, lang, channel=None, langList=None):
         )
     printFile(filename, os.path.basename(filename))
 
-def modifyAppDelegate(backUp, filename, version):
+def modifyAppDelegate(backUp, filename, version ,path=None ,cfgUseObb=False):
     modifyFile(backUp, filename, lambda f, line:
         f.write(re.sub("[\s\t]*#define APP_VERSION_CODE.*",
                         "#define APP_VERSION_CODE %s" % version, line))
     )
+    if path == "smart":
+        modifyFile(backUp, filename, lambda f, line:
+            f.write(re.sub("[\s\t]*bool AppDelegate::isSmart =.*",
+                            "bool AppDelegate::isSmart = true;", line))
+        )
+        if cfgUseObb == True:
+            modifyFile(backUp, filename, lambda f, line:
+                f.write(re.sub("[\s\t]*bool AppDelegate::isUseObb =.*",
+                                "bool AppDelegate::isUseObb = true;", line))
+            )
     #
     # modifyFile(backUp, filename, lambda f, line:
     #     f.write(re.sub("[\s\t]*.*setPackageFileName.*",
@@ -600,10 +618,7 @@ def getDiffFilesMatchLang(path1, path2, lang=None):
             if not jsonSubFile1.has_key(filekey) or jsonSubFile1[filekey] != jsonSubFile2[filekey]:
                 # 音频目录 cn为基础
                 if subPath == "audio":
-                    if (lang+"/" in filekey or "cn/" in filekey) :
-                        retFiles.append(filekey)
-                        print "getDiffFilesMatchLangList audio file = %s" % filekey 
-                    continue                
+                    print("getDiffFilesMatchLangList audio")         
                 # 筛选多语言目录
                 if str("i18n/") in filekey:
                     if subPath == "res":
@@ -648,10 +663,7 @@ def getDiffFilesMatchLangList(path1, path2, langList):
                     if not filekey in retFiles:
                         # 音频目录 cn为基础
                         if subPath == "audio":
-                            if (lang+"/" in filekey or "cn/" in filekey) :
-                                retFiles.append(filekey)
-                                print "getDiffFilesMatchLangList audio file = %s" % filekey 
-                            continue
+                             print("getDiffFilesMatchLangList audio")
                         # 筛选多语言目录
                         if str("i18n/") in filekey:
                             if subPath == "res":

@@ -1,0 +1,57 @@
+{
+  "spine_wujiangchongshengqizi_effect1_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "475.25",
+        "y" : "253.7",
+        "rotation" : "0",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "3"
+  },
+  "spine_wujiangchongshengqizi_effect3" : {
+    "f1" : {
+      "start" : {
+        "x" : "206.6",
+        "y" : "235.1",
+        "rotation" : "1.48",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "spine_wujiangchongshengqizi_effect2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-188.25",
+        "y" : "236.2",
+        "rotation" : "1.48",
+        "scaleX" : "0.81",
+        "scaleY" : "0.81",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "spine_wujiangchongshengqizi_effect1_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-475.3",
+        "y" : "252.85",
+        "rotation" : "0",
+        "scaleX" : "1.05",
+        "scaleY" : "1.05",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f81" : "finish"
+  }
+}

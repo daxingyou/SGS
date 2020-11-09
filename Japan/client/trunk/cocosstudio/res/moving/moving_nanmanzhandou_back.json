@@ -1,0 +1,18 @@
+{
+  "effect_huangjinzhandou_yun" : {
+    "f1" : {
+      "start" : {
+        "x" : "147.55",
+        "y" : "192.25",
+        "rotation" : "0",
+        "scaleX" : "1.32",
+        "scaleY" : "0.7",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f241" : "finish"
+  }
+}

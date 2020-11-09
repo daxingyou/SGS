@@ -1,0 +1,139 @@
+
+guanxingbaize.png
+size: 957,199
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/1
+  rotate: true
+  xy: 757, 6
+  size: 89, 97
+  orig: 91, 102
+  offset: 2, 1
+  index: -1
+images/2
+  rotate: true
+  xy: 856, 10
+  size: 85, 99
+  orig: 86, 104
+  offset: 1, 0
+  index: -1
+images/3
+  rotate: true
+  xy: 655, 2
+  size: 93, 100
+  orig: 110, 111
+  offset: 12, 0
+  index: -1
+images/4
+  rotate: false
+  xy: 537, 45
+  size: 116, 107
+  orig: 116, 109
+  offset: 0, 0
+  index: -1
+images/di2
+  rotate: false
+  xy: 2, 40
+  size: 533, 112
+  orig: 533, 112
+  offset: 0, 0
+  index: -1
+images/guangqiu0001
+  rotate: false
+  xy: 2, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0002
+  rotate: false
+  xy: 897, 114
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0003
+  rotate: false
+  xy: 36, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0004
+  rotate: false
+  xy: 70, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0005
+  rotate: false
+  xy: 104, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0006
+  rotate: false
+  xy: 138, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0007
+  rotate: false
+  xy: 172, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0008
+  rotate: false
+  xy: 206, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0009
+  rotate: false
+  xy: 240, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/guangqiu0010
+  rotate: false
+  xy: 274, 6
+  size: 32, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+images/hx
+  rotate: false
+  xy: 2, 154
+  size: 680, 43
+  orig: 683, 46
+  offset: 0, 3
+  index: -1
+images/sg
+  rotate: true
+  xy: 684, 97
+  size: 100, 110
+  orig: 110, 140
+  offset: 5, 14
+  index: -1
+images/star
+  rotate: false
+  xy: 897, 148
+  size: 53, 49
+  orig: 63, 59
+  offset: 6, 6
+  index: -1
+images/xxxxx
+  rotate: false
+  xy: 796, 97
+  size: 99, 100
+  orig: 100, 100
+  offset: 1, 0
+  index: -1

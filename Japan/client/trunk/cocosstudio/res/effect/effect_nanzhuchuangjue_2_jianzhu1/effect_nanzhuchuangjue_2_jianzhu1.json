@@ -1,0 +1,97 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "303.45",
+        "y" : "37.8",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_nanzhuchuangjue_2_jianzhu1_1.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "2",
+    "f13" : {
+      "start" : {
+        "x" : "1857.3",
+        "y" : "-181.55",
+        "rotation" : "0",
+        "scaleX" : "5.86",
+        "scaleY" : "5.86",
+        "opacity" : "255",
+        "png" : "effect_nanzhuchuangjue_2_jianzhu1_1.png"
+      }
+    },
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.6",
+        "y" : "36.05",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_nanzhuchuangjue_2_jianzhu1_2.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "1",
+    "f13" : {
+      "start" : {
+        "x" : "257",
+        "y" : "-205.55",
+        "rotation" : "0",
+        "scaleX" : "2.95",
+        "scaleY" : "2.95",
+        "opacity" : "255",
+        "png" : "effect_nanzhuchuangjue_2_jianzhu1_2.png"
+      }
+    },
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "图层 3_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-6.6",
+        "y" : "114.05",
+        "rotation" : "0",
+        "scaleX" : "2",
+        "scaleY" : "2",
+        "opacity" : "255",
+        "png" : "effect_nanzhuchuangjue_2_jianzhu1_3.png"
+      },
+      "nextFrame" : "f13",
+      "frames" : "13"
+    },
+    "order" : "0",
+    "f13" : {
+      "start" : {
+        "x" : "250.95",
+        "y" : "21.75",
+        "rotation" : "0",
+        "scaleX" : "2.95",
+        "scaleY" : "2.95",
+        "opacity" : "255",
+        "png" : "effect_nanzhuchuangjue_2_jianzhu1_3.png"
+      }
+    },
+    "f14" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f46" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_nanzhuchuangjue_2_jianzhu1.png"
+}

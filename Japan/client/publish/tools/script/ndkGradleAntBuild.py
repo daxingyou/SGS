@@ -323,8 +323,9 @@ def do_ndk_build(input_abi,build_mode,bCompatible):
 
     ndk_build_cmd = '%s NDK_TOOLCHAIN_VERSION=%s' % (ndk_build_cmd, toolchain_version)
 
+    build_mode = 'debug'
     if build_mode == 'debug':
-        ndk_build_cmd = '%s NDK_DEBUG=1' % ndk_build_cmd
+        ndk_build_cmd = '%s NDK_DEBUG=1 V=1' % ndk_build_cmd
     if bCompatible:
         ndk_build_cmd = '%s APP_PLATFORM=android-19' % ndk_build_cmd
     print ndk_build_cmd

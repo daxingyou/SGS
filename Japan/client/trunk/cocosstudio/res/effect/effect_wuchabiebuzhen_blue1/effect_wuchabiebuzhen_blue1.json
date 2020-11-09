@@ -1,0 +1,34 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "130.4",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.23",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_wuchabiebuzhen_blue1_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "5"
+    },
+    "order" : "0",
+    "f5" : {
+      "start" : {
+        "x" : "-179.5",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "2.05",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_wuchabiebuzhen_blue1_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f6" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_wuchabiebuzhen_blue1.png"
+}

@@ -1,0 +1,100 @@
+{
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "7.4",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "204",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "50"
+    },
+    "order" : "1",
+    "f50" : {
+      "start" : {
+        "x" : "7.4",
+        "y" : "61.1",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1.18",
+        "opacity" : "0",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      },
+      "nextFrame" : "f51",
+      "frames" : "2"
+    },
+    "f51" : {
+      "start" : {
+        "x" : "7.4",
+        "y" : "43.7",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "0.86",
+        "opacity" : "5",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      },
+      "nextFrame" : "f120",
+      "frames" : "70"
+    },
+    "f120" : {
+      "start" : {
+        "x" : "7.4",
+        "y" : "51.55",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "1",
+        "opacity" : "204",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      }
+    }
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-4.6",
+        "y" : "39.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      },
+      "nextFrame" : "f50",
+      "frames" : "50"
+    },
+    "order" : "0",
+    "f50" : {
+      "start" : {
+        "x" : "-4.6",
+        "y" : "49.1",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.18",
+        "opacity" : "204",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      },
+      "nextFrame" : "f120",
+      "frames" : "71"
+    },
+    "f120" : {
+      "start" : {
+        "x" : "-4.6",
+        "y" : "58.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1.36",
+        "opacity" : "0",
+        "png" : "effect_huanggongguanqia_yanwu_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f120" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_huanggongguanqia_yanwu.png"
+}

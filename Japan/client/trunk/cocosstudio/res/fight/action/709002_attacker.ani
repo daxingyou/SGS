@@ -1,0 +1,53 @@
+{
+	"version": "1.0",
+	"damage": 0,
+	"frameCount": 88,
+	"layers": [
+		{
+			"name": "body",
+			"frameCount": 88,
+			"frames": {
+				"0": {
+					"id": 0,
+					"duration": 88,
+					"isMotion": false,
+					"element": true,
+					"x": 0,
+					"y": 0,
+					"height": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"rotation": 0,
+					"color": false
+				}
+			}
+		}
+	],
+	"events": {
+		"0": [
+			{
+				"type": "sound",
+				"value1": "fy_709002",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			},
+			{
+				"type": "animation",
+				"value1": "skill2",
+				"value2": "",
+				"value3": "",
+				"value4": ""
+			}
+		],
+		"55": [
+			{
+				"type": "hit",
+				"value1": "0",
+				"value2": "attack",
+				"value3": "",
+				"value4": ""
+			}
+		]
+	}
+}

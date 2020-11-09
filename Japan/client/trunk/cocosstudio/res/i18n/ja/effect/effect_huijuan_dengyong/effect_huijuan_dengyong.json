@@ -1,0 +1,51 @@
+{
+  "effect_huijuan_lizi_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "1.8",
+        "y" : "-1.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_huijuan_lizi",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_dengyong_icontx_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.25",
+        "y" : "0.25",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_dengyong_icontx",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "图层 1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_huijuan_dengyong_1.png"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f75" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_huijuan_dengyong.png"
+}

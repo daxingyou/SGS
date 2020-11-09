@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>effect_jingjijishi_di_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{143,155}}</string>
+                <key>offset</key>
+                <string>{0,4}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{143,155}}</string>
+                <key>sourceSize</key>
+                <string>{143,163}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>effect_jingjijishi_di.png</string>
+            <key>size</key>
+            <string>{147,159}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:1c516c3f1b6f76f76a82b18e69f829ec$</string>
+            <key>textureFileName</key>
+            <string>effect_jingjijishi_di.png</string>
+        </dict>
+    </dict>
+</plist>

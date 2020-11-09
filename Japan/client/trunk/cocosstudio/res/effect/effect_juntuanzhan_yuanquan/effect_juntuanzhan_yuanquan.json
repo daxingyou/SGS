@@ -1,0 +1,95 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.25",
+        "y" : "0.5",
+        "rotation" : "0",
+        "scaleX" : "0.89",
+        "scaleY" : "0.89",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan_1.png"
+      },
+      "nextFrame" : "f3",
+      "frames" : "3"
+    },
+    "order" : "0",
+    "f3" : {
+      "start" : {
+        "x" : "-0.25",
+        "y" : "0.5",
+        "rotation" : "0",
+        "scaleX" : "2.88",
+        "scaleY" : "2.88",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan_1.png"
+      },
+      "nextFrame" : "f5",
+      "frames" : "3"
+    },
+    "f5" : {
+      "start" : {
+        "x" : "-0.25",
+        "y" : "0.5",
+        "rotation" : "10.74",
+        "scaleX" : "3.17",
+        "scaleY" : "3.17",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan_1.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "4"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "0.5",
+        "rotation" : "14.05",
+        "scaleX" : "3.51",
+        "scaleY" : "3.51",
+        "opacity" : "165",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan_1.png"
+      },
+      "nextFrame" : "f11",
+      "frames" : "4"
+    },
+    "f11" : {
+      "start" : {
+        "x" : "-0.25",
+        "y" : "0.5",
+        "rotation" : "16.77",
+        "scaleX" : "3.79",
+        "scaleY" : "3.79",
+        "opacity" : "96",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan_1.png"
+      },
+      "nextFrame" : "f18",
+      "frames" : "8"
+    },
+    "f18" : {
+      "start" : {
+        "x" : "-0.25",
+        "y" : "0.5",
+        "rotation" : "19.99",
+        "scaleX" : "4.12",
+        "scaleY" : "4.12",
+        "opacity" : "12",
+        "blendMode" : "add",
+        "png" : "effect_juntuanzhan_yuanquan_1.png"
+      }
+    },
+    "f19" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f23" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_juntuanzhan_yuanquan.png"
+}

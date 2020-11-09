@@ -1,0 +1,31 @@
+{
+  "effect_xianqinhuangling_jiantou2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "-2.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_xianqinhuangling_guangquan" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "0.46",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f121" : "finish"
+  }
+}

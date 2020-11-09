@@ -10,6 +10,37 @@ import getopt
 from distutils.version import LooseVersion
 from argparse import ArgumentParser
 
+
+def removeInvalidFile(lang, dirRes): 
+    i18n_lang = "i18n/" + lang + "/"
+    i18n_base = "i18n/base/"
+    file_list = os.listdir(dirRes)
+    for f in file_list:
+        full_path = os.path.join(dirRes, f)
+        if platform.system() == "Windows":
+                full_path = full_path.replace('\\', '/')
+
+
+        if os.path.isdir(full_path):
+            removeInvalidFile(lang, full_path)
+        elif os.path.isfile(full_path) and full_path.find(i18n_lang) != -1: 
+            base_path = full_path.replace(i18n_lang, i18n_base)  
+            if os.path.exists(base_path):  
+                print("remove base File  : " + base_path)  
+                utils.removeFile(base_path)
+             
+            res_path = full_path.replace(i18n_lang, "")  
+            if os.path.exists(res_path):      
+                print("remove res File  : " + res_path)  
+                utils.removeFile(res_path)    
+                
+        elif os.path.isfile(full_path) and full_path.find(i18n_base) != -1:   
+            res_path = full_path.replace(i18n_base, "")  
+            if os.path.exists(res_path):     
+                print("remove res File by base : " + res_path) 
+                utils.removeFile(res_path)          
+
+
 def checkNotUsedLang(lang,cfgLangList=None,cfgLang=None):
     if cfgLangList:
         return not lang in cfgLangList
@@ -221,6 +252,15 @@ def main(cfgFile=None):
                         if os.path.isfile(filePath):
                             if os.path.exists(hdPath):
                                 os.remove(filePath)
+
+            # 删除重复资源 
+            if cfgLang != None:
+                utils.printSplit("开始删除重复资源")  
+                dirResLang = os.path.join(dirResI18n, cfgLang)
+                dirResBase = os.path.join(dirResI18n, "base") 
+                removeInvalidFile(cfgLang, dirResLang)
+                removeInvalidFile(cfgLang, dirResBase)
+                utils.printSplit("删除重复资源结束")       
 
                         
 

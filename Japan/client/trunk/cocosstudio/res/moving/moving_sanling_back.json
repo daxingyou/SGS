@@ -1,0 +1,31 @@
+{
+  "lizi_shanlinglizi2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "305.2",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_huangjinzhandou_yunzuhe" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2",
+        "y" : "148.6",
+        "rotation" : "0",
+        "scaleX" : "-1",
+        "scaleY" : "0.63",
+        "opacity" : "153"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

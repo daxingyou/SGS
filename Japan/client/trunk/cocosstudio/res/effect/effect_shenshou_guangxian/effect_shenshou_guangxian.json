@@ -1,0 +1,188 @@
+{
+  "图层 3_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.9",
+        "y" : "5.1",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "1.74",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "2",
+    "f4" : {
+      "start" : {
+        "x" : "4.9",
+        "y" : "18.05",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "2.06",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "16"
+    },
+    "f19" : {
+      "start" : {
+        "x" : "4.9",
+        "y" : "64.85",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "1.61",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      }
+    },
+    "f20" : {
+      "start" : {
+        "x" : "4.9",
+        "y" : "-42.65",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "0.55",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "11"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "4.9",
+        "y" : "0.8",
+        "rotation" : "0",
+        "scaleX" : "1.01",
+        "scaleY" : "1.63",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      }
+    }
+  },
+  "图层 2_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "13.3",
+        "y" : "19.35",
+        "rotation" : "0",
+        "scaleX" : "-0.69",
+        "scaleY" : "1.64",
+        "opacity" : "137",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f9",
+      "frames" : "9"
+    },
+    "order" : "1",
+    "f9" : {
+      "start" : {
+        "x" : "13.3",
+        "y" : "41.5",
+        "rotation" : "0",
+        "scaleX" : "-0.69",
+        "scaleY" : "1.43",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      }
+    },
+    "f10" : {
+      "start" : {
+        "x" : "13.3",
+        "y" : "-53.9",
+        "rotation" : "0",
+        "scaleX" : "-0.69",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f24",
+      "frames" : "15"
+    },
+    "f24" : {
+      "start" : {
+        "x" : "13.3",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "-0.69",
+        "scaleY" : "1.83",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "7"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "13.3",
+        "y" : "16.6",
+        "rotation" : "0",
+        "scaleX" : "-0.69",
+        "scaleY" : "1.67",
+        "opacity" : "153",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      }
+    }
+  },
+  "图层 1_3" : {
+    "f1" : {
+      "start" : {
+        "x" : "-14.6",
+        "y" : "-53.9",
+        "rotation" : "0",
+        "scaleX" : "0.59",
+        "scaleY" : "0.49",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f15",
+      "frames" : "15"
+    },
+    "order" : "0",
+    "f15" : {
+      "start" : {
+        "x" : "-14.6",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "0.59",
+        "scaleY" : "1.83",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      },
+      "nextFrame" : "f30",
+      "frames" : "16"
+    },
+    "f30" : {
+      "start" : {
+        "x" : "-14.6",
+        "y" : "41.5",
+        "rotation" : "0",
+        "scaleX" : "0.59",
+        "scaleY" : "1.43",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_shenshou_guangxian_1.png"
+      }
+    }
+  },
+  "events" : {
+    "f30" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_shenshou_guangxian.png"
+}

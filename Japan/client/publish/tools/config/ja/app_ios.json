@@ -6,16 +6,16 @@
         "ios": {
             "name": "日本",
             "target": "xgame-mobile",
-            "identifier": "com.ykhw.sgsmjz",
+            "identifier": "com.playbest.sgsmjz",
             "sdk": "yoka-ja",
             "provisioning": {
-                "teamID": "XSJR7GAU45",
+                "teamID": "KWC2MG9LVK",
                 "development": {
-                    "profiles": "com.ykhw.sgsmjz_dev_2020.09.03",
+                    "profiles": "com.playbest.sgsmjz_dev_2020.10.8",
                     "export": "ios_export_dev"
                 },
                 "distribution": {
-                    "profiles": "com.ykhw.sgsmjz_dis_2020.09.03",
+                    "profiles": "com.playbest.sgsmjz_dis_2020.10.8",
                     "export": "ios_export_dis"
                 }
             }
@@ -27,7 +27,7 @@
             "bundle_name": "三国志名将伝",
             "entitlements": "xgame-mobile.entitlements",
             "language": "ja_JP",
-            "mic_desc": "You need to record an audio message to send a voice chat message. Are you allowed to turn on the microphone?"
+            "mic_desc": "ボイスメッセージを送信するにはマイクの権限が必要です。許可しますか？"
         }
     }
 }

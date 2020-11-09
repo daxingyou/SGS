@@ -1,0 +1,18 @@
+{
+  "spine_huanqingduanwu_effect9" : {
+    "f1" : {
+      "start" : {
+        "x" : "-2.8",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f101" : "finish"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "lizi_fudao_dongguanlizi" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "8"
+  },
+  "effect_scene01_huoxing_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-14.4",
+        "y" : "-71.75",
+        "rotation" : "18.78",
+        "scaleX" : "0.58",
+        "scaleY" : "0.43",
+        "opacity" : "255"
+      }
+    },
+    "order" : "7"
+  },
+  "effect_fudao_fire_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "-15.75",
+        "y" : "-70.35",
+        "rotation" : "2.9",
+        "scaleX" : "-1",
+        "scaleY" : "0.85",
+        "opacity" : "158"
+      }
+    },
+    "order" : "6"
+  },
+  "effect_scene01_huoguang_copy2" : {
+    "f1" : {
+      "start" : {
+        "x" : "3.15",
+        "y" : "-64.65",
+        "rotation" : "-156.13",
+        "scaleX" : "0.68",
+        "scaleY" : "0.73",
+        "opacity" : "255"
+      }
+    },
+    "order" : "5"
+  },
+  "effect_scene01_huoxing_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-81.65",
+        "y" : "-32.75",
+        "rotation" : "18.78",
+        "scaleX" : "0.58",
+        "scaleY" : "0.43",
+        "opacity" : "255"
+      }
+    },
+    "order" : "4"
+  },
+  "effect_fudao_fire_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-76.15",
+        "y" : "-33.4",
+        "rotation" : "4.81",
+        "scaleX" : "1.01",
+        "scaleY" : "0.78",
+        "opacity" : "158"
+      }
+    },
+    "order" : "3"
+  },
+  "effect_scene01_huoguang_copy1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-75.4",
+        "y" : "-27.4",
+        "rotation" : "-156.13",
+        "scaleX" : "0.83",
+        "scaleY" : "0.8",
+        "opacity" : "255"
+      }
+    },
+    "order" : "2"
+  },
+  "effect_fudao_dongcheng_ditu" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "1"
+  },
+  "effect_fudao_yingzi" : {
+    "f1" : {
+      "start" : {
+        "x" : "82.15",
+        "y" : "-49.8",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f33" : "finish"
+  }
+}

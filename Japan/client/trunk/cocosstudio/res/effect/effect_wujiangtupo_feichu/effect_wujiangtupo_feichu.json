@@ -1,0 +1,99 @@
+{
+  "图层 1_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.95",
+        "y" : "22.35",
+        "rotation" : "0",
+        "scaleX" : "0.55",
+        "scaleY" : "0.47",
+        "opacity" : "127",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_feichu_1.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "1",
+    "f4" : {
+      "start" : {
+        "x" : "0.95",
+        "y" : "-222.25",
+        "rotation" : "0",
+        "scaleX" : "0.4",
+        "scaleY" : "1.23",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_feichu_1.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "5"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "0.95",
+        "y" : "-318.05",
+        "rotation" : "0",
+        "scaleX" : "0.55",
+        "scaleY" : "0.41",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_feichu_1.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "图层 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "-48.65",
+        "rotation" : "0",
+        "scaleX" : "1.15",
+        "scaleY" : "0.88",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_feichu_2.png"
+      },
+      "nextFrame" : "f4",
+      "frames" : "4"
+    },
+    "order" : "0",
+    "f4" : {
+      "start" : {
+        "x" : "-0.2",
+        "y" : "-450.15",
+        "rotation" : "0",
+        "scaleX" : "1.54",
+        "scaleY" : "1.43",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_feichu_2.png"
+      },
+      "nextFrame" : "f8",
+      "frames" : "5"
+    },
+    "f8" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "-406.15",
+        "rotation" : "0",
+        "scaleX" : "1.4",
+        "scaleY" : "0.17",
+        "opacity" : "0",
+        "blendMode" : "add",
+        "png" : "effect_wujiangtupo_feichu_2.png"
+      }
+    },
+    "f9" : {
+      "remove" : "1"
+    }
+  },
+  "events" : {
+    "f14" : "finish"
+  },
+  "scale" : "1",
+  "png" : "effect_wujiangtupo_feichu.png"
+}

@@ -1,0 +1,93 @@
+{
+  "effect_fail_di_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.65",
+        "y" : "-5.9",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fail_di",
+    "useBatchNode" : "true",
+    "order" : "3"
+  },
+  "effect_fail_huoxing_1" : {
+    "f11" : {
+      "start" : {
+        "x" : "95.1",
+        "y" : "-98.2",
+        "rotation" : "8.46",
+        "scaleX" : "-2.17",
+        "scaleY" : "2.75",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fail_huoxing",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_fail_huoxing_2" : {
+    "f11" : {
+      "start" : {
+        "x" : "-105.05",
+        "y" : "-40.35",
+        "rotation" : "3.21",
+        "scaleX" : "2.16",
+        "scaleY" : "3.68",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_fail_huoxing",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "effect_fail_chouduan_3" : {
+    "f8" : {
+      "start" : {
+        "x" : "1.45",
+        "y" : "-125.55",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "0"
+      },
+      "nextFrame" : "f11",
+      "frames" : "4"
+    },
+    "effect" : "effect_fail_chouduan",
+    "useBatchNode" : "true",
+    "order" : "0",
+    "f11" : {
+      "start" : {
+        "x" : "1.45",
+        "y" : "-135.45",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      },
+      "nextFrame" : "f13",
+      "frames" : "3"
+    },
+    "first_frame" : "6",
+    "loop" : "loop",
+    "f13" : {
+      "start" : {
+        "x" : "1.45",
+        "y" : "-119.3",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    }
+  },
+  "events" : {
+    "f66" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

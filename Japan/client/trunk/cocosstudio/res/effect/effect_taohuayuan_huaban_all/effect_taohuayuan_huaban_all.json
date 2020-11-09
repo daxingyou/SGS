@@ -1,0 +1,52 @@
+{
+  "effect_taohuayuan_huaban_copy3_0" : {
+    "f1" : {
+      "start" : {
+        "x" : "457.25",
+        "y" : "-84.35",
+        "rotation" : "-47.49",
+        "scaleX" : "0.36",
+        "scaleY" : "0.3",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taohuayuan_huaban_1",
+    "useBatchNode" : "true",
+    "order" : "2"
+  },
+  "effect_taohuayuan_huaban_copy2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "-444.85",
+        "y" : "-75.85",
+        "rotation" : "42.74",
+        "scaleX" : "-0.42",
+        "scaleY" : "0.34",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taohuayuan_huaban_1",
+    "useBatchNode" : "true",
+    "order" : "1"
+  },
+  "effect_taohuayuan_huaban_copy1_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "311",
+        "y" : "-213",
+        "rotation" : "42.74",
+        "scaleX" : "-0.64",
+        "scaleY" : "0.53",
+        "opacity" : "255"
+      }
+    },
+    "effect" : "effect_taohuayuan_huaban_1",
+    "useBatchNode" : "true",
+    "order" : "0"
+  },
+  "events" : {
+    "f61" : "finish"
+  },
+  "scale" : "1",
+  "png" : ""
+}

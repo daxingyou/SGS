@@ -1,0 +1,132 @@
+{
+  "元件 2_1" : {
+    "f1" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "47.7",
+        "rotation" : "0",
+        "scaleX" : "0.49",
+        "scaleY" : "0.42",
+        "opacity" : "17",
+        "blendMode" : "add",
+        "png" : "effect_kuangzhan_hepingz_1.png"
+      },
+      "nextFrame" : "f18",
+      "frames" : "18"
+    },
+    "order" : "1",
+    "f18" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "12.7",
+        "rotation" : "0",
+        "scaleX" : "0.78",
+        "scaleY" : "0.16",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_kuangzhan_hepingz_1.png"
+      },
+      "nextFrame" : "f19",
+      "frames" : "2"
+    },
+    "f19" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "11.55",
+        "rotation" : "2.01",
+        "scaleX" : "0.78",
+        "scaleY" : "0.13",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_kuangzhan_hepingz_1.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "2"
+    },
+    "f20" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "10.45",
+        "rotation" : "0",
+        "scaleX" : "0.78",
+        "scaleY" : "0.12",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_kuangzhan_hepingz_1.png"
+      },
+      "nextFrame" : "f21",
+      "frames" : "2"
+    },
+    "f21" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "10.3",
+        "rotation" : "0",
+        "scaleX" : "0.78",
+        "scaleY" : "0.16",
+        "opacity" : "255",
+        "blendMode" : "add",
+        "png" : "effect_kuangzhan_hepingz_1.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "20"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "0.75",
+        "y" : "-33.95",
+        "rotation" : "0",
+        "scaleX" : "1.1",
+        "scaleY" : "-0.16",
+        "opacity" : "17",
+        "blendMode" : "add",
+        "png" : "effect_kuangzhan_hepingz_1.png"
+      }
+    }
+  },
+  "元件 2_2" : {
+    "f1" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_kuangzhan_hepingz_2.png"
+      },
+      "nextFrame" : "f20",
+      "frames" : "20"
+    },
+    "order" : "0",
+    "f20" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1.04",
+        "scaleY" : "1.04",
+        "opacity" : "165",
+        "png" : "effect_kuangzhan_hepingz_2.png"
+      },
+      "nextFrame" : "f40",
+      "frames" : "21"
+    },
+    "f40" : {
+      "start" : {
+        "x" : "0",
+        "y" : "0",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255",
+        "png" : "effect_kuangzhan_hepingz_2.png"
+      }
+    }
+  },
+  "events" : {
+    "f40" : "forever"
+  },
+  "scale" : "1",
+  "png" : "effect_kuangzhan_hepingz.png"
+}

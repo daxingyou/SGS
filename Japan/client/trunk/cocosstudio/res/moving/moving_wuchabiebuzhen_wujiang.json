@@ -1,0 +1,19 @@
+{
+  "effect_zm_boom" : {
+    "f1" : {
+      "start" : {
+        "x" : "4.4",
+        "y" : "1.4",
+        "rotation" : "0",
+        "scaleX" : "1",
+        "scaleY" : "1",
+        "opacity" : "255"
+      }
+    },
+    "order" : "0"
+  },
+  "events" : {
+    "f5" : "hero",
+    "f20" : "finish"
+  }
+}
